@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Intérprete python3 con PyYAML para los scripts de SpecKit.
+#
+# Motivo: .specify/scripts/bash/common.sh elige el primer `python3` del PATH.
+# En este equipo ese es el de Homebrew, que no tiene PyYAML, y entonces
+# resolve-template.sh falla con:
+#   "PyYAML is required to resolve preset template composition"
+#
+# Instalar PyYAML en el python3 de Homebrew está bloqueado por PEP 668 y
+# forzarlo con --break-system-packages puede romper la instalación de Homebrew.
+# Este shim evita ese riesgo sin modificar nada fuera del repositorio.
+#
+# Uso: antepón este directorio al PATH al invocar un script de SpecKit.
+#   PATH="$PWD/tools/speckit/shim:$PATH" .specify/scripts/bash/resolve-template.sh spec-template
+#
+# Solo rutas absolutas en la lista: un `python3` relativo resolvería a este
+# mismo shim y produciría una recursión infinita.
+set -euo pipefail
+for candidato in /usr/bin/python3 /opt/homebrew/bin/python3; do
+    if [ -x "$candidato" ] && "$candidato" -c 'import yaml' 2>/dev/null; then
+        exec "$candidato" "$@"
+    fi
+done
+echo "ERROR: ningún python3 con PyYAML disponible (probados: /usr/bin/python3, /opt/homebrew/bin/python3)" >&2
+exit 1

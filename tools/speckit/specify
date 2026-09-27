@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Envoltorio de SpecKit para este proyecto.
+#
+# Fija la versión verificada v1.0.8 mediante una instancia aislada de uvx.
+# No utiliza ni modifica el `specify` instalado globalmente como uv tool,
+# que permanece en 0.15.0 al servicio de otros proyectos del usuario.
+#
+# El preset Software Humano v1.0.0 exige SpecKit >=1.0.0,<2.0.0.
+#
+# Uso:  tools/speckit/specify <subcomando> [opciones]
+# Ej.:  tools/speckit/specify preset list
+#
+# Para probar otra versión sin editar este archivo:
+#   SPECKIT_REF=v1.0.9 tools/speckit/specify version
+set -euo pipefail
+exec uvx --from "git+https://github.com/github/spec-kit.git@${SPECKIT_REF:-v1.0.8}" specify "$@"

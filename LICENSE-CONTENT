@@ -1,0 +1,58 @@
+# Licencia del contenido · Creative Commons Atribución 4.0 Internacional
+
+El **Núcleo del manifiesto para el desarrollo de software humano con
+inteligencia artificial v2.1** se publica bajo **CC BY 4.0**.
+
+Texto legal completo: https://creativecommons.org/licenses/by/4.0/legalcode
+Resumen legible: https://creativecommons.org/licenses/by/4.0/deed.es
+
+## Qué archivos cubre
+
+Esta licencia sigue al texto, no a la ubicación:
+
+- `docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md`
+- `tools/speckit/software-humano-spec-kit-preset-*/templates/constitution-template.md`
+
+El segundo es la proyección operativa del primero, reorganizada únicamente para
+cumplir la jerarquía nativa de constitución de SpecKit. Su contenido doctrinal
+es el mismo: ignorando las líneas de ancla, ambos archivos tienen el mismo
+digest.
+
+## Qué permite
+
+Copiar, redistribuir, adaptar, transformar, traducir y construir sobre el
+material, para cualquier finalidad, incluso comercial.
+
+## Qué exige
+
+**Atribución.** Dar crédito de forma razonable, enlazar a la licencia e indicar
+si se hicieron cambios.
+
+Atribución sugerida:
+
+> «Núcleo del manifiesto para el desarrollo de software humano con inteligencia
+> artificial v2.1», de Damián Acuña, bajo licencia CC BY 4.0.
+
+Si adaptaste o tradujiste el texto, indícalo. No sugieras que quien lo escribió
+respalda tu adaptación.
+
+## Lo que la licencia no decide
+
+La integridad doctrinal no se sostiene en la licencia sino en los mecanismos que
+el método define: versión declarada, anclas estables, procedencia visible,
+`SHA256SUMS`, y la autoridad doctrinal del original en español.
+
+Puedes adaptar el texto. No puedes presentar tu adaptación como el núcleo
+aprobado.
+
+## Nota sobre irreversibilidad
+
+Esta decisión es **asimétricamente irreversible**: relicenciar de forma más
+permisiva es posible; retirar con efecto real una licencia permisiva ya otorgada,
+no. Se adopta a conciencia de ello.
+
+---
+
+Copyright (c) 2026 Damián Acuña.
+
+El código y la operación del paquete se publican bajo MIT. Ver `LICENSE`.

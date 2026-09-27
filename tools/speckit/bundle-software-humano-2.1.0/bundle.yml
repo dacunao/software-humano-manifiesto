@@ -1,0 +1,59 @@
+schema_version: "1.0"
+
+bundle:
+  id: "software-humano"
+  name: "Software Humano"
+  version: "2.1.0"
+  role: "developer"
+  description: "Instala el método que aplica el Manifiesto de Software Humano al ciclo SDD de SpecKit: la doctrina compilada en los artefactos, la comprobación de conformidad y las compuertas que el propio manifiesto especifica."
+  author: "Damián Acuña"
+  license: "MIT"
+
+requires:
+  # 1.0.0 es la primera versión donde la composición de comandos conserva el
+  # frontmatter del core cuando la capa del preset no declara uno. De eso
+  # dependen los handoffs, la descripción nativa y los scripts.
+  speckit_version: ">=1.0.0,<2.0.0"
+
+# Sin `integration`: el método no depende de un agente en particular. Vale para
+# cualquiera que SpecKit soporte.
+
+# ATENCIÓN · este bundle todavía no puede instalarse. SpecKit resuelve los
+# componentes desde catálogos (URLs) o desde los que él mismo trae; el campo
+# `source` con una ruta local **no se usa para localizarlos**. Hasta publicar el
+# preset, la extensión y el workflow en un catálogo, `bundle install` falla
+# diciendo que no los encuentra. Ninguna instrucción del paquete lo ofrece: la
+# instalación documentada agrega las tres capas por separado.
+#
+# Los componentes van bajo `provides`. SpecKit lee `provides.presets`,
+# `provides.extensions` y `provides.workflows`; cualquier otra ubicación la
+# ignora **sin avisar** y el bundle se instala con cero componentes reportando
+# éxito. Fue exactamente lo que pasó hasta aquí.
+provides:
+  presets:
+    - id: "software-humano"
+      version: "2.0.0"
+      source: "../software-humano-spec-kit-preset-2.0.0"
+      priority: 10
+      # Obligatoria y validada por SpecKit, aunque el instalador no la use: las
+      # estrategias que gobiernan de verdad están por elemento en preset.yml
+      # —`wrap` en los ocho comandos, `append` en los tres addenda—. Aquí se
+      # declara la del preset como tal.
+      strategy: "wrap"
+
+  extensions:
+    - id: "conformidad"
+      version: "2.1.0"
+      source: "../conformidad-2.1.0"
+
+  workflows:
+    - id: "software-humano"
+      version: "2.0.0"
+      source: "../workflow-software-humano-2.0.0"
+
+tags:
+  - "human-centered"
+  - "jobs-to-be-done"
+  - "job-stories"
+  - "product-governance"
+  - "sdd"

@@ -1,0 +1,97 @@
+schema_version: "1.0"
+
+preset:
+  id: "software-humano"
+  name: "Software Humano"
+  version: "2.0.0"
+  description: "Aplica el Manifiesto de Software Humano al ciclo SDD nativo de SpecKit citando su texto, sin reformularlo."
+  author: "Damián Acuña"
+  repository: "https://github.com/dacunao/software-humano-speckit"
+  license: "MIT"
+
+requires:
+  # 1.0.0 es la primera versión donde la composición de comandos conserva el
+  # frontmatter del core cuando la capa no declara uno. Estos comandos dependen
+  # de eso para no perder descripción, handoffs ni scripts.
+  speckit_version: ">=1.0.0,<2.0.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "constitution-template"
+      file: "templates/constitution-template.md"
+      description: "Proyección operativa del núcleo v2.1"
+      replaces: "constitution-template"
+
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-addendum.md"
+      description: "Agrega a la plantilla nativa de spec los artefactos que el manifiesto exige"
+      strategy: "append"
+
+    - type: "template"
+      name: "plan-template"
+      file: "templates/plan-addendum.md"
+      description: "Agrega a la plantilla nativa de plan los artefactos que el manifiesto exige"
+      strategy: "append"
+
+    - type: "template"
+      name: "tasks-template"
+      file: "templates/tasks-addendum.md"
+      description: "Agrega a la plantilla nativa de tasks los artefactos que el manifiesto exige"
+      strategy: "append"
+
+    - type: "command"
+      name: "speckit.constitution"
+      file: "commands/speckit.constitution.md"
+      description: "Instala o verifica la proyección aprobada del núcleo"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Exige lo que el manifiesto pide al especificar"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.clarify"
+      file: "commands/speckit.clarify.md"
+      description: "Exige lo que el manifiesto pide al aclarar"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Exige lo que el manifiesto pide al planificar"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.tasks"
+      file: "commands/speckit.tasks.md"
+      description: "Exige lo que el manifiesto pide al derivar tareas"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.analyze"
+      file: "commands/speckit.analyze.md"
+      description: "Exige lo que el manifiesto pide al analizar"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.implement"
+      file: "commands/speckit.implement.md"
+      description: "Exige lo que el manifiesto pide al implementar"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.converge"
+      file: "commands/speckit.converge.md"
+      description: "Exige lo que el manifiesto pide al converger"
+      strategy: "wrap"
+
+tags:
+  - "human-centered"
+  - "jobs-to-be-done"
+  - "job-stories"
+  - "product-governance"
+  - "sdd"
