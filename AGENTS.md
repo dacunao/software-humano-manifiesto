@@ -133,6 +133,8 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
 
+**Lectura de consulta, sin autoridad.** `docs/pilot/handoff-al-nuevo-proyecto.md` es el traspaso del piloto anterior: qué salió mal antes y qué conviene conservar de las direcciones visuales exploradas (A, B y C, ninguna aprobada). Léelo antes de proponer. No da órdenes: si contradice el PRD o las decisiones registradas en esta sección, valen el PRD y las decisiones. Avisa la contradicción; no la concilies.
+
 ## Identificadores que deben preservarse
 
 Sin renumerar ni reagrupar:
