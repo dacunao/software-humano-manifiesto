@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@import './tokens.css';
+@plugin 'daisyui' {
+  themes: false;
+}
+
+@plugin 'daisyui/theme' {
+  name: 'software-humano-provisional';
+  default: true;
+  color-scheme: light;
+  --color-base-100: var(--sh-color-fondo);
+  --color-base-content: var(--sh-color-texto);
+  --color-primary: var(--sh-color-acento);
+  --color-primary-content: #ffffff;
+}
+
+html { font-family: var(--sh-fuente-interfaz); color: var(--sh-color-texto); background: var(--sh-color-fondo); }
+.lectura { font-family: var(--sh-fuente-lectura); max-width: var(--sh-medida-lectura); line-height: 1.65; }
+:focus-visible { outline: 3px solid var(--sh-color-acento); outline-offset: 2px; }
+
+/* FR-013: sin movimiento no esencial cuando la persona lo pide. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

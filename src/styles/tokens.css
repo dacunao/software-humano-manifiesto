@@ -1,0 +1,16 @@
+/*
+ * PROVISIONAL: pendiente de dirección visual (RQ-10).
+ * Tokens mínimos para trabajar con contenido real mientras la autoridad de
+ * producto elige la dirección (tasks.md, fase 14). No son identidad visual.
+ */
+:root {
+  --sh-color-texto: #1d1d1b;
+  --sh-color-fondo: #fbfaf7;
+  --sh-color-suave: #5c5a55;
+  --sh-color-acento: #1f4e79;
+  --sh-color-borde: #d8d4cc;
+  --sh-fuente-lectura: Georgia, 'Times New Roman', serif;
+  --sh-fuente-interfaz: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sh-medida-lectura: 68ch;
+  --sh-espacio: 1.5rem;
+}

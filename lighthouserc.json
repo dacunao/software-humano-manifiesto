@@ -1,0 +1,23 @@
+{
+  "_nota": "AC-08. TBT es una aproximación de laboratorio a INP; el INP real se verifica con CrUX tras el lanzamiento. Presupuestos por página de plan.md: JS ≤ 10 KB, tipografías ≤ 100 KB, CSS ≤ 50 KB.",
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "url": [
+        "/index.html", "/manifesto.html", "/principles.html", "/principles/p01.html", "/practice.html", "/speckit.html", "/about.html",
+        "/es.html", "/es/manifiesto.html", "/es/principios/p01.html",
+        "/pt-br.html", "/pt-br/manifesto.html", "/pt-br/principios/p01.html"
+      ]
+    },
+    "assert": {
+      "assertions": {
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
+        "total-blocking-time": ["error", { "maxNumericValue": 200 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
+        "resource-summary:script:size": ["error", { "maxNumericValue": 10240 }],
+        "resource-summary:font:size": ["error", { "maxNumericValue": 102400 }],
+        "resource-summary:stylesheet:size": ["error", { "maxNumericValue": 51200 }]
+      }
+    }
+  }
+}
