@@ -122,9 +122,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-02`; `AC-02` en las fases 12 y 16.
 
-- [ ] T039 [P] [US2] Escribir `tests/e2e/js02-tesis.spec.ts` con los escenarios 1 y 2 de `JS-02`
-- [ ] T040 [US2] Redactar el acto 3 en `src/content/superficies/inicio.yaml` (`es`, borrador): la tesis, más el texto canónico breve **referenciado por sus nodos** de la sección «TEXTO CANÓNICO» del núcleo, no copiado, con enlace a su ancla en Manifiesto
-- [ ] T041 [US2] Mostrar el acto 3 en `src/views/Inicio.astro` usando `CitaCanonica.astro`
+- [X] T039 [P] [US2] Escribir `tests/e2e/js02-tesis.spec.ts` con los escenarios 1 y 2 de `JS-02`
+- [X] T040 [US2] Redactar el acto 3 en `src/content/superficies/inicio.yaml` (`es`, borrador): la tesis, más el texto canónico breve **referenciado por sus nodos** de la sección «TEXTO CANÓNICO» del núcleo, no copiado, con enlace a su ancla en Manifiesto
+- [X] T041 [US2] Mostrar el acto 3 en `src/views/Inicio.astro` usando `CitaCanonica.astro`
 
 ---
 

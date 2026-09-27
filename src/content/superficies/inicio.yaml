@@ -100,3 +100,30 @@ sections:
     depth:
       - kind: canon
         nodos: [doctrina-para-desarrollo-con-ia-03, doctrina-para-desarrollo-con-ia-05]
+
+  # Acto 3 · PRD §16. El texto canónico breve se cita por sus nodos; no se copia (RQ-01).
+  - id: acto-3
+    title:
+      es: { state: borrador, text: El progreso humano es el producto }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-3-tesis
+          type: explanation
+          derivedFrom: texto-canonico-07
+          text:
+            es:
+              state: borrador
+              text: |-
+                La tesis cabe en una idea: el producto no es el software, sino el progreso que una persona consigue con él. Por eso la experiencia no es un acabado que se agrega al final; forma parte de la función.
+
+                Un sistema que entrega el resultado correcto, pero obliga a interpretar la interfaz, recordar convenciones o temer equivocarse, todavía no resolvió el problema. Solo lo trasladó.
+            en: *pend
+            pt-BR: *pend
+      - kind: canon
+        nodos: [texto-canonico-03, texto-canonico-04, texto-canonico-07]
+    depth:
+      - kind: canon
+        nodos: [texto-canonico-05, texto-canonico-06, texto-canonico-08, texto-canonico-09, texto-canonico-10, texto-canonico-11, texto-canonico-12, texto-canonico-13, texto-canonico-14]
