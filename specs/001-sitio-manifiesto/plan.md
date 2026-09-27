@@ -27,7 +27,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 | 9 · Idiomas y revisión | Traducción del núcleo nodo a nodo, revisión profesional de `en` y `pt-BR`, neutralidad del español | `AC-13`, `AC-14`, `RV-07`, `RV-08` | 5 | **Revisiones lingüísticas** |
 | 10 · Validación con personas y aceptación | Pruebas moderadas de comprensión, lector de pantalla, recorrido completo, aceptación | `AC-01`, `AC-02`, `AC-07`, PRD §26.4, §32 | 5, 8, 9 | **Aceptación antes de publicar** |
 
-Los bloques 2, 3 y 6 pueden avanzar en paralelo con la espera de la dirección visual; el bloque 8 no puede empezar sin ella. `AC-10` (desarrollo gobernado) atraviesa todos los bloques y se verifica con `analyze` y `converge`.
+**Al terminar el bloque 5 se hace una primera ronda de comprensión en español con el contenido en borrador**, antes de los bloques 7, 8 y 9 (decisión de Damián Acuña, 2026-09-27; `F07`). Los bloques 2, 3 y 6 pueden avanzar en paralelo con la espera de la dirección visual; el bloque 8 no puede empezar sin ella. `AC-10` (desarrollo gobernado) atraviesa todos los bloques y se verifica con `analyze` y `converge`.
 
 ## Technical Context
 
@@ -43,7 +43,7 @@ Los bloques 2, 3 y 6 pueden avanzar en paralelo con la espera de la dirección v
 
 **Project Type**: sitio web estático, contenido como software.
 
-**Performance Goals**: p75 LCP ≤ 2,5 s, INP ≤ 200 ms y CLS ≤ 0,1 (PRD §24.1). Presupuestos explícitos de tipografías y JavaScript, fijados en el bloque 7.
+**Performance Goals**: p75 LCP ≤ 2,5 s, INP ≤ 200 ms y CLS ≤ 0,1 (PRD §24.1). Presupuestos explícitos por página: JavaScript de cliente ≤ 10 KB comprimido, tipografías ≤ 100 KB en woff2 con un máximo de dos familias, CSS ≤ 50 KB comprimido. Se ajustan solo con registro en la evidencia técnica. En laboratorio, INP se aproxima con TBT; el INP real se verifica con CrUX tras el lanzamiento.
 
 **Constraints**:
 - función esencial sin JavaScript;
@@ -52,7 +52,7 @@ Los bloques 2, 3 y 6 pueden avanzar en paralelo con la espera de la dirección v
 - sin enlaces sin destino;
 - la construcción se detiene ante contenido inválido o una fuente canónica cambiada.
 
-**Scale/Scope**: 48 páginas de contenido más tres 404. El núcleo tiene unas 10.500 palabras por idioma, con diez principios y ocho entradas editoriales cada uno, en tres idiomas.
+**Scale/Scope**: 48 páginas de contenido más tres 404. El núcleo tiene unas 10.500 palabras por idioma, con diez principios y seis entradas editoriales cada uno (declaración y fuente se leen del núcleo), en tres idiomas.
 
 ## Constitution Check
 
@@ -87,6 +87,7 @@ specs/001-sitio-manifiesto/
 │   ├── rutas.md                 # Rutas, anclas, idioma, encabezados
 │   └── datos-estructurados.md   # JSON-LD por página
 ├── checklists/requirements.md
+├── evidencia/           # Evidencia técnica, revisión lingüística y pruebas de comprensión
 └── tasks.md             # Fase 2 (/speckit-tasks; aún no existe)
 ```
 
@@ -109,14 +110,19 @@ src/
 │   └── semantica/            # Generador de JSON-LD (RQ-08)
 ├── layouts/
 ├── components/
+├── integrations/             # Validación durante la construcción (RV-01 a RV-12)
+├── views/                    # Una vista por superficie, compartida por los tres idiomas
 ├── pages/                    # Rutas por idioma según contracts/rutas.md
-├── scripts/                  # preferencia-idioma.ts, compartir.ts (RQ-06)
+├── cliente/                  # Scripts del navegador: preferencia-idioma.ts, compartir.ts (RQ-06)
 └── styles/                   # Tokens propios y tema de daisyUI
+
+scripts/                      # Scripts de construcción: check-publish.ts
 
 public/                       # _headers, _redirects, robots.txt, tipografías
 tests/
 ├── unit/                     # canon, validación, semántica
-└── e2e/                      # historias, bordes, accesibilidad, idioma
+├── e2e/                      # historias, bordes, accesibilidad, idioma
+└── fixtures/                 # contenido de prueba para las reglas
 
 .bun-version
 ```
@@ -169,6 +175,7 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 | RQ-02 · Traducción del núcleo: nodo a nodo en YAML / Markdown completo | Nodo a nodo exige más estructura, pero hace verificables la paridad y la obsolescencia | — | **Nodo a nodo** | 2026-09-27 | — |
 | RQ-06 · Interactividad: sin framework / con framework | Sin framework limita la interactividad; ninguna historia necesita más | — | **Sin framework**; dos scripts | 2026-09-27 | — |
 | RQ-07 · Publicación: comando previo aparte / modos de construcción | El comando aparte no agrega configuración | — | **Comando previo aparte** | 2026-09-27 | — |
+| Pruebas con personas: una ronda temprana en español con borradores y la ronda final / solo la final | La temprana cuesta sesiones extra; solo la final arriesga retraducir y rediseñar | Las Job Stories no tienen evidencia observada (spec.md) | **Ronda temprana y ronda final** (`F07`) · decidida por Damián Acuña | 2026-09-27 | Notas de la ronda temprana |
 | RQ-10 · Estilos: tokens provisionales ahora / esperar la dirección visual | Esperar bloquea bloques que no dependen de ella | La dirección se aplica sobre tokens sin rehacer la estructura | **Tokens provisionales, declarados como tales** | 2026-09-27 | Elección de dirección visual |
 
 **Pendientes que requieren juicio humano** (`O09`):

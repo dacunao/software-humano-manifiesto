@@ -34,7 +34,8 @@ Guía para comprobar de punta a punta que el sitio cumple lo especificado. No co
 | Qué | Quién decide | Evidencia de |
 |---|---|---|
 | Elección de la dirección visual | Damián Acuña | Puerta humana; bloquea el diseño final |
-| Pruebas moderadas de comprensión con representantes de las audiencias principales | Damián Acuña, con las notas de las sesiones (sin umbral fijo) | `AC-01`, `AC-02`, `JS-01`–`JS-09` |
+| Primera ronda de comprensión, en español con contenido en borrador, antes de optimizar, diseñar y traducir | Damián Acuña, con las notas de las sesiones | Evidencia temprana de `JS-01`–`JS-09` |
+| Ronda final de pruebas moderadas de comprensión con representantes de las audiencias principales | Damián Acuña, con las notas de las sesiones (sin umbral fijo) | `AC-01`, `AC-02`, `JS-01`–`JS-09` |
 | Recorrido completo con lector de pantalla y teclado | Revisión humana | `AC-07` |
 | Revisión profesional de inglés y portugués de Brasil | Servicio externo; registro aprobado | `AC-13` |
 | Revisión de neutralidad del español | Damián Acuña | `AC-13` |

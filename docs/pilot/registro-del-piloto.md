@@ -14,6 +14,8 @@ Versiones evaluadas: SpecKit 1.0.8, preset `software-humano` 2.0.0, conformidad 
 - **A2 · La constancia de procedencia hizo segura la sobrescritura** (2026-09-27). La huella de `.constitution-template.json` probó que la constitución previa era el andamiaje nativo sin cambios humanos.
 - **A3 · Los apéndices del manifiesto llegan a la especificación y al plan** (2026-09-27). Las secciones nativas (`Success Criteria`, `Edge Cases`) se conservan, y `conformidad.sh` reconoce las secciones del manifiesto: 7 con contenido y 0 sin declarar tras el plan.
 
+- **A4 · `analyze` encontró dos problemas reales antes de implementar** (2026-09-27). (1) Las pruebas con personas estaban solo al final, después de optimizar, diseñar y traducir; la tabla del preset citaba `F07` y `SH-AP`, que lo delatan. (2) Una regla de validación habría dejado la construcción rota durante nueve fases. Damián decidió agregar una ronda temprana de comprensión.
+
 ## B · Fricciones operativas
 
 - **B1 · PyYAML** (2026-09-27). Todo script de `.specify/scripts/bash/` necesita el shim; sin él, la resolución de plantillas falla. Documentado en `AGENTS.md`; sigue siendo un paso que el agente debe recordar.

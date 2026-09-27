@@ -32,6 +32,7 @@ Las seis del PRD §18.1: `inicio`, `manifiesto`, `principios`, `aplicacion`, `sp
 | `title[locale]`, `description[locale]` | Metadatos localizados (`FR-016`, `FR-019`) |
 | `blocks` | Referencias ordenadas a entradas editoriales o nodos canónicos |
 | `fr` | Requisitos que realiza |
+| `updatedAt` | **Derivado**: fecha del último cambio de contenido de la página según el historial de git, calculada en la construcción (`FR-012`) |
 
 ### Acto narrativo (`Act`)
 
@@ -82,8 +83,8 @@ Explicación, ejemplo, contraejemplo, prueba de decisión o texto de superficie.
 | Campo | Descripción |
 |---|---|
 | `id` | Estable, independiente del idioma |
-| `type` | `explanation`, `example`, `counterexample`, `decision-test`, `surface-text` |
-| `derivedFrom` | Nodo canónico o principio de origen (obligatorio para `explanation`, `example` y `counterexample`; `FR-017`) |
+| `type` | `explanation`, `example`, `counterexample`, `decision-test`, `inference` (inferencia o propuesta, `FR-017`), `surface-text` |
+| `derivedFrom` | Nodo canónico o principio de origen (obligatorio para `explanation`, `example`, `counterexample` e `inference`; `FR-017`) |
 | `text[locale]` | Texto por idioma |
 | `state[locale]` | Estado editorial por idioma |
 | `approvedBy[locale]`, `approvedAt[locale]` | Solo personas |
@@ -115,9 +116,9 @@ Etiquetas de navegación, selector, 404 y confirmaciones. Una clave y su texto e
 | `RV-03` | Toda relación apunta a una entidad existente (nodo, principio, `JS`, `FR`) | PRD §19.3 |
 | `RV-04` | Existen los diez principios, en orden, cada uno ligado a su ancla canónica | `FR-004`, `AC-03` |
 | `RV-05` | Cada principio tiene todas las entradas del contrato del PRD §17 | `FR-005`, `FR-006`, `AC-04` |
-| `RV-06` | Cada explicación, ejemplo y contraejemplo declara su origen | `FR-017` |
-| `RV-07` | Todo nodo canónico tiene traducción en `en` y `pt-BR` | `AC-13`, PRD §19.4 |
-| `RV-08` | Toda superficie y cadena de interfaz tiene texto en los tres idiomas | `FR-019`, `AC-13` |
+| `RV-06` | Cada explicación, ejemplo, contraejemplo e inferencia declara su origen | `FR-017` |
+| `RV-07` | Todo nodo canónico tiene una entrada de traducción en `en` y `pt-BR` (`pendiente` es válido; la aprobación la exige la comprobación previa a la publicación) | `AC-13`, PRD §19.4 |
+| `RV-08` | Toda superficie y cadena de interfaz tiene una entrada en los tres idiomas (`pendiente` es válido; la aprobación la exige la comprobación previa a la publicación) | `FR-019`, `AC-13` |
 | `RV-09` | La versión del estado de la adaptación coincide con la del preset instalado | RQ-09, `AC-09` |
 | `RV-10` | Si `published` es `false`, no hay `url` ni marcado de código fuente | `FR-010`, PRD §25.2 |
 | `RV-11` | No hay enlaces internos rotos en la salida construida | PRD §24.2 |
