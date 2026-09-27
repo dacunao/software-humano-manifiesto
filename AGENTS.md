@@ -122,71 +122,94 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Producto
 
-- **Nombre del proyecto**: `[completar]`
-- **Qué construye este repositorio**: `[una o dos frases]`
+- **Nombre del proyecto**: Sitio del Manifiesto de Software Humano (nombre público: «Software Humano», igual en los tres idiomas)
+- **Qué construye este repositorio**: el sitio web público, narrativo y documental del Manifiesto de Software Humano, en inglés general, español neutro latinoamericano y portugués de Brasil. Es además el primer proyecto real desarrollado con la adaptación Software Humano para SpecKit (PRD §12, objetivo 8).
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/[completar]`
-- **Versión**: `[completar]`
-- **Autoridad de producto**: `[nombre de la persona o función que puede modificar el alcance]`
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.0.md` (SHA-256 `e3ca0ac8fa2b0f6373e81dcb86f5e4d30f0f9cca9789a76ab6f51f6bbffe7c39`)
+- **Versión**: 1.0, fecha 2026-09-21. Su cabecera dice «Definición de producto para revisión»; la autoridad de producto la confirmó vigente, sin enmiendas, el 2026-09-27.
+- **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
 
 ## Identificadores que deben preservarse
 
-Enumera las familias de identificadores del fundamento que el agente debe conservar sin renumerar. Ejemplo de formato:
+Sin renumerar ni reagrupar:
 
-- `[JS-01]`–`[JS-nn]` — `[qué son]`
-- `[FR-001]`–`[FR-nnn]` — `[qué son]`
-- `[AC-01]`–`[AC-nn]` — `[qué son]`
+- `JS-01`–`JS-09` — Job Stories, con su circunstancia, motivación, resultado y evidencia de cumplimiento
+- `FR-001`–`FR-021` — requisitos funcionales
+- `AC-01`–`AC-16` — criterios de aceptación del producto
+- `P01`–`P10` — principios del núcleo, que aquí son además **contenido publicado** del sitio
 
-`[completar, o escribir «ninguna: el fundamento no usa identificadores estables»]`
+El orden de las Job Stories permite construir una narrativa; **no expresa prioridad ni autoriza a omitir ninguna** (PRD §15).
 
 ## Decisiones técnicas aprobadas
 
-Decisiones que el fundamento ya aprobó y que el agente **debe preservar**, no reabrir. Una tecnología aprobada solo puede reemplazarse mediante decisión humana y evidencia de incompatibilidad material; preferencia personal o conveniencia del agente no bastan.
+Aprobadas por el PRD y por la autoridad de producto. Se preservan, no se reabren. Astro y daisyUI solo se reemplazan mediante decisión explícita de producto y registro técnico de incompatibilidad material (PRD §24.6, regla de sustitución).
 
-- `[completar: lenguaje, framework, bibliotecas, fuente de contenido, restricciones de arquitectura]`
-- `[o escribir «ninguna: el plan puede proponerlas con fundamento»]`
+- **TypeScript estricto**; el build falla ante errores de tipado; se evita `any` (PRD §24.6, `AC-16`).
+- **Astro** con generación estática; islas solo para interacciones que lo requieran (PRD §24.6).
+- **daisyUI sobre Tailwind CSS**, subordinado a tokens propios y a WCAG 2.2 AA (PRD §24.6).
+- **YAML versionado en GitHub**, sin CMS, con esquema formal capaz de detener el build (PRD §19.3, `FR-021`).
+- **JSON-LD con Schema.org** generado desde la misma fuente que el contenido visible (PRD §25.3).
+- **Experiencia pública determinista**: sin función generativa para el visitante en la versión 1.0 (PRD §8.3, §22.1).
+- **El texto canónico en español se lee durante el build de su fuente protegida (`docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md`) y no se copia.** El YAML guarda solo metadatos, identificadores, relaciones y las traducciones. Si la fuente cambia, el build se detiene en lugar de publicar un texto distinto (PRD §19.1, §27.2, `AC-03`; decisión de la autoridad de producto, 2026-09-27).
+- **Plataforma**: Cloudflare Pages (decisión de la autoridad de producto).
+- **Medición**: Search Console y CrUX sin script, más Cloudflare Web Analytics como **único** script de terceros (decisión de la autoridad de producto; PRD §24.3, `FR-018`).
 
 ## Contrato lingüístico
 
-`[completar si el producto es multilingüe: idiomas, rutas, variante de cada idioma, reglas de traducción y revisión]`
-
-`[o escribir «no aplica: producto monolingüe»]`
+- Inglés general (`en`) es el idioma predeterminado y ocupa las rutas **sin prefijo**, incluida `/`; sin redirección automática por idioma del navegador (`FR-019`, `FR-020`).
+- Español neutro latinoamericano (`es`) en `/es/`; portugués de Brasil en `/pt-br/`, conservando `pt-BR` en metadatos (`FR-019`).
+- Las tres versiones cubren el alcance público completo; no son resúmenes (PRD §19.4).
+- El manifiesto original en español conserva la autoridad doctrinal; el canónico traducido se distingue del original y lo referencia (PRD §19.4).
+- La versión española usa `tú` y `ustedes`; prohíbe voseo, `vosotros` y localismos nacionales (PRD §21.6).
+- El cambio de idioma navega a una URL equivalente; una URL localizada explícita prevalece sobre la preferencia guardada (`FR-019`, `FR-020`).
+- No se publica una página en un idioma si conserva fragmentos no aprobados de otro (PRD §19.4).
+- **Aprobación lingüística**: la autoridad de producto aprueba el español; inglés y portugués de Brasil, mediante servicio profesional pagado. Sin registro de revisión aprobada, ese idioma no se publica.
 
 ## Herramientas del proyecto
 
-- **Gestor de paquetes y ejecutor**: `[completar, por ejemplo bun, pnpm, npm]`
-- **Otras restricciones de herramientas**: `[completar o «ninguna»]`
+- **Gestor de paquetes y ejecutor**: `bun`, con la versión fijada en `.bun-version`. Usa `bun install --frozen-lockfile`, `bun run`, `bunx` y `bun test`. No introduzcas `npm`, `yarn` ni `pnpm`, ni generes sus archivos de bloqueo.
+- **Otras restricciones de herramientas**: SpecKit se invoca con `tools/speckit/specify`. Antepón el shim de PyYAML al ejecutar los scripts de `.specify/scripts/bash/`.
 
 ## Protocolo de coordinación entre sesiones
 
-Complétalo **solo si más de un agente o sesión trabajará sobre este proyecto**, o sobre este y otro relacionado. Si trabaja una sola sesión, escribe «no aplica» y sáltalo.
-
-**Por qué existe.** La coordinación entre agentes puede desplazar a la autoridad humana de su propio proyecto sin que ningún mecanismo lo señale. Dos agentes que se verifican mutuamente detectan bien lo que uno ve y el otro no, y son **estructuralmente ciegos a lo que ambos omiten**. Que la persona siga dentro de la conversación es justamente lo que ninguno de los dos comprueba.
-
-No es hipotético: ocurrió durante el desarrollo de este método, entre dos sesiones que lo aplicaban deliberadamente. Está registrado como `M1` en `docs/proposals/` del repositorio del paquete.
-
-- **Sesiones previstas y su autoridad**: `[qué trabaja cada una y sobre qué repositorio; qué puede decidir cada una por sí misma]`
-- **Archivos que más de una sesión puede tocar**: `[los puntos de colisión reales, o «ninguno»]`
-- **Qué exige aprobación humana previa**: `[decisiones que ninguna sesión cierra por su cuenta, aunque estén de acuerdo entre ellas]`
-- **A quién reporta cada sesión**: `[la autoridad humana, siempre; nunca solo a la otra sesión]`
-
-**Regla de confirmación.** Ningún commit antes de que la autoridad humana haya visto de qué se trata. Un trabajo correcto que la persona no pudo seguir infringe `P10` aunque no contenga ningún error técnico.
-
-**Coordinación directa entre sesiones.** Cuando sea inevitable —dos sesiones tocando el mismo archivo—, pasa primero por la autoridad humana, que decide si hace falta. Acuerda antes de escribir, no después, y deja constancia de qué se acordó.
-
+Una sola sesión trabaja este repositorio. La sesión del piloto anterior (`/Users/damianacuna/proyectos/sitio-software-humano`) terminó su traspaso el 2026-09-27; ese repositorio es una referencia **de solo lectura**. Ninguna sesión escribe en el repositorio de la otra, y toda consulta entre ellas pasa antes por la autoridad humana.
 
 ## Archivos protegidos adicionales
 
-Más allá de los protegidos por el método, este proyecto protege:
+Ninguno. El PRD ya está protegido por el método como fundamento autorizado.
 
-- `[completar o «ninguno»]`
+## Registro del piloto
+
+PRD §12 (objetivo 8) y §23.4 obligan a registrar cualquier caso donde el agente intente imponer historias o prioridades, se pierda una Job Story o un requisito, se genere un documento innecesario, una directiva del núcleo no sea visible para el agente, el plan confunda secuencia con alcance o la implementación cumpla técnicamente pero contradiga la experiencia. Se registra también lo que funciona.
+
+Límite textual de PRD §23.4: «Esos hallazgos servirán para evaluar el preset; no autorizan a modificar el manifiesto o el paquete durante la ejecución sin una decisión separada.»
+
+El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secciones: **A**, donde el preset hizo lo que debía; **B**, fricciones operativas; **C**, defectos y mejoras candidatas. El archivo se crea con el primer hallazgo, no antes.
 
 ## Decisiones abiertas conocidas
 
-Decisiones que el fundamento declara pendientes de autoridad humana y que **no pueden cerrarse con valores predeterminados**:
+**Resueltas por la autoridad de producto** (PRD §29, confirmadas el 2026-09-27):
 
-- `[completar o «ninguna»]`
+| PRD §29 | Decisión |
+|---|---|
+| 1 · Nombre y dominio | «Software Humano», valor único en los tres idiomas · `softwarehumano.com` |
+| 2 · Autoría visible | Persona: Damián Acuña. No organización |
+| 3 · Identidad visual | Sin identidad previa vinculante; libertad de exploración. Se exploraron A, B y su síntesis C; **ninguna está aprobada** |
+| 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona |
+| 5 · Licencia | Texto y contenido editorial: CC BY 4.0 · código: MIT |
+| 6 · Acción pública sin preset publicado | **Solo estado, sin captura.** El estado de la adaptación se modela como dato; se declara disponibilidad futura, sin botón, formulario ni enlace sin destino |
+| 7 · Contacto | Alias de correo como `mailto:`, más Issues del repositorio para lo técnico. La dirección concreta no está definida |
+| 8 · Analítica | Ver «Decisiones técnicas aprobadas» |
+| 9 · Aprobación lingüística | Ver «Contrato lingüístico» |
+
+**Versiones del método que el PRD menciona** (decisión de la autoridad de producto, 2026-09-27): las versiones del método en PRD §2.1, §23.2 y `FR-009` —anexo 1.2, preset 1.0.0— describen su estado al 2026-09-21. El sitio publica la versión **realmente instalada y verificada**, modelada como dato, igual que el resto del estado de la adaptación. El PRD no se enmienda.
+
+**Sigue abierta; no se cierra con valores predeterminados:**
+
+- **PRD §29.10 · Publicación futura del preset**: repositorio, licencia y soporte. No bloquea especificar, planificar ni implementar. Bloquea publicar el preset y emitir el marcado `SoftwareSourceCode` (PRD §25.2).
+
+**Puertas humanas, que no son trabajo pendiente:** elección de la dirección visual (bloquea todo lo posterior), revisión profesional de inglés y portugués de Brasil, revisión de neutralidad del español y aceptación humana antes de publicar (PRD §34: aprobar el fundamento no autoriza publicar).
