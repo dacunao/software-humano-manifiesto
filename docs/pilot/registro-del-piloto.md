@@ -21,6 +21,8 @@ Versiones evaluadas: SpecKit 1.0.8, preset `software-humano` 2.0.0, conformidad 
 - **B1 · PyYAML** (2026-09-27). Todo script de `.specify/scripts/bash/` necesita el shim; sin él, la resolución de plantillas falla. Documentado en `AGENTS.md`; sigue siendo un paso que el agente debe recordar.
 - **B2 · `specify` sin descripción** (2026-09-27). El comando nativo exige una descripción y marca error si llega vacío. En este método la fuente es el PRD completo, así que el agente tuvo que interpretar la invocación vacía como «usa el fundamento». Funciona, pero depende de que el agente lea `AGENTS.md`.
 
+- **B3 · Una dependencia que ni `tasks` ni `analyze` vieron** (2026-09-27). Los actos de Inicio (fase 3) enlazan pasajes del manifiesto, pero la vista del manifiesto estaba en la fase 7. La regla `RV-11` detuvo la construcción y T063–T064 se adelantaron. Funcionó la red de seguridad; el orden de tareas no la anticipó.
+
 ## C · Defectos y mejoras candidatas
 
 - **C1 · La plantilla de especificación empuja prioridades y MVP** (2026-09-27; PRD §23.4, caso 1). El comentario nativo de `User Scenarios & Testing` pide historias «PRIORITIZED», «Priority: P1», «Independent Test» y un «viable MVP». El preset agrega el apéndice del manifiesto, pero no neutraliza ese comentario, que contradice `SH-FUND` y la regla 3 de `AGENTS.md`. Aquí no causó daño porque el agente lo detectó y lo registró en la especificación, pero la presión la ejerce la plantilla, no el agente. Candidata: que el preset anote o reemplace ese comentario.

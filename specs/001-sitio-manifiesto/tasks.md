@@ -108,11 +108,11 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-01` en spec.md; `AC-01` en las pruebas con personas (fases 12 y 16).
 
-- [ ] T034 [P] [US1] Escribir `tests/e2e/js01-problema.spec.ts` con los escenarios 1 y 2 de `JS-01`
-- [ ] T035 [US1] Redactar en `src/content/superficies/inicio.yaml` los actos 1 y 2 (PRD §16) en `es`, con voz impersonal y `state: borrador`. Usar como insumo `docs/design/copy-hero-borrador-2026-09-27.md`, reescribiéndolo en voz impersonal y corrigiendo cada hallazgo de su tabla de contraste; sin botón hacia una instalación
-- [ ] T036 [US1] Redactar en `src/content/superficies/inicio.yaml` la comparación del acto 2 como una entrada `example` y otra `counterexample`, con `derivedFrom` a `p02` y `p03`
-- [ ] T037 [P] [US1] Crear `src/components/Acto.astro` y `src/components/Comparacion.astro`: estáticos y accesibles, con orden de lectura correcto sin CSS y cada lado etiquetado como ejemplo (`FR-017`, PRD §21.4)
-- [ ] T038 [US1] Mostrar los actos 1 y 2 en `src/views/Inicio.astro`, con una idea dominante por acto y profundidad en `<details>`/`<summary>` con títulos explícitos (PRD §21.1, §21.3)
+- [X] T034 [P] [US1] Escribir `tests/e2e/js01-problema.spec.ts` con los escenarios 1 y 2 de `JS-01`
+- [X] T035 [US1] Redactar en `src/content/superficies/inicio.yaml` los actos 1 y 2 (PRD §16) en `es`, con voz impersonal y `state: borrador`. Usar como insumo `docs/design/copy-hero-borrador-2026-09-27.md`, reescribiéndolo en voz impersonal y corrigiendo cada hallazgo de su tabla de contraste; sin botón hacia una instalación
+- [X] T036 [US1] Redactar en `src/content/superficies/inicio.yaml` la comparación del acto 2 como una entrada `example` y otra `counterexample`, con `derivedFrom` a `p02` y `p03`
+- [X] T037 [P] [US1] Crear `src/components/Acto.astro` y `src/components/Comparacion.astro`: estáticos y accesibles, con orden de lectura correcto sin CSS y cada lado etiquetado como ejemplo (`FR-017`, PRD §21.4)
+- [X] T038 [US1] Mostrar los actos 1 y 2 en `src/views/Inicio.astro`, con una idea dominante por acto y profundidad en `<details>`/`<summary>` con títulos explícitos (PRD §21.1, §21.3)
 
 ---
 
@@ -180,8 +180,8 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 - [ ] T061 [P] [US5] Escribir `tests/e2e/js05-fuente.spec.ts` con los escenarios 1 a 3 de `JS-05`; `/es/manifiesto#cr03` debe llevar a `CR03`
 - [ ] T062 [P] [US5] Escribir `tests/unit/canon/integridad.test.ts`: el texto mostrado en `/es/manifiesto` reproduce todos los nodos del núcleo, sin diferencias (`AC-03`)
-- [ ] T063 [US5] Implementar `src/views/Manifiesto.astro`: núcleo íntegro desde los nodos. En `es`, la fuente directa. En `en` y `pt-BR`, la traducción de cada nodo, identificada como traducción y con referencia al original (PRD §19.4). Versión y fecha visibles (`FR-012`)
-- [ ] T064 [US5] Crear `src/components/IndiceManifiesto.astro`: índice de secciones e identificadores con las anclas de contracts/rutas.md
+- [X] T063 [US5] Implementar `src/views/Manifiesto.astro`: núcleo íntegro desde los nodos. En `es`, la fuente directa. En `en` y `pt-BR`, la traducción de cada nodo, identificada como traducción y con referencia al original (PRD §19.4). Versión y fecha visibles (`FR-012`)
+- [X] T064 [US5] Crear `src/components/IndiceManifiesto.astro`: índice de secciones e identificadores con las anclas de contracts/rutas.md
 - [ ] T065 [US5] Redactar `src/content/superficies/acerca.yaml` (borrador) e implementar `src/views/Acerca.astro` con:
   - origen, autoría (Damián Acuña) y versiones;
   - procedencia del contenido y licencias (CC BY 4.0 y MIT);

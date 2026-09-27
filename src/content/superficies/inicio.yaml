@@ -23,4 +23,80 @@ description:
 fr:
   - FR-001
   - FR-002
-sections: []
+sections:
+  # Acto 1 · PRD §16. Voz impersonal (decisión de la autoridad, 2026-09-27).
+  - id: acto-1
+    title:
+      es: { state: borrador, text: Construir software es cada vez más fácil }
+      en: &pend { state: pendiente }
+      pt-BR: *pend
+    question:
+      es: { state: borrador, text: 'Si construir dejó de ser el principal límite, ¿qué pasa a limitar la calidad?' }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-1-oportunidad
+          type: explanation
+          derivedFrom: proposito-del-documento-04
+          text:
+            es:
+              state: borrador
+              text: |-
+                La inteligencia artificial redujo el costo de generar código, pantallas, textos y automatizaciones. Equipos pequeños construyen hoy productos que antes exigían organizaciones enteras, y una buena decisión puede llegar a manos de las personas en días.
+
+                Esa velocidad es una oportunidad real. También mueve el límite: cuando construir deja de ser lo difícil, lo difícil pasa a ser decidir qué merece existir y cómo debe sentirse al usarlo.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [proposito-del-documento-03, proposito-del-documento-04]
+
+  # Acto 2 · PRD §16. Idea central tomada del borrador de copy del hero (docs/design/), reescrita en voz impersonal.
+  - id: acto-2
+    title:
+      es: { state: borrador, text: Poder construir no significa deber construir }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-2-costo
+          type: explanation
+          derivedFrom: doctrina-para-desarrollo-con-ia-05
+          text:
+            es:
+              state: borrador
+              text: |-
+                Construir software se abarató. El costo no desapareció: pasó a quien lo usa. Se paga en atención, en aprendizaje y en decisiones que nadie vino a tomar.
+
+                Cuando construir es barato, una idea débil se convierte rápido en una implementación extensa, y una ambigüedad de producto en un comportamiento que parece terminado. El código puede ser correcto y aun así dejar en manos de la persona la complejidad que el equipo no resolvió.
+            en: *pend
+            pt-BR: *pend
+      - kind: comparacion
+        sistema:
+          id: inicio-acto-2-sistema
+          type: counterexample
+          derivedFrom: p03
+          text:
+            es:
+              state: borrador
+              text: |-
+                **Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo.
+            en: *pend
+            pt-BR: *pend
+        persona:
+          id: inicio-acto-2-persona
+          type: example
+          derivedFrom: p02
+          text:
+            es:
+              state: borrador
+              text: |-
+                **Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [doctrina-para-desarrollo-con-ia-03, doctrina-para-desarrollo-con-ia-05]

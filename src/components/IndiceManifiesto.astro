@@ -1,0 +1,23 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { renderLinea } from '../lib/canon/render';
+import { canon, markdownDe, nodo, t } from '../lib/sitio';
+
+/** Índice de secciones del núcleo con anclas estables (T063, contracts/rutas.md). */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const items = canon.secciones.map((s) => {
+  const md = markdownDe(nodo(s.ancla), locale);
+  return { ancla: s.ancla, titulo: md.markdown.replace(/^#{1,6}\s+/, ''), lang: md.lang };
+});
+---
+<nav class="indice-manifiesto" aria-labelledby="indice-titulo">
+  <h2 id="indice-titulo">{t('manifiesto.indice', locale)}</h2>
+  <ol>
+    {items.map((i) => (
+      <li><a href={`#${i.ancla}`} lang={i.lang !== locale ? i.lang : undefined} set:html={renderLinea(i.titulo)} /></li>
+    ))}
+  </ol>
+</nav>

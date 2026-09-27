@@ -112,7 +112,7 @@ export function leerCanon(): Canon {
       if (h.depth === 2) {
         seccion = claveSeccion(h.text);
         posicion = 0;
-        secciones.push({ clave: seccion, titulo: h.text, ancla: anclaPendiente ?? seccion });
+        secciones.push({ clave: seccion, titulo: h.text, ancla: anclaPendiente ?? `${seccion}-01` });
       }
     }
 
