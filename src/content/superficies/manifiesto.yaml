@@ -1,0 +1,26 @@
+# Superficie «manifiesto» (PRD §18.1). Títulos y descripciones en borrador.
+id: manifiesto
+title:
+  es:
+    state: borrador
+    text: Manifiesto
+  en:
+    state: borrador
+    text: Manifesto
+  pt-BR:
+    state: borrador
+    text: Manifesto
+description:
+  es:
+    state: borrador
+    text: El núcleo del Manifiesto de Software Humano, íntegro, con sus identificadores y anclas estables.
+  en:
+    state: borrador
+    text: The core of the Human Software Manifesto in full, with its identifiers and stable anchors.
+  pt-BR:
+    state: borrador
+    text: O núcleo do Manifesto de Software Humano na íntegra, com seus identificadores e âncoras estáveis.
+fr:
+  - FR-003
+  - FR-012
+sections: []

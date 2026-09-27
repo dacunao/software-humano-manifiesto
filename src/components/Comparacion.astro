@@ -1,0 +1,16 @@
+---
+import type { Entrada, Locale } from '../lib/contenido/esquemas';
+import BloqueEditorial from './BloqueEditorial.astro';
+
+/** Comparación estática y accesible: legible en orden sin CSS y sin JavaScript (FR-015, PRD §21.3). */
+interface Props {
+  sistema: Entrada;
+  persona: Entrada;
+  locale: Locale;
+}
+const { sistema, persona, locale } = Astro.props;
+---
+<div class="comparacion">
+  <BloqueEditorial entrada={sistema} locale={locale} />
+  <BloqueEditorial entrada={persona} locale={locale} />
+</div>

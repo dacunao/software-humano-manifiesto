@@ -51,28 +51,28 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 ### Fuente canónica
 
-- [ ] T010 [P] Escribir `tests/unit/canon/lector.test.ts`, que compruebe: (a) los 18 anclajes existentes (`sh-index`, `p01`–`p10`, `sh-fund`, `sh-stop`, `sh-score`, `sh-ap`, `sh-gov`, `sh-done`, `sh-pocket`) son ids de nodo; (b) `D01`–`D06`, `F01`–`F08`, `A01`–`A08`, `STOP01`–`STOP07`, `CR01`–`CR08`, `O01`–`O09` y `V01`–`V12` generan anclas en minúsculas; (c) los ids son deterministas entre dos lecturas; (d) una huella distinta produce el error `RV-01`; (e) la concatenación del `source` de todos los nodos reproduce el archivo, con los espacios normalizados
-- [ ] T011 Implementar `src/lib/canon/lector.ts`, que lea `docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md` y devuelva `CanonicalNode[]` con `id`, `kind` (encabezado, párrafo, lista, tabla o cita), `section`, `hash` y `source`, según [data-model.md](data-model.md); **nunca reescribe ni parafrasea** el texto
-- [ ] T012 Implementar `src/lib/canon/huella.ts` con la huella fijada `9beef610c0b1e81ebc8bb56d3c1a07aa1e1bb75e330ba4cddc1eebdc60fa68dc` y el error `RV-01`: «La fuente canónica cambió. Registra la versión y describe los cambios antes de actualizar (PRD §27.2)»
-- [ ] T013 Crear `src/components/NodoCanonico.astro` y `src/components/CitaCanonica.astro`: muestran un nodo con su ancla y lo marcan semánticamente como cita canónica, con el atributo `lang` correcto (`FR-017`)
+- [X] T010 [P] Escribir `tests/unit/canon/lector.test.ts`, que compruebe: (a) los 18 anclajes existentes (`sh-index`, `p01`–`p10`, `sh-fund`, `sh-stop`, `sh-score`, `sh-ap`, `sh-gov`, `sh-done`, `sh-pocket`) son ids de nodo; (b) `D01`–`D06`, `F01`–`F08`, `A01`–`A08`, `STOP01`–`STOP07`, `CR01`–`CR08`, `O01`–`O09` y `V01`–`V12` generan anclas en minúsculas; (c) los ids son deterministas entre dos lecturas; (d) una huella distinta produce el error `RV-01`; (e) la concatenación del `source` de todos los nodos reproduce el archivo, con los espacios normalizados
+- [X] T011 Implementar `src/lib/canon/lector.ts`, que lea `docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md` y devuelva `CanonicalNode[]` con `id`, `kind` (encabezado, párrafo, lista, tabla o cita), `section`, `hash` y `source`, según [data-model.md](data-model.md); **nunca reescribe ni parafrasea** el texto
+- [X] T012 Implementar `src/lib/canon/huella.ts` con la huella fijada `9beef610c0b1e81ebc8bb56d3c1a07aa1e1bb75e330ba4cddc1eebdc60fa68dc` y el error `RV-01`: «La fuente canónica cambió. Registra la versión y describe los cambios antes de actualizar (PRD §27.2)»
+- [X] T013 Crear `src/components/NodoCanonico.astro` y `src/components/CitaCanonica.astro`: muestran un nodo con su ancla y lo marcan semánticamente como cita canónica, con el atributo `lang` correcto (`FR-017`)
 
 ### Modelo de contenido y validación
 
-- [ ] T014 Definir `src/content.config.ts` con las colecciones `sitio`, `estadoAdaptacion`, `superficies`, `principios`, `traduccionesCanon` e `interfaz`, y estas restricciones literales de [data-model.md](data-model.md):
+- [X] T014 Definir los esquemas (implementados en `src/lib/contenido/esquemas.ts`; ver ajustes de research.md) con las colecciones `sitio`, `estadoAdaptacion`, `superficies`, `principios`, `traduccionesCanon` e `interfaz`, y estas restricciones literales de [data-model.md](data-model.md):
   - estado editorial ∈ {`borrador`, `aprobado`};
   - estado de traducción ∈ {`pendiente`, `borrador`, `en revisión`, `aprobada`, `potencialmente obsoleta`};
   - `approvedBy` y `approvedAt` obligatorios cuando el estado es aprobado;
   - `type` ∈ {`explanation`, `example`, `counterexample`, `decision-test`, `inference`, `surface-text`};
   - `derivedFrom` obligatorio para `explanation`, `example`, `counterexample` e `inference`
-- [ ] T015 [P] Crear `src/content/sitio.yaml` con nombre «Software Humano», dominio `softwarehumano.com`, autor `Person` Damián Acuña, licencias CC BY 4.0 (contenido) y MIT (código), y contacto `email: null` e `issues: null`, porque ambos están pendientes de la autoridad
-- [ ] T016 [P] Crear `src/content/estado-adaptacion.yaml` con `version: 2.0.0`, `verifiedAt: 2026-09-27`, `published: false` y `limitations` en borrador, **sin** `url` ni `sha256`
-- [ ] T017 Generar `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` con una entrada `state: pendiente` y su `sourceHash` por cada nodo canónico (a partir de T011), para que `RV-07` se cumpla desde el inicio; T083 las completa
-- [ ] T018 [P] Escribir `tests/unit/validacion/reglas.test.ts`, con un caso que falle por cada regla `RV-02`–`RV-10`, usando datos de prueba en `tests/fixtures/contenido/`
-- [ ] T019 Implementar `src/lib/validacion/reglas.ts` con `RV-02`–`RV-10`, redactadas como en data-model.md (`RV-07` y `RV-08` exigen que exista una entrada por nodo o texto e idioma; `pendiente` es válido y la aprobación la exige T023); cada error nombra la regla, el archivo y la entidad. `RV-09` lee la versión desde `.specify/presets/.registry`, en `presets["software-humano"].version`
-- [ ] T020 Implementar `src/lib/validacion/salida.ts` con `RV-11` (enlaces internos rotos) y `RV-12` (el JSON-LD solo describe entidades presentes en el HTML) sobre `dist/`, con su prueba en `tests/unit/validacion/salida.test.ts`
-- [ ] T021 Implementar `src/lib/validacion/visibilidad.ts`: informa, por superficie, la proporción de palabras visibles sin abrir ningún `<details>` (RQ-13). Es informe, **no umbral**
-- [ ] T022 Crear `src/integrations/validacion.ts` y registrarla en `astro.config.mts`: al iniciar la construcción ejecuta `RV-01`–`RV-10`; al terminar, `RV-11`, `RV-12` y el informe de RQ-13. Cualquier fallo detiene la construcción
-- [ ] T023 Implementar `src/lib/validacion/publicacion.ts` y `scripts/check-publish.ts`. Exige:
+- [X] T015 [P] Crear `src/content/sitio.yaml` con nombre «Software Humano», dominio `softwarehumano.com`, autor `Person` Damián Acuña, licencias CC BY 4.0 (contenido) y MIT (código), y contacto `email: null` e `issues: null`, porque ambos están pendientes de la autoridad
+- [X] T016 [P] Crear `src/content/estado-adaptacion.yaml` con `version: 2.0.0`, `verifiedAt: 2026-09-27`, `published: false` y `limitations` en borrador, **sin** `url` ni `sha256`
+- [X] T017 Generar `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` con una entrada `state: pendiente` y su `sourceHash` por cada nodo canónico (a partir de T011), para que `RV-07` se cumpla desde el inicio; T083 las completa
+- [X] T018 [P] Escribir `tests/unit/validacion/reglas.test.ts`, con un caso que falle por cada regla `RV-02`–`RV-10`, usando datos de prueba en `tests/fixtures/contenido/`
+- [X] T019 Implementar `src/lib/validacion/reglas.ts` con `RV-02`–`RV-10`, redactadas como en data-model.md (`RV-07` y `RV-08` exigen que exista una entrada por nodo o texto e idioma; `pendiente` es válido y la aprobación la exige T023); cada error nombra la regla, el archivo y la entidad. `RV-09` lee la versión desde `.specify/presets/.registry`, en `presets["software-humano"].version`
+- [X] T020 Implementar `src/lib/validacion/salida.ts` con `RV-11` (enlaces internos rotos) y `RV-12` (el JSON-LD solo describe entidades presentes en el HTML) sobre `dist/`, con su prueba en `tests/unit/validacion/salida.test.ts`
+- [X] T021 Implementar `src/lib/validacion/visibilidad.ts`: informa, por superficie, la proporción de palabras visibles sin abrir ningún `<details>` (RQ-13). Es informe, **no umbral**
+- [X] T022 Crear `src/integrations/validacion.ts` y registrarla en `astro.config.mts`: al iniciar la construcción ejecuta `RV-01`–`RV-10`; al terminar, `RV-11`, `RV-12` y el informe de RQ-13. Cualquier fallo detiene la construcción
+- [X] T023 Implementar `src/lib/validacion/publicacion.ts` y `scripts/check-publish.ts`. Exige:
   - todas las entradas publicables aprobadas en su idioma;
   - ninguna traducción `potencialmente obsoleta`;
   - `sitio.contact.email` presente;
@@ -82,21 +82,21 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 ### Rutas, idioma y armazón
 
-- [ ] T024 [P] Escribir `tests/unit/i18n/rutas.test.ts`: cubre la tabla completa de [contracts/rutas.md](contracts/rutas.md), las equivalencias entre las 48 páginas y las tres 404, y `hreflang` recíprocos con `x-default` apuntando a `en`
-- [ ] T025 Implementar `src/lib/i18n/idiomas.ts` (conjunto cerrado `en`, `es`, `pt-BR`, con sus rutas y nombres) y `src/lib/i18n/rutas.ts` (nombres de ruta de contracts/rutas.md, `rutaEquivalente(ruta, idioma)` y `alternas(ruta)`)
-- [ ] T026 Crear `src/content/interfaz/*.yaml` con las cadenas de interfaz: navegación, selector («English», «Español», «Português (Brasil)»), 404, confirmaciones de copiar y compartir, e idioma activo. Redactar en `es`, con borradores `en` y `pt-BR`, todo `state: borrador`
-- [ ] T027 Crear `src/layouts/Base.astro` con:
+- [X] T024 [P] Escribir `tests/unit/i18n/rutas.test.ts`: cubre la tabla completa de [contracts/rutas.md](contracts/rutas.md), las equivalencias entre las 48 páginas y las tres 404, y `hreflang` recíprocos con `x-default` apuntando a `en`
+- [X] T025 Implementar `src/lib/i18n/idiomas.ts` (conjunto cerrado `en`, `es`, `pt-BR`, con sus rutas y nombres) y `src/lib/i18n/rutas.ts` (nombres de ruta de contracts/rutas.md, `rutaEquivalente(ruta, idioma)` y `alternas(ruta)`)
+- [X] T026 Crear `src/content/interfaz/*.yaml` con las cadenas de interfaz: navegación, selector («English», «Español», «Português (Brasil)»), 404, confirmaciones de copiar y compartir, e idioma activo. Redactar en `es`, con borradores `en` y `pt-BR`, todo `state: borrador`
+- [X] T027 Crear `src/layouts/Base.astro` con:
   - `lang`, URL canónica, `hreflang` (de T025), título y descripción localizados, y Open Graph;
   - enlace para saltar al contenido y landmarks;
   - navegación global;
   - pie con la versión vigente del núcleo y la licencia del contenido;
   - el script de Cloudflare Web Analytics, solo si existe su token de producción (pendiente) y sin cookies (`FR-018`)
-- [ ] T028 Crear `src/components/NavegacionGlobal.astro` con los destinos del PRD §18.2: inicio, manifiesto, principios, aplicación, SpecKit con su estado, versión vigente y selector de idioma. Funciona sin JavaScript, tiene una sola acción principal por contexto y no muestra símbolos de ancla al pasar el cursor
-- [ ] T029 Crear `src/components/BloqueEditorial.astro`: muestra el tipo de entrada (explicación, ejemplo, contraejemplo, prueba de decisión, inferencia o propuesta, estado técnico confirmado) de forma visible y semántica, y enlaza su `derivedFrom` (`FR-017`)
-- [ ] T030 Crear las vistas `src/views/{Inicio,Manifiesto,Principios,Principio,Aplicacion,Speckit,Acerca,NoEncontrada}.astro` y las rutas de `src/pages/` según contracts/rutas.md (`en` sin prefijo, `es/` y `pt-br/`), con `getStaticPaths` para `p01`–`p10`
-- [ ] T031 Crear `src/pages/404.astro`, `src/pages/es/404.astro` y `src/pages/pt-br/404.astro`: orientadoras, en el idioma de la ruta, con salidas a inicio, manifiesto y principios (PRD §24.2)
-- [ ] T032 Implementar `src/lib/semantica/jsonld.ts` con `WebSite`, `WebPage` y `Person` generados desde `sitio.yaml`, inyectados en `Base.astro`, y su prueba en `tests/unit/semantica/jsonld.test.ts`
-- [ ] T033 Crear `src/pages/sitemap.xml.ts` con las 48 páginas de contenido y sus alternas por idioma, sin las 404 (`FR-016`)
+- [X] T028 Crear `src/components/NavegacionGlobal.astro` con los destinos del PRD §18.2: inicio, manifiesto, principios, aplicación, SpecKit con su estado, versión vigente y selector de idioma. Funciona sin JavaScript, tiene una sola acción principal por contexto y no muestra símbolos de ancla al pasar el cursor
+- [X] T029 Crear `src/components/BloqueEditorial.astro`: muestra el tipo de entrada (explicación, ejemplo, contraejemplo, prueba de decisión, inferencia o propuesta, estado técnico confirmado) de forma visible y semántica, y enlaza su `derivedFrom` (`FR-017`)
+- [X] T030 Crear las vistas `src/views/{Inicio,Manifiesto,Principios,Principio,Aplicacion,Speckit,Acerca,NoEncontrada}.astro` y las rutas de `src/pages/` según contracts/rutas.md (`en` sin prefijo, `es/` y `pt-br/`), con `getStaticPaths` para `p01`–`p10`
+- [X] T031 Crear `src/pages/404.astro`, `src/pages/es/404.astro` y `src/pages/pt-br/404.astro`: orientadoras, en el idioma de la ruta, con salidas a inicio, manifiesto y principios (PRD §24.2)
+- [X] T032 Implementar `src/lib/semantica/jsonld.ts` con `WebSite`, `WebPage` y `Person` generados desde `sitio.yaml`, inyectados en `Base.astro`, y su prueba en `tests/unit/semantica/jsonld.test.ts`
+- [X] T033 Crear `src/pages/sitemap.xml.ts` con las 48 páginas de contenido y sus alternas por idioma, sin las 404 (`FR-016`)
 
 **Checkpoint**: la construcción valida la fuente canónica y el contenido, las 48 rutas existen en tres idiomas y el armazón funciona sin JavaScript.
 

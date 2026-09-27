@@ -1,0 +1,48 @@
+# P06 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p06).
+id: P06
+canonicalNode: p06
+jobStories:
+  - JS-01
+  - JS-03
+  - JS-04
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p06-tension
+    type: explanation
+    derivedFrom: p06
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p06-significado
+    type: explanation
+    derivedFrom: p06
+    text: *a1
+  consecuencia:
+    id: p06-consecuencia
+    type: explanation
+    derivedFrom: p06
+    text: *a1
+  ejemplo:
+    id: p06-ejemplo
+    type: example
+    derivedFrom: p06
+    text: *a1
+  contraejemplo:
+    id: p06-contraejemplo
+    type: counterexample
+    derivedFrom: p06
+    text: *a1
+  prueba:
+    id: p06-prueba
+    type: decision-test
+    derivedFrom: p06
+    text: *a1

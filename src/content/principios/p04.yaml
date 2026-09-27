@@ -1,0 +1,48 @@
+# P04 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p04).
+id: P04
+canonicalNode: p04
+jobStories:
+  - JS-03
+  - JS-04
+  - JS-09
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p04-tension
+    type: explanation
+    derivedFrom: p04
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p04-significado
+    type: explanation
+    derivedFrom: p04
+    text: *a1
+  consecuencia:
+    id: p04-consecuencia
+    type: explanation
+    derivedFrom: p04
+    text: *a1
+  ejemplo:
+    id: p04-ejemplo
+    type: example
+    derivedFrom: p04
+    text: *a1
+  contraejemplo:
+    id: p04-contraejemplo
+    type: counterexample
+    derivedFrom: p04
+    text: *a1
+  prueba:
+    id: p04-prueba
+    type: decision-test
+    derivedFrom: p04
+    text: *a1

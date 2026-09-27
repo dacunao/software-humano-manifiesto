@@ -1,0 +1,18 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { renderMarkdown } from '../lib/canon/render';
+import { contenido, t, texto } from '../lib/sitio';
+
+/** Estado de la adaptación como dato (RQ-09). Sin botón, formulario ni enlace mientras no esté publicada (FR-010). */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const e = contenido.estado;
+const limites = texto(e.limitations, locale);
+---
+<div class="estado-adaptacion" data-tipo="estado-tecnico">
+  <p class="rotulo-contenido">{t('contenido.estadoTecnico', locale)}</p>
+  <p>{t('pie.estadoPreset', locale, { version: e.version })}</p>
+  <div class="lectura" lang={limites.lang !== locale ? limites.lang : undefined} set:html={renderMarkdown(limites.texto)} />
+</div>

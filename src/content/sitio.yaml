@@ -1,0 +1,18 @@
+# Datos del sitio (data-model.md · Sitio). Decisiones de la autoridad de producto, 2026-09-27.
+name: Software Humano
+domain: softwarehumano.com
+author:
+  type: Person
+  name: Damián Acuña
+  url: null # Pendiente: solo si Damián la aprueba (T107)
+licenses:
+  content: CC BY 4.0
+  code: MIT
+contact:
+  email: null # Pendiente de la autoridad: alias de correo (PRD §29.7)
+  issues: null # Pendiente: aún no existe repositorio público
+core:
+  version: '2.1'
+  date: '2026-09'
+analytics:
+  cloudflareToken: null # Pendiente: se obtiene al configurar Cloudflare Pages

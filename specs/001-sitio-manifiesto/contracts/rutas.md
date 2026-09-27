@@ -4,11 +4,11 @@ Interfaz pública del sitio: lo que una persona, un buscador o un agente puede e
 
 ## Rutas
 
-Misma topología en los tres idiomas; los nombres de ruta están localizados. `pNN` va en minúsculas y no depende del nombre del principio.
+Misma topología en los tres idiomas; los nombres de ruta están localizados. `pNN` va en minúsculas y no depende del nombre del principio. **Ninguna ruta termina en barra**, tampoco las portadas `/es` y `/pt-br` (ajuste de implementación del 2026-09-27, antes de publicar nada).
 
 | Superficie | `en` | `es` | `pt-BR` |
 |---|---|---|---|
-| Inicio | `/` | `/es/` | `/pt-br/` |
+| Inicio | `/` | `/es` | `/pt-br` |
 | Manifiesto | `/manifesto` | `/es/manifiesto` | `/pt-br/manifesto` |
 | Principios | `/principles` | `/es/principios` | `/pt-br/principios` |
 | Un principio | `/principles/p01` … `/principles/p10` | `/es/principios/p01` … | `/pt-br/principios/p01` … |
@@ -33,7 +33,7 @@ Al pasar el cursor sobre un título **no** aparece ningún símbolo; copiar el e
 | Situación | Resultado |
 |---|---|
 | Primera visita a `/`, cualquier idioma del navegador | Inglés; sin redirección (`FR-020`) |
-| Visita a `/` con preferencia `es` guardada y JavaScript activo | Lleva a `/es/` (RQ-04) |
+| Visita a `/` con preferencia `es` guardada y JavaScript activo | Lleva a `/es` (RQ-04) |
 | Visita a `/` con preferencia guardada, sin JavaScript | Inglés |
 | Cualquier otra URL, con cualquier preferencia | Se respeta la URL (`FR-019`) |
 | Cambio de idioma en `/es/principios/p03` | Navega a `/principles/p03` o `/pt-br/principios/p03`, con la misma ancla si la hay |

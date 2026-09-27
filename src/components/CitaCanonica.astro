@@ -1,0 +1,24 @@
+---
+import type { NodoCanonico } from '../lib/canon/lector';
+import NodoCanonicoC from './NodoCanonico.astro';
+
+interface Props {
+  nodos: { nodo: NodoCanonico; markdown: string }[];
+  /** Rótulo visible que distingue la cita canónica de la explicación (FR-017). */
+  rotulo: string;
+  /** Idioma del texto citado (es original, o el de la traducción). */
+  lang: string;
+  /** Enlace al pasaje en la superficie Manifiesto. */
+  fuente: string;
+  textoFuente: string;
+}
+
+const { nodos, rotulo, lang, fuente, textoFuente } = Astro.props;
+---
+<figure class="cita-canonica" data-tipo="cita-canonica">
+  <figcaption class="rotulo-contenido">{rotulo}</figcaption>
+  <blockquote lang={lang} cite={fuente} class="lectura">
+    {nodos.map(({ nodo, markdown }) => <NodoCanonicoC nodo={nodo} markdown={markdown} desplazamiento={1} />)}
+  </blockquote>
+  <p class="fuente"><a href={fuente}>{textoFuente}</a></p>
+</figure>

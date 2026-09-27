@@ -1,0 +1,26 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { renderLinea } from '../lib/canon/render';
+import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
+import { canonicoDePrincipio, markdownDe } from '../lib/sitio';
+
+/** P01–P10 en orden canónico, con identificador y nombre canónico (FR-004, PRD §28: no son lemas). */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const items = PRINCIPIOS.map((pid) => {
+  const { nombre } = canonicoDePrincipio(pid);
+  const md = markdownDe(nombre, locale);
+  return { pid, nombre: md.markdown.replace(/^#{1,6}\s+/, ''), lang: md.lang };
+});
+---
+<ol class="lista-principios">
+  {items.map((i) => (
+    <li>
+      <a href={ruta({ tipo: 'principio', principio: i.pid }, locale)}>
+        <code>{i.pid.toUpperCase()}</code> <span lang={i.lang !== locale ? i.lang : undefined} set:html={renderLinea(i.nombre)} />
+      </a>
+    </li>
+  ))}
+</ol>

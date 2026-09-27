@@ -1,0 +1,10 @@
+---
+import Principio from '../../../views/Principio.astro';
+import { PRINCIPIOS } from '../../../lib/i18n/rutas';
+
+export function getStaticPaths() {
+  return PRINCIPIOS.map((p) => ({ params: { p } }));
+}
+const { p } = Astro.params;
+---
+<Principio locale="pt-BR" pid={p} />

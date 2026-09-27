@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import type { Locale } from '../lib/contenido/esquemas';
+import { IDIOMAS } from '../lib/i18n/idiomas';
+import { alternas, ruta, type Pagina } from '../lib/i18n/rutas';
+import { grafo, paginaWeb, persona, sitioWeb, type NodoLD } from '../lib/semantica/jsonld';
+import { contenido, hayBorrador, t, URL_SITIO } from '../lib/sitio';
+import NavegacionGlobal from '../components/NavegacionGlobal.astro';
+
+interface Props {
+  locale: Locale;
+  pagina: Pagina;
+  titulo: string;
+  descripcion: string;
+  /** Nodos JSON-LD propios de la página, además de WebPage. */
+  ld?: NodoLD[];
+  /** Pie: fecha del último cambio de la página (FR-012). */
+  actualizado?: string;
+}
+const { locale, pagina, titulo, descripcion, ld = [], actualizado } = Astro.props;
+const lang = IDIOMAS[locale].hreflang;
+const url = `${URL_SITIO}${ruta(pagina, locale)}`;
+const esInicio = pagina.tipo === 'inicio';
+const tituloCompleto = esInicio ? titulo : `${titulo} · ${contenido.sitio.name}`;
+const nodosLD: NodoLD[] = [
+  ...(esInicio ? [sitioWeb(contenido.sitio, url, lang)] : []),
+  paginaWeb(titulo, url, lang, descripcion),
+  ...(pagina.tipo === '404' ? [] : ld),
+];
+const token = contenido.sitio.analytics.cloudflareToken;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    {pagina.tipo !== '404' && <link rel="canonical" href={url} />}
+    {pagina.tipo !== '404' && alternas(pagina).map((a) => <link rel="alternate" hreflang={a.hreflang} href={`${URL_SITIO}${a.ruta}`} />)}
+    {pagina.tipo === '404' && <meta name="robots" content="noindex" />}
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:locale" content={lang.replace('-', '_')} />
+    <meta name="author" content={persona(contenido.sitio)['name'] as string} />
+    <script type="application/ld+json" set:html={grafo(nodosLD)} />
+    {token && <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })} />}
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">{t('nav.saltar', locale)}</a>
+    <header class="cabecera">
+      <p class="marca"><a href={ruta({ tipo: 'inicio' }, locale)}>{contenido.sitio.name}</a></p>
+      <NavegacionGlobal locale={locale} pagina={pagina} />
+    </header>
+    {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
+    <main id="contenido" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="pie">
+      <slot name="pie" />
+      {actualizado && <p>{t('pie.actualizado', locale, { fecha: actualizado })}</p>}
+      <p>{t('pie.licencia', locale)}</p>
+    </footer>
+  </body>
+</html>

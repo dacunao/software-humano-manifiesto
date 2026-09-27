@@ -1,0 +1,491 @@
+# Cadenas de interfaz (T026). Redactadas por el agente: todas en borrador hasta la aprobación de Damián Acuña.
+nav.saltar:
+  es:
+    state: borrador
+    text: Ir al contenido
+  en:
+    state: borrador
+    text: Skip to content
+  pt-BR:
+    state: borrador
+    text: Ir para o conteúdo
+nav.principal:
+  es:
+    state: borrador
+    text: Navegación principal
+  en:
+    state: borrador
+    text: Main navigation
+  pt-BR:
+    state: borrador
+    text: Navegação principal
+nav.inicio:
+  es:
+    state: borrador
+    text: Inicio
+  en:
+    state: borrador
+    text: Home
+  pt-BR:
+    state: borrador
+    text: Início
+nav.manifiesto:
+  es:
+    state: borrador
+    text: Manifiesto
+  en:
+    state: borrador
+    text: Manifesto
+  pt-BR:
+    state: borrador
+    text: Manifesto
+nav.principios:
+  es:
+    state: borrador
+    text: Principios
+  en:
+    state: borrador
+    text: Principles
+  pt-BR:
+    state: borrador
+    text: Princípios
+nav.aplicacion:
+  es:
+    state: borrador
+    text: Aplicación
+  en:
+    state: borrador
+    text: In practice
+  pt-BR:
+    state: borrador
+    text: Aplicação
+nav.speckit:
+  es:
+    state: borrador
+    text: SpecKit
+  en:
+    state: borrador
+    text: SpecKit
+  pt-BR:
+    state: borrador
+    text: SpecKit
+nav.acerca:
+  es:
+    state: borrador
+    text: Acerca de
+  en:
+    state: borrador
+    text: About
+  pt-BR:
+    state: borrador
+    text: Sobre
+nav.estadoSpeckit:
+  es:
+    state: borrador
+    text: no publicada
+  en:
+    state: borrador
+    text: not published
+  pt-BR:
+    state: borrador
+    text: não publicada
+nav.version:
+  es:
+    state: borrador
+    text: Núcleo v{version}
+  en:
+    state: borrador
+    text: Core v{version}
+  pt-BR:
+    state: borrador
+    text: Núcleo v{version}
+idioma.rotulo:
+  es:
+    state: borrador
+    text: Idioma
+  en:
+    state: borrador
+    text: Language
+  pt-BR:
+    state: borrador
+    text: Idioma
+idioma.restablecer:
+  es:
+    state: borrador
+    text: Olvidar mi elección de idioma
+  en:
+    state: borrador
+    text: Forget my language choice
+  pt-BR:
+    state: borrador
+    text: Esquecer minha escolha de idioma
+idioma.restablecido:
+  es:
+    state: borrador
+    text: Se olvidó tu elección de idioma. La portada volverá a mostrarse en inglés.
+  en:
+    state: borrador
+    text: Your language choice was forgotten. The home page will show in English again.
+  pt-BR:
+    state: borrador
+    text: Sua escolha de idioma foi esquecida. A página inicial voltará a aparecer em inglês.
+aviso.borrador:
+  es:
+    state: borrador
+    text: "Versión preliminar: parte de este contenido está en borrador y aún no fue aprobado."
+  en:
+    state: borrador
+    text: "Preliminary version: some of this content is a draft and has not been approved yet."
+  pt-BR:
+    state: borrador
+    text: "Versão preliminar: parte deste conteúdo é um rascunho e ainda não foi aprovada."
+contenido.canonico:
+  es:
+    state: borrador
+    text: Texto canónico
+  en:
+    state: borrador
+    text: Canonical text
+  pt-BR:
+    state: borrador
+    text: Texto canônico
+contenido.traduccion:
+  es:
+    state: borrador
+    text: Traducción del texto canónico. El original en español conserva la autoridad.
+  en:
+    state: borrador
+    text: Translation of the canonical text. The Spanish original remains authoritative.
+  pt-BR:
+    state: borrador
+    text: Tradução do texto canônico. O original em espanhol mantém a autoridade.
+contenido.traduccionPendiente:
+  es:
+    state: borrador
+    text: La traducción de este pasaje aún no está disponible; se muestra el original en español.
+  en:
+    state: borrador
+    text: The translation of this passage is not available yet; the Spanish original is shown.
+  pt-BR:
+    state: borrador
+    text: A tradução deste trecho ainda não está disponível; mostra-se o original em espanhol.
+contenido.explicacion:
+  es:
+    state: borrador
+    text: Explicación
+  en:
+    state: borrador
+    text: Explanation
+  pt-BR:
+    state: borrador
+    text: Explicação
+contenido.ejemplo:
+  es:
+    state: borrador
+    text: Ejemplo
+  en:
+    state: borrador
+    text: Example
+  pt-BR:
+    state: borrador
+    text: Exemplo
+contenido.contraejemplo:
+  es:
+    state: borrador
+    text: Contraejemplo
+  en:
+    state: borrador
+    text: Counterexample
+  pt-BR:
+    state: borrador
+    text: Contraexemplo
+contenido.prueba:
+  es:
+    state: borrador
+    text: Prueba de decisión
+  en:
+    state: borrador
+    text: Decision test
+  pt-BR:
+    state: borrador
+    text: Teste de decisão
+contenido.inferencia:
+  es:
+    state: borrador
+    text: Inferencia o propuesta
+  en:
+    state: borrador
+    text: Inference or proposal
+  pt-BR:
+    state: borrador
+    text: Inferência ou proposta
+contenido.estadoTecnico:
+  es:
+    state: borrador
+    text: Estado técnico confirmado
+  en:
+    state: borrador
+    text: Confirmed technical status
+  pt-BR:
+    state: borrador
+    text: Status técnico confirmado
+contenido.origen:
+  es:
+    state: borrador
+    text: Se basa en
+  en:
+    state: borrador
+    text: Based on
+  pt-BR:
+    state: borrador
+    text: Baseia-se em
+contenido.fuente:
+  es:
+    state: borrador
+    text: Leer el pasaje en el manifiesto
+  en:
+    state: borrador
+    text: Read the passage in the manifesto
+  pt-BR:
+    state: borrador
+    text: Ler o trecho no manifesto
+contenido.profundizar:
+  es:
+    state: borrador
+    text: Profundizar
+  en:
+    state: borrador
+    text: Go deeper
+  pt-BR:
+    state: borrador
+    text: Aprofundar
+compartir.copiar:
+  es:
+    state: borrador
+    text: Copiar enlace
+  en:
+    state: borrador
+    text: Copy link
+  pt-BR:
+    state: borrador
+    text: Copiar link
+compartir.copiado:
+  es:
+    state: borrador
+    text: Enlace copiado
+  en:
+    state: borrador
+    text: Link copied
+  pt-BR:
+    state: borrador
+    text: Link copiado
+compartir.enlace:
+  es:
+    state: borrador
+    text: Enlace a esta sección
+  en:
+    state: borrador
+    text: Link to this section
+  pt-BR:
+    state: borrador
+    text: Link para esta seção
+compartir.error:
+  es:
+    state: borrador
+    text: No se pudo copiar. El enlace está visible junto al título.
+  en:
+    state: borrador
+    text: Could not copy. The link is visible next to the heading.
+  pt-BR:
+    state: borrador
+    text: Não foi possível copiar. O link está visível ao lado do título.
+pie.licencia:
+  es:
+    state: borrador
+    text: Texto y contenido editorial bajo CC BY 4.0. Código bajo MIT.
+  en:
+    state: borrador
+    text: Text and editorial content under CC BY 4.0. Code under MIT.
+  pt-BR:
+    state: borrador
+    text: Texto e conteúdo editorial sob CC BY 4.0. Código sob MIT.
+pie.procedencia:
+  es:
+    state: borrador
+    text: Procedencia
+  en:
+    state: borrador
+    text: Provenance
+  pt-BR:
+    state: borrador
+    text: Procedência
+pie.actualizado:
+  es:
+    state: borrador
+    text: Actualizado el {fecha}
+  en:
+    state: borrador
+    text: Updated on {fecha}
+  pt-BR:
+    state: borrador
+    text: Atualizado em {fecha}
+pie.estadoPreset:
+  es:
+    state: borrador
+    text: "Adaptación SpecKit {version}: no publicada"
+  en:
+    state: borrador
+    text: "SpecKit adaptation {version}: not published"
+  pt-BR:
+    state: borrador
+    text: "Adaptação SpecKit {version}: não publicada"
+principio.declaracion:
+  es:
+    state: borrador
+    text: Declaración
+  en:
+    state: borrador
+    text: Statement
+  pt-BR:
+    state: borrador
+    text: Declaração
+principio.tension:
+  es:
+    state: borrador
+    text: Tensión
+  en:
+    state: borrador
+    text: Tension
+  pt-BR:
+    state: borrador
+    text: Tensão
+principio.significado:
+  es:
+    state: borrador
+    text: Significado
+  en:
+    state: borrador
+    text: Meaning
+  pt-BR:
+    state: borrador
+    text: Significado
+principio.consecuencia:
+  es:
+    state: borrador
+    text: Consecuencia
+  en:
+    state: borrador
+    text: Consequence
+  pt-BR:
+    state: borrador
+    text: Consequência
+principio.ejemplo:
+  es:
+    state: borrador
+    text: Ejemplo
+  en:
+    state: borrador
+    text: Example
+  pt-BR:
+    state: borrador
+    text: Exemplo
+principio.contraejemplo:
+  es:
+    state: borrador
+    text: Contraejemplo
+  en:
+    state: borrador
+    text: Counterexample
+  pt-BR:
+    state: borrador
+    text: Contraexemplo
+principio.prueba:
+  es:
+    state: borrador
+    text: Prueba de decisión
+  en:
+    state: borrador
+    text: Decision test
+  pt-BR:
+    state: borrador
+    text: Teste de decisão
+principio.fuente:
+  es:
+    state: borrador
+    text: Fuente
+  en:
+    state: borrador
+    text: Source
+  pt-BR:
+    state: borrador
+    text: Fonte
+principio.anterior:
+  es:
+    state: borrador
+    text: Principio anterior
+  en:
+    state: borrador
+    text: Previous principle
+  pt-BR:
+    state: borrador
+    text: Princípio anterior
+principio.siguiente:
+  es:
+    state: borrador
+    text: Principio siguiente
+  en:
+    state: borrador
+    text: Next principle
+  pt-BR:
+    state: borrador
+    text: Próximo princípio
+manifiesto.indice:
+  es:
+    state: borrador
+    text: Índice
+  en:
+    state: borrador
+    text: Contents
+  pt-BR:
+    state: borrador
+    text: Índice
+manifiesto.version:
+  es:
+    state: borrador
+    text: Versión {version} · {fecha}
+  en:
+    state: borrador
+    text: Version {version} · {fecha}
+  pt-BR:
+    state: borrador
+    text: Versão {version} · {fecha}
+manifiesto.original:
+  es:
+    state: borrador
+    text: Leer el original en español
+  en:
+    state: borrador
+    text: Read the Spanish original
+  pt-BR:
+    state: borrador
+    text: Ler o original em espanhol
+error404.titulo:
+  es:
+    state: borrador
+    text: No encontramos esta página
+  en:
+    state: borrador
+    text: This page could not be found
+  pt-BR:
+    state: borrador
+    text: Não encontramos esta página
+error404.texto:
+  es:
+    state: borrador
+    text: "La dirección no existe o cambió. Estos son los puntos de partida del sitio:"
+  en:
+    state: borrador
+    text: "The address does not exist or has changed. These are the starting points of the site:"
+  pt-BR:
+    state: borrador
+    text: "O endereço não existe ou mudou. Estes são os pontos de partida do site:"

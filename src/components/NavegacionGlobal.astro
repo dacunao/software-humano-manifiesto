@@ -1,0 +1,35 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { ruta, type Pagina } from '../lib/i18n/rutas';
+import { contenido, t } from '../lib/sitio';
+import SelectorIdioma from './SelectorIdioma.astro';
+
+interface Props {
+  locale: Locale;
+  pagina: Pagina;
+}
+const { locale, pagina } = Astro.props;
+const destinos = [
+  { tipo: 'inicio', clave: 'nav.inicio' },
+  { tipo: 'manifiesto', clave: 'nav.manifiesto' },
+  { tipo: 'principios', clave: 'nav.principios' },
+  { tipo: 'aplicacion', clave: 'nav.aplicacion' },
+  { tipo: 'speckit', clave: 'nav.speckit' },
+  { tipo: 'acerca', clave: 'nav.acerca' },
+] as const;
+const actual = pagina.tipo === 'principio' ? 'principios' : pagina.tipo;
+---
+<nav aria-label={t('nav.principal', locale)} class="navegacion-global">
+  <ul>
+    {destinos.map((d) => (
+      <li>
+        <a href={ruta({ tipo: d.tipo }, locale)} aria-current={actual === d.tipo ? 'page' : undefined}>
+          {t(d.clave, locale)}
+          {d.tipo === 'speckit' && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="version"><a href={ruta({ tipo: 'manifiesto' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
+  <SelectorIdioma locale={locale} pagina={pagina} />
+</nav>

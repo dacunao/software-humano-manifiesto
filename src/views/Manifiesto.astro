@@ -1,0 +1,10 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import Superficie from './Superficie.astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+<Superficie id="manifiesto" locale={locale} />

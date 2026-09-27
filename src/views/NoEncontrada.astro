@@ -1,0 +1,24 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import Base from '../layouts/Base.astro';
+import { ruta } from '../lib/i18n/rutas';
+import { t } from '../lib/sitio';
+
+/** 404 orientadora, en el idioma de la ruta (PRD §24.2). */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const salidas = [
+  { tipo: 'inicio', clave: 'nav.inicio' },
+  { tipo: 'manifiesto', clave: 'nav.manifiesto' },
+  { tipo: 'principios', clave: 'nav.principios' },
+] as const;
+---
+<Base locale={locale} pagina={{ tipo: '404' }} titulo={t('error404.titulo', locale)} descripcion={t('error404.texto', locale)}>
+  <h1>{t('error404.titulo', locale)}</h1>
+  <p>{t('error404.texto', locale)}</p>
+  <ul>
+    {salidas.map((s) => <li><a href={ruta({ tipo: s.tipo }, locale)}>{t(s.clave, locale)}</a></li>)}
+  </ul>
+</Base>

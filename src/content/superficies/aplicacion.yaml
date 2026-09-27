@@ -1,0 +1,25 @@
+# Superficie «aplicacion» (PRD §18.1). Títulos y descripciones en borrador.
+id: aplicacion
+title:
+  es:
+    state: borrador
+    text: Aplicación
+  en:
+    state: borrador
+    text: In practice
+  pt-BR:
+    state: borrador
+    text: Aplicação
+description:
+  es:
+    state: borrador
+    text: "Cómo el manifiesto se vuelve práctica: fundamento, flujo, artefactos, contrato del agente, detenciones y terminado."
+  en:
+    state: borrador
+    text: "How the manifesto becomes practice: product foundation, flow, artifacts, agent contract, stops and definition of done."
+  pt-BR:
+    state: borrador
+    text: "Como o manifesto se torna prática: fundamento, fluxo, artefatos, contrato do agente, paradas e definição de pronto."
+fr:
+  - FR-007
+sections: []

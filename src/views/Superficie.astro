@@ -1,0 +1,29 @@
+---
+import type { IdSuperficie, Locale } from '../lib/contenido/esquemas';
+import type { NodoLD } from '../lib/semantica/jsonld';
+import Base from '../layouts/Base.astro';
+import Secciones from '../components/Secciones.astro';
+import { fechaActualizacion, superficie, texto } from '../lib/sitio';
+
+/** Vista común de una superficie: encabezado, secciones y ranura para lo propio de cada una. */
+interface Props {
+  id: IdSuperficie;
+  locale: Locale;
+  ld?: NodoLD[];
+  archivos?: string[];
+}
+const { id, locale, ld = [], archivos = [] } = Astro.props;
+const s = superficie(id);
+const titulo = texto(s.title, locale);
+const descripcion = texto(s.description, locale);
+const actualizado = fechaActualizacion([`src/content/superficies/${id}.yaml`, ...archivos]);
+---
+<Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado}>
+  <header class="encabezado-superficie">
+    <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h1>
+    <p class="entradilla" lang={descripcion.lang !== locale ? descripcion.lang : undefined}>{descripcion.texto}</p>
+  </header>
+  <slot name="antes" />
+  <Secciones secciones={s.sections} locale={locale} />
+  <slot />
+</Base>

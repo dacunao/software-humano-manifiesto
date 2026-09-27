@@ -96,3 +96,16 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 ---
 
 **NEEDS CLARIFICATION pendientes**: ninguno. Queda un dato que la autoridad debe aportar antes de publicar: **la dirección concreta del alias de correo** de contacto (decisión PRD §29.7). No bloquea planificar ni implementar; la comprobación previa a la publicación la exige.
+
+---
+
+## Ajustes de implementación · 2026-09-27
+
+Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD §2.3. No cambian alcance ni experiencia.
+
+- **RQ-07 · Colecciones**: los esquemas se validan con un lector propio (`src/lib/contenido/`: YAML con `yaml` y Zod de `astro/zod`) en lugar de las colecciones de contenido de Astro. Así `RV-02`–`RV-10` se prueban con `bun test` sin levantar Astro. El comportamiento exigido no cambia: un esquema inválido detiene la construcción.
+- **RQ-01 · Lector de Markdown**: Astro 7 reemplazó su procesador por uno interno en versión 0.4 sin API estable. Se usa `marked` 18 (GFM), cuyo lexer conserva el texto original de cada bloque; la prueba T010 (e) demuestra que los 341 nodos reproducen el archivo.
+- **TypeScript 6**: `astro check` aún no admite TypeScript 7.
+- **Rutas sin barra final**: todas, incluidas `/es` y `/pt-br` (contracts/rutas.md actualizado antes de publicar nada).
+- **Esqueletos `pendiente`**: además de las traducciones (T017), superficies y principios nacen como esqueletos `pendiente` (`scripts/andamiar-contenido.ts`) para que `RV-04`, `RV-05` y `RV-08` se cumplan desde la fase 2; las fases 3 a 11 los redactan.
+- **Aviso de borrador**: mientras un idioma tenga contenido sin aprobar, cada página lo declara en un aviso visible (`P07`). Desaparece solo cuando todo está aprobado.

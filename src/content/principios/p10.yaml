@@ -1,0 +1,51 @@
+# P10 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p10).
+id: P10
+canonicalNode: p10
+jobStories:
+  - JS-03
+  - JS-05
+  - JS-06
+  - JS-07
+  - JS-08
+  - JS-09
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p10-tension
+    type: explanation
+    derivedFrom: p10
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p10-significado
+    type: explanation
+    derivedFrom: p10
+    text: *a1
+  consecuencia:
+    id: p10-consecuencia
+    type: explanation
+    derivedFrom: p10
+    text: *a1
+  ejemplo:
+    id: p10-ejemplo
+    type: example
+    derivedFrom: p10
+    text: *a1
+  contraejemplo:
+    id: p10-contraejemplo
+    type: counterexample
+    derivedFrom: p10
+    text: *a1
+  prueba:
+    id: p10-prueba
+    type: decision-test
+    derivedFrom: p10
+    text: *a1

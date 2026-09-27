@@ -1,0 +1,46 @@
+# P09 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p09).
+id: P09
+canonicalNode: p09
+jobStories:
+  - JS-03
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p09-tension
+    type: explanation
+    derivedFrom: p09
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p09-significado
+    type: explanation
+    derivedFrom: p09
+    text: *a1
+  consecuencia:
+    id: p09-consecuencia
+    type: explanation
+    derivedFrom: p09
+    text: *a1
+  ejemplo:
+    id: p09-ejemplo
+    type: example
+    derivedFrom: p09
+    text: *a1
+  contraejemplo:
+    id: p09-contraejemplo
+    type: counterexample
+    derivedFrom: p09
+    text: *a1
+  prueba:
+    id: p09-prueba
+    type: decision-test
+    derivedFrom: p09
+    text: *a1

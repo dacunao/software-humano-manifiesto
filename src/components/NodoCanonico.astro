@@ -1,0 +1,23 @@
+---
+import type { NodoCanonico } from '../lib/canon/lector';
+import { renderMarkdown, renderLinea } from '../lib/canon/render';
+
+interface Props {
+  nodo: NodoCanonico;
+  /** Markdown a mostrar: el original en español o su traducción. */
+  markdown: string;
+  /** Desplaza los niveles de encabezado para encajar en la página (mínimo h2). */
+  desplazamiento?: number;
+}
+
+const { nodo, markdown, desplazamiento = 0 } = Astro.props;
+const anclasInternas = nodo.anclas.filter((a) => a !== nodo.id);
+const nivel = Math.min(6, Math.max(2, (nodo.nivel ?? 2) + desplazamiento));
+const Encabezado = `h${nivel}` as 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+const textoEncabezado = markdown.replace(/^#{1,6}\s+/, '');
+---
+{nodo.kind === 'encabezado' ? (
+  <Encabezado id={nodo.id} class="nodo-canonico" set:html={renderLinea(textoEncabezado)} />
+) : (
+  <div id={nodo.id} class="nodo-canonico" data-tipo={nodo.kind} set:html={renderMarkdown(markdown, anclasInternas)} />
+)}

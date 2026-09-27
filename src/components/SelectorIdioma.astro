@@ -1,0 +1,28 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { IDIOMAS, ORDEN_IDIOMAS } from '../lib/i18n/idiomas';
+import { ruta, type Pagina } from '../lib/i18n/rutas';
+import { t } from '../lib/sitio';
+
+interface Props {
+  locale: Locale;
+  pagina: Pagina;
+}
+const { locale, pagina } = Astro.props;
+---
+<div class="selector-idioma" data-selector-idioma>
+  <p id="rotulo-idioma" class="rotulo">{t('idioma.rotulo', locale)}</p>
+  <ul aria-labelledby="rotulo-idioma">
+    {ORDEN_IDIOMAS.map((l) => (
+      <li>
+        <a
+          href={ruta(pagina, l)}
+          hreflang={IDIOMAS[l].hreflang}
+          lang={IDIOMAS[l].hreflang}
+          data-idioma={l}
+          aria-current={l === locale ? 'true' : undefined}
+        >{IDIOMAS[l].label}</a>
+      </li>
+    ))}
+  </ul>
+</div>

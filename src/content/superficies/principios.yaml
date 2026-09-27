@@ -1,0 +1,25 @@
+# Superficie «principios» (PRD §18.1). Títulos y descripciones en borrador.
+id: principios
+title:
+  es:
+    state: borrador
+    text: Principios
+  en:
+    state: borrador
+    text: Principles
+  pt-BR:
+    state: borrador
+    text: Princípios
+description:
+  es:
+    state: borrador
+    text: Los diez principios del manifiesto, en su orden canónico.
+  en:
+    state: borrador
+    text: The ten principles of the manifesto, in their canonical order.
+  pt-BR:
+    state: borrador
+    text: Os dez princípios do manifesto, em sua ordem canônica.
+fr:
+  - FR-004
+sections: []

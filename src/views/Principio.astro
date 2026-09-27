@@ -1,0 +1,25 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import Base from '../layouts/Base.astro';
+import { renderLinea } from '../lib/canon/render';
+import { canonicoDePrincipio, fechaActualizacion, markdownDe } from '../lib/sitio';
+
+interface Props {
+  locale: Locale;
+  pid: string;
+}
+const { locale, pid } = Astro.props;
+const { nombre, frase } = canonicoDePrincipio(pid);
+const titulo = markdownDe(nombre, locale);
+const descripcion = markdownDe(frase, locale);
+const limpio = titulo.markdown.replace(/^#{1,6}\s+/, '');
+---
+<Base
+  locale={locale}
+  pagina={{ tipo: 'principio', principio: pid }}
+  titulo={`${pid.toUpperCase()} · ${limpio}`}
+  descripcion={descripcion.markdown}
+  actualizado={fechaActualizacion([`src/content/principios/${pid}.yaml`])}
+>
+  <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}><code>{pid.toUpperCase()}</code> <span set:html={renderLinea(limpio)} /></h1>
+</Base>

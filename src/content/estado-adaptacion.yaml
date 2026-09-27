@@ -1,0 +1,24 @@
+# Estado de la adaptación SpecKit como dato (RQ-09). RV-09 compara `version` con el preset
+# instalado en .specify/presets/.registry; RV-10 prohíbe url y sha256 mientras no esté publicada.
+version: 2.0.0
+verifiedAt: '2026-09-27'
+published: false
+limitations:
+  es:
+    state: borrador
+    text: >-
+      Es una adaptación independiente, sin afiliación ni respaldo de GitHub. Se aplica hoy en un
+      único proyecto real, este sitio. Su validación es técnica: todavía no hay evidencia de uso
+      en otros equipos.
+  en:
+    state: borrador
+    text: >-
+      It is an independent adaptation, not affiliated with or endorsed by GitHub. It is currently
+      applied to a single real project: this site. Its validation is technical; there is no
+      evidence yet of use by other teams.
+  pt-BR:
+    state: borrador
+    text: >-
+      É uma adaptação independente, sem afiliação nem endosso do GitHub. Hoje é aplicada em um
+      único projeto real, este site. Sua validação é técnica: ainda não há evidência de uso por
+      outras equipes.

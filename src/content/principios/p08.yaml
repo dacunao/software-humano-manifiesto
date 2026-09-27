@@ -1,0 +1,48 @@
+# P08 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p08).
+id: P08
+canonicalNode: p08
+jobStories:
+  - JS-03
+  - JS-04
+  - JS-05
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p08-tension
+    type: explanation
+    derivedFrom: p08
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p08-significado
+    type: explanation
+    derivedFrom: p08
+    text: *a1
+  consecuencia:
+    id: p08-consecuencia
+    type: explanation
+    derivedFrom: p08
+    text: *a1
+  ejemplo:
+    id: p08-ejemplo
+    type: example
+    derivedFrom: p08
+    text: *a1
+  contraejemplo:
+    id: p08-contraejemplo
+    type: counterexample
+    derivedFrom: p08
+    text: *a1
+  prueba:
+    id: p08-prueba
+    type: decision-test
+    derivedFrom: p08
+    text: *a1

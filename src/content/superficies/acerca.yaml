@@ -1,0 +1,25 @@
+# Superficie «acerca» (PRD §18.1). Títulos y descripciones en borrador.
+id: acerca
+title:
+  es:
+    state: borrador
+    text: Acerca de
+  en:
+    state: borrador
+    text: About
+  pt-BR:
+    state: borrador
+    text: Sobre
+description:
+  es:
+    state: borrador
+    text: Origen, autoría, versiones, procedencia y licencias del sitio.
+  en:
+    state: borrador
+    text: Origin, authorship, versions, provenance and licenses of the site.
+  pt-BR:
+    state: borrador
+    text: Origem, autoria, versões, procedência e licenças do site.
+fr:
+  - FR-012
+sections: []

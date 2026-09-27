@@ -1,0 +1,50 @@
+# P02 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p02).
+id: P02
+canonicalNode: p02
+jobStories:
+  - JS-01
+  - JS-02
+  - JS-03
+  - JS-04
+  - JS-09
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p02-tension
+    type: explanation
+    derivedFrom: p02
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p02-significado
+    type: explanation
+    derivedFrom: p02
+    text: *a1
+  consecuencia:
+    id: p02-consecuencia
+    type: explanation
+    derivedFrom: p02
+    text: *a1
+  ejemplo:
+    id: p02-ejemplo
+    type: example
+    derivedFrom: p02
+    text: *a1
+  contraejemplo:
+    id: p02-contraejemplo
+    type: counterexample
+    derivedFrom: p02
+    text: *a1
+  prueba:
+    id: p02-prueba
+    type: decision-test
+    derivedFrom: p02
+    text: *a1

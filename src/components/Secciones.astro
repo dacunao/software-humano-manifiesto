@@ -1,0 +1,62 @@
+---
+import type { Bloque, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
+import { ruta } from '../lib/i18n/rutas';
+import { markdownDe, nodo, t, texto } from '../lib/sitio';
+import BloqueEditorial from './BloqueEditorial.astro';
+import CitaCanonica from './CitaCanonica.astro';
+import Comparacion from './Comparacion.astro';
+import ListaPrincipios from './ListaPrincipios.astro';
+import EstadoAdaptacion from './EstadoAdaptacion.astro';
+
+interface Props {
+  secciones: SeccionSuperficie[];
+  locale: Locale;
+}
+const { secciones, locale } = Astro.props;
+
+const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
+  const nodos = b.nodos.map((id) => {
+    const n = nodo(id);
+    return { nodo: n, ...markdownDe(n, locale) };
+  });
+  return {
+    nodos,
+    lang: nodos.every((x) => x.lang === locale) ? locale : 'es',
+    fuente: `${ruta({ tipo: 'manifiesto' }, locale)}#${b.nodos[0]}`,
+  };
+};
+---
+{secciones.map((sec) => {
+  const titulo = texto(sec.title, locale);
+  const pregunta = sec.question ? texto(sec.question, locale) : undefined;
+  const bloques = (lista: Bloque[]) =>
+    lista.map((b) => {
+      if (b.kind === 'entrada') return <BloqueEditorial entrada={b.entrada} locale={locale} />;
+      if (b.kind === 'comparacion') return <Comparacion sistema={b.sistema} persona={b.persona} locale={locale} />;
+      if (b.kind === 'principios') return <ListaPrincipios locale={locale} />;
+      if (b.kind === 'estado-adaptacion') return <EstadoAdaptacion locale={locale} />;
+      const c = cita(b);
+      return (
+        <CitaCanonica
+          nodos={c.nodos}
+          lang={c.lang}
+          rotulo={t(c.lang === 'es' || locale === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale)}
+          fuente={c.fuente}
+          textoFuente={t('contenido.fuente', locale)}
+        />
+      );
+    });
+  return (
+    <section id={sec.id} aria-labelledby={`${sec.id}-titulo`} class="seccion">
+      <h2 id={`${sec.id}-titulo`} lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h2>
+      {pregunta?.texto && <p class="pregunta" lang={pregunta.lang !== locale ? pregunta.lang : undefined}>{pregunta.texto}</p>}
+      {bloques(sec.blocks)}
+      {sec.depth.length > 0 && (
+        <details class="profundidad">
+          <summary>{t('contenido.profundizar', locale)}: {titulo.texto}</summary>
+          {bloques(sec.depth)}
+        </details>
+      )}
+    </section>
+  );
+})}

@@ -1,0 +1,26 @@
+# Superficie «inicio» (PRD §18.1). Títulos y descripciones en borrador.
+id: inicio
+title:
+  es:
+    state: borrador
+    text: Software Humano
+  en:
+    state: borrador
+    text: Software Humano
+  pt-BR:
+    state: borrador
+    text: Software Humano
+description:
+  es:
+    state: borrador
+    text: Por qué más capacidad para construir software no garantiza más progreso para las personas, y qué hacer al respecto.
+  en:
+    state: borrador
+    text: Why more capacity to build software does not guarantee more progress for people, and what to do about it.
+  pt-BR:
+    state: borrador
+    text: Por que mais capacidade de construir software não garante mais progresso para as pessoas, e o que fazer a respeito.
+fr:
+  - FR-001
+  - FR-002
+sections: []

@@ -1,0 +1,27 @@
+# Superficie «speckit» (PRD §18.1). Títulos y descripciones en borrador.
+id: speckit
+title:
+  es:
+    state: borrador
+    text: SpecKit
+  en:
+    state: borrador
+    text: SpecKit
+  pt-BR:
+    state: borrador
+    text: SpecKit
+description:
+  es:
+    state: borrador
+    text: Una implementación de referencia independiente del manifiesto sobre SpecKit, su estado real y sus límites.
+  en:
+    state: borrador
+    text: An independent reference implementation of the manifesto on SpecKit, its actual status and its limits.
+  pt-BR:
+    state: borrador
+    text: Uma implementação de referência independente do manifesto sobre o SpecKit, seu status real e seus limites.
+fr:
+  - FR-008
+  - FR-009
+  - FR-010
+sections: []

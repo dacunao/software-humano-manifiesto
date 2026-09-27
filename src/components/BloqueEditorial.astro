@@ -1,0 +1,34 @@
+---
+import type { Entrada, Locale } from '../lib/contenido/esquemas';
+import { renderMarkdown } from '../lib/canon/render';
+import { ruta } from '../lib/i18n/rutas';
+import { texto, t } from '../lib/sitio';
+
+interface Props {
+  entrada: Entrada;
+  locale: Locale;
+  /** Oculta el rótulo de tipo cuando el encabezado de la sección ya lo nombra. */
+  sinRotulo?: boolean;
+}
+const { entrada, locale, sinRotulo = false } = Astro.props;
+const ROTULO: Record<Entrada['type'], string | undefined> = {
+  explanation: 'contenido.explicacion',
+  example: 'contenido.ejemplo',
+  counterexample: 'contenido.contraejemplo',
+  'decision-test': 'contenido.prueba',
+  inference: 'contenido.inferencia',
+  'surface-text': undefined,
+};
+const clave = ROTULO[entrada.type];
+const tx = texto(entrada.text, locale);
+const origen = entrada.derivedFrom ? `${ruta({ tipo: 'manifiesto' }, locale)}#${entrada.derivedFrom}` : undefined;
+---
+{tx.texto && (
+  <div class="bloque-editorial" data-tipo={entrada.type} data-id={entrada.id} lang={tx.lang !== locale ? tx.lang : undefined}>
+    {clave && !sinRotulo && <p class="rotulo-contenido">{t(clave, locale)}</p>}
+    <div class="lectura" set:html={renderMarkdown(tx.texto)} />
+    {origen && entrada.type !== 'surface-text' && (
+      <p class="origen"><a href={origen}>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></a></p>
+    )}
+  </div>
+)}

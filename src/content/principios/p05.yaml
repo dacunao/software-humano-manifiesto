@@ -1,0 +1,49 @@
+# P05 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p05).
+id: P05
+canonicalNode: p05
+jobStories:
+  - JS-03
+  - JS-04
+  - JS-08
+  - JS-09
+requirements:
+  - FR-004
+  - FR-005
+  - FR-006
+entries:
+  tension:
+    id: p05-tension
+    type: explanation
+    derivedFrom: p05
+    text: &a1
+      es:
+        state: pendiente
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+  significado:
+    id: p05-significado
+    type: explanation
+    derivedFrom: p05
+    text: *a1
+  consecuencia:
+    id: p05-consecuencia
+    type: explanation
+    derivedFrom: p05
+    text: *a1
+  ejemplo:
+    id: p05-ejemplo
+    type: example
+    derivedFrom: p05
+    text: *a1
+  contraejemplo:
+    id: p05-contraejemplo
+    type: counterexample
+    derivedFrom: p05
+    text: *a1
+  prueba:
+    id: p05-prueba
+    type: decision-test
+    derivedFrom: p05
+    text: *a1

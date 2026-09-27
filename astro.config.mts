@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import validacion from './src/integrations/validacion';
 
 // Sitio estático. Inglés sin prefijo; español en /es/ y portugués de Brasil en /pt-br/
 // (FR-019). Sin redirección por idioma del navegador (FR-020): las rutas localizadas
@@ -14,5 +15,6 @@ export default defineConfig({
     locales: ['en', 'es', { path: 'pt-br', codes: ['pt-BR'] }],
     routing: { prefixDefaultLocale: false, redirectToDefaultLocale: false },
   },
+  integrations: [validacion()],
   vite: { plugins: [tailwindcss()] },
 });
