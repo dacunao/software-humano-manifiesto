@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { stringify } from 'yaml';
 import { DIR_CONTENIDO } from '../src/lib/contenido/cargar';
 
-const pend = { es: { state: 'pendiente' }, en: { state: 'pendiente' }, 'pt-BR': { state: 'pendiente' } };
+const pend = () => ({ es: { state: 'pendiente' }, en: { state: 'pendiente' }, 'pt-BR': { state: 'pendiente' } });
 const loc = (es: string, en: string, pt: string) => ({
   es: { state: 'borrador', text: es }, en: { state: 'borrador', text: en }, 'pt-BR': { state: 'borrador', text: pt },
 });
@@ -34,10 +34,10 @@ for (let i = 1; i <= 10; i++) {
   const ruta = join(DIR_CONTENIDO, 'principios', `${a}.yaml`);
   if (existsSync(ruta)) continue;
   const entries = Object.fromEntries(
-    Object.entries(TIPOS).map(([k, type]) => [k, { id: `${a}-${k}`, type, derivedFrom: a, text: pend }]),
+    Object.entries(TIPOS).map(([k, type]) => [k, { id: `${a}-${k}`, type, derivedFrom: a, text: pend() }]),
   );
   writeFileSync(ruta, `# ${id} · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#${a}).\n` +
-    stringify({ id, canonicalNode: a, jobStories: JS_POR_PRINCIPIO[id], requirements: ['FR-004', 'FR-005', 'FR-006'], entries }, { lineWidth: 0 }));
+    stringify({ id, canonicalNode: a, jobStories: JS_POR_PRINCIPIO[id], requirements: ['FR-004', 'FR-005', 'FR-006'], entries }, { lineWidth: 0, aliasDuplicateObjects: false }));
 }
 
 const SUPERFICIES: [string, string[], [string, string, string], [string, string, string]][] = [
@@ -70,6 +70,6 @@ for (const [id, fr, t, d] of SUPERFICIES) {
   const ruta = join(DIR_CONTENIDO, 'superficies', `${id}.yaml`);
   if (existsSync(ruta)) continue;
   writeFileSync(ruta, `# Superficie «${id}» (PRD §18.1). Títulos y descripciones en borrador.\n` +
-    stringify({ id, title: loc(...t), description: loc(...d), fr, sections: [] }, { lineWidth: 0 }));
+    stringify({ id, title: loc(...t), description: loc(...d), fr, sections: [] }, { lineWidth: 0, aliasDuplicateObjects: false }));
 }
 console.log('andamiaje listo');

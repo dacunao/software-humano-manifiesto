@@ -22,4 +22,16 @@ description:
     text: Os dez princípios do manifesto, em sua ordem canônica.
 fr:
   - FR-004
-sections: []
+sections:
+  - id: coleccion
+    title:
+      es: { state: borrador, text: Diez principios para decidir }
+      en: &pend { state: pendiente }
+      pt-BR: *pend
+    blocks:
+      - kind: canon
+        nodos: [principios-de-diseno-03]
+      - kind: principios
+    depth:
+      - kind: canon
+        nodos: [principios-de-diseno-04]

@@ -1,4 +1,4 @@
-# P10 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p10).
+# P10 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p10).
 id: P10
 canonicalNode: p10
 jobStories:
@@ -16,10 +16,11 @@ entries:
   tension:
     id: p10-tension
     type: explanation
-    derivedFrom: p10
-    text: &a1
+    derivedFrom: principio-10-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: La automatización sin agencia humana puede acelerar el camino equivocado. Cuando la ayuda decide en silencio o encierra la información, la persona pierde el control de su propio trabajo.
       en:
         state: pendiente
       pt-BR:
@@ -27,25 +28,60 @@ entries:
   significado:
     id: p10-significado
     type: explanation
-    derivedFrom: p10
-    text: *a1
+    derivedFrom: principio-10-05
+    text:
+      es:
+        state: borrador
+        text: El software puede anticipar, recomendar y automatizar sin ocultar decisiones, encerrar información ni impedir alternativas. Con IA, el control incluye saber qué información se usó y qué acción se ejecutó.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p10-consecuencia
     type: explanation
-    derivedFrom: p10
-    text: *a1
+    derivedFrom: principio-10-09
+    text:
+      es:
+        state: borrador
+        text: La confirmación se pide en proporción al impacto. Se puede revisar, editar, exportar y revertir cuando el dominio lo permite, y se separan autorización, recomendación y ejecución.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p10-ejemplo
     type: example
     derivedFrom: p10
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: En este sitio se puede leer sin un orden impuesto, copiar cualquier pasaje y compartir una dirección estable, sin crear una cuenta ni entregar datos.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p10-contraejemplo
     type: counterexample
-    derivedFrom: p10
-    text: *a1
+    derivedFrom: principio-10-12
+    text:
+      es:
+        state: borrador
+        text: Secuestrar el desplazamiento de la página, reproducir audio sin pedirlo, exigir un registro o impedir el acceso al texto completo.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p10-prueba
     type: decision-test
-    derivedFrom: p10
-    text: *a1
+    derivedFrom: principio-10-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas verifican que la ayuda no se convierta en apropiación.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

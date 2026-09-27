@@ -1,4 +1,4 @@
-# P03 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p03).
+# P03 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p03).
 id: P03
 canonicalNode: p03
 jobStories:
@@ -14,10 +14,11 @@ entries:
   tension:
     id: p03-tension
     type: explanation
-    derivedFrom: p03
-    text: &a1
+    derivedFrom: principio-3-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: Cuando la interfaz replica la arquitectura, la persona tiene que aprender cómo se construyó el producto antes de obtener algo de él. Esa transferencia parece inevitable solo porque le resulta cómoda al equipo.
       en:
         state: pendiente
       pt-BR:
@@ -25,25 +26,60 @@ entries:
   significado:
     id: p03-significado
     type: explanation
-    derivedFrom: p03
-    text: *a1
+    derivedFrom: principio-3-05
+    text:
+      es:
+        state: borrador
+        text: El dominio puede exigir reglas, integraciones y excepciones. El equipo absorbe esa complejidad y la presenta como decisiones comprensibles; las tablas y los estados internos no dictan el lenguaje ni la navegación.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p03-consecuencia
     type: explanation
-    derivedFrom: p03
-    text: *a1
+    derivedFrom: principio-3-09
+    text:
+      es:
+        state: borrador
+        text: Los conceptos internos se traducen al modelo mental de quien usa el producto. El sistema resuelve lo que puede resolver con el contexto disponible, y una excepción solo se muestra a quien realmente debe decidirla.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p03-ejemplo
     type: example
     derivedFrom: p03
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Un servicio de envíos necesita saber si un paquete es nacional o internacional. En lugar de preguntarlo, lo deduce de la dirección de destino y solo pide los datos de aduana cuando corresponden.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p03-contraejemplo
     type: counterexample
-    derivedFrom: p03
-    text: *a1
+    derivedFrom: principio-3-12
+    text:
+      es:
+        state: borrador
+        text: Abrir una explicación con rutas de archivos, configuraciones o comandos antes de que la persona entienda para qué sirven.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p03-prueba
     type: decision-test
-    derivedFrom: p03
-    text: *a1
+    derivedFrom: principio-3-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas separan los pasos que existen por la persona de los que existen por el sistema.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

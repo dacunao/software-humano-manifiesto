@@ -1,4 +1,4 @@
-# P08 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p08).
+# P08 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p08).
 id: P08
 canonicalNode: p08
 jobStories:
@@ -13,10 +13,11 @@ entries:
   tension:
     id: p08-tension
     type: explanation
-    derivedFrom: p08
-    text: &a1
+    derivedFrom: principio-8-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: "Nadie separa la interfaz, la ingeniería y el contenido: se experimenta un producto completo. Una inconsistencia pequeña se tolera; cien convierten el uso en fricción constante."
       en:
         state: pendiente
       pt-BR:
@@ -24,25 +25,60 @@ entries:
   significado:
     id: p08-significado
     type: explanation
-    derivedFrom: p08
-    text: *a1
+    derivedFrom: principio-8-05
+    text:
+      es:
+        state: borrador
+        text: Tipografía, textos, foco, estados vacíos, errores y transiciones forman una sola experiencia. Ningún detalle compensa por sí solo una mala solución, pero su acumulación refuerza o erosiona la confianza.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p08-consecuencia
     type: explanation
-    derivedFrom: p08
-    text: *a1
+    derivedFrom: principio-8-09
+    text:
+      es:
+        state: borrador
+        text: "Se diseñan y se verifican también los estados menos frecuentes: vacío, carga, error, éxito y recuperación. Lenguaje, jerarquía y comportamiento se mantienen en todo el recorrido, y se revisa con contenido real antes de aprobar."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p08-ejemplo
     type: example
     derivedFrom: p08
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Un enlace compartido abre exactamente la sección citada y en el idioma elegido. Nadie lo nota cuando funciona; todos lo notan cuando falla.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p08-contraejemplo
     type: counterexample
-    derivedFrom: p08
-    text: *a1
+    derivedFrom: principio-8-12
+    text:
+      es:
+        state: borrador
+        text: Tratar los errores, la carga, las pantallas pequeñas o el teclado como terminaciones que se resuelven después.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p08-prueba
     type: decision-test
-    derivedFrom: p08
-    text: *a1
+    derivedFrom: principio-8-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas buscan los detalles que contradicen la lógica del resto.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

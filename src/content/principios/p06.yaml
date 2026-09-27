@@ -1,4 +1,4 @@
-# P06 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p06).
+# P06 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p06).
 id: P06
 canonicalNode: p06
 jobStories:
@@ -13,10 +13,11 @@ entries:
   tension:
     id: p06-tension
     type: explanation
-    derivedFrom: p06
-    text: &a1
+    derivedFrom: principio-6-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: Menús, alertas, animaciones, elecciones y textos compiten por la misma atención, que es finita. Una interfaz puede no tener errores y aun así fracasar por saturación.
       en:
         state: pendiente
       pt-BR:
@@ -24,25 +25,60 @@ entries:
   significado:
     id: p06-significado
     type: explanation
-    derivedFrom: p06
-    text: *a1
+    derivedFrom: principio-6-05
+    text:
+      es:
+        state: borrador
+        text: "La atención se administra con la misma disciplina que el rendimiento o el costo: cada elemento visible y cada decisión solicitada tienen que justificar lo que consumen."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p06-consecuencia
     type: explanation
-    derivedFrom: p06
-    text: *a1
+    derivedFrom: principio-6-09
+    text:
+      es:
+        state: borrador
+        text: Se jerarquiza por relevancia para el momento actual, no por igualdad entre funcionalidades. Las señales intensas se reservan para lo que de verdad requiere atención.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p06-ejemplo
     type: example
     derivedFrom: p06
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Una página con una idea dominante por sección y una sola acción principal deja claro qué hacer después, sin pedir que la persona ordene opciones que el producto podía ordenar.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p06-contraejemplo
     type: counterexample
-    derivedFrom: p06
-    text: *a1
+    derivedFrom: principio-6-12
+    text:
+      es:
+        state: borrador
+        text: Animaciones continuas, llamados simultáneos con el mismo peso o fondos que reducen la legibilidad del texto.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p06-prueba
     type: decision-test
-    derivedFrom: p06
-    text: *a1
+    derivedFrom: principio-6-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas ayudan a decidir qué puede quitarse sin perder información ni control.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

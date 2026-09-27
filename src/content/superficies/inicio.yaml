@@ -127,3 +127,27 @@ sections:
     depth:
       - kind: canon
         nodos: [texto-canonico-05, texto-canonico-06, texto-canonico-08, texto-canonico-09, texto-canonico-10, texto-canonico-11, texto-canonico-12, texto-canonico-13, texto-canonico-14]
+
+  # Acto 4 · PRD §16. Los diez principios en orden canónico; sin capítulos por ahora (opcional, lo decide el diseño).
+  - id: acto-4
+    title:
+      es: { state: borrador, text: Diez principios para decidir }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-4-principios
+          type: explanation
+          derivedFrom: principios-de-diseno-03
+          text:
+            es:
+              state: borrador
+              text: |-
+                Los principios no son aspiraciones. Cada uno tiene que poder cambiar una decisión, detener una implementación o exigir más evidencia; si una frase no tiene consecuencias prácticas, no cumple una función. Cada principio tiene su propia página, con su tensión, su significado, un ejemplo, un contraejemplo y las preguntas para usarlo en una revisión real.
+            en: *pend
+            pt-BR: *pend
+      - kind: principios
+    depth:
+      - kind: canon
+        nodos: [principios-de-diseno-04]

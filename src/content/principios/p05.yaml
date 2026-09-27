@@ -1,4 +1,4 @@
-# P05 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p05).
+# P05 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p05).
 id: P05
 canonicalNode: p05
 jobStories:
@@ -14,10 +14,11 @@ entries:
   tension:
     id: p05-tension
     type: explanation
-    derivedFrom: p05
-    text: &a1
+    derivedFrom: principio-5-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: Cada convención propia que hay que memorizar consume la capacidad que la persona necesitaba para su problema real. En productos de uso infrecuente, o con contenido difícil, esa carga es especialmente dañina.
       en:
         state: pendiente
       pt-BR:
@@ -25,25 +26,60 @@ entries:
   significado:
     id: p05-significado
     type: explanation
-    derivedFrom: p05
-    text: *a1
+    derivedFrom: principio-5-05
+    text:
+      es:
+        state: borrador
+        text: La interfaz se apoya en expectativas conocidas, jerarquía comprensible y respuesta inmediata. Quien llega viene a hacer su trabajo, no a aprender el del equipo.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p05-consecuencia
     type: explanation
-    derivedFrom: p05
-    text: *a1
+    derivedFrom: principio-5-09
+    text:
+      es:
+        state: borrador
+        text: Se prefieren patrones conocidos cuando resuelven bien el problema. La acción principal, el estado actual y el siguiente paso posible tienen que ser evidentes sin un tutorial previo.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p05-ejemplo
     type: example
     derivedFrom: p05
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Una navegación que nombra cada destino por lo que contiene («Manifiesto», «Principios», «Aplicación») permite elegir sin haber recorrido nada antes.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p05-contraejemplo
     type: counterexample
-    derivedFrom: p05
-    text: *a1
+    derivedFrom: principio-5-12
+    text:
+      es:
+        state: borrador
+        text: Obligar a descubrir cómo avanzar, o a interpretar gestos ocultos, antes de poder leer.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p05-prueba
     type: decision-test
-    derivedFrom: p05
-    text: *a1
+    derivedFrom: principio-5-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas detectan el aprendizaje que la interfaz agrega sin que el problema lo pida.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

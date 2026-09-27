@@ -1,4 +1,4 @@
-# P09 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p09).
+# P09 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p09).
 id: P09
 canonicalNode: p09
 jobStories:
@@ -11,10 +11,11 @@ entries:
   tension:
     id: p09-tension
     type: explanation
-    derivedFrom: p09
-    text: &a1
+    derivedFrom: principio-9-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: "La lentitud cambia la conducta: provoca clics repetidos, dudas y abandono. Perder un avance obliga a reconstruir el contexto y destruye la confianza muy rápido."
       en:
         state: pendiente
       pt-BR:
@@ -22,25 +23,60 @@ entries:
   significado:
     id: p09-significado
     type: explanation
-    derivedFrom: p09
-    text: *a1
+    derivedFrom: principio-9-05
+    text:
+      es:
+        state: borrador
+        text: Latencia, disponibilidad y preservación del trabajo son propiedades de la experiencia. Quien usa el producto no distingue entre infraestructura e interfaz cuando algo tarda o se pierde.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p09-consecuencia
     type: explanation
-    derivedFrom: p09
-    text: *a1
+    derivedFrom: principio-9-09
+    text:
+      es:
+        state: borrador
+        text: Las interacciones críticas tienen presupuestos de respuesta explícitos. Si una operación puede demorarse se muestra progreso honesto, y el trabajo se guarda con una frecuencia proporcional al costo de perderlo.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p09-ejemplo
     type: example
     derivedFrom: p09
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: El contenido de este sitio llega como texto antes de que se ejecute cualquier script; si un script falla, la lectura sigue.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p09-contraejemplo
     type: counterexample
-    derivedFrom: p09
-    text: *a1
+    derivedFrom: principio-9-12
+    text:
+      es:
+        state: borrador
+        text: Bloquear la lectura hasta que termine una animación o se descarguen tipografías y recursos pesados.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p09-prueba
     type: decision-test
-    derivedFrom: p09
-    text: *a1
+    derivedFrom: principio-9-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas tratan el tiempo y la continuidad como parte de lo que se entrega.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

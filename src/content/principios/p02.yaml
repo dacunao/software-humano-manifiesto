@@ -1,4 +1,4 @@
-# P02 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p02).
+# P02 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p02).
 id: P02
 canonicalNode: p02
 jobStories:
@@ -15,10 +15,11 @@ entries:
   tension:
     id: p02-tension
     type: explanation
-    derivedFrom: p02
-    text: &a1
+    derivedFrom: principio-2-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: "Dos productos pueden entregar el mismo resultado y dejar a sus usuarios en estados muy distintos: uno con energía para seguir, otro con dudas, errores y ganas de abandonar. Ese desgaste rara vez aparece en una especificación técnica."
       en:
         state: pendiente
       pt-BR:
@@ -26,25 +27,60 @@ entries:
   significado:
     id: p02-significado
     type: explanation
-    derivedFrom: p02
-    text: *a1
+    derivedFrom: principio-2-05
+    text:
+      es:
+        state: borrador
+        text: El resultado de un producto incluye cuánto esfuerzo, incertidumbre y atención exige obtenerlo. Si algo funciona pero desgasta, todavía no funciona bien.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p02-consecuencia
     type: explanation
-    derivedFrom: p02
-    text: *a1
+    derivedFrom: principio-2-09
+    text:
+      es:
+        state: borrador
+        text: Esfuerzo, claridad y confianza entran en los criterios de aceptación, igual que la exactitud. Se prueba el recorrido completo, no cada pantalla por separado.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p02-ejemplo
     type: example
     derivedFrom: p02
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Dos buscadores devuelven los mismos resultados. Uno muestra enseguida por qué coincide cada resultado; el otro obliga a abrirlos uno por uno para saberlo. Los dos son exactos; solo uno ahorra el trabajo de verificar.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p02-contraejemplo
     type: counterexample
-    derivedFrom: p02
-    text: *a1
+    derivedFrom: principio-2-12
+    text:
+      es:
+        state: borrador
+        text: Dar por cumplido un requisito porque todo el texto está técnicamente disponible, aunque llegar a él exija luchar con la navegación, la tipografía o el movimiento.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p02-prueba
     type: decision-test
-    derivedFrom: p02
-    text: *a1
+    derivedFrom: principio-2-11
+    text:
+      es:
+        state: borrador
+        text: "Estas preguntas miden lo que una prueba técnica no ve: el costo de usar el producto."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

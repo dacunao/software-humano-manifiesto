@@ -1,25 +1,100 @@
 ---
-import type { Locale } from '../lib/contenido/esquemas';
+import type { Entrada, Locale } from '../lib/contenido/esquemas';
+import type { NodoCanonico } from '../lib/canon/lector';
 import Base from '../layouts/Base.astro';
+import BloqueEditorial from '../components/BloqueEditorial.astro';
+import CitaCanonica from '../components/CitaCanonica.astro';
 import { renderLinea } from '../lib/canon/render';
-import { canonicoDePrincipio, fechaActualizacion, markdownDe } from '../lib/sitio';
+import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
+import { canonicoDePrincipio, fechaActualizacion, markdownDe, partesCanonicas, principio, t, URL_SITIO } from '../lib/sitio';
 
+/**
+ * Página de un principio con el contrato del PRD §17, en su orden: declaración, tensión,
+ * significado, consecuencia, ejemplo, contraejemplo, prueba de decisión y fuente.
+ * Los pasajes del núcleo se citan; lo editorial explica sin reemplazarlos (FR-017).
+ */
 interface Props {
   locale: Locale;
   pid: string;
 }
 const { locale, pid } = Astro.props;
+const p = principio(pid);
 const { nombre, frase } = canonicoDePrincipio(pid);
+const partes = partesCanonicas(pid);
 const titulo = markdownDe(nombre, locale);
-const descripcion = markdownDe(frase, locale);
 const limpio = titulo.markdown.replace(/^#{1,6}\s+/, '');
+const descripcion = markdownDe(frase, locale).markdown.replace(/\*/g, '');
+const codigo = pid.toUpperCase();
+const i = PRINCIPIOS.indexOf(pid);
+const anterior = PRINCIPIOS[i - 1];
+const siguiente = PRINCIPIOS[i + 1];
+const fuente = (n: NodoCanonico) => `${ruta({ tipo: 'manifiesto' }, locale)}#${n.id}`;
+const cita = (nodos: NodoCanonico[]) => {
+  const ns = nodos.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
+  const lang = ns.every((x) => x.lang === locale) ? locale : 'es';
+  return { nodos: ns, lang, rotulo: t(lang === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale) };
+};
+const secciones: { id: string; clave: string; entrada: Entrada; canon?: NodoCanonico; visible?: boolean }[] = [
+  { id: 'tension', clave: 'principio.tension', entrada: p.entries['tension']!, canon: partes.importa },
+  { id: 'significado', clave: 'principio.significado', entrada: p.entries['significado']!, canon: partes.significa },
+  { id: 'consecuencia', clave: 'principio.consecuencia', entrada: p.entries['consecuencia']!, canon: partes.reglas },
+  { id: 'ejemplo', clave: 'principio.ejemplo', entrada: p.entries['ejemplo']! },
+  { id: 'contraejemplo', clave: 'principio.contraejemplo', entrada: p.entries['contraejemplo']!, canon: partes.senal, visible: true },
+  { id: 'prueba', clave: 'principio.prueba', entrada: p.entries['prueba']!, canon: partes.pruebas, visible: true },
+];
+const declaracion = cita([frase]);
+const ld = [{
+  '@type': 'DefinedTerm',
+  termCode: codigo,
+  name: limpio.replace(/`/g, ''),
+  description: descripcion,
+  url: `${URL_SITIO}${ruta({ tipo: 'principio', principio: pid }, locale)}`,
+  inDefinedTermSet: `${URL_SITIO}${ruta({ tipo: 'principios' }, locale)}`,
+}];
 ---
 <Base
   locale={locale}
   pagina={{ tipo: 'principio', principio: pid }}
-  titulo={`${pid.toUpperCase()} · ${limpio}`}
-  descripcion={descripcion.markdown}
+  titulo={`${codigo} · ${limpio}`}
+  descripcion={descripcion}
+  ld={ld}
   actualizado={fechaActualizacion([`src/content/principios/${pid}.yaml`])}
 >
-  <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}><code>{pid.toUpperCase()}</code> <span set:html={renderLinea(limpio)} /></h1>
+  <article class="principio" aria-labelledby="declaracion-titulo">
+    <header id="declaracion">
+      <p class="rotulo-seccion">{t('principio.declaracion', locale)}</p>
+      <h1 id="declaracion-titulo" lang={titulo.lang !== locale ? titulo.lang : undefined}>
+        <code>{codigo}</code> <span set:html={renderLinea(limpio)} />
+      </h1>
+      <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} fuente={fuente(frase)} textoFuente={t('contenido.fuente', locale)} />
+    </header>
+
+    {secciones.map((s) => {
+      const c = s.canon ? cita([s.canon]) : undefined;
+      return (
+        <section id={s.id} aria-labelledby={`${s.id}-titulo`} class="seccion">
+          <h2 id={`${s.id}-titulo`}>{t(s.clave, locale)}</h2>
+          <BloqueEditorial entrada={s.entrada} locale={locale} sinRotulo={s.id !== 'tension' && s.id !== 'significado' && s.id !== 'consecuencia'} />
+          {c && s.canon && (s.visible ? (
+            <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuente', locale)} />
+          ) : (
+            <details class="profundidad">
+              <summary>{t('contenido.profundizar', locale)}: {t(s.clave, locale)}</summary>
+              <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuente', locale)} />
+            </details>
+          ))}
+        </section>
+      );
+    })}
+
+    <section id="fuente" aria-labelledby="fuente-titulo" class="seccion">
+      <h2 id="fuente-titulo">{t('principio.fuente', locale)}</h2>
+      <p><a href={`${ruta({ tipo: 'manifiesto' }, locale)}#${pid}`}>{t('contenido.fuente', locale)} · <code>{codigo}</code></a></p>
+    </section>
+
+    <nav class="anterior-siguiente" aria-label={t('nav.principios', locale)}>
+      {anterior && <a rel="prev" href={ruta({ tipo: 'principio', principio: anterior }, locale)}>{t('principio.anterior', locale)}: <code>{anterior.toUpperCase()}</code></a>}
+      {siguiente && <a rel="next" href={ruta({ tipo: 'principio', principio: siguiente }, locale)}>{t('principio.siguiente', locale)}: <code>{siguiente.toUpperCase()}</code></a>}
+    </nav>
+  </article>
 </Base>

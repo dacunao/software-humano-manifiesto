@@ -1,4 +1,4 @@
-# P04 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p04).
+# P04 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p04).
 id: P04
 canonicalNode: p04
 jobStories:
@@ -13,10 +13,11 @@ entries:
   tension:
     id: p04-tension
     type: explanation
-    derivedFrom: p04
-    text: &a1
+    derivedFrom: principio-4-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: Un producto mínimo puede ser fácil el primer día y limitante el décimo. Uno que muestra toda su potencia desde el inicio puede resultar inabordable. Los dos extremos fallan, por razones opuestas.
       en:
         state: pendiente
       pt-BR:
@@ -24,25 +25,60 @@ entries:
   significado:
     id: p04-significado
     type: explanation
-    derivedFrom: p04
-    text: *a1
+    derivedFrom: principio-4-05
+    text:
+      es:
+        state: borrador
+        text: "La simplicidad no reduce la capacidad: decide cuándo aparece. Lo visible se adapta al momento, a la experiencia y a la decisión actual, y la profundidad queda disponible sin imponerse."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p04-consecuencia
     type: explanation
-    derivedFrom: p04
-    text: *a1
+    derivedFrom: principio-4-09
+    text:
+      es:
+        state: borrador
+        text: Primero se muestra la ruta principal; las opciones avanzadas aparecen cuando el contexto las vuelve relevantes. Los valores predeterminados se eligen con cuidado y pueden cambiarse cuando la decisión importa.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p04-ejemplo
     type: example
     derivedFrom: p04
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: Cada principio de este sitio se entiende en su página sin abrir nada; quien quiere el texto completo, las reglas o las pruebas los encuentra a un paso, en el mismo lugar.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p04-contraejemplo
     type: counterexample
-    derivedFrom: p04
-    text: *a1
+    derivedFrom: principio-4-12
+    text:
+      es:
+        state: borrador
+        text: Una portada mínima que oculta el contenido, o una página inicial que lo muestra todo a la vez.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p04-prueba
     type: decision-test
-    derivedFrom: p04
-    text: *a1
+    derivedFrom: principio-4-11
+    text:
+      es:
+        state: borrador
+        text: Estas preguntas distinguen la simplificación que quita ruido de la que quita capacidad.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

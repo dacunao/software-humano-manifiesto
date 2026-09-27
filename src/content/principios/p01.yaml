@@ -1,4 +1,4 @@
-# P01 · contrato del PRD §17. Nombre y frase canónicos se leen del núcleo (#p01).
+# P01 · contrato del PRD §17. Nombre, frase, reglas, pruebas y señal se citan del núcleo (#p01).
 id: P01
 canonicalNode: p01
 jobStories:
@@ -14,10 +14,11 @@ entries:
   tension:
     id: p01-tension
     type: explanation
-    derivedFrom: p01
-    text: &a1
+    derivedFrom: principio-1-07
+    text:
       es:
-        state: pendiente
+        state: borrador
+        text: Un equipo puede entregar muchas funcionalidades y resolver poco. Cuando el trabajo se organiza por features o por perfiles genéricos, nadie tiene que explicar qué cambia para la persona después de usar el producto.
       en:
         state: pendiente
       pt-BR:
@@ -25,25 +26,60 @@ entries:
   significado:
     id: p01-significado
     type: explanation
-    derivedFrom: p01
-    text: *a1
+    derivedFrom: principio-1-05
+    text:
+      es:
+        state: borrador
+        text: "Una capacidad importa solo cuando produce un cambio reconocible para alguien: pasar de una situación actual a un resultado buscado. Antes de diseñar una respuesta se describe cuándo surge la necesidad, qué la motiva y qué resultado permitiría reconocer el avance."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   consecuencia:
     id: p01-consecuencia
     type: explanation
-    derivedFrom: p01
-    text: *a1
+    derivedFrom: principio-1-09
+    text:
+      es:
+        state: borrador
+        text: Cada decisión tiene que poder rastrearse hasta el fundamento de producto que la justifica. Un pedido de funcionalidad se reformula como circunstancia, motivación y resultado antes de discutir soluciones, y esa formulación admite más de una respuesta, incluida la de no construir.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   ejemplo:
     id: p01-ejemplo
     type: example
     derivedFrom: p01
-    text: *a1
+    text:
+      es:
+        state: borrador
+        text: "Un pedido llega como «agregar un botón de exportar». Reformulado, dice: cuando alguien tiene que presentar sus datos a otra persona, necesita llevarlos fuera de la herramienta sin rehacer el trabajo. Esa formulación admite un botón, un enlace para compartir o un informe automático, y permite elegir la respuesta que menos carga agrega."
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   contraejemplo:
     id: p01-contraejemplo
     type: counterexample
-    derivedFrom: p01
-    text: *a1
+    derivedFrom: principio-1-12
+    text:
+      es:
+        state: borrador
+        text: Describir un sitio como una colección de páginas o de efectos. La lista de lo que contiene no dice qué comprensión o capacidad obtiene quien lo recorre.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
   prueba:
     id: p01-prueba
     type: decision-test
-    derivedFrom: p01
-    text: *a1
+    derivedFrom: principio-1-11
+    text:
+      es:
+        state: borrador
+        text: Una decisión está lista cuando estas preguntas tienen respuesta con evidencia, no con intuición.
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente

@@ -134,19 +134,19 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-03`; `AC-03` y `AC-04`.
 
-- [ ] T042 [P] [US3] Escribir `tests/e2e/js03-principios.spec.ts` con los escenarios 1 a 3 de `JS-03`
-- [ ] T043 [P] [US3] Escribir `tests/unit/principios.test.ts`: el nombre y la frase de cada principio se leen del núcleo y coinciden con él (`AC-03`), y se cumplen `RV-04` y `RV-05`
-- [ ] T044 [P] [US3] Redactar `src/content/principios/p01.yaml` en `es`, `state: borrador`, con tensión, significado, consecuencia, ejemplo, contraejemplo y prueba de decisión, derivados de la sección `#p01` del núcleo y de PRD §17 (expresión en el sitio e incumplimiento a evitar); `derivedFrom: p01`, y relaciones `jobStories` y `requirements` según PRD §33
-- [ ] T045 [P] [US3] Igual que T044 para `src/content/principios/p02.yaml` (`#p02`)
-- [ ] T046 [P] [US3] Igual que T044 para `src/content/principios/p03.yaml` (`#p03`)
-- [ ] T047 [P] [US3] Igual que T044 para `src/content/principios/p04.yaml` (`#p04`)
-- [ ] T048 [P] [US3] Igual que T044 para `src/content/principios/p05.yaml` (`#p05`)
-- [ ] T049 [P] [US3] Igual que T044 para `src/content/principios/p06.yaml` (`#p06`)
-- [ ] T050 [P] [US3] Igual que T044 para `src/content/principios/p07.yaml` (`#p07`); incluir que el preset no se presenta como oficial
-- [ ] T051 [P] [US3] Igual que T044 para `src/content/principios/p08.yaml` (`#p08`)
-- [ ] T052 [P] [US3] Igual que T044 para `src/content/principios/p09.yaml` (`#p09`)
-- [ ] T053 [P] [US3] Igual que T044 para `src/content/principios/p10.yaml` (`#p10`)
-- [ ] T054 [US3] Implementar `src/views/Principio.astro` con el contrato del PRD §17 en orden:
+- [X] T042 [P] [US3] Escribir `tests/e2e/js03-principios.spec.ts` con los escenarios 1 a 3 de `JS-03`
+- [X] T043 [P] [US3] Escribir `tests/unit/principios.test.ts`: el nombre y la frase de cada principio se leen del núcleo y coinciden con él (`AC-03`), y se cumplen `RV-04` y `RV-05`
+- [X] T044 [P] [US3] Redactar `src/content/principios/p01.yaml` en `es`, `state: borrador`, con tensión, significado, consecuencia, ejemplo, contraejemplo y prueba de decisión, derivados de la sección `#p01` del núcleo y de PRD §17 (expresión en el sitio e incumplimiento a evitar); `derivedFrom: p01`, y relaciones `jobStories` y `requirements` según PRD §33
+- [X] T045 [P] [US3] Igual que T044 para `src/content/principios/p02.yaml` (`#p02`)
+- [X] T046 [P] [US3] Igual que T044 para `src/content/principios/p03.yaml` (`#p03`)
+- [X] T047 [P] [US3] Igual que T044 para `src/content/principios/p04.yaml` (`#p04`)
+- [X] T048 [P] [US3] Igual que T044 para `src/content/principios/p05.yaml` (`#p05`)
+- [X] T049 [P] [US3] Igual que T044 para `src/content/principios/p06.yaml` (`#p06`)
+- [X] T050 [P] [US3] Igual que T044 para `src/content/principios/p07.yaml` (`#p07`); incluir que el preset no se presenta como oficial
+- [X] T051 [P] [US3] Igual que T044 para `src/content/principios/p08.yaml` (`#p08`)
+- [X] T052 [P] [US3] Igual que T044 para `src/content/principios/p09.yaml` (`#p09`)
+- [X] T053 [P] [US3] Igual que T044 para `src/content/principios/p10.yaml` (`#p10`)
+- [X] T054 [US3] Implementar `src/views/Principio.astro` con el contrato del PRD §17 en orden:
   1. declaración (nombre y frase canónicos leídos del núcleo);
   2. tensión, significado y consecuencia;
   3. ejemplo y contraejemplo;
@@ -154,9 +154,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
   5. fuente, con enlace a `manifesto#pNN` en el idioma de la ruta.
 
   Con navegación al anterior y al siguiente en orden canónico
-- [ ] T055 [US3] Implementar `src/views/Principios.astro`: `P01`–`P10` en orden canónico, con identificador, nombre canónico y enlace a su página; no reducirlos a tarjetas-lema (PRD §28)
-- [ ] T056 [US3] Redactar el acto 4 en `src/content/superficies/inicio.yaml` (borrador) y mostrarlo en `src/views/Inicio.astro`: los diez principios en orden canónico; agruparlos en capítulos solo si lo decide el diseño (PRD §16)
-- [ ] T057 [US3] Añadir a `src/lib/semantica/jsonld.ts` `DefinedTermSet` en Principios y `DefinedTerm` en cada principio, según [contracts/datos-estructurados.md](contracts/datos-estructurados.md)
+- [X] T055 [US3] Implementar `src/views/Principios.astro`: `P01`–`P10` en orden canónico, con identificador, nombre canónico y enlace a su página; no reducirlos a tarjetas-lema (PRD §28)
+- [X] T056 [US3] Redactar el acto 4 en `src/content/superficies/inicio.yaml` (borrador) y mostrarlo en `src/views/Inicio.astro`: los diez principios en orden canónico; agruparlos en capítulos solo si lo decide el diseño (PRD §16)
+- [X] T057 [US3] Añadir a `src/lib/semantica/jsonld.ts` `DefinedTermSet` en Principios y `DefinedTerm` en cada principio, según [contracts/datos-estructurados.md](contracts/datos-estructurados.md)
 
 ---
 

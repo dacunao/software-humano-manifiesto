@@ -1,10 +1,25 @@
 ---
 import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
+import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
+import { canonicoDePrincipio, markdownDe, superficie, texto, URL_SITIO } from '../lib/sitio';
 
+/** Colección P01–P10 en orden canónico (FR-004) con su DefinedTermSet (contracts/datos-estructurados.md). */
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
+const url = `${URL_SITIO}${ruta({ tipo: 'principios' }, locale)}`;
+const ld = [{
+  '@type': 'DefinedTermSet',
+  name: texto(superficie('principios').title, locale).texto,
+  url,
+  hasDefinedTerm: PRINCIPIOS.map((pid) => ({
+    '@type': 'DefinedTerm',
+    termCode: pid.toUpperCase(),
+    name: markdownDe(canonicoDePrincipio(pid).nombre, locale).markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, ''),
+    url: `${URL_SITIO}${ruta({ tipo: 'principio', principio: pid }, locale)}`,
+  })),
+}];
 ---
-<Superficie id="principios" locale={locale} />
+<Superficie id="principios" locale={locale} ld={ld} archivos={['src/content/principios']} />

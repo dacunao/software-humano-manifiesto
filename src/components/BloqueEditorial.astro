@@ -22,13 +22,15 @@ const ROTULO: Record<Entrada['type'], string | undefined> = {
 const clave = ROTULO[entrada.type];
 const tx = texto(entrada.text, locale);
 const origen = entrada.derivedFrom ? `${ruta({ tipo: 'manifiesto' }, locale)}#${entrada.derivedFrom}` : undefined;
+// Solo los identificadores públicos del núcleo se muestran como código; los internos no (P03).
+const publico = /^(p(0[1-9]|10)|d0[1-6]|f0[1-8]|a0[1-8]|stop0[1-7]|cr0[1-8]|o0[1-9]|v(0[1-9]|1[0-2])|sh-[a-z]+)$/.test(entrada.derivedFrom ?? '');
 ---
 {tx.texto && (
   <div class="bloque-editorial" data-tipo={entrada.type} data-id={entrada.id} lang={tx.lang !== locale ? tx.lang : undefined}>
     {clave && !sinRotulo && <p class="rotulo-contenido">{t(clave, locale)}</p>}
     <div class="lectura" set:html={renderMarkdown(tx.texto)} />
     {origen && entrada.type !== 'surface-text' && (
-      <p class="origen"><a href={origen}>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></a></p>
+      <p class="origen"><a href={origen}>{publico ? <>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></> : t('contenido.fuente', locale)}</a></p>
     )}
   </div>
 )}

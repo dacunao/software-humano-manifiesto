@@ -64,6 +64,22 @@ export function canonicoDePrincipio(pid: string): { nombre: NodoCanonico; frase:
   return { nombre, frase };
 }
 
+/** Pasajes canónicos de un principio, localizados por su encabezado en el núcleo. */
+export function partesCanonicas(pid: string): Record<'significa' | 'importa' | 'reglas' | 'pruebas' | 'senal', NodoCanonico> {
+  const inicio = canon.nodos.findIndex((n) => n.id === pid);
+  const seccion = canon.nodos[inicio]?.section;
+  const nodos = canon.nodos.filter((n) => n.section === seccion);
+  const tras = (titulo: string) => {
+    const i = nodos.findIndex((n) => n.kind === 'encabezado' && n.titulo === titulo);
+    const n = nodos[i + 1];
+    if (i < 0 || !n) throw new Error(`${pid}: falta «${titulo}» en el núcleo`);
+    return n;
+  };
+  const senal = nodos.find((n) => n.source.startsWith('**Señal de incumplimiento.**'));
+  if (!senal) throw new Error(`${pid}: falta la señal de incumplimiento en el núcleo`);
+  return { significa: tras('Qué significa'), importa: tras('Por qué importa'), reglas: tras('Reglas de diseño'), pruebas: tras('Pruebas de decisión'), senal };
+}
+
 /** Todos los textos localizados del contenido, para saber si queda algo sin aprobar. */
 function todosLosLocalizados(): Localizado[] {
   const r: Localizado[] = [...Object.values(contenido.cadenas), contenido.estado.limitations];
