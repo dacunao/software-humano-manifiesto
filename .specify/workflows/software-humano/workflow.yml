@@ -1,0 +1,123 @@
+schema_version: "1.0"
+
+workflow:
+  id: "software-humano"
+  name: "Ciclo SDD con las compuertas del manifiesto"
+  version: "2.0.0"
+  author: "Damián Acuña"
+  description: "Ejecuta el ciclo nativo de SpecKit con las compuertas que el Manifiesto de Software Humano especifica, y la comprobación de conformidad en los momentos que el propio manifiesto nombra."
+
+requires:
+  # 1.0.0 es la primera versión donde la composición conserva el frontmatter
+  # del core cuando la capa del preset no declara uno.
+  speckit_version: ">=1.0.0,<2.0.0"
+
+inputs:
+  fundamento:
+    type: string
+    required: true
+    prompt: "Ruta del fundamento de producto autorizado, en la forma que ya tenga"
+  integration:
+    type: string
+    default: "auto"
+    prompt: "Integración a usar; auto toma la del proyecto"
+
+steps:
+  - id: specify
+    command: speckit.specify
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: clarify
+    command: speckit.clarify
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: compuerta-antes-de-disenar
+    type: gate
+    # `SH-GOV § Puntos de control` · Antes de diseñar. Mensaje citado al pie de la letra.
+    message: "Antes de diseñar. Fuentes, autoridad, alcance, resultados, evidencia, supuestos y no objetivos están claros; las Job Stories se comprenden cuando existen."
+    # `approve` y `reject` son los valores que el motor reconoce: con
+    # cualquier otro, `on_reject` no se aplica y la compuerta no detiene
+    # nada. Son tokens del mecanismo, no prosa.
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: plan
+    command: speckit.plan
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: tasks
+    command: speckit.tasks
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: analyze
+    command: speckit.analyze
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: conformidad-antes-de-generar-codigo
+    type: shell
+    # Lo ejecuta el motor, no el agente. Sale con 1 si falta algo
+    # sin excepción aprobada, y el workflow se detiene.
+    run: ".specify/extensions/conformidad/scripts/conformidad.sh"
+
+  - id: compuerta-antes-de-generar-codigo
+    type: gate
+    # `SH-GOV § Puntos de control` · Antes de generar código. Mensaje citado al pie de la letra.
+    message: "Antes de generar código. El plan cubre la definición completa y establece dependencias, respuesta elegida, rutas, estados, reglas críticas, riesgos y aceptación."
+    # `approve` y `reject` son los valores que el motor reconoce: con
+    # cualquier otro, `on_reject` no se aplica y la compuerta no detiene
+    # nada. Son tokens del mecanismo, no prosa.
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: implement
+    command: speckit.implement
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: compuerta-antes-de-integrar
+    type: gate
+    # `SH-GOV § Puntos de control` · Antes de integrar. Mensaje citado al pie de la letra.
+    message: "Antes de integrar. Cada cambio conserva trazabilidad con su fundamento, respeta alcance, cubre estados y pasa pruebas técnicas."
+    # `approve` y `reject` son los valores que el motor reconoce: con
+    # cualquier otro, `on_reject` no se aplica y la compuerta no detiene
+    # nada. Son tokens del mecanismo, no prosa.
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: converge
+    command: speckit.converge
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.fundamento }}"
+
+  - id: conformidad-antes-de-liberar
+    type: shell
+    # Lo ejecuta el motor, no el agente. Sale con 1 si falta algo
+    # sin excepción aprobada, y el workflow se detiene.
+    run: ".specify/extensions/conformidad/scripts/conformidad.sh"
+
+  - id: compuerta-antes-de-liberar
+    type: gate
+    # `SH-GOV § Puntos de control` · Antes de liberar. Mensaje citado al pie de la letra.
+    message: "Antes de liberar. La implementación completa demuestra resultados, cobertura, comprensión, control y calidad de experiencia."
+    # `approve` y `reject` son los valores que el motor reconoce: con
+    # cualquier otro, `on_reject` no se aplica y la compuerta no detiene
+    # nada. Son tokens del mecanismo, no prosa.
+    options: [approve, reject]
+    on_reject: abort
+
+# Momentos que el manifiesto especifica y este workflow no puede expresar.
+# Se declaran para que la brecha sea visible y no se descubra a medio camino.
+#   Durante la construcción: ocurre dentro de `implement`, y una operación de SpecKit no admite una compuerta en su interior.
+#   Después de liberar: el flujo de SpecKit termina antes; no hay operación nativa que observe resultado, fricción, abandono y errores.

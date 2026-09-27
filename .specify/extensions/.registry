@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "extensions": {
+    "conformidad": {
+      "version": "2.1.0",
+      "source": "local",
+      "manifest_hash": "sha256:95312c30b6c041a2499d2886786e2a1223d788cb6d9a5a0a3572cd9e65b62c02",
+      "enabled": true,
+      "priority": 10,
+      "registered_commands": {
+        "claude": [
+          "speckit.conformidad.comprobar"
+        ]
+      },
+      "registered_skills": [],
+      "installed_at": "2026-09-27T22:01:35.435273+00:00"
+    }
+  }
+}

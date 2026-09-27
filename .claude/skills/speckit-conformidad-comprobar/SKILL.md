@@ -1,0 +1,1 @@
+../../../.specify/extensions/conformidad/.specify-dev/agent-commands/claude/speckit-conformidad-comprobar/SKILL.md

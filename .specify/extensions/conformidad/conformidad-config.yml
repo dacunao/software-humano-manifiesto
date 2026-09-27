@@ -1,0 +1,38 @@
+# Excepciones explícitas y aprobadas de este proyecto.
+#
+# La definición de terminado del manifiesto admite dos estados y no más: un
+# elemento tiene implementación y evidencia verificable, **o** una excepción
+# explícita y aprobada. Lo que no es ninguna de las dos cosas es incumplimiento.
+#
+# Este archivo es donde se declaran las del segundo tipo. Un repositorio que
+# nació antes del manifiesto entra por aquí: declara lo que todavía no cumple,
+# con su razón y quién la aprobó, y el método no lo bloquea. Lo que el método
+# rechaza es lo que falta sin que nadie lo sepa.
+#
+# Cada excepción exige CUATRO campos. Sin los cuatro no es una excepción
+# aprobada y la comprobación la rechaza, diciendo cuál falta:
+#
+#   artefacto    · en cuál de los artefactos (spec.md, plan.md, tasks.md)
+#   seccion      · qué comprobación no se satisface
+#   razon        · por qué, en términos que otra persona pueda evaluar
+#   aprobada_por · quién tiene autoridad para aprobarla
+#
+# `artefacto` es obligatorio porque una misma sección aparece en más de un
+# artefacto —«Mapa de cobertura» está en spec.md y en tasks.md, «Plan de
+# aceptación» en plan.md y en tasks.md—. Sin él, una excepción declarada para
+# uno tapaba silenciosamente la del otro.
+#
+# El núcleo lo pide en dos lugares: `V01` exige «una excepción explícita y
+# aprobada», y `SH-FUND` que toda omisión sea «explícita, trazable y aprobada
+# por la autoridad de producto».
+
+excepciones: []
+
+# Ejemplo, para borrar:
+#
+# excepciones:
+#   - artefacto: "plan.md"
+#     seccion: "Presupuesto de complejidad"
+#     razon: "El producto existía antes de adoptar el método; se levantará al planificar la próxima capacidad."
+#     aprobada_por: "Nombre de la autoridad de producto"
+#     desde: "2026-09-23"

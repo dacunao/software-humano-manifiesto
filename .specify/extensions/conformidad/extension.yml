@@ -1,0 +1,38 @@
+schema_version: "1.0"
+
+extension:
+  id: conformidad
+  name: "Conformidad Software Humano"
+  version: "2.1.0"
+  description: "Comprueba que los artefactos del proyecto contengan lo que el Manifiesto de Software Humano exige, y que toda ausencia esté declarada como excepción aprobada."
+  category: "quality"
+  effect: "read-only"
+  author: "Damián Acuña"
+  repository: "https://github.com/dacunao/software-humano-speckit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=1.0.0,<2.0.0"
+
+provides:
+  commands:
+    - name: speckit.conformidad.comprobar
+      file: commands/speckit.conformidad.comprobar.md
+      description: "Comprueba los artefactos del proyecto contra lo que exige el manifiesto y reporta ausencias sin excepción aprobada"
+
+  scripts:
+    - name: conformidad
+      file: scripts/conformidad.sh
+      description: "Comprobación determinista de los artefactos, sin intervención del agente"
+
+  config:
+    - name: "conformidad-config.yml"
+      template: "config-template.yml"
+      description: "Excepciones explícitas y aprobadas del proyecto"
+      required: false
+
+hooks:
+  before_implement:
+    command: speckit.conformidad.comprobar
+    optional: false
+    description: "Comprueba la conformidad antes de generar código, que es el momento que el manifiesto nombra"

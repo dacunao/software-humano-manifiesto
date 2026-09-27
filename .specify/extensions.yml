@@ -1,0 +1,15 @@
+installed:
+- conformidad
+settings:
+  auto_execute_hooks: true
+hooks:
+  before_implement:
+  - extension: conformidad
+    command: speckit.conformidad.comprobar
+    enabled: true
+    optional: false
+    priority: 10
+    prompt: Execute speckit.conformidad.comprobar?
+    description: Comprueba la conformidad antes de generar código, que es el momento
+      que el manifiesto nombra
+    condition: null

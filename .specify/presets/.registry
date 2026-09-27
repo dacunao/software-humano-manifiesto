@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "presets": {
+    "software-humano": {
+      "version": "2.0.0",
+      "source": "local",
+      "manifest_hash": "sha256:cc5660f4ada9308be3224154139a53498cb18a6da91e42946b3511bba7d8ec93",
+      "enabled": true,
+      "priority": 10,
+      "registered_commands": {
+        "claude": [
+          "speckit.constitution",
+          "speckit.specify",
+          "speckit.clarify",
+          "speckit.plan",
+          "speckit.tasks",
+          "speckit.analyze",
+          "speckit.implement",
+          "speckit.converge"
+        ]
+      },
+      "registered_skills": {
+        "claude": [
+          "speckit-constitution",
+          "speckit-specify",
+          "speckit-clarify",
+          "speckit-plan",
+          "speckit-tasks",
+          "speckit-analyze",
+          "speckit-implement",
+          "speckit-converge"
+        ]
+      },
+      "installed_at": "2026-09-27T22:01:33.591867+00:00"
+    }
+  }
+}
