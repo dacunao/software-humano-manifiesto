@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Canon } from '../canon/lector';
+import { casas, nodosDelBloque, palabras } from '../casas';
 import type { Contenido } from '../contenido/cargar';
 import { CLAVES_PRINCIPIO, LOCALES, type Entrada, type Localizado, type TipoEntrada } from '../contenido/esquemas';
 
@@ -12,7 +13,7 @@ export interface Hallazgo {
 }
 
 export const JOB_STORIES = Array.from({ length: 9 }, (_, i) => `JS-0${i + 1}`);
-export const REQUISITOS = Array.from({ length: 21 }, (_, i) => `FR-${String(i + 1).padStart(3, '0')}`);
+export const REQUISITOS = Array.from({ length: 22 }, (_, i) => `FR-${String(i + 1).padStart(3, '0')}`);
 
 const TIPO_ESPERADO: Record<(typeof CLAVES_PRINCIPIO)[number], TipoEntrada> = {
   tension: 'explanation',
@@ -55,8 +56,12 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
       for (const b of [...sec.blocks, ...sec.depth]) {
         if (b.kind === 'entrada') entradas.push({ e: b.entrada, dueño: s });
         if (b.kind === 'comparacion') entradas.push({ e: b.sistema, dueño: s }, { e: b.persona, dueño: s });
-        if (b.kind === 'canon')
-          for (const n of b.nodos) if (!anclas.has(n)) falla('RV-03', s, `${s.id}.${sec.id}`, `nodo canónico inexistente «${n}»`);
+        if (b.kind === 'canon') {
+          for (const n of [...(b.nodos ?? []), ...(b.desde ? [b.desde] : []), ...(b.hasta ? [b.hasta] : [])])
+            if (!anclas.has(n)) falla('RV-03', s, `${s.id}.${sec.id}`, `nodo canónico inexistente «${n}»`);
+          if (!b.nodos && b.desde && b.hasta && anclas.has(b.desde) && anclas.has(b.hasta) && nodosDelBloque(canon, b).length === 0)
+            falla('RV-03', s, `${s.id}.${sec.id}`, `rango vacío o invertido «${b.desde}»–«${b.hasta}»`);
+        }
       }
     }
   }
@@ -125,6 +130,32 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
     falla('RV-09', 'src/content/estado-adaptacion.yaml', 'version', `declara ${c.estado.version}, instalado ${version}`);
   if (!c.estado.published && (c.estado.url || c.estado.sha256))
     falla('RV-10', 'src/content/estado-adaptacion.yaml', 'url', 'url o sha256 con el preset sin publicar');
+
+  // RV-13 · una sola casa por pasaje (PRD v1.1 §18.3, RQ-14). Los encabezados no cuentan.
+  const mapaCasas = casas(canon);
+  const completos = new Map<string, Set<string>>();
+  for (const s of c.superficies)
+    for (const sec of s.sections)
+      for (const b of [...sec.blocks, ...sec.depth]) {
+        if (b.kind !== 'canon') continue;
+        const ns = nodosDelBloque(canon, b);
+        if (b.breve) {
+          const total = ns.reduce((t, n) => t + palabras(n.source), 0);
+          if (total > 60) falla('RV-13', s, `${s.id}.${sec.id}`, `cita breve de ${total} palabras (máximo 60)`);
+          continue;
+        }
+        for (const n of ns) if (n.kind !== 'encabezado') completos.set(n.id, (completos.get(n.id) ?? new Set()).add(s.id));
+      }
+  const hayCasas = c.superficies.length > 1;
+  for (const n of canon.nodos) {
+    if (n.kind === 'encabezado') continue;
+    const casa = mapaCasas.get(n.id);
+    const donde = completos.get(n.id) ?? new Set<string>();
+    for (const sup of donde)
+      if (sup !== casa) falla('RV-13', `src/content/superficies/${sup}.yaml`, n.id, `pasaje completo fuera de su casa (${casa})`);
+    if (hayCasas && casa && casa !== 'principio' && casa !== 'texto-integro' && !donde.has(casa))
+      falla('RV-13', `src/content/superficies/${casa}.yaml`, n.id, `falta en su casa (${casa})`);
+  }
 
   return h;
 }

@@ -4,8 +4,8 @@ import { leerCanon } from '../../../src/lib/canon/lector';
 import { renderMarkdown } from '../../../src/lib/canon/render';
 import { textoVisible } from '../../../src/lib/validacion/html';
 
-// AC-03 · el texto publicado en /es/manifiesto reproduce todos los nodos del núcleo. Requiere `bun run build`.
-const salida = 'dist/es/manifiesto.html';
+// AC-03 · el texto publicado en el texto íntegro (/es/manifiesto/texto-integro) reproduce todos los nodos del núcleo. Requiere `bun run build`.
+const salida = 'dist/es/manifiesto/texto-integro.html';
 const normal = (t: string) => t.replace(/\s+/g, ' ').trim();
 
 describe('integridad del manifiesto publicado', () => {

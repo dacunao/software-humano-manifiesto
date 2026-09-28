@@ -1,4 +1,4 @@
-# Superficie «principios» (PRD §18.1). Títulos y descripciones en borrador.
+# Superficie «principios» · ruta Decidir (PRD v1.1 §18.1). Casa de principios de diseño, arquitectura del marco y fundamento (§18.3).
 id: principios
 title:
   es:
@@ -22,16 +22,104 @@ description:
     text: Os dez princípios do manifesto, em sua ordem canônica.
 fr:
   - FR-004
+  - FR-007
 sections:
   - id: coleccion
     title:
-      es: { state: borrador, text: "Diez principios para decidir" }
-      en: &pend { state: pendiente }
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Diez principios para decidir
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: canon
-        nodos: [principios-de-diseno-03]
+        nodos:
+          - principios-de-diseno-03
       - kind: principios
     depth:
       - kind: canon
-        nodos: [principios-de-diseno-04]
+        nodos:
+          - principios-de-diseno-04
+  - id: arquitectura
+    title:
+      es:
+        state: borrador
+        text: Cómo se ordena el marco
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: principios-arquitectura
+          type: explanation
+          derivedFrom: proposito-del-documento-18
+          text:
+            es:
+              state: borrador
+              text: "Cada principio se traduce en niveles que no se sustituyen entre sí: el principio dice qué se cree; el fundamento de producto, qué debe construirse; la Job Story, cuándo surge la necesidad; la regla, qué exige; la prueba, cómo se sabe si se cumplió."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: proposito-del-documento-18
+        hasta: proposito-del-documento-19
+  - id: fundamento
+    title:
+      es:
+        state: borrador
+        text: Fundamento de producto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-fundamento
+          type: explanation
+          derivedFrom: sh-fund
+          text:
+            es:
+              state: borrador
+              text: "Todo empieza por saber qué debe construirse y con qué autoridad. El fundamento de producto es el contenido autorizado que dice qué construir, por qué, qué resultados debe producir, qué condiciones respetar y cómo se sabrá que se cumplió. No es un documento nuevo: puede estar en un PRD, en historias, en reglas o en criterios de aceptación."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: fundamento-de-producto-y-forma-de-referencia-02
+        hasta: fundamento-de-producto-y-forma-de-referencia-11
+  - id: job-stories
+    title:
+      es:
+        state: borrador
+        text: Job Stories como forma de referencia
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-job-stories
+          type: explanation
+          derivedFrom: fundamento-de-producto-y-forma-de-referencia-13
+          text:
+            es:
+              state: borrador
+              text: "Las Job Stories describen el progreso: cuándo surge una necesidad, qué la motiva y qué resultado se busca, sin anticipar la solución. Son la forma de referencia del manifiesto, no una obligación. Un fundamento puede llegar como épicas, requisitos o recorridos, y el método tiene que respetar esa forma en lugar de convertirla."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: fundamento-de-producto-y-forma-de-referencia-13
+        hasta: fundamento-de-producto-y-forma-de-referencia-34

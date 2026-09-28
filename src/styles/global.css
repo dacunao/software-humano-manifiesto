@@ -151,3 +151,10 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
   .selector-idioma { margin-left: 0; }
   .aviso-borrador { font-size: 0.85rem; }
 }
+/* Subtítulo de ruta en el menú (decisión de nombres, 2026-09-27) */
+.navegacion-global a { display: inline-flex; flex-direction: column; line-height: 1.15; }
+.navegacion-global .ruta { font-family: var(--sh-mono); font-size: 0.65rem; font-weight: 400; color: var(--sh-suave); letter-spacing: 0.04em; text-transform: lowercase; }
+.navegacion-global .estado { font-size: 0.75rem; }
+@media (max-width: 48rem) { .navegacion-global .ruta { display: none; } .navegacion-global a { flex-direction: row; } }
+.enlace-integro { font-weight: 650; }
+.descargas ul { list-style: none; padding: 0; }

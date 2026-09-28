@@ -38,7 +38,7 @@ export function canonDePrueba(): Canon {
       id: `p${String(i + 1).padStart(2, '0')}`, kind: 'encabezado' as const, section: `principio-${i + 1}`,
       hash: 'b'.repeat(64), source: '## P', anclas: [], nivel: 2, titulo: 'P',
     })),
-    { id: 'tabla-01', kind: 'tabla' as const, section: 'doctrina', hash: 'c'.repeat(64), source: '|x|', anclas: ['d01'] },
+    { id: 'tabla-01', kind: 'tabla' as const, section: 'doctrina-para-desarrollo-con-ia', hash: 'c'.repeat(64), source: '|x|', anclas: ['d01'] },
   ];
   return { nodos, secciones: [] };
 }
@@ -59,7 +59,7 @@ export function contenidoValido(): Contenido {
       id: 'inicio', title: loc(), description: loc(), fr: ['FR-001'],
       sections: [{ id: 'acto-1', title: loc(), depth: [], blocks: [
         { kind: 'entrada', entrada: entrada('inicio-1', 'explanation', 'portada-01') },
-        { kind: 'canon', nodos: ['d01'] },
+        { kind: 'canon', nodos: ['d01'], breve: true },
       ] }],
     }],
     principios: Array.from({ length: 10 }, (_, i) => principio(i + 1)),

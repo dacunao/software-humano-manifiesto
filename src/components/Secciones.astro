@@ -1,11 +1,12 @@
 ---
-import type { Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
+import type { IdSuperficie, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
 import Acto from './Acto.astro';
 
 interface Props {
   secciones: SeccionSuperficie[];
   locale: Locale;
+  superficie: IdSuperficie;
 }
-const { secciones, locale } = Astro.props;
+const { secciones, locale, superficie } = Astro.props;
 ---
-{secciones.map((s) => <Acto seccion={s} locale={locale} />)}
+{secciones.map((s) => <Acto seccion={s} locale={locale} superficie={superficie} />)}

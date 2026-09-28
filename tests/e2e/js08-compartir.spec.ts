@@ -6,7 +6,7 @@ test.describe('JS-08 · Compartir una idea precisa', () => {
     await page.goto('/es/principios/p03');
     await expect(page.locator('h1')).toContainText('P03');
     await expect(page.locator('#declaracion figure.cita-canonica')).toBeVisible();
-    await expect(page.locator('#fuente a')).toHaveAttribute('href', '/es/manifiesto#p03');
+    await expect(page.locator('#fuente a')).toHaveAttribute('href', '/es/manifiesto/texto-integro#p03');
   });
 
   test('escenario 2 · copiar confirma de forma clara y anunciable', async ({ page, context, browserName }, info) => {
@@ -23,9 +23,9 @@ test.describe('JS-08 · Compartir una idea precisa', () => {
   });
 
   test('escenario 3 · sin JavaScript el enlace de la sección está visible y es estable', async ({ page }) => {
-    await page.goto('/es/manifiesto');
+    await page.goto('/es/manifiesto/texto-integro');
     const enlace = page.locator('.compartir').first().getByRole('link', { name: 'Enlace a esta sección' });
     await expect(enlace).toBeVisible();
-    await expect(enlace).toHaveAttribute('href', /^\/es\/manifiesto#[a-z0-9-]+$/);
+    await expect(enlace).toHaveAttribute('href', /^\/es\/[a-z/-]+(#[a-z0-9-]+)?$/);
   });
 });

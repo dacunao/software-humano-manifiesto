@@ -16,11 +16,15 @@ Versiones evaluadas: SpecKit 1.0.8, preset `software-humano` 2.0.0, conformidad 
 
 - **A4 · `analyze` encontró dos problemas reales antes de implementar** (2026-09-27). (1) Las pruebas con personas estaban solo al final, después de optimizar, diseñar y traducir; la tabla del preset citaba `F07` y `SH-AP`, que lo delatan. (2) Una regla de validación habría dejado la construcción rota durante nueve fases. Damián decidió agregar una ronda temprana de comprensión.
 
+- **A5 · Las reglas de validación guiaron la reorganización de la v1.1** (2026-09-27). `RV-13` enumeró cada pasaje fuera de su casa o faltante; `RV-03` detectó que `FR-022` no estaba entre los requisitos válidos; `RV-11` confirmó que ningún enlace quedó roto tras mover el contenido.
+
 ## B · Fricciones operativas
 
 - **B1 · PyYAML** (2026-09-27). Todo script de `.specify/scripts/bash/` necesita el shim; sin él, la resolución de plantillas falla. Documentado en `AGENTS.md`; sigue siendo un paso que el agente debe recordar.
 - **B2 · `specify` sin descripción** (2026-09-27). El comando nativo exige una descripción y marca error si llega vacío. En este método la fuente es el PRD completo, así que el agente tuvo que interpretar la invocación vacía como «usa el fundamento». Funciona, pero depende de que el agente lea `AGENTS.md`.
 - **B3 · Una dependencia que ni `tasks` ni `analyze` vieron** (2026-09-27). Los actos de Inicio (fase 3) enlazan pasajes del manifiesto, pero la vista del manifiesto estaba en la fase 7. La regla `RV-11` detuvo la construcción y T063–T064 se adelantaron. Funcionó la red de seguridad; el orden de tareas no la anticipó.
+
+- **B4 · SpecKit no tiene una operación para propagar un cambio del fundamento** (2026-09-27). Con el PRD v1.1, la especificación, el plan y el diseño se editaron directamente, dejando trazado el cambio. Después se usó `converge` para derivar las tareas y `analyze` antes de implementar. Funcionó, pero el tramo PRD → especificación queda fuera de un comando.
 
 ## C · Defectos y mejoras candidatas
 

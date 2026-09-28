@@ -50,7 +50,14 @@ export type Entrada = z.infer<typeof Entrada>;
 
 export const Bloque = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('entrada'), entrada: Entrada }).strict(),
-  z.object({ kind: z.literal('canon'), nodos: z.array(z.string()).min(1) }).strict(),
+  // Pasajes del núcleo: una lista de nodos o un rango en orden canónico. `breve`: cita fuera de su casa (§18.3, RV-13).
+  z.object({
+    kind: z.literal('canon'),
+    nodos: z.array(z.string()).min(1).optional(),
+    desde: z.string().optional(),
+    hasta: z.string().optional(),
+    breve: z.boolean().optional(),
+  }).strict().refine((b) => !!b.nodos !== !!(b.desde && b.hasta), { message: 'canon: usar nodos o desde/hasta, no ambos' }),
   z.object({ kind: z.literal('principios') }).strict(),
   z.object({ kind: z.literal('estado-adaptacion') }).strict(),
   z.object({ kind: z.literal('comparacion'), sistema: Entrada, persona: Entrada }).strict(),
@@ -69,7 +76,7 @@ export const SeccionSuperficie = z
   .strict();
 export type SeccionSuperficie = z.infer<typeof SeccionSuperficie>;
 
-export const ID_SUPERFICIES = ['inicio', 'manifiesto', 'principios', 'aplicacion', 'speckit', 'acerca'] as const;
+export const ID_SUPERFICIES = ['inicio', 'manifiesto', 'principios', 'aplicacion', 'verificacion', 'speckit', 'acerca', 'texto-integro'] as const;
 export type IdSuperficie = (typeof ID_SUPERFICIES)[number];
 
 export const Superficie = z

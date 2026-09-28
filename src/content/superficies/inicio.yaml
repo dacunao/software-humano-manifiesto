@@ -1,4 +1,4 @@
-# Superficie «inicio» (PRD §18.1). Títulos y descripciones en borrador.
+# Superficie «inicio». Recorre las cuatro rutas; fuera de su casa, el núcleo solo se cita brevemente (PRD v1.1 §18.3).
 id: inicio
 title:
   es:
@@ -20,33 +20,44 @@ description:
   pt-BR:
     state: borrador
     text: Por que mais capacidade de construir software não garante mais progresso para as pessoas, e o que fazer a respeito.
-# Titular: opción C del borrador de copy (docs/design/), reescrita en voz impersonal.
-# A prueba como primera alternativa (decisión de Damián Acuña, 2026-09-27); se evalúa en la ronda temprana.
 hero:
   title:
-    es: { state: borrador, text: "Antes, construir era caro. Eso obligaba a elegir." }
-    en: { state: pendiente }
-    pt-BR: { state: pendiente }
+    es:
+      state: borrador
+      text: Antes, construir era caro. Eso obligaba a elegir.
+    en:
+      state: pendiente
+    pt-BR:
+      state: pendiente
   text:
     es:
       state: borrador
       text: Hoy agregar una opción más cuesta minutos, y la pregunta de si vale la pena es cada vez más fácil de saltar. El Manifiesto de Software Humano repone esa pregunta y le da un lugar en el proceso donde no se puede saltar.
-    en: { state: pendiente }
-    pt-BR: { state: pendiente }
+    en:
+      state: pendiente
+    pt-BR:
+      state: pendiente
 fr:
   - FR-001
   - FR-002
 sections:
-  # Acto 1 · PRD §16. Voz impersonal (decisión de la autoridad, 2026-09-27).
   - id: acto-1
     title:
-      es: { state: borrador, text: "Construir software es cada vez más fácil" }
-      en: &pend { state: pendiente }
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Construir software es cada vez más fácil
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     question:
-      es: { state: borrador, text: 'Si construir dejó de ser el principal límite, ¿qué pasa a limitar la calidad?' }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Si construir dejó de ser el principal límite, ¿qué pasa a limitar la calidad?
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -60,18 +71,24 @@ sections:
                 La inteligencia artificial redujo el costo de generar código, pantallas, textos y automatizaciones. Equipos pequeños construyen hoy productos que antes exigían organizaciones enteras, y una buena decisión puede llegar a manos de las personas en días.
 
                 Esa velocidad es una oportunidad real. También mueve el límite: cuando construir deja de ser lo difícil, lo difícil pasa a ser decidir qué merece existir y cómo debe sentirse al usarlo.
-            en: *pend
-            pt-BR: *pend
-    depth:
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: canon
-        nodos: [proposito-del-documento-03, proposito-del-documento-04]
-
-  # Acto 2 · PRD §16. Idea central tomada del borrador de copy del hero (docs/design/), reescrita en voz impersonal.
+        nodos:
+          - proposito-del-documento-03
+        breve: true
+    depth: []
   - id: acto-2
     title:
-      es: { state: borrador, text: "Poder construir no significa deber construir" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Poder construir no significa deber construir
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -85,8 +102,10 @@ sections:
                 Construir software se abarató. El costo no desapareció: pasó a quien lo usa. Se paga en atención, en aprendizaje y en decisiones que nadie vino a tomar.
 
                 Cuando construir es barato, una idea débil se convierte rápido en una implementación extensa, y una ambigüedad de producto en un comportamiento que parece terminado. El código puede ser correcto y aun así dejar en manos de la persona la complejidad que el equipo no resolvió.
-            en: *pend
-            pt-BR: *pend
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: comparacion
         sistema:
           id: inicio-acto-2-sistema
@@ -95,10 +114,11 @@ sections:
           text:
             es:
               state: borrador
-              text: |-
-                **Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo.
-            en: *pend
-            pt-BR: *pend
+              text: "**Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
         persona:
           id: inicio-acto-2-persona
           type: example
@@ -106,20 +126,25 @@ sections:
           text:
             es:
               state: borrador
-              text: |-
-                **Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa.
-            en: *pend
-            pt-BR: *pend
-    depth:
+              text: "**Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: canon
-        nodos: [doctrina-para-desarrollo-con-ia-03, doctrina-para-desarrollo-con-ia-05]
-
-  # Acto 3 · PRD §16. El texto canónico breve se cita por sus nodos; no se copia (RQ-01).
+        nodos:
+          - doctrina-para-desarrollo-con-ia-04
+        breve: true
+    depth: []
   - id: acto-3
     title:
-      es: { state: borrador, text: "El progreso humano es el producto" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: El progreso humano es el producto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -133,20 +158,25 @@ sections:
                 La tesis cabe en una idea: el producto no es el software, sino el progreso que una persona consigue con él. Por eso la experiencia no es un acabado que se agrega al final; forma parte de la función.
 
                 Un sistema que entrega el resultado correcto, pero obliga a interpretar la interfaz, recordar convenciones o temer equivocarse, todavía no resolvió el problema. Solo lo trasladó.
-            en: *pend
-            pt-BR: *pend
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: canon
-        nodos: [texto-canonico-03, texto-canonico-04, texto-canonico-07]
-    depth:
-      - kind: canon
-        nodos: [texto-canonico-05, texto-canonico-06, texto-canonico-08, texto-canonico-09, texto-canonico-10, texto-canonico-11, texto-canonico-12, texto-canonico-13, texto-canonico-14]
-
-  # Acto 4 · PRD §16. Los diez principios en orden canónico; sin capítulos por ahora (opcional, lo decide el diseño).
+        nodos:
+          - texto-canonico-03
+          - texto-canonico-04
+        breve: true
+    depth: []
   - id: acto-4
     title:
-      es: { state: borrador, text: "Diez principios para decidir" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Diez principios para decidir
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -156,21 +186,22 @@ sections:
           text:
             es:
               state: borrador
-              text: |-
-                Los principios no son aspiraciones. Cada uno tiene que poder cambiar una decisión, detener una implementación o exigir más evidencia; si una frase no tiene consecuencias prácticas, no cumple una función. Cada principio tiene su propia página, con su tensión, su significado, un ejemplo, un contraejemplo y las preguntas para usarlo en una revisión real.
-            en: *pend
-            pt-BR: *pend
+              text: Los principios no son aspiraciones. Cada uno tiene que poder cambiar una decisión, detener una implementación o exigir más evidencia; si una frase no tiene consecuencias prácticas, no cumple una función. Cada principio tiene su propia página, con su tensión, su significado, un ejemplo, un contraejemplo y las preguntas para usarlo en una revisión real.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: principios
-    depth:
-      - kind: canon
-        nodos: [principios-de-diseno-04]
-
-  # Acto 5 · PRD §16. Un principio cambia una decisión, exige evidencia o detiene una implementación.
+    depth: []
   - id: acto-5
     title:
-      es: { state: borrador, text: "Del principio a la decisión" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Del principio a la decisión
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -181,8 +212,10 @@ sections:
             es:
               state: borrador
               text: Un principio sirve cuando cambia lo que se hace. Hay tres formas en que puede actuar sobre una decisión concreta.
-            en: *pend
-            pt-BR: *pend
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: entrada
         entrada:
           id: inicio-acto-5-cambia
@@ -191,9 +224,11 @@ sections:
           text:
             es:
               state: borrador
-              text: '**Cambia una decisión.** Una pantalla de inicio presenta cinco acciones con el mismo peso. Con `P06` en la mesa, la pregunta es qué necesita la persona en ese momento: queda una acción principal y el resto aparece donde el contexto lo vuelve relevante.'
-            en: *pend
-            pt-BR: *pend
+              text: "**Cambia una decisión.** Una pantalla de inicio presenta cinco acciones con el mismo peso. Con `P06` en la mesa, la pregunta es qué necesita la persona en ese momento: queda una acción principal y el resto aparece donde el contexto lo vuelve relevante."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: entrada
         entrada:
           id: inicio-acto-5-evidencia
@@ -202,9 +237,11 @@ sections:
           text:
             es:
               state: borrador
-              text: '**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito.'
-            en: *pend
-            pt-BR: *pend
+              text: "**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: entrada
         entrada:
           id: inicio-acto-5-detiene
@@ -213,9 +250,11 @@ sections:
           text:
             es:
               state: borrador
-              text: '**Detiene una implementación.** Un asistente reescribe textos y los publica sin vista previa. Con `P10`, la implementación se detiene hasta que la persona pueda revisar, aceptar o rechazar el cambio antes de que se publique.'
-            en: *pend
-            pt-BR: *pend
+              text: "**Detiene una implementación.** Un asistente reescribe textos y los publica sin vista previa. Con `P10`, la implementación se detiene hasta que la persona pueda revisar, aceptar o rechazar el cambio antes de que se publique."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: comparacion
         sistema:
           id: inicio-acto-5-sin-principio
@@ -224,9 +263,11 @@ sections:
           text:
             es:
               state: borrador
-              text: '**Sin el principio.** Un agente de código termina una tarea y responde «listo». Para saber qué cambió, hay que revisar todo y confiar en su tono.'
-            en: *pend
-            pt-BR: *pend
+              text: "**Sin el principio.** Un agente de código termina una tarea y responde «listo». Para saber qué cambió, hay que revisar todo y confiar en su tono."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
         persona:
           id: inicio-acto-5-con-principio
           type: example
@@ -234,19 +275,27 @@ sections:
           text:
             es:
               state: borrador
-              text: '**Con el principio.** El agente muestra qué archivos cambió, qué decidió por su cuenta y cómo deshacerlo. La confianza descansa en evidencia, no en el tono.'
-            en: *pend
-            pt-BR: *pend
-    depth:
+              text: "**Con el principio.** El agente muestra qué archivos cambió, qué decidió por su cuenta y cómo deshacerlo. La confianza descansa en evidencia, no en el tono."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: canon
-        nodos: [verificacion-09, verificacion-10]
-
-  # Acto 6 · PRD §16.
+        nodos:
+          - guia-de-bolsillo-20
+          - guia-de-bolsillo-21
+          - guia-de-bolsillo-22
+        breve: true
+    depth: []
   - id: acto-6
     title:
-      es: { state: borrador, text: "De la doctrina al desarrollo" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: De la doctrina al desarrollo
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -260,18 +309,20 @@ sections:
                 Los principios se vuelven práctica en un método: un fundamento de producto con autoridad, las Job Stories como forma de referencia, un flujo de ocho pasos, artefactos que existen solo si responden una pregunta, un contrato para agentes de código, razones explícitas para detenerse y una definición de terminado que no se conforma con código correcto.
 
                 [Ver cómo se aplica](/es/aplicacion).
-            en: *pend
-            pt-BR: *pend
-    depth:
-      - kind: canon
-        nodos: [guia-de-bolsillo-18]
-
-  # Acto 7 · PRD §16. Cierra con el estado real y las acciones disponibles.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+    depth: []
   - id: acto-7
     title:
-      es: { state: borrador, text: "Una implementación mediante SpecKit" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Una implementación mediante SpecKit
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -281,10 +332,11 @@ sections:
           text:
             es:
               state: borrador
-              text: |-
-                El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit).
-            en: *pend
-            pt-BR: *pend
+              text: "El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit)."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
       - kind: estado-adaptacion
       - kind: entrada
         entrada:
@@ -293,6 +345,8 @@ sections:
           text:
             es:
               state: borrador
-              text: 'Para seguir: [leer el manifiesto completo](/es/manifiesto), [recorrer los principios](/es/principios), [ver cómo se aplica](/es/aplicacion) o [conocer el estado de la adaptación](/es/speckit).'
-            en: *pend
-            pt-BR: *pend
+              text: "Para seguir: [leer el manifiesto completo](/es/manifiesto), [recorrer los principios](/es/principios), [ver cómo se aplica](/es/aplicacion) o [conocer el estado de la adaptación](/es/speckit)."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente

@@ -1,6 +1,8 @@
 import { execFileSync } from 'node:child_process';
 import { leerCanon, type NodoCanonico } from './canon/lector';
 import { cargarContenido } from './contenido/cargar';
+import { casas, nodosDelBloque } from './casas';
+import { ruta } from './i18n/rutas';
 import type { Localizado, Locale, Principio, Superficie, IdSuperficie } from './contenido/esquemas';
 
 /** Acceso de solo lectura al contenido validado y al núcleo, para las vistas. */
@@ -125,3 +127,43 @@ export function fechaActualizacion(archivos: string[]): string {
 }
 
 export const URL_SITIO = `https://${contenido.sitio.domain}`;
+
+/** Dónde se muestra cada nodo completo: superficie y sección (para la dirección de su casa). */
+const mostrados = (() => {
+  const m = new Map<string, { superficie: IdSuperficie; seccion: string }>();
+  for (const s of contenido.superficies)
+    for (const sec of s.sections)
+      for (const b of [...sec.blocks, ...sec.depth])
+        if (b.kind === 'canon' && !b.breve)
+          for (const n of nodosDelBloque(canon, b)) for (const id of [n.id, ...n.anclas]) m.set(id, { superficie: s.id, seccion: sec.id });
+  return m;
+})();
+
+/** Nodos que la página de un principio muestra con su ancla (frase y partes canónicas). */
+function nodosDePrincipio(pid: string): Set<string> {
+  const p = partesCanonicas(pid);
+  return new Set([canonicoDePrincipio(pid).frase, ...Object.values(p)].flatMap((n) => [n.id, ...n.anclas]));
+}
+
+/**
+ * Dirección de la casa de un pasaje (PRD v1.1 §18.3): donde se lee completo. Si el nodo exacto
+ * no se muestra (un encabezado omitido), la sección de la casa que contiene su sección canónica;
+ * si no tiene casa en el sitio, el texto íntegro.
+ */
+export function rutaCasa(id: string, locale: Locale): string {
+  const n = nodo(id);
+  const casa = casas(canon).get(id);
+  const integro = `${ruta({ tipo: 'texto-integro' }, locale)}#${id}`;
+  if (casa === 'principio') {
+    const pid = canon.nodos.find((x) => x.section === n.section && /^p(0[1-9]|10)$/.test(x.id))?.id;
+    if (!pid) return integro;
+    const base = ruta({ tipo: 'principio', principio: pid }, locale);
+    return nodosDePrincipio(pid).has(id) ? `${base}#${id}` : base;
+  }
+  if (!casa || casa === 'texto-integro') return integro;
+  const exacto = mostrados.get(id);
+  if (exacto?.superficie === casa) return `${ruta({ tipo: casa }, locale)}#${id}`;
+  const hermano = canon.nodos.find((x) => x.section === n.section && mostrados.get(x.id)?.superficie === casa);
+  const sec = hermano ? mostrados.get(hermano.id)?.seccion : undefined;
+  return sec ? `${ruta({ tipo: casa }, locale)}#${sec}` : integro;
+}

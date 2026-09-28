@@ -242,13 +242,13 @@ contenido.origen:
 contenido.fuente:
   es:
     state: borrador
-    text: Leer el pasaje en el manifiesto
+    text: Leer el pasaje completo
   en:
     state: borrador
-    text: Read the passage in the manifesto
+    text: Read the full passage
   pt-BR:
     state: borrador
-    text: Ler o trecho no manifesto
+    text: Ler o trecho completo
 contenido.profundizar:
   es:
     state: borrador
@@ -543,3 +543,55 @@ indice.rotulo:
   es: { state: borrador, text: "Índice de la sección" }
   en: { state: borrador, text: "Section index" }
   pt-BR: { state: borrador, text: "Índice da seção" }
+contenido.fuenteIntegro:
+  es: { state: borrador, text: "Ver en el texto íntegro" }
+  en: { state: borrador, text: "See it in the full text" }
+  pt-BR: { state: borrador, text: "Ver no texto integral" }
+nav.verificacion:
+  es: { state: borrador, text: "Verificación" }
+  en: { state: borrador, text: "Verification" }
+  pt-BR: { state: borrador, text: "Verificação" }
+nav.textoIntegro:
+  es: { state: borrador, text: "Texto íntegro del núcleo" }
+  en: { state: borrador, text: "Full text of the core" }
+  pt-BR: { state: borrador, text: "Texto integral do núcleo" }
+ruta.manifiesto:
+  es: { state: borrador, text: "Comprender" }
+  en: { state: borrador, text: "Understand" }
+  pt-BR: { state: borrador, text: "Compreender" }
+ruta.principios:
+  es: { state: borrador, text: "Decidir" }
+  en: { state: borrador, text: "Decide" }
+  pt-BR: { state: borrador, text: "Decidir" }
+ruta.aplicacion:
+  es: { state: borrador, text: "Construir" }
+  en: { state: borrador, text: "Build" }
+  pt-BR: { state: borrador, text: "Construir" }
+ruta.verificacion:
+  es: { state: borrador, text: "Verificar" }
+  en: { state: borrador, text: "Verify" }
+  pt-BR: { state: borrador, text: "Verificar" }
+ruta.rotulo:
+  es: { state: borrador, text: "Ruta de lectura" }
+  en: { state: borrador, text: "Reading path" }
+  pt-BR: { state: borrador, text: "Rota de leitura" }
+integro.descargas:
+  es: { state: borrador, text: "Descargar el núcleo" }
+  en: { state: borrador, text: "Download the core" }
+  pt-BR: { state: borrador, text: "Baixar o núcleo" }
+integro.original:
+  es: { state: borrador, text: "Original en español (Markdown)" }
+  en: { state: borrador, text: "Spanish original (Markdown)" }
+  pt-BR: { state: borrador, text: "Original em espanhol (Markdown)" }
+integro.traduccionEn:
+  es: { state: borrador, text: "Traducción al inglés (Markdown)" }
+  en: { state: borrador, text: "English translation (Markdown)" }
+  pt-BR: { state: borrador, text: "Tradução para o inglês (Markdown)" }
+integro.traduccionPt:
+  es: { state: borrador, text: "Traducción al portugués de Brasil (Markdown)" }
+  en: { state: borrador, text: "Brazilian Portuguese translation (Markdown)" }
+  pt-BR: { state: borrador, text: "Tradução para o português do Brasil (Markdown)" }
+manifiesto.integro:
+  es: { state: borrador, text: "Leer el núcleo completo, buscar un pasaje o citarlo: texto íntegro" }
+  en: { state: borrador, text: "Read the full core, search for a passage or cite it: full text" }
+  pt-BR: { state: borrador, text: "Ler o núcleo completo, buscar um trecho ou citá-lo: texto integral" }

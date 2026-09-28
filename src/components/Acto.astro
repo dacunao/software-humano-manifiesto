@@ -1,7 +1,8 @@
 ---
-import type { Bloque, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
+import type { Bloque, IdSuperficie, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
 import { ruta } from '../lib/i18n/rutas';
-import { markdownDe, nodo, t, texto } from '../lib/sitio';
+import { canon, markdownDe, rutaCasa, t, texto } from '../lib/sitio';
+import { casas, nodosDelBloque } from '../lib/casas';
 import BloqueEditorial from './BloqueEditorial.astro';
 import CitaCanonica from './CitaCanonica.astro';
 import Comparacion from './Comparacion.astro';
@@ -15,18 +16,25 @@ import EstadoAdaptacion from './EstadoAdaptacion.astro';
 interface Props {
   seccion: SeccionSuperficie;
   locale: Locale;
+  superficie: IdSuperficie;
 }
-const { seccion: sec, locale } = Astro.props;
+const { seccion: sec, locale, superficie } = Astro.props;
+// Dentro de su casa, el pasaje de origen está en la misma página: no se repite el enlace (P06).
+const enCasa = (id?: string) => !!id && casas(canon).get(id) === superficie;
 const titulo = texto(sec.title, locale);
 const pregunta = sec.question ? texto(sec.question, locale) : undefined;
+// En su casa, el pasaje remite al texto íntegro; fuera de ella (cita breve), a su casa (§18.3).
 const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
-  const nodos = b.nodos.map((id) => ({ nodo: nodo(id), ...markdownDe(nodo(id), locale) }));
+  const ns = nodosDelBloque(canon, b);
+  const nodos = ns.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
   const lang = nodos.every((x) => x.lang === locale) ? locale : 'es';
+  const primero = ns.find((n) => n.kind !== 'encabezado') ?? ns[0]!;
   return {
     nodos,
     lang,
     rotulo: t(lang === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale),
-    fuente: `${ruta({ tipo: 'manifiesto' }, locale)}#${b.nodos[0]}`,
+    fuente: b.breve ? rutaCasa(primero.id, locale) : `${ruta({ tipo: 'texto-integro' }, locale)}#${primero.id}`,
+    textoFuente: t(b.breve ? 'contenido.fuente' : 'contenido.fuenteIntegro', locale),
   };
 };
 const grupos = [sec.blocks, sec.depth] as const;
@@ -36,12 +44,12 @@ const grupos = [sec.blocks, sec.depth] as const;
   {pregunta?.texto && <p class="pregunta" lang={pregunta.lang !== locale ? pregunta.lang : undefined}>{pregunta.texto}</p>}
   {grupos.map((lista, i) => {
     const contenido = lista.map((b) => {
-      if (b.kind === 'entrada') return <BloqueEditorial entrada={b.entrada} locale={locale} />;
+      if (b.kind === 'entrada') return <BloqueEditorial entrada={b.entrada} locale={locale} sinOrigen={enCasa(b.entrada.derivedFrom)} />;
       if (b.kind === 'comparacion') return <Comparacion sistema={b.sistema} persona={b.persona} locale={locale} />;
       if (b.kind === 'principios') return <ListaPrincipios locale={locale} />;
       if (b.kind === 'estado-adaptacion') return <EstadoAdaptacion locale={locale} />;
       const c = cita(b);
-      return <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={c.fuente} textoFuente={t('contenido.fuente', locale)} />;
+      return <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={c.fuente} textoFuente={c.textoFuente} />;
     });
     if (i === 0) return contenido;
     return lista.length > 0 && (

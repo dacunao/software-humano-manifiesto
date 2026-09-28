@@ -9,6 +9,8 @@ describe('contrato de rutas', () => {
       [{ tipo: 'principios' }, '/principles', '/es/principios', '/pt-br/principios'],
       [{ tipo: 'principio', principio: 'p03' }, '/principles/p03', '/es/principios/p03', '/pt-br/principios/p03'],
       [{ tipo: 'aplicacion' }, '/practice', '/es/aplicacion', '/pt-br/aplicacao'],
+      [{ tipo: 'verificacion' }, '/verification', '/es/verificacion', '/pt-br/verificacao'],
+      [{ tipo: 'texto-integro' }, '/manifesto/full-text', '/es/manifiesto/texto-integro', '/pt-br/manifesto/texto-integral'],
       [{ tipo: 'speckit' }, '/speckit', '/es/speckit', '/pt-br/speckit'],
       [{ tipo: 'acerca' }, '/about', '/es/acerca', '/pt-br/sobre'],
       [{ tipo: '404' }, '/404', '/es/404', '/pt-br/404'],
@@ -20,11 +22,11 @@ describe('contrato de rutas', () => {
     }
   });
 
-  test('48 páginas de contenido, todas distintas', () => {
+  test('54 páginas de contenido, todas distintas (PRD v1.1)', () => {
     const rutas = todasLasRutas().map((r) => r.ruta);
-    expect(paginasDeContenido()).toHaveLength(16);
-    expect(rutas).toHaveLength(48);
-    expect(new Set(rutas).size).toBe(48);
+    expect(paginasDeContenido()).toHaveLength(18);
+    expect(rutas).toHaveLength(54);
+    expect(new Set(rutas).size).toBe(54);
   });
 
   test('cada ruta resuelve a su página y tiene equivalente en los tres idiomas', () => {

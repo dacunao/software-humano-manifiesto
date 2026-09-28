@@ -1,0 +1,188 @@
+# Superficie «verificacion» · ruta Verificar (PRD v1.1 §18.1, FR-022). Casa de verificación, antipatrones, definición de terminado y guía de bolsillo (§18.3).
+id: verificacion
+title:
+  es:
+    state: borrador
+    text: Verificación
+  en:
+    state: borrador
+    text: Verification
+  pt-BR:
+    state: borrador
+    text: Verificação
+description:
+  es:
+    state: borrador
+    text: "Cómo evaluar un prototipo, una implementación o una entrega: dimensiones de verificación, antipatrones, definición de terminado y guía de bolsillo."
+  en:
+    state: borrador
+    text: "How to evaluate a prototype, an implementation or a delivery: verification dimensions, anti-patterns, definition of done and pocket guide."
+  pt-BR:
+    state: borrador
+    text: "Como avaliar um protótipo, uma implementação ou uma entrega: dimensões de verificação, antipadrões, definição de pronto e guia de bolso."
+fr:
+  - FR-022
+sections:
+  - id: dimensiones
+    title:
+      es:
+        state: borrador
+        text: Doce dimensiones para aceptar una solución
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-dimensiones
+          type: explanation
+          derivedFrom: verificacion-03
+          text:
+            es:
+              state: borrador
+              text: "Aceptar exige evidencia. Que una pantalla se vea limpia o que el código compile no demuestra que el producto cumpla su propósito: la cobertura, el progreso, la comprensión, la carga, la confianza, el control y los estados también se verifican."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: verificacion-03
+        hasta: verificacion-04
+  - id: scorecard
+    title:
+      es:
+        state: borrador
+        text: Un puntaje para orientar la conversación
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-scorecard
+          type: explanation
+          derivedFrom: verificacion-06
+          text:
+            es:
+              state: borrador
+              text: "Once criterios se puntúan de 0 a 2. El puntaje no reemplaza el juicio: ordena la conversación y marca lo que no puede quedar en cero."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: verificacion-06
+        hasta: verificacion-08
+  - id: revision
+    title:
+      es:
+        state: borrador
+        text: Preguntas para una revisión de producto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-revision
+          type: explanation
+          derivedFrom: verificacion-10
+          text:
+            es:
+              state: borrador
+              text: "Once preguntas para revisar una decisión de producto, incluida la más difícil: qué haría rechazar una implementación aunque funcione técnicamente."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        nodos:
+          - verificacion-10
+  - id: antipatrones
+    title:
+      es:
+        state: borrador
+        text: Señales de que el producto se aleja
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-antipatrones
+          type: explanation
+          derivedFrom: antipatrones-03
+          text:
+            es:
+              state: borrador
+              text: "Catorce antipatrones, cada uno con la forma en que aparece y su respuesta, y una advertencia: la simplicidad también puede ser una excusa para ocultar lo necesario."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: antipatrones-03
+        hasta: antipatrones-06
+  - id: terminado
+    title:
+      es:
+        state: borrador
+        text: Qué significa terminado
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-terminado
+          type: explanation
+          derivedFrom: sh-done
+          text:
+            es:
+              state: borrador
+              text: Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        nodos:
+          - gobernanza-16
+          - gobernanza-17
+  - id: bolsillo
+    title:
+      es:
+        state: borrador
+        text: Guía de bolsillo
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-bolsillo
+          type: explanation
+          derivedFrom: guia-de-bolsillo-03
+          text:
+            es:
+              state: borrador
+              text: "Para tener a mano: catorce preguntas antes de aceptar una decisión, siete razones para detener una implementación y tres frases que protegen el criterio."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: guia-de-bolsillo-03
+        hasta: guia-de-bolsillo-22

@@ -21,7 +21,8 @@ const ld = [{
     url: `${URL_SITIO}${ruta({ tipo: 'principio', principio: pid }, locale)}`,
   })),
 }];
-const indice = [{
+const secciones = superficie('principios').sections.map((sec) => ({ href: `#${sec.id}`, texto: texto(sec.title, locale).texto }));
+const indice = [{ titulo: t('indice.enEstaPagina', locale), items: secciones }, {
   titulo: t('nav.principios', locale),
   items: PRINCIPIOS.map((pid) => {
     const md = markdownDe(canonicoDePrincipio(pid).nombre, locale);

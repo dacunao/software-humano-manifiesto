@@ -14,22 +14,25 @@ const destinos = [
   { tipo: 'manifiesto', clave: 'nav.manifiesto' },
   { tipo: 'principios', clave: 'nav.principios' },
   { tipo: 'aplicacion', clave: 'nav.aplicacion' },
+  { tipo: 'verificacion', clave: 'nav.verificacion' },
   { tipo: 'speckit', clave: 'nav.speckit' },
   { tipo: 'acerca', clave: 'nav.acerca' },
 ] as const;
-const actual = pagina.tipo === 'principio' ? 'principios' : pagina.tipo;
+const actual = pagina.tipo === 'principio' ? 'principios' : pagina.tipo === 'texto-integro' ? 'manifiesto' : pagina.tipo;
+const RUTA: Record<string, string> = { manifiesto: 'ruta.manifiesto', principios: 'ruta.principios', aplicacion: 'ruta.aplicacion', verificacion: 'ruta.verificacion' };
 ---
 <nav aria-label={t('nav.principal', locale)} class="navegacion-global">
   <ul>
     {destinos.map((d) => (
       <li>
         <a href={ruta({ tipo: d.tipo }, locale)} aria-current={actual === d.tipo ? 'page' : undefined}>
-          {t(d.clave, locale)}
+          <span class="nombre">{t(d.clave, locale)}</span>
+          {RUTA[d.tipo] && <span class="ruta">{t(RUTA[d.tipo]!, locale)}</span>}
           {d.tipo === 'speckit' && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
         </a>
       </li>
     ))}
   </ul>
-  <p class="version"><a href={ruta({ tipo: 'manifiesto' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
+  <p class="version"><a href={ruta({ tipo: 'texto-integro' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
   <SelectorIdioma locale={locale} pagina={pagina} />
 </nav>

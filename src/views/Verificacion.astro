@@ -1,0 +1,11 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import Superficie from './Superficie.astro';
+
+/** Verificación · ruta Verificar (FR-022). */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+<Superficie id="verificacion" locale={locale} />

@@ -15,13 +15,15 @@ const SLUGS: Record<Exclude<TipoPagina, 'principio'>, Record<Locale, string>> = 
   manifiesto: { en: 'manifesto', es: 'manifiesto', 'pt-BR': 'manifesto' },
   principios: { en: 'principles', es: 'principios', 'pt-BR': 'principios' },
   aplicacion: { en: 'practice', es: 'aplicacion', 'pt-BR': 'aplicacao' },
+  verificacion: { en: 'verification', es: 'verificacion', 'pt-BR': 'verificacao' },
+  'texto-integro': { en: 'manifesto/full-text', es: 'manifiesto/texto-integro', 'pt-BR': 'manifesto/texto-integral' },
   speckit: { en: 'speckit', es: 'speckit', 'pt-BR': 'speckit' },
   acerca: { en: 'about', es: 'acerca', 'pt-BR': 'sobre' },
   '404': { en: '404', es: '404', 'pt-BR': '404' },
 };
 
 export const PRINCIPIOS = Array.from({ length: 10 }, (_, i) => `p${String(i + 1).padStart(2, '0')}`);
-export const SUPERFICIES: readonly IdSuperficie[] = ['inicio', 'manifiesto', 'principios', 'aplicacion', 'speckit', 'acerca'];
+export const SUPERFICIES: readonly IdSuperficie[] = ['inicio', 'manifiesto', 'principios', 'aplicacion', 'verificacion', 'speckit', 'acerca', 'texto-integro'];
 
 export function ruta(pagina: Pagina, locale: Locale): string {
   const prefijo = IDIOMAS[locale].path;
@@ -33,7 +35,7 @@ export function ruta(pagina: Pagina, locale: Locale): string {
   return r;
 }
 
-/** Las 48 páginas de contenido, sin las 404. */
+/** Las 54 páginas de contenido (PRD v1.1), sin las 404. */
 export function paginasDeContenido(): Pagina[] {
   return [
     ...SUPERFICIES.map((tipo) => ({ tipo })),

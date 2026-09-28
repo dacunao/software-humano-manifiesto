@@ -37,7 +37,7 @@ const indice = [
     return { href: ruta({ tipo: 'principio', principio: otro }, locale), codigo: otro.toUpperCase(), texto: md.markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, ''), actual: otro === pid, lang: md.lang !== locale ? md.lang : undefined };
   }) },
 ];
-const fuente = (n: NodoCanonico) => `${ruta({ tipo: 'manifiesto' }, locale)}#${n.id}`;
+const fuente = (n: NodoCanonico) => `${ruta({ tipo: 'texto-integro' }, locale)}#${n.id}`;
 const cita = (nodos: NodoCanonico[]) => {
   const ns = nodos.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
   const lang = ns.every((x) => x.lang === locale) ? locale : 'es';
@@ -76,7 +76,7 @@ const ld = [{
       <h1 id="declaracion-titulo" lang={titulo.lang !== locale ? titulo.lang : undefined}>
         <code>{codigo}</code> <span set:html={renderLinea(limpio)} />
       </h1>
-      <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} fuente={fuente(frase)} textoFuente={t('contenido.fuente', locale)} />
+      <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} fuente={fuente(frase)} textoFuente={t('contenido.fuenteIntegro', locale)} />
       <Compartir locale={locale} href={ruta({ tipo: 'principio', principio: pid }, locale)} titulo={`${codigo} · ${limpio.replace(/`/g, '')}`} />
     </header>
 
@@ -87,11 +87,11 @@ const ld = [{
           <h2 id={`${s.id}-titulo`}>{t(s.clave, locale)}</h2>
           <BloqueEditorial entrada={s.entrada} locale={locale} sinRotulo={s.id !== 'tension' && s.id !== 'significado' && s.id !== 'consecuencia'} sinOrigen={!!s.canon} />
           {c && s.canon && (s.visible ? (
-            <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuente', locale)} />
+            <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuenteIntegro', locale)} />
           ) : (
             <details class="profundidad">
               <summary>{t('contenido.profundizar', locale)}: {t(s.clave, locale)}</summary>
-              <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuente', locale)} />
+              <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuenteIntegro', locale)} />
             </details>
           ))}
         </section>
@@ -100,7 +100,7 @@ const ld = [{
 
     <section id="fuente" aria-labelledby="fuente-titulo" class="seccion">
       <h2 id="fuente-titulo">{t('principio.fuente', locale)}</h2>
-      <p><a href={`${ruta({ tipo: 'manifiesto' }, locale)}#${pid}`}>{t('contenido.fuente', locale)} · <code>{codigo}</code></a></p>
+      <p><a href={`${ruta({ tipo: 'texto-integro' }, locale)}#${pid}`}>{t('contenido.fuenteIntegro', locale)} · <code>{codigo}</code></a></p>
     </section>
 
     <nav class="anterior-siguiente" aria-label={t('nav.principios', locale)}>

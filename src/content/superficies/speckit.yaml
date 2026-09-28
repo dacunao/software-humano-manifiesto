@@ -1,4 +1,4 @@
-# Superficie «speckit» (PRD §18.1). Títulos y descripciones en borrador.
+# Superficie «speckit». Casa del límite entre núcleo e implementación (PRD v1.1 §18.3).
 id: speckit
 title:
   es:
@@ -27,9 +27,13 @@ fr:
 sections:
   - id: que-es
     title:
-      es: { state: borrador, text: "Qué es y qué no es" }
-      en: &pend { state: pendiente }
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Qué es y qué no es
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -39,18 +43,24 @@ sections:
           text:
             es:
               state: borrador
-              text: >-
-                SpecKit es una herramienta de desarrollo guiado por especificaciones: ordena el trabajo en especificar, aclarar, planificar, dividir en tareas, analizar, implementar y converger. No define el manifiesto ni el producto. La adaptación Software Humano lo usa para que la doctrina esté presente mientras un agente de código trabaja. Es una forma de aplicar el manifiesto, no el manifiesto.
-            en: *pend
-            pt-BR: *pend
+              text: "SpecKit es una herramienta de desarrollo guiado por especificaciones: ordena el trabajo en especificar, aclarar, planificar, dividir en tareas, analizar, implementar y converger. No define el manifiesto ni el producto. La adaptación Software Humano lo usa para que la doctrina esté presente mientras un agente de código trabaja. Es una forma de aplicar el manifiesto, no el manifiesto."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
     depth:
       - kind: canon
-        nodos: [proposito-del-documento-13, proposito-del-documento-21]
+        nodos:
+          - proposito-del-documento-21
   - id: capas
     title:
-      es: { state: borrador, text: 'Cuatro capas, cada una con su autoridad' }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Cuatro capas, cada una con su autoridad
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -66,13 +76,19 @@ sections:
                 - **El anexo de aplicación** define cómo se corresponde cada obligación del núcleo con una operación de SpecKit.
                 - **El preset, la extensión y el workflow Software Humano** materializan esa correspondencia. El preset agrega a cada operación lo que el manifiesto exige en ella; la extensión comprueba que los artefactos lo tengan; el workflow pone las compuertas que el manifiesto nombra.
                 - **SpecKit nativo** conserva su comportamiento en todo lo que la adaptación no toca.
-            en: *pend
-            pt-BR: *pend
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
   - id: conserva
     title:
-      es: { state: borrador, text: "Qué conserva y qué cambia" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Qué conserva y qué cambia
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: entrada
         entrada:
@@ -82,14 +98,19 @@ sections:
           text:
             es:
               state: borrador
-              text: >-
-                Los comandos nativos conservan su descripción, su encadenamiento y sus scripts, y la lista de verificación nativa queda intacta. Lo que cambia es el contenido de las plantillas: cada operación incorpora, citado textualmente del núcleo, lo que el manifiesto exige en ese momento, y los artefactos del núcleo aparecen donde corresponden. Nada de esto requiere modificar el código de SpecKit.
-            en: *pend
-            pt-BR: *pend
+              text: "Los comandos nativos conservan su descripción, su encadenamiento y sus scripts, y la lista de verificación nativa queda intacta. Lo que cambia es el contenido de las plantillas: cada operación incorpora, citado textualmente del núcleo, lo que el manifiesto exige en ese momento, y los artefactos del núcleo aparecen donde corresponden. Nada de esto requiere modificar el código de SpecKit."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
   - id: estado
     title:
-      es: { state: borrador, text: "Estado actual" }
-      en: *pend
-      pt-BR: *pend
+      es:
+        state: borrador
+        text: Estado actual
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
     blocks:
       - kind: estado-adaptacion

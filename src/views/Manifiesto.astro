@@ -1,59 +1,19 @@
 ---
 import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
-import NodoCanonico from '../components/NodoCanonico.astro';
-import Compartir from '../components/Compartir.astro';
 import { ruta } from '../lib/i18n/rutas';
-import { IDIOMAS } from '../lib/i18n/idiomas';
-import { obraManifiesto } from '../lib/semantica/jsonld';
-import { canon, canonicoDePrincipio, contenido, markdownDe, nodo, t, URL_SITIO } from '../lib/sitio';
+import { contenido, t } from '../lib/sitio';
 
-/**
- * El núcleo v2.1 íntegro (FR-003). En español, la fuente directa; en inglés y portugués, la
- * traducción de cada nodo, identificada como tal y con referencia al original (PRD §19.4).
- * Mientras una traducción esté pendiente, ese nodo se muestra en el original con su `lang`.
- */
+/** Manifiesto · ruta Comprender (PRD v1.1 §18.1): texto canónico, problema y rutas de lectura. */
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
-const nodos = canon.nodos.map((n) => ({ n, ...markdownDe(n, locale) }));
-const indice = [{ titulo: t('manifiesto.indice', locale), items: canon.secciones.map((sec) => {
-  // En las secciones de principio, el nombre del principio orienta más que «PRINCIPIO N».
-  const esPrincipio = /^p(0[1-9]|10)$/.test(sec.ancla);
-  const md = markdownDe(esPrincipio ? canonicoDePrincipio(sec.ancla).nombre : nodo(sec.ancla), locale);
-  const limpio = md.markdown.replace(/^#{1,6}\s+/, '');
-  const codigo = esPrincipio ? sec.ancla.toUpperCase() : /`([A-Z0-9-]+)`/.exec(limpio)?.[1];
-  return { href: `#${sec.ancla}`, texto: limpio.replace(/\s*·\s*`[^`]+`/, '').replace(/`/g, ''), codigo, lang: md.lang !== locale ? md.lang : undefined };
-}) }];
-const pendientes = nodos.filter((x) => x.sustituido).length;
 const { version, date } = contenido.sitio.core;
-const titulo = markdownDe(nodo('portada-02'), locale).markdown.replace(/^#\s+/, '');
-const url = (l: Locale) => `${URL_SITIO}${ruta({ tipo: 'manifiesto' }, l)}`;
-const ld = [obraManifiesto({
-  sitio: contenido.sitio, nombre: titulo, url: url(locale), idioma: IDIOMAS[locale].hreflang, fecha: date,
-  original: url('es'), traducciones: [url('en'), url('pt-BR')],
-})];
 ---
-<Superficie id="manifiesto" locale={locale} ld={ld} indice={indice} indiceArriba claseIndice="indice-manifiesto" archivos={['docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md', 'src/content/traducciones-canon']}>
+<Superficie id="manifiesto" locale={locale} archivos={['docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md']}>
   <Fragment slot="antes">
     <p class="version-nucleo">{t('manifiesto.version', locale, { version, fecha: date })}</p>
-    {locale !== 'es' && (
-      <p class="aviso-traduccion" data-tipo="traduccion">
-        {t('contenido.traduccion', locale)} <a href={ruta({ tipo: 'manifiesto' }, 'es')} hreflang="es" lang="es">{t('manifiesto.original', locale)}</a>
-      </p>
-    )}
-    {pendientes > 0 && <p class="aviso-traduccion">{t('contenido.traduccionPendiente', locale)}</p>}
+    <p class="enlace-integro"><a href={ruta({ tipo: 'texto-integro' }, locale)}>{t('manifiesto.integro', locale)}</a></p>
   </Fragment>
-  <article class="manifiesto lectura" data-tipo="cita-canonica">
-    {nodos.map(({ n, markdown, lang }) => (
-      <>
-        {lang === locale ? <NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} />
-        : <div lang={lang}><NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} /></div>}
-        {n.kind === 'encabezado' && n.nivel === 2 && (
-          <Compartir locale={locale} href={`${ruta({ tipo: 'manifiesto' }, locale)}#${n.id}`} titulo={markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, '')} />
-        )}
-      </>
-    ))}
-  </article>
 </Superficie>

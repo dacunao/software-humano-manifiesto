@@ -1,4 +1,4 @@
-# Superficie «manifiesto» (PRD §18.1). Títulos y descripciones en borrador.
+# Superficie «manifiesto» · ruta Comprender (PRD v1.1 §18.1). Casa del texto canónico y del propósito (§18.3).
 id: manifiesto
 title:
   es:
@@ -13,14 +13,96 @@ title:
 description:
   es:
     state: borrador
-    text: El núcleo del Manifiesto de Software Humano, íntegro, con sus identificadores y anclas estables.
+    text: "La postura del Manifiesto de Software Humano: el texto del manifiesto, el problema que busca resolver y cuatro maneras de leerlo."
   en:
     state: borrador
-    text: The core of the Human Software Manifesto in full, with its identifiers and stable anchors.
+    text: "The stance of the Human Software Manifesto: the manifesto text, the problem it seeks to solve and four ways to read it."
   pt-BR:
     state: borrador
-    text: O núcleo do Manifesto de Software Humano na íntegra, com seus identificadores e âncoras estáveis.
+    text: "A postura do Manifesto de Software Humano: o texto do manifesto, o problema que busca resolver e quatro maneiras de lê-lo."
 fr:
   - FR-003
-  - FR-012
-sections: []
+sections:
+  - id: texto
+    title:
+      es:
+        state: borrador
+        text: El texto del manifiesto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: manifiesto-texto
+          type: explanation
+          derivedFrom: texto-canonico-02
+          text:
+            es:
+              state: borrador
+              text: La postura del manifiesto cabe en pocos minutos de lectura. Todo lo demás —los principios, el método, la verificación— desarrolla lo que afirman estos párrafos.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        nodos:
+          - portada-04
+      - kind: canon
+        desde: texto-canonico-02
+        hasta: texto-canonico-14
+  - id: problema
+    title:
+      es:
+        state: borrador
+        text: El problema que busca resolver
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: manifiesto-problema
+          type: explanation
+          derivedFrom: proposito-del-documento-04
+          text:
+            es:
+              state: borrador
+              text: "Antes de proponer nada, el manifiesto nombra el problema: la capacidad de construir crece más rápido que la capacidad de decidir qué merece existir. Su conclusión central separa la función —lo que el software permite hacer— de la experiencia —cuánto de eso puede aprovechar una persona—."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: proposito-del-documento-03
+        hasta: proposito-del-documento-09
+  - id: rutas
+    title:
+      es:
+        state: borrador
+        text: Cuatro maneras de leerlo
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: manifiesto-rutas
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: "El núcleo propone cuatro rutas de lectura, y el sitio se organiza igual: **comprender** es esta página; **decidir**, en [Principios](/es/principios); **construir**, en [Aplicación](/es/aplicacion); **verificar**, en [Verificación](/es/verificacion). Para leer el núcleo de corrido, buscar un pasaje o citarlo completo está el [texto íntegro](/es/manifiesto/texto-integro)."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: proposito-del-documento-15
+        hasta: proposito-del-documento-16

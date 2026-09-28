@@ -29,13 +29,16 @@ const propio: GrupoIndice[] = s.sections.length > 1
     }) }]
   : [];
 const grupos = indice ?? propio;
+const RUTAS: Partial<Record<IdSuperficie, string>> = { manifiesto: 'ruta.manifiesto', principios: 'ruta.principios', aplicacion: 'ruta.aplicacion', verificacion: 'ruta.verificacion' };
+const rutaLectura = RUTAS[id];
 ---
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} indiceArriba={indiceArriba} claseIndice={claseIndice}>
   <header class="encabezado-superficie">
+    {rutaLectura && <p class="rotulo-seccion">{t('ruta.rotulo', locale)} · {t(rutaLectura, locale)}</p>}
     <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h1>
     <p class="entradilla" lang={descripcion.lang !== locale ? descripcion.lang : undefined}>{descripcion.texto}</p>
   </header>
   <slot name="antes" />
-  <Secciones secciones={s.sections} locale={locale} />
+  <Secciones secciones={s.sections} locale={locale} superficie={id} />
   <slot />
 </Base>
