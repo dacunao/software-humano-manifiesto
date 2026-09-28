@@ -599,3 +599,47 @@ indice.enEstaSeccion:
   es: { state: borrador, text: "En esta sección" }
   en: { state: borrador, text: "In this section" }
   pt-BR: { state: borrador, text: "Nesta seção" }
+ruta.practica:
+  es: { state: borrador, text: "Llevarlo a la práctica" }
+  en: { state: borrador, text: "Putting it into practice" }
+  pt-BR: { state: borrador, text: "Levar à prática" }
+indice.manifiesto:
+  es: { state: borrador, text: "Índice del manifiesto" }
+  en: { state: borrador, text: "Manifesto index" }
+  pt-BR: { state: borrador, text: "Índice do manifesto" }
+nav.anterior:
+  es: { state: borrador, text: "Anterior" }
+  en: { state: borrador, text: "Previous" }
+  pt-BR: { state: borrador, text: "Anterior" }
+nav.siguiente:
+  es: { state: borrador, text: "Siguiente" }
+  en: { state: borrador, text: "Next" }
+  pt-BR: { state: borrador, text: "Próximo" }
+nav.lectura:
+  es: { state: borrador, text: "Recorrido del núcleo" }
+  en: { state: borrador, text: "Reading through the core" }
+  pt-BR: { state: borrador, text: "Percurso do núcleo" }
+mapa.recorrido:
+  es: { state: borrador, text: "Las nueve divisiones" }
+  en: { state: borrador, text: "The nine divisions" }
+  pt-BR: { state: borrador, text: "As nove divisões" }
+verificar.relacionados:
+  es: { state: borrador, text: "También para verificar" }
+  en: { state: borrador, text: "Also for verifying" }
+  pt-BR: { state: borrador, text: "Também para verificar" }
+verificar.terminado:
+  es: { state: borrador, text: "Definición de terminado, en Gobernanza" }
+  en: { state: borrador, text: "Definition of done, in Governance" }
+  pt-BR: { state: borrador, text: "Definição de pronto, em Governança" }
+contenido.fuenteNucleo:
+  es: { state: borrador, text: "Núcleo del manifiesto v{version}, sección {codigo}." }
+  en: { state: borrador, text: "Core of the manifesto v{version}, section {codigo}." }
+  pt-BR: { state: borrador, text: "Núcleo do manifesto v{version}, seção {codigo}." }
+pie.traduccion:
+  es: { state: borrador, text: "Es una traducción; el original en español conserva la autoridad." }
+  en: { state: borrador, text: "This is a translation; the Spanish original remains authoritative." }
+  pt-BR: { state: borrador, text: "É uma tradução; o original em espanhol mantém a autoridade." }
+nav.mapa:
+  es: { state: borrador, text: "Mapa del manifiesto" }
+  en: { state: borrador, text: "Manifesto map" }
+  pt-BR: { state: borrador, text: "Mapa do manifesto" }

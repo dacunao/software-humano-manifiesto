@@ -13,7 +13,7 @@ export interface Hallazgo {
 }
 
 export const JOB_STORIES = Array.from({ length: 9 }, (_, i) => `JS-0${i + 1}`);
-export const REQUISITOS = Array.from({ length: 22 }, (_, i) => `FR-${String(i + 1).padStart(3, '0')}`);
+export const REQUISITOS = Array.from({ length: 23 }, (_, i) => `FR-${String(i + 1).padStart(3, '0')}`);
 
 const TIPO_ESPERADO: Record<(typeof CLAVES_PRINCIPIO)[number], TipoEntrada> = {
   tension: 'explanation',
@@ -131,7 +131,7 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
   if (!c.estado.published && (c.estado.url || c.estado.sha256))
     falla('RV-10', 'src/content/estado-adaptacion.yaml', 'url', 'url o sha256 con el preset sin publicar');
 
-  // RV-13 · una sola casa por pasaje (PRD v1.1 §18.3, RQ-14). Los encabezados no cuentan.
+  // RV-13 · una sola casa por pasaje, sin excepciones (PRD v1.2 §18.3, RQ-15). Los encabezados no cuentan.
   const mapaCasas = casas(canon);
   const completos = new Map<string, Set<string>>();
   for (const s of c.superficies)
@@ -153,7 +153,7 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
     const donde = completos.get(n.id) ?? new Set<string>();
     for (const sup of donde)
       if (sup !== casa) falla('RV-13', `src/content/superficies/${sup}.yaml`, n.id, `pasaje completo fuera de su casa (${casa})`);
-    if (hayCasas && casa && casa !== 'principio' && casa !== 'texto-integro' && !donde.has(casa))
+    if (hayCasas && casa && casa !== 'principio' && casa !== 'descarga' && !donde.has(casa))
       falla('RV-13', `src/content/superficies/${casa}.yaml`, n.id, `falta en su casa (${casa})`);
   }
 

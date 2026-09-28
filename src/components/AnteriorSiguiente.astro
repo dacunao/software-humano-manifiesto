@@ -1,0 +1,23 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { ruta, vecinas, type Pagina } from '../lib/i18n/rutas';
+import { tituloDe } from '../lib/manifiesto';
+import { t } from '../lib/sitio';
+
+/** Anterior y siguiente en el orden del núcleo (FR-002, RQ-15): recorrerlos reproduce el núcleo. */
+interface Props {
+  pagina: Pagina;
+  locale: Locale;
+}
+const { pagina, locale } = Astro.props;
+const { anterior, siguiente } = vecinas(pagina);
+const enlace = (p: Pagina) => ({ href: ruta(p, locale), ...tituloDe(p, locale) });
+const a = anterior && enlace(anterior);
+const s = siguiente && enlace(siguiente);
+---
+{(a || s) && (
+  <nav class="anterior-siguiente" aria-label={t('nav.lectura', locale)}>
+    {a && <a rel="prev" href={a.href}><span class="rotulo-contenido">{t('nav.anterior', locale)}</span> <span lang={a.lang}>{a.codigo && <code>{a.codigo}</code>} {a.texto}</span></a>}
+    {s && <a rel="next" href={s.href}><span class="rotulo-contenido">{t('nav.siguiente', locale)}</span> <span lang={s.lang}>{s.codigo && <code>{s.codigo}</code>} {s.texto}</span></a>}
+  </nav>
+)}

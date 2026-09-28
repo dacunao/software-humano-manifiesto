@@ -7,6 +7,7 @@ import type { GrupoIndice } from '../components/IndiceLateral.astro';
 import { canon, fechaActualizacion, markdownDe, superficie, t, texto } from '../lib/sitio';
 import { nodosDelBloque } from '../lib/casas';
 import EnEstaSeccion, { type GrupoSeccion } from '../components/EnEstaSeccion.astro';
+import { esDivision, rutaDeDivision } from '../lib/manifiesto';
 
 /** Vista común de una superficie: encabezado, secciones y ranura para lo propio de cada una. */
 interface Props {
@@ -16,12 +17,11 @@ interface Props {
   archivos?: string[];
   /** Grupos adicionales del índice lateral, antes o en lugar de las secciones. */
   indice?: GrupoIndice[] | undefined;
-  indiceArriba?: boolean;
   claseIndice?: string | undefined;
   /** Tercera columna «En esta sección» con los títulos canónicos de cada sección (decisión del 2026-09-27). */
   seguimiento?: boolean;
 }
-const { id, locale, ld = [], archivos = [], indice, indiceArriba = false, claseIndice, seguimiento = false } = Astro.props;
+const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = false } = Astro.props;
 const s = superficie(id);
 const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
@@ -33,8 +33,7 @@ const propio: GrupoIndice[] = s.sections.length > 1
     }) }]
   : [];
 const grupos = indice ?? propio;
-const RUTAS: Partial<Record<IdSuperficie, string>> = { manifiesto: 'ruta.manifiesto', principios: 'ruta.principios', aplicacion: 'ruta.aplicacion', verificacion: 'ruta.verificacion' };
-const rutaLectura = RUTAS[id];
+const rutaLectura = esDivision(id) ? rutaDeDivision(id) : undefined;
 const limpiar = (md: string) => md.replace(/^#{1,6}\s+/, '').replace(/`/g, '');
 const gruposDerecha: GrupoSeccion[] = seguimiento
   ? s.sections.map((sec) => ({
@@ -47,7 +46,7 @@ const gruposDerecha: GrupoSeccion[] = seguimiento
     })).filter((g) => g.items.length > 0)
   : [];
 ---
-<Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} indiceArriba={indiceArriba} claseIndice={claseIndice}>
+<Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} claseIndice={claseIndice}>
   <header class="encabezado-superficie">
     {rutaLectura && <p class="rotulo-seccion">{t('ruta.rotulo', locale)} · {t(rutaLectura, locale)}</p>}
     <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h1>

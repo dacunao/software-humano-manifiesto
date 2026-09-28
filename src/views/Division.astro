@@ -1,0 +1,92 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import type { IdDivision } from '../lib/casas';
+import type { NodoLD } from '../lib/semantica/jsonld';
+import { obraManifiesto } from '../lib/semantica/jsonld';
+import Superficie from './Superficie.astro';
+import AnteriorSiguiente from '../components/AnteriorSiguiente.astro';
+import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
+import { IDIOMAS, ORDEN_IDIOMAS } from '../lib/i18n/idiomas';
+import { indiceManifiesto, RUTAS_DE_LECTURA, tituloDe } from '../lib/manifiesto';
+import { canonicoDePrincipio, contenido, markdownDe, nodo, rutaDescarga, superficie, t, texto, URL_SITIO } from '../lib/sitio';
+
+/**
+ * Una división del manifiesto (PRD v1.2 §18.1, RQ-15): secciones consecutivas del núcleo,
+ * completas y en su orden, con su explicación, el índice del manifiesto y anterior y siguiente.
+ */
+interface Props {
+  id: IdDivision;
+  locale: Locale;
+}
+const { id, locale } = Astro.props;
+const s = superficie(id);
+const propias = s.sections.length > 1
+  ? s.sections.map((sec) => {
+      const x = texto(sec.title, locale);
+      return { href: `#${sec.id}`, texto: x.texto, lang: x.lang !== locale ? x.lang : undefined };
+    })
+  : [];
+const indice = indiceManifiesto({ tipo: id }, locale, propias);
+const url = (l: Locale) => `${URL_SITIO}${ruta({ tipo: id }, l)}`;
+const { version, date } = contenido.sitio.core;
+const ld: NodoLD[] = [];
+if (id === 'manifiesto') {
+  // La obra: el texto del manifiesto, cuyo título es visible en esta división (§25.2 v1.2).
+  const nombre = markdownDe(nodo('texto-canonico-02'), locale).markdown.replace(/^#{1,6}\s+/, '');
+  ld.push(obraManifiesto({
+    sitio: contenido.sitio, nombre, url: url(locale), idioma: IDIOMAS[locale].hreflang, fecha: date,
+    original: url('es'), traducciones: ORDEN_IDIOMAS.filter((l) => l !== 'es').map(url),
+  }));
+}
+if (id === 'principios') {
+  ld.push({
+    '@type': 'DefinedTermSet',
+    name: texto(s.title, locale).texto,
+    url: url(locale),
+    hasDefinedTerm: PRINCIPIOS.map((pid) => ({
+      '@type': 'DefinedTerm',
+      termCode: pid.toUpperCase(),
+      name: markdownDe(canonicoDePrincipio(pid).nombre, locale).markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, ''),
+      url: `${URL_SITIO}${ruta({ tipo: 'principio', principio: pid }, locale)}`,
+    })),
+  });
+}
+const archivos = id === 'principios' ? ['src/content/principios'] : ['docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md'];
+const recorrido = id === 'mapa'
+  ? RUTAS_DE_LECTURA.map((r) => ({
+      ruta: t(r.clave, locale),
+      divisiones: r.divisiones.map((d) => ({ href: ruta({ tipo: d }, locale), titulo: tituloDe({ tipo: d }, locale), descripcion: texto(superficie(d).description, locale) })),
+    }))
+  : [];
+---
+<Superficie id={id} locale={locale} ld={ld} archivos={archivos} indice={indice} seguimiento>
+  <Fragment slot="antes">
+    {(id === 'mapa' || id === 'manifiesto') && <p class="version-nucleo">{t('manifiesto.version', locale, { version, fecha: date })}</p>}
+  </Fragment>
+  {id === 'mapa' && (
+    <section id="recorrido" class="seccion" aria-labelledby="recorrido-titulo">
+      <h2 id="recorrido-titulo">{t('mapa.recorrido', locale)}</h2>
+      {recorrido.map((r) => (
+        <div class="grupo-recorrido">
+          <p class="rotulo-contenido">{r.ruta}</p>
+          <ol class="lista-recorrido">
+            {r.divisiones.map((d) => (
+              <li><a href={d.href} lang={d.titulo.lang}>{d.titulo.texto}</a> <span lang={d.descripcion.lang !== locale ? d.descripcion.lang : undefined}>{d.descripcion.texto}</span></li>
+            ))}
+          </ol>
+        </div>
+      ))}
+      <p class="descarga-mapa"><a href={rutaDescarga(locale)} download hreflang={IDIOMAS[locale].hreflang}>{t('integro.descargas', locale)}</a></p>
+    </section>
+  )}
+  {id === 'verificar' && (
+    <nav class="relacionados" aria-labelledby="relacionados-titulo">
+      <p id="relacionados-titulo" class="rotulo-contenido">{t('verificar.relacionados', locale)}</p>
+      <ul>
+        <li><a href={`${ruta({ tipo: 'gobernanza' }, locale)}#sh-done`}>{t('verificar.terminado', locale)}</a></li>
+        <li><a href={ruta({ tipo: 'bolsillo' }, locale)}>{tituloDe({ tipo: 'bolsillo' }, locale).texto}</a></li>
+      </ul>
+    </nav>
+  )}
+  <AnteriorSiguiente pagina={{ tipo: id }} locale={locale} />
+</Superficie>

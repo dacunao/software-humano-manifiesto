@@ -8,9 +8,9 @@ interface Props {
   rotulo: string;
   /** Idioma del texto citado (es original, o el de la traducción). */
   lang: string;
-  /** Enlace al pasaje en la superficie Manifiesto. */
-  fuente: string;
-  textoFuente: string;
+  /** Enlace a la casa del pasaje; se omite cuando la cita está en su casa (PRD v1.2 §18.3). */
+  fuente?: string | undefined;
+  textoFuente?: string | undefined;
 }
 
 const { nodos, rotulo, lang, fuente, textoFuente } = Astro.props;
@@ -20,5 +20,5 @@ const { nodos, rotulo, lang, fuente, textoFuente } = Astro.props;
   <blockquote lang={lang} cite={fuente} class="lectura">
     {nodos.map(({ nodo, markdown }) => <NodoCanonicoC nodo={nodo} markdown={markdown} desplazamiento={1} />)}
   </blockquote>
-  <p class="fuente"><a href={fuente}>{textoFuente}</a></p>
+  {fuente && <p class="fuente"><a href={fuente}>{textoFuente}</a></p>}
 </figure>

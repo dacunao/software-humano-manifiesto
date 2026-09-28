@@ -3,36 +3,33 @@ import type { Locale } from '../lib/contenido/esquemas';
 import { ruta, type Pagina } from '../lib/i18n/rutas';
 import { contenido, t } from '../lib/sitio';
 import SelectorIdioma from './SelectorIdioma.astro';
+import { esDivision } from '../lib/manifiesto';
 
 interface Props {
   locale: Locale;
   pagina: Pagina;
 }
 const { locale, pagina } = Astro.props;
+// PRD v1.2 §18.2: el menú dice dónde; el índice del manifiesto, qué hay en él.
 const destinos = [
   { tipo: 'inicio', clave: 'nav.inicio' },
   { tipo: 'manifiesto', clave: 'nav.manifiesto' },
-  { tipo: 'principios', clave: 'nav.principios' },
-  { tipo: 'aplicacion', clave: 'nav.aplicacion' },
-  { tipo: 'verificacion', clave: 'nav.verificacion' },
   { tipo: 'speckit', clave: 'nav.speckit' },
   { tipo: 'acerca', clave: 'nav.acerca' },
 ] as const;
-const actual = pagina.tipo === 'principio' ? 'principios' : pagina.tipo === 'texto-integro' ? 'manifiesto' : pagina.tipo;
-const RUTA: Record<string, string> = { manifiesto: 'ruta.manifiesto', principios: 'ruta.principios', aplicacion: 'ruta.aplicacion', verificacion: 'ruta.verificacion' };
+const actual = pagina.tipo === 'principio' || esDivision(pagina.tipo) ? 'manifiesto' : pagina.tipo;
 ---
 <nav aria-label={t('nav.principal', locale)} class="navegacion-global">
   <ul>
     {destinos.map((d) => (
       <li>
-        <a href={ruta({ tipo: d.tipo }, locale)} aria-current={actual === d.tipo ? 'page' : undefined}>
+        <a href={ruta({ tipo: d.tipo }, locale)} aria-current={actual === d.tipo ? (pagina.tipo === d.tipo ? 'page' : 'true') : undefined}>
           <span class="nombre">{t(d.clave, locale)}</span>
-          {RUTA[d.tipo] && <span class="ruta">{t(RUTA[d.tipo]!, locale)}</span>}
           {d.tipo === 'speckit' && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
         </a>
       </li>
     ))}
   </ul>
-  <p class="version"><a href={ruta({ tipo: 'texto-integro' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
+  <p class="version"><a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
   <SelectorIdioma locale={locale} pagina={pagina} />
 </nav>

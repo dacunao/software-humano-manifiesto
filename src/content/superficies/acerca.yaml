@@ -1,4 +1,4 @@
-# Superficie «acerca». Casa de alcance y lectores, evolución del manifiesto e influencias (PRD v1.1 §18.3).
+# Superficie «acerca» (PRD v1.2 §18.1): origen, influencias y notas destiladas, autoría, procedencia, independencia y licencias.
 id: acerca
 title:
   es:
@@ -47,6 +47,33 @@ sections:
       - kind: canon
         nodos:
           - influencias-y-notas-03
+        breve: true
+  - id: influencias
+    title:
+      es:
+        state: borrador
+        text: "Influencias y fuentes"
+      en:
+        state: borrador
+        text: "Influences and sources"
+      pt-BR:
+        state: borrador
+        text: "Influências e fontes"
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-influencias
+          type: explanation
+          derivedFrom: influencias-y-notas-04
+          text:
+            es:
+              state: borrador
+              text: "El manifiesto recoge cuatro ideas de Craft: que forma y función van juntas; que una herramienta se mide por la energía y la capacidad que deja en quien la usa; que la complejidad debe aparecer cuando se necesita; y el enfoque *human first*, frente a sistemas que obligan a las personas a acomodarse a su estructura. De Jobs to Be Done conserva el progreso como referencia superior, y de las Job Stories, la forma de llevarlo al diseño: circunstancia, motivación, resultado y evidencia. Fuentes: [Acerca de Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) y [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
   - id: autoria
     title:
       es:
@@ -97,60 +124,6 @@ sections:
               state: pendiente
             pt-BR:
               state: pendiente
-  - id: alcance
-    title:
-      es:
-        state: borrador
-        text: Para quién es
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: acerca-alcance
-          type: explanation
-          derivedFrom: proposito-del-documento-11
-          text:
-            es:
-              state: borrador
-              text: "El marco sirve para productos donde la experiencia de uso influye en el resultado, y está pensado para quienes deciden sobre ellos: producto, diseño, desarrollo y agentes de código. No prescribe estilo, tecnología ni método de entrega."
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        desde: proposito-del-documento-11
-        hasta: proposito-del-documento-13
-  - id: evolucion
-    title:
-      es:
-        state: borrador
-        text: Cómo cambia el manifiesto
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: acerca-evolucion
-          type: explanation
-          derivedFrom: gobernanza-09
-          text:
-            es:
-              state: borrador
-              text: Los principios son estables; las reglas y las pruebas pueden cambiar con evidencia nueva. Cada versión registra qué problema resolvió y qué conserva de la anterior.
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        desde: gobernanza-09
-        hasta: gobernanza-14
   - id: independencia
     title:
       es:
@@ -173,10 +146,6 @@ sections:
               state: pendiente
             pt-BR:
               state: pendiente
-    depth:
-      - kind: canon
-        desde: influencias-y-notas-04
-        hasta: influencias-y-notas-13
   - id: licencias
     title:
       es:

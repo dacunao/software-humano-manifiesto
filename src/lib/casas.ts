@@ -1,35 +1,35 @@
 import type { Canon, NodoCanonico } from './canon/lector';
 
 /**
- * Casa de cada pasaje del núcleo (PRD v1.1 §18.3, RQ-14): la única superficie donde se lee
- * completo. Tabla aprobada en docs/design/propuesta-arquitectura-rutas-del-manifiesto.md.
+ * Casa de cada pasaje del núcleo (PRD v1.2 §18.1–§18.3, RQ-15): la única página donde se lee
+ * completo. Cada sección del núcleo va entera a una división, en su orden; ninguna se parte.
  * `principio`: la página del principio, que la vista arma completa (casa por construcción).
- * `texto-integro`: solo en el documento de consulta.
+ * `descarga`: no se muestra completo en el sitio; solo en el archivo del núcleo (Influencias y notas).
  */
-export type Casa = 'manifiesto' | 'principios' | 'principio' | 'aplicacion' | 'verificacion' | 'speckit' | 'acerca' | 'texto-integro';
+export const DIVISIONES = ['mapa', 'manifiesto', 'principios', 'fundamento', 'construir', 'verificar', 'ejemplo', 'gobernanza', 'bolsillo'] as const;
+export type IdDivision = (typeof DIVISIONES)[number];
+export type Casa = IdDivision | 'principio' | 'descarga';
 
 const POR_SECCION: Record<string, Casa> = {
-  'indice-operativo-para-agentes': 'texto-integro',
+  portada: 'mapa',
+  'indice-operativo-para-agentes': 'mapa',
+  'proposito-del-documento': 'manifiesto',
   'texto-canonico': 'manifiesto',
   'principios-de-diseno': 'principios',
-  'fundamento-de-producto-y-forma-de-referencia': 'principios',
-  'doctrina-para-desarrollo-con-ia': 'aplicacion',
-  'flujo-de-trabajo': 'aplicacion',
-  'contrato-reutilizable': 'aplicacion',
-  verificacion: 'verificacion',
-  antipatrones: 'verificacion',
-  'ejemplo-aplicado': 'aplicacion',
-  'guia-de-bolsillo': 'verificacion',
-  'influencias-y-notas': 'acerca',
+  'fundamento-de-producto-y-forma-de-referencia': 'fundamento',
+  'doctrina-para-desarrollo-con-ia': 'construir',
+  'flujo-de-trabajo': 'construir',
+  'contrato-reutilizable': 'construir',
+  verificacion: 'verificar',
+  antipatrones: 'verificar',
+  'ejemplo-aplicado': 'ejemplo',
+  gobernanza: 'gobernanza',
+  'guia-de-bolsillo': 'bolsillo',
+  'influencias-y-notas': 'descarga',
 };
 
-/** Secciones mixtas, divididas por la posición del nodo dentro de la sección (1 = su título). */
-const POR_POSICION: Record<string, (pos: number) => Casa> = {
-  portada: (pos) => (pos === 4 ? 'manifiesto' : 'texto-integro'),
-  'proposito-del-documento': (pos) =>
-    pos <= 9 ? 'manifiesto' : pos <= 13 ? 'acerca' : pos <= 16 ? 'manifiesto' : pos <= 19 ? 'principios' : 'speckit',
-  gobernanza: (pos) => (pos <= 7 ? 'aplicacion' : pos <= 14 ? 'acerca' : 'verificacion'),
-};
+/** La Declaración final cierra la Guía de bolsillo (decisión de la autoridad, 2026-09-28). */
+export const DECLARACION_FINAL = ['influencias-y-notas-12', 'influencias-y-notas-13'] as const;
 
 const cache = new WeakMap<Canon, Map<string, Casa>>();
 
@@ -37,13 +37,10 @@ export function casas(canon: Canon): Map<string, Casa> {
   const previo = cache.get(canon);
   if (previo) return previo;
   const m = new Map<string, Casa>();
-  const posicion = new Map<string, number>();
   for (const n of canon.nodos) {
-    const pos = (posicion.get(n.section) ?? 0) + 1;
-    posicion.set(n.section, pos);
-    const casa = /^principio-\d+$/.test(n.section)
+    const casa: Casa | undefined = /^principio-\d+$/.test(n.section)
       ? 'principio'
-      : POR_POSICION[n.section]?.(pos) ?? POR_SECCION[n.section];
+      : (DECLARACION_FINAL as readonly string[]).includes(n.id) ? 'bolsillo' : POR_SECCION[n.section];
     if (!casa) throw new Error(`Sección del núcleo sin casa asignada: ${n.section}`);
     m.set(n.id, casa);
     for (const a of n.anclas) m.set(a, casa);

@@ -3,7 +3,7 @@ import { alternas, paginasDeContenido, ruta } from '../lib/i18n/rutas';
 import { ORDEN_IDIOMAS } from '../lib/i18n/idiomas';
 import { URL_SITIO } from '../lib/sitio';
 
-/** Las 48 páginas de contenido con sus alternas por idioma; sin las 404 (FR-016). */
+/** Las 66 páginas de contenido con sus alternas por idioma; sin las 404 (FR-016). */
 export const GET: APIRoute = () => {
   const urls = paginasDeContenido().flatMap((p) =>
     ORDEN_IDIOMAS.map((l) => {

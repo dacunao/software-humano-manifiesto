@@ -76,7 +76,8 @@ export const SeccionSuperficie = z
   .strict();
 export type SeccionSuperficie = z.infer<typeof SeccionSuperficie>;
 
-export const ID_SUPERFICIES = ['inicio', 'manifiesto', 'principios', 'aplicacion', 'verificacion', 'speckit', 'acerca', 'texto-integro'] as const;
+/** Superficies del PRD v1.2 §18.1: Inicio, las nueve divisiones del manifiesto (RQ-15), SpecKit y Acerca de. */
+export const ID_SUPERFICIES = ['inicio', 'mapa', 'manifiesto', 'principios', 'fundamento', 'construir', 'verificar', 'ejemplo', 'gobernanza', 'bolsillo', 'speckit', 'acerca'] as const;
 export type IdSuperficie = (typeof ID_SUPERFICIES)[number];
 
 export const Superficie = z

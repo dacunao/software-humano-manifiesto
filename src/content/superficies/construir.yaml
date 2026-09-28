@@ -1,25 +1,25 @@
-# Superficie «aplicacion» · ruta Construir (PRD v1.1 §18.1). Casa de doctrina, flujo, artefactos, detención, contrato, práctica y ejemplo (§18.3).
-id: aplicacion
+# División 4 · Construir con IA (PRD v1.2 §18.1, FR-007, RQ-15): Doctrina, Flujo de trabajo y Contrato reutilizable.
+id: construir
 title:
   es:
     state: borrador
-    text: Aplicación
+    text: "Construir con IA"
   en:
     state: borrador
-    text: In practice
+    text: "Building with AI"
   pt-BR:
     state: borrador
-    text: Aplicação
+    text: "Construir com IA"
 description:
   es:
     state: borrador
-    text: "Cómo el manifiesto se vuelve práctica: fundamento, flujo, artefactos, contrato del agente, detenciones y terminado."
+    text: "Doctrina para desarrollar con IA, el flujo de trabajo, cuándo detenerse y el contrato del agente."
   en:
     state: borrador
-    text: "How the manifesto becomes practice: product foundation, flow, artifacts, agent contract, stops and definition of done."
+    text: "Doctrine for building with AI, the workflow, when to stop and the agent contract."
   pt-BR:
     state: borrador
-    text: "Como o manifesto se torna prática: fundamento, fluxo, artefatos, contrato do agente, paradas e definição de pronto."
+    text: "Doutrina para desenvolver com IA, o fluxo de trabalho, quando parar e o contrato do agente."
 fr:
   - FR-007
 sections:
@@ -104,7 +104,7 @@ sections:
       - kind: canon
         desde: flujo-de-trabajo-06
         hasta: flujo-de-trabajo-07
-  - id: detenciones
+  - id: sh-stop
     title:
       es:
         state: borrador
@@ -123,7 +123,7 @@ sections:
           text:
             es:
               state: borrador
-              text: Un agente no debería empezar a construir si no puede decir cuál es el fundamento, qué alcance establece, qué evidencia lo respalda y qué tiene que decidir la persona. Las siete razones para detener una implementación que ya está en marcha están en [Verificación](/es/verificacion#bolsillo).
+              text: Un agente no debería empezar a construir si no puede decir cuál es el fundamento, qué alcance establece, qué evidencia lo respalda y qué tiene que decidir la persona. Las siete razones para detener una implementación que ya está en marcha están en la [Guía de bolsillo](/es/manifiesto/guia-de-bolsillo#sh-pocket).
             en:
               state: pendiente
             pt-BR:
@@ -158,57 +158,3 @@ sections:
       - kind: canon
         desde: contrato-reutilizable-03
         hasta: contrato-reutilizable-23
-  - id: practica
-    title:
-      es:
-        state: borrador
-        text: Una práctica habitual
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: aplicacion-practica
-          type: explanation
-          derivedFrom: gobernanza-03
-          text:
-            es:
-              state: borrador
-              text: "El manifiesto pierde valor si queda en una presentación inicial. Tiene que aparecer donde el equipo decide: cada rol tiene una obligación principal, y cada momento del desarrollo —antes de diseñar, de generar código, de integrar, de liberar y después— tiene una decisión que no se puede saltar."
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        desde: gobernanza-03
-        hasta: gobernanza-07
-  - id: ejemplo
-    title:
-      es:
-        state: borrador
-        text: Un ejemplo aplicado
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: aplicacion-ejemplo
-          type: explanation
-          derivedFrom: ejemplo-aplicado-03
-          text:
-            es:
-              state: borrador
-              text: "Un tutor de cálculo recorre todo el método: de un pedido de función a la circunstancia real, del diagnóstico al rediseño, y de lo que debe ser determinista a lo que puede asistir la IA."
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        desde: ejemplo-aplicado-02
-        hasta: ejemplo-aplicado-23

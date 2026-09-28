@@ -116,7 +116,6 @@ details.profundidad { margin-top: 1rem; border-top: 1px solid var(--sh-linea); p
 details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--sh-acento); }
 
 /* Principio */
-.anterior-siguiente { display: flex; justify-content: space-between; gap: 1rem; margin: var(--sh-bloque) 0; }
 .compartir { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; font-size: 0.85rem; margin: 0.25rem 0 1rem; }
 .compartir button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); padding: 0.1rem 0.6rem; border-radius: 4px; }
 
@@ -136,11 +135,19 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
 .indice-lateral a:hover { background: var(--sh-tarjeta); text-decoration: underline; }
 .indice-lateral a[aria-current='page'] { background: var(--sh-blanco); font-weight: 700; box-shadow: inset 0 0 0 1px var(--sh-linea); }
 .indice-lateral code { font-size: 0.72rem; color: var(--sh-suave); min-width: 2.6rem; }
-.lienzo.indice-arriba > .indice-lateral { order: -1; border-top: 0; border-bottom: 1px solid var(--sh-linea); }
+/* Índice plegable (T138, PRD v1.2 §21.4): en pantallas angostas va arriba, plegado en una línea; el texto queda en la primera pantalla. */
+.indice-plegable { order: -1; border-bottom: 1px solid var(--sh-linea); margin-bottom: var(--sh-espacio); }
+.indice-plegable:not([open]) { position: sticky; top: 0; z-index: 2; background: var(--sh-papel); }
+.indice-plegable > summary { cursor: pointer; padding: 0.6rem 0; font-size: 0.9rem; font-weight: 650; list-style-position: inside; }
+.indice-plegable .seccion-actual { font-weight: 400; color: var(--sh-suave); }
+.indice-plegable .indice-lateral { border-top: 0; padding-top: 0; }
+.indice-lateral li.sub > a { padding-left: 1.25rem; font-size: 0.82rem; }
 @media (min-width: 62rem) {
   .lienzo.con-indice { grid-template-columns: 15rem minmax(0, 1fr); }
   .lienzo.con-indice > main { grid-column: 2; grid-row: 1; }
-  .lienzo.con-indice > .indice-lateral { grid-column: 1; grid-row: 1; order: 0; border: 0; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; }
+  .lienzo.con-indice > .indice-plegable { grid-column: 1; grid-row: 1; order: 0; border: 0; margin: 0; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; }
+  .indice-plegable > summary { display: none; }
+  .indice-plegable::details-content { content-visibility: visible; display: contents; }
 }
 
 /* Cabecera en pantallas angostas: marca arriba, navegación en línea debajo, idioma compacto (P06). */
@@ -150,6 +157,9 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
   .navegacion-global ul { gap: 0.2rem 0.9rem; }
   .selector-idioma { margin-left: 0; }
   .aviso-borrador { font-size: 0.85rem; }
+  /* T138: la versión vigente sigue en el pie de cada página (§18.2); arriba solo lo que orienta. */
+  .navegacion-global .version { display: none; }
+  .navegacion-global ul { gap: 0.2rem 0.75rem; }
 }
 /* Subtítulo de ruta en el menú (decisión de nombres, 2026-09-27) */
 .navegacion-global a { display: inline-flex; flex-direction: column; line-height: 1.15; }
@@ -173,3 +183,17 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
 }
 .en-esta-seccion.sin-titulos > :not(.rotulo-contenido) { display: none; }
 .en-esta-seccion.sin-titulos { opacity: 0; pointer-events: none; }
+
+/* Anterior y siguiente en el orden del núcleo (FR-002, RQ-15). */
+.anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--sh-linea); }
+.anterior-siguiente a { display: flex; flex-direction: column; gap: 0.2rem; text-decoration: none; color: var(--sh-tinta); padding: 0.75rem; border: 1px solid var(--sh-linea); border-radius: 6px; }
+.anterior-siguiente a:hover span:last-child { text-decoration: underline; }
+.anterior-siguiente a[rel='next'] { grid-column: 2; text-align: right; }
+.anterior-siguiente code { font-size: 0.75rem; color: var(--sh-suave); }
+/* Mapa del manifiesto: el recorrido por las nueve divisiones. */
+.grupo-recorrido + .grupo-recorrido { margin-top: 1rem; }
+.lista-recorrido { padding-left: 1.25rem; }
+.lista-recorrido li { margin-bottom: 0.4rem; }
+.lista-recorrido a { font-weight: 650; }
+.relacionados ul { padding-left: 1.25rem; }
+.descarga-pie { font-size: 0.9rem; }

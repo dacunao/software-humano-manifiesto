@@ -4,7 +4,7 @@ import type { Locale } from '../lib/contenido/esquemas';
 import { IDIOMAS } from '../lib/i18n/idiomas';
 import { alternas, ruta, type Pagina } from '../lib/i18n/rutas';
 import { grafo, paginaWeb, persona, sitioWeb, type NodoLD } from '../lib/semantica/jsonld';
-import { contenido, hayBorrador, t, URL_SITIO } from '../lib/sitio';
+import { contenido, hayBorrador, rutaDescarga, t, URL_SITIO } from '../lib/sitio';
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
@@ -20,11 +20,9 @@ interface Props {
   actualizado?: string;
   /** Índice lateral de la superficie actual (T095). */
   indice?: GrupoIndice[] | undefined;
-  /** En pantallas angostas, el índice va antes del contenido (solo documentos largos). */
-  indiceArriba?: boolean;
   claseIndice?: string | undefined;
 }
-const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, indiceArriba = false, claseIndice } = Astro.props;
+const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, claseIndice } = Astro.props;
 const lang = IDIOMAS[locale].hreflang;
 const url = `${URL_SITIO}${ruta(pagina, locale)}`;
 const esInicio = pagina.tipo === 'inicio';
@@ -35,6 +33,8 @@ const nodosLD: NodoLD[] = [
   ...(pagina.tipo === '404' ? [] : ld),
 ];
 const token = contenido.sitio.analytics.cloudflareToken;
+// FR-003 v1.2: solo la descarga del idioma de la página; en traducción, el original queda a un paso.
+const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.traduccionEn', 'pt-BR': 'integro.traduccionPt' };
 ---
 <!doctype html>
 <html lang={lang}>
@@ -62,17 +62,27 @@ const token = contenido.sitio.analytics.cloudflareToken;
       <NavegacionGlobal locale={locale} pagina={pagina} />
     </header>
     {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
-    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'indice-arriba': indiceArriba, 'con-derecha': Astro.slots.has('derecha') }]}>
+    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />
       </main>
-      {indice?.length ? <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} /> : null}
+      {indice?.length ? (
+        <details class="indice-plegable" data-indice-plegable>
+          <summary><span>{t('indice.rotulo', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
+          <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} />
+        </details>
+      ) : null}
       <slot name="derecha" />
     </div>
     <footer class="pie">
       <slot name="pie" />
+      <p class="descarga-pie">
+        <a href={rutaDescarga(locale)} download hreflang={lang}>{t('integro.descargas', locale)} · {t(DESCARGA[locale], locale)}</a>
+        {locale !== 'es' && <> · {t('pie.traduccion', locale)} <a href={rutaDescarga('es')} download hreflang="es" lang="es">{t('integro.original', 'es')}</a></>}
+      </p>
       <Procedencia locale={locale} actualizado={actualizado} />
       <p>{t('pie.licencia', locale)}</p>
     </footer>
+    <script>import '../cliente/seguimiento';</script>
   </body>
 </html>

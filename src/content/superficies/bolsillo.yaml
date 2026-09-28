@@ -1,0 +1,68 @@
+# División 8 · Guía de bolsillo (PRD v1.2 §18.1, RQ-15): SH-POCKET y, como cierre, la Declaración final.
+id: bolsillo
+title:
+  es:
+    state: borrador
+    text: "Guía de bolsillo"
+  en:
+    state: borrador
+    text: "Pocket guide"
+  pt-BR:
+    state: borrador
+    text: "Guia de bolso"
+description:
+  es:
+    state: borrador
+    text: "Catorce preguntas antes de aceptar una decisión, siete razones para detenerse y la declaración final del manifiesto."
+  en:
+    state: borrador
+    text: "Fourteen questions before accepting a decision, seven reasons to stop and the manifesto’s closing statement."
+  pt-BR:
+    state: borrador
+    text: "Catorze perguntas antes de aceitar uma decisão, sete razões para parar e a declaração final do manifesto."
+fr:
+  - FR-022
+sections:
+  - id: sh-pocket
+    title:
+      es:
+        state: borrador
+        text: Guía de bolsillo
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: verificacion-bolsillo
+          type: explanation
+          derivedFrom: guia-de-bolsillo-03
+          text:
+            es:
+              state: borrador
+              text: "Para tener a mano: catorce preguntas antes de aceptar una decisión, siete razones para detener una implementación y tres frases que protegen el criterio."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: guia-de-bolsillo-03
+        hasta: guia-de-bolsillo-22
+  - id: declaracion-final
+    title:
+      es:
+        state: borrador
+        text: "Declaración final"
+      en:
+        state: borrador
+        text: "Final statement"
+      pt-BR:
+        state: borrador
+        text: "Declaração final"
+    depth: []
+    blocks:
+      - kind: canon
+        nodos:
+          - influencias-y-notas-13

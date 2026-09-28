@@ -146,24 +146,28 @@ function nodosDePrincipio(pid: string): Set<string> {
 }
 
 /**
- * Dirección de la casa de un pasaje (PRD v1.1 §18.3): donde se lee completo. Si el nodo exacto
- * no se muestra (un encabezado omitido), la sección de la casa que contiene su sección canónica;
- * si no tiene casa en el sitio, el texto íntegro.
+ * Dirección de la casa de un pasaje (PRD v1.2 §18.3): la división donde se lee completo. Si el nodo
+ * exacto no se muestra (un encabezado omitido), la sección de la casa que contiene su sección
+ * canónica. Los pasajes con casa `descarga` (Influencias y notas) llevan al archivo del núcleo.
  */
 export function rutaCasa(id: string, locale: Locale): string {
   const n = nodo(id);
   const casa = casas(canon).get(id);
-  const integro = `${ruta({ tipo: 'texto-integro' }, locale)}#${id}`;
   if (casa === 'principio') {
     const pid = canon.nodos.find((x) => x.section === n.section && /^p(0[1-9]|10)$/.test(x.id))?.id;
-    if (!pid) return integro;
+    if (!pid) return rutaDescarga(locale);
     const base = ruta({ tipo: 'principio', principio: pid }, locale);
     return nodosDePrincipio(pid).has(id) ? `${base}#${id}` : base;
   }
-  if (!casa || casa === 'texto-integro') return integro;
+  if (!casa || casa === 'descarga') return rutaDescarga(locale);
   const exacto = mostrados.get(id);
   if (exacto?.superficie === casa) return `${ruta({ tipo: casa }, locale)}#${id}`;
   const hermano = canon.nodos.find((x) => x.section === n.section && mostrados.get(x.id)?.superficie === casa);
   const sec = hermano ? mostrados.get(hermano.id)?.seccion : undefined;
-  return sec ? `${ruta({ tipo: casa }, locale)}#${sec}` : integro;
+  return sec ? `${ruta({ tipo: casa }, locale)}#${sec}` : ruta({ tipo: casa }, locale);
+}
+
+/** Archivo del núcleo completo en el idioma de la página (FR-003 v1.2). */
+export function rutaDescarga(locale: Locale): string {
+  return `/descargas/nucleo-v2.1-${locale === 'pt-BR' ? 'pt-br' : locale}.md`;
 }

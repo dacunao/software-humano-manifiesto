@@ -11,7 +11,7 @@ interface Props {
 const { locale, actualizado } = Astro.props;
 ---
 <p class="procedencia">
-  <a href={ruta({ tipo: 'texto-integro' }, locale)}>{t('nav.textoIntegro', locale)} · {t('nav.version', locale, { version: contenido.sitio.core.version })}</a>
+  <a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.mapa', locale)} · {t('nav.version', locale, { version: contenido.sitio.core.version })}</a>
   · <a href={ruta({ tipo: 'speckit' }, locale)}>{t('pie.estadoPreset', locale, { version: contenido.estado.version })}</a>
   {actualizado && <> · {t('pie.actualizado', locale, { fecha: actualizado })}</>}
   · <a href={`${ruta({ tipo: 'acerca' }, locale)}#procedencia`}>{t('pie.procedencia', locale)}</a>

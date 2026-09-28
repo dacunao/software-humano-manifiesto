@@ -1,0 +1,52 @@
+# División 6 · Ejemplo aplicado (PRD v1.2 §18.1, RQ-15).
+id: ejemplo
+title:
+  es:
+    state: borrador
+    text: "Ejemplo aplicado"
+  en:
+    state: borrador
+    text: "Applied example"
+  pt-BR:
+    state: borrador
+    text: "Exemplo aplicado"
+description:
+  es:
+    state: borrador
+    text: "El método completo en un caso: un tutor de cálculo para una persona que todavía no entiende."
+  en:
+    state: borrador
+    text: "The whole method in one case: a calculus tutor for someone who does not understand yet."
+  pt-BR:
+    state: borrador
+    text: "O método completo em um caso: um tutor de cálculo para uma pessoa que ainda não entende."
+fr:
+  - FR-007
+sections:
+  - id: ejemplo
+    title:
+      es:
+        state: borrador
+        text: Un ejemplo aplicado
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-ejemplo
+          type: explanation
+          derivedFrom: ejemplo-aplicado-03
+          text:
+            es:
+              state: borrador
+              text: "Un tutor de cálculo recorre todo el método: de un pedido de función a la circunstancia real, del diagnóstico al rediseño, y de lo que debe ser determinista a lo que puede asistir la IA."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: ejemplo-aplicado-02
+        hasta: ejemplo-aplicado-23

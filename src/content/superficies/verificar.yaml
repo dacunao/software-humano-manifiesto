@@ -1,25 +1,25 @@
-# Superficie «verificacion» · ruta Verificar (PRD v1.1 §18.1, FR-022). Casa de verificación, antipatrones, definición de terminado y guía de bolsillo (§18.3).
-id: verificacion
+# División 5 · Verificar (PRD v1.2 §18.1, FR-022, RQ-15): Verificación y Antipatrones.
+id: verificar
 title:
   es:
     state: borrador
-    text: Verificación
+    text: "Verificar"
   en:
     state: borrador
-    text: Verification
+    text: "Verify"
   pt-BR:
     state: borrador
-    text: Verificação
+    text: "Verificar"
 description:
   es:
     state: borrador
-    text: "Cómo evaluar un prototipo, una implementación o una entrega: dimensiones de verificación, antipatrones, definición de terminado y guía de bolsillo."
+    text: "Doce dimensiones para aceptar una solución, un puntaje de decisión y las señales de que el producto se aleja del manifiesto."
   en:
     state: borrador
-    text: "How to evaluate a prototype, an implementation or a delivery: verification dimensions, anti-patterns, definition of done and pocket guide."
+    text: "Twelve dimensions for accepting a solution, a decision scorecard and the signs that a product is drifting from the manifesto."
   pt-BR:
     state: borrador
-    text: "Como avaliar um protótipo, uma implementação ou uma entrega: dimensões de verificação, antipadrões, definição de pronto e guia de bolso."
+    text: "Doze dimensões para aceitar uma solução, um placar de decisão e os sinais de que o produto se afasta do manifesto."
 fr:
   - FR-022
 sections:
@@ -50,7 +50,7 @@ sections:
       - kind: canon
         desde: verificacion-03
         hasta: verificacion-04
-  - id: scorecard
+  - id: sh-score
     title:
       es:
         state: borrador
@@ -104,7 +104,7 @@ sections:
       - kind: canon
         nodos:
           - verificacion-10
-  - id: antipatrones
+  - id: sh-ap
     title:
       es:
         state: borrador
@@ -131,58 +131,3 @@ sections:
       - kind: canon
         desde: antipatrones-03
         hasta: antipatrones-06
-  - id: terminado
-    title:
-      es:
-        state: borrador
-        text: Qué significa terminado
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: aplicacion-terminado
-          type: explanation
-          derivedFrom: sh-done
-          text:
-            es:
-              state: borrador
-              text: Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        nodos:
-          - gobernanza-16
-          - gobernanza-17
-  - id: bolsillo
-    title:
-      es:
-        state: borrador
-        text: Guía de bolsillo
-      en:
-        state: pendiente
-      pt-BR:
-        state: pendiente
-    depth: []
-    blocks:
-      - kind: entrada
-        entrada:
-          id: verificacion-bolsillo
-          type: explanation
-          derivedFrom: guia-de-bolsillo-03
-          text:
-            es:
-              state: borrador
-              text: "Para tener a mano: catorce preguntas antes de aceptar una decisión, siete razones para detener una implementación y tres frases que protegen el criterio."
-            en:
-              state: pendiente
-            pt-BR:
-              state: pendiente
-      - kind: canon
-        desde: guia-de-bolsillo-03
-        hasta: guia-de-bolsillo-22

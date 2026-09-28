@@ -48,10 +48,6 @@ sections:
               state: pendiente
             pt-BR:
               state: pendiente
-    depth:
-      - kind: canon
-        nodos:
-          - proposito-del-documento-21
   - id: capas
     title:
       es:

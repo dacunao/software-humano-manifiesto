@@ -1,6 +1,5 @@
 ---
 import type { Bloque, IdSuperficie, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
-import { ruta } from '../lib/i18n/rutas';
 import { canon, markdownDe, rutaCasa, t, texto } from '../lib/sitio';
 import { casas, nodosDelBloque } from '../lib/casas';
 import BloqueEditorial from './BloqueEditorial.astro';
@@ -23,7 +22,6 @@ const { seccion: sec, locale, superficie } = Astro.props;
 const enCasa = (id?: string) => !!id && casas(canon).get(id) === superficie;
 const titulo = texto(sec.title, locale);
 const pregunta = sec.question ? texto(sec.question, locale) : undefined;
-// En su casa, el pasaje remite al texto íntegro; fuera de ella (cita breve), a su casa (§18.3).
 const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
   const ns = nodosDelBloque(canon, b);
   const nodos = ns.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
@@ -33,8 +31,9 @@ const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
     nodos,
     lang,
     rotulo: t(lang === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale),
-    fuente: b.breve ? rutaCasa(primero.id, locale) : `${ruta({ tipo: 'texto-integro' }, locale)}#${primero.id}`,
-    textoFuente: t(b.breve ? 'contenido.fuente' : 'contenido.fuenteIntegro', locale),
+    // En su casa el pasaje no remite a otra parte; fuera de ella (cita breve), a su casa (§18.3 v1.2).
+    fuente: enCasa(primero.id) ? undefined : rutaCasa(primero.id, locale),
+    textoFuente: t('contenido.fuente', locale),
   };
 };
 const grupos = [sec.blocks, sec.depth] as const;

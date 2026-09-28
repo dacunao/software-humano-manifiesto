@@ -1,0 +1,108 @@
+# División 7 · Gobernanza (PRD v1.2 §18.1, RQ-15): SH-GOV completo, incluida la definición de terminado.
+id: gobernanza
+title:
+  es:
+    state: borrador
+    text: "Gobernanza"
+  en:
+    state: borrador
+    text: "Governance"
+  pt-BR:
+    state: borrador
+    text: "Governança"
+description:
+  es:
+    state: borrador
+    text: "Cómo convertir el manifiesto en una práctica habitual: responsabilidades, puntos de control, evolución y definición de terminado."
+  en:
+    state: borrador
+    text: "How to turn the manifesto into everyday practice: responsibilities, checkpoints, evolution and definition of done."
+  pt-BR:
+    state: borrador
+    text: "Como transformar o manifesto em prática habitual: responsabilidades, pontos de controle, evolução e definição de pronto."
+fr:
+  - FR-007
+  - FR-022
+sections:
+  - id: sh-gov
+    title:
+      es:
+        state: borrador
+        text: Una práctica habitual
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-practica
+          type: explanation
+          derivedFrom: gobernanza-03
+          text:
+            es:
+              state: borrador
+              text: "El manifiesto pierde valor si queda en una presentación inicial. Tiene que aparecer donde el equipo decide: cada rol tiene una obligación principal, y cada momento del desarrollo —antes de diseñar, de generar código, de integrar, de liberar y después— tiene una decisión que no se puede saltar."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: gobernanza-03
+        hasta: gobernanza-07
+  - id: evolucion
+    title:
+      es:
+        state: borrador
+        text: Cómo cambia el manifiesto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-evolucion
+          type: explanation
+          derivedFrom: gobernanza-09
+          text:
+            es:
+              state: borrador
+              text: Los principios son estables; las reglas y las pruebas pueden cambiar con evidencia nueva. Cada versión registra qué problema resolvió y qué conserva de la anterior.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: gobernanza-09
+        hasta: gobernanza-14
+  - id: sh-done
+    title:
+      es:
+        state: borrador
+        text: Qué significa terminado
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-terminado
+          type: explanation
+          derivedFrom: sh-done
+          text:
+            es:
+              state: borrador
+              text: Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        nodos:
+          - gobernanza-16
+          - gobernanza-17

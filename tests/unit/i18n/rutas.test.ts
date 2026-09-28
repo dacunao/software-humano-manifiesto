@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { alternas, paginasDeContenido, resolverRuta, ruta, rutaEquivalente, todasLasRutas } from '../../../src/lib/i18n/rutas';
+import { alternas, ordenDeLectura, paginasDeContenido, resolverRuta, ruta, rutaEquivalente, todasLasRutas, vecinas } from '../../../src/lib/i18n/rutas';
 
 describe('contrato de rutas', () => {
   test('tabla de contracts/rutas.md', () => {
@@ -8,9 +8,13 @@ describe('contrato de rutas', () => {
       [{ tipo: 'manifiesto' }, '/manifesto', '/es/manifiesto', '/pt-br/manifesto'],
       [{ tipo: 'principios' }, '/principles', '/es/principios', '/pt-br/principios'],
       [{ tipo: 'principio', principio: 'p03' }, '/principles/p03', '/es/principios/p03', '/pt-br/principios/p03'],
-      [{ tipo: 'aplicacion' }, '/practice', '/es/aplicacion', '/pt-br/aplicacao'],
-      [{ tipo: 'verificacion' }, '/verification', '/es/verificacion', '/pt-br/verificacao'],
-      [{ tipo: 'texto-integro' }, '/manifesto/full-text', '/es/manifiesto/texto-integro', '/pt-br/manifesto/texto-integral'],
+      [{ tipo: 'mapa' }, '/manifesto/map', '/es/manifiesto/mapa', '/pt-br/manifesto/mapa'],
+      [{ tipo: 'fundamento' }, '/manifesto/product-foundation', '/es/manifiesto/fundamento-de-producto', '/pt-br/manifesto/fundamento-de-produto'],
+      [{ tipo: 'construir' }, '/manifesto/building-with-ai', '/es/manifiesto/construir-con-ia', '/pt-br/manifesto/construir-com-ia'],
+      [{ tipo: 'verificar' }, '/manifesto/verify', '/es/manifiesto/verificar', '/pt-br/manifesto/verificar'],
+      [{ tipo: 'ejemplo' }, '/manifesto/applied-example', '/es/manifiesto/ejemplo-aplicado', '/pt-br/manifesto/exemplo-aplicado'],
+      [{ tipo: 'gobernanza' }, '/manifesto/governance', '/es/manifiesto/gobernanza', '/pt-br/manifesto/governanca'],
+      [{ tipo: 'bolsillo' }, '/manifesto/pocket-guide', '/es/manifiesto/guia-de-bolsillo', '/pt-br/manifesto/guia-de-bolso'],
       [{ tipo: 'speckit' }, '/speckit', '/es/speckit', '/pt-br/speckit'],
       [{ tipo: 'acerca' }, '/about', '/es/acerca', '/pt-br/sobre'],
       [{ tipo: '404' }, '/404', '/es/404', '/pt-br/404'],
@@ -22,11 +26,20 @@ describe('contrato de rutas', () => {
     }
   });
 
-  test('54 páginas de contenido, todas distintas (PRD v1.1)', () => {
+  test('66 páginas de contenido, todas distintas (PRD v1.2)', () => {
     const rutas = todasLasRutas().map((r) => r.ruta);
-    expect(paginasDeContenido()).toHaveLength(18);
-    expect(rutas).toHaveLength(54);
-    expect(new Set(rutas).size).toBe(54);
+    expect(paginasDeContenido()).toHaveLength(22);
+    expect(rutas).toHaveLength(66);
+    expect(new Set(rutas).size).toBe(66);
+  });
+
+  test('el orden de lectura recorre el núcleo: Mapa → … → P01 … P10 → … → Guía de bolsillo (RQ-15)', () => {
+    const orden = ordenDeLectura().map((p) => p.principio ?? p.tipo);
+    expect(orden).toEqual(['mapa', 'manifiesto', 'principios', 'p01', 'p02', 'p03', 'p04', 'p05', 'p06', 'p07', 'p08', 'p09', 'p10', 'fundamento', 'construir', 'verificar', 'ejemplo', 'gobernanza', 'bolsillo']);
+    expect(vecinas({ tipo: 'mapa' }).anterior).toBeUndefined();
+    expect(vecinas({ tipo: 'principio', principio: 'p10' }).siguiente).toEqual({ tipo: 'fundamento' });
+    expect(vecinas({ tipo: 'bolsillo' }).siguiente).toBeUndefined();
+    expect(vecinas({ tipo: 'speckit' })).toEqual({});
   });
 
   test('cada ruta resuelve a su página y tiene equivalente en los tres idiomas', () => {

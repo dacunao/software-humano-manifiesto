@@ -1,0 +1,82 @@
+# División 0 · Mapa del manifiesto (PRD v1.2 §18.1, RQ-15): portada del núcleo e índice operativo.
+id: mapa
+title:
+  es:
+    state: borrador
+    text: "Mapa del manifiesto"
+  en:
+    state: borrador
+    text: "Manifesto map"
+  pt-BR:
+    state: borrador
+    text: "Mapa do manifesto"
+description:
+  es:
+    state: borrador
+    text: "La portada del núcleo, sus identificadores y el recorrido completo por sus nueve divisiones."
+  en:
+    state: borrador
+    text: "The title page of the core, its identifiers and the full path through its nine divisions."
+  pt-BR:
+    state: borrador
+    text: "A capa do núcleo, seus identificadores e o percurso completo pelas nove divisões."
+fr:
+  - FR-003
+sections:
+  - id: portada
+    title:
+      es:
+        state: borrador
+        text: "El núcleo"
+      en:
+        state: borrador
+        text: "The core"
+      pt-BR:
+        state: borrador
+        text: "O núcleo"
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: mapa-portada
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: "Este es el mapa del núcleo del manifiesto. El núcleo se lee en nueve divisiones, en su orden: cada una reúne secciones completas del documento original, sin partirlas ni repetirlas. Con «Siguiente» se recorre entero, y desde el pie de cada página se puede descargar completo."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: portada-01
+        hasta: portada-06
+  - id: sh-index
+    title:
+      es:
+        state: borrador
+        text: "Índice de identificadores"
+      en:
+        state: borrador
+        text: "Index of identifiers"
+      pt-BR:
+        state: borrador
+        text: "Índice de identificadores"
+    depth: []
+    blocks:
+      - kind: entrada
+        entrada:
+          id: mapa-indice
+          type: explanation
+          derivedFrom: indice-operativo-para-agentes-02
+          text:
+            es:
+              state: borrador
+              text: "Cada obligación del núcleo tiene un identificador estable, como `P03`, `CR05` o `STOP02`, que permite citarla sin ambigüedad. La tabla muestra sus familias; en el sitio, cada identificador lleva a la división donde se lee su pasaje."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: canon
+        desde: indice-operativo-para-agentes-02
+        hasta: indice-operativo-para-agentes-04
