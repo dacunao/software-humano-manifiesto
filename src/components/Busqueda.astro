@@ -26,7 +26,7 @@ const archivo = `/buscar/indice-${locale === 'pt-BR' ? 'pt-br' : locale}.json`;
 >
   <div class="busqueda-cabecera">
     <h2 id="busqueda-titulo">{t('busqueda.titulo', locale)}</h2>
-    <form method="dialog"><button type="submit" class="cerrar-busqueda">{t('busqueda.cerrar', locale)}</button></form>
+    <button type="button" class="cerrar-busqueda" data-cerrar-busqueda>{t('busqueda.cerrar', locale)}</button>
   </div>
   <label for="busqueda-consulta">{t('busqueda.etiqueta', locale)}</label>
   <input id="busqueda-consulta" type="search" autocomplete="off" spellcheck="false" data-consulta />

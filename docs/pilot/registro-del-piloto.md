@@ -18,6 +18,8 @@ Versiones evaluadas: SpecKit 1.0.8, preset `software-humano` 2.0.0, conformidad 
 
 - **A5 · Las reglas de validación guiaron la reorganización de la v1.1** (2026-09-27). `RV-13` enumeró cada pasaje fuera de su casa o faltante; `RV-03` detectó que `FR-022` no estaba entre los requisitos válidos; `RV-11` confirmó que ningún enlace quedó roto tras mover el contenido.
 
+- **A6 · Un cambio grande recorrió el flujo completo antes de construir** (2026-09-28). La división del núcleo y la búsqueda pasaron por propuesta, decisión de la autoridad, PRD v1.2, especificación y plan, `converge`, `analyze` y conformidad antes del código. `analyze` encontró dos problemas que habrían llegado al código: la ronda temprana habría observado la estructura anterior, y la búsqueda solo tenía el caso en que todo sale bien. Las reglas `RV-13` (sin excepciones) y `RV-14` verificaron en cada construcción que la división no rompiera la estructura del núcleo ni duplicara pasajes. Contraste directo con C4.
+
 ## B · Fricciones operativas
 
 - **B1 · PyYAML** (2026-09-27). Todo script de `.specify/scripts/bash/` necesita el shim; sin él, la resolución de plantillas falla. Documentado en `AGENTS.md`; sigue siendo un paso que el agente debe recordar.

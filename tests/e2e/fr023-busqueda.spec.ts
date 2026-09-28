@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
 
 // FR-023 · búsqueda (PRD v1.2, RQ-16): un resultado por pasaje, en su casa; sin JavaScript no hay botón.
 test.describe('FR-023 · búsqueda', () => {
@@ -44,5 +45,15 @@ test.describe('FR-023 · búsqueda', () => {
     await page.goto('/es/manifiesto/verificar');
     if (!javaScriptEnabled) await expect(page.locator('[data-abrir-busqueda]')).toBeHidden();
     expect(externas).toEqual([]);
+  });
+
+  test('el diálogo abierto, con resultados, no tiene violaciones WCAG A/AA (T142)', async ({ page, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
+    await page.goto('/es/manifiesto');
+    await page.getByRole('button', { name: 'Buscar' }).click();
+    await page.getByRole('searchbox').fill('atención');
+    await expect(page.locator('.busqueda-resultados a').first()).toBeVisible();
+    const r = await new AxeBuilder({ page }).include('dialog.busqueda').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+    expect(r.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
   });
 });

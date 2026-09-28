@@ -13,13 +13,13 @@ title:
 description:
   es:
     state: borrador
-    text: "La postura del Manifiesto de Software Humano: el texto del manifiesto, el problema que busca resolver y cuatro maneras de leerlo."
+    text: "El problema que el manifiesto busca resolver, para quién es, cómo leerlo, dónde termina el núcleo y el texto del manifiesto."
   en:
     state: borrador
-    text: "The stance of the Human Software Manifesto: the manifesto text, the problem it seeks to solve and four ways to read it."
+    text: "The problem the manifesto seeks to solve, who it is for, how to read it, where the core ends and the manifesto text."
   pt-BR:
     state: borrador
-    text: "A postura do Manifesto de Software Humano: o texto do manifesto, o problema que busca resolver e quatro maneiras de lê-lo."
+    text: "O problema que o manifesto busca resolver, para quem é, como lê-lo, onde termina o núcleo e o texto do manifesto."
 fr:
   - FR-003
 sections:

@@ -19,7 +19,7 @@
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition: none !important;
     scroll-behavior: auto !important;
   }
 }
@@ -163,11 +163,7 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
 }
 /* Subtítulo de ruta en el menú (decisión de nombres, 2026-09-27) */
 .navegacion-global a { display: inline-flex; flex-direction: column; line-height: 1.15; }
-.navegacion-global .ruta { font-family: var(--sh-mono); font-size: 0.65rem; font-weight: 400; color: var(--sh-suave); letter-spacing: 0.04em; text-transform: lowercase; }
 .navegacion-global .estado { font-size: 0.75rem; }
-@media (max-width: 48rem) { .navegacion-global .ruta { display: none; } .navegacion-global a { flex-direction: row; } }
-.enlace-integro { font-weight: 650; }
-.descargas ul { list-style: none; padding: 0; }
 /* Texto íntegro: tercera columna «En esta sección» (decisión del 2026-09-27). Solo en pantallas muy anchas y con JavaScript. */
 .en-esta-seccion { display: none; font-size: 0.85rem; }
 .en-esta-seccion ol { list-style: none; padding: 0; margin: 0; }
@@ -205,7 +201,6 @@ dialog.busqueda { margin: 4rem auto auto; width: min(40rem, calc(100vw - 2rem));
 dialog.busqueda::backdrop { background: rgba(23, 32, 29, 0.45); }
 .busqueda-cabecera { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
 .busqueda-cabecera h2 { margin: 0; font-size: 1.25rem; }
-.busqueda-cabecera form { margin: 0; }
 .cerrar-busqueda { border: 1px solid var(--sh-linea); background: var(--sh-blanco); border-radius: 4px; padding: 0.2rem 0.6rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
 dialog.busqueda label { display: block; margin-top: 1rem; font-size: 0.9rem; color: var(--sh-suave); }
 dialog.busqueda input { width: 100%; font: inherit; font-size: 1.05rem; padding: 0.5rem 0.75rem; margin-top: 0.3rem; border: 1px solid var(--sh-tinta); border-radius: 6px; background: var(--sh-blanco); }

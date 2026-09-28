@@ -17,8 +17,11 @@ test.describe('JS-07 · Comprender la implementación en SpecKit', () => {
     for (const ruta of ['/es/speckit', '/es', '/speckit']) {
       await page.goto(ruta);
       await expect(page.locator('form')).toHaveCount(0);
-      await expect(page.locator('main button')).toHaveCount(0);
-      await expect(page.getByRole('link', { name: /descarg|instal|download|install|baixar/i })).toHaveCount(0);
+      await expect(page.locator('main button:not([data-copiar])')).toHaveCount(0);
+      // La única descarga del sitio es la del núcleo del manifiesto (FR-003 v1.2), nunca la del preset.
+      await expect(page.getByRole('link', { name: /instal|install|preset/i })).toHaveCount(0);
+      for (const href of await page.locator('a[download], a[href*="descarga"]').evaluateAll((as) => as.map((a) => a.getAttribute('href'))))
+        expect(href).toMatch(/^\/descargas\/nucleo-v2\.1-(es|en|pt-br)\.md$/);
       const ld = await page.locator('script[type="application/ld+json"]').allTextContents();
       expect(ld.join('')).not.toContain('SoftwareSourceCode');
     }

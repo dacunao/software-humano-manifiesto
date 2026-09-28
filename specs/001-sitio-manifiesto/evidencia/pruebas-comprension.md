@@ -39,6 +39,12 @@ Cada tarea sale de la evidencia de cumplimiento de su historia (PRD §15). El or
 
 **Al final**, dos preguntas abiertas: «¿Qué fue lo más difícil de entender?» y «¿Qué te llevarías de esto a tu trabajo?».
 
+**Además, durante todas las tareas** (PRD v1.2; evidencia pendiente de RQ-15 y RQ-16, T143). Se observa sin preguntarlo:
+
+- **Búsqueda.** ¿La persona usa el botón «Buscar»? ¿Encuentra con él lo que busca, por ejemplo en la tarea 5? ¿O busca un buscador y no lo encuentra?
+- **Móvil.** Si alguna sesión es en teléfono: ¿llega al texto o se pierde en el índice plegado? ¿Entiende qué indica «Índice · sección actual»?
+- **Divisiones.** Al buscar un tema, ¿la división donde lo encuentra le parece la esperable? Se anota dónde lo buscó primero y dónde estaba.
+
 ## Plantilla de notas por sesión
 
 Copiar un bloque por sesión.
@@ -59,6 +65,7 @@ Tarea | Logró (sí / en parte / no) | Qué dijo (cita breve) | Dónde se trabó
 8 JS-08 |   |   |   |
 9 JS-09 |   |   |   |
 
+Búsqueda (¿la usó?, ¿encontró?) · Móvil (¿llegó al texto?) · Divisiones (¿dónde buscó cada tema y dónde estaba?):
 Lo más difícil de entender:
 Lo que se llevaría:
 Observaciones de quien modera (P02: ¿terminó con energía o con desgaste?):

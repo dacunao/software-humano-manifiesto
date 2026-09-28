@@ -135,5 +135,6 @@ if (boton && dialogo && consulta) {
   consulta.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { e.preventDefault(); dialogo.close(); }
   });
+  dialogo.querySelector('[data-cerrar-busqueda]')?.addEventListener('click', () => dialogo.close());
   dialogo.addEventListener('close', () => boton.focus());
 }

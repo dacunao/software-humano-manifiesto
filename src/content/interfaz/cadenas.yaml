@@ -49,16 +49,6 @@ nav.principios:
   pt-BR:
     state: borrador
     text: Princípios
-nav.aplicacion:
-  es:
-    state: borrador
-    text: Aplicación
-  en:
-    state: borrador
-    text: In practice
-  pt-BR:
-    state: borrador
-    text: Aplicação
 nav.speckit:
   es:
     state: borrador
@@ -159,16 +149,6 @@ contenido.traduccion:
   pt-BR:
     state: borrador
     text: Tradução do texto canônico. O original em espanhol mantém a autoridade.
-contenido.traduccionPendiente:
-  es:
-    state: borrador
-    text: La traducción de este pasaje aún no está disponible; se muestra el original en español.
-  en:
-    state: borrador
-    text: The translation of this passage is not available yet; the Spanish original is shown.
-  pt-BR:
-    state: borrador
-    text: A tradução deste trecho ainda não está disponível; mostra-se o original em espanhol.
 contenido.explicacion:
   es:
     state: borrador
@@ -419,36 +399,6 @@ principio.fuente:
   pt-BR:
     state: borrador
     text: Fonte
-principio.anterior:
-  es:
-    state: borrador
-    text: Principio anterior
-  en:
-    state: borrador
-    text: Previous principle
-  pt-BR:
-    state: borrador
-    text: Princípio anterior
-principio.siguiente:
-  es:
-    state: borrador
-    text: Principio siguiente
-  en:
-    state: borrador
-    text: Next principle
-  pt-BR:
-    state: borrador
-    text: Próximo princípio
-manifiesto.indice:
-  es:
-    state: borrador
-    text: Índice
-  en:
-    state: borrador
-    text: Contents
-  pt-BR:
-    state: borrador
-    text: Índice
 manifiesto.version:
   es:
     state: borrador
@@ -459,16 +409,6 @@ manifiesto.version:
   pt-BR:
     state: borrador
     text: Versão {version} · {fecha}
-manifiesto.original:
-  es:
-    state: borrador
-    text: Leer el original en español
-  en:
-    state: borrador
-    text: Read the Spanish original
-  pt-BR:
-    state: borrador
-    text: Ler o original em espanhol
 error404.titulo:
   es:
     state: borrador
@@ -543,18 +483,6 @@ indice.rotulo:
   es: { state: borrador, text: "Índice de la sección" }
   en: { state: borrador, text: "Section index" }
   pt-BR: { state: borrador, text: "Índice da seção" }
-contenido.fuenteIntegro:
-  es: { state: borrador, text: "Ver en el texto íntegro" }
-  en: { state: borrador, text: "See it in the full text" }
-  pt-BR: { state: borrador, text: "Ver no texto integral" }
-nav.verificacion:
-  es: { state: borrador, text: "Verificación" }
-  en: { state: borrador, text: "Verification" }
-  pt-BR: { state: borrador, text: "Verificação" }
-nav.textoIntegro:
-  es: { state: borrador, text: "Texto íntegro del núcleo" }
-  en: { state: borrador, text: "Full text of the core" }
-  pt-BR: { state: borrador, text: "Texto integral do núcleo" }
 ruta.manifiesto:
   es: { state: borrador, text: "Comprender" }
   en: { state: borrador, text: "Understand" }
@@ -591,10 +519,6 @@ integro.traduccionPt:
   es: { state: borrador, text: "Traducción al portugués de Brasil (Markdown)" }
   en: { state: borrador, text: "Brazilian Portuguese translation (Markdown)" }
   pt-BR: { state: borrador, text: "Tradução para o português do Brasil (Markdown)" }
-manifiesto.integro:
-  es: { state: borrador, text: "Leer el núcleo completo, buscar un pasaje o citarlo: texto íntegro" }
-  en: { state: borrador, text: "Read the full core, search for a passage or cite it: full text" }
-  pt-BR: { state: borrador, text: "Ler o núcleo completo, buscar um trecho ou citá-lo: texto integral" }
 indice.enEstaSeccion:
   es: { state: borrador, text: "En esta sección" }
   en: { state: borrador, text: "In this section" }
@@ -603,10 +527,6 @@ ruta.practica:
   es: { state: borrador, text: "Llevarlo a la práctica" }
   en: { state: borrador, text: "Putting it into practice" }
   pt-BR: { state: borrador, text: "Levar à prática" }
-indice.manifiesto:
-  es: { state: borrador, text: "Índice del manifiesto" }
-  en: { state: borrador, text: "Manifesto index" }
-  pt-BR: { state: borrador, text: "Índice do manifesto" }
 nav.anterior:
   es: { state: borrador, text: "Anterior" }
   en: { state: borrador, text: "Previous" }
