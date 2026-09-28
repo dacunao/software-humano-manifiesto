@@ -122,13 +122,13 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Producto
 
-- **Nombre del proyecto**: Sitio del Manifiesto de Software Humano (nombre público: «Software Humano», igual en los tres idiomas)
+- **Nombre del proyecto**: Sitio del Manifiesto de Software Humano (nombre público del sitio: «Manifiesto», igual en los tres idiomas, en `manifiesto.softwarehumano.com`; «Software Humano» es la marca de la agencia que lo publica, en `softwarehumano.com`)
 - **Qué construye este repositorio**: el sitio web público, narrativo y documental del Manifiesto de Software Humano, en inglés general, español neutro latinoamericano y portugués de Brasil. Es además el primer proyecto real desarrollado con la adaptación Software Humano para SpecKit (PRD §12, objetivo 8).
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.2.md` (SHA-256 `a353a2148dc932543fe10247ace5692a4eba126befe4eda3dbdc80aa945cb98c`)
-- **Versión**: 1.2, fecha 2026-09-28, vigente. Divide el núcleo en divisiones temáticas de secciones consecutivas, en su orden y sin duplicados; ofrece el núcleo completo solo como descarga; agrega la búsqueda (ver «Cambios de la versión 1.2» en el propio PRD). La v1.1 (`…_v1.1.md`, SHA-256 `bf964e19…`) y la v1.0 (`…_v1.0.md`, SHA-256 `e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.3.md` (SHA-256 `ba39d39d223868317b6d4387121fc507e87ad7438858249db3416ba8ba81499c`)
+- **Versión**: 1.3, fecha 2026-09-28, vigente. Sitúa el sitio dentro de la marca Software Humano: nombre, dominio, autor y editor, enlace hacia la agencia, licencias y reparto de contenido entre los dos sitios (ver «Cambios de la versión 1.3» en el propio PRD). La v1.2 (`…_v1.2.md`, SHA-256 `a353a214…`), la v1.1 (`bf964e19…`) y la v1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
 - **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
@@ -198,15 +198,17 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 
 | PRD §29 | Decisión |
 |---|---|
-| 1 · Nombre y dominio | «Software Humano», valor único en los tres idiomas · `softwarehumano.com` |
-| 2 · Autoría visible | Persona: Damián Acuña. No organización |
+| 1 · Nombre y dominio | Sitio: «Manifiesto», valor único en los tres idiomas · `manifiesto.softwarehumano.com` (resolución del 2026-09-28, PRD v1.3). «Software Humano» es la marca de la agencia, en `softwarehumano.com` |
+| 2 · Autoría visible | Autor: Damián Acuña, persona. Editor: Software Humano, organización (PRD v1.3 §18.4) |
 | 3 · Identidad visual | Sin identidad previa vinculante; libertad de exploración. Se exploraron A, B y su síntesis C; **ninguna está aprobada** |
 | 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona |
-| 5 · Licencia | Texto y contenido editorial: CC BY 4.0 · código: MIT |
+| 5 · Licencia | Texto del núcleo y contenido editorial: CC BY 4.0 · código y método: MIT · nombres «Software Humano» y «Manifiesto» y logotipo excluidos de ambas · tabla por tipo de material en Acerca de (PRD v1.3 §29) |
 | 6 · Acción pública sin preset publicado | **Solo estado, sin captura.** El estado de la adaptación se modela como dato; se declara disponibilidad futura, sin botón, formulario ni enlace sin destino |
 | 7 · Contacto | Alias de correo como `mailto:`, más Issues del repositorio para lo técnico. La dirección concreta no está definida |
 | 8 · Analítica | Ver «Decisiones técnicas aprobadas» |
 | 9 · Aprobación lingüística | Ver «Contrato lingüístico» |
+
+**Relación con Software Humano** (decisión de la autoridad de producto, 2026-09-28; PRD v1.3 §18.4): este sitio publica la doctrina; `softwarehumano.com` presenta la agencia. El enlace hacia la agencia va en el pie y en Acerca de. Los pasajes del núcleo viven solo en este sitio; el sitio de la agencia los cita en frases breves con enlace. Este sitio no presenta productos, oferta ni llamados comerciales. Los documentos de marca y el copy de la agencia son insumos y no gobiernan este sitio.
 
 **Nombres del menú** (decisión de la autoridad de producto, 2026-09-27; ajustada por la v1.2): las superficies y divisiones se nombran con sustantivos conocidos y la ruta de lectura del núcleo aparece como guía, no como nombre (`P05`). Desde la v1.2, el menú principal es Inicio, Manifiesto, SpecKit y Acerca de, y las rutas agrupan el índice del manifiesto.
 
