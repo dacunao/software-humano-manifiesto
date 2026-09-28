@@ -200,3 +200,19 @@ Reemplaza los tokens de RQ-10 y la dirección A + B en lo visual. Se conserva la
   - **Colores del ciclo**: no se asignan a las rutas del núcleo. El Ámbar se usa solo en avisos. El flywheel es del sitio de la agencia.
 - **Rationale**: PRD §21.2 y §21.7 v1.5; `P06`, `P07`, `P08` y `P09`; `AC-07`.
 - **Alternatives considered**: cargar Noto Sans desde Google Fonts (tercero, contra `FR-018`); conservar una monoespaciada para los identificadores (va contra la regla de una sola familia).
+
+## RQ-16 enmendado · motor Pagefind con nuestro contenido (2026-09-28)
+
+Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el criterio de idioma de la primera enmienda.
+
+- **Decision** (Damián Acuña, 2026-09-28, opción B):
+  - **Motor**: Pagefind 1.5, autoalojado. En la construcción, un paso posterior arma el índice con la API de Node (`addHTMLFile`), a partir de páginas mínimas generadas desde `construirIndice`: cada pasaje una vez, en su casa y solo en el idioma del índice. No se rastrea el HTML publicado, así que las citas breves, los actos de Inicio y los textos sin traducir quedan fuera por construcción. `RV-14` sigue validando esos registros;
+  - **Jerarquía**: cada página generada tiene encabezados con ancla por sección y por identificador, así que Pagefind devuelve subresultados, es decir, la página y debajo sus secciones;
+  - **Idiomas**: un índice por idioma, según `lang`, con raíces de palabras para `es`, `en` y `pt`;
+  - **Interfaz**: la nuestra (especificación visual §7.7), con la API de JavaScript de Pagefind cargada solo al abrir la búsqueda. Los extractos se reconstruyen como texto y `<mark>`, sin insertar HTML;
+  - **Resaltado en destino**: al abrir un resultado, el término queda resaltado en la página (`pagefind-highlight.js`, cargado solo si la dirección lo pide);
+  - **Seguridad**: la política agrega `'wasm-unsafe-eval'` a `script-src`, lo que permite WebAssembly y no JavaScript arbitrario. Es una concesión aprobada por la autoridad;
+  - **Disponible sin usar todavía**: filtros, metadatos, orden y búsqueda entre sitios (`softwarehumano.com`). Se agregan solo con una necesidad concreta (`AGENTS.md`, regla 6).
+- **Rationale**: `FR-023` ya exige búsqueda estática, sin terceros, sin registrar lo que se busca, cargada al abrir, con el sitio completo sin JavaScript y cada pasaje una vez; Pagefind lo cumple con nuestros registros. Aporta raíces en tres idiomas (`P05`: encontrar sin adivinar la forma exacta de la palabra), subresultados (`P06`) y búsqueda futura entre los dos sitios de la marca.
+- **Costo medido** sobre el sitio (2026-09-28): la primera búsqueda descarga unos 97 KB comprimidos (motor, trabajador y WebAssembly del idioma) más los fragmentos del índice. El motor propio descargaba unos 33 KB. En los dos casos, solo al abrir la búsqueda.
+- **Alternatives considered**: mejorar el motor propio con raíces y jerarquía (sin resaltado, filtros ni búsqueda entre sitios); Pagefind rastreando el HTML con su interfaz (no sigue la especificación visual y la unicidad dependería de marcar a mano qué ignorar). Corrección de un análisis anterior: la API de Node permite conservar la unicidad, algo que no se consideró al descartar Pagefind.

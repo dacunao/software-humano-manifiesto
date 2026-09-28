@@ -214,6 +214,8 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 
 **Cabecera y tema** (decisiones de la autoridad de producto, 2026-09-28; PRD v1.4): logotipo como SVG, con ícono y «Manifiesto» en pantallas anchas y solo el ícono en teléfonos; el resto del sitio sigue con fuentes del sistema. Entrada «GitHub» en el menú, visible solo cuando el repositorio de la adaptación sea público. Idiomas como EN · ES · PT, con el nombre completo accesible. Tema claro u oscuro: por defecto, el del sistema. Reemplaza en parte RQ-05 (sin panel de ajustes): el control de tema es la segunda preferencia real, no un panel.
 
+**Búsqueda** (decisión de la autoridad de producto, 2026-09-28; RQ-16 enmendado): motor Pagefind autoalojado, con el índice generado desde nuestro contenido y la interfaz propia. Damián aprueba agregar `'wasm-unsafe-eval'` a la política de seguridad.
+
 **Nombres del menú** (decisión de la autoridad de producto, 2026-09-27; ajustada por la v1.2): las superficies y divisiones se nombran con sustantivos conocidos y la ruta de lectura del núcleo aparece como guía, no como nombre (`P05`). Desde la v1.2, el menú principal es Inicio, Manifiesto, SpecKit y Acerca de, y las rutas agrupan el índice del manifiesto.
 
 **División del núcleo** (decisiones de la autoridad de producto, 2026-09-28): alternativa B de `docs/design/propuesta-nucleo-por-divisiones-2026-09-28.md`, divisiones temáticas de secciones consecutivas, completas y en su orden; sin contenido duplicado; el núcleo completo solo como descarga en el idioma seleccionado; Influencias y notas destilada en Acerca de, con la aclaración sobre Craft citada textual; la Declaración final cierra la Guía de bolsillo; búsqueda incluida.
