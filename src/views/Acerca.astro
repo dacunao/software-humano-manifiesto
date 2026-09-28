@@ -1,10 +1,23 @@
 ---
 import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
+import { contenido, t } from '../lib/sitio';
 
+/** Origen, autoría, versiones, procedencia y licencias. El contacto aparece solo cuando existe (T107). */
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
+const { email, issues } = contenido.sitio.contact;
 ---
-<Superficie id="acerca" locale={locale} />
+<Superficie id="acerca" locale={locale}>
+  {(email || issues) && (
+    <section id="contacto" class="seccion">
+      <h2>{t('acerca.contacto', locale)}</h2>
+      <ul>
+        {email && <li><a href={`mailto:${email}`}>{email}</a></li>}
+        {issues && <li><a href={issues}>{issues}</a></li>}
+      </ul>
+    </section>
+  )}
+</Superficie>

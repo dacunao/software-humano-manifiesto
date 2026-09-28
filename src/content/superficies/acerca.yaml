@@ -22,4 +22,92 @@ description:
     text: Origem, autoria, versões, procedência e licenças do site.
 fr:
   - FR-012
-sections: []
+sections:
+  - id: origen
+    title:
+      es: { state: borrador, text: Origen }
+      en: &pend { state: pendiente }
+      pt-BR: *pend
+    blocks:
+      # Nota de origen en primera persona (decisión de voz, PRD §29.4). La escribe Damián Acuña;
+      # un agente no redacta su historia personal. Queda pendiente hasta que él la escriba.
+      - kind: entrada
+        entrada:
+          id: acerca-nota-de-origen
+          type: surface-text
+          text: { es: *pend, en: *pend, pt-BR: *pend }
+      - kind: canon
+        nodos: [influencias-y-notas-03]
+  - id: autoria
+    title:
+      es: { state: borrador, text: Autoría y versiones }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-autoria
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: |-
+                El manifiesto y este sitio son obra de Damián Acuña. El texto publicado corresponde al núcleo del manifiesto, versión 2.1, de septiembre de 2026.
+
+                Una versión nueva no reemplaza en silencio a la anterior: se registra qué cambió y se revisan las páginas que dependen de ella.
+            en: *pend
+            pt-BR: *pend
+  - id: procedencia
+    title:
+      es: { state: borrador, text: De dónde viene cada texto }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-procedencia
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: |-
+                El sitio distingue y rotula cada clase de contenido. El **texto canónico** se muestra tal como está en el manifiesto. Las **explicaciones**, los **ejemplos** y las **pruebas** se redactan para el sitio a partir de un pasaje identificado, que siempre se puede abrir. Las **traducciones** conservan la referencia al original en español, que es el que tiene autoridad. El **estado técnico** de la adaptación a SpecKit se muestra como un dato verificado, con su versión y su fecha.
+
+                Todo el contenido vive en archivos versionados: cada cambio queda registrado con quién lo aprobó y qué idiomas afecta.
+            en: *pend
+            pt-BR: *pend
+  - id: independencia
+    title:
+      es: { state: borrador, text: Una iniciativa independiente }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-independencia
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: Software Humano no tiene afiliación con las empresas, herramientas ni autores que lo influyeron. La adaptación a SpecKit es una implementación de referencia independiente, sin respaldo de GitHub.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [influencias-y-notas-04, influencias-y-notas-05, influencias-y-notas-06, influencias-y-notas-08, influencias-y-notas-09, influencias-y-notas-10, influencias-y-notas-11]
+  - id: licencias
+    title:
+      es: { state: borrador, text: Licencias }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-licencias
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: El texto del manifiesto y el contenido editorial del sitio se publican bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) — se pueden copiar, adaptar y compartir citando la fuente. El código del sitio se publica bajo licencia MIT.
+            en: *pend
+            pt-BR: *pend

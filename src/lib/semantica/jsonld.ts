@@ -20,3 +20,22 @@ export function paginaWeb(nombre: string, url: string, idioma: string, descripci
 export function grafo(nodos: NodoLD[]): string {
   return JSON.stringify({ '@context': 'https://schema.org', '@graph': nodos });
 }
+
+/** CreativeWork del manifiesto con sus relaciones de traducción (contracts/datos-estructurados.md). */
+export function obraManifiesto(o: {
+  sitio: Sitio; nombre: string; url: string; idioma: string; fecha: string; original: string; traducciones: string[];
+}): NodoLD {
+  const n: NodoLD = {
+    '@type': 'CreativeWork',
+    name: o.nombre,
+    url: o.url,
+    version: o.sitio.core.version,
+    inLanguage: o.idioma,
+    author: persona(o.sitio),
+    datePublished: o.fecha,
+    license: 'https://creativecommons.org/licenses/by/4.0/',
+  };
+  if (o.idioma === 'es') n['workTranslation'] = o.traducciones.map((url) => ({ '@type': 'CreativeWork', url }));
+  else n['translationOfWork'] = { '@type': 'CreativeWork', url: o.original };
+  return n;
+}

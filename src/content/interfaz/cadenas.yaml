@@ -489,3 +489,13 @@ error404.texto:
   pt-BR:
     state: borrador
     text: "O endereço não existe ou mudou. Estes são os pontos de partida do site:"
+acerca.contacto:
+  es:
+    state: borrador
+    text: Contacto
+  en:
+    state: borrador
+    text: Contact
+  pt-BR:
+    state: borrador
+    text: Contato

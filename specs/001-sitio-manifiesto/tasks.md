@@ -178,18 +178,18 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-05`; `AC-03` y `AC-11`.
 
-- [ ] T061 [P] [US5] Escribir `tests/e2e/js05-fuente.spec.ts` con los escenarios 1 a 3 de `JS-05`; `/es/manifiesto#cr03` debe llevar a `CR03`
-- [ ] T062 [P] [US5] Escribir `tests/unit/canon/integridad.test.ts`: el texto mostrado en `/es/manifiesto` reproduce todos los nodos del núcleo, sin diferencias (`AC-03`)
+- [X] T061 [P] [US5] Escribir `tests/e2e/js05-fuente.spec.ts` con los escenarios 1 a 3 de `JS-05`; `/es/manifiesto#cr03` debe llevar a `CR03`
+- [X] T062 [P] [US5] Escribir `tests/unit/canon/integridad.test.ts`: el texto mostrado en `/es/manifiesto` reproduce todos los nodos del núcleo, sin diferencias (`AC-03`)
 - [X] T063 [US5] Implementar `src/views/Manifiesto.astro`: núcleo íntegro desde los nodos. En `es`, la fuente directa. En `en` y `pt-BR`, la traducción de cada nodo, identificada como traducción y con referencia al original (PRD §19.4). Versión y fecha visibles (`FR-012`)
 - [X] T064 [US5] Crear `src/components/IndiceManifiesto.astro`: índice de secciones e identificadores con las anclas de contracts/rutas.md
-- [ ] T065 [US5] Redactar `src/content/superficies/acerca.yaml` (borrador) e implementar `src/views/Acerca.astro` con:
+- [X] T065 [US5] Redactar `src/content/superficies/acerca.yaml` (borrador) e implementar `src/views/Acerca.astro` con:
   - origen, autoría (Damián Acuña) y versiones;
   - procedencia del contenido y licencias (CC BY 4.0 y MIT);
   - relación independiente con influencias y herramientas;
   - **la nota de origen en primera persona**, que es la única excepción a la voz impersonal;
   - contacto, con el alias y el repositorio pendientes
-- [ ] T066 [US5] Añadir a `src/lib/semantica/jsonld.ts` el `CreativeWork` del Manifiesto, con `version`, `inLanguage`, `license` y `workTranslation`/`translationOfWork`, según contracts/datos-estructurados.md
-- [ ] T067 [US5] Crear `src/components/Procedencia.astro` con la versión del núcleo, la fecha de actualización (fecha del último cambio de contenido de la página según el historial de git, calculada en la construcción; ver data-model.md), la procedencia del contenido y el estado del preset (`FR-012`), y usarlo en `Base.astro`
+- [X] T066 [US5] Añadir a `src/lib/semantica/jsonld.ts` el `CreativeWork` del Manifiesto, con `version`, `inLanguage`, `license` y `workTranslation`/`translationOfWork`, según contracts/datos-estructurados.md
+- [X] T067 [US5] Crear `src/components/Procedencia.astro` con la versión del núcleo, la fecha de actualización (fecha del último cambio de contenido de la página según el historial de git, calculada en la construcción; ver data-model.md), la procedencia del contenido y el estado del preset (`FR-012`), y usarlo en `Base.astro`
 
 ---
 

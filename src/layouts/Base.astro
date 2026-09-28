@@ -6,6 +6,7 @@ import { alternas, ruta, type Pagina } from '../lib/i18n/rutas';
 import { grafo, paginaWeb, persona, sitioWeb, type NodoLD } from '../lib/semantica/jsonld';
 import { contenido, hayBorrador, t, URL_SITIO } from '../lib/sitio';
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
+import Procedencia from '../components/Procedencia.astro';
 
 interface Props {
   locale: Locale;
@@ -60,7 +61,7 @@ const token = contenido.sitio.analytics.cloudflareToken;
     </main>
     <footer class="pie">
       <slot name="pie" />
-      {actualizado && <p>{t('pie.actualizado', locale, { fecha: actualizado })}</p>}
+      <Procedencia locale={locale} actualizado={actualizado} />
       <p>{t('pie.licencia', locale)}</p>
     </footer>
   </body>
