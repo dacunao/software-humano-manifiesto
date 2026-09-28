@@ -14,6 +14,7 @@ export function faltantesParaPublicar(c: Contenido, canon: Canon): string[] {
   ];
   for (const s of c.superficies) {
     localizados.push({ l: s.title, donde: `${s.id}.title` }, { l: s.description, donde: `${s.id}.description` });
+    if (s.hero) localizados.push({ l: s.hero.title, donde: `${s.id}.hero.title` }, { l: s.hero.text, donde: `${s.id}.hero.text` });
     for (const sec of s.sections) {
       localizados.push({ l: sec.title, donde: `${s.id}.${sec.id}.title` });
       if (sec.question) localizados.push({ l: sec.question, donde: `${s.id}.${sec.id}.question` });

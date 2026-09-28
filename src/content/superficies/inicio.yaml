@@ -20,6 +20,19 @@ description:
   pt-BR:
     state: borrador
     text: Por que mais capacidade de construir software não garante mais progresso para as pessoas, e o que fazer a respeito.
+# Titular: opción C del borrador de copy (docs/design/), reescrita en voz impersonal.
+# A prueba como primera alternativa (decisión de Damián Acuña, 2026-09-27); se evalúa en la ronda temprana.
+hero:
+  title:
+    es: { state: borrador, text: "Antes, construir era caro. Eso obligaba a elegir." }
+    en: { state: pendiente }
+    pt-BR: { state: pendiente }
+  text:
+    es:
+      state: borrador
+      text: Hoy agregar una opción más cuesta minutos, y la pregunta de si vale la pena es cada vez más fácil de saltar. El Manifiesto de Software Humano repone esa pregunta y le da un lugar en el proceso donde no se puede saltar.
+    en: { state: pendiente }
+    pt-BR: { state: pendiente }
 fr:
   - FR-001
   - FR-002

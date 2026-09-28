@@ -85,6 +85,7 @@ function todosLosLocalizados(): Localizado[] {
   const r: Localizado[] = [...Object.values(contenido.cadenas), contenido.estado.limitations];
   for (const s of contenido.superficies) {
     r.push(s.title, s.description);
+    if (s.hero) r.push(s.hero.title, s.hero.text);
     for (const sec of s.sections) {
       r.push(sec.title);
       if (sec.question) r.push(sec.question);

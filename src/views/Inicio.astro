@@ -1,10 +1,33 @@
 ---
 import type { Locale } from '../lib/contenido/esquemas';
-import Superficie from './Superficie.astro';
+import Base from '../layouts/Base.astro';
+import Secciones from '../components/Secciones.astro';
+import { ruta } from '../lib/i18n/rutas';
+import { fechaActualizacion, superficie, t, texto } from '../lib/sitio';
 
+/**
+ * Inicio: titular, dos entradas (la acción principal lleva al recorrido; la segunda, directo a los
+ * principios, FR-002) y los siete actos (FR-001). Una sola acción principal por contexto (P06).
+ */
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
+const s = superficie('inicio');
+const titulo = texto(s.title, locale);
+const descripcion = texto(s.description, locale);
+const hero = s.hero ? { titulo: texto(s.hero.title, locale), texto: texto(s.hero.text, locale) } : undefined;
+const lang = (x: { lang: string }) => (x.lang !== locale ? x.lang : undefined);
 ---
-<Superficie id="inicio" locale={locale} />
+<Base locale={locale} pagina={{ tipo: 'inicio' }} titulo={titulo.texto} descripcion={descripcion.texto} actualizado={fechaActualizacion(['src/content/superficies/inicio.yaml'])}>
+  <header class="portada">
+    <h1 class="voz" lang={hero ? lang(hero.titulo) : lang(titulo)}>{hero?.titulo.texto || titulo.texto}</h1>
+    <p class="bajada" lang={hero ? lang(hero.texto) : lang(descripcion)}>{hero?.texto.texto || descripcion.texto}</p>
+    <div class="entradas">
+      <a class="boton primario" href="#acto-1">{t('inicio.comenzar', locale)}</a>
+      <a class="boton" href={ruta({ tipo: 'principios' }, locale)}>{t('inicio.principios', locale)}</a>
+    </div>
+    <p class="nota">{t('inicio.entrada', locale)}</p>
+  </header>
+  <Secciones secciones={s.sections} locale={locale} />
+</Base>

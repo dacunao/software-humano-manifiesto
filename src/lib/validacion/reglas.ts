@@ -48,6 +48,7 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
   const localizados: { l: Localizado; dueño: object | string; donde: string }[] = [];
   for (const s of c.superficies) {
     localizados.push({ l: s.title, dueño: s, donde: `${s.id}.title` }, { l: s.description, dueño: s, donde: `${s.id}.description` });
+    if (s.hero) localizados.push({ l: s.hero.title, dueño: s, donde: `${s.id}.hero.title` }, { l: s.hero.text, dueño: s, donde: `${s.id}.hero.text` });
     for (const sec of s.sections) {
       localizados.push({ l: sec.title, dueño: s, donde: `${s.id}.${sec.id}.title` });
       if (sec.question) localizados.push({ l: sec.question, dueño: s, donde: `${s.id}.${sec.id}.question` });

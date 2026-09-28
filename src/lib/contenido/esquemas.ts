@@ -77,6 +77,8 @@ export const Superficie = z
     id: z.enum(ID_SUPERFICIES),
     title: Localizado,
     description: Localizado,
+    /** Titular de portada: editorial, a prueba (decisión del 2026-09-27). Solo Inicio lo usa. */
+    hero: z.object({ title: Localizado, text: Localizado }).strict().optional(),
     fr: z.array(z.string()),
     sections: z.array(SeccionSuperficie),
   })

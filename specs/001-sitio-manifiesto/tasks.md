@@ -288,8 +288,8 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: bloque 8. No empieza sin la elección de Damián.
 
-- [ ] T093 STOP · Presentar a Damián Acuña las direcciones A, B y C (enlaces en `docs/pilot/handoff-al-nuevo-proyecto.md`) sobre el sitio ya construido con contenido real, indicando lo que el traspaso manda conservar de cada una, y **esperar su elección**. Si la elegida incluye movimiento no esencial, reabrir RQ-05 y agregar el control de movimiento (`AC-06`)
-- [ ] T094 Aplicar la dirección elegida en `src/styles/tokens.css`, retirando la marca PROVISIONAL: jerarquía tipográfica y tratamiento de tarjetas (el mérito de A según el traspaso), sin los clichés del PRD §21.2
+- [X] T093 STOP · Presentar a Damián Acuña las direcciones A, B y C (enlaces en `docs/pilot/handoff-al-nuevo-proyecto.md`) sobre el sitio ya construido con contenido real, indicando lo que el traspaso manda conservar de cada una, y **esperar su elección**. Si la elegida incluye movimiento no esencial, reabrir RQ-05 y agregar el control de movimiento (`AC-06`)
+- [X] T094 Aplicar la dirección elegida en `src/styles/tokens.css`, retirando la marca PROVISIONAL: jerarquía tipográfica y tratamiento de tarjetas (el mérito de A según el traspaso), sin los clichés del PRD §21.2
 - [ ] T095 STOP · Proponer a Damián la relación entre la tabla de contenidos lateral (el mérito de B, que debe llevar también a otras páginas) y la navegación superior; tras su aprobación, aplicarla en `src/components/NavegacionGlobal.astro` y `src/components/IndiceManifiesto.astro`
 - [ ] T096 Revisar en todas las vistas de `src/views/` que no compitan títulos con subtítulos redundantes ni aparezcan rótulos que expongan la estructura interna del documento (lecciones del traspaso)
 - [ ] T097 Repetir T092 tras aplicar la dirección y actualizar `specs/001-sitio-manifiesto/evidencia/tecnica.md`
