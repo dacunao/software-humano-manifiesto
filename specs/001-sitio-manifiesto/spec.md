@@ -163,6 +163,7 @@ La redacción de cada historia es textual del PRD. Los escenarios de aceptación
 
 ### Edge Cases
 
+- **Búsqueda sin resultados o sin índice** (v1.2): si nada coincide, se dice y se sugiere revisar las palabras; si el índice no se puede descargar, se explica y la navegación sigue disponible (`FR-023`, `V09`).
 - **JavaScript deshabilitado o fallido**: el texto, la navegación primaria, las URLs profundas y el contenido canónico siguen disponibles; solo se pierden mejoras interactivas, que tienen alternativa textual (`FR-015`).
 - **Movimiento reducido**: con `prefers-reduced-motion`, la experiencia está completa sin movimiento no esencial (`FR-013`).
 - **Almacenamiento local no disponible o borrado**: el sitio funciona con el idioma de la URL; la preferencia simplemente no se conserva (`FR-020`, PRD §21.7: «prescindible»).
@@ -217,7 +218,7 @@ Son obligatorios con la misma fuerza que los anteriores. Se citan por sección d
 
 - **PRD §16 · Recorrido narrativo**: siete actos; entrada directa a cualquier sección; sin scroll bloqueado. Los cuatro capítulos de presentación de `P01`–`P10` son opcionales («puede enmarcarlos») y no alteran la identidad de los principios.
 - **PRD §17 · Contrato de cada principio**: superficie propia con declaración, tensión, significado, consecuencia, ejemplo, contraejemplo, prueba de decisión y fuente; más la expresión en el sitio y el incumplimiento que debe evitarse para cada `P01`–`P10`.
-- **PRD §18.1 · Superficies y divisiones (v1.2)**: Inicio, Manifiesto, SpecKit y Acerca de. El manifiesto se lee en nueve divisiones de secciones consecutivas del núcleo: 0 Mapa del manifiesto (`SH-INDEX`), 1 El manifiesto (propósito y texto canónico), 2 Principios (con una página por principio), 3 Fundamento de producto, 4 Construir con IA, 5 Verificar, 6 Ejemplo aplicado, 7 Gobernanza, 8 Guía de bolsillo, cerrada por la Declaración final. Influencias y notas, destilada en Acerca de. Cada página con URL equivalente por idioma.
+- **PRD §18.1 · Superficies y divisiones (v1.2)**: Inicio, Manifiesto, SpecKit y Acerca de. El manifiesto se lee en nueve divisiones de secciones consecutivas del núcleo: 0 Mapa del manifiesto (portada del núcleo y `SH-INDEX`, en ese orden), 1 El manifiesto (propósito y texto canónico), 2 Principios (con una página por principio), 3 Fundamento de producto, 4 Construir con IA, 5 Verificar, 6 Ejemplo aplicado, 7 Gobernanza, 8 Guía de bolsillo, cerrada por la Declaración final. Influencias y notas, destilada en Acerca de. Cada página con URL equivalente por idioma.
 - **PRD §18.3 · Una sola casa por pasaje (v1.2)**: cada sección del núcleo se lee completa en una sola división; fuera de ella solo se enlaza o se cita en una frase breve. Sin excepciones: el núcleo completo solo se descarga.
 - **PRD §18.2 · Navegación global (v1.2)** desde cualquier página: inicio, el manifiesto y sus divisiones con anterior y siguiente, principios, búsqueda, descarga del núcleo, SpecKit y su estado, versión vigente, cambio de idioma sin perder la sección y ajustes sin interrumpir la lectura. Menú principal: Inicio, Manifiesto, SpecKit y Acerca de; el índice del manifiesto sigue el orden del núcleo, agrupado por las rutas que el núcleo nombra. Sin llamados simultáneos con el mismo peso.
 - **PRD §19.1–§19.2 · Tipos de contenido y entidad Principio** (ver Key Entities).

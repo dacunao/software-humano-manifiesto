@@ -269,8 +269,8 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: función sin JavaScript, accesibilidad, bordes, rendimiento y privacidad (bloque 7).
 
-- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 54 páginas (PRD v1.1) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 54 páginas (PRD §21.4)
-- [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 54 páginas (PRD v1.1) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
+- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 66 páginas (PRD v1.2) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 66 páginas (PRD §21.4)
+- [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 66 páginas (PRD v1.2) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
 - [ ] T090 [P] Escribir `tests/e2e/bordes.spec.ts` con los bordes de spec.md:
   - 404 por idioma;
   - una URL antigua redirige (caso de prueba en `_redirects`);
@@ -334,6 +334,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 ### Phase Dependencies
 
 - **Setup (1)** → **Foundational (2)** → fases de historia **3 a 11** → **Primera ronda de comprensión (12)** → **Calidad transversal (13)** → **Dirección visual (14)** → **Idiomas (15)** → **Validación y aceptación (16)**.
+- **Fases 17 a 20 (PRD v1.1 y v1.2)** van antes de la 12: la ronda temprana observa la estructura vigente, con las divisiones del núcleo, la búsqueda y las mejoras de móvil (hallazgo O1 del `analyze` del 2026-09-28).
 - Las fases 3 a 11 dependen de la 2. Entre ellas, 4 y 6 amplían `Inicio.astro` después de la 3; 8 y 9 agregan los actos 6 y 7 a la misma vista; 10 usa las vistas de 5 y 7.
 - La fase 12 depende de 3 a 11 **y de la conducción humana de las sesiones**. La traducción definitiva y la revisión profesional (fase 15) usan el contenido `es` ya corregido por la ronda temprana.
 - La fase 14 depende de 13 y **de la elección humana** de la dirección visual. La 15 depende de 12. La 16 depende de 14 y 15.
@@ -473,7 +474,7 @@ Registradas antes de implementar, a partir del `analyze` del 2026-09-28 (hallazg
 - [ ] T134 Ofrecer la descarga del núcleo del idioma seleccionado en el pie de todas las páginas (`src/layouts/Base.astro`) y en el Mapa, con el rótulo de traducción y el enlace al original en `en` y `pt-BR`; mover el `CreativeWork` a la división 1 según `contracts/datos-estructurados.md`, con `RV-12` verde per `FR-003` v1.2, PRD §25.2 (missing)
 - [ ] T135 Rehacer `src/content/superficies/acerca.yaml`: quitar los bloques canónicos que ahora viven en las divisiones 1 y 7, presentar Influencias y notas destilada como explicación en borrador derivada de sus nodos (`FR-017`), y citar textual, como `breve` enlazada a la descarga, la aclaración de que el marco no es un manifiesto oficial de Craft per PRD §18.1 v1.2, RQ-15 (contradicts)
 - [ ] T136 Generar en la construcción `/buscar/indice-{en,es,pt-br}.json` desde el modelo de contenido (cada nodo en su casa, más las entradas editoriales visibles; sin citas `breve` ni actos de Inicio) e implementar `RV-14` con su prueba en `tests/unit/validacion/busqueda.test.ts` per `FR-023`, RQ-16 (missing)
-- [ ] T137 Crear `src/cliente/busqueda.ts` y el botón de búsqueda de la cabecera: `<dialog>` nativo, índice descargado al abrir, normalización de tildes y mayúsculas, todos los términos, resultados agrupados por página con extracto y término resaltado; sin JavaScript no aparece el botón; prueba en `tests/e2e/fr023-busqueda.spec.ts` (buscar «CR03» da un resultado que lleva a `/es/manifiesto/construir-con-ia#cr03`; sin JavaScript no hay botón; ningún recurso de terceros) per `FR-023`, `FR-015`, `FR-018` (missing)
+- [ ] T137 Crear `src/cliente/busqueda.ts` y el botón de búsqueda de la cabecera: `<dialog>` nativo, índice descargado al abrir, normalización de tildes y mayúsculas, todos los términos, resultados agrupados por página con extracto y término resaltado; estados de carga del índice, sin resultados, índice que no carga y búsqueda vacía; sin JavaScript no aparece el botón; prueba en `tests/e2e/fr023-busqueda.spec.ts` (buscar «CR03» da un resultado que lleva a `/es/manifiesto/construir-con-ia#cr03`; sin JavaScript no hay botón; ningún recurso de terceros) per `FR-023`, `FR-015`, `FR-018` (missing)
 - [ ] T138 En pantallas angostas, plegar el índice lateral en un `<details>` nativo con título explícito, dejar el texto en la primera pantalla y, con JavaScript, mostrar en el título la sección en pantalla usando `src/cliente/seguimiento.ts`; revisar la altura de la cabecera per PRD §21.4, §21.3, `V04` (partial)
 - [ ] T139 Agregar la acción explícita «Copiar enlace», con confirmación, a cada encabezado de sección canónica en su casa, sin símbolos al pasar el cursor, con prueba en `tests/e2e/js08-compartir.spec.ts` per `FR-011`, `JS-08`, `contracts/rutas.md` (partial)
 - [ ] T140 Reorganizar las tablas del núcleo en pantallas angostas como filas apiladas con el rótulo de cada columna, generando los rótulos en `src/lib/canon/render.ts` y solo con CSS en el cliente; el orden de lectura sin estilos no cambia per PRD §21.4 (partial)
