@@ -35,6 +35,14 @@ const DESCARGAS: Record<Locale, { href: string; clave: string }> = {
   'pt-BR': { href: '/descargas/nucleo-v2.1-pt-br.md', clave: 'integro.traduccionPt' },
 };
 const descarga = DESCARGAS[locale];
+// Panel derecho: h3 y h4 de cada sección del núcleo; el script muestra el de la sección en pantalla.
+const titulo2 = (n: (typeof canon.nodos)[number]) => markdownDe(n, locale).markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, '');
+const porSeccion = canon.secciones.map((sec) => ({
+  ancla: sec.ancla,
+  titulo: titulo2(nodo(sec.ancla)).replace(/\s*·\s*[A-Z0-9-]+$/, ''),
+  items: canon.nodos.filter((n) => n.section === sec.clave && n.kind === 'encabezado' && (n.nivel === 3 || n.nivel === 4))
+    .map((n) => ({ href: `#${n.id}`, texto: titulo2(n), nivel: n.nivel })),
+})).filter((g) => g.items.length > 0);
 const titulo = markdownDe(nodo('portada-02'), locale).markdown.replace(/^#\s+/, '');
 const url = (l: Locale) => `${URL_SITIO}${ruta({ tipo: 'texto-integro' }, l)}`;
 const ld = [obraManifiesto({
@@ -56,6 +64,15 @@ const ld = [obraManifiesto({
       <p><a href={descarga.href} download hreflang={IDIOMAS[locale].hreflang}>{t(descarga.clave, locale)}</a></p>
     </section>
   </Fragment>
+  <aside slot="derecha" class="en-esta-seccion" aria-labelledby="en-esta-seccion-titulo" data-seguimiento hidden>
+    <p id="en-esta-seccion-titulo" class="rotulo-contenido">{t('indice.enEstaSeccion', locale)}</p>
+    {porSeccion.map((g) => (
+      <div data-seccion={g.ancla} hidden>
+        <p class="titulo-seccion">{g.titulo}</p>
+        <ol>{g.items.map((i) => <li class={`nivel-${i.nivel}`}><a href={i.href}>{i.texto}</a></li>)}</ol>
+      </div>
+    ))}
+  </aside>
   <article class="manifiesto lectura" data-tipo="cita-canonica">
     {nodos.map(({ n, markdown, lang }) => (
       <>
@@ -68,3 +85,6 @@ const ld = [obraManifiesto({
     ))}
   </article>
 </Superficie>
+<script>
+  import '../cliente/seguimiento';
+</script>

@@ -448,3 +448,8 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 - [X] T120 Reemplazar en `src/content/superficies/inicio.yaml` los bloques canónicos completos de los actos 1 a 6 por citas `breve` o enlaces a su casa per §18.3 (contradicts)
 - [X] T121 Actualizar `src/components/NavegacionGlobal.astro` y `src/content/interfaz/cadenas.yaml`: agregar Verificación, mostrar la ruta del núcleo como subtítulo de cada superficie y enlazar el texto íntegro desde el pie per §18.1 v1.1 y la decisión de nombres del menú (missing)
 - [X] T122 Actualizar las pruebas: `tests/e2e/js05-fuente.spec.ts` (texto íntegro y descarga), `tests/e2e/js06-aplicacion.spec.ts` (temas v1.1), nuevo `tests/e2e/fr022-verificacion.spec.ts`, y el recuento de 54 páginas en `tests/unit/i18n/hreflang.test.ts` y el sitemap per JS-05, JS-06, FR-022, AC-10 (missing)
+
+## Phase 18: Ajustes de navegación decididos por la autoridad
+
+- [X] T123 Ofrecer en el texto íntegro solo la descarga del idioma seleccionado, en `src/views/TextoIntegro.astro`, con su prueba en `tests/e2e/js05-fuente.spec.ts` per PRD §21.7 (decisión de Damián Acuña, 2026-09-27)
+- [X] T124 Texto íntegro en tres columnas: índice h1/h2 a la izquierda y «En esta sección» (h3 y h4 de la sección en pantalla) a la derecha, con `src/cliente/seguimiento.ts` como mejora progresiva y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per RQ-06 enmendado (decisión de Damián Acuña, 2026-09-27)

@@ -41,4 +41,5 @@ const rutaLectura = RUTAS[id];
   <slot name="antes" />
   <Secciones secciones={s.sections} locale={locale} superficie={id} />
   <slot />
+  {Astro.slots.has('derecha') && <Fragment slot="derecha"><slot name="derecha" /></Fragment>}
 </Base>

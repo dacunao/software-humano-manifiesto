@@ -62,11 +62,12 @@ const token = contenido.sitio.analytics.cloudflareToken;
       <NavegacionGlobal locale={locale} pagina={pagina} />
     </header>
     {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
-    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'indice-arriba': indiceArriba }]}>
+    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'indice-arriba': indiceArriba, 'con-derecha': Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />
       </main>
       {indice?.length ? <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} /> : null}
+      <slot name="derecha" />
     </div>
     <footer class="pie">
       <slot name="pie" />

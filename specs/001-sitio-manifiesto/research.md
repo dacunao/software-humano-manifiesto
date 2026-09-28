@@ -122,3 +122,9 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
   - el texto íntegro es una página aparte, con la descarga del archivo original en español y de las traducciones generadas nodo a nodo.
 - **Rationale**: PRD §18.3 y `FR-003` v1.1. Que la regla sea verificable evita que la unicidad dependa de la disciplina de quien edita (`D04`). Mostrar el canon visible en su casa evita que un enlace a `#cr03` caiga dentro de un `<details>` cerrado.
 - **Alternatives considered**: el canon plegado en `<details>` dentro de su casa (los enlaces profundos no abren el pliegue sin JavaScript en todos los navegadores); controlar la unicidad solo a mano (se degrada en silencio).
+
+## RQ-06 enmendado · tercer script: seguimiento de lectura del texto íntegro (2026-09-27)
+
+- **Decision**: el texto íntegro usa tres columnas. A la izquierda, el título y las 24 secciones del núcleo (h1 y h2). En el centro, el texto. A la derecha, «En esta sección»: los h3 y h4 de la sección en pantalla. Un tercer script de cliente (`src/cliente/seguimiento.ts`, menos de 1 KB) muestra el grupo de la sección actual y la marca en el índice izquierdo. Sin JavaScript, el panel derecho no aparece; en pantallas angostas tampoco.
+- **Rationale**: decisión de Damián Acuña. El núcleo tiene 24 h2, 23 h3 (casi siempre un subtítulo único) y 80 h4, que son la navegación fina. Con los h3 y h4 de la sección actual, el panel derecho no repite el izquierdo (`P06`) y el texto sigue siendo una sola página (`FR-003` v1.1: lectura de corrido, búsqueda y una sola dirección).
+- **Alternatives considered**: una página por sección (sin JavaScript, pero cambia `FR-003` y suma 72 páginas); paneles estáticos con h2 y h3 (la derecha duplicaría la izquierda y omitiría los h4).

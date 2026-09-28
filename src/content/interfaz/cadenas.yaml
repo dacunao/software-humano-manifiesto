@@ -595,3 +595,7 @@ manifiesto.integro:
   es: { state: borrador, text: "Leer el núcleo completo, buscar un pasaje o citarlo: texto íntegro" }
   en: { state: borrador, text: "Read the full core, search for a passage or cite it: full text" }
   pt-BR: { state: borrador, text: "Ler o núcleo completo, buscar um trecho ou citá-lo: texto integral" }
+indice.enEstaSeccion:
+  es: { state: borrador, text: "En esta sección" }
+  en: { state: borrador, text: "In this section" }
+  pt-BR: { state: borrador, text: "Nesta seção" }
