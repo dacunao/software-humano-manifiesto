@@ -16,11 +16,21 @@ test.describe('JS-05 · Consultar y citar la fuente', () => {
     for (const id of ['sh-index', 'p01', 'p10', 'sh-fund', 'd01', 'f08', 'a08', 'stop07', 'o09', 'v12', 'sh-pocket'])
       await expect(page.locator(`#${id}`), id).toHaveCount(1);
     await expect(page.locator('article.manifiesto')).toContainText('Núcleo del manifiesto para el desarrollo de software humano');
+    await expect(page.locator('.descargas a')).toHaveCount(1);
     const descarga = page.locator('.descargas a[hreflang="es"]');
     await expect(descarga).toHaveAttribute('href', '/descargas/nucleo-v2.1-es.md');
     const r = await request.get('/descargas/nucleo-v2.1-es.md');
     expect(r.ok()).toBe(true);
     expect(await r.text()).toContain('# Núcleo del manifiesto para el desarrollo de software humano');
+  });
+
+  test('la descarga ofrecida es solo la del idioma seleccionado', async ({ page }) => {
+    for (const [r, l, f] of [['/manifesto/full-text', 'en', 'en'], ['/pt-br/manifesto/texto-integral', 'pt-BR', 'pt-br']] as const) {
+      await page.goto(r);
+      await expect(page.locator('.descargas a')).toHaveCount(1);
+      await expect(page.locator('.descargas a')).toHaveAttribute('hreflang', l);
+      await expect(page.locator('.descargas a')).toHaveAttribute('href', `/descargas/nucleo-v2.1-${f}.md`);
+    }
   });
 
   test('escenario 3 · cada cita breve fuera de su casa lleva a la casa del pasaje', async ({ page }) => {

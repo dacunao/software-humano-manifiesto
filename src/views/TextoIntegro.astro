@@ -28,6 +28,13 @@ const indice = [{ titulo: t('manifiesto.indice', locale), items: canon.secciones
 }) }];
 const pendientes = nodos.filter((x) => x.sustituido).length;
 const { version, date } = contenido.sitio.core;
+// Solo la descarga del idioma seleccionado (PRD §21.7: la interfaz no mezcla idiomas).
+const DESCARGAS: Record<Locale, { href: string; clave: string }> = {
+  es: { href: '/descargas/nucleo-v2.1-es.md', clave: 'integro.original' },
+  en: { href: '/descargas/nucleo-v2.1-en.md', clave: 'integro.traduccionEn' },
+  'pt-BR': { href: '/descargas/nucleo-v2.1-pt-br.md', clave: 'integro.traduccionPt' },
+};
+const descarga = DESCARGAS[locale];
 const titulo = markdownDe(nodo('portada-02'), locale).markdown.replace(/^#\s+/, '');
 const url = (l: Locale) => `${URL_SITIO}${ruta({ tipo: 'texto-integro' }, l)}`;
 const ld = [obraManifiesto({
@@ -46,11 +53,7 @@ const ld = [obraManifiesto({
     {pendientes > 0 && <p class="aviso-traduccion">{t('contenido.traduccionPendiente', locale)}</p>}
     <section class="descargas" aria-labelledby="descargas-titulo">
       <h2 id="descargas-titulo" class="rotulo-contenido">{t('integro.descargas', locale)}</h2>
-      <ul>
-        <li><a href="/descargas/nucleo-v2.1-es.md" download hreflang="es">{t('integro.original', locale)}</a></li>
-        <li><a href="/descargas/nucleo-v2.1-en.md" download hreflang="en">{t('integro.traduccionEn', locale)}</a></li>
-        <li><a href="/descargas/nucleo-v2.1-pt-br.md" download hreflang="pt-BR">{t('integro.traduccionPt', locale)}</a></li>
-      </ul>
+      <p><a href={descarga.href} download hreflang={IDIOMAS[locale].hreflang}>{t(descarga.clave, locale)}</a></p>
     </section>
   </Fragment>
   <article class="manifiesto lectura" data-tipo="cita-canonica">
