@@ -4,7 +4,9 @@ import type { NodoLD } from '../lib/semantica/jsonld';
 import Base from '../layouts/Base.astro';
 import Secciones from '../components/Secciones.astro';
 import type { GrupoIndice } from '../components/IndiceLateral.astro';
-import { fechaActualizacion, superficie, t, texto } from '../lib/sitio';
+import { canon, fechaActualizacion, markdownDe, superficie, t, texto } from '../lib/sitio';
+import { nodosDelBloque } from '../lib/casas';
+import EnEstaSeccion, { type GrupoSeccion } from '../components/EnEstaSeccion.astro';
 
 /** Vista común de una superficie: encabezado, secciones y ranura para lo propio de cada una. */
 interface Props {
@@ -16,8 +18,10 @@ interface Props {
   indice?: GrupoIndice[] | undefined;
   indiceArriba?: boolean;
   claseIndice?: string | undefined;
+  /** Tercera columna «En esta sección» con los títulos canónicos de cada sección (decisión del 2026-09-27). */
+  seguimiento?: boolean;
 }
-const { id, locale, ld = [], archivos = [], indice, indiceArriba = false, claseIndice } = Astro.props;
+const { id, locale, ld = [], archivos = [], indice, indiceArriba = false, claseIndice, seguimiento = false } = Astro.props;
 const s = superficie(id);
 const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
@@ -31,6 +35,17 @@ const propio: GrupoIndice[] = s.sections.length > 1
 const grupos = indice ?? propio;
 const RUTAS: Partial<Record<IdSuperficie, string>> = { manifiesto: 'ruta.manifiesto', principios: 'ruta.principios', aplicacion: 'ruta.aplicacion', verificacion: 'ruta.verificacion' };
 const rutaLectura = RUTAS[id];
+const limpiar = (md: string) => md.replace(/^#{1,6}\s+/, '').replace(/`/g, '');
+const gruposDerecha: GrupoSeccion[] = seguimiento
+  ? s.sections.map((sec) => ({
+      ancla: sec.id,
+      titulo: texto(sec.title, locale).texto,
+      items: [...sec.blocks, ...sec.depth]
+        .flatMap((b) => (b.kind === 'canon' && !b.breve ? nodosDelBloque(canon, b) : []))
+        .filter((n) => n.kind === 'encabezado' && (n.nivel === 3 || n.nivel === 4))
+        .map((n) => ({ href: `#${n.id}`, texto: limpiar(markdownDe(n, locale).markdown), nivel: n.nivel })),
+    })).filter((g) => g.items.length > 0)
+  : [];
 ---
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} indiceArriba={indiceArriba} claseIndice={claseIndice}>
   <header class="encabezado-superficie">
@@ -42,4 +57,5 @@ const rutaLectura = RUTAS[id];
   <Secciones secciones={s.sections} locale={locale} superficie={id} />
   <slot />
   {Astro.slots.has('derecha') && <Fragment slot="derecha"><slot name="derecha" /></Fragment>}
+  {gruposDerecha.length > 0 && <EnEstaSeccion slot="derecha" grupos={gruposDerecha} locale={locale} />}
 </Base>

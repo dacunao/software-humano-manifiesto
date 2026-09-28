@@ -3,6 +3,7 @@ import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
 import NodoCanonico from '../components/NodoCanonico.astro';
 import Compartir from '../components/Compartir.astro';
+import EnEstaSeccion from '../components/EnEstaSeccion.astro';
 import { ruta } from '../lib/i18n/rutas';
 import { IDIOMAS } from '../lib/i18n/idiomas';
 import { obraManifiesto } from '../lib/semantica/jsonld';
@@ -64,15 +65,7 @@ const ld = [obraManifiesto({
       <p><a href={descarga.href} download hreflang={IDIOMAS[locale].hreflang}>{t(descarga.clave, locale)}</a></p>
     </section>
   </Fragment>
-  <aside slot="derecha" class="en-esta-seccion" aria-labelledby="en-esta-seccion-titulo" data-seguimiento hidden>
-    <p id="en-esta-seccion-titulo" class="rotulo-contenido">{t('indice.enEstaSeccion', locale)}</p>
-    {porSeccion.map((g) => (
-      <div data-seccion={g.ancla} hidden>
-        <p class="titulo-seccion">{g.titulo}</p>
-        <ol>{g.items.map((i) => <li class={`nivel-${i.nivel}`}><a href={i.href}>{i.texto}</a></li>)}</ol>
-      </div>
-    ))}
-  </aside>
+  <EnEstaSeccion slot="derecha" grupos={porSeccion} locale={locale} />
   <article class="manifiesto lectura" data-tipo="cita-canonica">
     {nodos.map(({ n, markdown, lang }) => (
       <>
@@ -85,6 +78,3 @@ const ld = [obraManifiesto({
     ))}
   </article>
 </Superficie>
-<script>
-  import '../cliente/seguimiento';
-</script>

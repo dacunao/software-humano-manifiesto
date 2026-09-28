@@ -13,6 +13,21 @@ test.describe('texto íntegro · panel «En esta sección»', () => {
     await expect(page.locator('.indice-manifiesto a[href="#sh-fund"]')).toHaveAttribute('aria-current', 'location');
   });
 
+  for (const [ruta, seccion, esperado] of [
+    ['/es/principios#fundamento', 'fundamento', 'Cuándo el fundamento es identificable'],
+    ['/es/aplicacion#ejemplo', 'ejemplo', 'Diagnóstico desde el manifiesto'],
+  ] as const) {
+    test(`el mismo esquema en ${ruta.split('#')[0]}`, async ({ page }, info) => {
+      test.skip(info.project.name !== 'js', 'solo escritorio con JavaScript');
+      await page.setViewportSize({ width: 1440, height: 900 });
+      await page.goto(ruta);
+      const panel = page.locator('.en-esta-seccion');
+      await expect(panel.locator(`[data-seccion="${seccion}"]`)).toBeVisible();
+      await expect(panel).toContainText(esperado);
+      await expect(page.locator(`.indice-lateral a[href="#${seccion}"]`)).toHaveAttribute('aria-current', 'location');
+    });
+  }
+
   test('sin JavaScript el panel no aparece y el índice izquierdo funciona', async ({ page }, info) => {
     test.skip(info.project.name !== 'sin-js', 'solo sin JavaScript');
     await page.setViewportSize({ width: 1440, height: 900 });

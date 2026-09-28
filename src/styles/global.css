@@ -171,3 +171,5 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
   .lienzo.con-indice.con-derecha { grid-template-columns: 15rem minmax(0, 1fr) 14rem; max-width: 90rem; }
   .lienzo.con-derecha > .en-esta-seccion:not([hidden]) { display: block; grid-column: 3; grid-row: 1; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
 }
+.en-esta-seccion.sin-titulos > :not(.rotulo-contenido) { display: none; }
+.en-esta-seccion.sin-titulos { opacity: 0; pointer-events: none; }

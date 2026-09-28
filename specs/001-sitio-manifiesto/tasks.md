@@ -453,3 +453,4 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 
 - [X] T123 Ofrecer en el texto íntegro solo la descarga del idioma seleccionado, en `src/views/TextoIntegro.astro`, con su prueba en `tests/e2e/js05-fuente.spec.ts` per PRD §21.7 (decisión de Damián Acuña, 2026-09-27)
 - [X] T124 Texto íntegro en tres columnas: índice h1/h2 a la izquierda y «En esta sección» (h3 y h4 de la sección en pantalla) a la derecha, con `src/cliente/seguimiento.ts` como mejora progresiva y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per RQ-06 enmendado (decisión de Damián Acuña, 2026-09-27)
+- [X] T125 Aplicar el esquema de tres columnas a Principios y Aplicación: `src/components/EnEstaSeccion.astro` reutilizable, con los h3 y h4 canónicos de la sección en pantalla, y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` (decisión de Damián Acuña, 2026-09-28)
