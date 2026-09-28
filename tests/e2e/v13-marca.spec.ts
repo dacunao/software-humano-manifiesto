@@ -36,11 +36,9 @@ test.describe('PRD v1.3 · Manifiesto y Software Humano', () => {
     expect(sitio.publisher).toEqual({ '@type': 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com' });
   });
 
-  test('en móvil, el índice plegado dice qué índice es (T151)', async ({ page }, info) => {
+  test('en móvil, el índice se abre con «Contenido» (T167, especificación visual §7.2)', async ({ page }, info) => {
     test.skip(info.project.name !== 'movil', 'solo móvil');
     await page.goto('/es/manifiesto/verificar');
-    await expect(page.locator('[data-indice-plegable] summary')).toContainText('Índice del manifiesto');
-    await page.goto('/es/acerca');
-    await expect(page.locator('[data-indice-plegable] summary')).toContainText('En esta página');
+    await expect(page.locator('[data-indice-plegable] summary')).toContainText('Contenido');
   });
 });

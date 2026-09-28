@@ -42,7 +42,7 @@ Cada tarea sale de la evidencia de cumplimiento de su historia (PRD §15). El or
 **Además, durante todas las tareas** (PRD v1.2; evidencia pendiente de RQ-15 y RQ-16, T143). Se observa sin preguntarlo:
 
 - **Búsqueda.** ¿La persona usa el botón «Buscar»? ¿Encuentra con él lo que busca, por ejemplo en la tarea 5? ¿O busca un buscador y no lo encuentra?
-- **Móvil.** Si alguna sesión es en teléfono: ¿llega al texto o se pierde en el índice plegado? ¿Entiende qué indica «Índice · sección actual»?
+- **Móvil.** Si alguna sesión es en teléfono: ¿llega al texto o se pierde en el índice? ¿Encuentra «Contenido» y «Menú»? En la tarea 9, ¿encuentra el idioma dentro de «Menú» sin ayuda?
 - **Divisiones.** Al buscar un tema, ¿la división donde lo encuentra le parece la esperable? Se anota dónde lo buscó primero y dónde estaba.
 
 ## Plantilla de notas por sesión

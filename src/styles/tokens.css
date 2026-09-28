@@ -1,70 +1,106 @@
 /*
- * Dirección visual: síntesis A + B, elegida por Damián Acuña el 2026-09-27 (T093).
- * Tokens tomados de la propuesta A (jerarquía tipográfica y tarjetas). Solo fuentes del
- * sistema: cero bytes de tipografías web (P09, presupuesto de plan.md).
+ * Sistema visual compartido de Software Humano (docs/design/Software_Humano_Especificacion_Visual_v1.0.md,
+ * PRD v1.5 §21.2, RQ-18). Tokens de la especificación §8. El tema oscuro sigue al sistema sin elección
+ * guardada; `data-tema` es la elección de la persona (RQ-17).
  */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/NotoSans-latin-wght.woff2') format('woff2-variations');
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
-  --sh-tinta: #17201d;
-  --sh-papel: #f5f1e8;
-  --sh-suave: #5b6661;
-  --sh-linea: #d9d0c1;
-  --sh-tarjeta: rgba(255, 255, 255, 0.55);
-  --sh-blanco: #ffffff;
-  --sh-acento: #1c49b7;
-  --sh-acento-suave: #f2f5ff;
-  --sh-foco: #005fcc;
+  color-scheme: light;
 
-  --sh-voz: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-  --sh-ui: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --sh-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --sh-medida: 40rem;
-  --sh-ancho: 76rem;
+  /* Identidad y ciclo (§4.1): el ciclo solo cuando comunica su significado. */
+  --sh-indigo: #3f51c6;
+  --sh-turquoise: #269c91;
+  --sh-coral: #f26b4a;
+  --sh-amber: #f2b544;
+  --sh-ink: #18212c;
+  --sh-paper: #f7f6f2;
+
+  /* Tintes de apoyo (§4.4) */
+  --sh-indigo-soft: #eef0fb;
+  --sh-turquoise-soft: #e8f5f3;
+  --sh-coral-soft: #fff0ec;
+  --sh-amber-soft: #fff7e3;
+
+  /* Neutros, modo claro (§4.2) */
+  --sh-canvas: #f7f6f2;
+  --sh-surface: #ffffff;
+  --sh-surface-raised: #ffffff;
+  --sh-text: #18212c;
+  --sh-text-muted: #52606d;
+  --sh-subtle: #eef1f4;
+  --sh-border: #d9dee3;
+  --sh-interactive: #3f51c6;
+  --sh-focus: #3f51c6;
+
+  /* Botón primario (§7.3), panel de texto canónico (§7.5) y avisos (§7.8) */
+  --sh-primary-bg: #3f51c6;
+  --sh-primary-text: #ffffff;
+  --sh-canon-bg: #18212c;
+  --sh-canon-text: #f7f6f2;
+  --sh-canon-border: #18212c;
+  --sh-canon-interactive: #aab4ff;
+  --sh-notice-bg: #fff7e3;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --content-reading: 68ch;
+  --content-intro: 54ch;
+  --content-wide: 1200px;
   --sh-espacio: 1.5rem;
   --sh-bloque: 3rem;
   --sh-seccion: 5rem;
-  --sh-radio: 0.55rem;
-  --sh-aviso: #fff4d6;
-  /* Tarjeta destacada de la declaración de un principio: invertida en claro, tonal en oscuro. */
-  --sh-destacado-fondo: #17201d;
-  --sh-destacado-texto: #f5f1e8;
-  color-scheme: light;
 }
 
-/*
- * Tema oscuro (PRD v1.4 §21.7, RQ-17), en borrador para la aprobación de Damián Acuña: los mismos
- * tonos de A + B invertidos. La tinta verde casi negra pasa a ser el fondo y el papel cálido, el
- * texto. Sin elección guardada rige el sistema; `data-tema` es la elección de la persona.
- */
+/* Modo oscuro (§4.3), derivado de la Tinta. Se repite para el sistema y para la elección explícita. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema='claro']) {
-    --sh-tinta: #ece6da;
-    --sh-papel: #141a18;
-    --sh-suave: #a7b1ac;
-    --sh-linea: #34403b;
-    --sh-tarjeta: rgba(255, 255, 255, 0.04);
-    --sh-blanco: #1d2522;
-    --sh-acento: #9ab8ff;
-    --sh-acento-suave: #1c2740;
-    --sh-foco: #a9c6ff;
-    --sh-aviso: #3a3320;
-    --sh-destacado-fondo: #24322d;
-    --sh-destacado-texto: #f3eee4;
     color-scheme: dark;
+    --sh-canvas: #101820;
+    --sh-surface: #18212c;
+    --sh-surface-raised: #202c38;
+    --sh-text: #f7f6f2;
+    --sh-text-muted: #b7c0c8;
+    --sh-subtle: #202c38;
+    --sh-border: #33404c;
+    --sh-interactive: #aab4ff;
+    --sh-focus: #aab4ff;
+    --sh-indigo-soft: rgb(170 180 255 / 14%);
+    --sh-amber-soft: rgb(242 181 68 / 14%);
+    --sh-primary-bg: #aab4ff;
+    --sh-primary-text: #18212c;
+    --sh-canon-bg: #202c38;
+    --sh-canon-text: #f7f6f2;
+    --sh-canon-border: #33404c;
+    --sh-notice-bg: rgb(242 181 68 / 14%);
   }
 }
 :root[data-tema='oscuro'] {
-  --sh-tinta: #ece6da;
-  --sh-papel: #141a18;
-  --sh-suave: #a7b1ac;
-  --sh-linea: #34403b;
-  --sh-tarjeta: rgba(255, 255, 255, 0.04);
-  --sh-blanco: #1d2522;
-  --sh-acento: #9ab8ff;
-  --sh-acento-suave: #1c2740;
-  --sh-foco: #a9c6ff;
-  --sh-aviso: #3a3320;
-  --sh-destacado-fondo: #24322d;
-  --sh-destacado-texto: #f3eee4;
   color-scheme: dark;
+  --sh-canvas: #101820;
+  --sh-surface: #18212c;
+  --sh-surface-raised: #202c38;
+  --sh-text: #f7f6f2;
+  --sh-text-muted: #b7c0c8;
+  --sh-subtle: #202c38;
+  --sh-border: #33404c;
+  --sh-interactive: #aab4ff;
+  --sh-focus: #aab4ff;
+  --sh-indigo-soft: rgb(170 180 255 / 14%);
+  --sh-amber-soft: rgb(242 181 68 / 14%);
+  --sh-primary-bg: #aab4ff;
+  --sh-primary-text: #18212c;
+  --sh-canon-bg: #202c38;
+  --sh-canon-text: #f7f6f2;
+  --sh-canon-border: #33404c;
+  --sh-notice-bg: rgb(242 181 68 / 14%);
 }

@@ -1,8 +1,17 @@
 import { expect, test } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+/** En teléfonos, el idioma está dentro de «Menú» (especificación visual §7.1): se abre si hace falta. */
+async function abrirMenu(page: import('@playwright/test').Page): Promise<void> {
+  const menu = page.locator('.menu-movil > summary');
+  if (await menu.isVisible()) {
+    const abierto = await page.locator('.menu-movil').evaluate((d) => (d as HTMLDetailsElement).open);
+    if (!abierto) await menu.click();
+  }
+}
+
 
 const fondo = (page: import('@playwright/test').Page) => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
-const OSCURO = 'rgb(20, 26, 24)';
+const OSCURO = 'rgb(16, 24, 32)'; // --sh-canvas oscuro, #101820 (especificación visual §4.3)
 
 // PRD v1.4 · cabecera y tema (§18.2, §21.7, FR-020, RQ-17).
 test.describe('PRD v1.4 · tema claro u oscuro', () => {
@@ -48,6 +57,7 @@ test.describe('PRD v1.4 · tema claro u oscuro', () => {
 test.describe('PRD v1.4 · idiomas y GitHub', () => {
   test('selector compacto EN · ES · PT con nombres completos accesibles (T156)', async ({ page }) => {
     await page.goto('/es/manifiesto');
+    await abrirMenu(page);
     const selector = page.locator('[data-selector-idioma] ul a');
     await expect(selector).toHaveText(['EN', 'ES', 'PT']);
     await expect(page.locator('[data-selector-idioma]').getByRole('link', { name: 'Português (Brasil)' })).toHaveAttribute('title', 'Português (Brasil)');

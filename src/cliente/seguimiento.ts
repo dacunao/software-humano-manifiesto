@@ -8,6 +8,7 @@
 const panel = document.querySelector<HTMLElement>('[data-seguimiento]');
 const grupos = panel ? [...panel.querySelectorAll<HTMLElement>('[data-seccion]')] : [];
 const plegable = document.querySelector<HTMLDetailsElement>('[data-indice-plegable]');
+const menuMovil = document.querySelector<HTMLDetailsElement>('[data-menu-movil]');
 const rotuloActual = document.querySelector<HTMLElement>('[data-seccion-actual]');
 const enlacesIndice = [...document.querySelectorAll<HTMLAnchorElement>('.indice-lateral a[href^="#"]')];
 // Marcadores de sección: los del panel más los enlaces del índice lateral de esta página.
@@ -21,6 +22,7 @@ const ancho = window.matchMedia('(min-width: 62rem)');
 function ajustarPlegable(): void {
   // En pantallas anchas el índice está siempre desplegado; en angostas empieza plegado.
   if (plegable) plegable.open = ancho.matches;
+  if (menuMovil) menuMovil.open = window.matchMedia('(min-width: 48.01rem)').matches;
 }
 
 function actualizar(): void {
@@ -47,6 +49,7 @@ function actualizar(): void {
 
 ajustarPlegable();
 ancho.addEventListener('change', ajustarPlegable);
+window.matchMedia('(min-width: 48.01rem)').addEventListener('change', ajustarPlegable);
 if (panel && encabezados.length) panel.hidden = false;
 if (encabezados.length) {
   let pendiente = false;

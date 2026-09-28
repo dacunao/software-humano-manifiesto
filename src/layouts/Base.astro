@@ -10,7 +10,6 @@ import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
 import Busqueda from '../components/Busqueda.astro';
 import ControlTema from '../components/ControlTema.astro';
-import { esDivision } from '../lib/manifiesto';
 
 interface Props {
   locale: Locale;
@@ -36,8 +35,6 @@ const nodosLD: NodoLD[] = [
   ...(pagina.tipo === '404' ? [] : ld),
 ];
 const token = contenido.sitio.analytics.cloudflareToken;
-// T151: el índice plegado dice qué índice es.
-const delManifiesto = pagina.tipo === 'principio' || esDivision(pagina.tipo);
 // FR-003 v1.2: solo la descarga del idioma de la página; en traducción, el original queda a un paso.
 const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.traduccionEn', 'pt-BR': 'integro.traduccionPt' };
 ---
@@ -65,18 +62,28 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
     <a class="saltar" href="#contenido">{t('nav.saltar', locale)}</a>
     <header class="cabecera">
       <p class="marca"><a href={ruta({ tipo: 'inicio' }, locale)}>{contenido.sitio.name}</a></p>
-      <NavegacionGlobal locale={locale} pagina={pagina} />
+      {/* En teléfonos, el menú y los idiomas se despliegan desde «Menú» (especificación §7.1: cabecera de 56 px). */}
+      <details class="menu-movil" data-menu-movil>
+        <summary>{t('nav.menu', locale)}</summary>
+        <NavegacionGlobal locale={locale} pagina={pagina} />
+      </details>
       <Busqueda locale={locale} />
       <ControlTema locale={locale} />
     </header>
-    {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
+    {/* Aviso (especificación §7.8): ícono y título, no solo color. */}
+    {hayBorrador(locale) && (
+      <p class="aviso-borrador" role="note">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z" /><path d="M12 10v4M12 17h.01" /></svg>
+        <span><strong>{t('aviso.titulo', locale)}</strong> {t('aviso.borrador', locale)}</span>
+      </p>
+    )}
     <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />
       </main>
       {indice?.length ? (
         <details class="indice-plegable" data-indice-plegable>
-          <summary><span>{t(delManifiesto ? 'indice.manifiesto' : 'indice.enEstaPagina', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
+          <summary><span>{t('indice.contenido', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
           <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} />
         </details>
       ) : null}

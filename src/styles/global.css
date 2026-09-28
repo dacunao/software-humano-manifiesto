@@ -4,13 +4,14 @@
   themes: false;
 }
 
+/* daisyUI subordinado a los tokens del sistema visual (PRD §24.6, v1.5 §21.2). */
 @plugin 'daisyui/theme' {
   name: 'software-humano';
   default: true;
-  --color-base-100: var(--sh-papel);
-  --color-base-content: var(--sh-tinta);
-  --color-primary: var(--sh-tinta);
-  --color-primary-content: var(--sh-papel);
+  --color-base-100: var(--sh-canvas);
+  --color-base-content: var(--sh-text);
+  --color-primary: var(--sh-primary-bg);
+  --color-primary-content: var(--sh-primary-text);
 }
 
 /* FR-013: sin movimiento no esencial cuando la persona lo pide. El sitio no anima la aparición de contenido. */
@@ -23,229 +24,255 @@
   }
 }
 
+/* ── Base tipográfica (especificación §5): Noto Sans como única familia; jerarquía por tamaño, peso y espacio. ── */
 @layer base {
   html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; font-family: var(--sh-ui); font-size: 1.0625rem; line-height: 1.65; color: var(--sh-tinta); background: var(--sh-papel); }
-  h1, h2 { font-family: var(--sh-voz); font-weight: 500; text-wrap: balance; }
-  h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1.05; letter-spacing: -0.035em; margin: var(--sh-bloque) 0 var(--sh-espacio); }
-  h2 { font-size: clamp(1.75rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.03em; margin: var(--sh-bloque) 0 var(--sh-espacio); }
-  h3 { font-size: 1.3rem; line-height: 1.3; font-weight: 650; margin: 2rem 0 0.6rem; }
-  h4, h5, h6 { font-size: 1.05rem; font-weight: 650; margin: 1.5rem 0 0.5rem; }
+  body { margin: 0; font-family: var(--font-sans); font-size: 1.0625rem; line-height: 1.65; color: var(--sh-text); background: var(--sh-canvas); text-rendering: optimizeLegibility; }
+  @media (min-width: 48rem) { body { font-size: 1.125rem; } }
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font-sans); font-weight: 600; text-wrap: balance; color: var(--sh-text); }
+  h1 { font-size: clamp(2.5rem, 5vw, 5rem); line-height: 1.03; letter-spacing: -0.035em; margin: var(--sh-bloque) 0 var(--sh-espacio); }
+  h2 { font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1.12; letter-spacing: -0.025em; margin: var(--sh-bloque) 0 var(--sh-espacio); }
+  h3 { font-size: clamp(1.4rem, 2vw, 2rem); line-height: 1.2; letter-spacing: -0.015em; margin: 2rem 0 0.6rem; }
+  h4, h5, h6 { font-size: 1.125rem; line-height: 1.35; margin: 1.5rem 0 0.5rem; }
+  p { text-wrap: pretty; }
   p, ul, ol, table, figure, details { margin: 0 0 1rem; }
   ul { list-style: disc; padding-left: 1.4rem; }
   ol { list-style: decimal; padding-left: 1.4rem; }
   li { margin-bottom: 0.35rem; }
-  a { color: var(--sh-acento); text-decoration: underline; text-underline-offset: 0.15em; }
+  /* Enlaces (§7.4): índigo en claro, #AAB4FF en oscuro; subrayados en el texto corrido. */
+  a { color: var(--sh-interactive); text-decoration: underline; text-underline-offset: 0.15em; }
   a:hover { text-decoration-thickness: 2px; }
-  code { font-family: var(--sh-mono); font-size: 0.85em; }
-  strong { font-weight: 650; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; display: block; overflow-x: auto; }
-  th, td { border-bottom: 1px solid var(--sh-linea); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
-  th { font-weight: 650; background: var(--sh-tarjeta); }
+  /* Identificadores (`P03`): la misma familia, con cifras tabulares (una sola familia, §2). */
+  code { font-family: var(--font-sans); font-size: 0.9em; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.01em; }
+  strong { font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; display: block; overflow-x: auto; }
+  th, td { border-bottom: 1px solid var(--sh-border); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
+  th { font-weight: 600; background: var(--sh-subtle); }
   blockquote { margin: 0; }
-  :focus-visible { outline: 3px solid var(--sh-foco); outline-offset: 2px; border-radius: 2px; }
+  :focus-visible { outline: 3px solid var(--sh-focus); outline-offset: 2px; border-radius: 2px; }
 }
 
-/* Estructura */
+/* Etiqueta (§5.2): 0.75rem, 600, mayúsculas y espaciado amplio. Solo para rótulos breves. */
+.rotulo-contenido, .rotulo-seccion { font-size: 0.75rem; font-weight: 600; line-height: 1.4; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sh-text-muted); margin: 0 0 0.5rem; }
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Estructura ── */
 .saltar { position: absolute; left: -9999px; }
-.saltar:focus { left: 1rem; top: 0.5rem; z-index: 20; background: var(--sh-tinta); color: var(--sh-papel); padding: 0.6rem 1rem; border-radius: 4px; }
-.cabecera, .lienzo, .pie, .aviso-borrador { max-width: var(--sh-ancho); margin-inline: auto; padding-inline: var(--sh-espacio); }
-main > *, main section > *, main article > *, main header > * { max-width: var(--sh-medida); }
-main .manifiesto table, main .cita-canonica table, main .comparacion, main .lista-principios { max-width: 100%; }
-.cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; padding-block: 0.8rem; border-bottom: 1px solid var(--sh-linea); }
-.marca { margin: 0; font-weight: 700; }
-.marca a { color: var(--sh-tinta); text-decoration: none; }
-.navegacion-global { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; flex: 1; }
-.navegacion-global ul, .selector-idioma ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
-.navegacion-global a { color: var(--sh-tinta); text-decoration: none; font-size: 0.92rem; font-weight: 600; }
-.navegacion-global a:hover, .navegacion-global a[aria-current='page'] { text-decoration: underline; text-underline-offset: 0.3em; }
-.navegacion-global .estado { font-weight: 400; color: var(--sh-suave); }
-.navegacion-global .version { margin: 0; }
-.navegacion-global .version a { font-family: var(--sh-mono); font-size: 0.75rem; font-weight: 700; color: var(--sh-acento); background: var(--sh-acento-suave); border: 1px solid var(--sh-acento); border-radius: 999px; padding: 0.1rem 0.6rem; }
-.selector-idioma { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; margin-left: auto; font-size: 0.85rem; }
-.selector-idioma .rotulo { margin: 0; color: var(--sh-suave); }
-.selector-idioma a { color: var(--sh-tinta); }
-.selector-idioma a[aria-current='true'] { font-weight: 700; text-decoration: none; }
-.selector-idioma button { font-size: 0.8rem; border: 1px solid var(--sh-linea); padding: 0 0.5rem; border-radius: 4px; background: var(--sh-blanco); }
-.aviso-borrador { margin-block: 0.75rem; padding-block: 0.5rem; background: var(--sh-aviso); border-radius: var(--sh-radio); font-size: 0.9rem; }
-.pie { margin-top: var(--sh-seccion); padding-block: var(--sh-espacio) var(--sh-bloque); border-top: 1px solid var(--sh-linea); color: var(--sh-suave); font-size: 0.875rem; }
+.saltar:focus { left: 1rem; top: 0.5rem; z-index: 20; background: var(--sh-primary-bg); color: var(--sh-primary-text); padding: 0.6rem 1rem; border-radius: var(--radius-sm); }
+.cabecera, .lienzo, .pie, .aviso-borrador { max-width: var(--content-wide); margin-inline: auto; padding-inline: var(--sh-espacio); }
+main > *, main section > *, main article > *, main header > * { max-width: var(--content-reading); }
+main .cita-canonica table, main .comparacion, main .lista-principios, main table { max-width: 100%; }
+.pie { margin-top: var(--sh-seccion); padding-block: var(--sh-espacio) var(--sh-bloque); border-top: 1px solid var(--sh-border); color: var(--sh-text-muted); font-size: 0.9375rem; }
 .pie p { margin-bottom: 0.4rem; }
 
-/* Portada */
+/* ── Cabecera (§7.1): fondo del lienzo, borde de 1 px, sin sombras; controles de 44 × 44 px. ── */
+.cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; min-height: 64px; padding-block: 0.5rem; border-bottom: 1px solid var(--sh-border); }
+.marca { margin: 0; font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; }
+.marca a { display: inline-flex; align-items: center; min-height: 44px; color: var(--sh-text); text-decoration: none; }
+.navegacion-global { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem; flex: 1; }
+.navegacion-global > ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0 0.25rem; }
+.navegacion-global > ul li { margin: 0; }
+.navegacion-global > ul a { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding-inline: 0.6rem; border-radius: var(--radius-sm); color: var(--sh-text); text-decoration: none; font-size: 0.9375rem; font-weight: 500; }
+.navegacion-global > ul a:hover { background: var(--sh-subtle); }
+.navegacion-global > ul a[aria-current] { font-weight: 600; text-decoration: underline; text-decoration-color: var(--sh-interactive); text-decoration-thickness: 2px; text-underline-offset: 0.45em; }
+.navegacion-global .estado { font-weight: 400; font-size: 0.8rem; color: var(--sh-text-muted); }
+.navegacion-global .version { margin: 0; }
+.navegacion-global .version a { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--sh-interactive); text-decoration: none; }
+.navegacion-global .version a:hover { text-decoration: underline; }
+
+/* Selector de idioma (§7.1, PRD v1.4 §21.7): EN · ES · PT, objetivos de 44 × 44 px, radio de 8 px. */
+.selector-idioma { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+.selector-idioma ul { display: flex; list-style: none; margin: 0; padding: 0; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); overflow: hidden; }
+.selector-idioma li { margin: 0; }
+.selector-idioma li + li { border-left: 1px solid var(--sh-border); }
+.selector-idioma a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; color: var(--sh-text-muted); text-decoration: none; }
+.selector-idioma a:hover { background: var(--sh-subtle); color: var(--sh-text); }
+.selector-idioma a[aria-current='true'] { color: var(--sh-text); background: var(--sh-indigo-soft); }
+.selector-idioma button { font: inherit; font-size: 0.8125rem; min-height: 44px; border: 1px solid var(--sh-border); padding: 0 0.75rem; border-radius: var(--radius-sm); background: transparent; color: var(--sh-text); cursor: pointer; }
+
+/* Búsqueda y tema en la cabecera: botones de 44 × 44 px. */
+.abrir-busqueda, .control-tema button { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 44px; min-width: 44px; padding-inline: 0.85rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); background: transparent; color: var(--sh-text); font: inherit; font-size: 0.9375rem; font-weight: 500; cursor: pointer; }
+.abrir-busqueda:hover, .control-tema button:hover { background: var(--sh-subtle); }
+.abrir-busqueda[hidden], .control-tema[hidden] { display: none; }
+.control-tema { display: inline-flex; }
+.control-tema button { padding-inline: 0; }
+.control-tema svg { width: 1.15rem; height: 1.15rem; }
+.control-tema .icono-luna { display: none; }
+.control-tema [aria-pressed='true'] .icono-sol { display: none; }
+.control-tema [aria-pressed='true'] .icono-luna { display: inline; }
+.preferencias-pie button { font: inherit; font-size: 0.875rem; min-height: 44px; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); padding: 0 0.85rem; background: transparent; color: var(--sh-text); cursor: pointer; }
+.preferencias-pie:has(button[hidden]) { display: none; }
+
+/* Aviso (§7.8): ícono y título, fondo ámbar suave, texto Tinta, borde izquierdo ámbar de 4 px. */
+.aviso-borrador { display: flex; gap: 0.6rem; align-items: flex-start; margin-block: 0.75rem; padding: 0.75rem 1rem; background: var(--sh-notice-bg); color: var(--sh-text); border-left: 4px solid var(--sh-amber); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.9375rem; }
+.aviso-borrador svg { flex: none; width: 1.2rem; height: 1.2rem; margin-top: 0.15rem; }
+.aviso-borrador strong { font-weight: 600; }
+
+/* ── Portada (display, §5.2) ── */
 .portada { padding-block: var(--sh-bloque) var(--sh-espacio); }
-.portada h1 { font-size: clamp(2.6rem, 7.5vw, 5.4rem); line-height: 0.95; letter-spacing: -0.06em; max-width: 16ch; margin-top: 1rem; }
-.bajada { font-size: 1.2rem; color: var(--sh-suave); max-width: 44ch; }
+.portada h1 { font-size: clamp(3rem, 7vw, 6.5rem); font-weight: 500; line-height: 0.98; letter-spacing: -0.045em; max-width: 14ch; margin-top: 1rem; }
+.bajada, .entradilla { font-size: clamp(1.2rem, 1.8vw, 1.5rem); line-height: 1.55; color: var(--sh-text-muted); max-width: var(--content-intro); }
 .entradas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: var(--sh-espacio) 0 0.75rem; }
-.boton { display: inline-block; padding: 0.6rem 1.15rem; border-radius: 6px; font-weight: 700; text-decoration: none; color: var(--sh-tinta); border: 1px solid var(--sh-tinta); background: transparent; }
-.boton.primario { background: var(--sh-tinta); color: var(--sh-blanco); }
+/* Botones (§7.3): primario índigo; secundario con borde; radio de 8 px; 44 px de alto. */
+.boton { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.25rem; border-radius: var(--radius-sm); font-weight: 500; font-size: 1rem; text-decoration: none; color: var(--sh-text); border: 1px solid var(--sh-text); background: transparent; }
+.boton.primario { background: var(--sh-primary-bg); color: var(--sh-primary-text); border-color: var(--sh-primary-bg); }
 .boton:hover { text-decoration: underline; }
-.nota { color: var(--sh-suave); font-size: 0.9rem; }
+.nota { color: var(--sh-text-muted); font-size: 0.9375rem; }
 
-/* Superficies y actos */
+/* ── Superficies y secciones ── */
 .encabezado-superficie { padding-block: var(--sh-espacio) 0; }
-.entradilla { font-size: 1.2rem; color: var(--sh-suave); }
-.seccion { padding-block: var(--sh-bloque) 0; border-top: 1px solid var(--sh-linea); margin-top: var(--sh-bloque); }
+.seccion { padding-block: var(--sh-bloque) 0; border-top: 1px solid var(--sh-border); margin-top: var(--sh-bloque); }
 .seccion > h2 { margin-top: 0; }
-.pregunta { font-family: var(--sh-voz); font-size: 1.35rem; line-height: 1.35; font-style: italic; }
-
-/* Rótulos de tipo de contenido (FR-017): pequeños, monoespaciados, no compiten con el texto. */
-.rotulo-contenido, .rotulo-seccion { font-family: var(--sh-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sh-suave); margin: 0 0 0.4rem; }
+.pregunta { font-size: clamp(1.2rem, 1.8vw, 1.4rem); line-height: 1.45; font-weight: 500; color: var(--sh-text-muted); }
 .bloque-editorial { margin: 1.25rem 0; }
-.origen, .fuente { font-size: 0.85rem; margin-top: 0.25rem; }
+.origen, .fuente { font-size: 0.9375rem; margin-top: 0.25rem; }
 
-/* Cita canónica: la voz del manifiesto va en serif. */
-.cita-canonica { margin: 1.5rem 0; padding: 1rem 0 0.25rem 1.25rem; border-left: 3px solid var(--sh-acento); }
-.cita-canonica figcaption { display: inline-block; font-family: var(--sh-ui); font-size: 0.75rem; font-weight: 750; color: var(--sh-acento); background: var(--sh-acento-suave); border: 1px solid var(--sh-acento); border-radius: 999px; padding: 0.05rem 0.6rem; margin-bottom: 0.6rem; text-transform: none; letter-spacing: 0; }
-.cita-canonica blockquote, .manifiesto, .principio header .cita-canonica p { font-family: var(--sh-voz); font-size: 1.12rem; line-height: 1.6; }
-.principio header .cita-canonica { border-left: 0; padding: 1.5rem 1.75rem; background: var(--sh-destacado-fondo); color: var(--sh-destacado-texto); border-radius: var(--sh-radio); }
-.principio header .cita-canonica blockquote { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.3; }
-.principio header .cita-canonica a { color: var(--sh-destacado-texto); }
+/* ── Texto canónico (§7.5 y la interpretación de la autoridad, PRD v1.5 §21.2) ── */
+/* Pasajes largos en su casa: fondo claro, borde índigo y etiqueta secundaria. */
+.cita-canonica { margin: 1.5rem 0; padding: 0.25rem 0 0.25rem 1.25rem; border-left: 3px solid var(--sh-interactive); }
+.cita-canonica figcaption { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sh-text-muted); margin-bottom: 0.6rem; }
+/* Declaraciones y citas breves: panel Tinta con texto Papel; en oscuro, superficie elevada con borde. */
+.cita-canonica.destacada, .principio header .cita-canonica { border: 1px solid var(--sh-canon-border); padding: clamp(1.5rem, 4vw, 3rem); background: var(--sh-canon-bg); color: var(--sh-canon-text); border-radius: var(--radius-md); }
+.cita-canonica.destacada figcaption, .principio header .cita-canonica figcaption { color: #b7c0c8; }
+.cita-canonica.destacada a, .principio header .cita-canonica a { color: var(--sh-canon-interactive); }
+.cita-canonica.destacada blockquote { font-size: clamp(1.2rem, 1.8vw, 1.45rem); line-height: 1.5; font-weight: 500; }
+.principio header .cita-canonica blockquote { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.3; font-weight: 500; letter-spacing: -0.015em; }
 
-/* Tarjetas (A) */
+/* ── Colecciones y bloques ── */
 .lista-principios { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
 .lista-principios li { margin: 0; }
-.lista-principios a { display: flex; align-items: baseline; gap: 1rem; padding: 1rem 1.25rem; background: var(--sh-tarjeta); border: 1px solid var(--sh-linea); border-radius: var(--sh-radio); color: var(--sh-tinta); text-decoration: none; font-weight: 700; font-size: 1.1rem; }
-.lista-principios a:hover { border-color: var(--sh-tinta); }
-.lista-principios code { font-size: 0.75rem; color: var(--sh-suave); min-width: 2.5rem; }
+.lista-principios a { display: flex; align-items: baseline; gap: 1rem; min-height: 44px; padding: 1rem 1.25rem; background: var(--sh-surface); border: 1px solid var(--sh-border); border-radius: var(--radius-md); color: var(--sh-text); text-decoration: none; font-weight: 600; font-size: 1.125rem; }
+.lista-principios a:hover { border-color: var(--sh-interactive); }
+.lista-principios code { font-size: 0.8rem; color: var(--sh-text-muted); min-width: 2.5rem; }
 .comparacion { display: grid; gap: 1rem; }
 @media (min-width: 48rem) { .comparacion { grid-template-columns: 1fr 1fr; } }
-.comparacion .bloque-editorial { margin: 0; padding: 1rem 1.25rem; background: var(--sh-tarjeta); border: 1px solid var(--sh-linea); border-radius: var(--sh-radio); }
-.estado-adaptacion { padding: 1.25rem 1.5rem; background: var(--sh-blanco); border: 1px solid var(--sh-linea); border-radius: var(--sh-radio); }
-details.profundidad { margin-top: 1rem; border-top: 1px solid var(--sh-linea); padding-top: 0.6rem; }
-details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--sh-acento); }
+.comparacion .bloque-editorial { margin: 0; padding: 1rem 1.25rem; background: var(--sh-surface); border: 1px solid var(--sh-border); border-radius: var(--radius-md); }
+.estado-adaptacion { padding: 1.25rem 1.5rem; background: var(--sh-surface); border: 1px solid var(--sh-border); border-radius: var(--radius-md); }
+/* Expandibles (§7.6, interpretación de la autoridad): <details> nativo, chevron que gira en 160 ms. */
+details.profundidad { margin-top: 1rem; border-top: 1px solid var(--sh-border); padding-top: 0.25rem; }
+details.profundidad > summary { display: flex; align-items: center; gap: 0.6rem; min-height: 44px; cursor: pointer; font-weight: 600; color: var(--sh-interactive); list-style: none; }
+details.profundidad > summary::-webkit-details-marker { display: none; }
+details.profundidad > summary::before, .indice-plegable > summary::before { content: ''; flex: none; width: 0.5rem; height: 0.5rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform 160ms ease; }
+details.profundidad[open] > summary::before, .indice-plegable[open] > summary::before { transform: rotate(45deg); }
 
-/* Principio */
-.compartir { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; font-size: 0.85rem; margin: 0.25rem 0 1rem; }
-.compartir button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); padding: 0.1rem 0.6rem; border-radius: 4px; }
+/* Compartir */
+.compartir { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem; font-size: 0.9375rem; margin: 0.25rem 0 1rem; }
+.compartir button { font: inherit; font-size: 0.875rem; min-height: 44px; border: 1px solid var(--sh-border); background: transparent; color: var(--sh-text); padding: 0 0.85rem; border-radius: var(--radius-sm); cursor: pointer; }
+.compartir button:hover { background: var(--sh-subtle); }
 
 /* Manifiesto */
-.version-nucleo { font-family: var(--sh-mono); font-size: 0.8rem; color: var(--sh-suave); }
-.aviso-traduccion { font-size: 0.9rem; color: var(--sh-suave); }
-.manifiesto h2, .manifiesto h3 { font-family: var(--sh-voz); }
+.version-nucleo { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sh-text-muted); }
+.aviso-traduccion { font-size: 0.9375rem; color: var(--sh-text-muted); }
 
-/* Índice lateral (B, T095): contenido primero en el DOM; en pantallas anchas el índice va a la izquierda y fijo. */
+/* ── Índice lateral (§7.2): contenido primero en el DOM; a la izquierda y fijo en pantallas anchas. ── */
 .lienzo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 3rem; }
 .lienzo > main { min-width: 0; }
-.indice-lateral { font-size: 0.875rem; padding-block: var(--sh-espacio); border-top: 1px solid var(--sh-linea); }
-.indice-lateral .grupo + .grupo { margin-top: 1.25rem; }
+.indice-lateral { font-size: 0.9375rem; padding-block: var(--sh-espacio); }
+.indice-lateral .grupo + .grupo { margin-top: 1.5rem; }
+.indice-lateral .grupo > .rotulo-contenido { color: var(--sh-text); margin-bottom: 0.35rem; }
 .indice-lateral ol { list-style: none; padding: 0; margin: 0; }
 .indice-lateral li { margin: 0; }
-.indice-lateral a { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.25rem 0.5rem; margin-left: -0.5rem; border-radius: 4px; color: var(--sh-tinta); text-decoration: none; line-height: 1.35; }
-.indice-lateral a:hover { background: var(--sh-tarjeta); text-decoration: underline; }
-.indice-lateral a[aria-current='page'] { background: var(--sh-blanco); font-weight: 700; box-shadow: inset 0 0 0 1px var(--sh-linea); }
-.indice-lateral code { font-size: 0.72rem; color: var(--sh-suave); min-width: 2.6rem; }
-/* Índice plegable (T138, PRD v1.2 §21.4): en pantallas angostas va arriba, plegado en una línea; el texto queda en la primera pantalla. */
-.indice-plegable { order: -1; border-bottom: 1px solid var(--sh-linea); margin-bottom: var(--sh-espacio); }
-.indice-plegable:not([open]) { position: sticky; top: 0; z-index: 2; background: var(--sh-papel); }
-.indice-plegable > summary { cursor: pointer; padding: 0.6rem 0; font-size: 0.9rem; font-weight: 650; list-style-position: inside; }
-.indice-plegable .seccion-actual { font-weight: 400; color: var(--sh-suave); }
-.indice-plegable .indice-lateral { border-top: 0; padding-top: 0; }
-.indice-lateral li.sub > a { padding-left: 1.25rem; font-size: 0.82rem; }
+.indice-lateral a { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; padding: 0.35rem 0.75rem; border-left: 3px solid transparent; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--sh-text-muted); text-decoration: none; line-height: 1.35; font-weight: 500; }
+.indice-lateral a:hover { background: var(--sh-subtle); color: var(--sh-text); }
+/* Activo: página o sección en pantalla. Fondo índigo suave, borde de 3 px y 600; no parece un campo. */
+.indice-lateral a[aria-current='page'], .indice-lateral a[aria-current='location'] { color: var(--sh-text); background: var(--sh-indigo-soft); border-left-color: var(--sh-interactive); font-weight: 600; }
+.indice-lateral li.sub > a { padding-left: 1.5rem; font-size: 0.875rem; }
+.indice-lateral code { font-size: 0.75rem; color: inherit; min-width: 2.4rem; }
+/* En teléfonos, «Contenido» despliega el índice (§7.2, PRD v1.5 §21.7). */
+.indice-plegable { order: -1; border-bottom: 1px solid var(--sh-border); margin-bottom: var(--sh-espacio); }
+.indice-plegable:not([open]) { position: sticky; top: 0; z-index: 2; background: var(--sh-canvas); }
+.indice-plegable > summary { display: flex; align-items: center; gap: 0.6rem; min-height: 48px; cursor: pointer; font-size: 0.9375rem; font-weight: 600; list-style: none; }
+.indice-plegable > summary::-webkit-details-marker { display: none; }
+.indice-plegable .seccion-actual { font-weight: 400; color: var(--sh-text-muted); }
+.indice-plegable .indice-lateral { padding-top: 0; }
 @media (min-width: 62rem) {
-  .lienzo.con-indice { grid-template-columns: 15rem minmax(0, 1fr); }
+  .lienzo.con-indice { grid-template-columns: 16rem minmax(0, 1fr); }
   .lienzo.con-indice > main { grid-column: 2; grid-row: 1; }
   .lienzo.con-indice > .indice-plegable { grid-column: 1; grid-row: 1; order: 0; border: 0; margin: 0; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; }
   .indice-plegable > summary { display: none; }
   .indice-plegable::details-content { content-visibility: visible; display: contents; }
 }
+@media (max-width: 61.99rem) { main [id] { scroll-margin-top: 3.75rem; } }
 
-/* Cabecera en pantallas angostas: marca arriba, navegación en línea debajo, idioma compacto (P06). */
-@media (max-width: 48rem) {
-  .cabecera { flex-direction: column; align-items: stretch; gap: 0.5rem; }
-  .navegacion-global { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
-  .navegacion-global ul { gap: 0.2rem 0.9rem; }
-  .selector-idioma { margin-left: 0; }
-  .aviso-borrador { font-size: 0.85rem; }
-  /* T138: la versión vigente sigue en el pie de cada página (§18.2); arriba solo lo que orienta. */
-  .navegacion-global .version { display: none; }
-  .navegacion-global ul { gap: 0.2rem 0.75rem; }
-}
-/* Subtítulo de ruta en el menú (decisión de nombres, 2026-09-27) */
-.navegacion-global a { display: inline-flex; flex-direction: column; line-height: 1.15; }
-.navegacion-global .estado { font-size: 0.75rem; }
-/* Texto íntegro: tercera columna «En esta sección» (decisión del 2026-09-27). Solo en pantallas muy anchas y con JavaScript. */
-.en-esta-seccion { display: none; font-size: 0.85rem; }
+/* «En esta sección»: tercera columna solo en pantallas muy anchas y con JavaScript. */
+.en-esta-seccion { display: none; font-size: 0.875rem; }
 .en-esta-seccion ol { list-style: none; padding: 0; margin: 0; }
 .en-esta-seccion li { margin: 0; }
 .en-esta-seccion li.nivel-4 { padding-left: 0.75rem; }
-.en-esta-seccion a { display: block; padding: 0.2rem 0; color: var(--sh-tinta); text-decoration: none; line-height: 1.35; }
-.en-esta-seccion a:hover { text-decoration: underline; }
-.en-esta-seccion .titulo-seccion { font-weight: 700; margin: 0 0 0.4rem; }
-.indice-lateral a[aria-current='location'] { background: var(--sh-blanco); font-weight: 700; box-shadow: inset 0 0 0 1px var(--sh-linea); }
+.en-esta-seccion a { display: block; padding: 0.35rem 0; color: var(--sh-text-muted); text-decoration: none; line-height: 1.35; }
+.en-esta-seccion a:hover { color: var(--sh-text); text-decoration: underline; }
+.en-esta-seccion .titulo-seccion { font-weight: 600; margin: 0 0 0.4rem; color: var(--sh-text); }
 @media (min-width: 80rem) {
-  .lienzo.con-indice.con-derecha { grid-template-columns: 15rem minmax(0, 1fr) 14rem; max-width: 90rem; }
+  .lienzo.con-indice.con-derecha { grid-template-columns: 16rem minmax(0, 1fr) 14rem; max-width: 90rem; }
   .lienzo.con-derecha > .en-esta-seccion:not([hidden]) { display: block; grid-column: 3; grid-row: 1; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
 }
 .en-esta-seccion.sin-titulos > :not(.rotulo-contenido) { display: none; }
 .en-esta-seccion.sin-titulos { opacity: 0; pointer-events: none; }
 
-/* Anterior y siguiente en el orden del núcleo (FR-002, RQ-15). */
-.anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--sh-linea); }
-.anterior-siguiente a { display: flex; flex-direction: column; gap: 0.2rem; text-decoration: none; color: var(--sh-tinta); padding: 0.75rem; border: 1px solid var(--sh-linea); border-radius: 6px; }
-.anterior-siguiente a:hover span:last-child { text-decoration: underline; }
+/* ── Anterior y siguiente en el orden del núcleo (FR-002, RQ-15) ── */
+.anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--sh-border); }
+.anterior-siguiente a { display: flex; flex-direction: column; gap: 0.2rem; min-height: 44px; text-decoration: none; color: var(--sh-text); padding: 0.85rem 1rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); font-weight: 500; }
+.anterior-siguiente a:hover { border-color: var(--sh-interactive); }
 .anterior-siguiente a[rel='next'] { grid-column: 2; text-align: right; }
-.anterior-siguiente code { font-size: 0.75rem; color: var(--sh-suave); }
+.anterior-siguiente code { font-size: 0.8rem; color: var(--sh-text-muted); }
 /* Mapa del manifiesto: el recorrido por las nueve divisiones. */
-.grupo-recorrido + .grupo-recorrido { margin-top: 1rem; }
+.grupo-recorrido + .grupo-recorrido { margin-top: 1.25rem; }
 .lista-recorrido { padding-left: 1.25rem; }
-.lista-recorrido li { margin-bottom: 0.4rem; }
-.lista-recorrido a { font-weight: 650; }
+.lista-recorrido li { margin-bottom: 0.5rem; }
+.lista-recorrido a { font-weight: 600; }
 .relacionados ul { padding-left: 1.25rem; }
-.descarga-pie { font-size: 0.9rem; }
+.descarga-pie { font-size: 0.9375rem; }
 
-/* Búsqueda (FR-023, RQ-16). */
-.abrir-busqueda { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 999px; padding: 0.3rem 0.9rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
-.abrir-busqueda[hidden] { display: none; }
-dialog.busqueda { margin: 4rem auto auto; width: min(40rem, calc(100vw - 2rem)); max-height: min(40rem, calc(100vh - 4rem)); border: 1px solid var(--sh-linea); border-radius: var(--sh-radio); padding: var(--sh-espacio); background: var(--sh-papel); color: var(--sh-tinta); }
-dialog.busqueda::backdrop { background: rgba(23, 32, 29, 0.45); }
-.busqueda-cabecera { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-.busqueda-cabecera h2 { margin: 0; font-size: 1.25rem; }
-.cerrar-busqueda { border: 1px solid var(--sh-linea); background: var(--sh-blanco); border-radius: 4px; padding: 0.2rem 0.6rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
-dialog.busqueda label { display: block; margin-top: 1rem; font-size: 0.9rem; color: var(--sh-suave); }
-dialog.busqueda input { width: 100%; font: inherit; font-size: 1.05rem; padding: 0.5rem 0.75rem; margin-top: 0.3rem; border: 1px solid var(--sh-tinta); border-radius: 6px; background: var(--sh-blanco); }
-.busqueda-estado { font-size: 0.9rem; color: var(--sh-suave); min-height: 1.4em; margin: 0.6rem 0; }
-.busqueda-resultados h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sh-suave); margin: 1rem 0 0.3rem; font-family: var(--sh-ui); }
+/* ── Búsqueda (§7.7) ── */
+dialog.busqueda { margin: 4rem auto auto; width: min(720px, calc(100vw - 32px)); max-height: min(44rem, calc(100vh - 4rem)); border: 1px solid var(--sh-border); border-radius: var(--radius-md); padding: var(--sh-espacio); background: var(--sh-surface); color: var(--sh-text); }
+dialog.busqueda::backdrop { background: rgb(16 24 32 / 45%); }
+.busqueda-cabecera { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.busqueda-cabecera h2 { margin: 0; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em; }
+.cerrar-busqueda { font: inherit; font-size: 0.9375rem; min-height: 44px; border: 1px solid var(--sh-border); background: transparent; color: var(--sh-text); border-radius: var(--radius-sm); padding: 0 0.85rem; cursor: pointer; }
+dialog.busqueda label { display: block; margin-top: 1rem; font-size: 0.9375rem; color: var(--sh-text-muted); }
+dialog.busqueda input { width: 100%; min-height: 48px; font: inherit; font-size: 1.0625rem; padding: 0 0.85rem; margin-top: 0.3rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); background: var(--sh-canvas); color: var(--sh-text); }
+.busqueda-estado { font-size: 0.9375rem; color: var(--sh-text-muted); min-height: 1.4em; margin: 0.6rem 0; }
+.busqueda-resultados h3 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sh-text-muted); margin: 1rem 0 0.3rem; }
 .busqueda-resultados ol { list-style: none; padding: 0; margin: 0; }
-.busqueda-resultados a { display: block; padding: 0.5rem 0.6rem; border-radius: 6px; text-decoration: none; color: var(--sh-tinta); }
-.busqueda-resultados a:hover, .busqueda-resultados a:focus-visible { background: var(--sh-blanco); }
-.resultado-titulo { display: block; font-weight: 650; }
-.resultado-texto { display: block; font-size: 0.85rem; color: var(--sh-suave); }
-.busqueda-resultados mark { background: var(--sh-acento-suave); color: var(--sh-tinta); padding: 0 0.1em; }
+.busqueda-resultados li { margin: 0; }
+.busqueda-resultados a { display: block; min-height: 44px; padding: 0.55rem 0.75rem; border-radius: var(--radius-sm); text-decoration: none; color: var(--sh-text); }
+.busqueda-resultados a:hover, .busqueda-resultados a:focus-visible { background: var(--sh-subtle); }
+.resultado-titulo { display: block; font-weight: 600; }
+.resultado-texto { display: block; font-size: 0.9rem; color: var(--sh-text-muted); }
+.busqueda-resultados mark { background: var(--sh-indigo-soft); color: var(--sh-text); padding: 0 0.1em; border-radius: 2px; }
 
-/* Tablas del núcleo en pantallas angostas (T140, PRD v1.2 §21.4): filas apiladas con el rótulo
-   de cada columna, sin desplazamiento horizontal. Los roles explícitos conservan la tabla. */
+/* ── Tablas del núcleo en pantallas angostas (T140, PRD v1.2 §21.4) ── */
 @media (max-width: 40rem) {
   table.tabla-canonica { display: block; overflow: visible; border: 0; }
   table.tabla-canonica thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   table.tabla-canonica tbody, table.tabla-canonica tr, table.tabla-canonica td { display: block; }
-  table.tabla-canonica tr { border: 1px solid var(--sh-linea); border-radius: 6px; padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; background: var(--sh-tarjeta); }
+  table.tabla-canonica tr { border: 1px solid var(--sh-border); border-radius: var(--radius-sm); padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; background: var(--sh-surface); }
   table.tabla-canonica td { border: 0; padding: 0.2rem 0; }
-  table.tabla-canonica td[data-rotulo]::before { content: attr(data-rotulo); display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sh-suave); }
+  table.tabla-canonica td[data-rotulo]::before { content: attr(data-rotulo); display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sh-text-muted); }
 }
-/* El índice plegado queda fijo arriba en pantallas angostas: un ancla no debe quedar debajo (T138). */
-@media (max-width: 61.99rem) { main [id] { scroll-margin-top: 3.5rem; } }
 
-/* Solo para tecnologías de asistencia (rótulo del selector compacto, T156). */
-.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.selector-idioma ul { display: flex; gap: 0; list-style: none; margin: 0; padding: 0.1rem; border: 1px solid var(--sh-linea); border-radius: 999px; }
-.selector-idioma li + li { border-left: 1px solid var(--sh-linea); }
-.selector-idioma a { display: inline-block; padding: 0.15rem 0.6rem; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-decoration: none; border-radius: 999px; }
-.selector-idioma a[aria-current='true'] { background: var(--sh-blanco); box-shadow: inset 0 0 0 1px var(--sh-linea); }
-/* Control de día y noche (T155). */
-.control-tema { display: inline-flex; align-items: center; gap: 0.35rem; }
-.control-tema[hidden] { display: none; }
-.control-tema button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 999px; padding: 0.25rem 0.55rem; font: inherit; font-size: 0.8rem; cursor: pointer; line-height: 1; }
-.control-tema svg { width: 1rem; height: 1rem; vertical-align: -0.15em; }
-.control-tema .icono-luna { display: none; }
-.control-tema [aria-pressed='true'] .icono-sol { display: none; }
-.control-tema [aria-pressed='true'] .icono-luna { display: inline; }
-.preferencias-pie button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 4px; padding: 0.1rem 0.6rem; font: inherit; font-size: 0.8rem; cursor: pointer; }
-.preferencias-pie:has(button[hidden]) { display: none; }
-/* Cabecera en teléfono (T155, P06): nombre, búsqueda y tema en la primera línea; el menú y el idioma debajo. */
+/* Menú: en pantallas anchas siempre desplegado y sin botón; en teléfonos, «Menú» lo despliega (sin JavaScript también). */
+.menu-movil { display: contents; margin: 0; }
+.menu-movil > summary { display: none; }
+.menu-movil::details-content { content-visibility: visible; display: contents; }
+
+/* ── Teléfonos (§7.1: cabecera de 56 px; P06) ── */
 @media (max-width: 48rem) {
-  .cabecera { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 0.5rem; }
-  .cabecera .marca { grid-column: 1; grid-row: 1; margin: 0; }
+  .cabecera { display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 0.5rem; min-height: 56px; padding-block: 0.375rem; padding-inline: 1rem; }
+  .cabecera .marca { grid-column: 1; grid-row: 1; }
   .cabecera .abrir-busqueda { grid-column: 2; grid-row: 1; }
   .cabecera .control-tema { grid-column: 3; grid-row: 1; }
-  .cabecera .navegacion-global { grid-column: 1 / -1; grid-row: 2; }
+  .menu-movil { display: block; grid-column: 4; grid-row: 1; margin: 0; }
+  .menu-movil::details-content { display: contents; content-visibility: visible; }
+  .menu-movil:not([open])::details-content { display: none; }
+  .menu-movil > summary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding-inline: 0.85rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); font-size: 0.9375rem; font-weight: 500; cursor: pointer; list-style: none; }
+  .menu-movil > summary::-webkit-details-marker { display: none; }
+  .menu-movil[open] > summary { background: var(--sh-subtle); }
+  .menu-movil[open] { position: static; }
+  .menu-movil[open] .navegacion-global { position: absolute; left: 0; right: 0; top: 56px; z-index: 10; flex-direction: column; align-items: stretch; gap: 0.75rem; padding: 0.75rem 1rem 1rem; background: var(--sh-canvas); border-bottom: 1px solid var(--sh-border); }
+  .menu-movil .navegacion-global > ul { flex-direction: column; }
+  .menu-movil .navegacion-global .version { display: inline-flex; }
+  .cabecera { position: relative; }
+  .selector-idioma { margin-left: 0; }
+  .aviso-borrador { font-size: 0.875rem; }
 }

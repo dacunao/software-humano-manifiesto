@@ -122,13 +122,13 @@ idioma.restablecido:
 aviso.borrador:
   es:
     state: borrador
-    text: "Versión preliminar: parte de este contenido está en borrador y aún no fue aprobado."
+    text: "Parte de este contenido está en borrador y aún no fue aprobado."
   en:
     state: borrador
-    text: "Preliminary version: some of this content is a draft and has not been approved yet."
+    text: "Some of this content is a draft and has not been approved yet."
   pt-BR:
     state: borrador
-    text: "Versão preliminar: parte deste conteúdo é um rascunho e ainda não foi aprovada."
+    text: "Parte deste conteúdo é um rascunho e ainda não foi aprovada."
 contenido.canonico:
   es:
     state: borrador
@@ -601,10 +601,6 @@ pie.conocer:
   es: { state: borrador, text: "Conoce la empresa" }
   en: { state: borrador, text: "Meet the company" }
   pt-BR: { state: borrador, text: "Conheça a empresa" }
-indice.manifiesto:
-  es: { state: borrador, text: "Índice del manifiesto" }
-  en: { state: borrador, text: "Manifesto index" }
-  pt-BR: { state: borrador, text: "Índice do manifesto" }
 tema.oscuro:
   es: { state: borrador, text: "Tema oscuro" }
   en: { state: borrador, text: "Dark theme" }
@@ -613,3 +609,15 @@ tema.sistema:
   es: { state: borrador, text: "Usar el del sistema" }
   en: { state: borrador, text: "Use system setting" }
   pt-BR: { state: borrador, text: "Usar o do sistema" }
+aviso.titulo:
+  es: { state: borrador, text: "Versión preliminar." }
+  en: { state: borrador, text: "Preliminary version." }
+  pt-BR: { state: borrador, text: "Versão preliminar." }
+indice.contenido:
+  es: { state: borrador, text: "Contenido" }
+  en: { state: borrador, text: "Contents" }
+  pt-BR: { state: borrador, text: "Conteúdo" }
+nav.menu:
+  es: { state: borrador, text: "Menú" }
+  en: { state: borrador, text: "Menu" }
+  pt-BR: { state: borrador, text: "Menu" }

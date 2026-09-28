@@ -55,7 +55,7 @@ const grupos = [sec.blocks, sec.depth] as const;
       if (b.kind === 'estado-adaptacion') return <EstadoAdaptacion locale={locale} />;
       if (b.kind === 'editor') return editorEnLinea && <p class="enlace-agencia"><a href={datosSitio.publisher.url} rel="noopener">{t('pie.conocer', locale)} <span aria-hidden="true">↗</span></a></p>;
       const c = cita(b);
-      return <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={c.fuente} textoFuente={c.textoFuente} />;
+      return <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={c.fuente} textoFuente={c.textoFuente} destacada={!!b.breve} />;
     });
     if (i === 0) return contenido;
     return lista.length > 0 && (

@@ -1,0 +1,102 @@
+import { expect, test, type Page } from '@playwright/test';
+
+// Criterios de aceptación de la especificación visual v1.0, §10 (PRD v1.5 §21.2, RQ-18, T170).
+const PAGINAS = ['/es', '/es/manifiesto/construir-con-ia', '/es/principios/p06', '/es/acerca'];
+
+const medir = (page: Page) => page.evaluate(() => {
+  const visibles = [...document.querySelectorAll<HTMLElement>('body *')].filter((e) => {
+    const r = e.getBoundingClientRect();
+    return r.width > 0 && r.height > 0 && [...e.childNodes].some((n) => n.nodeType === 3 && n.textContent!.trim());
+  });
+  const familias = new Set(visibles.map((e) => getComputedStyle(e).fontFamily.split(',')[0]!.replace(/["']/g, '').trim()));
+  const pesos = new Set(visibles.map((e) => Number(getComputedStyle(e).fontWeight)));
+  const decorados = [...document.querySelectorAll<HTMLElement>('body *')].filter((e) => {
+    const s = getComputedStyle(e);
+    return s.backgroundImage.includes('gradient') || (s.boxShadow !== 'none' && !/inset/.test(s.boxShadow));
+  }).map((e) => e.className || e.tagName);
+  return { familias: [...familias], pesos: [...pesos], decorados };
+});
+
+test.describe('especificación visual §10', () => {
+  test.skip(({ javaScriptEnabled }) => !javaScriptEnabled, 'se mide con JavaScript');
+
+  for (const r of PAGINAS)
+    test(`una sola familia, pesos ≤ 600, sin gradientes ni sombras en ${r}`, async ({ page }) => {
+      await page.goto(r);
+      await page.evaluate(() => document.fonts.ready);
+      const m = await medir(page);
+      expect(m.familias).toEqual(['Noto Sans']);
+      expect(Math.max(...m.pesos)).toBeLessThanOrEqual(600);
+      expect(m.decorados).toEqual([]);
+      expect(await page.evaluate(() => document.fonts.check('16px "Noto Sans"'))).toBe(true);
+    });
+
+  test('Noto Sans autoalojada, en un solo archivo y con swap', async ({ page }) => {
+    const pedidas: string[] = [];
+    page.on('request', (q) => { if (/\.woff2$/.test(q.url())) pedidas.push(new URL(q.url()).pathname); });
+    await page.goto('/es');
+    await page.evaluate(() => document.fonts.ready);
+    expect(pedidas).toEqual(['/fonts/NotoSans-latin-wght.woff2']);
+    const swap = await page.evaluate(() => [...document.fonts].every((f) => f.display === 'swap'));
+    expect(swap).toBe(true);
+  });
+
+  for (const [esquema, color] of [['light', 'rgb(63, 81, 198)'], ['dark', 'rgb(170, 180, 255)']] as const)
+    test(`color interactivo y foco en el tema ${esquema === 'light' ? 'claro' : 'oscuro'}`, async ({ page }, info) => {
+      test.skip(info.project.name === 'movil', 'la cabecera cambia en móvil; basta el escritorio');
+      await page.emulateMedia({ colorScheme: esquema });
+      await page.goto('/es/manifiesto');
+      const enlace = page.locator('main .bloque-editorial a').first();
+      await expect(enlace).toHaveCSS('color', color);
+      await enlace.focus();
+      await expect(enlace).toHaveCSS('outline-width', '3px');
+      await expect(enlace).toHaveCSS('outline-color', color);
+    });
+
+  test('objetivos interactivos de al menos 44 × 44 px (los enlaces en línea quedan exentos, WCAG 2.5.8)', async ({ page }) => {
+    await page.goto('/es/manifiesto/construir-con-ia');
+    const chicos = await page.evaluate(() => [...document.querySelectorAll<HTMLElement>(
+      'button:not([hidden]), .navegacion-global > ul a, .selector-idioma a, .indice-lateral a, .anterior-siguiente a, details > summary',
+    )].filter((e) => {
+      const r = e.getBoundingClientRect();
+      return r.width > 0 && (r.height < 44 || r.width < 44);
+    }).map((e) => `${e.tagName} ${e.textContent?.trim().slice(0, 30)} ${Math.round(e.getBoundingClientRect().width)}×${Math.round(e.getBoundingClientRect().height)}`));
+    expect(chicos).toEqual([]);
+  });
+
+  test('los párrafos no superan 68ch', async ({ page }) => {
+    await page.goto('/es/manifiesto/construir-con-ia');
+    const excedidos = await page.evaluate(() => {
+      const prueba = document.createElement('span');
+      prueba.textContent = '0'.repeat(68);
+      prueba.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap';
+      document.querySelector('main')!.append(prueba);
+      const limite = prueba.getBoundingClientRect().width;
+      prueba.remove();
+      return [...document.querySelectorAll('main p')].filter((p) => p.getBoundingClientRect().width > limite + 1).length;
+    });
+    expect(excedidos).toBe(0);
+  });
+});
+
+test.describe('cabecera (especificación §7.1)', () => {
+  test('en teléfono, 56 px con «Menú»; el menú y los idiomas se despliegan, también sin JavaScript', async ({ page }, info) => {
+    test.skip(info.project.name !== 'movil', 'solo móvil');
+    await page.goto('/es/manifiesto/construir-con-ia');
+    const alto = await page.locator('.cabecera').evaluate((e) => e.getBoundingClientRect().height);
+    expect(alto).toBeLessThanOrEqual(60);
+    await expect(page.locator('.navegacion-global > ul a').first()).toBeHidden();
+    await page.locator('.menu-movil > summary').click();
+    await expect(page.locator('.navegacion-global > ul a')).toHaveCount(4);
+    await expect(page.locator('.navegacion-global > ul a').first()).toBeVisible();
+    await expect(page.locator('[data-selector-idioma] ul a')).toHaveText(['EN', 'ES', 'PT']);
+  });
+
+  test('en escritorio, el menú siempre visible y sin botón', async ({ page }, info) => {
+    test.skip(info.project.name === 'movil', 'solo escritorio');
+    await page.goto('/es');
+    await expect(page.locator('.menu-movil > summary')).toBeHidden();
+    await expect(page.locator('.navegacion-global > ul a').first()).toBeVisible();
+    await expect(page.locator('[data-selector-idioma] ul a').first()).toBeVisible();
+  });
+});
