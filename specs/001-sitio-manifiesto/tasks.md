@@ -279,7 +279,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
   - analítica bloqueada no afecta y la lectura no pide datos personales (`FR-018`, `AC-12`);
   - una URL profunda restituye la sección (`FR-014`);
   - no hay cookies y, en almacenamiento local, solo la preferencia de idioma (PRD §24.3)
-- [ ] T091 Autoalojar tipografías en subconjuntos con `font-display: swap` en `public/fonts/` (provisionales hasta la dirección visual) y fijar en `lighthouserc.json` los presupuestos de plan.md: JavaScript de cliente ≤ 10 KB comprimido por página, tipografías ≤ 100 KB en woff2 por página y como máximo dos familias, CSS ≤ 50 KB comprimido (PRD §24.1)
+- [ ] T091 (La tipografía la cubre T163 con Noto Sans, PRD v1.5; queda de esta tarea fijar los presupuestos en `lighthouserc.json`.) Autoalojar tipografías en subconjuntos con `font-display: swap` en `public/fonts/` (provisionales hasta la dirección visual) y fijar en `lighthouserc.json` los presupuestos de plan.md: JavaScript de cliente ≤ 10 KB comprimido por página, tipografías ≤ 100 KB en woff2 por página y como máximo dos familias, CSS ≤ 50 KB comprimido (PRD §24.1)
 - [ ] T092 Ejecutar `bun run build`, `bun test`, `bunx playwright test` y `bunx lhci autorun`, y registrar resultados, fallos y el informe de visibilidad de RQ-13 en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (`O08`)
 
 ---
