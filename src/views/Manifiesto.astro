@@ -3,6 +3,7 @@ import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
 import IndiceManifiesto from '../components/IndiceManifiesto.astro';
 import NodoCanonico from '../components/NodoCanonico.astro';
+import Compartir from '../components/Compartir.astro';
 import { ruta } from '../lib/i18n/rutas';
 import { IDIOMAS } from '../lib/i18n/idiomas';
 import { obraManifiesto } from '../lib/semantica/jsonld';
@@ -40,8 +41,13 @@ const ld = [obraManifiesto({
   </Fragment>
   <article class="manifiesto lectura" data-tipo="cita-canonica">
     {nodos.map(({ n, markdown, lang }) => (
-      lang === locale ? <NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} />
-      : <div lang={lang}><NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} /></div>
+      <>
+        {lang === locale ? <NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} />
+        : <div lang={lang}><NodoCanonico nodo={n} markdown={markdown} desplazamiento={1} /></div>}
+        {n.kind === 'encabezado' && n.nivel === 2 && (
+          <Compartir locale={locale} href={`${ruta({ tipo: 'manifiesto' }, locale)}#${n.id}`} titulo={markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, '')} />
+        )}
+      </>
     ))}
   </article>
 </Superficie>

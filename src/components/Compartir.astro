@@ -1,0 +1,29 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { t } from '../lib/sitio';
+
+/** Enlace estable a una sección, con acción explícita de copiar o compartir (FR-011). */
+interface Props {
+  locale: Locale;
+  /** Ruta con ancla, por ejemplo /es/manifiesto#cr03. */
+  href: string;
+  /** Título preciso: el de la sección o el del principio, nunca una explicación editorial. */
+  titulo: string;
+}
+const { locale, href, titulo } = Astro.props;
+---
+<div
+  class="compartir"
+  data-compartir
+  data-url={href}
+  data-titulo={titulo}
+  data-copiado={t('compartir.copiado', locale)}
+  data-error={t('compartir.error', locale)}
+>
+  <a class="enlace-seccion" href={href}>{t('compartir.enlace', locale)}</a>
+  <button type="button" data-copiar hidden>{t('compartir.copiar', locale)}</button>
+  <span class="estado-compartir" role="status" aria-live="polite" data-estado></span>
+</div>
+<script>
+  import '../cliente/compartir';
+</script>

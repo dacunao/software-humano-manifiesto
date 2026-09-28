@@ -225,14 +225,14 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-08`.
 
-- [ ] T076 [P] [US8] Escribir `tests/e2e/js08-compartir.spec.ts`: el enlace a un principio abre con contexto; copiar muestra una confirmación que se anuncia; sin JavaScript, el enlace sigue visible y copiable
-- [ ] T077 [US8] Implementar `src/cliente/compartir.ts` y `src/components/Compartir.astro`:
+- [X] T076 [P] [US8] Escribir `tests/e2e/js08-compartir.spec.ts`: el enlace a un principio abre con contexto; copiar muestra una confirmación que se anuncia; sin JavaScript, el enlace sigue visible y copiable
+- [X] T077 [US8] Implementar `src/cliente/compartir.ts` y `src/components/Compartir.astro`:
   - copia la URL y un título preciso, sin atribuir una explicación al texto canónico (`FR-011`);
   - usa el panel nativo de compartir si existe y, si no, el portapapeles;
   - confirma con `aria-live`;
   - no envía datos a ningún lado;
   - funciona como mejora progresiva
-- [ ] T078 [US8] Añadir `Compartir.astro` a `src/views/Principio.astro` y a cada sección de `src/views/Manifiesto.astro`, como acción explícita para copiar el enlace de la sección, sin `#` al pasar el cursor
+- [X] T078 [US8] Añadir `Compartir.astro` a `src/views/Principio.astro` y a cada sección de `src/views/Manifiesto.astro`, como acción explícita para copiar el enlace de la sección, sin `#` al pasar el cursor
 
 ---
 

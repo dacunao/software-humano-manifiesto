@@ -4,6 +4,7 @@ import type { NodoCanonico } from '../lib/canon/lector';
 import Base from '../layouts/Base.astro';
 import BloqueEditorial from '../components/BloqueEditorial.astro';
 import CitaCanonica from '../components/CitaCanonica.astro';
+import Compartir from '../components/Compartir.astro';
 import { renderLinea } from '../lib/canon/render';
 import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
 import { canonicoDePrincipio, fechaActualizacion, markdownDe, partesCanonicas, principio, t, URL_SITIO } from '../lib/sitio';
@@ -67,6 +68,7 @@ const ld = [{
         <code>{codigo}</code> <span set:html={renderLinea(limpio)} />
       </h1>
       <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} fuente={fuente(frase)} textoFuente={t('contenido.fuente', locale)} />
+      <Compartir locale={locale} href={ruta({ tipo: 'principio', principio: pid }, locale)} titulo={`${codigo} · ${limpio.replace(/`/g, '')}`} />
     </header>
 
     {secciones.map((s) => {
