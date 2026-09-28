@@ -8,7 +8,7 @@
 
 ## Summary
 
-Un sitio estático, público y trilingüe que publica el Manifiesto de Software Humano en seis superficies y diez páginas de principio: 48 páginas en total. El texto canónico en español se lee de su archivo fuente; todo lo demás sale de YAML validado, que detiene la construcción ante cualquier inconsistencia. El sitio funciona sin JavaScript; solo hay dos scripts, para la preferencia de idioma y para copiar o compartir. El estado de la adaptación SpecKit es un dato comparado automáticamente con lo instalado.
+Un sitio estático, público y trilingüe que publica el Manifiesto de Software Humano en siete superficies organizadas por las cuatro rutas de lectura del núcleo, una página de texto íntegro y diez páginas de principio: 54 páginas en total (PRD v1.1). Cada pasaje del núcleo tiene una sola casa, verificada por `RV-13`. El texto canónico en español se lee de su archivo fuente; todo lo demás sale de YAML validado, que detiene la construcción ante cualquier inconsistencia. El sitio funciona sin JavaScript; solo hay dos scripts, para la preferencia de idioma y para copiar o compartir. El estado de la adaptación SpecKit es un dato comparado automáticamente con lo instalado.
 
 El plan cubre **todo** el alcance de la especificación. El orden de abajo responde a dependencias y riesgo, **no a prioridad**: ningún bloque es opcional ni posterior a una entrega parcial.
 
@@ -52,7 +52,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 - sin enlaces sin destino;
 - la construcción se detiene ante contenido inválido o una fuente canónica cambiada.
 
-**Scale/Scope**: 48 páginas de contenido más tres 404. El núcleo tiene unas 10.500 palabras por idioma, con diez principios y seis entradas editoriales cada uno (declaración y fuente se leen del núcleo), en tres idiomas.
+**Scale/Scope**: 54 páginas de contenido más tres 404 (PRD v1.1). El núcleo tiene unas 10.500 palabras por idioma, con diez principios y seis entradas editoriales cada uno (declaración y fuente se leen del núcleo), en tres idiomas.
 
 ## Constitution Check
 
@@ -178,6 +178,7 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 | Pruebas con personas: una ronda temprana en español con borradores y la ronda final / solo la final | La temprana cuesta sesiones extra; solo la final arriesga retraducir y rediseñar | Las Job Stories no tienen evidencia observada (spec.md) | **Ronda temprana y ronda final** (`F07`) · decidida por Damián Acuña | 2026-09-27 | Notas de la ronda temprana |
 | Dirección visual: A / B / síntesis A + B / decidir después de la ronda | La síntesis conserva la jerarquía de A y la navegación de B sobre la estructura de C; elegir antes de la ronda adelanta ese paso | La ronda temprana se hace con la dirección ya aplicada | **Síntesis A + B**, sin animaciones de aparición ni filtros; solo fuentes del sistema · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
 | Titular de portada: frase canónica / copy A / copy C | El copy C sigue el orden del PRD §16 (oportunidad antes que costo); no tiene autoridad canónica | — | **Copy C, a prueba** como primera alternativa · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
+| Arquitectura por rutas del núcleo (PRD v1.1): superficies por ruta con una casa por pasaje / manifiesto íntegro como superficie principal | Menos repetición y rutas por necesidad; exige reorganizar contenido | — | **Rutas y una casa por pasaje; texto íntegro como consulta con descarga; fundamento en Principios; nombres conocidos con la ruta como subtítulo** · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
 | RQ-10 · Estilos: tokens provisionales ahora / esperar la dirección visual | Esperar bloquea bloques que no dependen de ella | La dirección se aplica sobre tokens sin rehacer la estructura | **Tokens provisionales, declarados como tales** | 2026-09-27 | Elección de dirección visual |
 
 **Pendientes que requieren juicio humano** (`O09`):

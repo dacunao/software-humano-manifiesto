@@ -109,3 +109,16 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
 - **Rutas sin barra final**: todas, incluidas `/es` y `/pt-br` (contracts/rutas.md actualizado antes de publicar nada).
 - **Esqueletos `pendiente`**: además de las traducciones (T017), superficies y principios nacen como esqueletos `pendiente` (`scripts/andamiar-contenido.ts`) para que `RV-04`, `RV-05` y `RV-08` se cumplan desde la fase 2; las fases 3 a 11 los redactan.
 - **Aviso de borrador**: mientras un idioma tenga contenido sin aprobar, cada página lo declara en un aviso visible (`P07`). Desaparece solo cuando todo está aprobado.
+
+---
+
+## RQ-14 · Una sola casa por pasaje (PRD v1.1, §18.3)
+
+- **Decision**:
+  - un módulo `src/lib/casas.ts` asigna a cada nodo canónico su casa: Manifiesto, Principios, una página de principio, Aplicación, Verificación, SpecKit, Acerca de o solo el texto íntegro. La asignación sigue la tabla de la propuesta aprobada y divide por subsección dos secciones mixtas: Propósito del documento y Gobernanza;
+  - una regla nueva, `RV-13`, detiene la construcción si un nodo con contenido (no encabezado) falta en su casa, o si aparece completo en otra superficie;
+  - fuera de su casa solo se admite una **cita breve**: un bloque marcado `breve` de 60 palabras como máximo, con su enlace;
+  - en la casa, el texto canónico se muestra visible, después de la explicación editorial;
+  - el texto íntegro es una página aparte, con la descarga del archivo original en español y de las traducciones generadas nodo a nodo.
+- **Rationale**: PRD §18.3 y `FR-003` v1.1. Que la regla sea verificable evita que la unicidad dependa de la disciplina de quien edita (`D04`). Mostrar el canon visible en su casa evita que un enlace a `#cr03` caiga dentro de un `<details>` cerrado.
+- **Alternatives considered**: el canon plegado en `<details>` dentro de su casa (los enlaces profundos no abren el pliegue sin JavaScript en todos los navegadores); controlar la unicidad solo a mano (se degrada en silencio).

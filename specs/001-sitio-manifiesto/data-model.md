@@ -23,7 +23,7 @@ Nombre público «Software Humano», dominio `softwarehumano.com`, autoría (`Pe
 
 ### Superficie (`Surface`)
 
-Las seis del PRD §18.1: `inicio`, `manifiesto`, `principios`, `aplicacion`, `speckit` y `acerca`.
+Las del PRD §18.1 v1.1: `inicio`, `manifiesto`, `principios`, `aplicacion`, `verificacion`, `speckit`, `acerca` y la página de consulta `texto-integro`.
 
 | Campo | Descripción |
 |---|---|
@@ -123,6 +123,7 @@ Etiquetas de navegación, selector, 404 y confirmaciones. Una clave y su texto e
 | `RV-10` | Si `published` es `false`, no hay `url` ni marcado de código fuente | `FR-010`, PRD §25.2 |
 | `RV-11` | No hay enlaces internos rotos en la salida construida | PRD §24.2 |
 | `RV-12` | El JSON-LD solo describe entidades presentes en la página | PRD §25.3, `AC-15` |
+| `RV-13` | Cada nodo canónico con contenido aparece completo en su casa y en ninguna otra superficie; fuera de ella, solo en bloques `breve` de 60 palabras como máximo | PRD §18.3 v1.1, RQ-14 |
 
 **Comprobación previa a la publicación**, un comando aparte que **no** detiene la construcción de trabajo:
 

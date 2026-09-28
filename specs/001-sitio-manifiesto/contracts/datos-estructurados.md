@@ -5,7 +5,7 @@ Lo que el sitio declara a buscadores y agentes. Se genera desde las mismas entra
 | Página | Tipos | Propiedades obligatorias |
 |---|---|---|
 | Todas | `WebSite` (una vez, en Inicio) y `WebPage` | `name`, `url`, `inLanguage`; `WebSite.author` → `Person` |
-| Manifiesto | `WebPage` + `CreativeWork` | `name`, `version` = `2.1`, `inLanguage`, `author`, `datePublished`, `license` (CC BY 4.0). En `es`: `workTranslation` → versiones `en` y `pt-BR`. En `en` y `pt-BR`: `translationOfWork` → versión `es` |
+| Texto íntegro (v1.1) | `WebPage` + `CreativeWork` | `name`, `version` = `2.1`, `inLanguage`, `author`, `datePublished`, `license` (CC BY 4.0). En `es`: `workTranslation` → versiones `en` y `pt-BR`. En `en` y `pt-BR`: `translationOfWork` → versión `es` |
 | Principios | `WebPage` + `DefinedTermSet` | `name`, `inLanguage`, `hasDefinedTerm` → los diez |
 | Un principio | `WebPage` + `DefinedTerm` | `termCode` = `P0N`, `name` (nombre canónico), `description`, `inDefinedTermSet`, `url` |
 | Páginas con migas visibles | `BreadcrumbList` | Solo si la navegación visible muestra esa jerarquía |

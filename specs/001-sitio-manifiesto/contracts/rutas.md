@@ -13,11 +13,13 @@ Misma topología en los tres idiomas; los nombres de ruta están localizados. `p
 | Principios | `/principles` | `/es/principios` | `/pt-br/principios` |
 | Un principio | `/principles/p01` … `/principles/p10` | `/es/principios/p01` … | `/pt-br/principios/p01` … |
 | Aplicación | `/practice` | `/es/aplicacion` | `/pt-br/aplicacao` |
+| Verificación (v1.1) | `/verification` | `/es/verificacion` | `/pt-br/verificacao` |
+| Texto íntegro (v1.1) | `/manifesto/full-text` | `/es/manifiesto/texto-integro` | `/pt-br/manifesto/texto-integral` |
 | SpecKit | `/speckit` | `/es/speckit` | `/pt-br/speckit` |
 | Acerca de | `/about` | `/es/acerca` | `/pt-br/sobre` |
 | No encontrada | `/404` | `/es/404` | `/pt-br/404` |
 
-Son **48 páginas de contenido** (seis superficies y diez principios, por tres idiomas), más tres 404. Los nombres de ruta de `es` y `pt-BR` son propuesta y entran en la revisión lingüística; una vez publicados, quedan fijos.
+Son **54 páginas de contenido** (siete superficies, el texto íntegro y diez principios, por tres idiomas), más tres 404. Descargas del texto íntegro (v1.1): `/descargas/nucleo-v2.1-es.md` (el archivo original, idéntico byte a byte), `/descargas/nucleo-v2.1-en.md` y `/descargas/nucleo-v2.1-pt-br.md` (generadas nodo a nodo, rotuladas como traducción). Los nombres de ruta de `es` y `pt-BR` son propuesta y entran en la revisión lingüística; una vez publicados, quedan fijos.
 
 ## Anclas del manifiesto
 
@@ -48,7 +50,7 @@ Al pasar el cursor sobre un título **no** aparece ningún símbolo; copiar el e
 
 ## Archivos de plataforma
 
-- `sitemap` con las 48 páginas de contenido y sus alternas;
+- `sitemap` con las 54 páginas de contenido y sus alternas;
 - `robots` explícito;
 - redirecciones versionadas;
 - cabeceras de seguridad: política de contenido que solo admite el script de analítica decidido, HSTS, `nosniff`, política de referente y política de permisos.
