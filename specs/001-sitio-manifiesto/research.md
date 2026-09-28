@@ -170,3 +170,15 @@ Reemplaza la asignación de casas de RQ-14; la regla de una sola casa se conserv
 - **Rationale**: PRD §19.4 (no mezclar idiomas) y `FR-019`; criterio propuesto por Damián Acuña: mostrar todo lo que coincide, filtrado por el idioma vigente. Se filtra al construir y no al buscar porque el resultado es el mismo y el visitante descarga solo su idioma (§24.1, `P09`). Un resultado por sección evita títulos repetidos (`P06`).
 - **Alternatives considered**: un solo índice con los tres idiomas filtrado en el navegador (el triple de datos para el mismo resultado); mantener el original en español donde falta la traducción (mezcla idiomas, que fue el defecto observado).
 - **Consecuencia declarada**: mientras los textos explicativos no estén traducidos (T084), la búsqueda en `en` y `pt-BR` encuentra sobre todo el texto del núcleo, que ya tiene traducción en borrador.
+
+## RQ-17 · Cabecera y tema (PRD v1.4, 2026-09-28)
+
+Reemplaza en parte RQ-05: además del idioma, el tema claro u oscuro es una preferencia real. Sigue sin haber un panel de ajustes.
+
+- **Decision**:
+  - **Logotipo**: el ícono de Software Humano y la palabra «Manifiesto», entregados por la autoridad como SVG, van en línea en la cabecera, con `currentColor`, para que funcionen en los dos temas sin archivos duplicados. En pantallas de 48rem o más se muestran ícono y nombre; en menos, solo el ícono. El enlace tiene el nombre accesible «Manifiesto» y lleva al inicio. No se carga ninguna tipografía web;
+  - **GitHub**: la entrada del menú apunta a `estado-adaptacion.url` y se muestra solo cuando `published` es verdadero. Hoy no aparece: se conservan `FR-010` y `RV-10` y el plan sin enlaces sin destino. La publicación del repositorio sigue siendo la decisión abierta §29.10;
+  - **Idiomas**: EN · ES · PT, con `lang`, `hreflang` y el nombre completo (English, Español, Português (Brasil)) como nombre accesible y en `title`;
+  - **Tema**: tokens oscuros en `src/styles/tokens.css`, dentro de la dirección visual. Sin elección guardada, rige `prefers-color-scheme`, también sin JavaScript. Un script síncrono mínimo (`public/tema.js`, menos de 1 KB, permitido por `script-src 'self'`) aplica la elección guardada antes de pintar, para que no haya destello. El control de día y noche es un botón con `aria-pressed`, y permite volver a seguir al sistema. Axe verifica el contraste AA en los dos temas.
+- **Rationale**: PRD §21.2, §18.2 y §21.7 v1.4; `FR-020` (preferencia local, transparente, reversible y prescindible); `P03` (resolver por contexto: el sistema ya sabe qué prefiere la persona); `P09` (sin tipografías web ni destellos).
+- **Alternatives considered**: la tipografía cargada como fuente web (rompe el presupuesto de solo fuentes del sistema); dos archivos de logotipo por tema (duplica recursos); aplicar el tema con un script de módulo (se ejecuta tarde y produce un destello del tema equivocado).

@@ -120,6 +120,10 @@ Explicación, ejemplo, contraejemplo, prueba de decisión o texto de superficie.
 
 Etiquetas de navegación, selector, 404 y confirmaciones. Una clave y su texto en tres idiomas, con estado editorial.
 
+### Preferencia de tema · solo en el navegador (v1.4, RQ-17)
+
+`sistema` (predeterminado, sin nada guardado) · `claro` · `oscuro`. Local, reversible y prescindible (`FR-020`): sin almacenamiento, rige el sistema.
+
 ### Preferencia de idioma · solo en el navegador
 
 `none` o un idioma. No sale del navegador, no requiere cuenta y puede borrarse (`FR-020`, `FR-018`).

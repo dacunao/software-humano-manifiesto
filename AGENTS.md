@@ -127,8 +127,8 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.3.md` (SHA-256 `ba39d39d223868317b6d4387121fc507e87ad7438858249db3416ba8ba81499c`)
-- **Versión**: 1.3, fecha 2026-09-28, vigente. Sitúa el sitio dentro de la marca Software Humano: nombre, dominio, autor y editor, enlace hacia la agencia, licencias y reparto de contenido entre los dos sitios (ver «Cambios de la versión 1.3» en el propio PRD). La v1.2 (`…_v1.2.md`, SHA-256 `a353a214…`), la v1.1 (`bf964e19…`) y la v1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.4.md` (SHA-256 `8ad88bdd85b3d2862527c98d23b30ec9b5e0514af615a2191e39d156e03681af`)
+- **Versión**: 1.4, fecha 2026-09-28, vigente. Suma el logotipo SVG de Software Humano con «Manifiesto», la entrada «GitHub» del menú (solo cuando el repositorio de la adaptación sea público), el selector de idioma compacto EN · ES · PT y el tema claro u oscuro (ver «Cambios de la versión 1.4»). La v1.3 (`ba39d39d…`), la v1.2 (`a353a214…`), la v1.1 (`bf964e19…`) y la v1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
 - **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
@@ -209,6 +209,8 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 | 9 · Aprobación lingüística | Ver «Contrato lingüístico» |
 
 **Relación con Software Humano** (decisión de la autoridad de producto, 2026-09-28; PRD v1.3 §18.4): este sitio publica la doctrina; `softwarehumano.com` presenta la agencia. El enlace hacia la agencia va en el pie y en Acerca de. Los pasajes del núcleo viven solo en este sitio; el sitio de la agencia los cita en frases breves con enlace. Este sitio no presenta productos, oferta ni llamados comerciales. Los documentos de marca y el copy de la agencia son insumos y no gobiernan este sitio.
+
+**Cabecera y tema** (decisiones de la autoridad de producto, 2026-09-28; PRD v1.4): logotipo como SVG, con ícono y «Manifiesto» en pantallas anchas y solo el ícono en teléfonos; el resto del sitio sigue con fuentes del sistema. Entrada «GitHub» en el menú, visible solo cuando el repositorio de la adaptación sea público. Idiomas como EN · ES · PT, con el nombre completo accesible. Tema claro u oscuro: por defecto, el del sistema. Reemplaza en parte RQ-05 (sin panel de ajustes): el control de tema es la segunda preferencia real, no un panel.
 
 **Nombres del menú** (decisión de la autoridad de producto, 2026-09-27; ajustada por la v1.2): las superficies y divisiones se nombran con sustantivos conocidos y la ruta de lectura del núcleo aparece como guía, no como nombre (`P05`). Desde la v1.2, el menú principal es Inicio, Manifiesto, SpecKit y Acerca de, y las rutas agrupan el índice del manifiesto.
 
