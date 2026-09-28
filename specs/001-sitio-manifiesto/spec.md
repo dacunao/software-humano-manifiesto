@@ -6,9 +6,11 @@
 
 **Status**: Draft
 
-**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.1.md` (v1.1, SHA-256 `bf964e19…`), más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27.
+**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.2.md` (v1.2, SHA-256 `a353a214…`), más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27 y el 2026-09-28.
 
 **Actualización v1.1** (2026-09-27): la arquitectura de información sigue las cuatro rutas de lectura del núcleo (PRD §18.1), cada pasaje tiene una sola casa (PRD §18.3), el texto íntegro es una página de consulta con descarga (`FR-003`), el fundamento pasa a Principios (`FR-007`) y se agrega Verificación (`FR-022`). Las secciones afectadas están marcadas «v1.1».
+
+**Actualización v1.2** (2026-09-28): el manifiesto se lee en nueve divisiones temáticas de secciones consecutivas del núcleo, completas y en su orden (PRD §18.1); ningún pasaje se lee completo fuera de su división, sin excepciones (§18.3); el núcleo completo se ofrece solo como descarga en el idioma seleccionado (`FR-003`); Influencias y notas se destila en Acerca de y la Declaración final cierra la Guía de bolsillo; se agrega la búsqueda (`FR-023`). Las secciones afectadas están marcadas «v1.2».
 
 > **Cómo leer esta especificación.** El PRD es la fuente y conserva la autoridad. Esta especificación **no la reemplaza ni la resume**: organiza su alcance completo para planificar, conserva sus identificadores (`JS-01`–`JS-09`, `FR-001`–`FR-022`, `AC-01`–`AC-16`, `P01`–`P10`) y remite a la sección del PRD donde está el texto íntegro. Ante cualquier diferencia de redacción, vale el PRD.
 
@@ -83,15 +85,16 @@ La redacción de cada historia es textual del PRD. Los escenarios de aceptación
 
 **Cuando** necesito estudiar, discutir o utilizar el manifiesto en un proyecto, **quiero** acceder al texto canónico, su versión y anclas estables, **para poder** verificar el significado y citarlo sin depender de un resumen.
 
-**Por qué existe**: objetivos 4 y 9 del PRD. Requisitos: `FR-003`, `FR-011`, `FR-012`, `FR-016`. Principios: `P07`, `P08`, `P10`.
+**Por qué existe**: objetivos 4 y 9 del PRD. Requisitos: `FR-003`, `FR-011`, `FR-012`, `FR-016`, `FR-023` (v1.2). Principios: `P07`, `P08`, `P10`.
 
 **Cómo se verifica**: cualquier principio o sección canónica se alcanza directamente y posee una URL o ancla estable. Aceptación: `AC-03`, `AC-11`.
 
 **Acceptance Scenarios**:
 
 1. **Given** una URL profunda a una sección canónica, **When** la persona la abre, **Then** llega a esa sección con la versión del núcleo visible.
-2. **Given** la página de texto íntegro (v1.1), **When** la persona la recorre, **Then** encuentra el núcleo v2.1 íntegro, con índice e identificadores, idéntico a la fuente, y puede descargarlo en su formato original.
+2. **Given** el manifiesto (v1.2), **When** la persona recorre sus divisiones con anterior y siguiente, **Then** lee el núcleo v2.1 en su orden, con identificadores y anclas estables, y desde cualquier página puede descargarlo completo en el idioma seleccionado; en español, idéntico a la fuente.
 3. **Given** un pasaje citado, **When** la persona lo copia o lo comparte, **Then** la cita conserva procedencia y no atribuye explicación editorial al texto canónico (`FR-011`).
+4. **Given** un término o identificador, **When** la persona lo busca (v1.2), **Then** los resultados llevan a la sección exacta, cada pasaje una sola vez (`FR-023`).
 
 ---
 
@@ -99,13 +102,13 @@ La redacción de cada historia es textual del PRD. Los escenarios de aceptación
 
 **Cuando** estoy de acuerdo con los principios pero no sé cómo incorporarlos al desarrollo cotidiano, **quiero** comprender el flujo, los artefactos, el contrato del agente y la verificación, **para poder** convertir el manifiesto en decisiones y evidencia.
 
-**Por qué existe**: objetivo 5 del PRD. Requisitos: `FR-007`, `FR-022` (v1.1). Principios: `P01`, `P03`, `P07`, `P10`.
+**Por qué existe**: objetivo 5 del PRD. Requisitos: `FR-007`, `FR-022` (v1.2). Principios: `P01`, `P03`, `P07`, `P10`.
 
 **Cómo se verifica**: la persona explica al menos un punto donde el manifiesto puede cambiar o detener el desarrollo.
 
 **Acceptance Scenarios**:
 
-1. **Given** la superficie «Aplicación», **When** la persona la recorre, **Then** encuentra la doctrina para IA, el flujo, los artefactos, la regla de detención, el contrato del agente, las responsabilidades, los puntos de control y el ejemplo aplicado; el fundamento está en Principios y la definición de terminado en Verificación (v1.1).
+1. **Given** las divisiones del manifiesto (v1.2), **When** la persona recorre Construir con IA, Verificar, Ejemplo aplicado y Gobernanza, **Then** encuentra la doctrina para IA, el flujo, los artefactos, la regla de detención, el contrato del agente, la verificación, los antipatrones, el ejemplo aplicado, las responsabilidades, los puntos de control y la definición de terminado, cada tema en su división y en el orden del núcleo.
 2. **Given** una condición de detención explicada, **When** la persona la lee, **Then** puede identificar una decisión que el manifiesto detendría.
 
 ---
@@ -186,11 +189,11 @@ Identificadores y contenido del PRD §20, sin renumerar. Texto completo en la se
 
 - **FR-001** Narrativa progresiva: el sistema MUST presentar el recorrido problema → consecuencias → tesis → principios → aplicación → SpecKit sin exigir conocimientos previos (PRD §20, §16).
 - **FR-002** Navegación no lineal: el visitante MUST poder abandonar la secuencia, acceder directamente a cualquier superficie y regresar sin perder orientación.
-- **FR-003** Texto canónico íntegro (v1.1): el sistema MUST publicar el núcleo v2.1 completo en una página de consulta, con índice, identificadores, enlaces estables y descarga en su formato original; cada sección del núcleo tiene además una sola casa (PRD §18.3).
+- **FR-003** Texto canónico íntegro (v1.2): el sistema MUST ofrecer el núcleo v2.1 completo como descarga en Markdown en el idioma seleccionado (en español, el archivo original; en inglés y portugués de Brasil, la traducción rotulada y con referencia al original). En el sitio, el núcleo se lee repartido en sus divisiones, en su orden, con identificadores y enlaces estables (PRD §18.1, §18.3).
 - **FR-004** Explorador de principios: el sistema MUST permitir recorrer y abrir individualmente `P01`–`P10`, conservando orden, identidad y fuente.
 - **FR-005** Ejemplos y contraejemplos: cada principio MUST incluir al menos una situación que permita reconocer su aplicación o incumplimiento, sin convertirla en regla nueva.
 - **FR-006** Pruebas de decisión: cada principio MUST exponer preguntas que el visitante pueda usar en una revisión de producto.
-- **FR-007** Aplicación operativa (v1.1): el sistema MUST explicar la doctrina para IA, el flujo, los artefactos, la regla de detención, el contrato del agente, las responsabilidades, los puntos de control y el ejemplo aplicado. El fundamento de producto y las Job Stories se explican en Principios; la definición de terminado, en Verificación.
+- **FR-007** Aplicación operativa (v1.2): el sistema MUST explicar, en la división Construir con IA, la doctrina para IA, el flujo, los artefactos, la regla de detención y el contrato del agente. El fundamento de producto, el ejemplo aplicado y la gobernanza tienen cada uno su división.
 - **FR-008** Presentación de SpecKit: el sistema MUST explicar la relación entre núcleo, constitución, anexo, preset y SpecKit nativo.
 - **FR-009** Estado verificable de SpecKit: la superficie MUST indicar que la adaptación es independiente, usa presets nativos, no modifica el core, fue validada técnicamente en la versión que corresponda, no está publicada todavía y no es una integración oficial ni un respaldo de GitHub. **Versión publicada**: la realmente instalada y verificada, no la «1.0.0» literal del PRD (decisión de la autoridad de producto, 2026-09-27, registrada en `AGENTS.md`).
 - **FR-010** Acciones según estado de publicación: mientras el preset no esté publicado, MUST NOT mostrarse una instalación pública operativa; se muestran estado, arquitectura y disponibilidad futura. **Sin botón, formulario ni captura de datos** (decisión PRD §29.6).
@@ -205,7 +208,8 @@ Identificadores y contenido del PRD §20, sin renumerar. Texto completo en la se
 - **FR-019** Experiencia multilingüe: todo el alcance público MUST estar en `en`, `es` y `pt-BR`, con URL propia, `lang`, metadatos localizados, `hreflang` recíprocos y correspondencia conceptual. Rutas sin prefijo en inglés; `/es/` y `/pt-br/`; una URL localizada explícita prevalece sobre cualquier preferencia.
 - **FR-020** Ajustes de idioma y experiencia: el visitante MUST poder cambiar de idioma desde cualquier superficie sin perder la sección equivalente; la elección se guarda localmente, se modifica o restablece y no exige cuenta; sin redirección por idioma del navegador en la primera visita. Los ajustes agrupan solo preferencias reales: idioma y, cuando corresponda, movimiento.
 - **FR-021** Contenido como software: el contenido MUST originarse en YAML versionado en GitHub y validarse en integración y construcción, de modo que cada cambio muestre qué cambió, quién lo aprobó, qué idiomas afecta y qué páginas o datos estructurados genera. **Excepción decidida**: el texto canónico en español se lee de su archivo fuente y no se copia al YAML (PRD §19.1; decisión del 2026-09-27).
-- **FR-022** Verificación (v1.1): el sistema MUST presentar en su propia superficie las dimensiones de verificación, el scorecard, las preguntas de revisión, los antipatrones, la definición de terminado y la guía de bolsillo, para evaluar un prototipo, una implementación o una entrega.
+- **FR-022** Verificación (v1.2): el sistema MUST presentar, en la división Verificar, las dimensiones de verificación, el scorecard, las preguntas de revisión y los antipatrones, para evaluar un prototipo, una implementación o una entrega; Verificar enlaza a la definición de terminado (Gobernanza) y a la Guía de bolsillo.
+- **FR-023** Búsqueda (v1.2): el sistema MUST ofrecer una búsqueda por idioma en el contenido del sitio, cuyos resultados lleven a la sección exacta; sin servidor ni terceros, sin registrar lo buscado (`FR-018`), cargada solo al abrirse (§24.1), con el sitio completo sin JavaScript (`FR-015`) y cada pasaje una sola vez en los resultados (§18.3).
 
 #### Requisitos del PRD sin identificador propio
 
@@ -213,9 +217,9 @@ Son obligatorios con la misma fuerza que los anteriores. Se citan por sección d
 
 - **PRD §16 · Recorrido narrativo**: siete actos; entrada directa a cualquier sección; sin scroll bloqueado. Los cuatro capítulos de presentación de `P01`–`P10` son opcionales («puede enmarcarlos») y no alteran la identidad de los principios.
 - **PRD §17 · Contrato de cada principio**: superficie propia con declaración, tensión, significado, consecuencia, ejemplo, contraejemplo, prueba de decisión y fuente; más la expresión en el sitio y el incumplimiento que debe evitarse para cada `P01`–`P10`.
-- **PRD §18.1 · Superficies obligatorias (v1.1)**: Inicio; Manifiesto (Comprender); Principios (Decidir); Aplicación (Construir); Verificación (Verificar); SpecKit; Acerca de; y la página de texto íntegro, fuera de la navegación principal. Cada una con URL equivalente por idioma.
-- **PRD §18.3 · Una sola casa por pasaje (v1.1)**: cada sección del núcleo se lee completa en una sola superficie; fuera de ella solo se enlaza o se cita en una frase breve. El texto íntegro es la única excepción.
-- **PRD §18.2 · Navegación global** desde cualquier superficie: inicio, texto completo, principios, aplicación, SpecKit y su estado, versión vigente, cambio de idioma sin perder la sección y ajustes sin interrumpir la lectura. Sin llamados simultáneos con el mismo peso.
+- **PRD §18.1 · Superficies y divisiones (v1.2)**: Inicio, Manifiesto, SpecKit y Acerca de. El manifiesto se lee en nueve divisiones de secciones consecutivas del núcleo: 0 Mapa del manifiesto (`SH-INDEX`), 1 El manifiesto (propósito y texto canónico), 2 Principios (con una página por principio), 3 Fundamento de producto, 4 Construir con IA, 5 Verificar, 6 Ejemplo aplicado, 7 Gobernanza, 8 Guía de bolsillo, cerrada por la Declaración final. Influencias y notas, destilada en Acerca de. Cada página con URL equivalente por idioma.
+- **PRD §18.3 · Una sola casa por pasaje (v1.2)**: cada sección del núcleo se lee completa en una sola división; fuera de ella solo se enlaza o se cita en una frase breve. Sin excepciones: el núcleo completo solo se descarga.
+- **PRD §18.2 · Navegación global (v1.2)** desde cualquier página: inicio, el manifiesto y sus divisiones con anterior y siguiente, principios, búsqueda, descarga del núcleo, SpecKit y su estado, versión vigente, cambio de idioma sin perder la sección y ajustes sin interrumpir la lectura. Menú principal: Inicio, Manifiesto, SpecKit y Acerca de; el índice del manifiesto sigue el orden del núcleo, agrupado por las rutas que el núcleo nombra. Sin llamados simultáneos con el mismo peso.
 - **PRD §19.1–§19.2 · Tipos de contenido y entidad Principio** (ver Key Entities).
 - **PRD §19.3 · Reglas de la fuente de contenido**: identificadores independientes del idioma, separación de tipos, esquema formal y detención de la construcción ante inconsistencias. Sin CMS salvo necesidad demostrada.
 - **PRD §19.4 · Contrato de localización**, incluido que el canónico traducido se distingue del original y lo referencia.
@@ -234,8 +238,9 @@ No son decisiones de esta especificación: el PRD las fija (§24.6) y solo se re
 
 ### Key Entities *(include if feature involves data)*
 
-- **Superficie**: cada una de las rutas conceptuales del PRD §18.1 (siete, más el texto íntegro). Tiene propósito, ruta de lectura del núcleo, contenido principal y una URL equivalente por idioma.
-- **Casa de un pasaje** (v1.1): la superficie donde una sección del núcleo se lee completa (PRD §18.3).
+- **Superficie**: Inicio, Manifiesto, SpecKit o Acerca de (PRD §18.1 v1.2). Tiene propósito, contenido principal y una URL equivalente por idioma.
+- **División del manifiesto** (v1.2): grupo de secciones consecutivas del núcleo, completas y en su orden, con explicación editorial y canon completo; tiene posición, ruta del núcleo que la agrupa, anterior y siguiente.
+- **Casa de un pasaje** (v1.2): la división donde una sección del núcleo se lee completa (PRD §18.3).
 - **Principio** (`P01`–`P10`): id estable, nombre y frase canónicos, significado, tensión, reglas, pruebas de decisión, ejemplo, señal de incumplimiento, capítulo de presentación, enlace al texto completo, relaciones con Job Stories y requisitos, y versiones aprobadas en los tres idiomas (PRD §19.2).
 - **Texto canónico**: el núcleo v2.1. En español se lee de su fuente; sus traducciones se distinguen del original y lo referencian. Nunca se parafrasea dentro de la superficie canónica.
 - **Explicación editorial**: contenido derivado y revisado que referencia su principio o sección de origen.
@@ -261,7 +266,7 @@ Criterios de aceptación del PRD §31, sin renumerar. Donde el PRD fija un umbra
 - **AC-07** Accesibilidad: los recorridos principales cumplen WCAG 2.2 AA y pasan revisión humana con teclado y tecnología de asistencia.
 - **AC-08** Rendimiento: en el percentil 75, el contenido principal aparece en 2,5 s o menos, la respuesta a interacciones tarda 200 ms o menos y el desplazamiento visual acumulado es 0,1 o menor, sin esperas artificiales (PRD §24.1).
 - **AC-09** SpecKit preciso: la explicación distingue doctrina, anexo, preset y framework; declara independencia, estado y límites; el estado publicado coincide con lo instalado y verificado.
-- **AC-10** Desarrollo gobernado: los artefactos de SpecKit conservan las nueve Job Stories y los veintidós requisitos, sin prioridades, MVP ni exclusiones inventadas.
+- **AC-10** Desarrollo gobernado: los artefactos de SpecKit conservan las nueve Job Stories y los veintitrés requisitos, sin prioridades, MVP ni exclusiones inventadas.
 - **AC-11** Descubrimiento y cita: los diez principios tienen dirección estable, metadatos correctos y vínculo con la fuente canónica.
 - **AC-12** Privacidad: el sitio se lee íntegramente sin registro ni entrega de información personal.
 - **AC-13** Paridad multilingüe: todo el alcance público existe en los tres idiomas, sin fragmentos obligatorios pendientes ni mezclas accidentales; el español supera la revisión de neutralidad latinoamericana.
@@ -303,7 +308,7 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 
 | Fuentes | alcance | resultados | reglas | límites | evidencia | no objetivos |
 |---|---|---|---|---|---|---|
-| PRD v1.1 (autoridad: Damián Acuña) · núcleo v2.1 (doctrina y texto publicado) · decisiones del 2026-09-27 en `AGENTS.md` | Sitio público en tres idiomas: siete superficies más el texto íntegro, nueve Job Stories, veintidós requisitos, dieciséis criterios; todos obligatorios (PRD §15, §34) | Los diez objetivos del PRD §12 y el resultado para el visitante de §11.3 | Contrato de localización (§19.4), contrato de principio (§17), transparencia de contenido (`FR-017`), determinismo (§22.1), estado de la adaptación como dato | Sin cuenta ni captura de datos; sin función generativa; sin enlaces sin destino; texto canónico no parafraseado ni copiado; arquitectura técnica aprobada (§24.6) | `AC-01`–`AC-16`, plan de validación (§26.4), definición de terminado (§32) | PRD §13: enseñar SpecKit exhaustivamente, publicar el preset, afirmar respaldo de GitHub, comunidad, certificaciones, blog, personalización, chatbot demostrativo, score que reemplace revisión humana, que el framework dicte la experiencia, CMS innecesario |
+| PRD v1.2 (autoridad: Damián Acuña) · núcleo v2.1 (doctrina y texto publicado) · decisiones del 2026-09-27 y del 2026-09-28 en `AGENTS.md` | Sitio público en tres idiomas: cuatro superficies y nueve divisiones del manifiesto, nueve Job Stories, veintitrés requisitos, dieciséis criterios; todos obligatorios (PRD §15, §34) | Los diez objetivos del PRD §12 y el resultado para el visitante de §11.3 | Contrato de localización (§19.4), contrato de principio (§17), transparencia de contenido (`FR-017`), determinismo (§22.1), estado de la adaptación como dato | Sin cuenta ni captura de datos; sin función generativa; sin enlaces sin destino; texto canónico no parafraseado ni copiado; arquitectura técnica aprobada (§24.6) | `AC-01`–`AC-16`, plan de validación (§26.4), definición de terminado (§32) | PRD §13: enseñar SpecKit exhaustivamente, publicar el preset, afirmar respaldo de GitHub, comunidad, certificaciones, blog, personalización, chatbot demostrativo, score que reemplace revisión humana, que el framework dicte la experiencia, CMS innecesario |
 
 ### Mapa de cobertura
 
@@ -313,12 +318,13 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | `JS-02` | `FR-001`, `FR-003` · `AC-02` | Acto 3; fuente canónica | Por planificar | Prueba moderada de comprensión | Especificado | — |
 | `JS-03` | `FR-004`–`FR-006`, `FR-002`\* · `AC-03`, `AC-04` | Contrato de principio (§17); contenido de los diez principios | Por planificar | Comparación con el núcleo; asociación escenario-principio | Especificado | — |
 | `JS-04` | `FR-005`, `FR-013`, `FR-015` · `AC-05`, `AC-06` | Ejemplos aprobados | Por planificar | Comparación accesible sin JS y con movimiento reducido | Especificado | — |
-| `JS-05` | `FR-003`, `FR-011`, `FR-012`, `FR-016`, `FR-002`\*, `FR-014`\* · `AC-03`, `AC-11` | Fuente canónica; anclas estables | Por planificar | URLs profundas; comparación automática del texto | Especificado | — |
-| `JS-06` | `FR-007`, `FR-022` | Contenido de Aplicación y Verificación | Por planificar | Identificación de una detención | Especificado | — |
+| `JS-05` | `FR-003`, `FR-011`, `FR-012`, `FR-016`, `FR-023`, `FR-002`\*, `FR-014`\* · `AC-03`, `AC-11` | Fuente canónica; anclas estables | Por planificar | URLs profundas; comparación automática del texto | Especificado | — |
+| `JS-06` | `FR-007`, `FR-022` | Divisiones Construir con IA, Verificar, Ejemplo aplicado y Gobernanza | Por planificar | Identificación de una detención | Especificado | — |
 | `JS-07` | `FR-008`–`FR-010` · `AC-09` | Dato de estado de la adaptación | Por planificar | Estado publicado frente a lo instalado | Especificado | Versión: dato real, no «1.0.0» (decisión 2026-09-27) |
 | `JS-08` | `FR-011`, `FR-017`, `FR-014`\* | URLs estables | Por planificar | Enlace compartido abre la sección correcta | Especificado | — |
 | `JS-09` | `FR-019`–`FR-021` · `AC-13`, `AC-14` | Traducciones aprobadas; revisión lingüística externa | Por planificar | Cuatro escenarios de `JS-09`; revisión lingüística | Especificado | — |
-| `FR-022` (v1.1) | `JS-06` | Contenido canónico de verificación | Por planificar | Superficie Verificación con sus seis temas | Especificado | — |
+| `FR-022` (v1.2) | `JS-06` | Contenido canónico de verificación | Por planificar | División Verificar con sus temas y enlaces | Especificado | — |
+| `FR-023` (v1.2) | `JS-05` | Índice de búsqueda generado del contenido visible | Por planificar | Búsqueda por idioma que lleva a la sección exacta | Especificado | — |
 | `FR-018` | Todas las historias · `AC-12`\* | Decisión de medición | Por planificar | Lectura íntegra sin datos personales | Especificado | — |
 | PRD §17, §18, §19, §21, §22.1, §24, §25, §27 | `AC-05`–`AC-08`, `AC-11`, `AC-13`, `AC-15`, `AC-16` | Arquitectura aprobada; dirección visual (puerta humana) | Por planificar | Auditorías de accesibilidad, rendimiento, enlaces y datos estructurados; comprobación de tipos | Especificado | — |
 | `AC-10` | Todo el alcance | Este flujo SpecKit | En curso | `analyze` y `converge` sin brechas críticas | En curso | — |
@@ -345,4 +351,4 @@ Circunstancia, motivación y resultado son textuales del PRD. **Ninguna historia
 
 | Ruta principal | lenguaje | decisiones | feedback | control | recuperación |
 |---|---|---|---|---|---|
-| Inicio recorre los siete actos: problema → consecuencias → tesis → principios → aplicación → SpecKit (`FR-001`). Desde cualquier punto se entra directo a cualquier superficie y se vuelve sin perder orientación (`FR-002`, §18.2). | Claro, directo y preciso; humano sin infantilizar; técnico solo cuando mejora la comprensión; sin grandilocuencia sobre IA (§21.6). Voz impersonal en el recorrido, con una nota de origen en primera persona. Cita canónica siempre distinguible de la explicación (`FR-017`). En español: `tú`/`ustedes`, sin voseo, `vosotros` ni localismos. | **El visitante decide**: cuánto profundizar, a qué superficie ir, qué idioma leer y, si aplica, el movimiento. **El sistema resuelve**: idioma inicial (inglés en rutas sin prefijo), sin preguntar ni redirigir; orden canónico de los principios; estado de la adaptación. No se piden decisiones que el sitio puede resolver. | Idioma activo perceptible, también para tecnologías de asistencia (§21.7); confirmación clara al copiar o compartir (§17 `P10`); orientación persistente de dónde está la persona (§21.1); estados de enlace visibles (§17 `P08`). | Navegación libre, sin scroll secuestrado ni gestos ocultos (§21.3); movimiento reducible (`FR-013`); preferencia de idioma reversible y local (`FR-020`); contenido copiable y URLs estables; sin registro ni personalización obligatoria (§17 `P10`). | URL profunda restituye la sección (`FR-014`); 404 útil y redirecciones (§24.2); función esencial sin JavaScript (`FR-015`); preferencia restablecible; los recursos secundarios que fallan no impiden leer (§24.1). |
+| Inicio recorre los siete actos: problema → consecuencias → tesis → principios → aplicación → SpecKit (`FR-001`). Desde cualquier punto se entra directo a cualquier superficie o división y se vuelve sin perder orientación (`FR-002`, §18.2); las divisiones se recorren en el orden del núcleo con anterior y siguiente (v1.2). | Claro, directo y preciso; humano sin infantilizar; técnico solo cuando mejora la comprensión; sin grandilocuencia sobre IA (§21.6). Voz impersonal en el recorrido, con una nota de origen en primera persona. Cita canónica siempre distinguible de la explicación (`FR-017`). En español: `tú`/`ustedes`, sin voseo, `vosotros` ni localismos. | **El visitante decide**: cuánto profundizar, a qué superficie ir, qué idioma leer y, si aplica, el movimiento. **El sistema resuelve**: idioma inicial (inglés en rutas sin prefijo), sin preguntar ni redirigir; orden canónico de los principios; estado de la adaptación. No se piden decisiones que el sitio puede resolver. | Idioma activo perceptible, también para tecnologías de asistencia (§21.7); confirmación clara al copiar o compartir (§17 `P10`); orientación persistente de dónde está la persona (§21.1); estados de enlace visibles (§17 `P08`). | Navegación libre, sin scroll secuestrado ni gestos ocultos (§21.3); movimiento reducible (`FR-013`); preferencia de idioma reversible y local (`FR-020`); contenido copiable y URLs estables; sin registro ni personalización obligatoria (§17 `P10`). | URL profunda restituye la sección (`FR-014`); 404 útil y redirecciones (§24.2); función esencial sin JavaScript (`FR-015`); preferencia restablecible; los recursos secundarios que fallan no impiden leer (§24.1). |

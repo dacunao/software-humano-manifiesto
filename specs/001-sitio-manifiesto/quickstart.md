@@ -14,7 +14,7 @@ Guía para comprobar de punta a punta que el sitio cumple lo especificado. No co
 |---|---|---|---|
 | Instalar | `bun install --frozen-lockfile` | Sin cambios en el archivo de bloqueo | PRD §24.5 |
 | Tipos | `bun run check` | 0 errores en modo estricto | `AC-16` |
-| Construir | `bun run build` | Construye; `RV-01`–`RV-12` pasan; se informa la proporción de texto visible por superficie | `AC-15`, `AC-03`, RQ-13 |
+| Construir | `bun run build` | Construye; `RV-01`–`RV-14` pasan; se informa la proporción de texto visible por superficie | `AC-15`, `AC-03`, RQ-13 |
 | Unitarias | `bun test` | Lector canónico, validaciones y JSON-LD en verde | `AC-03`, `AC-15` |
 | Extremo a extremo | `bunx playwright test` | Escenarios de las nueve historias y los bordes de spec.md, con y sin JavaScript, con movimiento reducido y solo teclado; axe sin violaciones AA | `AC-05`–`AC-07`, `AC-14` |
 | Rendimiento | `bunx lhci autorun` | LCP ≤ 2,5 s, INP ≤ 200 ms (medido con TBT en laboratorio), CLS ≤ 0,1 | `AC-08` |
@@ -25,9 +25,10 @@ Guía para comprobar de punta a punta que el sitio cumple lo especificado. No co
 1. Abre `/` con el navegador en portugués: **debe** verse en inglés.
 2. En `/principles/p03`, cambia a Español: llegas a `/es/principios/p03`.
 3. Recarga `/` con la preferencia en Español: llegas a `/es/`. Desactiva JavaScript y recarga: inglés.
-4. Abre `/es/aplicacion#cr03` (su casa) y `/es/manifiesto/texto-integro#cr03`: en las dos aterrizas en `CR03` (PRD v1.1).
-5. Abre `/speckit`: estado «no publicada», versión igual a la del preset instalado, sin botón ni enlace de descarga.
-6. Abre `/es/no-existe`: 404 en español con salida clara.
+4. Abre `/es/manifiesto/construir-con-ia#cr03`, su casa: aterrizas en `CR03`. Busca «CR03»: hay un solo resultado y lleva ahí. Desde el Mapa, recorre con «Siguiente» hasta la Guía de bolsillo: lees el núcleo en su orden, y termina en la Declaración final (PRD v1.2).
+5. En el pie de `/pt-br/principios/p06`, la descarga es la del núcleo en portugués, rotulada como traducción.
+6. Abre `/speckit`: estado «no publicada», versión igual a la del preset instalado, sin botón ni enlace de descarga.
+7. Abre `/es/no-existe`: 404 en español con salida clara.
 
 ## Validación humana · no la sustituye nada de lo anterior
 

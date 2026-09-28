@@ -23,16 +23,33 @@ Nombre público «Software Humano», dominio `softwarehumano.com`, autoría (`Pe
 
 ### Superficie (`Surface`)
 
-Las del PRD §18.1 v1.1: `inicio`, `manifiesto`, `principios`, `aplicacion`, `verificacion`, `speckit`, `acerca` y la página de consulta `texto-integro`.
+Las del PRD §18.1 v1.2: `inicio`, `speckit`, `acerca` y las divisiones del manifiesto (ver «División»), que comparten este esquema: `mapa`, `manifiesto`, `principios`, `fundamento`, `construir`, `verificar`, `ejemplo`, `gobernanza`, `bolsillo`.
 
 | Campo | Descripción |
 |---|---|
-| `id` | Uno de los seis; estable |
+| `id` | Uno de los de arriba; estable |
 | `slug[locale]` | Nombre de ruta localizado ([contracts/rutas.md](contracts/rutas.md)) |
 | `title[locale]`, `description[locale]` | Metadatos localizados (`FR-016`, `FR-019`) |
 | `blocks` | Referencias ordenadas a entradas editoriales o nodos canónicos |
 | `fr` | Requisitos que realiza |
 | `updatedAt` | **Derivado**: fecha del último cambio de contenido de la página según el historial de git, calculada en la construcción (`FR-012`) |
+
+### División del manifiesto (`Division`) · v1.2
+
+Una superficie que aloja secciones consecutivas del núcleo, completas y en su orden (PRD §18.1 v1.2, RQ-15).
+
+| Campo | Descripción |
+|---|---|
+| `id` | `mapa`, `manifiesto`, `principios`, `fundamento`, `construir`, `verificar`, `ejemplo`, `gobernanza` o `bolsillo` |
+| `posicion` | 0–8, el orden del núcleo; define anterior y siguiente |
+| `ruta` | Ruta del núcleo que la agrupa en el índice: Comprender, Decidir, Construir, Verificar o Llevarlo a la práctica |
+| `secciones` | **Derivado** de `casas.ts`: las secciones del núcleo cuya casa es esta división |
+
+Casa especial `descarga`: los nodos de Influencias y notas, salvo la Declaración final, no se muestran completos en el sitio (decisión de la autoridad, 2026-09-28).
+
+### Índice de búsqueda (`SearchIndex`) · derivado, v1.2
+
+Un archivo por idioma, generado en la construcción (RQ-16). Cada entrada tiene página, ancla, título, identificador si lo hay y texto. Contiene cada nodo canónico una sola vez, en su casa, y las entradas editoriales visibles de cada página. Excluye las citas `breve` y los actos de Inicio.
 
 ### Acto narrativo (`Act`)
 
@@ -123,7 +140,8 @@ Etiquetas de navegación, selector, 404 y confirmaciones. Una clave y su texto e
 | `RV-10` | Si `published` es `false`, no hay `url` ni marcado de código fuente | `FR-010`, PRD §25.2 |
 | `RV-11` | No hay enlaces internos rotos en la salida construida | PRD §24.2 |
 | `RV-12` | El JSON-LD solo describe entidades presentes en la página | PRD §25.3, `AC-15` |
-| `RV-13` | Cada nodo canónico con contenido aparece completo en su casa y en ninguna otra superficie; fuera de ella, solo en bloques `breve` de 60 palabras como máximo | PRD §18.3 v1.1, RQ-14 |
+| `RV-13` | Cada nodo canónico con contenido aparece completo en su casa y en ninguna otra página; fuera de ella, solo en bloques `breve` de 60 palabras como máximo. Sin excepciones; los nodos con casa `descarga` solo admiten `breve` | PRD §18.3 v1.2, RQ-15 |
+| `RV-14` | El índice de búsqueda de cada idioma contiene cada nodo canónico con contenido una sola vez, con la dirección de su casa, y ningún nodo con casa `descarga` | `FR-023`, PRD §18.3 v1.2, RQ-16 |
 
 **Comprobación previa a la publicación**, un comando aparte que **no** detiene la construcción de trabajo:
 

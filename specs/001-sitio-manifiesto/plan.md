@@ -8,7 +8,7 @@
 
 ## Summary
 
-Un sitio estático, público y trilingüe que publica el Manifiesto de Software Humano en siete superficies organizadas por las cuatro rutas de lectura del núcleo, una página de texto íntegro y diez páginas de principio: 54 páginas en total (PRD v1.1). Cada pasaje del núcleo tiene una sola casa, verificada por `RV-13`. El texto canónico en español se lee de su archivo fuente; todo lo demás sale de YAML validado, que detiene la construcción ante cualquier inconsistencia. El sitio funciona sin JavaScript; solo hay dos scripts, para la preferencia de idioma y para copiar o compartir. El estado de la adaptación SpecKit es un dato comparado automáticamente con lo instalado.
+Un sitio estático, público y trilingüe que publica el Manifiesto de Software Humano en cuatro superficies (Inicio, Manifiesto, SpecKit, Acerca de). El manifiesto se lee en nueve divisiones temáticas de secciones consecutivas del núcleo, completas y en su orden, más diez páginas de principio: 22 páginas por idioma, 66 en total (PRD v1.2). Cada pasaje del núcleo tiene una sola casa, sin excepciones, verificada por `RV-13`. El núcleo completo solo se descarga, en el idioma seleccionado, y una búsqueda propia lleva a cada pasaje en su casa (`RV-14`). El texto canónico en español se lee de su archivo fuente; todo lo demás sale de YAML validado, que detiene la construcción ante cualquier inconsistencia. El sitio funciona sin JavaScript; hay cuatro scripts de mejora progresiva: preferencia de idioma, copiar o compartir, seguimiento de lectura y búsqueda. El estado de la adaptación SpecKit es un dato comparado automáticamente con lo instalado.
 
 El plan cubre **todo** el alcance de la especificación. El orden de abajo responde a dependencias y riesgo, **no a prioridad**: ningún bloque es opcional ni posterior a una entrega parcial.
 
@@ -19,7 +19,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 | 1 · Base técnica | Proyecto, tipos estrictos, pruebas, rutas vacías en tres idiomas, cabeceras y redirecciones | `AC-16`, `FR-019` (estructura), PRD §24.3, §24.5 | — | — |
 | 2 · Fuente canónica | Lector del núcleo, nodos, anclas derivadas, huella fijada, comparación automática | `FR-003`, `AC-03`, `JS-05`, `RV-01` | 1 | — |
 | 3 · Modelo de contenido | Esquemas, validaciones `RV-02`–`RV-12`, estado de la adaptación, comprobación previa a la publicación | `FR-021`, `FR-009`, `FR-010`, `AC-15`, PRD §19, §27 | 1, 2 | — |
-| 4 · Superficies y navegación | Siete superficies por ruta del núcleo y el texto íntegro (v1.1, `FR-022`, §18.3), siete actos, diez principios con su contrato, navegación global, 404, selector de idioma, copiar y compartir | `FR-001`, `FR-002`, `FR-004`, `FR-005`, `FR-006`, `FR-007`, `FR-008`, `FR-011`, `FR-012`, `FR-014`, `FR-020`, `JS-01`–`JS-09`, PRD §16–§18 | 2, 3 | — |
+| 4 · Superficies y navegación | Cuatro superficies y nueve divisiones del manifiesto en el orden del núcleo, con anterior y siguiente, índice agrupado por rutas, descarga por idioma y búsqueda (v1.2, `FR-003`, `FR-022`, `FR-023`, §18.1–§18.3), siete actos, diez principios con su contrato, navegación global, 404, selector de idioma, copiar y compartir | `FR-001`, `FR-002`, `FR-004`, `FR-005`, `FR-006`, `FR-007`, `FR-008`, `FR-011`, `FR-012`, `FR-014`, `FR-020`, `JS-01`–`JS-09`, PRD §16–§18 | 2, 3 | — |
 | 5 · Contenido en borrador | Redacción de explicaciones, ejemplos, contraejemplos, pruebas y textos de superficie en español, con voz impersonal; borradores `en` y `pt-BR`; todo en `borrador` | `FR-005`–`FR-007`, `FR-017`, PRD §21.6 | 3, 4 | Aprobación de contenido |
 | 6 · Semántica y descubrimiento | Metadatos, `hreflang`, sitemap, robots, JSON-LD | `FR-016`, `FR-019`, `AC-11`, `AC-15`, PRD §25 | 3, 4 | — |
 | 7 · Calidad transversal | Sin JavaScript, movimiento reducido, WCAG 2.2 AA, presupuestos de rendimiento, enlaces, privacidad y medición | `FR-013`, `FR-015`, `FR-018`, `AC-05`, `AC-06`, `AC-07`, `AC-08`, `AC-12`, PRD §21.3–§21.5, §24 | 4 | — |
@@ -52,7 +52,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 - sin enlaces sin destino;
 - la construcción se detiene ante contenido inválido o una fuente canónica cambiada.
 
-**Scale/Scope**: 54 páginas de contenido más tres 404 (PRD v1.1). El núcleo tiene unas 10.500 palabras por idioma, con diez principios y seis entradas editoriales cada uno (declaración y fuente se leen del núcleo), en tres idiomas.
+**Scale/Scope**: 66 páginas de contenido más tres 404 (PRD v1.2). El núcleo tiene unas 10.500 palabras por idioma, con diez principios y seis entradas editoriales cada uno (declaración y fuente se leen del núcleo), en tres idiomas.
 
 ## Constitution Check
 
@@ -64,7 +64,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 | `AGENTS.md` regla 3 | Sin prioridad, MVP ni incrementalidad | Pasa: el orden es por dependencias | Pasa |
 | `D01`, `SH-STOP` | Sin ambigüedad material abierta | Pasa: la especificación no tiene marcadores; queda abierta la PRD §29.10, que no bloquea | Pasa |
 | `D03`, `CR01`, `CR07` | Solución más simple; sin modos, paneles ni abstracciones sin fundamento | Pasa: sin panel de ajustes (RQ-05), sin framework en el cliente (RQ-06), sin modos de construcción (RQ-07). El único panel agregado es de navegación («En esta sección»), con fundamento en `FR-003` y una decisión de la autoridad (RQ-06 enmendado) | Pasa |
-| `D04`, `CR06` | Reglas críticas deterministas | Pasa: sitio determinista; `RV-01`–`RV-12` detienen la construcción | Pasa |
+| `D04`, `CR06` | Reglas críticas deterministas | Pasa: sitio determinista; `RV-01`–`RV-14` detienen la construcción | Pasa |
 | `P07`, `FR-017` | Distinguir cita, explicación, ejemplo y estado | Pasa: tipos de entrada y `derivedFrom` obligatorio (`RV-06`) | Pasa |
 | `P09`, `FR-015` | Tiempo y continuidad | Pasa: HTML utilizable antes de JavaScript; URL profunda restituye la sección | Pasa |
 | `P10`, `FR-018` | Control y datos | Pasa: preferencia local y reversible; sin captura | Pasa |
@@ -81,7 +81,7 @@ Sin violaciones. **Complexity Tracking** queda vacío.
 specs/001-sitio-manifiesto/
 ├── plan.md              # Este archivo
 ├── research.md          # Fase 0: decisiones RQ-01 a RQ-13
-├── data-model.md        # Fase 1: entidades, RV-01 a RV-12, estados
+├── data-model.md        # Fase 1: entidades, RV-01 a RV-14, estados
 ├── quickstart.md        # Fase 1: guía de validación
 ├── contracts/
 │   ├── rutas.md                 # Rutas, anclas, idioma, encabezados
@@ -98,22 +98,22 @@ src/
 ├── content/                  # Fuente de contenido (FR-021)
 │   ├── sitio.yaml
 │   ├── estado-adaptacion.yaml
-│   ├── superficies/          # inicio, manifiesto, principios, aplicacion, speckit, acerca
+│   ├── superficies/          # inicio, speckit, acerca y las nueve divisiones del manifiesto (v1.2)
 │   ├── principios/           # p01.yaml … p10.yaml, un archivo por principio con sus tres idiomas
 │   ├── traducciones-canon/   # en.yaml, pt-br.yaml: una entrada por nodo canónico
 │   └── interfaz/             # cadenas de interfaz por clave, con tres idiomas
 ├── content.config.ts         # Esquemas de las colecciones
 ├── lib/
 │   ├── canon/                # Lector del núcleo, nodos, anclas, huella (RQ-01)
-│   ├── validacion/           # RV-01 a RV-12 y comprobación previa a la publicación
+│   ├── validacion/           # RV-01 a RV-14 y comprobación previa a la publicación
 │   ├── i18n/                 # Idiomas, rutas equivalentes, hreflang
 │   └── semantica/            # Generador de JSON-LD (RQ-08)
 ├── layouts/
 ├── components/
-├── integrations/             # Validación durante la construcción (RV-01 a RV-12)
+├── integrations/             # Validación durante la construcción (RV-01 a RV-14)
 ├── views/                    # Una vista por superficie, compartida por los tres idiomas
 ├── pages/                    # Rutas por idioma según contracts/rutas.md
-├── cliente/                  # Scripts del navegador: preferencia-idioma.ts, compartir.ts, seguimiento.ts (RQ-06 y su enmienda)
+├── cliente/                  # Scripts del navegador: preferencia-idioma.ts, compartir.ts, seguimiento.ts, busqueda.ts (RQ-06, RQ-16)
 └── styles/                   # Tokens propios y tema de daisyUI
 
 scripts/                      # Scripts de construcción: check-publish.ts
@@ -173,13 +173,16 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 | RQ-05 · Ajustes: panel propio / solo selector de idioma | El panel agrega un concepto sin resolver nada | La dirección visual no tendrá movimiento no esencial | **Solo selector**; se reabre si hay movimiento no esencial · confirmada por Damián Acuña | 2026-09-27 | Dirección visual elegida |
 | RQ-03 · Nombres de ruta: localizados / en inglés para todos | Localizados exigen revisión lingüística de las rutas; en inglés mezclan idiomas | — | **Localizados**, con `pNN` estable | 2026-09-27 | Revisión lingüística de las rutas |
 | RQ-02 · Traducción del núcleo: nodo a nodo en YAML / Markdown completo | Nodo a nodo exige más estructura, pero hace verificables la paridad y la obsolescencia | — | **Nodo a nodo** | 2026-09-27 | — |
-| RQ-06 · Interactividad: sin framework / con framework | Sin framework limita la interactividad; ninguna historia necesita más | — | **Sin framework**; dos scripts, hoy tres (RQ-06 enmendado) | 2026-09-27 | — |
+| RQ-06 · Interactividad: sin framework / con framework | Sin framework limita la interactividad; ninguna historia necesita más | — | **Sin framework**; dos scripts, hoy cuatro (RQ-06 enmendado, RQ-16) | 2026-09-27 | — |
 | RQ-07 · Publicación: comando previo aparte / modos de construcción | El comando aparte no agrega configuración | — | **Comando previo aparte** | 2026-09-27 | — |
 | Pruebas con personas: una ronda temprana en español con borradores y la ronda final / solo la final | La temprana cuesta sesiones extra; solo la final arriesga retraducir y rediseñar | Las Job Stories no tienen evidencia observada (spec.md) | **Ronda temprana y ronda final** (`F07`) · decidida por Damián Acuña | 2026-09-27 | Notas de la ronda temprana |
 | Dirección visual: A / B / síntesis A + B / decidir después de la ronda | La síntesis conserva la jerarquía de A y la navegación de B sobre la estructura de C; elegir antes de la ronda adelanta ese paso | La ronda temprana se hace con la dirección ya aplicada | **Síntesis A + B**, sin animaciones de aparición ni filtros; solo fuentes del sistema · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
 | Titular de portada: frase canónica / copy A / copy C | El copy C sigue el orden del PRD §16 (oportunidad antes que costo); no tiene autoridad canónica | — | **Copy C, a prueba** como primera alternativa · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
-| Arquitectura por rutas del núcleo (PRD v1.1): superficies por ruta con una casa por pasaje / manifiesto íntegro como superficie principal | Menos repetición y rutas por necesidad; exige reorganizar contenido | — | **Rutas y una casa por pasaje; texto íntegro como consulta con descarga; fundamento en Principios; nombres conocidos con la ruta como subtítulo** · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
+| Arquitectura por rutas del núcleo (PRD v1.1): superficies por ruta con una casa por pasaje / manifiesto íntegro como superficie principal | Menos repetición y rutas por necesidad; exige reorganizar contenido | — | **Rutas y una casa por pasaje; texto íntegro como consulta con descarga; fundamento en Principios; nombres conocidos con la ruta como subtítulo** · decidida por Damián Acuña | 2026-09-27 · reemplazada por la v1.2 | Ronda temprana |
 | Navegación del texto íntegro: una página con panel que sigue la lectura / una página por sección / paneles estáticos h2+h3 | El panel exige un tercer script, prescindible; las otras opciones cambian `FR-003` o duplican el índice | — | **Una página, índice h1/h2 a la izquierda y h3/h4 de la sección actual a la derecha** (RQ-06 enmendado) · decidida por Damián Acuña; ampliada a Principios, Aplicación y Verificación el 2026-09-28 | 2026-09-27 | Ronda temprana |
+| División del núcleo (PRD v1.2): una página por sección / divisiones de secciones consecutivas / cuatro rutas / por audiencia | Las secciones consecutivas respetan la estructura del núcleo, agrupan por tema y no duplican; reemplazan las páginas Aplicación, Verificación y texto íntegro | — | **Divisiones de secciones consecutivas (alternativa B)**; Influencias destilada en Acerca de; Declaración final al cierre de la Guía de bolsillo; núcleo completo solo como descarga · decidida por Damián Acuña (reemplaza las dos filas anteriores) | 2026-09-28 | Ronda temprana |
+| Búsqueda (RQ-16): índice propio / Pagefind / servicio externo | El índice propio garantiza un resultado por pasaje y no exige WebAssembly; Pagefind trae raíces léxicas | ~30 KB comprimidos por idioma bastan para 66 páginas | **Índice propio**, cargado al abrir la búsqueda; la búsqueda la decidió Damián Acuña | 2026-09-28 | Ronda temprana |
+| Rutas de las divisiones (RQ-15): principios en `/principles` / bajo `/manifesto/principles` | Direcciones cortas para compartir frente a jerarquía uniforme | Nada está publicado | **`/principles` se conserva**; las demás divisiones bajo `/manifesto/…` | 2026-09-28 | Revisión lingüística de rutas |
 | RQ-10 · Estilos: tokens provisionales ahora / esperar la dirección visual | Esperar bloquea bloques que no dependen de ella | La dirección se aplica sobre tokens sin rehacer la estructura | **Tokens provisionales, declarados como tales** | 2026-09-27 | Elección de dirección visual |
 
 **Pendientes que requieren juicio humano** (`O09`):

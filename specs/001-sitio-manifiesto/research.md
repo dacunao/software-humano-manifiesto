@@ -44,7 +44,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 - **Decision**: **sin framework de interfaz en el cliente.** Solo dos scripts, escritos en TypeScript y compilados: preferencia de idioma (RQ-04) y copiar o compartir con confirmación (`FR-011`, PRD §17 `P10`). La profundidad progresiva usa `<details>`/`<summary>` nativos y la comparación de `JS-04` es contenido estático accesible.
 - **Rationale**: `FR-015`, PRD §24.1 («el JavaScript debe justificarse por interacción necesaria»), §24.6 (islas solo cuando se requieran), `P09`.
 - **Alternatives considered**: componentes interactivos con un framework (peso y fragilidad sin una historia que lo pida); comparación interactiva con estado (mejora posible, pero `JS-04` se cumple sin ella y exigiría alternativa textual de todos modos).
-- **Enmienda**: hoy son tres scripts. El tercero, el seguimiento de lectura, se describe en «RQ-06 enmendado».
+- **Enmienda**: hoy son cuatro scripts. El tercero, el seguimiento de lectura, se describe en «RQ-06 enmendado»; el cuarto, la búsqueda, en RQ-16 (v1.2).
 
 ## RQ-07 · Modelo y validación del contenido
 
@@ -115,6 +115,8 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
 
 ## RQ-14 · Una sola casa por pasaje (PRD v1.1, §18.3)
 
+> **Reemplazada en parte por RQ-15 (v1.2)**: la asignación por superficies y la página de texto íntegro dejan de regir; la regla `RV-13` se conserva, sin excepciones.
+
 - **Decision**:
   - un módulo `src/lib/casas.ts` asigna a cada nodo canónico su casa: Manifiesto, Principios, una página de principio, Aplicación, Verificación, SpecKit, Acerca de o solo el texto íntegro. La asignación sigue la tabla de la propuesta aprobada y divide por subsección dos secciones mixtas: Propósito del documento y Gobernanza;
   - una regla nueva, `RV-13`, detiene la construcción si un nodo con contenido (no encabezado) falta en su casa, o si aparece completo en otra superficie;
@@ -130,3 +132,34 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
 - **Ampliación (2026-09-28)**: el mismo esquema se aplica a Principios, Aplicación y Verificación, las superficies largas de las rutas Decidir, Construir y Verificar. El panel derecho sale de un componente reutilizable (`src/components/EnEstaSeccion.astro`) y muestra los h3 y h4 canónicos de la sección en pantalla; el índice izquierdo es el índice lateral de cada superficie. Es el mismo script, no uno nuevo.
 - **Rationale**: decisiones de Damián Acuña (2026-09-27 para el texto íntegro; 2026-09-28 para las otras tres superficies). El núcleo tiene 24 h2, 23 h3 (casi siempre un subtítulo único) y 80 h4, que son la navegación fina. Con los h3 y h4 de la sección actual, el panel derecho no repite el izquierdo (`P06`) y el texto sigue siendo una sola página (`FR-003` v1.1: lectura de corrido, búsqueda y una sola dirección).
 - **Alternatives considered**: una página por sección (sin JavaScript, pero cambia `FR-003` y suma 72 páginas); paneles estáticos con h2 y h3 (la derecha duplicaría la izquierda y omitiría los h4).
+- **Enmienda v1.2 (2026-09-28)**: desaparece la página de texto íntegro. El panel «En esta sección» y el script de seguimiento siguen en las divisiones largas del manifiesto (RQ-15).
+
+## RQ-15 · El núcleo por divisiones (PRD v1.2, §18.1–§18.3)
+
+Reemplaza la asignación de casas de RQ-14; la regla de una sola casa se conserva y se endurece.
+
+- **Decision**:
+  - `src/lib/casas.ts` asigna cada **sección** del núcleo, entera, a una división. Ninguna sección se parte. Desaparecen las asignaciones por subsección de Propósito y Gobernanza;
+  - divisiones y orden: 0 Mapa del manifiesto (portada del núcleo y `SH-INDEX`, porque la portada precede al índice en el núcleo), 1 El manifiesto (Propósito y Texto canónico), 2 Principios (Principios de diseño; `P01`–`P10` en su página propia, como hoy), 3 Fundamento de producto, 4 Construir con IA (Doctrina, Flujo, Contrato), 5 Verificar (Verificación, Antipatrones), 6 Ejemplo aplicado, 7 Gobernanza, 8 Guía de bolsillo;
+  - **Influencias y notas**: sus nodos tienen casa `descarga`, así que no se muestran completos en el sitio. Acerca de los presenta como explicación editorial derivada de ellos, más una cita `breve` textual de la aclaración sobre Craft, con enlace a la descarga. La **Declaración final** (su encabezado y su párrafo) tiene casa en la división 8 y se muestra después de la Guía de bolsillo (decisión de la autoridad);
+  - `RV-13` sin excepciones: cada nodo con contenido aparece completo en su casa y en ninguna otra página; fuera de ella, solo en citas `breve`. Los nodos con casa `descarga` solo admiten `breve`;
+  - **Anterior / Siguiente** en el orden del núcleo: 0 → 1 → 2 → `P01` … `P10` → 3 → 4 → 5 → 6 → 7 → 8. Recorrerlo reproduce el núcleo;
+  - **índice lateral del manifiesto**: las divisiones en ese orden, agrupadas bajo Comprender (0, 1), Decidir (2, con los diez principios, y 3), Construir (4), Verificar (5) y Llevarlo a la práctica (6–8);
+  - **rutas**: los principios conservan `/principles` y `/principles/pNN`, direcciones cortas para compartir (`JS-08`) y ya probadas; las demás divisiones viven bajo `/manifesto/…` ([contracts/rutas.md](contracts/rutas.md)). La división 1 ocupa `/manifesto`. Salen `/practice`, `/verification` y `/manifesto/full-text` con sus equivalentes; como nada se publicó, no hacen falta redirecciones;
+  - **descarga**: el pie de cada página y el Mapa ofrecen solo la del idioma seleccionado. Los archivos no cambian (RQ-06 enmendado, T123);
+  - las entradas editoriales en borrador de las páginas que desaparecen (Aplicación, Verificación, texto íntegro) se reparten entre las divisiones que heredan sus temas.
+- **Rationale**: PRD §18.1–§18.3 v1.2 y la propuesta aprobada: `P03`, `P05`, `P06`. Asignar secciones enteras hace verificable, con `RV-13`, que la división no rompe la estructura del núcleo (`D04`).
+- **Alternatives considered**: los principios bajo `/manifesto/principles` (jerarquía más uniforme, pero direcciones más largas para compartir y cambio de rutas ya probadas); la portada en la división 1 (rompería el orden, porque el índice operativo va antes que el Propósito).
+
+## RQ-16 · Búsqueda (PRD v1.2, `FR-023`)
+
+- **Decision**: un **índice propio generado en la construcción** a partir del modelo de contenido, un archivo JSON por idioma. Tiene una entrada por nodo canónico **en su casa**, con la dirección y el ancla, más las entradas editoriales de cada página. Las citas `breve` y los actos de Inicio quedan fuera por construcción.
+  - Un cuarto script de cliente (`src/cliente/busqueda.ts`) abre un `<dialog>` nativo desde un botón de la cabecera y descarga el índice la primera vez que se abre.
+  - Normaliza mayúsculas y tildes, exige todos los términos y ordena así: coincidencia en el título, luego en el identificador, luego en el texto.
+  - Agrupa los resultados por página, con un extracto y el término resaltado.
+  - Sin JavaScript, el botón no aparece y el sitio sigue completo.
+  - Una regla nueva, `RV-14`, detiene la construcción si un nodo canónico aparece más de una vez en el índice o apunta fuera de su casa.
+- **Rationale**: `FR-023`, `FR-018` (sin terceros y sin registrar búsquedas), §24.1 (se carga solo al abrirse), `FR-015`. No agrega dependencias ni obliga a relajar la política de seguridad de contenido. La unicidad de resultados se garantiza por construcción y se comprueba (`D04`). Estimación: unas 15.000 palabras por idioma, unos 30 KB comprimidos, que solo se descargan al abrir la búsqueda.
+- **Alternatives considered**:
+  - Pagefind: maduro, con raíces léxicas por idioma, pero necesita WebAssembly (`'wasm-unsafe-eval'` en `script-src`). Además indexa el HTML renderizado, así que la unicidad dependería de marcar a mano lo que debe ignorar;
+  - un servicio de búsqueda de terceros: incumple `FR-018`.
