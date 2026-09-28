@@ -127,8 +127,8 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.1.md` (SHA-256 `bf964e196d08994bfff658e7816252cd80b677aaa776fcaeee09d5b33552930d`)
-- **Versión**: 1.1, fecha 2026-09-27, vigente. Reorganiza la arquitectura de información según las cuatro rutas de lectura del núcleo (ver «Cambios de la versión 1.1» en el propio PRD). La v1.0 (`…_v1.0.md`, SHA-256 `e3ca0ac8…`) se conserva sin cambios como registro histórico y **no gobierna**.
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.2.md` (SHA-256 `a353a2148dc932543fe10247ace5692a4eba126befe4eda3dbdc80aa945cb98c`)
+- **Versión**: 1.2, fecha 2026-09-28, vigente. Divide el núcleo en divisiones temáticas de secciones consecutivas, en su orden y sin duplicados; ofrece el núcleo completo solo como descarga; agrega la búsqueda (ver «Cambios de la versión 1.2» en el propio PRD). La v1.1 (`…_v1.1.md`, SHA-256 `bf964e19…`) y la v1.0 (`…_v1.0.md`, SHA-256 `e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
 - **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
@@ -140,7 +140,7 @@ Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o e
 Sin renumerar ni reagrupar:
 
 - `JS-01`–`JS-09` — Job Stories, con su circunstancia, motivación, resultado y evidencia de cumplimiento
-- `FR-001`–`FR-022` — requisitos funcionales (`FR-022` se agregó en la v1.1)
+- `FR-001`–`FR-023` — requisitos funcionales (`FR-022` se agregó en la v1.1; `FR-023`, en la v1.2)
 - `AC-01`–`AC-16` — criterios de aceptación del producto
 - `P01`–`P10` — principios del núcleo, que aquí son además **contenido publicado** del sitio
 
@@ -208,7 +208,9 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 | 8 · Analítica | Ver «Decisiones técnicas aprobadas» |
 | 9 · Aprobación lingüística | Ver «Contrato lingüístico» |
 
-**Nombres del menú** (decisión de la autoridad de producto, 2026-09-27): las superficies se nombran con sustantivos conocidos (Manifiesto, Principios, Aplicación, Verificación…) y la ruta de lectura del núcleo aparece como subtítulo, no como nombre (`P05`).
+**Nombres del menú** (decisión de la autoridad de producto, 2026-09-27; ajustada por la v1.2): las superficies y divisiones se nombran con sustantivos conocidos y la ruta de lectura del núcleo aparece como guía, no como nombre (`P05`). Desde la v1.2, el menú principal es Inicio, Manifiesto, SpecKit y Acerca de, y las rutas agrupan el índice del manifiesto.
+
+**División del núcleo** (decisiones de la autoridad de producto, 2026-09-28): alternativa B de `docs/design/propuesta-nucleo-por-divisiones-2026-09-28.md`, divisiones temáticas de secciones consecutivas, completas y en su orden; sin contenido duplicado; el núcleo completo solo como descarga en el idioma seleccionado; Influencias y notas destilada en Acerca de, con la aclaración sobre Craft citada textual; la Declaración final cierra la Guía de bolsillo; búsqueda incluida.
 
 **Versiones del método que el PRD menciona** (decisión de la autoridad de producto, 2026-09-27): las versiones del método en PRD §2.1, §23.2 y `FR-009` —anexo 1.2, preset 1.0.0— describen su estado al 2026-09-21. El sitio publica la versión **realmente instalada y verificada**, modelada como dato, igual que el resto del estado de la adaptación. El PRD no se enmienda.
 
