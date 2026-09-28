@@ -227,3 +227,28 @@ sections:
     depth:
       - kind: canon
         nodos: [verificacion-09, verificacion-10]
+
+  # Acto 6 · PRD §16.
+  - id: acto-6
+    title:
+      es: { state: borrador, text: De la doctrina al desarrollo }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-6-practica
+          type: explanation
+          derivedFrom: sh-fund
+          text:
+            es:
+              state: borrador
+              text: |-
+                Los principios se vuelven práctica en un método: un fundamento de producto con autoridad, las Job Stories como forma de referencia, un flujo de ocho pasos, artefactos que existen solo si responden una pregunta, un contrato para agentes de código, razones explícitas para detenerse y una definición de terminado que no se conforma con código correcto.
+
+                [Ver cómo se aplica](/es/aplicacion).
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [guia-de-bolsillo-18]

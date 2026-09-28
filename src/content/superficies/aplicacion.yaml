@@ -22,4 +22,159 @@ description:
     text: "Como o manifesto se torna prática: fundamento, fluxo, artefatos, contrato do agente, paradas e definição de pronto."
 fr:
   - FR-007
-sections: []
+sections:
+  - id: fundamento
+    title:
+      es: { state: borrador, text: Fundamento de producto }
+      en: &pend { state: pendiente }
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-fundamento
+          type: explanation
+          derivedFrom: sh-fund
+          text:
+            es:
+              state: borrador
+              text: >-
+                Todo empieza por saber qué debe construirse y con qué autoridad. El fundamento de producto es el contenido autorizado que dice qué construir, por qué, qué resultados debe producir, qué condiciones respetar y cómo se sabrá que se cumplió. No es un documento nuevo: puede estar en un PRD, en historias, en reglas o en criterios de aceptación.
+            en: *pend
+            pt-BR: *pend
+      - kind: canon
+        nodos: [fundamento-de-producto-y-forma-de-referencia-03]
+    depth:
+      - kind: canon
+        nodos: [fundamento-de-producto-y-forma-de-referencia-05, fundamento-de-producto-y-forma-de-referencia-06, fundamento-de-producto-y-forma-de-referencia-09, fundamento-de-producto-y-forma-de-referencia-10, fundamento-de-producto-y-forma-de-referencia-11]
+  - id: job-stories
+    title:
+      es: { state: borrador, text: Job Stories como forma de referencia }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-job-stories
+          type: explanation
+          derivedFrom: fundamento-de-producto-y-forma-de-referencia-13
+          text:
+            es:
+              state: borrador
+              text: >-
+                Las Job Stories describen el progreso: cuándo surge una necesidad, qué la motiva y qué resultado se busca, sin anticipar la solución. Son la forma de referencia del manifiesto, no una obligación. Un fundamento puede llegar como épicas, requisitos o recorridos, y el método tiene que respetar esa forma en lugar de convertirla.
+            en: *pend
+            pt-BR: *pend
+      - kind: canon
+        nodos: [fundamento-de-producto-y-forma-de-referencia-21]
+    depth:
+      - kind: canon
+        nodos: [fundamento-de-producto-y-forma-de-referencia-22, fundamento-de-producto-y-forma-de-referencia-23, fundamento-de-producto-y-forma-de-referencia-24, fundamento-de-producto-y-forma-de-referencia-27, fundamento-de-producto-y-forma-de-referencia-31]
+  - id: flujo
+    title:
+      es: { state: borrador, text: Un flujo del fundamento a la verificación }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-flujo
+          type: explanation
+          derivedFrom: flujo-de-trabajo-03
+          text:
+            es:
+              state: borrador
+              text: >-
+                El flujo evita que generar código sea el primer acto de diseño. Ocho pasos llevan del fundamento a una solución verificable: comprender, establecer cobertura, planificar, concretar el progreso, definir la experiencia, modelar reglas y riesgos, explorar, y construir verificando. Descomponer el trabajo no autoriza a omitir parte del alcance.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [flujo-de-trabajo-03, flujo-de-trabajo-04]
+  - id: artefactos
+    title:
+      es: { state: borrador, text: Artefactos que responden preguntas }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-artefactos
+          type: explanation
+          derivedFrom: flujo-de-trabajo-06
+          text:
+            es:
+              state: borrador
+              text: >-
+                Cada artefacto existe para responder una pregunta, no para llenar una plantilla. Si la información ya existe, se referencia. Si un artefacto no cambia una decisión ni ayuda a verificarla, sobra.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [flujo-de-trabajo-06, flujo-de-trabajo-07]
+  - id: contrato
+    title:
+      es: { state: borrador, text: El contrato del agente }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-contrato
+          type: explanation
+          derivedFrom: contrato-reutilizable-03
+          text:
+            es:
+              state: borrador
+              text: >-
+                Ocho instrucciones que pueden incorporarse a un repositorio o al pedido que recibe un agente de código: construir lo más simple que cumpla, comprender antes de programar, dar cuenta de todo el alcance, proponer con alternativas, no exponer estructuras internas, usar la IA con límites, no agregar lo que nadie pidió y reconciliar antes de declarar terminado.
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [contrato-reutilizable-03, cr01, cr02, cr03, cr04, cr05, cr06, cr07, cr08]
+  - id: detenciones
+    title:
+      es: { state: borrador, text: Cuándo detenerse }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-detenciones
+          type: explanation
+          derivedFrom: sh-stop
+          text:
+            es:
+              state: borrador
+              text: >-
+                Un agente no debería empezar a construir si no puede decir cuál es el fundamento, qué alcance establece, qué evidencia lo respalda y qué tiene que decidir la persona. Y hay siete razones que detienen una implementación que ya está en marcha.
+            en: *pend
+            pt-BR: *pend
+      - kind: canon
+        nodos: [guia-de-bolsillo-18]
+    depth:
+      - kind: canon
+        nodos: [flujo-de-trabajo-09, flujo-de-trabajo-10, flujo-de-trabajo-11]
+  - id: terminado
+    title:
+      es: { state: borrador, text: Qué significa terminado }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: aplicacion-terminado
+          type: explanation
+          derivedFrom: sh-done
+          text:
+            es:
+              state: borrador
+              text: >-
+                Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
+            en: *pend
+            pt-BR: *pend
+      - kind: canon
+        nodos: [gobernanza-16]
+    depth:
+      - kind: canon
+        nodos: [gobernanza-17]

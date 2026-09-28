@@ -199,9 +199,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-06`.
 
-- [ ] T068 [P] [US6] Escribir `tests/e2e/js06-aplicacion.spec.ts` con los escenarios 1 y 2 de `JS-06`
-- [ ] T069 [US6] Redactar `src/content/superficies/aplicacion.yaml` (`es`, borrador) con fundamento, Job Stories como forma de referencia, flujo (`F01`–`F08`), artefactos (`A01`–`A08`), contrato (`CR01`–`CR08`), detenciones (`SH-STOP`) y terminado (`SH-DONE`). Con `derivedFrom` a sus anclas; técnico solo cuando mejore la comprensión (PRD §21.6)
-- [ ] T070 [US6] Implementar `src/views/Aplicacion.astro` y mostrar el acto 6 en `src/views/Inicio.astro`
+- [X] T068 [P] [US6] Escribir `tests/e2e/js06-aplicacion.spec.ts` con los escenarios 1 y 2 de `JS-06`
+- [X] T069 [US6] Redactar `src/content/superficies/aplicacion.yaml` (`es`, borrador) con fundamento, Job Stories como forma de referencia, flujo (`F01`–`F08`), artefactos (`A01`–`A08`), contrato (`CR01`–`CR08`), detenciones (`SH-STOP`) y terminado (`SH-DONE`). Con `derivedFrom` a sus anclas; técnico solo cuando mejore la comprensión (PRD §21.6)
+- [X] T070 [US6] Implementar `src/views/Aplicacion.astro` y mostrar el acto 6 en `src/views/Inicio.astro`
 
 ---
 
