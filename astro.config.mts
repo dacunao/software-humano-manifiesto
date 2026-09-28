@@ -16,5 +16,6 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false, redirectToDefaultLocale: false },
   },
   integrations: [validacion()],
-  vite: { plugins: [tailwindcss()] },
+  // Scripts siempre externos: la CSP (public/_headers) solo admite script-src 'self'.
+  vite: { plugins: [tailwindcss()], build: { assetsInlineLimit: 0 } },
 });
