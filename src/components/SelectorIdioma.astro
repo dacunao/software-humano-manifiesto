@@ -4,13 +4,18 @@ import { IDIOMAS, ORDEN_IDIOMAS } from '../lib/i18n/idiomas';
 import { ruta, type Pagina } from '../lib/i18n/rutas';
 import { t } from '../lib/sitio';
 
+/**
+ * Selector nativo (PRD §21.7): nombres reconocibles, sin banderas, idioma activo perceptible
+ * también para tecnologías de asistencia. Los enlaces van a la página equivalente; el ancla se
+ * conserva al cambiar si la página la tiene (JS-09). Funciona sin JavaScript.
+ */
 interface Props {
   locale: Locale;
   pagina: Pagina;
 }
 const { locale, pagina } = Astro.props;
 ---
-<div class="selector-idioma" data-selector-idioma>
+<div class="selector-idioma" data-selector-idioma data-restablecido={t('idioma.restablecido', locale)}>
   <p id="rotulo-idioma" class="rotulo">{t('idioma.rotulo', locale)}</p>
   <ul aria-labelledby="rotulo-idioma">
     {ORDEN_IDIOMAS.map((l) => (
@@ -25,4 +30,15 @@ const { locale, pagina } = Astro.props;
       </li>
     ))}
   </ul>
+  <button type="button" data-olvidar hidden>{t('idioma.restablecer', locale)}</button>
+  <span class="estado-idioma" role="status" aria-live="polite" data-estado-idioma></span>
 </div>
+<script>
+  import '../cliente/preferencia-idioma';
+  // Conservar el ancla al cambiar de idioma (contracts/rutas.md): se agrega al hacer clic.
+  document.querySelectorAll<HTMLAnchorElement>('[data-selector-idioma] a[data-idioma]').forEach((a) => {
+    a.addEventListener('click', () => {
+      if (location.hash) a.href = a.href.split('#')[0] + location.hash;
+    });
+  });
+</script>

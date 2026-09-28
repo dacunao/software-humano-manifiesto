@@ -3,1024 +3,1727 @@ locale: pt-BR
 entries:
   portada-01:
     sourceHash: 75534657fadc9900da2952283f39c802be7a56af7648bf867ed225b608748217
-    state: pendiente
+    state: borrador
+    text: "**NÚCLEO DO MARCO DE PRODUTO E DESENVOLVIMENTO**"
   portada-02:
     sourceHash: ba8409b185935e25ccb30a21a7858cbb5ab92c22a49b3e8880503d3b6313b7b5
-    state: pendiente
+    state: borrador
+    text: "# Núcleo do manifesto para o desenvolvimento de software humano com inteligência artificial"
   portada-03:
     sourceHash: cda091763e23e6c02db5031d0e4b5c450d1681a14fb547ed78f30cbcfca5c81a
-    state: pendiente
+    state: borrador
+    text: Princípios, fundamento de produto, Job Stories e testes de decisão para construir produtos centrados no progresso situado das pessoas
   portada-04:
     sourceHash: b075f765a5ae0b79d4f521c6cdab9521d4e3efacc6238f2e44b6d2d118dc5be9
-    state: pendiente
+    state: borrador
+    text: Construímos ferramentas para ampliar as capacidades das pessoas, não para exibir as capacidades do software.
   portada-05:
     sourceHash: 3da70c00838eaf7080d2920605423f1930d34e49bbb70f8e90a2503178c87b2e
-    state: pendiente
+    state: borrador
+    text: "**Versão 2.1**"
   portada-06:
     sourceHash: 2df77cd2195a5db8c2e4d46a12ea6f14870579e9e452a2c22f5a0182726113b4
-    state: pendiente
+    state: borrador
+    text: Setembro de 2026
   sh-index:
     sourceHash: ba109314dbdc3ddf35668d25498f88d4608ae77ffe14ee0f26f515ae348b5ae9
-    state: pendiente
+    state: borrador
+    text: "## ÍNDICE OPERACIONAL PARA AGENTES · `SH-INDEX`"
   indice-operativo-para-agentes-02:
     sourceHash: 05b5a020d6b10f738d5d1914557cd9a77a4369d0715de427b4173d4b34f47113
-    state: pendiente
+    state: borrador
+    text: Esta camada de navegação permite que pessoas, agentes e adaptadores citem as obrigações do núcleo de forma estável. Os identificadores não acrescentam doutrina, prioridade, etapas, artefatos nem critérios; apenas apontam para conteúdo já aprovado. Uma referência por identificador nunca substitui a leitura do trecho citado nem modifica a autoridade do texto.
   indice-operativo-para-agentes-03:
     sourceHash: 621ba255f3ab2920f767f1c87bc0448125934fc43685be2c278a64e0caab1c1d
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Família** | **Identificadores** | **Conteúdo** |
+      |---|---|---|
+      | Navegação | `SH-INDEX` | Índice operacional e regra de uso dos identificadores |
+      | Princípios | `P01`–`P10` | Dez compromissos que governam as decisões |
+      | Fundamento | `SH-FUND` | Definição de produto, autoridade, escopo e Job Stories de referência |
+      | Diretivas para IA | `D01`–`D06` | Doutrina para equipes e agentes |
+      | Fluxo | `F01`–`F08` | Oito passos do fundamento até a verificação |
+      | Artefatos | `A01`–`A08` | Oito respostas documentais ajustadas ao contexto |
+      | Parada | `SH-STOP`, `STOP01`–`STOP07` | Condições que impedem avançar ou aceitar |
+      | Contrato do agente | `CR01`–`CR08` | Instruções reutilizáveis para desenvolver |
+      | Entrega do agente | `O01`–`O09` | Conteúdo esperado dos resultados em linguagem natural |
+      | Verificação | `V01`–`V12` | Dimensões de evidência para aceitar uma solução |
+      | Controles transversais | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decisão, antipadrões, governança, pronto e guia breve |
   indice-operativo-para-agentes-04:
     sourceHash: 44d6e04f4c3f81e1c7401297481cbd42c56f054c1edccdaae582ac169bcd4b6f
-    state: pendiente
+    state: borrador
+    text: Os adaptadores podem indicar quais identificadores exigem atenção em uma operação concreta. Essa seleção orienta a carga e não autoriza ignorar outra disposição do núcleo que seja aplicável pelo contexto, pelo risco ou por uma contradição.
   proposito-del-documento-01:
     sourceHash: 6bab92148942920f1847d4e2365dac28d0a6fea03349ba27611613e103392796
-    state: pendiente
+    state: borrador
+    text: "## PROPÓSITO DO DOCUMENTO"
   proposito-del-documento-02:
     sourceHash: 98d1a37a5b203af175c6267cc8646808a71e0fcad41d76c1c988142389f4f435
-    state: pendiente
+    state: borrador
+    text: "### O problema que este manifesto busca resolver"
   proposito-del-documento-03:
     sourceHash: c4614147aa90889d4c77982c0278c0facb598be13c83c4aad152b2e8b5f7860d
-    state: pendiente
+    state: borrador
+    text: Como construímos software que amplie a capacidade das pessoas de conseguir o que buscam, sem transferir a elas a complexidade da tecnologia?
   proposito-del-documento-04:
     sourceHash: b8cb5d718ce987d21badbe63495690b4fc2b2094ae65831a27a77b83d7e70f8d
-    state: pendiente
+    state: borrador
+    text: "O software ganha capacidade rapidamente. A inteligência artificial acelera ainda mais esse processo: hoje é barato gerar telas, opções, automações e camadas de abstração. Essa abundância não garante um produto melhor. Também permite transformar uma decisão fraca em muito código correto e uma ideia desnecessária em uma funcionalidade pronta."
   proposito-del-documento-05:
     sourceHash: aec9b16cfdc70cb361b965286200abcf61507ee7b2921f319c87a4833e9c18b6
-    state: pendiente
+    state: borrador
+    text: Este manifesto estabelece uma doutrina para decidir o que merece ser construído, como deve ser a sensação de usá-lo e que evidência deve existir antes de aceitar uma implementação. Sua unidade de medida não é a quantidade de funcionalidades entregues. É o progresso que uma pessoa pode alcançar com clareza, confiança e controle.
   proposito-del-documento-06:
     sourceHash: 90484fc6184b9235a873e76a90edb33b8acfa5c698443b4f295386665bd73c10
-    state: pendiente
+    state: borrador
+    text: A versão 2.1 conserva a concretude alcançada por meio de Jobs to Be Done e Job Stories e amplia a capacidade do marco de trabalhar com definições de produto de extensão e profundidade diferentes. Uma Job Story continua oferecendo uma forma especialmente útil de descrever a circunstância que ativa uma necessidade, a motivação que impulsiona a agir e o resultado buscado. No entanto, o fundamento de um desenvolvimento também pode estar expresso por meio de épicos, capacidades, requisitos, regras, jornadas, critérios ou outras estruturas coerentes. A forma da entrada não deve obrigar a deformar a intenção do produto.
   proposito-del-documento-07:
     sourceHash: aeab38e8b33bdf9d5a7fd873d96215cf6199019cc242bedd715ad22d07f38a44
-    state: pendiente
+    state: borrador
+    text: "#### A conclusão central"
   proposito-del-documento-08:
     sourceHash: 447a1bffb732d740b177c91621d15040209dbd0055710ddce5b4e74001add276
-    state: pendiente
+    state: borrador
+    text: A função estabelece o que o software permite fazer. A experiência determina quanto dessa capacidade uma pessoa pode realmente aproveitar.
   proposito-del-documento-09:
     sourceHash: 27ac52e2d651c68cbb541c17c268b3a140c190950cd5f49509919a9fc3342004
-    state: pendiente
+    state: borrador
+    text: A experiência não é uma camada estética que se acrescenta depois de resolver a funcionalidade. Ela faz parte dela. Se uma solução produz o resultado correto, mas exige que o usuário decifre a interface, lembre regras desnecessárias ou tema errar, a solução continua incompleta.
   proposito-del-documento-10:
     sourceHash: 4435ded4c50c7b6fe4a8b32bdaf3da8ac11a77a6dde5ad5559c4560fb9bdd415
-    state: pendiente
+    state: borrador
+    text: "#### Alcance e leitores"
   proposito-del-documento-11:
     sourceHash: 92191be9b407dc6dc1114f8fbffe6906852e56fdb5df9e71cff7405ddd07f215
-    state: pendiente
+    state: borrador
+    text: "O marco serve para produtos em que a experiência de uso influencia diretamente o resultado: aplicações web e móveis, ferramentas internas, sistemas de aprendizagem, serviços digitais, produtos com agentes e soluções assistidas por IA. Destina-se a product managers, designers, desenvolvedores e agentes de código que participam de decisões de produto."
   proposito-del-documento-12:
     sourceHash: 89f624aacb21a1c574f506cdfabf79cad4a2a536dba0f5f02b1eb7c4fa94b552
-    state: pendiente
+    state: borrador
+    text: Não prescreve um estilo visual, uma tecnologia, uma estrutura de PRD, uma estratégia de entrega nem um framework de engenharia. Também não elimina a complexidade real do domínio. Define como impedir que a estrutura interna do sistema se transforme, por comodidade da equipe, em trabalho adicional para a pessoa que o usa.
   proposito-del-documento-13:
     sourceHash: 63661449d40a338ea773823815cab21effc6e6c1ac65c4cff5f29796297ddec5
-    state: pendiente
+    state: borrador
+    text: Este documento contém o núcleo do manifesto. Sua tradução para métodos de desenvolvimento baseados em especificações e para frameworks específicos deve ser feita por meio de anexos ou adaptadores separados. Nenhuma implementação pode reduzir seus princípios, alterar o escopo definido pelo produto nem atribuir ao agente uma autoridade que o núcleo reserva às pessoas.
   proposito-del-documento-14:
     sourceHash: 6a258fb61101e2edd07b18cc3c5eaf77fd9a0e3a9ebb1ad0cbd24eba587c2ca3
-    state: pendiente
+    state: borrador
+    text: "#### Como usar este documento"
   proposito-del-documento-15:
     sourceHash: 65b0dc5c03c85f8b07e3f235b3c858acba4ae9fc63c928c35d3e9e44fdab5e60
-    state: pendiente
+    state: borrador
+    text: O documento oferece duas profundidades de leitura. A primeira permite compreender a postura em poucos minutos. A segunda converte essa postura em decisões verificáveis durante o desenvolvimento.
   proposito-del-documento-16:
     sourceHash: 6adbbd4c9722ae1ccc6c83cbe840381699dea65c944624b9332f2045936cf206
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Rota** | **Conteúdo** | **Uso recomendado** |
+      |------------|-----------------------------------------------------------------------------------------|-------------------------------------------------|
+      | Compreender | Tese e texto canônico do manifesto | Alinhar a equipe antes de definir uma solução |
+      | Decidir | Dez princípios, fundamento de produto e Job Stories com regras e perguntas de controle | Resolver alternativas de produto e UX |
+      | Construir | Doutrina específica para desenvolvimento com IA | Guiar agentes de código e revisores humanos |
+      | Verificar | Testes de aceitação, scorecard e antipadrões | Avaliar protótipos, implementações e entregas |
   proposito-del-documento-17:
     sourceHash: 31020a49bf19f87e006aa13d8daf1a45285cf1a58fd2525977a3e45806e3554d
-    state: pendiente
+    state: borrador
+    text: "#### A arquitetura do marco"
   proposito-del-documento-18:
     sourceHash: ddeb8cf39801855179dc9086bfc4d295351ccca7ee7fa6dfb458cf6bd4e02d3d
-    state: pendiente
+    state: borrador
+    text: Cada princípio se traduz em níveis operacionais. Nenhum nível substitui outro. O fundamento de produto conserva a definição autorizada do que deve ser construído e por quê. Jobs to Be Done pode orientar o progresso geral, e a Job Story oferece a forma de referência deste manifesto para tornar esse progresso concreto, situado e verificável.
   proposito-del-documento-19:
     sourceHash: a22be2460e71b4eb75e97b94d66d076b91d99bbca3aca7a97835074ce1e70faa
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Nível** | **Pergunta que responde** | **Resultado** |
+      |-------------------------|------------------------------------------------------------|---------------------------------------------------|
+      | Princípio | Em que acreditamos | Um critério estável para orientar decisões |
+      | Fundamento de produto | O que deve ser construído, por que e sob quais condições | Uma base autorizada, rastreável e verificável |
+      | Job Story de referência | Quando surge uma necessidade e que progresso a pessoa busca | Uma forma concreta para projetar e verificar |
+      | Regra | O que exige ao projetar ou implementar | Uma conduta observável do produto e da equipe |
+      | Teste | Como sabemos se cumprimos | Evidência que permite aceitar, revisar ou rejeitar |
   proposito-del-documento-20:
     sourceHash: 84b864a4736f616a8af387c372722f41e8bb56e713830a3a6ad9e56ea299558e
-    state: pendiente
+    state: borrador
+    text: "#### Limite entre núcleo e implementação"
   proposito-del-documento-21:
     sourceHash: f45ddc8e9fe6fe13af8d7c5486dbd32048118cc92aaf36c3689896c7dedce7b8
-    state: pendiente
+    state: borrador
+    text: O núcleo define princípios, autoridades, condições de rastreabilidade, critérios de aceitação e limites para equipes e agentes. Um anexo geral pode traduzir essas obrigações para um método de desenvolvimento baseado em especificações. Os adaptadores de frameworks específicos devem resolver comandos, templates, fluxos, persistência e compatibilidade sem modificar o núcleo. Uma mudança de framework não constitui, por si só, uma nova versão do manifesto.
   texto-canonico-01:
     sourceHash: 3a1c6c4b693b3d050bfd80300dcf4fb6d937c5be796f7d273c6c9b6705efe68e
-    state: pendiente
+    state: borrador
+    text: "## TEXTO CANÔNICO"
   texto-canonico-02:
     sourceHash: 24844e6a6b5642d10b55636ee2426da231d2cd076821411bbd15e91d4b9dcb07
-    state: pendiente
+    state: borrador
+    text: "### Manifesto para o desenvolvimento de software humano"
   texto-canonico-03:
     sourceHash: 738e225c7bf9e2eb2d8def05b636a29468a050950a1a68417dd8b8fe20bab336
-    state: pendiente
+    state: borrador
+    text: O propósito do software é ampliar o que uma pessoa pode fazer.
   texto-canonico-04:
     sourceHash: e7e802c73362f16ebd7b5d0293bd9a4951d974b35663ef6c4e228489ad1fd1bc
-    state: pendiente
+    state: borrador
+    text: As pessoas não chegam aos nossos produtos para usar funcionalidades. Chegam porque querem compreender, decidir, criar, aprender, comunicar-se, resolver ou avançar. Esse progresso é o nosso verdadeiro produto.
   texto-canonico-05:
     sourceHash: 3f64c90522b83efcd226385e97169f244f56ce76a34404935903e1150530f4e0
-    state: pendiente
+    state: borrador
+    text: O progresso não acontece em abstrato. Ele é ativado quando uma circunstância cria uma necessidade, uma tensão ou uma decisão. Antes de projetar uma resposta, descrevemos essa circunstância, a motivação que ela produz e o resultado que a pessoa busca. A solução vem depois.
   texto-canonico-06:
     sourceHash: 7423bf31e699bc0784adacb621526e0e91fac56fa82bf2181ceae5a676a6f4a5
-    state: pendiente
+    state: borrador
+    text: A definição de produto governa o que deve ser construído. Pode ser expressa com uma única história ou por meio de um PRD extenso composto de histórias, capacidades, regras, estados, jornadas e critérios. O desenvolvimento deve compreender essa estrutura, conservar seu significado e dar conta de seu escopo completo. Decompor, ordenar ou executar o trabalho em paralelo não autoriza omiti-lo nem redefini-lo.
   texto-canonico-07:
     sourceHash: e0f854b8f83d022990d5c2c278a0ad4a52f0092f68b3c280bc14e9aa48e7789b
-    state: pendiente
+    state: borrador
+    text: Por isso a experiência faz parte da função. Um sistema que permite concluir uma tarefa, mas obriga a interpretar a interface, lembrar convenções, atravessar estruturas desnecessárias ou se perguntar o que acontecerá depois, transfere ao usuário um problema que o produto deveria resolver.
   texto-canonico-08:
     sourceHash: aaaac0e336bee0b98e3d77f08ea821f1e8a69e9cb00735b8c18c286564e96e7c
-    state: pendiente
+    state: borrador
+    text: Não rejeitamos a complexidade. Muitos problemas importantes são complexos. Rejeitamos que a complexidade de construí-los tenha de se transformar automaticamente em complexidade para quem usa a ferramenta.
   texto-canonico-09:
     sourceHash: 3ee03fdccbab59a58f9bb54fd13862d810f86c6af7202925344ef083741e4aac
-    state: pendiente
+    state: borrador
+    text: Buscamos software simples no começo e profundo quando necessário. Software que revele capacidades no contexto, explique sem interromper, antecipe sem controlar e permita se recuperar sem medo.
   texto-canonico-10:
     sourceHash: 03d785667267259748ca26ced93a8d00d956ff02161f8a9856333b8fb4f07066
-    state: pendiente
+    state: borrador
+    text: Cada elemento deve justificar a atenção que consome. Cada interação deve ajudar a compreender onde estamos, o que podemos fazer e o que acontecerá depois. Cada detalhe deve contribuir para uma experiência coerente, rápida e confiável.
   texto-canonico-11:
     sourceHash: 753b32ffda43ce959468d9f0125049a9317ff2dcccd93b94c4f6caa1d850b1ff
-    state: pendiente
+    state: borrador
+    text: A inteligência artificial deve absorver complexidade, não multiplicá-la. Pode propor, resumir e automatizar, mas permanece subordinada à intenção da pessoa. As regras críticas, as permissões, os compromissos e os estados que exigem certeza não dependem de uma interpretação probabilística.
   texto-canonico-12:
     sourceHash: 4344d1121dea2b79a10b68bf1017bf30a816aa6fbceb5311990666dcc7fddf95
-    state: pendiente
+    state: borrador
+    text: Agora que construir é mais fácil, nossa responsabilidade aumenta. Antes de acrescentar uma capacidade, perguntamos que progresso ela habilita, que carga introduz, que risco cria e se merece existir.
   texto-canonico-13:
     sourceHash: 39b10c5773e6ad61cd4b4212bb829214bd4e05ddf4f0465f4d45f2050ee8b246
-    state: pendiente
+    state: borrador
+    text: Nosso objetivo é que a sofisticação permaneça por trás da experiência e que, diante dela, a pessoa conserve seu propósito, sua atenção e seu controle.
   texto-canonico-14:
     sourceHash: 4ec43bdfecbc77c1a006111d9cfb943b965a338d5b5d94ff8742be4cdc5c006e
-    state: pendiente
+    state: borrador
+    text: O melhor software não faz o usuário admirar o software. Faz com que ele se surpreenda com o que agora é capaz de fazer.
   principios-de-diseno-01:
     sourceHash: 1709fbf88ff80e2c7c937f6e13cfc00427f08352bf2d9ecceb67401fcf0b85ec
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIOS DE DESIGN"
   principios-de-diseno-02:
     sourceHash: a0b34f425e42273cad15a3b5ed1ef06582e9362a59cdfe09d870a08e62e09026
-    state: pendiente
+    state: borrador
+    text: "### Dez compromissos que governam as decisões"
   principios-de-diseno-03:
     sourceHash: 9f2cb5d21dc2adfa17e45f97e188748300d91197f8bcd2d8ef87141a733a6d0a
-    state: pendiente
+    state: borrador
+    text: Os princípios não descrevem aspirações decorativas. Cada um deve ser capaz de mudar uma decisão, deter uma implementação ou exigir evidência adicional. Se uma frase não tem consequências práticas, não cumpre uma função dentro do marco.
   principios-de-diseno-04:
     sourceHash: d9356c265d0964113c7470d95574878e867dbb5bf95296991c0f9261d0f7f745
-    state: pendiente
+    state: borrador
+    text: |-
+      | **N** | **Princípio** | **Consequência principal** |
+      |-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+      | 1 | O progresso do usuário é a unidade de design | Vincula cada decisão a seu fundamento de produto e usa Job Stories quando expressam melhor a situação |
+      | 2 | A experiência também é funcionalidade | Inclui esforço, emoção e atrito na definição de qualidade |
+      | 3 | A complexidade pertence ao sistema | Evita transferir o modelo interno ao usuário |
+      | 4 | Simples no começo e profundo quando necessário | Revela poder no contexto sem limitar o usuário experiente |
+      | 5 | A interface não deve se tornar outra tarefa | Reduz o aprendizado incidental e as convenções próprias |
+      | 6 | A atenção é um recurso do produto | Justifica cada elemento e cada decisão solicitada |
+      | 7 | A confiança é projetada | Torna visíveis estado, consequências, controle e recuperação |
+      | 8 | A qualidade vive no acúmulo de detalhes | Trata microdecisões e estados extremos como parte do produto |
+      | 9 | O tempo e a continuidade fazem parte da interface | Integra desempenho, disponibilidade e preservação do trabalho |
+      | 10 | A pessoa mantém controle e propriedade | Subordina assistência e automação à intenção humana |
   p01:
     sourceHash: 49945ca8af5f26de61dc59b4b13efc1693814fe17f77aa8bd80d046c9ff4a51b
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 1 · `P01`"
   principio-1-02:
     sourceHash: 23e0e959c84d28e502804a2d466f4a564e0503c783a4f0a23b14918ffde96d79
-    state: pendiente
+    state: borrador
+    text: "### O progresso do usuário é a unidade de design"
   principio-1-03:
     sourceHash: 823b09af02b13002d3174c3bbe8fca5c5dbff156cd7b0ee4a38ac0d46cf449d6
-    state: pendiente
+    state: borrador
+    text: Não projete o que o usuário pode fazer. Projete o progresso que ele precisa alcançar.
   principio-1-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-1-05:
     sourceHash: df1f8094eff0ef51d71d482e87415a08a8af7ea4108f3d38a4ae02e915905039
-    state: pendiente
+    state: borrador
+    text: Uma funcionalidade só faz sentido se ajuda uma pessoa a passar de uma situação atual a um resultado desejado. O fundamento de produto estabelece a razão autorizada do desenvolvimento. Jobs to Be Done pode definir o progresso em um nível amplo, e a Job Story o torna operacional ao descrever quando surge a necessidade, o que motiva a pessoa e que resultado ela busca, sem antecipar a solução.
   principio-1-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-1-07:
     sourceHash: 84eaaa31b6ebe70a3fed2ffec9dd7fad87b8f2b0705e2996d0c208ad62f09be8
-    state: pendiente
+    state: borrador
+    text: "Quando o trabalho se organiza em torno de features ou perfis genéricos, a equipe pode entregar muito e resolver pouco. Uma Job Story obriga a explicar a causalidade: a circunstância que ativa a necessidade, a tensão que impulsiona a agir e a situação melhor que permitiria reconhecer o progresso. Quando o produto usa outra forma, essa mesma causalidade deve ser conservada na medida em que for aplicável."
   principio-1-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-1-09:
     sourceHash: f15c82c002db525e11977b227bb0fd94132fcfa56b30f6ea97b966a5292630e1
-    state: pendiente
+    state: borrador
+    text: |-
+      - Identificar o fundamento de produto e a fonte autorizada que estabelece o escopo antes de projetar uma resposta.
+
+      - Quando o fundamento for expresso por meio de Job Stories, situá-las dentro do progresso ou propósito de nível superior correspondente.
+
+      - Formular cada Job Story como circunstância, motivação e resultado, sem nomear uma tela, um componente nem uma funcionalidade.
+
+      - Respaldar as decisões com conduta observada, obstáculo ou ansiedade atual e evidência que permita aceitar o resultado.
   principio-1-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-1-11:
     sourceHash: 4dc689c52f99a3653bf80519499f42071f19df1e466534bb96713928b2df2719
-    state: pendiente
+    state: borrador
+    text: |-
+      - É possível apontar a fonte autorizada que justifica esta decisão e sua relação com o escopo completo?
+
+      - Quando existe uma Job Story, a circunstância é específica e observável ou apenas descreve um papel?
+
+      - A motivação e o resultado estão respaldados por evidência ou foram supostos pela equipe?
+
+      - A formulação admite várias soluções possíveis? Se já prescreve uma interface sem que isso seja uma decisão de produto, deve ser revisada.
   principio-1-12:
     sourceHash: 8b4ca300eefcdf821d8992863ee2ae37160048ecaa577382e205800bb1e14ab1
-    state: pendiente
+    state: borrador
+    text: '**Sinal de descumprimento.** "Como estudante quero receber dicas para resolver derivadas" parece uma história útil, mas começa por um papel e prescreve uma função. Não explica quando surge o bloqueio, o que a pessoa precisa compreender nem como reconhecer que recuperou o avanço.'
   p02:
     sourceHash: 96c5672433c781644116c282a77499775eade12f1cbb17cd355b80777c156f7b
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 2 · `P02`"
   principio-2-02:
     sourceHash: 21f2b77c67d4a23e5e45879302a158a713d12296f072fae1c1a4b3bfdcfbd4a5
-    state: pendiente
+    state: borrador
+    text: "### A experiência também é funcionalidade"
   principio-2-03:
     sourceHash: 05e52489dad1d9828102025c546ef3a6b6534cfe70e49c5dc0c7c16af4c12407
-    state: pendiente
+    state: borrador
+    text: Se funciona, mas desgasta, ainda não funciona bem.
   principio-2-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-2-05:
     sourceHash: 165246f816f2e393266c1f3f12f0c6fc6a48e8d727ff0e9ff3672adffe1cfef5
-    state: pendiente
+    state: borrador
+    text: O produto não se define apenas pela exatidão de sua saída. Também importa quanto esforço, incerteza e atenção ele exige para obtê-la. A sensação de fluidez ou frustração modifica a capacidade real da pessoa de concluir seu trabalho.
   principio-2-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-2-07:
     sourceHash: 75fa16cc10ff66698d3a3f2efd7cd5f3feb4450e5f6020781133e82b2c6a335a
-    state: pendiente
+    state: borrador
+    text: Dois produtos podem entregar o mesmo resultado e gerar desempenhos diferentes. Uma experiência pesada provoca abandono, erros, dependência de suporte e perda de confiança. Esse custo é funcional, ainda que não apareça na especificação técnica.
   principio-2-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-2-09:
     sourceHash: 7185b9b6e0d5d5526a1b3ba2a8056169e2ea145b25c8e9725f52fcc3926d5768
-    state: pendiente
+    state: borrador
+    text: |-
+      - Incluir esforço, clareza e confiança nos critérios de aceitação.
+
+      - Testar o fluxo completo, não apenas cada tela ou endpoint de forma isolada.
+
+      - Considerar o estado emocional e cognitivo que acompanha a situação definida pelo produto e, quando existir, pela Job Story.
   principio-2-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-2-11:
     sourceHash: 002a91e8c121741c2058d3885d08f3e7056b74c6a92255c601031bf12dc40672
-    state: pendiente
+    state: borrador
+    text: |-
+      - A pessoa consegue se concentrar em seu objetivo ou precisa administrar a ferramenta?
+
+      - Que momentos provocam dúvida, tensão ou interrupção?
+
+      - Uma tarefa correta deixa o usuário com energia para continuar?
   principio-2-12:
     sourceHash: a1325171c5d7dbc584acaa26205feb56dce634729fc6cc13098d103c1c477445
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Um formulário tecnicamente válido que apaga os dados após um erro transforma a correção em castigo. A validação funciona; a experiência, não."
   p03:
     sourceHash: 8e9ffc20901ed8bff262a2b94df759999b968327a163c5913cc4c4de4cdbfad4
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 3 · `P03`"
   principio-3-02:
     sourceHash: f49b36c7193f14c8ca6b6ef519df2a74926fb531822bbc381acc5e17f340b53a
-    state: pendiente
+    state: borrador
+    text: "### A complexidade pertence ao sistema"
   principio-3-03:
     sourceHash: d7e8449e065157244cb9a11671af6af72368113adde7b48d0e0e79910b8b1e07
-    state: pendiente
+    state: borrador
+    text: Ser complexo de construir não significa que deva ser complexo de usar.
   principio-3-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-3-05:
     sourceHash: 7203c0a96f1895f649dd201ec31ce9671e64cbfa3b44257357c953ccdff38048
-    state: pendiente
+    state: borrador
+    text: O domínio pode exigir regras, integrações e exceções. A equipe deve absorver essa complexidade e apresentá-la como decisões compreensíveis. As tabelas, os estados e os serviços internos não deveriam ditar a linguagem nem a navegação do usuário.
   principio-3-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-3-07:
     sourceHash: 2c59501004726163efb36946979a065daae9cdd1cac26e405a7bc6f1d4b015bf
-    state: pendiente
+    state: borrador
+    text: Quando a interface replica a arquitetura, a pessoa precisa aprender como o produto foi construído antes de obter valor. Essa transferência costuma parecer inevitável apenas porque é conveniente para a equipe.
   principio-3-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-3-09:
     sourceHash: 3307d7eb0456795d959ff3753c7d99bad6cb26e88fbddbdb5c49643a20cccec6
-    state: pendiente
+    state: borrador
+    text: |-
+      - Traduzir conceitos internos para a linguagem e o modelo mental da pessoa.
+
+      - Resolver dependências, valores padrão e sequências quando houver contexto suficiente.
+
+      - Expor uma exceção apenas a quem realmente precisa decidi-la.
   principio-3-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-3-11:
     sourceHash: 58b3d473f6faa77a79e490b974efb95b9a5232b9653457bcc1471d50eb12caab
-    state: pendiente
+    state: borrador
+    text: |-
+      - Este passo existe por uma necessidade do usuário ou pela estrutura do sistema?
+
+      - Estamos mostrando uma entidade técnica que poderia ser traduzida ou inferida?
+
+      - A pessoa precisa compreender esta regra para tomar uma boa decisão?
   principio-3-12:
     sourceHash: 60d437da4f04bb09b9855d07fbcdf11885f7a821bcc52336e30588280e6c2107
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Pedir que o usuário escolha primeiro um tipo de registro interno, sem que essa distinção tenha significado para ele, expõe o esquema de dados como se fosse uma necessidade humana."
   p04:
     sourceHash: fe331a88aa7bce55b8e58e97e4b683da4b1ea6c69bea4571bb19bc7670a2b799
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 4 · `P04`"
   principio-4-02:
     sourceHash: 22c471699ffd3780d214edd9f440489a656fc2b03adfe41b90fbad6c96c10b29
-    state: pendiente
+    state: borrador
+    text: "### Simples no começo e profundo quando necessário"
   principio-4-03:
     sourceHash: ebe153af092acf985156dae8241cc854b9497d1fbae58bf5368c0309d726128f
-    state: pendiente
+    state: borrador
+    text: Não elimine o poder. Elimine a obrigação de enfrentá-lo antes de precisar dele.
   principio-4-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-4-05:
     sourceHash: e0340e53d0f0d36de411fab4f4fdbd8f65dfa905119a926cc63c1d6eeee69c91
-    state: pendiente
+    state: borrador
+    text: A simplicidade não consiste em reduzir a capacidade do produto. Consiste em adaptar o que é visível ao momento, ao nível de experiência e à decisão atual. A profundidade aparece de forma progressiva e permanece disponível.
   principio-4-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-4-07:
     sourceHash: cdd5b44b42a62db92538425782a8d2d9b36787175e0a8d92f6ba79f17b39f4bb
-    state: pendiente
+    state: borrador
+    text: Um produto minimalista pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser inabordável. A revelação progressiva evita os dois extremos.
   principio-4-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-4-09:
     sourceHash: d825e70a034b3da4912e0918515e49c6ed45c1491a6d99f54273e7c4bbbed5af
-    state: pendiente
+    state: borrador
+    text: |-
+      - Mostrar primeiro o caminho principal e revelar opções avançadas quando o contexto as tornar relevantes.
+
+      - Conservar atalhos e precisão para usuários experientes sem impô-los ao iniciante.
+
+      - Usar bons valores padrão, sempre editáveis quando a decisão importa.
   principio-4-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-4-11:
     sourceHash: 2cd6123fe100ece793528e622ab2a7e4b268e2257ca714816d0eace294acf130
-    state: pendiente
+    state: borrador
+    text: |-
+      - O que exatamente a pessoa precisa ver neste estado?
+
+      - A simplificação elimina ruído ou elimina capacidade necessária?
+
+      - Um usuário experiente consegue avançar com rapidez sem que o iniciante carregue essa profundidade?
   principio-4-12:
     sourceHash: 4b15354c5c70e2142601e1edac9a1982aee120149f7226429314fd3d3724d7b9
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Ocultar todas as opções pode produzir uma primeira impressão limpa e um beco sem saída quando aparece um caso menos comum."
   p05:
     sourceHash: a883ee3f5e9b8b85015f3758b0c485655e4660075ec96599316f4e6e7f5b5700
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 5 · `P05`"
   principio-5-02:
     sourceHash: 8d4d344dd478fe89dc26fad2aed27153977ad9867859a5ecc959959c3250b736
-    state: pendiente
+    state: borrador
+    text: "### A interface não deve se tornar outra tarefa"
   principio-5-03:
     sourceHash: 77fa3fff68c166492292475e8f57d669be8b5c474373ada2b4a0e88a4fe43175
-    state: pendiente
+    state: borrador
+    text: A pessoa veio fazer o trabalho dela, não aprender o nosso.
   principio-5-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-5-05:
     sourceHash: 54b60739a477c58ddaaf9c6207c079b516d59e9148d0974cde53312024d85160
-    state: pendiente
+    state: borrador
+    text: Uma interface deve se apoiar em expectativas conhecidas, hierarquia compreensível e feedback imediato. Cada convenção própria que o usuário precisa memorizar consome a capacidade que ele deveria empregar no problema real.
   principio-5-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-5-07:
     sourceHash: 184cd186d363977ff3bcd8b1ad338e125ac29a8962037bb2370326b9201d172f
-    state: pendiente
+    state: borrador
+    text: A carga de aprendizado se torna especialmente prejudicial em produtos educacionais, de saúde, financeiros ou de uso pouco frequente. A pessoa já enfrenta complexidade suficiente no conteúdo ou na decisão.
   principio-5-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-5-09:
     sourceHash: 6c6e3e6c1bd6d9607b1b9576e523b2c45851b3ce07285889b22db46d28517460
-    state: pendiente
+    state: borrador
+    text: |-
+      - Preferir convenções conhecidas quando resolvem bem o problema.
+
+      - Explicar no contexto sem exigir tutoriais prévios para ações básicas.
+
+      - Tornar evidentes a ação principal, o estado atual e o próximo passo possível.
   principio-5-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-5-11:
     sourceHash: 692bfdd389d61d0e14a91cb759d7801b008e86557b44f05ab6bc75c461d2bf4b
-    state: pendiente
+    state: borrador
+    text: |-
+      - A pessoa entende o que os elementos significam sem uma legenda externa?
+
+      - Precisa lembrar algo de uma tela anterior para agir corretamente?
+
+      - A interface acrescenta uma camada de aprendizado alheia à situação ou ao resultado que deve resolver?
   principio-5-12:
     sourceHash: b71a03e00d4199e31d32b9473e9d69ecdbd72a4bb8ed7cf8cd5d8e3d622832a3
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Uma sequência numerada sem significado visível obriga a aprender a navegação ao mesmo tempo que o conteúdo. Os números organizam para a equipe, mas não orientam o usuário."
   p06:
     sourceHash: 8b1c2da6bcbf7911b28a12f7824d7942204fbecd75c8e5a3e085a3ba8d4d4e8c
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 6 · `P06`"
   principio-6-02:
     sourceHash: ee4315ca32176036910ebc4de59eadb3b53fba8d65791917d14fc9ece6733035
-    state: pendiente
+    state: borrador
+    text: "### A atenção é um recurso do produto"
   principio-6-03:
     sourceHash: 347b6047aa96f6b43cc62eff471401c555988a61f9ab1ec490ddbb5cf3a69be1
-    state: pendiente
+    state: borrador
+    text: Tudo o que mostramos compete com aquilo que a pessoa veio fazer.
   principio-6-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-6-05:
     sourceHash: e8045a544fd72b5d7b8081cca7f62f85bba09e2316e2db84ba1c8562cd1fa5b3
-    state: pendiente
+    state: borrador
+    text: A atenção é finita. Menus, alertas, animações, escolhas e textos demandam parte dela. O design deve administrar esse orçamento com a mesma disciplina que o desempenho ou o custo.
   principio-6-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-6-07:
     sourceHash: 697f8e8110f9ed7f538fad23327868321fd1508b6211168e6e716291103c76d8
-    state: pendiente
+    state: borrador
+    text: Uma interface pode não ter erros e ainda assim fracassar por saturação. A carga acumulada deteriora a compreensão, aumenta as decisões acidentais e faz com que tarefas simples pareçam pesadas.
   principio-6-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-6-09:
     sourceHash: cd137243625d96195e8c4f461c11f13296d2251486973630de443127585506c4
-    state: pendiente
+    state: borrador
+    text: |-
+      - Exigir que cada elemento visível e cada decisão solicitada respondam a uma circunstância, motivação ou resultado verificável.
+
+      - Hierarquizar pela relevância para o estado atual, não pela igualdade entre features.
+
+      - Reduzir interrupções e reservar sinais intensos para assuntos que realmente exigem atenção.
   principio-6-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-6-11:
     sourceHash: 01895d24a2d85178ebcbbe0960bcb5e16e010655d64de375bdc8bf51b5fed4f8
-    state: pendiente
+    state: borrador
+    text: |-
+      - O que compete visual ou mentalmente com a ação principal?
+
+      - É possível eliminar um elemento sem perder informação necessária ou controle?
+
+      - A interface diferencia o urgente, o importante e o opcional?
   principio-6-12:
     sourceHash: 680b7599e2e2970f1ba0c397d849a38ed3e351893dfb1b2083005130c5c509fb
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Apresentar cinco ações com o mesmo peso visual obriga o usuário a estabelecer uma prioridade que o produto já deveria conhecer pelo contexto."
   p07:
     sourceHash: b352795cc361844dcf699e8d53db4c43f4b97e9213086347f93e994b166f7dca
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 7 · `P07`"
   principio-7-02:
     sourceHash: b8d5eb5a6ea2a71eedfba34ac732df71b2e5b2934fa6cb0fd5f9fb95310ec5ba
-    state: pendiente
+    state: borrador
+    text: "### A confiança é projetada"
   principio-7-03:
     sourceHash: ac65f1d9d88d4bc2fe5be6234703c1209678848ca95ef17fbf8d7946ff425c9d
-    state: pendiente
+    state: borrador
+    text: Uma boa ferramenta explica o suficiente para que a pessoa aja sem medo.
   principio-7-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-7-05:
     sourceHash: 3a97b2f4126192dad181e1d032e0aeac6bdebb401769911ae0be0f63e6ff3a0d
-    state: pendiente
+    state: borrador
+    text: A confiança surge quando o produto mostra seu estado, antecipa consequências, confirma resultados e oferece recuperação. Não depende de promessas gerais, e sim de uma conduta previsível.
   principio-7-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-7-07:
     sourceHash: 8bdf13fd41c0c35754e378d2056c5508f27eac1a3148d493ebc2d44a5c2c2fa4
-    state: pendiente
+    state: borrador
+    text: A incerteza freia a ação. Com IA, a confiança exige, além disso, distinguir fatos, inferências, propostas e ações executadas. Uma resposta fluente não pode ocultar seus limites.
   principio-7-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-7-09:
     sourceHash: 2bf2d13fbb699a0b505a42b105fa23feead2bb29351fd0aba10204c7944c7d0d
-    state: pendiente
+    state: borrador
+    text: |-
+      - Mostrar o que está acontecendo, o que vai mudar e quando uma ação será irreversível.
+
+      - Permitir desfazer, corrigir ou voltar a um estado seguro quando for razoável.
+
+      - Diferenciar com clareza recomendações, decisões automáticas e resultados confirmados.
   principio-7-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-7-11:
     sourceHash: 64d26f5446d76c7a02fb3fbe7423d9c5c3bd3da05d4eb0377685da88c9a7f414
-    state: pendiente
+    state: borrador
+    text: |-
+      - A pessoa sabe o que acontecerá antes de confirmar?
+
+      - Consegue verificar o que o sistema fez e por quê?
+
+      - Existe um caminho de recuperação proporcional ao risco?
   principio-7-12:
     sourceHash: 9894141c7e196e899150e7745d3ba62bf0f9d4b576f4e98e4bc6a9d0a4ba8578
-    state: pendiente
+    state: borrador
+    text: '**Sinal de descumprimento.** Um agente que informa "pronto" sem mostrar o que mudou obriga a confiar em seu tom, não em evidência.'
   p08:
     sourceHash: c10361bfc710cfabf8b69ffa80a44cf0d69b69a668059cbe8f7b98bb376cc722
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 8 · `P08`"
   principio-8-02:
     sourceHash: bca9dd674b7c13b797ac205eb66385b5a3fb39b43c195addc960987f16277aeb
-    state: pendiente
+    state: borrador
+    text: "### A qualidade vive no acúmulo de detalhes"
   principio-8-03:
     sourceHash: 196b50c98693589f5941749c9d6f195c2f56a134d91ebb90aa2ce8ca539ba70f
-    state: pendiente
+    state: borrador
+    text: A qualidade raramente depende de uma grande decisão. Ela se reconhece em muitas pequenas decisões que coincidem.
   principio-8-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-8-05:
     sourceHash: ee66dd6f3aea2bd71216cf9b85729a2723fd1952a1d0c261261ea7d1eaf3fcf8
-    state: pendiente
+    state: borrador
+    text: Tipografia, espaçamento, textos, foco, estados vazios, erros, transições e microinterações formam uma única experiência. Nenhum detalhe compensa por si só uma solução ruim, mas seu acúmulo pode reforçar ou corroer a confiança.
   principio-8-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-8-07:
     sourceHash: 77fdd4790edf55296f4af2f6cb48556b75b32b7fa9c25f2528c0da24ae0168b0
-    state: pendiente
+    state: borrador
+    text: Os usuários não separam interface, engenharia e conteúdo. Experimentam um produto completo. Uma pequena inconsistência pode ser tolerável; cem inconsistências transformam o uso em atrito constante.
   principio-8-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-8-09:
     sourceHash: 80d30e9a1cf740ddfadd3f611b145d771a47517e9ecbbf4c251f90ecd8afc93a
-    state: pendiente
+    state: borrador
+    text: |-
+      - Projetar e verificar estados normais, vazios, de carregamento, erro, sucesso e recuperação.
+
+      - Manter linguagem, hierarquia e comportamento consistentes em todo o fluxo.
+
+      - Revisar o produto em escala real e com conteúdo realista antes de aprová-lo.
   principio-8-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-8-11:
     sourceHash: 72e0dd527695b2c8c5a78528b6f972e23155f93663f5cfbda76e4769a4004516
-    state: pendiente
+    state: borrador
+    text: |-
+      - Os detalhes reforçam a mesma lógica ou contradizem expectativas?
+
+      - O que acontece nos estados menos frequentes?
+
+      - O produto parece construído deliberadamente ou montado por partes?
   principio-8-12:
     sourceHash: 5f4da174ee4ea0a9a04128d832a65538e5506917ac9d13063ec2c4d4c0b5ea44
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Um botão muda de nome entre etapas, um erro aparece longe do campo e o foco se perde depois de salvar. Cada defeito é menor; juntos rompem a continuidade."
   p09:
     sourceHash: f0c567a03f20a9eb3453bc8007b36c8404029f97a514cb6a6e5fef4a053e43d0
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 9 · `P09`"
   principio-9-02:
     sourceHash: 1d7feadee74c9ed9f0caa95b4d5b06e9007c94df82557fb07e4f27079b8c15ed
-    state: pendiente
+    state: borrador
+    text: "### O tempo e a continuidade fazem parte da interface"
   principio-9-03:
     sourceHash: 18b4d70f6dca56535c460a50e1fd1374e98beabaa49b49b7b20aa6069e69cefd
-    state: pendiente
+    state: borrador
+    text: A pessoa experimenta a espera antes de conhecer nossa arquitetura.
   principio-9-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-9-05:
     sourceHash: 7da6e8caf7c4dd422a3820b734e375791f493b99a9ba5df987572e66ce5e4795
-    state: pendiente
+    state: borrador
+    text: Latência, disponibilidade, sincronização e preservação do trabalho são propriedades da experiência. O usuário não distingue entre infraestrutura e interface quando uma resposta demora, uma ação se duplica ou um avanço se perde.
   principio-9-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-9-07:
     sourceHash: 7dada98ca2b48a1a45500f37e280dc55a9d49525928fef840356a801fd83ea20
-    state: pendiente
+    state: borrador
+    text: "A lentidão modifica condutas: gera cliques repetidos, dúvidas, abandono e erros. A perda de continuidade obriga a reconstruir o contexto e destrói a confiança rapidamente."
   principio-9-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-9-09:
     sourceHash: fac5fc0b3cb87445f6a43c0d1d77658f1630fdc126991d9b4bb2cfaba64c75c3
-    state: pendiente
+    state: borrador
+    text: |-
+      - Definir orçamentos de resposta para as interações críticas.
+
+      - Mostrar progresso honesto e permitir continuar quando uma operação puder demorar.
+
+      - Salvar trabalho, contexto e estado com uma frequência proporcional ao custo de perdê-los.
   principio-9-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-9-11:
     sourceHash: e52ccb34802fa685d322eaa33eaf5fe779873243f5fa794962ac1548be92ab51
-    state: pendiente
+    state: borrador
+    text: |-
+      - A interface responde imediatamente ainda que o processo final continue?
+
+      - O que a pessoa perde se a conexão falhar agora?
+
+      - O produto evita ações duplicadas e estados ambíguos?
   principio-9-12:
     sourceHash: ee9ff5001e2e1d6be5d646cc8fa7167811bcb76e596d3270341d7d70b28deafe
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Um botão sem feedback durante três segundos convida a pressioná-lo outra vez. A duplicação resultante parece erro do usuário, mas nasce do sistema."
   p10:
     sourceHash: 6ada26f0e7de696ac21f140b4411ef270d3a565c451b56aeb47b29661e439fe5
-    state: pendiente
+    state: borrador
+    text: "## PRINCÍPIO 10 · `P10`"
   principio-10-02:
     sourceHash: 15246d01395fdb9040ff4ffc9bd96892696bce8ea5ab604dd2c05fb8264b19a6
-    state: pendiente
+    state: borrador
+    text: "### A pessoa mantém controle e propriedade"
   principio-10-03:
     sourceHash: b9572e505ed1b3606800557fbc5ca19137324943dc4123606b5b35a63e1f01ff
-    state: pendiente
+    state: borrador
+    text: Ajudar não significa decidir pela pessoa nem se apropriar de seu trabalho.
   principio-10-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: pendiente
+    state: borrador
+    text: "#### O que significa"
   principio-10-05:
     sourceHash: f7f9cbb6f1efe00338292681e3f79ef2c2c4fe37165cfa2f8a3b112b0c5db1ff
-    state: pendiente
+    state: borrador
+    text: O software pode antecipar, recomendar e automatizar. Deve fazê-lo sem ocultar decisões, prender informações nem impedir alternativas. Em sistemas com IA, o controle inclui compreender que informação foi usada e que ação foi executada.
   principio-10-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: pendiente
+    state: borrador
+    text: "#### Por que importa"
   principio-10-07:
     sourceHash: 4dc2876456d8753a0a90b27260b1189128340c47ea03a8d22cb1bb7ca1171668
-    state: pendiente
+    state: borrador
+    text: A automação sem agência humana pode acelerar o caminho errado. A propriedade e a portabilidade reduzem a dependência, fortalecem a confiança e permitem que a pessoa combine ferramentas segundo suas necessidades.
   principio-10-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: pendiente
+    state: borrador
+    text: "#### Regras de design"
   principio-10-09:
     sourceHash: a3e1c19f780784c2d45c1fd5bdd577516c49538b93aee990f022b6f22cf13d56
-    state: pendiente
+    state: borrador
+    text: |-
+      - Pedir confirmação proporcional ao impacto, não para cada gesto nem depois de uma ação irreversível.
+
+      - Permitir revisar, editar, exportar e reverter quando o domínio permitir.
+
+      - Explicar o uso dos dados e separar autorização, recomendação e execução.
   principio-10-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: pendiente
+    state: borrador
+    text: "#### Testes de decisão"
   principio-10-11:
     sourceHash: 02df8f5aeac27a611a5e908492b4bcc2ea2bd988e685b816b8dbfc92a5a24c96
-    state: pendiente
+    state: borrador
+    text: |-
+      - A pessoa pode rejeitar a proposta sem perder seu avanço?
+
+      - Entende que dados foram utilizados e com que propósito?
+
+      - Pode recuperar ou levar seu conteúdo em um formato útil?
   principio-10-12:
     sourceHash: f1d84896822a2b206cdce9825313b67f19d4e99595faa5d1957bffc1aa526375
-    state: pendiente
+    state: borrador
+    text: "**Sinal de descumprimento.** Uma IA que reescreve e publica sem pré-visualização transforma assistência em apropriação do processo."
   sh-fund:
     sourceHash: 28dc64c19ec351959bea52b47a71d750b13a1d7801338fe16c674b5e5fcc5f0b
-    state: pendiente
+    state: borrador
+    text: "## FUNDAMENTO DE PRODUTO E FORMA DE REFERÊNCIA · `SH-FUND`"
   fundamento-de-producto-y-forma-de-referencia-02:
     sourceHash: b7100a84cb226e1f7b6116d5841bd92a4eea2fb8abe4084115b79d918e442a19
-    state: pendiente
+    state: borrador
+    text: "### Do fundamento de produto a uma solução verificável"
   fundamento-de-producto-y-forma-de-referencia-03:
     sourceHash: 1f1ce84996b9601d017a598cd44dd2cc79fc89024ef32fa3a5fd281e43ca88a4
-    state: pendiente
+    state: borrador
+    text: O fundamento de produto é o conteúdo autorizado que estabelece o que deve ser construído, por que deve existir, que resultados deve produzir, que condições deve respeitar e como se poderá determinar seu cumprimento. Não é um novo tipo de documento nem um template obrigatório. Pode estar em uma Job Story, um Jobs to Be Done, um épico, uma capacidade, um requisito, uma regra de negócio, uma jornada, um critério de aceitação ou uma combinação coerente desses elementos.
   fundamento-de-producto-y-forma-de-referencia-04:
     sourceHash: 50e5a11c166803d56e68b5926e90214d6af0e421910fcb1105f34e38d007b757
-    state: pendiente
+    state: borrador
+    text: "#### Quando o fundamento é identificável"
   fundamento-de-producto-y-forma-de-referencia-05:
     sourceHash: 06871f398db55a7f46dbce3443ecaf9bee13aa0d9f960e36c78c80d4908076e0
-    state: pendiente
+    state: borrador
+    text: Um fundamento de produto é identificável quando o desenvolvimento pode estabelecer, sem inventar decisões de produto, os elementos a seguir. Eles podem estar distribuídos em uma ou várias partes da definição recebida e não precisam usar estes nomes nem esta ordem.
   fundamento-de-producto-y-forma-de-referencia-06:
     sourceHash: dae6347dcd97e3f17f71a69b0db1a1b94a76bdce924fd54a0a04be1719715228
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Elemento** | **Pergunta de controle** | **Condição mínima** |
+      |-----------------------|------------------------------------------------------------|-------------------------------------------------------------|
+      | Fonte e autoridade | De onde provém e quem pode modificá-lo? | Origem rastreável e autoridade reconhecida |
+      | Razão | Que situação, necessidade, problema ou oportunidade aborda? | Justificativa compreensível sem depender da solução |
+      | Resultado | Que mudança ou progresso deve produzir? | Resultado reconhecível para as pessoas ou para o produto |
+      | Condições e limites | Que regras, restrições e exclusões devem ser respeitadas? | Limites suficientes para evitar decisões silenciosas |
+      | Evidência | Como saberemos que foi cumprido? | Critérios, observações ou testes proporcionais ao risco |
   fundamento-de-producto-y-forma-de-referencia-07:
     sourceHash: 8e810c1d69150618d75154e4efa918ace04ddbea0a13eff18cca37c6c64565c5
-    state: pendiente
+    state: borrador
+    text: A ausência de uma seção ou campo específico no PRD não constitui por si só um defeito. O método deve compreender a estrutura que o produto utiliza. Se faltar uma definição capaz de mudar materialmente a solução, o agente deve expor a lacuna e recorrer à autoridade correspondente; não deve preenchê-la por meio de uma inferência silenciosa.
   fundamento-de-producto-y-forma-de-referencia-08:
     sourceHash: a4bbe9c48535bac7e39894360f375fbbe53c6833373ca87f793463181cf68c47
-    state: pendiente
+    state: borrador
+    text: "#### Escopo completo e autoridade de produto"
   fundamento-de-producto-y-forma-de-referencia-09:
     sourceHash: 582eb29539eef9434ed38b8b9e02495e6dd1cf2f1d6feb2eeef9c9a702d336f4
-    state: pendiente
+    state: borrador
+    text: Quando uma definição de produto aprovada contém múltiplas histórias, capacidades, regras ou especificações, todas fazem parte do escopo, salvo se a própria definição ou uma decisão autorizada estabelecer o contrário. O plano de desenvolvimento deve compreender o conjunto, resolver suas relações e dependências e assegurar sua cobertura. Pode decompor, ordenar, agrupar ou executar o trabalho em paralelo; essa decomposição não modifica o escopo.
   fundamento-de-producto-y-forma-de-referencia-10:
     sourceHash: 3490302753a3ffee83a622a85bcc483ad05c3fbc270373bf8319ab6312e19469
-    state: pendiente
+    state: borrador
+    text: O plano organiza como o escopo é implementado. Não decide silenciosamente que parte do escopo merece existir.
   fundamento-de-producto-y-forma-de-referencia-11:
     sourceHash: 762e840879ddb06dc81646fdbac333bff87736b2f7f74045d0ca19d3417541a6
-    state: pendiente
+    state: borrador
+    text: |-
+      - Toda omissão, modificação ou adiamento deve ser explícito, rastreável e aprovado pela autoridade de produto.
+
+      - Se restrições de tempo, recursos ou tecnologia impedirem cobrir o escopo, o plano deve tornar visível a incompatibilidade e solicitar uma decisão.
+
+      - Uma estratégia incremental, por fases ou por releases pode ser usada quando o projeto a adota; não é uma obrigação do núcleo.
+
+      - A completude é determinada conciliando a implementação e a evidência com a definição de produto completa e suas exceções aprovadas.
   fundamento-de-producto-y-forma-de-referencia-12:
     sourceHash: c2bac53c97da13869667bb5a7be186fc6bac2bc58a38e24dbceff8fcf10be5c4
-    state: pendiente
+    state: borrador
+    text: "#### Job Stories como forma de referência"
   fundamento-de-producto-y-forma-de-referencia-13:
     sourceHash: 66be5c2c894c7908b947da0131335909e248118f25d99da6b4520069e224a120
-    state: pendiente
+    state: borrador
+    text: Este manifesto utiliza Job Stories como forma de referência para mostrar como um fundamento de produto pode ser levado ao design, à implementação e à verificação. As Job Stories tornam explícitas a circunstância, a motivação e o resultado esperado, por isso oferecem uma representação especialmente útil para raciocinar sobre o progresso humano.
   fundamento-de-producto-y-forma-de-referencia-14:
     sourceHash: 1f5338b10b2f25a4c2e7e21448aa07cfa42028fe890d18bdd4328bf22dfb0ea4
-    state: pendiente
+    state: borrador
+    text: Seu uso nas explicações, regras, exemplos e testes não obriga que toda definição de produto venha expressa por meio de Job Stories nem autoriza transformar automaticamente um PRD nessa estrutura. Quando a definição usar outra forma, o método deve preservar seu significado, suas relações e sua autoridade. Uma Job Story derivada pode ser proposta como visão de trabalho quando acrescenta clareza, mas não substitui a fonte nem adquire autoridade por ter sido gerada.
   fundamento-de-producto-y-forma-de-referencia-15:
     sourceHash: c8e6c780f62aea2977b73ad50521fa42db2a02ccab900473180048d448ce6437
-    state: pendiente
+    state: borrador
+    text: "#### De Jobs to Be Done a Job Stories"
   fundamento-de-producto-y-forma-de-referencia-16:
     sourceHash: 39fdb10d7f0531b920be96d69f36bb21225442fcbc317845cd4b6fb08b3192b4
-    state: pendiente
+    state: borrador
+    text: "Jobs to Be Done e Job Stories cumprem funções diferentes. Jobs to Be Done mantém a direção do produto: o progresso geral pelo qual uma pessoa incorpora uma solução à sua vida ou ao seu trabalho. A Job Story desce a uma situação concreta que pode orientar uma decisão de design, uma implementação e um teste."
   fundamento-de-producto-y-forma-de-referencia-17:
     sourceHash: 40e7db4f113808e7624d1f55e2e6f8f5ed8593d2ed88c33cc104ff03b26acb32
-    state: pendiente
+    state: borrador
+    text: Quando se usa essa forma, cada Job Story deve conservar uma relação explícita com o trabalho, propósito ou resultado de nível superior correspondente. Essa relação impede que uma história isolada perca a direção do produto.
   fundamento-de-producto-y-forma-de-referencia-18:
     sourceHash: 8bb295157d42d8e63f097ef6d5e7d09aee62232c312a537f9c04ac2a77ba5e66
-    state: pendiente
+    state: borrador
+    text: "#### Relação entre os níveis"
   fundamento-de-producto-y-forma-de-referencia-19:
     sourceHash: abbd0b60a00953d5be31a411d9f9ef6915648dd25813f6b854122e71f6d67f22
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Nível** | **Define** | **Evita** |
+      |-------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+      | Jobs to Be Done | O progresso amplo que a pessoa busca alcançar | Organizar o produto em torno de funcionalidades |
+      | Job Story | A circunstância, a motivação e o resultado que ativam uma necessidade concreta | Projetar a partir de papéis genéricos ou pedidos literais |
+      | Resposta do produto | O comportamento do sistema escolhido para resolver a história | Confundir o problema com a primeira solução imaginada |
+      | Evidência de aceitação | A observação que demonstra progresso nessa circunstância | Aceitar uma entrega porque funciona tecnicamente |
   fundamento-de-producto-y-forma-de-referencia-20:
     sourceHash: b69d58a05cbd1a6cbb8c0401e1b0fdb82d0300148e2c5e1bb87564bc6461916e
-    state: pendiente
+    state: borrador
+    text: "#### Forma canônica de uma Job Story"
   fundamento-de-producto-y-forma-de-referencia-21:
     sourceHash: 967178a07d1c0e94aaa181c16efc19614d3de46e2cbc0f04669550164aff2642
-    state: pendiente
+    state: borrador
+    text: Quando ocorre uma circunstância observável, preciso conseguir um avanço sem prescrever a solução, para poder alcançar um resultado reconhecível.
   fundamento-de-producto-y-forma-de-referencia-22:
     sourceHash: 2685adfa446a5edbaaec3c06924ad5c4da64dd349ac0d032a3d7f503427b7800
-    state: pendiente
+    state: borrador
+    text: "**Quando.** Descreve o fato, a mudança ou a tensão que ativa a necessidade. Deve poder ser observado ou reconhecido sem depender de uma persona fictícia."
   fundamento-de-producto-y-forma-de-referencia-23:
     sourceHash: 79d2e702e9d92923fd1ea97a07190a434b2bc5e6a3b55a947d94df21b8871011
-    state: pendiente
+    state: borrador
+    text: "**Preciso.** Expressa a motivação, a compreensão ou a decisão requerida. Não nomeia uma tela, um botão, um agente nem uma funcionalidade."
   fundamento-de-producto-y-forma-de-referencia-24:
     sourceHash: a875e497f923bfa362ac3354473a0d91c605ac1984b74490c012951b17c5c661
-    state: pendiente
+    state: borrador
+    text: "**Para poder.** Define a situação melhor que a pessoa busca alcançar e que depois deverá ser verificada."
   fundamento-de-producto-y-forma-de-referencia-25:
     sourceHash: 1f5cf2cf0eaeb16a7f1ea59684253eec168a9e957180694008dc51055a0fc51d
-    state: pendiente
+    state: borrador
+    text: "#### Evidência mínima que acompanha a história"
   fundamento-de-producto-y-forma-de-referencia-26:
     sourceHash: 3e8bd582630f368a1bdc600388558dd2dab581f7469247f242be319885a8fe3e
-    state: pendiente
+    state: borrador
+    text: A frase orienta a conversa, mas não substitui a pesquisa. Uma história pronta para guiar o desenvolvimento deve registrar apenas a evidência necessária para sustentar suas decisões.
   fundamento-de-producto-y-forma-de-referencia-27:
     sourceHash: 4633734dfe1ced95bcfe54c42370a4b397d4b481ee35deea60038c9b91a98a3e
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Elemento** | **Pergunta** | **Conteúdo mínimo** |
+      |----------------------|-------------------------------------------------------------|------------------------------------------------------------|
+      | Conduta atual | O que a pessoa faz hoje? | Passos, alternativa ou abandono observados |
+      | Obstáculo ou ansiedade | O que freia ou torna arriscado o avanço? | Dúvida, custo, medo, esforço ou dependência relevante |
+      | Evidência causal | O que respalda a relação entre circunstância e motivação? | Observação, entrevista, dado de uso ou suposição declarada |
+      | Evidência de sucesso | O que demonstraria que houve progresso? | Conduta ou resultado observável dentro da circunstância |
   fundamento-de-producto-y-forma-de-referencia-28:
     sourceHash: 3aa854ab26bacc761a9e97ba2b125d1825672ef4b281c870e2de559aba80202f
-    state: pendiente
+    state: borrador
+    text: "#### Quando o papel ainda importa"
   fundamento-de-producto-y-forma-de-referencia-29:
     sourceHash: 3029109989091ed6db868915c6c56a3a0aa1dea7d7caa0e4444e2e9635309e64
-    state: pendiente
+    state: borrador
+    text: As Job Stories evitam usar o papel como explicação automática. Não eliminam diferenças reais entre as pessoas. O papel, a experiência, a idade, as permissões ou uma restrição física devem ser incorporados quando mudam causalmente a circunstância, o risco ou a solução válida. Se não mudam a decisão, não devem governar a história.
   fundamento-de-producto-y-forma-de-referencia-30:
     sourceHash: 0d0721ddc628a94b5f24eadc57b4ca739df59a622f08dec3e5c20bbb924589b7
-    state: pendiente
+    state: borrador
+    text: "#### Testes de qualidade antes de projetar"
   fundamento-de-producto-y-forma-de-referencia-31:
     sourceHash: 36a28f3244b75e8722364116bd6c17102056bedc48a92c16bd8a572425d485c1
-    state: pendiente
+    state: borrador
+    text: |-
+      - A circunstância descreve um gatilho concreto e não uma categoria de usuário.
+
+      - A motivação expressa progresso ou compreensão e não uma funcionalidade solicitada.
+
+      - O resultado pode ser reconhecido sem confundi-lo com concluir o fluxo do produto.
+
+      - A história está respaldada por evidência ou identifica com clareza a suposição pendente.
+
+      - A formulação permite comparar várias respostas, incluída a opção de não construir.
+
+      - O escopo é suficiente para mudar uma decisão, mas não tenta conter o trabalho completo do usuário.
   fundamento-de-producto-y-forma-de-referencia-32:
     sourceHash: 4bcb54afaf0c880a1da84626eed84e955aa4345d043a589814acb97ffc746702
-    state: pendiente
+    state: borrador
+    text: "#### Cadeia de rastreabilidade"
   fundamento-de-producto-y-forma-de-referencia-33:
     sourceHash: 73ed0ba5b70049eafa7be622a02dc8683cb0d4ebf41a33867122572da1c8909a
-    state: pendiente
+    state: borrador
+    text: "O desenvolvimento deve poder ser percorrido nas duas direções: de cada decisão implementada até o fundamento de produto que a justifica, e da definição completa do produto até a evidência que demonstra sua cobertura. Quando o fundamento é expresso por meio de Job Stories, a rastreabilidade deve conservar a circunstância, a motivação e o resultado de cada história aplicável."
   fundamento-de-producto-y-forma-de-referencia-34:
     sourceHash: 176891ffa1eaae59a0f6f0c223b53f4ef2aaf70bc26f5b170b9211faba7eb9d6
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Origem** | **Decisão** | **Verificação** |
+      |-------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+      | Definição de produto | O que deve ser construído e sob quais condições | Todo elemento obrigatório tem cobertura ou uma exceção aprovada |
+      | Jobs to Be Done | Que progresso geral merece atenção quando essa forma é aplicável | O resultado continua relevante para a pessoa |
+      | Job Story | Que circunstância concreta deve ser atendida quando a fonte usa essa forma | A história está validada e não prescreve uma solução não autorizada |
+      | Design e implementação | Que comportamento responde ao fundamento | Cada elemento tem uma razão rastreável |
+      | Aceitação | Que evidência autoriza declarar completo o desenvolvimento | Resultados, regras e critérios são cumpridos sob as condições definidas |
   doctrina-para-desarrollo-con-ia-01:
     sourceHash: 6ec494189300971192b2c0d36750706a8adc8f5217c441ad3f8ed8c3c1d57180
-    state: pendiente
+    state: borrador
+    text: "## DOUTRINA PARA DESENVOLVIMENTO COM IA"
   doctrina-para-desarrollo-con-ia-02:
     sourceHash: 3fe47f4dc19057e2f303e9771bd0d7590358c0b6216666f7236a0a63bc1d0eee
-    state: pendiente
+    state: borrador
+    text: "### Quando construir custa menos, a decisão importa mais"
   doctrina-para-desarrollo-con-ia-03:
     sourceHash: 5aef2c6b0f98b4eeda8fb34018d151ffcc56822ae6fea61bbddd260d2a30a690
-    state: pendiente
+    state: borrador
+    text: Os agentes de código reduzem o custo de transformar instruções em software. Essa vantagem muda o gargalo. O problema já não é apenas se uma capacidade pode ser construída, mas se merece existir, se resolve o problema certo e se conserva a compreensão do usuário.
   doctrina-para-desarrollo-con-ia-04:
     sourceHash: 051b2e7cacbfc6d1782dd56799007a9bc87266bbbf198150ad13378a300e902e
-    state: pendiente
+    state: borrador
+    text: A IA deve absorver complexidade, não produzi-la.
   doctrina-para-desarrollo-con-ia-05:
     sourceHash: 849d990414ea076bba7f0390e97d4b948afe1666a74da24382e793fb94cdd0a1
-    state: pendiente
+    state: borrador
+    text: Um agente pode implementar com grande velocidade uma especificação fraca, reproduzir padrões convencionais que não se encaixam no contexto e acrescentar opções plausíveis que ninguém pediu. Por isso o desenvolvimento assistido por IA precisa de uma camada explícita de intenção, limites e verificação.
   doctrina-para-desarrollo-con-ia-06:
     sourceHash: 45f85b0e1fa5bdc616d88610a051938dd0b4e807eba15d360cbc2cbceef3d83b
-    state: pendiente
+    state: borrador
+    text: "#### Seis diretivas para equipes e agentes"
   doctrina-para-desarrollo-con-ia-07:
     sourceHash: 58955d53a04d2b2d3ff2bec23c4d279f6b3f834aafc7e9d348b887e3dfa9cc4b
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Diretiva** | **Exigência** | **Limite** |
+      |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+      | `D01` Fundamento antes da implementação | Compreender a definição de produto, sua autoridade, seu escopo e a evidência que a respalda antes de propor componentes ou código. Quando existirem Job Stories, conservar sua circunstância, motivação e resultado. | Não começar a construir se uma ambiguidade material puder alterar a solução, o escopo ou uma regra. |
+      | `D02` Especificação suficiente antes da geração | Definir estados, decisões, restrições e critérios de aceitação no nível necessário para o risco. | Não transformar um prompt vago em uma implementação extensa e depois usar o código para descobrir o problema. |
+      | `D03` Simplicidade deliberada | Preferir a solução que exige menos conceitos, decisões e memória do usuário quando ambas alcançam o mesmo resultado. | Menos código não é a medida; menos carga desnecessária, sim. |
+      | `D04` Determinismo onde importa | Implementar regras críticas, permissões, cálculos, estados e validações como lógica verificável. | Não delegar certeza, cumprimento ou segurança ao comportamento variável de um modelo. |
+      | `D05` Verificação antes da aceitação | Avaliar o fluxo, os estados extremos, a acessibilidade, o desempenho e o resultado real. | Código gerado e testes unitários aprovados não equivalem a produto pronto. |
+      | `D06` IA subordinada ao usuário | Usar IA para propor, explicar e executar sob limites claros, mantendo revisão e reversibilidade proporcionais ao impacto. | A fluidez de uma resposta nunca substitui evidência nem autorização. |
   doctrina-para-desarrollo-con-ia-08:
     sourceHash: e25d483f0644c0d76b67852aea2b4cbbf398d17677dd37bcd6f61cbe260eb01d
-    state: pendiente
+    state: borrador
+    text: "#### A segunda pergunta orientadora"
   doctrina-para-desarrollo-con-ia-09:
     sourceHash: 734d21d7bafa562e60fbf164aafcb78a10629581a0d65b1da83da0ce5b9c28f5
-    state: pendiente
+    state: borrador
+    text: Agora que podemos construir quase qualquer coisa com mais facilidade, o que merece ser construído e o que devemos deixar deliberadamente de fora?
   doctrina-para-desarrollo-con-ia-10:
     sourceHash: 03a45914ba87b1ea1c8212cd20e11a2455baea0c52e9e1e288eeabd9673ab342
-    state: pendiente
+    state: borrador
+    text: Essa pergunta introduz uma obrigação que antes podia ficar oculta pelo custo técnico. Deve ser feita durante a definição de produto e ao avaliar alternativas, e não usada durante a implementação para cortar unilateralmente um escopo aprovado. Cada capacidade deve justificar sua existência diante de uma alternativa mais simples, incluída a alternativa de não construí-la; uma vez autorizada, qualquer exclusão exige uma decisão de produto rastreável.
   doctrina-para-desarrollo-con-ia-11:
     sourceHash: b36ca7adbc0b4fae7784a15b59d1a0e7bb9afa440dce25d6b2c3d9dd8791b831
-    state: pendiente
+    state: borrador
+    text: "#### Determinismo e geração"
   doctrina-para-desarrollo-con-ia-12:
     sourceHash: 9baf0423aa636a626e68fe0c484c77b002a84c6ca725cc01931a474dea2108c0
-    state: pendiente
+    state: borrador
+    text: A escolha não é entre um produto determinístico e um produto com IA. Um sistema confiável combina ambos segundo a natureza de cada decisão.
   doctrina-para-desarrollo-con-ia-13:
     sourceHash: e25ff7b936ddb193a34af12928e42d357daaf99600d33fe5df11f675ed2ab803
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Tipo de comportamento** | **Tratamento preferido** | **Exemplos** |
+      |----------------------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------|
+      | Deve produzir sempre o mesmo resultado diante das mesmas condições | Regra determinística e teste automatizado | Permissões, preços, limites, cálculos, transição de estados |
+      | Admite várias respostas úteis e requer interpretação | IA com contexto, limites e avaliação | Explicar, resumir, propor alternativas, classificar texto |
+      | Pode afetar dinheiro, reputação, segurança ou direitos | IA propõe; regra ou pessoa autoriza | Publicar, comprar, apagar, enviar, mudar acesso |
+      | A incerteza faz parte da saída | IA declara suposições e nível de confiança | Recomendações, estimativas, informação incompleta |
   flujo-de-trabajo-01:
     sourceHash: 9cc6718b376174b98c04dabb04b4faa7f08edfd2f3954ec9fa398d127946c091
-    state: pendiente
+    state: borrador
+    text: "## FLUXO DE TRABALHO"
   flujo-de-trabajo-02:
     sourceHash: 6d626dfdd0f89b9643b2c9cc5963178cf9b5b3ca7ec644068aa634cd4a860082
-    state: pendiente
+    state: borrador
+    text: "### Do propósito a uma solução verificável"
   flujo-de-trabajo-03:
     sourceHash: eaacb80789271e6e69fc3bd0d48c80fbc0fa76095ffec0099d47b7e4e8b0ea5c
-    state: pendiente
+    state: borrador
+    text: O fluxo evita que a geração de código se torne o primeiro ato de design. Não pretende criar uma fase documental pesada nem impor uma estrutura ao PRD. Busca compreender o fundamento recebido, produzir a clareza necessária para planejar e manter a cobertura até a aceitação.
   flujo-de-trabajo-04:
     sourceHash: 8600ba0c5ec71fb3dfa8d21ff5e373d283d3a2e2e3a71186afc403f04a289f5f
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Passo** | **Decisão** | **Trabalho** | **Evidência mínima** |
+      |----------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+      | `F01` | Compreender o fundamento | Reconhecer as fontes, a autoridade, o escopo, a estrutura utilizada e os resultados esperados. | Mapa fiel da definição de produto, sem reformulá-la por conveniência técnica. |
+      | `F02` | Estabelecer cobertura | Inventariar histórias, capacidades, regras, estados, jornadas, critérios e relações aplicáveis. | Cobertura completa e lacunas ou contradições visíveis. |
+      | `F03` | Planejar a implementação | Resolver dependências, bloqueios, ordem, paralelismo, integração e testes sem modificar o escopo. | Plano coerente que dá conta de toda a definição aprovada. |
+      | `F04` | Concretizar o progresso | Usar as Job Stories existentes ou formular uma visão derivada quando trouxer clareza e estiver identificada como tal. | Circunstâncias, motivações e resultados preservados quando couber. |
+      | `F05` | Estabelecer o contrato de experiência | Descrever o que a pessoa deve compreender, decidir e sentir nos momentos críticos. | Caminho principal, estados e promessa de interação. |
+      | `F06` | Modelar regras e riscos | Separar lógica determinística, comportamento generativo, permissões e ações irreversíveis. | Mapa de decisões e limites. |
+      | `F07` | Explorar e prototipar | Comparar alternativas e testar compreensão, hierarquia e recuperação antes de otimizar código. | Razão da alternativa escolhida e evidência da jornada. |
+      | `F08` | Construir, integrar e verificar | Implementar o plano, manter a rastreabilidade e conciliar os resultados com o escopo completo. | Código, testes e evidência de cobertura; pendências e exceções explícitas. |
   flujo-de-trabajo-05:
     sourceHash: b4450ce74b89e5be7528134017cadaed64814b5d3a5d5faec3104516c36e10e8
-    state: pendiente
+    state: borrador
+    text: "#### Artefatos ajustados ao contexto"
   flujo-de-trabajo-06:
     sourceHash: 80a83c92ab23750cf86c22eb01fd13dc6b807bcf5f96393683d7d0ddbd4f25b4
-    state: pendiente
+    state: borrador
+    text: Cada artefato existe para responder a uma pergunta, não para satisfazer um template. Pode ser uma seção do PRD, uma visão derivada, uma tabela, um teste ou um documento separado. Se a informação já existe, deve ser referenciada e não duplicada. A profundidade depende da extensão, da complexidade, da incerteza e do risco; se um artefato não muda uma decisão nem ajuda a verificá-la, deve ser simplificado ou eliminado.
   flujo-de-trabajo-07:
     sourceHash: 2bac946570a18170e8f22285fa9c07bb71d66316a13c417a4bc20f242f848510
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Artefato** | **Pergunta** | **Conteúdo mínimo** |
+      |-----------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+      | `A01` Mapa do fundamento | O que deve ser construído, por que e com que autoridade? | Fontes; escopo; resultados; regras; limites; evidência; não objetivos |
+      | `A02` Mapa de cobertura | Como se dará conta de todo o escopo? | Elementos obrigatórios; relações; dependências; implementação; testes; estado; exceções |
+      | `A03` Ficha de Job Story quando aplicável | Quando surge a necessidade e que mudança a pessoa busca? | Circunstância; motivação; resultado; conduta atual; ansiedade; evidência; suposições |
+      | `A04` Contrato de experiência | O que a pessoa deve compreender e poder fazer? | Caminho principal; linguagem; decisões; feedback; controle; recuperação |
+      | `A05` Modelo de estados | O que pode acontecer e quais transições são válidas? | Estados; eventos; regras; erros; permissões; persistência |
+      | `A06` Orçamento de complexidade | Que carga estamos acrescentando? | Conceitos novos; decisões; passos; exceções; opções visíveis |
+      | `A07` Plano de aceitação | Que evidência autoriza declarar completo o desenvolvimento? | Resultados; regras; Job Stories quando aplicáveis; acessibilidade; desempenho; estados extremos; métricas |
+      | `A08` Registro de decisões | Por que escolhemos esta alternativa? | Alternativas; tradeoffs; suposições; decisão; data; evidência pendente |
   sh-stop:
     sourceHash: c7dc7b1e7898b9ae55375cdb9529736dde237c5a4cde0c8dcce68bb8bef8550a
-    state: pendiente
+    state: borrador
+    text: "#### Regra de parada antes de gerar · `SH-STOP`"
   flujo-de-trabajo-09:
     sourceHash: 01b6078a8d42bfb7099c33675029b7df5165f32d9d0a86e38e07575589d6aaa7
-    state: pendiente
+    state: borrador
+    text: "O agente não deveria começar uma implementação se não puder responder com precisão às seguintes perguntas, no nível exigido pelo risco e pela complexidade:"
   flujo-de-trabajo-10:
     sourceHash: de2c829d115613eecff7737e175cfe500e1cdcf1d8e4eb47dc1fa2fd9c46612b
-    state: pendiente
+    state: borrador
+    text: |-
+      - Qual é a definição de produto autorizada e que escopo ela estabelece?
+
+      - Que elementos do fundamento justificam o desenvolvimento e que evidência os respalda?
+
+      - O planejamento dá conta de todas as histórias, capacidades, regras, estados e critérios obrigatórios?
+
+      - Quando existem Job Stories, a circunstância, a motivação e o resultado estão separados da solução?
+
+      - Qual é o caminho principal e que estados alternativos importam?
+
+      - Que decisões o usuário deve tomar e quais o sistema pode resolver?
+
+      - Que comportamento precisa de certeza determinística?
+
+      - O que não faz parte do escopo e quem estabeleceu essa exclusão?
+
+      - Que evidência demonstrará que o desenvolvimento está completo?
   flujo-de-trabajo-11:
     sourceHash: f99a7c7fa15cf988ed2d14bdf68e321d9777f4a5d13c5f5a8b97ba03bbdb0fe7
-    state: pendiente
+    state: borrador
+    text: Se faltar uma resposta que possa mudar de maneira material a solução, o escopo, uma regra ou um direito, o agente deve parar e solicitá-la. Se a incerteza for menor, reversível e estiver dentro de sua autoridade, pode declarar uma suposição e avançar sem reduzir silenciosamente a cobertura comprometida.
   contrato-reutilizable-01:
     sourceHash: ba40132368df764cccb66afba32a5303c9633477c97b057132a34b4b55104387
-    state: pendiente
+    state: borrador
+    text: "## CONTRATO REUTILIZÁVEL"
   contrato-reutilizable-02:
     sourceHash: 867d80d56adcf484b852731eace1af0a2e7ada4951bfc0bb9a01145221467959
-    state: pendiente
+    state: borrador
+    text: "### Instruções para um agente de desenvolvimento"
   contrato-reutilizable-03:
     sourceHash: 796823b9f0b12e6893094c2571ac76b30a18dcf8e30b463ff563cc0ecb84256f
-    state: pendiente
+    state: borrador
+    text: O contrato a seguir pode ser incorporado às instruções de um repositório, a um PRD ou ao prompt de um agente de código. Deve ser acompanhado do contexto específico do produto e não substitui a definição do problema.
   cr01:
     sourceHash: 9279043c64d698224b8bdcac316a3961dbe0415ac67a2fa7259e81ea0f621fb4
-    state: pendiente
+    state: borrador
+    text: "**`CR01` Propósito.** Construa a solução mais simples que permita ao usuário alcançar o resultado definido, conservando clareza, controle e capacidade de recuperação."
   cr02:
     sourceHash: 82680a309c435d1c8fa26ac51cdd2bbdf49431464bb338eaa1c65432d0b60992
-    state: pendiente
+    state: borrador
+    text: "**`CR02` Antes de programar.** Identifique as fontes autorizadas, explique o fundamento de produto e confirme o escopo completo. Reconheça a estrutura utilizada pela definição; quando ela contiver Job Stories, conserve sua circunstância, motivação e resultado. Separe evidência de suposições e identifique qualquer ambiguidade que possa mudar materialmente a solução."
   cr03:
     sourceHash: 7e3ead93f9ea8176fa06c81ad236e3a56806259a2eb0a5474250f2a8eb1cdeb8
-    state: pendiente
+    state: borrador
+    text: "**`CR03` Ao planejar.** Dê conta de todos os elementos obrigatórios e estabeleça suas dependências, bloqueios, ordem, integração e testes. Não selecione, omita nem adie partes do escopo por iniciativa própria. Se as restrições impedirem cobri-lo, solicite uma decisão à autoridade de produto."
   cr04:
     sourceHash: a7b0b09a1e72ba4b0ed08a4254c6b13ab7739ad7f30074236608a659e80a0736
-    state: pendiente
+    state: borrador
+    text: "**`CR04` Ao propor.** Apresente a alternativa recomendada, uma alternativa mais simples e a opção de não construir quando a decisão ainda pertencer ao produto. Explique como cada uma responde ao fundamento, que carga introduz e que tradeoffs exige."
   cr05:
     sourceHash: e97b99643eec69194f47c25ecc10fc6a3186d1b4d017117376363308ac0ac7c6
-    state: pendiente
+    state: borrador
+    text: "**`CR05` Ao projetar.** Não exponha estruturas internas. Use a linguagem do usuário, convenções conhecidas, hierarquia clara, profundidade progressiva, valores padrão editáveis e feedback imediato."
   cr06:
     sourceHash: 82ee6e62250a52ec1526b88fc26ba6738c541228d5d7c996153493d9270b116c
-    state: pendiente
+    state: borrador
+    text: "**`CR06` Ao usar IA.** Reserve as regras críticas para lógica verificável. Declare a incerteza. Não execute ações de alto impacto sem autorização proporcional. Mantenha rastreabilidade, revisão e reversibilidade."
   cr07:
     sourceHash: 36e9974b51e5c844f7f5ecc898f07a3caa1b046b7bdfe2282e290fa24a245518
-    state: pendiente
+    state: borrador
+    text: "**`CR07` Ao implementar.** Respeite o escopo acordado e conserve a rastreabilidade com seu fundamento. Não acrescente features, modos, configurações nem abstrações não solicitadas. Cubra estados vazios, de carregamento, erro, sucesso e recuperação e integre as partes relacionadas."
   cr08:
     sourceHash: 83f7caeea75ddb6534fd3c4e0d57c5e539a24a13b05cd1a9fe29b8bd592c9c62
-    state: pendiente
+    state: borrador
+    text: "**`CR08` Antes de declarar pronto.** Concilie a implementação com a definição completa de produto. Verifique resultados, regras, critérios e, quando couber, as Job Stories em suas circunstâncias. Comprove também acessibilidade, desempenho percebido, erros, persistência do trabalho e controle do usuário. Entregue evidência, pendências e exceções aprovadas."
   contrato-reutilizable-12:
     sourceHash: 0104faafa94aababa3f983e8b052b51e940acce234076e3e727b88091c88c07a
-    state: pendiente
+    state: borrador
+    text: "#### Formato de entrega esperado do agente"
   o01:
     sourceHash: 9c802a92b15f833f5521adc5fc75a3681cea88cd34751bf19746e7116597bec2
-    state: pendiente
+    state: borrador
+    text: 1\. `O01` Fontes autorizadas e fundamento de produto que justificam o desenvolvimento.
   o02:
     sourceHash: 7ed3cff8957dffa84d458890536aa2d376f3ecbc793aee0f71b6332fefa26927
-    state: pendiente
+    state: borrador
+    text: 2\. `O02` Inventário de escopo e cobertura de histórias, capacidades, regras, estados e critérios aplicáveis.
   o03:
     sourceHash: 0e4c75c3c9d0fa89ab0c7e63c282d90b07c9e08ced61cd8ee01a8bf8a25cbe0f
-    state: pendiente
+    state: borrador
+    text: 3\. `O03` Jobs to Be Done e Job Stories quando fizerem parte da definição ou oferecerem uma visão derivada útil.
   o04:
     sourceHash: 434c04ec08c038a0a31ff2c3e674df55f18b9af58a90a4abaa17c864a1c48608
-    state: pendiente
+    state: borrador
+    text: 4\. `O04` Evidência disponível, suposições e critérios de resultado.
   o05:
     sourceHash: cbad3be4e4bbd929a4147f751bc6cd23a420fe81aa8ff2ab145eceb04f3535b2
-    state: pendiente
+    state: borrador
+    text: 5\. `O05` Alternativa escolhida e razão para descartar opções mais complexas.
   o06:
     sourceHash: b38af1127077dba73e4277a4efa682ec82a4323fa8afa635e40dd04f59aa7557
-    state: pendiente
+    state: borrador
+    text: 6\. `O06` Arquivos ou componentes modificados e limites da mudança.
   o07:
     sourceHash: 3af5b696e34accd9e0b7568dcef4ff06c5231b95df6acc65c258b2164f79921a
-    state: pendiente
+    state: borrador
+    text: 7\. `O07` Estados e casos extremos cobertos.
   o08:
     sourceHash: 075bfdc21d767c322c9759b4ab263c1a328c9b00b7382b382eb53aa878b69e7b
-    state: pendiente
+    state: borrador
+    text: 8\. `O08` Testes executados e evidência de resultado.
   o09:
     sourceHash: 52db2be21d4d1da3371ceb3db2cb2d1a106f65ce098105cd0c9ba7fb3458e1ae
-    state: pendiente
+    state: borrador
+    text: 9\. `O09` Riscos, incertezas, pendências, exceções e decisões que ainda exigem julgamento humano.
   contrato-reutilizable-22:
     sourceHash: 0b3bdfe4649fa1e6988337af6b33ac9a5f54090e496931d1515f1dde3779d96b
-    state: pendiente
+    state: borrador
+    text: "#### Prompt breve para iniciar uma tarefa"
   contrato-reutilizable-23:
     sourceHash: 455a914cb59c0ca13678232f73a6803cb901b4d65246a8f90cf0e76a37fbcd00
-    state: pendiente
+    state: borrador
+    text: Antes de escrever código, identifique a definição de produto autorizada, explique seu fundamento e confirme o escopo completo. Reconheça todas as histórias, capacidades, regras e critérios aplicáveis; quando existirem Job Stories, conserve sua circunstância, motivação e resultado. Distinga evidência de suposições. Planeje dependências e cobertura sem omitir nem adiar escopo por iniciativa própria. Implemente a solução mais simples que cumpra o aprovado e verifique resultados, integração, erros e recuperação.
   verificacion-01:
     sourceHash: 8753f661592008edb7fac357052ecaed65b8279b11fd6bd5901f45b91620a72b
-    state: pendiente
+    state: borrador
+    text: "## VERIFICAÇÃO"
   verificacion-02:
     sourceHash: c4ebb46b239ed3d84aa9c0584a4ce849e1833686213240ed5973932f6087ea1f
-    state: pendiente
+    state: borrador
+    text: "### Testes para aceitar uma solução"
   verificacion-03:
     sourceHash: de064f7355755f1eacf1f92902aa3b109c4355cc21af6a479f765c159a95237b
-    state: pendiente
+    state: borrador
+    text: A aceitação deve produzir evidência. A impressão de que uma tela parece limpa ou de que o código compila não demonstra que o produto cumpre seu propósito.
   verificacion-04:
     sourceHash: 6143ba8260990d15952e5aec301eab0dabe1f6b867914646edac33da51421934
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Dimensão** | **Evidência de aceitação** |
+      |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | `V01` Cobertura | Todos os elementos obrigatórios da definição de produto têm implementação e evidência ou uma exceção explícita e aprovada. |
+      | `V02` Progresso | As pessoas alcançam os resultados definidos e podem reconhecê-los; quando existem Job Stories, isso se comprova em suas circunstâncias. |
+      | `V03` Causalidade | A evidência relaciona a situação, a necessidade e o resultado sem depender de um pedido de funcionalidade; quando aplicável, conserva circunstância e motivação. |
+      | `V04` Compreensão | A pessoa consegue explicar onde está, o que pode fazer e o que acontecerá depois sem ajuda externa. |
+      | `V05` Carga | A pessoa não enfrenta decisões, conceitos ou dados que o sistema possa resolver de forma segura. |
+      | `V06` Profundidade | O iniciante encontra um caminho claro e o usuário avançado conserva capacidade suficiente. |
+      | `V07` Confiança | O sistema antecipa consequências, confirma resultados e oferece recuperação proporcional. |
+      | `V08` Controle | A pessoa pode revisar, corrigir, rejeitar ou reverter segundo o impacto da ação. |
+      | `V09` Estados | Carregamento, vazio, erro, sucesso, interrupção e retorno mantêm contexto e orientação. |
+      | `V10` Acessibilidade | O fluxo funciona com teclado, foco visível, rótulos compreensíveis, contraste e tecnologias assistivas aplicáveis. |
+      | `V11` Desempenho | As ações críticas cumprem o orçamento de resposta ou mostram progresso honesto. |
+      | `V12` IA | As saídas variáveis declaram incerteza; as regras críticas são verificáveis; as ações sensíveis exigem autorização. |
   sh-score:
     sourceHash: 5f6d9ca58183faeb94944952ade4bbe985bc6ce5e82002aabb3f332023b747c4
-    state: pendiente
+    state: borrador
+    text: "#### Scorecard de decisão · `SH-SCORE`"
   verificacion-06:
     sourceHash: 2a9d9431c1fb343636571975397596ec290f9c9dd56c195fe28a45d4bc4343ad
-    state: pendiente
+    state: borrador
+    text: Atribua 0 quando não existe evidência, 1 quando o cumprimento é parcial ou depende de uma suposição não validada, e 2 quando existe evidência suficiente. A pontuação orienta a conversa; não substitui o julgamento.
   verificacion-07:
     sourceHash: 3be4be58556fdc26c74ef3e871fe560c7dcd44846e667174288e74a8646c1e5c
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Critério** | **Pontuação** | **Pergunta de evidência** |
+      |------------------------|-------------|--------------------------------------------------------------------------------------|
+      | Fundamento rastreável | 0 / 1 / 2 | Fontes, autoridade, escopo, resultados e condições são identificáveis |
+      | Cobertura do produto | 0 / 1 / 2 | Todo elemento obrigatório tem implementação, teste ou exceção aprovada |
+      | Job Stories aplicáveis | 0 / 1 / 2 | Quando existem, circunstância, motivação e resultado conservam evidência suficiente |
+      | Progresso do usuário | 0 / 1 / 2 | A implementação produz os resultados definidos pelo produto |
+      | Carga cognitiva | 0 / 1 / 2 | Reduz ou justifica conceitos, decisões e passos |
+      | Clareza da interface | 0 / 1 / 2 | Estado, ação e consequência são compreendidos |
+      | Controle e recuperação | 0 / 1 / 2 | Existe revisão, correção ou reversibilidade proporcional |
+      | Profundidade progressiva | 0 / 1 / 2 | A capacidade aparece quando corresponde |
+      | Confiabilidade e tempo | 0 / 1 / 2 | Desempenho, persistência e feedback cumprem o esperado |
+      | Uso responsável de IA | 0 / 1 / 2 | Incerteza, limites e determinismo estão resolvidos |
+      | Qualidade acumulativa | 0 / 1 / 2 | Estados, linguagem e microinterações são coerentes |
   verificacion-08:
     sourceHash: d06237e03cd0a0f6b06acbc859fa50a03830c1e0fc9c666cc31d26ce06f5f8ad
-    state: pendiente
+    state: borrador
+    text: Critério de saída recomendado. Nenhuma dimensão crítica pode pontuar 0. Os critérios relacionados a segurança, permissões, dinheiro, dados pessoais ou ações irreversíveis devem pontuar 2 antes da liberação. Para o restante, a equipe deve definir seu limiar segundo o risco e o escopo.
   verificacion-09:
     sourceHash: 0cf54551b2185b081e9afd1a31c037f3ad2e9bd0d67ec2d7161c373737ebdc72
-    state: pendiente
+    state: borrador
+    text: "#### Perguntas para uma revisão de produto"
   verificacion-10:
     sourceHash: 5c925ea6ef9439ef96f6a79ecb252fdcec5b5f0e63a8ca5d19a210ee812c8a2b
-    state: pendiente
+    state: borrador
+    text: |-
+      - Que fonte autorizada e que fundamento de produto justificam esta decisão?
+
+      - A implementação e seus testes dão conta do escopo completo?
+
+      - Quando existem Jobs to Be Done ou Job Stories, como esta decisão se relaciona com eles?
+
+      - A formulação descreve uma necessidade ou é uma funcionalidade redigida com outra fórmula?
+
+      - Que carga cognitiva introduz e qual elimina?
+
+      - Estamos expondo uma complexidade interna?
+
+      - É possível eliminar algum elemento sem reduzir capacidade nem controle?
+
+      - A pessoa sabe o que acontecerá antes de agir?
+
+      - Pode se recuperar com facilidade se errar ou se o sistema falhar?
+
+      - A IA está propondo, decidindo ou executando? Esse nível está autorizado?
+
+      - O que faria com que rejeitássemos esta implementação mesmo que funcione tecnicamente?
   sh-ap:
     sourceHash: ea0ec594a1a847801da4d5cccc7e148b5a3ffd96047dde46827ccc749b2ef421
-    state: pendiente
+    state: borrador
+    text: "## ANTIPADRÕES · `SH-AP`"
   antipatrones-02:
     sourceHash: 0f197db02f90d1b1b205cfa5885a4bbdf7a3c9d139c632ab006b8b33e52d291a
-    state: pendiente
+    state: borrador
+    text: "### Sinais de que o produto se afasta do manifesto"
   antipatrones-03:
     sourceHash: bf1d3ccdb739835589dfc14bc8e09b82cd5d5d7f85f02435498cd7df524ece4f
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Antipadrão** | **Como se manifesta** | **Resposta** |
+      |---------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+      | A Job Story é uma feature disfarçada | A motivação diz usar um dashboard, receber alertas ou apertar um botão. | Reformular o avanço de que a pessoa precisa sem antecipar a resposta. |
+      | A circunstância foi inventada | A equipe redige uma história plausível sem observar conduta, tensão ou contexto real. | Marcá-la como hipótese e obter evidência antes de ampliar a implementação. |
+      | A interface replica o banco de dados | O usuário precisa escolher tipos, estados ou relações internas. | Traduzir a estrutura em objetivos e decisões humanas. |
+      | Mais opções se confundem com mais valor | Cada exceção se transforma em um controle visível. | Resolver pelo contexto e revelar exceções quando aparecerem. |
+      | A IA preenche lacunas conceituais | Um prompt ambíguo produz uma implementação grande. | Parar, esclarecer suposições materiais e preservar o escopo autorizado. |
+      | O plano seleciona o escopo | Algumas histórias ou regras são implementadas e o restante é adiado sem uma decisão de produto. | Restabelecer a cobertura completa ou registrar uma modificação explícita e aprovada. |
+      | A decomposição parece exclusão | Uma fase técnica é apresentada como se redefinisse o que o PRD exige. | Separar ordem de execução, estado de avanço e escopo comprometido. |
+      | O tutorial compensa uma interface obscura | A tarefa básica exige explicação prévia. | Revisar linguagem, hierarquia, convenções e feedback. |
+      | A confirmação substitui a reversibilidade | Pergunta-se várias vezes, mas não existe desfazer. | Projetar a recuperação e usar confirmações apenas segundo o risco. |
+      | O caminho feliz define o produto | Erros, vazios e interrupções ficam para depois. | Modelar estados antes de implementar e aceitá-los explicitamente. |
+      | A resposta fluente parece verdadeira | O usuário não distingue fato, inferência e proposta. | Mostrar fonte, incerteza, limites e caminho de verificação. |
+      | A velocidade técnica oculta a espera | A operação demora sem feedback ou bloqueia todo o fluxo. | Responder imediatamente, mostrar progresso e preservar a continuidade. |
+      | A estética maquia o atrito | A tela parece boa, mas exige decisões desnecessárias. | Avaliar a jornada completa e o esforço real. |
+      | O agente acrescenta por via das dúvidas | Aparecem modos, preferências e abstrações não pedidas. | Definir exclusões e exigir justificativa para cada capacidade. |
   antipatrones-04:
     sourceHash: 42dd2cfcf7bcb086bbf3e38e870b44fa203c7de3cc3dd70ce3d19b1ed7cf96bc
-    state: pendiente
+    state: borrador
+    text: "#### Uma advertência sobre a simplicidade"
   antipatrones-05:
     sourceHash: 2064e8a1ae3e809d377548116e1d709d83b50e8c119db7ff6165a333a3966ba1
-    state: pendiente
+    state: borrador
+    text: A simplicidade pode se transformar em desculpa para ocultar informação, negar casos legítimos ou limitar o usuário experiente. O marco não premia interfaces vazias. Premia a relação correta entre capacidade, momento e contexto.
   antipatrones-06:
     sourceHash: 57c9d01614969091544eb774af98b5a1ca52ea71b58f8c22c3a8228cb635116b
-    state: pendiente
+    state: borrador
+    text: A simplicidade valiosa não elimina o necessário. Evita exigi-lo antes da hora.
   ejemplo-aplicado-01:
     sourceHash: 7bc057be2146d1e5bc0ea4e689a6ba8057bd1b63b45dc2b80cbebdf0ccaad639
-    state: pendiente
+    state: borrador
+    text: "## EXEMPLO APLICADO"
   ejemplo-aplicado-02:
     sourceHash: 8ca2c7b9c2be2d7ab767b5196eb47546d880cbdcdc45749848e3bbce650bda28
-    state: pendiente
+    state: borrador
+    text: "### Tutor de cálculo para uma pessoa que ainda não entende"
   ejemplo-aplicado-03:
     sourceHash: 7e6f679d87faf72d6f38e2e7e01b81f7ce76ca37067728137259ba54f6f85e83
-    state: pendiente
+    state: borrador
+    text: Considere uma aplicação que explica derivadas, propõe um exercício, oferece uma dica e, por fim, mostra a solução. O fluxo parece completo. No entanto, se a pessoa erra depois de ler a explicação e também não compreende a solução, chega a um beco sem saída. A aplicação entregou conteúdo, mas não produziu progresso.
   ejemplo-aplicado-04:
     sourceHash: 429248f0e5c8ac9f4386d829db1133e1187061e08d6096d5ad46bf02de716f73
-    state: pendiente
+    state: borrador
+    text: "#### Do pedido de função à circunstância"
   ejemplo-aplicado-05:
     sourceHash: 8cbf02893064e0e8c4ee6540cab3547aea32c66d495d77d992dd842f2d79220f
-    state: pendiente
+    state: borrador
+    text: "**Formulação fraca.** Como estudante quero receber dicas para poder resolver derivadas. O papel é genérico, a dica já prescreve a resposta e o resultado não distingue compreensão de avanço mecânico."
   ejemplo-aplicado-06:
     sourceHash: 9e2b8bf57c843027d9c87bcc27649a8f668295e4cee1d329bc9d8c9c06c2867c
-    state: pendiente
+    state: borrador
+    text: "**Job Story principal.** *Quando li uma explicação e ainda não sei que regra aplicar, preciso identificar o conceito prévio que não compreendo, para poder retomar o exercício sem depender de que me mostrem a solução.*"
   ejemplo-aplicado-07:
     sourceHash: 04739109376c8b63b690217eb21547dfedfe46c4a7deba875e6e8e6b00b640d9
-    state: pendiente
+    state: borrador
+    text: "**Job Story de recuperação.** *Quando vejo a solução e continuo sem entender por que o passo seguinte foi escolhido, preciso reconstruir uma única decisão com outra representação, para poder explicar a regra com minhas próprias palavras.*"
   ejemplo-aplicado-08:
     sourceHash: ba8da8980a239f551e975c201c112bfbaf545fd7d1332cf8024c50d2208abc1d
-    state: pendiente
+    state: borrador
+    text: "Ambas as histórias pertencem ao mesmo Jobs to Be Done de nível superior: desenvolver compreensão suficiente para resolver um exercício equivalente com autonomia crescente. No entanto, descrevem bloqueios diferentes e podem exigir respostas diferentes."
   ejemplo-aplicado-09:
     sourceHash: 6f2171367bbb93cda1efb0359c2d1b1cf181f5a0509353275769bc02fcc9e232
-    state: pendiente
+    state: borrador
+    text: "#### Diagnóstico a partir do manifesto"
   ejemplo-aplicado-10:
     sourceHash: 1dea637d2f5937af96c2b4806082fb4a00db29ca491c2eeb2f879651f331c03c
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Princípio** | **Problema observado** |
+      |---------------|----------------------------------------------------------------------------------|
+      | Progresso | O sistema mede passos consumidos, não compreensão alcançada. |
+      | Experiência | A pessoa termina frustrada e sem um caminho de recuperação. |
+      | Complexidade | A explicação conserva o modelo do especialista em vez de reconstruir o conceito. |
+      | Interface | Números ou etapas sem significado acrescentam aprendizado incidental. |
+      | Confiança | A solução final é apresentada como encerramento, ainda que a compreensão continue ausente. |
   ejemplo-aplicado-11:
     sourceHash: 743220456f41cf9192dad765c5c753a832c9b7e252d0c6d30a79838cd1b8df47
-    state: pendiente
+    state: borrador
+    text: "#### Evidência que completa a Job Story"
   ejemplo-aplicado-12:
     sourceHash: 18248aaccc3245858104aaa482c51d2a95d050d9e8bb368435d89b076ec5b26d
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Elemento** | **Observação** |
+      |----------------------|------------------------------------------------------------------------------------------------|
+      | Conduta atual | A pessoa pede uma dica, depois a solução, e ainda assim não consegue decidir que regra aplicar. |
+      | Obstáculo e ansiedade | Não identifica o pré-requisito ausente e teme avançar sem compreender. |
+      | Evidência de sucesso | Consegue escolher e explicar a regra em um exercício equivalente com menos ajuda. |
   ejemplo-aplicado-13:
     sourceHash: a64a984f0420c242fcc7b3895eff9eb9d536b7501f5aae7afaa82167d2974e53
-    state: pendiente
+    state: borrador
+    text: "#### Redesenho da jornada"
   ejemplo-aplicado-14:
     sourceHash: 9b1133b85d9aeab0809e0503be5764857c260ad54c3c174f0c4c6da246b3ea1e
-    state: pendiente
+    state: borrador
+    text: "1\\. Detectar o tipo de bloqueio: conceito, notação, operação prévia ou interpretação do enunciado."
   ejemplo-aplicado-15:
     sourceHash: 76acda4a8f4e7899e15fcdac9005d39c6c5eff1819cba1984295d51994dbcc30
-    state: pendiente
+    state: borrador
+    text: 2\. Reformular com uma representação diferente, não repetir a mesma explicação com mais palavras.
   ejemplo-aplicado-16:
     sourceHash: 8ceedd90db1a9e6df1e0fb3af5c5bcc51f93e9c6fcb9b0eedb3c6ed0ac8e64c5
-    state: pendiente
+    state: borrador
+    text: 3\. Verificar uma micro-habilidade anterior por meio de uma pergunta breve e diagnóstica.
   ejemplo-aplicado-17:
     sourceHash: 408fd58a3a717f3ff1b0ed44bccad70445638320c102b7736870ba88b3fcdcab
-    state: pendiente
+    state: borrador
+    text: 4\. Oferecer um exemplo resolvido passo a passo, com uma decisão por vez e na linguagem do estudante.
   ejemplo-aplicado-18:
     sourceHash: 64414523bc003cb7b6140f2eb237b907e931b93213c85cd74107992daf4fe0bd
-    state: pendiente
+    state: borrador
+    text: 5\. Pedir que explique o raciocínio ou complete um passo equivalente antes de avançar.
   ejemplo-aplicado-19:
     sourceHash: b14a00e1f94a074adbb4ee5f67f93567b672759ed6a72de7e84f692bee227853
-    state: pendiente
+    state: borrador
+    text: 6\. Manter sempre um caminho para retroceder, mudar de explicação ou pedir ajuda humana.
   ejemplo-aplicado-20:
     sourceHash: 37a9f3515ee6c17e9f76b0029b44018ac8a2549b853680d1db6a7171e426ff3b
-    state: pendiente
+    state: borrador
+    text: "#### O que permanece determinístico e o que pode usar IA"
   ejemplo-aplicado-21:
     sourceHash: 2c6df24fb64b52527f6aa550ab0888bbbffbbbebe7203ca4ddb2e4b173421f56
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Camada** | **Responsabilidade** |
+      |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Determinística | Sequência de estados; validação matemática; domínio de pré-requisitos; registro de tentativas; regras de avanço; prevenção de becos sem saída. |
+      | Assistida por IA | Reformular uma explicação; gerar uma analogia; classificar o bloqueio; adaptar o tom; propor um exercício equivalente dentro de limites validados. |
+      | Controle humano | Permitir ao estudante ou tutor escolher outro caminho, revisar o histórico e corrigir uma inferência equivocada do sistema. |
   ejemplo-aplicado-22:
     sourceHash: 4853c20b9863aee97ea50fda01176e424ebbbc62410b88777779b46b83210410
-    state: pendiente
+    state: borrador
+    text: "#### Critério de sucesso"
   ejemplo-aplicado-23:
     sourceHash: d33c3518b4dd1f251ee83d5ff01b1327467ed885fd8888dfae1d3ab799a1a907
-    state: pendiente
+    state: borrador
+    text: O objetivo não é que o estudante chegue ao final da sequência. É que consiga resolver ou explicar um exercício equivalente com menos ajuda. Essa diferença muda a interface, a lógica, a medição e o uso de IA.
   sh-gov:
     sourceHash: 047f999c3c93ad72879227c29179bdc83b53ebe01d6c3fb55250a1fc96751418
-    state: pendiente
+    state: borrador
+    text: "## GOVERNANÇA · `SH-GOV`"
   gobernanza-02:
     sourceHash: c397108d8bc59d3ec1dda841f404e55bf3ec1d802b3ed8ced071feef6dc50472
-    state: pendiente
+    state: borrador
+    text: "### Como transformar o manifesto em uma prática habitual"
   gobernanza-03:
     sourceHash: 87feb2f1ea1e6917a72527f1730094298ade5fdbb9a93737da024b957d242a14
-    state: pendiente
+    state: borrador
+    text: "O manifesto perde valor se se limitar a uma apresentação inicial. Deve aparecer nos momentos em que a equipe toma decisões: definição, design, geração, revisão e aprendizado posterior ao lançamento."
   gobernanza-04:
     sourceHash: 32a94e0b8d27bca7cb221f7c43540348c6f886626df2f82c617201fe0d10aeda
-    state: pendiente
+    state: borrador
+    text: "#### Responsabilidades"
   gobernanza-05:
     sourceHash: 49cdfd6eed2d59b98c79a9c5c0a4738aa18842d8e068fa805603f0069edd6b5d
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Responsável** | **Obrigação principal** |
+      |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Produto | Estabelece a definição autorizada, o escopo, os resultados, as regras, os não objetivos e a evidência de sucesso; valida Jobs to Be Done e Job Stories quando são utilizados. |
+      | Design | Traduz o fundamento de produto em jornadas coerentes com o modelo mental da pessoa e protege sua atenção; utiliza Job Stories quando permitem concretizar a situação. |
+      | Engenharia | Absorve complexidade e garante estados, desempenho, acessibilidade e recuperação. |
+      | Agente de IA | Planeja e implementa dentro do fundamento e do contrato; declara suposições, mantém a cobertura e não reduz nem amplia o escopo por iniciativa própria. |
+      | Revisão humana | Avalia causalidade, sentido, risco, experiência completa e evidência; não se limita a revisar código. |
   gobernanza-06:
     sourceHash: a0bbc460fc8ca6287203ed247c57df87312e6c808abeeab762fc8f71ee2db60b
-    state: pendiente
+    state: borrador
+    text: "#### Pontos de controle"
   gobernanza-07:
     sourceHash: f9c9fb8519965da72232ad76dfd2151c95af5837e0e45ae70bf1dbdd2473c295
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Momento** | **Decisão requerida** |
+      |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+      | Antes de projetar | Fontes, autoridade, escopo, resultados, evidência, suposições e não objetivos estão claros; as Job Stories são compreendidas quando existem. |
+      | Antes de gerar código | O plano cobre a definição completa e estabelece dependências, resposta escolhida, caminhos, estados, regras críticas, riscos e aceitação. |
+      | Durante a construção | A decomposição organiza o trabalho sem alterar o escopo; bloqueios, pendências e exceções permanecem visíveis. |
+      | Antes de integrar | Cada mudança conserva rastreabilidade com seu fundamento, respeita o escopo, cobre estados e passa nos testes técnicos. |
+      | Antes de liberar | A implementação completa demonstra resultados, cobertura, compreensão, controle e qualidade de experiência. |
+      | Depois de liberar | Observam-se resultado, atrito, abandono e erros; revisam-se o fundamento, as histórias e suas suposições quando couber. |
   gobernanza-08:
     sourceHash: 478ce516c69a14fe61c0b1a15c8d7b9172b8996f72ad7f481bc1371b04e4637a
-    state: pendiente
+    state: borrador
+    text: "#### Evolução do manifesto"
   gobernanza-09:
     sourceHash: e4c0525d1a4d9f65cfe17088f6887078d0e42ca32a11d3a67f70d8602be24653
-    state: pendiente
+    state: borrador
+    text: "Os princípios devem ser estáveis; as regras e os testes podem evoluir com nova evidência. Toda mudança deveria registrar o problema observado, a decisão modificada e a razão. O marco não deve crescer por acúmulo: uma nova regra só é incorporada se resolver uma lacuna que as existentes não cobrem."
   gobernanza-10:
     sourceHash: 351cdb95d6e4bc395fe9296b0f47a408ce8917e4cec0661e8422fe36fc3a4e68
-    state: pendiente
+    state: borrador
+    text: "#### Controle de mudanças das versões 2.0 e 2.1"
   gobernanza-11:
     sourceHash: 9900aea4b55dee0e957a014904822163d8360c0637c45d84ea1425e29598cb6e
-    state: pendiente
+    state: borrador
+    text: A versão 1.0 permanece como formulação fundacional. A versão 2.0 conserva sua tese e seus dez princípios, mas substitui referências operacionais genéricas a Jobs to Be Done por uma cadeia mais concreta e verificável.
   gobernanza-12:
     sourceHash: c4fa37b2b58856cc01f4a39b7e1644bdc83cf53eee3d8ab70fdb769a176c0ffc
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Área** | **Ajuste da versão 2.0** | **Conteúdo que permanece** |
+      |----------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+      | Unidade de design | A Job Story concretiza o progresso dentro de um Jobs to Be Done. | O progresso do usuário continua sendo a medida principal. |
+      | Arquitetura | Incorpora-se um nível entre princípio e regra. | Princípios, regras e testes conservam sua função. |
+      | Fluxo e artefatos | Exige-se circunstância, motivação, resultado e evidência antes de projetar. | Mantém-se a documentação mínima que muda decisões. |
+      | Desenvolvimento com IA | O agente deve reformular e respeitar a Job Story. | Continuam os limites, o determinismo e a revisão humana. |
+      | Aceitação | O resultado é testado na circunstância descrita. | Acessibilidade, desempenho, estados e controle continuam obrigatórios. |
+      | Exemplo e governança | Acrescenta-se rastreabilidade causal e validação de histórias. | O tutor de cálculo e os pontos de controle conservam seu propósito. |
   gobernanza-13:
     sourceHash: fbf3e33e1c49741aed30416932f736891d27744c9fdf49ea72123f2f9229fadc
-    state: pendiente
+    state: borrador
+    text: A versão 2.1 preserva a tese, os dez princípios, a doutrina para IA, as Job Stories e o exemplo aplicado. Amplia o núcleo para admitir definições de produto de forma, extensão e profundidade diferentes sem impor uma estrutura a montante nem supor uma estratégia incremental.
   gobernanza-14:
     sourceHash: d5ff5168823ec9b72198160d56c72e361c1b70fbad36e509373d0b4e1ea43ea5
-    state: pendiente
+    state: borrador
+    text: |-
+      | **Área** | **Ajuste da versão 2.1** | **Conteúdo que permanece** |
+      |-----------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+      | Fundamento | Define-se uma base autorizada, rastreável e verificável que pode adotar formas diferentes. | O progresso humano continua como medida principal. |
+      | Job Stories | São declaradas forma de referência, não estrutura universal obrigatória. | Conservam-se sua forma canônica, evidência, testes e exemplos. |
+      | Escopo | Exige-se cobertura completa e proíbem-se omissões ou adiamentos não autorizados. | O produto continua definindo escopo e não objetivos. |
+      | Planejamento | Separa-se decomposição, sequência e paralelismo de qualquer decisão de escopo. | Continuam a clareza prévia, as regras, os riscos e a aceitação. |
+      | Estratégia de entrega | A incrementalidade deixa de ser uma suposição do núcleo. | Cada projeto pode adotar fases ou releases quando couber. |
+      | Implementação SDD | Reserva-se a anexos e adaptadores independentes. | O núcleo conserva princípios e garantias que toda implementação deve respeitar. |
   sh-done:
     sourceHash: 2a8713d4c86320daa8f228f47a4c4be1e8a17ed4895f39ca86ca6cd04d856a0a
-    state: pendiente
+    state: borrador
+    text: "#### Definição de pronto · `SH-DONE`"
   gobernanza-16:
     sourceHash: fd1e0be577415e03722ed6933bcebedde8d7c2c11c77831daeed17ece434202b
-    state: pendiente
+    state: borrador
+    text: Um desenvolvimento está completo quando todos os elementos obrigatórios da definição de produto têm uma implementação e uma evidência verificável, ou uma exceção explícita e aprovada; as pessoas alcançam os resultados previstos nas condições definidas; e a conduta do sistema e a qualidade da experiência foram verificadas com rigor proporcional ao risco.
   gobernanza-17:
     sourceHash: 9c8aee8f9b8fb51d4573effef52445d02d3131761ca6fa84efc03d494290d453
-    state: pendiente
+    state: borrador
+    text: Quando o fundamento inclui Job Stories, a verificação deve demonstrar o resultado em suas circunstâncias. A completude inclui código correto, mas não termina aí. Exige cobertura do escopo, integração entre suas partes, estados críticos confiáveis, uma experiência que não obrigue a aprender a arquitetura do produto, IA dentro de limites explícitos e clareza sobre o que deve ser observado depois do lançamento.
   sh-pocket:
     sourceHash: 74db51b1e13798e2db40b33b840edeaa55a4213d8eaebe887f9c943bfd92017f
-    state: pendiente
+    state: borrador
+    text: "## GUIA DE BOLSO · `SH-POCKET`"
   guia-de-bolsillo-02:
     sourceHash: 8fa141c7c655d369bad8bebc6a6ad06fb93ea6b2cb15b0c6c0fdb506373529ca
-    state: pendiente
+    state: borrador
+    text: "### Catorze perguntas antes de aceitar uma decisão"
   guia-de-bolsillo-03:
     sourceHash: 5b6ee49b5d835116822e94677bacfbbb2ff8230417e052b3718fba5e21a8dc6d
-    state: pendiente
+    state: borrador
+    text: 1\. Qual é a fonte autorizada e que escopo ela estabelece?
   guia-de-bolsillo-04:
     sourceHash: d20f1f0ee1cd5d58380252ccf0a3f2f3cfdeb0d91e744ff374905fc441431829
-    state: pendiente
+    state: borrador
+    text: 2\. O planejamento dá conta de todos os elementos obrigatórios?
   guia-de-bolsillo-05:
     sourceHash: 317078e508327e225931d93ad2573615ef80bdb79e567c447812f67d9b84dfa9
-    state: pendiente
+    state: borrador
+    text: 3\. Que circunstância concreta ativa a necessidade?
   guia-de-bolsillo-06:
     sourceHash: da3c79c7da2937b16cd4928c3902fc35c12dbe7dc9991e4895609185edb4f022
-    state: pendiente
+    state: borrador
+    text: 4\. Que motivação ou tensão impulsiona a pessoa a agir?
   guia-de-bolsillo-07:
     sourceHash: 930009caf02ab3bc8f157a3f7c5427733652a06e6f7fe5cddd61e9513f748248
-    state: pendiente
+    state: borrador
+    text: 5\. Que resultado permitiria reconhecer o progresso?
   guia-de-bolsillo-08:
     sourceHash: 8c3cca0e259cc4cf8f1da54a75d39dcb1236b3c15fed63846f8b927d32c8ad87
-    state: pendiente
+    state: borrador
+    text: 6\. Que conduta ou evidência demonstra que a história acontece?
   guia-de-bolsillo-09:
     sourceHash: 56c3aeeea54a009c2c73ffe09b2046d2df9b717ad27be8f0eb163d562b5db220
-    state: pendiente
+    state: borrador
+    text: 7\. Quando existe uma Job Story, ela descreve o problema sem prescrever a solução?
   guia-de-bolsillo-10:
     sourceHash: 9fcff69fedda7d03644648d8e0a21685a7ada37c088ef0ac17d3d2e77c74098e
-    state: pendiente
+    state: borrador
+    text: 8\. Que complexidade o sistema absorve e qual ainda transfere?
   guia-de-bolsillo-11:
     sourceHash: cf7b83d9da0b082d86813321f878ae3109b9c5e3d0063c5156d27d3fb5f9d39c
-    state: pendiente
+    state: borrador
+    text: 9\. O que a pessoa deve ver agora e o que pode esperar?
   guia-de-bolsillo-12:
     sourceHash: 9a8efaa7b179b47d4352ca01fae9279bbe5251f69a13bd884f66c6a3b10350ec
-    state: pendiente
+    state: borrador
+    text: 10\. O que acontecerá se ela errar, interromper ou voltar depois?
   guia-de-bolsillo-13:
     sourceHash: 1933072a6b4f63e43872be65e1712572dd204ed0fb78aa0e2b886a92e702ce88
-    state: pendiente
+    state: borrador
+    text: 11\. Ela mantém o controle sobre a decisão, os dados e o resultado?
   guia-de-bolsillo-14:
     sourceHash: 1b0bfd552c7094e6915a974b618a95d8b74efef4538efd03a395b736e32b5894
-    state: pendiente
+    state: borrador
+    text: 12\. Que parte precisa de determinismo e que parte admite geração?
   guia-de-bolsillo-15:
     sourceHash: 97161e89f24681a37b14ef1eaadb0871433483ca4af97bd9db5df5acb39aaa04
-    state: pendiente
+    state: borrador
+    text: 13\. Qual é a alternativa mais simples que cumpre o fundamento de produto?
   guia-de-bolsillo-16:
     sourceHash: dc2e591415e0bcec7ece310f96ad646bb5630b276193a7c673c0bc368681c881
-    state: pendiente
+    state: borrador
+    text: 14\. Que evidência nos permitiria dizer que está pronto?
   guia-de-bolsillo-17:
     sourceHash: eb849c4fa5b06ec805ed6a8c3f2d76fd5dbb1f299dda4454f501c27979ae42d1
-    state: pendiente
+    state: borrador
+    text: "#### Sete razões para deter uma implementação"
   guia-de-bolsillo-18:
     sourceHash: 169277b12fd84a1481a4654939d27c5a3a997c7160dd6b0e7b94e975968be358
-    state: pendiente
+    state: borrador
+    text: |-
+      - `STOP01` Não existe um fundamento de produto identificável ou a solução parece preceder o problema.
+
+      - `STOP02` O plano não dá conta de todo o escopo obrigatório definido pelo produto.
+
+      - `STOP03` Pretende-se omitir, modificar ou adiar uma parte sem uma decisão autorizada.
+
+      - `STOP04` Uma ambiguidade material está sendo resolvida pelo agente sem autorização.
+
+      - `STOP05` A interface expõe uma complexidade interna que o sistema poderia absorver.
+
+      - `STOP06` Uma ação sensível carece de determinismo, rastreabilidade ou recuperação.
+
+      - `STOP07` A equipe só consegue demonstrar que o código funciona, não que o usuário progride.
   guia-de-bolsillo-19:
     sourceHash: c6dbef2b17bb47efaad5789e34e3044ef75a3554b87f9672e941a4837c7efbda
-    state: pendiente
+    state: borrador
+    text: "#### Três frases que protegem o critério"
   guia-de-bolsillo-20:
     sourceHash: 8f1d576f83ecfa17e944a78a7ae859946f2d72db459d2ee5e8eea765920b53ff
-    state: pendiente
+    state: borrador
+    text: Que circunstância ativa esta necessidade?
   guia-de-bolsillo-21:
     sourceHash: 899d4ec8d4bf99a04a863cd3cd9782e24670006dc22a88cf5aa6f624e847ccda
-    state: pendiente
+    state: borrador
+    text: Que progresso habilita?
   guia-de-bolsillo-22:
     sourceHash: 3dba52a787a3315bbf0d2d3bead8cf80e5ce4b66b9393879025c1cfd85efca9b
-    state: pendiente
+    state: borrador
+    text: Que evidência o demonstra?
   influencias-y-notas-01:
     sourceHash: 3b86b57efae75a6898216df3f1a4f5337195e15b1da3d9c78190f3dc6007438d
-    state: pendiente
+    state: borrador
+    text: "## INFLUÊNCIAS E NOTAS"
   influencias-y-notas-02:
     sourceHash: fd259e3266f52de59fd136810fdf5faae99680bf291dbc568fb4d0f6bbd4b07b
-    state: pendiente
+    state: borrador
+    text: "### Origem da perspectiva"
   influencias-y-notas-03:
     sourceHash: 96763d193d39fa45b7fb1c43b452125542340057d6b7b0528ccd25cd94ef817c
-    state: pendiente
+    state: borrador
+    text: Este marco é uma elaboração independente inspirada em ideias públicas da Craft e nas conversas que deram origem a este documento. Não é um manifesto oficial da Craft nem atribui a seu fundador as regras operacionais aqui propostas.
   influencias-y-notas-04:
     sourceHash: df196e9970e3bbc62375f4461bfcbb56b17ae6d7c12cb64e8e4944517a7635b5
-    state: pendiente
+    state: borrador
+    text: "Da Craft recolhem-se quatro influências: a união entre forma e função; o efeito que uma ferramenta produz na energia e na capacidade de quem a usa; a complexidade adaptável que aparece quando é necessária; e o enfoque human first diante de sistemas que obrigam as pessoas a se acomodar à sua estrutura."
   influencias-y-notas-05:
     sourceHash: 3022784d1acb67d9ae809c1c772feaabd522158283c452e6314d913599982ef3
-    state: pendiente
+    state: borrador
+    text: De Jobs to Be Done, conserva-se o progresso como referência superior. De Job Stories, adota-se uma forma concreta de levar esse progresso ao design por meio de circunstâncias, motivações, resultados, conduta atual, ansiedades e evidência causal.
   influencias-y-notas-06:
     sourceHash: 619e485337589c33982f4bc03e55e2c86789f4c0330d53c4dd0554efbc726a6f
-    state: pendiente
+    state: borrador
+    text: A versão 2.1 integra essas influências em um núcleo capaz de respeitar definições de produto heterogêneas. As Job Stories permanecem como forma de referência e exemplo aplicado; não substituem outras estruturas autorizadas nem permitem recortar seu escopo.
   influencias-y-notas-07:
     sourceHash: 877796764a1f03c0640759d642b201c95a72130f6283d1cf5b30f5b4884bab4a
-    state: pendiente
+    state: borrador
+    text: "#### Fontes consultadas"
   influencias-y-notas-08:
     sourceHash: c04131833dca3b06342dbf6f261190a61b0e95ca7d78c2d573963fb98abba2fc
-    state: pendiente
+    state: borrador
+    text: Craft. [<u>Sobre a Craft</u>](https://www.craft.do/es/about). História do fundador e reflexões sobre forma, função, atrito, complexidade adaptável e atenção aos detalhes.
   influencias-y-notas-09:
     sourceHash: 23de990ed35022f79e707310553fe51f3154df8de2803585b565c84cb87fd2e2
-    state: pendiente
+    state: borrador
+    text: Balint Orosz. [<u>Introducing Craft 3</u>](https://www.craft.do/blog/welcome-to-craft3), 28 de novembro de 2024. Adaptação ao contexto, redução da carga cognitiva, desempenho e funcionamento offline.
   influencias-y-notas-10:
     sourceHash: c0491672ae959358aa9cebd1d9ce292c37c2f4f05217fa90e29f6c56cb780dce
-    state: pendiente
+    state: borrador
+    text: Balint Orosz. [<u>Your content is yours and that is more empowering than ever</u>](https://www.craft.do/blog/your-content-is-yours), 27 de novembro de 2025. Controle sobre o conteúdo, portabilidade, IA e o princípio human first versus systems first.
   influencias-y-notas-11:
     sourceHash: c9a4eb50168ca72c22092c67ce13ec47e7ec7807aad321c1b0e8c04912150c94
-    state: pendiente
+    state: borrador
+    text: Alan Klement. [<u>Designing Features Using Job Stories</u>](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), publicado pela Intercom em 23 de dezembro de 2013. Aplicação granular de Jobs to Be Done ao design de funcionalidades, interface e experiência por meio de contexto, causalidade, motivações e ansiedades.
   influencias-y-notas-12:
     sourceHash: c8dde8ed8798ffeadafda2f7915fc288c3aa48d05ed0c7d2ca4e1f8ff4455400
-    state: pendiente
+    state: borrador
+    text: "#### Declaração final"
   influencias-y-notas-13:
     sourceHash: e34b56dda41ce735ca989f4893c570d0da2e8a30d360749ccb67449e1f3f00ca
-    state: pendiente
+    state: borrador
+    text: A tecnologia pode ser extraordinariamente sofisticada por trás da interface. Diante dela deve permanecer uma pessoa concentrada naquilo que queria conseguir.

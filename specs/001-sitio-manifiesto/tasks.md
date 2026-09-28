@@ -242,16 +242,16 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-09`; `AC-13` y `AC-14`.
 
-- [ ] T079 [P] [US9] Escribir `tests/e2e/js09-idioma.spec.ts` con los cuatro escenarios de `JS-09` y la tabla «Idioma» de contracts/rutas.md, incluidos sin JavaScript y con almacenamiento bloqueado
-- [ ] T080 [P] [US9] Escribir `tests/unit/i18n/hreflang.test.ts` sobre `dist/`: reciprocidad y códigos BCP 47 en las 48 páginas
-- [ ] T081 [US9] Implementar `src/components/SelectorIdioma.astro`:
+- [X] T079 [P] [US9] Escribir `tests/e2e/js09-idioma.spec.ts` con los cuatro escenarios de `JS-09` y la tabla «Idioma» de contracts/rutas.md, incluidos sin JavaScript y con almacenamiento bloqueado
+- [X] T080 [P] [US9] Escribir `tests/unit/i18n/hreflang.test.ts` sobre `dist/`: reciprocidad y códigos BCP 47 en las 48 páginas
+- [X] T081 [US9] Implementar `src/components/SelectorIdioma.astro`:
   - enlaces a `rutaEquivalente` conservando el ancla;
   - nombres «English», «Español» y «Português (Brasil)», sin banderas;
   - idioma activo con `aria-current` y `lang`;
   - acción para restablecer la preferencia
-- [ ] T082 [US9] Implementar `src/cliente/preferencia-idioma.ts`: guarda la elección (protegido ante almacenamiento no disponible), permite restablecerla y redirige **solo** desde `/` (RQ-04); nunca actúa en otras rutas
-- [ ] T083 [US9] Completar en `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` (creados en T017) un borrador de traducción **nodo a nodo** para todos los nodos, con `sourceHash` y `state: borrador` (RQ-02)
-- [ ] T084 [US9] Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
+- [X] T082 [US9] Implementar `src/cliente/preferencia-idioma.ts`: guarda la elección (protegido ante almacenamiento no disponible), permite restablecerla y redirige **solo** desde `/` (RQ-04); nunca actúa en otras rutas
+- [X] T083 [US9] Completar en `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` (creados en T017) un borrador de traducción **nodo a nodo** para todos los nodos, con `sourceHash` y `state: borrador` (RQ-02)
+- [ ] T084 [US9] **Se ejecuta después de la fase 12** (ajuste de orden del 2026-09-27: la ronda temprana en español puede cambiar el contenido y traducirlo antes obligaría a retraducir; el alcance no cambia). Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
 
 ---
 

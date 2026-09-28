@@ -75,3 +75,5 @@ details.profundidad > summary { cursor: pointer; color: var(--sh-color-acento); 
 .pie { margin-top: 3rem; padding-top: 1rem; padding-bottom: 2rem; border-top: 1px solid var(--sh-color-borde); font-size: 0.875rem; color: var(--sh-color-suave); }
 .compartir { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; font-size: 0.875rem; margin: 0.25rem 0 1rem; }
 .compartir button { border: 1px solid var(--sh-color-borde); padding: 0.1rem 0.6rem; border-radius: 0.25rem; }
+.selector-idioma a[aria-current='true'] { font-weight: 700; text-decoration: none; }
+.selector-idioma button { font-size: 0.8rem; border: 1px solid var(--sh-color-borde); padding: 0 0.5rem; border-radius: 0.25rem; }
