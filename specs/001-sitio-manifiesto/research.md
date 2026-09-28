@@ -163,3 +163,10 @@ Reemplaza la asignación de casas de RQ-14; la regla de una sola casa se conserv
 - **Alternatives considered**:
   - Pagefind: maduro, con raíces léxicas por idioma, pero necesita WebAssembly (`'wasm-unsafe-eval'` en `script-src`). Además indexa el HTML renderizado, así que la unicidad dependería de marcar a mano lo que debe ignorar;
   - un servicio de búsqueda de terceros: incumple `FR-018`.
+
+## RQ-16 enmendado · búsqueda en el idioma vigente (2026-09-28)
+
+- **Decision**: cada texto del índice lleva su idioma real, no el de la página donde aparece. El índice de cada idioma guarda solo los textos escritos en ese idioma. Si el título de una sección no está traducido, el resultado usa el nombre de la página. Los resultados se agrupan **una vez por sección**, con el extracto que mejor coincide y el enlace a ese pasaje; los identificadores (`CR03`, `STOP02`) conservan su resultado propio.
+- **Rationale**: PRD §19.4 (no mezclar idiomas) y `FR-019`; criterio propuesto por Damián Acuña: mostrar todo lo que coincide, filtrado por el idioma vigente. Se filtra al construir y no al buscar porque el resultado es el mismo y el visitante descarga solo su idioma (§24.1, `P09`). Un resultado por sección evita títulos repetidos (`P06`).
+- **Alternatives considered**: un solo índice con los tres idiomas filtrado en el navegador (el triple de datos para el mismo resultado); mantener el original en español donde falta la traducción (mezcla idiomas, que fue el defecto observado).
+- **Consecuencia declarada**: mientras los textos explicativos no estén traducidos (T084), la búsqueda en `en` y `pt-BR` encuentra sobre todo el texto del núcleo, que ya tiene traducción en borrador.

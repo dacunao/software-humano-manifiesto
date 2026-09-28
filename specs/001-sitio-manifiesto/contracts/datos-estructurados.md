@@ -4,12 +4,13 @@ Lo que el sitio declara a buscadores y agentes. Se genera desde las mismas entra
 
 | Página | Tipos | Propiedades obligatorias |
 |---|---|---|
-| Todas | `WebSite` (una vez, en Inicio) y `WebPage` | `name`, `url`, `inLanguage`; `WebSite.author` → `Person` |
+| Todas | `WebSite` (una vez, en Inicio) y `WebPage` | `name` = «Manifiesto» (v1.3), `url`, `inLanguage`; `WebSite.author` → `Person`; `WebSite.publisher` → `Organization` |
 | El manifiesto, división 1 (v1.2) | `WebPage` + `CreativeWork` | `name`, `version` = `2.1`, `inLanguage`, `author`, `datePublished`, `license` (CC BY 4.0). En `es`: `workTranslation` → versiones `en` y `pt-BR`. En `en` y `pt-BR`: `translationOfWork` → versión `es` |
 | Principios | `WebPage` + `DefinedTermSet` | `name`, `inLanguage`, `hasDefinedTerm` → los diez |
 | Un principio | `WebPage` + `DefinedTerm` | `termCode` = `P0N`, `name` (nombre canónico), `description`, `inDefinedTermSet`, `url` |
 | Páginas con migas visibles | `BreadcrumbList` | Solo si la navegación visible muestra esa jerarquía |
 | Autoría | `Person` | `name` = Damián Acuña, `url` si está aprobada |
+| Editor (v1.3) | `Organization` | `name` = Software Humano, `url` = `https://softwarehumano.com`. También en `CreativeWork.publisher` |
 
 **Prohibido mientras `AdaptationStatus.published` sea `false`**: `SoftwareSourceCode`, `downloadUrl` o cualquier propiedad que insinúe publicación (`RV-10`, `FR-010`).
 
