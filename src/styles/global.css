@@ -217,3 +217,16 @@ dialog.busqueda input { width: 100%; font: inherit; font-size: 1.05rem; padding:
 .resultado-titulo { display: block; font-weight: 650; }
 .resultado-texto { display: block; font-size: 0.85rem; color: var(--sh-suave); }
 .busqueda-resultados mark { background: var(--sh-acento-suave); color: var(--sh-tinta); padding: 0 0.1em; }
+
+/* Tablas del núcleo en pantallas angostas (T140, PRD v1.2 §21.4): filas apiladas con el rótulo
+   de cada columna, sin desplazamiento horizontal. Los roles explícitos conservan la tabla. */
+@media (max-width: 40rem) {
+  table.tabla-canonica { display: block; overflow: visible; border: 0; }
+  table.tabla-canonica thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  table.tabla-canonica tbody, table.tabla-canonica tr, table.tabla-canonica td { display: block; }
+  table.tabla-canonica tr { border: 1px solid var(--sh-linea); border-radius: 6px; padding: 0.5rem 0.75rem; margin-bottom: 0.75rem; background: var(--sh-tarjeta); }
+  table.tabla-canonica td { border: 0; padding: 0.2rem 0; }
+  table.tabla-canonica td[data-rotulo]::before { content: attr(data-rotulo); display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sh-suave); }
+}
+/* El índice plegado queda fijo arriba en pantallas angostas: un ancla no debe quedar debajo (T138). */
+@media (max-width: 61.99rem) { main [id] { scroll-margin-top: 3.5rem; } }

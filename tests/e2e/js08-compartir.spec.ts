@@ -6,7 +6,8 @@ test.describe('JS-08 · Compartir una idea precisa', () => {
     await page.goto('/es/principios/p03');
     await expect(page.locator('h1')).toContainText('P03');
     await expect(page.locator('#declaracion figure.cita-canonica')).toBeVisible();
-    await expect(page.locator('#fuente a')).toHaveAttribute('href', '/es/manifiesto/texto-integro#p03');
+    // La fuente es el núcleo completo, en la descarga del idioma (PRD v1.2 §18.1).
+    await expect(page.locator('#fuente a')).toHaveAttribute('href', '/descargas/nucleo-v2.1-es.md');
   });
 
   test('escenario 2 · copiar confirma de forma clara y anunciable', async ({ page, context, browserName }, info) => {
@@ -23,9 +24,22 @@ test.describe('JS-08 · Compartir una idea precisa', () => {
   });
 
   test('escenario 3 · sin JavaScript el enlace de la sección está visible y es estable', async ({ page }) => {
-    await page.goto('/es/manifiesto/texto-integro');
+    await page.goto('/es/manifiesto/construir-con-ia');
     const enlace = page.locator('.compartir').first().getByRole('link', { name: 'Enlace a esta sección' });
     await expect(enlace).toBeVisible();
     await expect(enlace).toHaveAttribute('href', /^\/es\/[a-z/-]+(#[a-z0-9-]+)?$/);
+  });
+
+  test('escenario 4 · cada sección de una división tiene su enlace, sin símbolos al pasar el cursor (T139)', async ({ page }) => {
+    await page.goto('/es/manifiesto/verificar');
+    const secciones = page.locator('main section.seccion[id]');
+    const n = await secciones.count();
+    expect(n).toBeGreaterThan(2);
+    for (let i = 0; i < n; i++) {
+      const id = await secciones.nth(i).getAttribute('id');
+      if (id === 'recorrido') continue;
+      await expect(secciones.nth(i).locator('.compartir a.enlace-seccion').first()).toHaveAttribute('href', `/es/manifiesto/verificar#${id}`);
+    }
+    await expect(page.locator('main h2 .sl-anchor-link, main h2 a[aria-hidden]')).toHaveCount(0);
   });
 });

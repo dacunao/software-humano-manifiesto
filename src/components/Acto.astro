@@ -7,6 +7,9 @@ import CitaCanonica from './CitaCanonica.astro';
 import Comparacion from './Comparacion.astro';
 import ListaPrincipios from './ListaPrincipios.astro';
 import EstadoAdaptacion from './EstadoAdaptacion.astro';
+import Compartir from './Compartir.astro';
+import { esDivision } from '../lib/manifiesto';
+import { ruta } from '../lib/i18n/rutas';
 
 /**
  * Un acto del recorrido o una sección de superficie: una idea dominante visible (PRD §21.1)
@@ -40,6 +43,7 @@ const grupos = [sec.blocks, sec.depth] as const;
 ---
 <section id={sec.id} aria-labelledby={`${sec.id}-titulo`} class="seccion">
   <h2 id={`${sec.id}-titulo`} lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h2>
+  {esDivision(superficie) && <Compartir locale={locale} href={`${ruta({ tipo: superficie }, locale)}#${sec.id}`} titulo={titulo.texto} />}
   {pregunta?.texto && <p class="pregunta" lang={pregunta.lang !== locale ? pregunta.lang : undefined}>{pregunta.texto}</p>}
   {grupos.map((lista, i) => {
     const contenido = lista.map((b) => {
