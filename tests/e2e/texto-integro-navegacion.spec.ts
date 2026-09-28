@@ -16,6 +16,7 @@ test.describe('texto íntegro · panel «En esta sección»', () => {
   for (const [ruta, seccion, esperado] of [
     ['/es/principios#fundamento', 'fundamento', 'Cuándo el fundamento es identificable'],
     ['/es/aplicacion#ejemplo', 'ejemplo', 'Diagnóstico desde el manifiesto'],
+    ['/es/verificacion#antipatrones', 'antipatrones', 'Una advertencia sobre la simplicidad'],
   ] as const) {
     test(`el mismo esquema en ${ruta.split('#')[0]}`, async ({ page }, info) => {
       test.skip(info.project.name !== 'js', 'solo escritorio con JavaScript');
