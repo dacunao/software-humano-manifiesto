@@ -49,7 +49,7 @@ Casa especial `descarga`: los nodos de Influencias y notas, salvo la Declaració
 
 ### Índice de búsqueda (`SearchIndex`) · derivado, v1.2
 
-Un archivo por idioma, generado en la construcción (RQ-16). Cada entrada tiene página, ancla, título, identificador si lo hay y texto. Contiene cada nodo canónico una sola vez, en su casa, y las entradas editoriales visibles de cada página. Excluye las citas `breve` y los actos de Inicio. Desde RQ-16 enmendado, cada entrada está escrita en el idioma del índice: los textos que se muestran en el original por falta de traducción no entran.
+Registros por idioma generados en la construcción desde el modelo (RQ-16); desde RQ-16 enmendado, alimentan el índice de Pagefind en `/pagefind/`, un índice por idioma. Cada entrada tiene página, ancla, título, identificador si lo hay y texto. Contiene cada nodo canónico una sola vez, en su casa, y las entradas editoriales visibles de cada página. Excluye las citas `breve` y los actos de Inicio. Desde RQ-16 enmendado, cada entrada está escrita en el idioma del índice: los textos que se muestran en el original por falta de traducción no entran.
 
 ### Acto narrativo (`Act`)
 

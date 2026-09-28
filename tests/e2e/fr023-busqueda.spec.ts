@@ -1,72 +1,80 @@
 import { expect, test } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-// FR-023 · búsqueda (PRD v1.2, RQ-16): un resultado por pasaje, en su casa; sin JavaScript no hay botón.
+// FR-023 · búsqueda (RQ-16 enmendado: motor Pagefind, índice desde nuestros registros, interfaz propia).
 test.describe('FR-023 · búsqueda', () => {
-  test('buscar «CR03» da un resultado que lleva a su casa', async ({ page, javaScriptEnabled }) => {
-    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
-    await page.goto('/es/manifiesto');
-    await page.getByRole('button', { name: 'Buscar' }).click();
-    const dialogo = page.getByRole('dialog', { name: 'Buscar en el sitio' });
+  test.skip(({ javaScriptEnabled }) => !javaScriptEnabled, 'la búsqueda es una mejora progresiva');
+
+  const buscar = async (page: import('@playwright/test').Page, ruta: string, nombreBoton: string, q: string) => {
+    await page.goto(ruta);
+    await page.getByRole('button', { name: nombreBoton }).click();
+    const dialogo = page.getByRole('dialog');
     await expect(dialogo).toBeVisible();
     await expect(dialogo.getByRole('searchbox')).toBeFocused();
-    await dialogo.getByRole('searchbox').fill('CR03');
-    const enlaces = dialogo.locator('.busqueda-resultados a');
-    await expect(enlaces).toHaveCount(1);
-    await expect(enlaces.first()).toHaveAttribute('href', '/es/manifiesto/construir-con-ia#cr03');
-    await enlaces.first().click();
-    await expect(page).toHaveURL(/\/es\/manifiesto\/construir-con-ia#cr03$/);
+    await dialogo.getByRole('searchbox').fill(q);
+    return dialogo;
+  };
+
+  test('«CR03» lleva a su casa, como subresultado de la página, y el término queda resaltado', async ({ page }) => {
+    const dialogo = await buscar(page, '/es/manifiesto', 'Buscar', 'CR03');
+    const sub = dialogo.locator('.busqueda-resultados a.subresultado', { hasText: 'CR03' }).first();
+    await expect(sub).toHaveAttribute('href', /^\/es\/manifiesto\/construir-con-ia\?resaltar=cr03#cr03$/i);
+    await expect(dialogo.locator('.resultado-pagina').first()).toContainText('Construir con IA');
+    await sub.click();
+    await expect(page).toHaveURL(/\/es\/manifiesto\/construir-con-ia\?resaltar=cr03#cr03$/i);
+    await expect(page.locator('main mark.pagefind-highlight').first()).toBeVisible();
   });
 
-  test('sin resultados lo dice; Escape cierra y el foco vuelve al botón', async ({ page, javaScriptEnabled }) => {
-    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
-    await page.goto('/pt-br/manifesto');
-    const boton = page.getByRole('button', { name: 'Buscar' });
-    await boton.click();
-    const dialogo = page.getByRole('dialog');
-    await dialogo.getByRole('searchbox').fill('zzzqqq');
+  test('las raíces de palabras: «decisiones» encuentra «decisión»', async ({ page }) => {
+    const dialogo = await buscar(page, '/es/manifiesto', 'Buscar', 'decisiones');
+    await expect(dialogo.locator('.busqueda-resultados mark', { hasText: /^decisión$/i }).first()).toBeVisible();
+  });
+
+  test('un resultado por página y sección, sin títulos repetidos, y solo en el idioma vigente', async ({ page }) => {
+    const dialogo = await buscar(page, '/about', 'Search', 'manifesto');
+    await expect(dialogo.locator('.resultado-pagina').first()).toBeVisible();
+    const pares = await dialogo.locator('.resultado-pagina').evaluateAll((ss) => ss.flatMap((s) => {
+      const pagina = s.querySelector('.resultado-titulo')?.textContent;
+      return [...s.querySelectorAll('.resultado-titulo')].map((t) => `${pagina}|${t.textContent}`);
+    }));
+    expect(new Set(pares).size).toBe(pares.length);
+    // «botella» solo aparece en una explicación en español aún sin traducir: el índice inglés no la tiene.
+    await dialogo.getByRole('searchbox').fill('botella');
+    await expect(dialogo.getByRole('status')).toContainText('Nothing matches');
+  });
+
+  test('el índice español sí contiene esa explicación (control de la prueba anterior)', async ({ page }) => {
+    const dialogo = await buscar(page, '/es/manifiesto', 'Buscar', 'botella');
+    await expect(dialogo.locator('.resultado-pagina').first()).toContainText('Construir con IA');
+  });
+
+  test('sin resultados lo dice; Escape cierra y el foco vuelve al botón', async ({ page }) => {
+    const dialogo = await buscar(page, '/pt-br/manifesto', 'Buscar', 'zzzqqq');
     await expect(dialogo.getByRole('status')).toContainText('Nada corresponde');
     await page.keyboard.press('Escape');
     await expect(dialogo).toBeHidden();
-    await expect(boton).toBeFocused();
+    await expect(page.getByRole('button', { name: 'Buscar' })).toBeFocused();
   });
 
-  test('si el índice no carga, lo explica y la navegación sigue', async ({ page, javaScriptEnabled }) => {
-    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
-    await page.route('**/buscar/*.json', (r) => r.abort());
+  test('si el índice no carga, lo explica y la navegación sigue', async ({ page }) => {
+    await page.route('**/pagefind/**', (r) => r.abort());
     await page.goto('/es');
     await page.getByRole('button', { name: 'Buscar' }).click();
     await expect(page.getByRole('dialog').getByRole('status')).toContainText('No se pudo cargar');
   });
 
-  test('sin JavaScript no hay botón de búsqueda; nada se pide a terceros', async ({ page, javaScriptEnabled }) => {
-    const externas: string[] = [];
-    page.on('request', (r) => { if (!r.url().startsWith('http://localhost:4321')) externas.push(r.url()); });
-    await page.goto('/es/manifiesto/verificar');
-    if (!javaScriptEnabled) await expect(page.locator('[data-abrir-busqueda]')).toBeHidden();
-    expect(externas).toEqual([]);
-  });
-
-  test('el diálogo abierto, con resultados, no tiene violaciones WCAG A/AA (T142)', async ({ page, javaScriptEnabled }) => {
-    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
-    await page.goto('/es/manifiesto');
-    await page.getByRole('button', { name: 'Buscar' }).click();
-    await page.getByRole('searchbox').fill('atención');
-    await expect(page.locator('.busqueda-resultados a').first()).toBeVisible();
+  test('el diálogo abierto, con resultados, no tiene violaciones WCAG A/AA', async ({ page }) => {
+    const dialogo = await buscar(page, '/es/manifiesto', 'Buscar', 'atención');
+    await expect(dialogo.locator('.busqueda-resultados a').first()).toBeVisible();
     const r = await new AxeBuilder({ page }).include('dialog.busqueda').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(r.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
   });
+});
 
-  test('un resultado por sección y solo textos en el idioma de la página (RQ-16 enmendado)', async ({ page, javaScriptEnabled }) => {
-    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
-    await page.goto('/about');
-    await page.getByRole('button', { name: 'Search' }).click();
-    await page.getByRole('searchbox').fill('manifesto');
-    const titulos = page.locator('.busqueda-resultados .resultado-titulo');
-    await expect(titulos.first()).toBeVisible();
-    const lista = await page.locator('.busqueda-resultados li a').evaluateAll((as) => as.map((a) => `${a.closest('section')?.querySelector('h3')?.textContent}|${a.querySelector('.resultado-titulo')?.textContent}`));
-    expect(new Set(lista).size).toBe(lista.length);
-    await page.getByRole('searchbox').fill('manifiesto');
-    await expect(page.getByRole('dialog').getByRole('status')).toContainText('Nothing matches');
-  });
+test('sin JavaScript no hay botón de búsqueda; nada se pide a terceros', async ({ page, javaScriptEnabled }) => {
+  const externas: string[] = [];
+  page.on('request', (r) => { if (!r.url().startsWith('http://localhost:4321')) externas.push(r.url()); });
+  await page.goto('/es/manifiesto/verificar');
+  if (!javaScriptEnabled) await expect(page.locator('[data-abrir-busqueda]')).toBeHidden();
+  expect(externas).toEqual([]);
 });

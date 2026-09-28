@@ -29,7 +29,7 @@ Son **66 páginas de contenido**, 22 por idioma (Inicio, SpecKit, Acerca de, las
 - `/descargas/nucleo-v2.1-es.md`: el archivo original, idéntico byte a byte;
 - `/descargas/nucleo-v2.1-en.md` y `/descargas/nucleo-v2.1-pt-br.md`: generadas nodo a nodo y rotuladas como traducción.
 
-**Índice de búsqueda** (v1.2, RQ-16): `/buscar/indice-en.json`, `/buscar/indice-es.json` y `/buscar/indice-pt-br.json`. No son páginas y no entran en el sitemap. Los nombres de ruta de `es` y `pt-BR` son propuesta y entran en la revisión lingüística; una vez publicados, quedan fijos.
+**Índice de búsqueda** (RQ-16 enmendado): `/pagefind/`, generado por Pagefind desde nuestros registros, con un índice por idioma. No son páginas y no entran en el sitemap. Los nombres de ruta de `es` y `pt-BR` son propuesta y entran en la revisión lingüística; una vez publicados, quedan fijos.
 
 ## Anclas del manifiesto
 

@@ -5,7 +5,7 @@
   "packageManager": "bun@1.3.14",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && bun run scripts/indice-busqueda.ts",
     "check": "astro check",
     "preview": "astro preview",
     "test": "bun test tests/unit",
@@ -27,6 +27,7 @@
     "@axe-core/playwright": "^4.13.0",
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.63.0",
-    "@types/bun": "^1.4.2"
+    "@types/bun": "^1.4.2",
+    "pagefind": "1.5.2"
   }
 }

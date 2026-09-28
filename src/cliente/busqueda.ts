@@ -1,142 +1,114 @@
 /**
- * Búsqueda en el sitio (FR-023, RQ-16). Estados: cerrada → cargando índice → lista, con
- * resultados, sin resultados o índice no disponible; una búsqueda vacía no muestra nada.
- * Normaliza mayúsculas y tildes, exige todos los términos (como comienzo de palabra) y ordena:
- * título, identificador, texto. No envía ni guarda lo que se busca (FR-018).
+ * Búsqueda en el sitio (FR-023, RQ-16 enmendado): motor Pagefind con nuestra interfaz. Estados:
+ * cerrada → cargando índice → lista, con resultados, sin resultados o índice no disponible; una
+ * búsqueda vacía no muestra nada. Resultados por página con sus subresultados por sección. El
+ * índice del idioma de la página se descarga solo al abrir; no se envía ni se guarda lo buscado.
  */
-interface Entrada { u: string; p: string; s: string; c?: string; t: string }
+interface Sub { title: string; url: string; excerpt: string; anchor?: unknown }
+interface Dato { url: string; meta: { title?: string }; excerpt: string; sub_results: Sub[] }
+interface Pagefind {
+  options(o: Record<string, unknown>): Promise<void>;
+  init(): Promise<void>;
+  debouncedSearch(q: string, o?: unknown, ms?: number): Promise<{ results: { data(): Promise<Dato> }[] } | null>;
+}
 
+const PARAMETRO = 'resaltar';
 const boton = document.querySelector<HTMLButtonElement>('[data-abrir-busqueda]');
 const dialogo = document.querySelector<HTMLDialogElement>('[data-busqueda]');
 const consulta = dialogo?.querySelector<HTMLInputElement>('[data-consulta]');
 const estado = dialogo?.querySelector<HTMLElement>('[data-estado]');
 const lista = dialogo?.querySelector<HTMLElement>('[data-resultados-lista]');
 
-const normal = (x: string) => x.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
-const palabras = (x: string) => normal(x).split(/[^\p{L}\p{N}-]+/u).filter(Boolean);
+let motor: Pagefind | undefined;
+let carga: Promise<Pagefind | undefined> | undefined;
 
-let indice: { e: Entrada; titulo: string[]; codigo: string[]; texto: string[] }[] | undefined;
-let carga: Promise<void> | undefined;
-
-function cargar(): Promise<void> {
-  if (!dialogo || !estado) return Promise.resolve();
+function cargar(): Promise<Pagefind | undefined> {
+  if (!dialogo || !estado) return Promise.resolve(undefined);
   carga ??= (async () => {
     estado.textContent = dialogo.dataset['cargando'] ?? '';
     try {
-      const r = await fetch(dialogo.dataset['indice'] ?? '');
-      if (!r.ok) throw new Error(String(r.status));
-      const datos = (await r.json()) as Entrada[];
-      indice = datos.map((e) => ({ e, titulo: palabras(`${e.p} ${e.s}`), codigo: e.c ? [normal(e.c)] : [], texto: palabras(e.t) }));
+      const ruta = '/pagefind/pagefind.js';
+      const pf = (await import(/* @vite-ignore */ ruta)) as Pagefind;
+      await pf.options({ excerptLength: 22, highlightParam: PARAMETRO });
+      await pf.init();
+      motor = pf;
       estado.textContent = '';
+      return pf;
     } catch {
       carga = undefined; // se reintenta al volver a abrir
       estado.textContent = dialogo.dataset['error'] ?? '';
+      return undefined;
     }
   })();
   return carga;
 }
 
-function coincide(lista: string[], termino: string): boolean {
-  return lista.some((p) => p.startsWith(termino));
-}
-
-/** Extracto alrededor del primer término, con los términos resaltados, sin HTML del índice. */
-function extracto(texto: string, terminos: string[]): DocumentFragment {
+/** Extracto de Pagefind reconstruido como texto y <mark>, sin insertar HTML (P07). */
+function extracto(html: string): DocumentFragment {
   const f = document.createDocumentFragment();
-  const base = normal(texto);
-  const posiciones = terminos.map((t) => base.indexOf(t)).filter((x) => x >= 0);
-  const desde = Math.max(0, (posiciones.length ? Math.min(...posiciones) : 0) - 60);
-  const trozo = (desde > 0 ? '…' : '') + texto.slice(desde, desde + 180) + (texto.length > desde + 180 ? '…' : '');
-  const norma = normal(trozo);
-  const marcas: [number, number][] = [];
-  for (const t of terminos) {
-    let j = norma.indexOf(t);
-    while (j >= 0) { marcas.push([j, j + t.length]); j = norma.indexOf(t, j + t.length); }
+  const doc = new DOMParser().parseFromString(`<body>${html}</body>`, 'text/html');
+  for (const n of doc.body.childNodes) {
+    if (n.nodeName === 'MARK') {
+      const m = document.createElement('mark');
+      m.textContent = n.textContent;
+      f.append(m);
+    } else f.append(n.textContent ?? '');
   }
-  marcas.sort((a, b) => a[0] - b[0]);
-  let pos = 0;
-  for (const [a, b] of marcas) {
-    if (a < pos) continue;
-    f.append(trozo.slice(pos, a));
-    const m = document.createElement('mark');
-    m.textContent = trozo.slice(a, b);
-    f.append(m);
-    pos = b;
-  }
-  f.append(trozo.slice(pos));
   return f;
 }
 
-function mostrar(q: string): void {
-  if (!lista || !estado || !dialogo || !indice) return;
+function enlace(url: string, titulo: string, texto: string, principal: boolean): HTMLLIElement {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = url;
+  if (!principal) a.className = 'subresultado';
+  const t = document.createElement('span');
+  t.className = 'resultado-titulo';
+  t.textContent = titulo;
+  const x = document.createElement('span');
+  x.className = 'resultado-texto';
+  x.append(extracto(texto));
+  a.append(t, x);
+  a.addEventListener('click', () => dialogo?.close());
+  li.append(a);
+  return li;
+}
+
+async function mostrar(q: string): Promise<void> {
+  if (!lista || !estado || !dialogo || !motor) return;
+  if (!q.trim()) { lista.replaceChildren(); estado.textContent = ''; return; }
+  const busqueda = await motor.debouncedSearch(q, {}, 150);
+  if (!busqueda) return; // la reemplazó una búsqueda más reciente
+  const datos = await Promise.all(busqueda.results.slice(0, 8).map((r) => r.data()));
   lista.replaceChildren();
-  const terminos = palabras(q);
-  if (!terminos.length) { estado.textContent = ''; return; }
-  const puntuados = indice
-    .map((x) => {
-      let puntos = 0;
-      for (const t of terminos) {
-        if (coincide(x.titulo, t)) puntos += 3;
-        else if (coincide(x.codigo, t)) puntos += 2;
-        else if (coincide(x.texto, t)) puntos += 1;
-        else return undefined;
-      }
-      return { x, puntos };
-    })
-    .filter((y): y is { x: NonNullable<typeof indice>[number]; puntos: number } => !!y)
-    .sort((a, b) => b.puntos - a.puntos)
-    // Un resultado por sección, con su mejor coincidencia (RQ-16 enmendado, P06); un identificador
-    // buscado conserva su propio resultado.
-    .filter((y, i, todos) => {
-      const clave = (z: typeof y) => `${z.x.e.p}|${z.x.e.s}|${y.x.e.c && terminos.includes(normal(y.x.e.c)) ? y.x.e.c : ''}`;
-      return todos.findIndex((z) => clave(z) === clave(y)) === i;
-    })
-    .slice(0, 30);
-  if (!puntuados.length) {
+  if (!datos.length) {
     estado.textContent = (dialogo.dataset['sinResultados'] ?? '').replace('{q}', q.trim());
     return;
   }
-  estado.textContent = (dialogo.dataset['resultados'] ?? '').replace('{n}', String(puntuados.length));
-  // Agrupados por página, en el orden del mejor resultado de cada una.
-  const grupos = new Map<string, Entrada[]>();
-  for (const { x } of puntuados) grupos.set(x.e.p, [...(grupos.get(x.e.p) ?? []), x.e]);
-  for (const [pagina, entradas] of grupos) {
+  estado.textContent = (dialogo.dataset['resultados'] ?? '').replace('{n}', String(datos.length));
+  for (const d of datos) {
     const seccion = document.createElement('section');
-    const h = document.createElement('h3');
-    h.textContent = pagina;
+    seccion.className = 'resultado-pagina';
     const ol = document.createElement('ol');
-    for (const e of entradas) {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = e.u;
-      const titulo = document.createElement('span');
-      titulo.className = 'resultado-titulo';
-      titulo.textContent = e.c && e.c !== e.s ? `${e.c} · ${e.s}` : e.s;
-      const texto = document.createElement('span');
-      texto.className = 'resultado-texto';
-      texto.append(extracto(e.t, terminos));
-      a.append(titulo, texto);
-      a.addEventListener('click', () => dialogo.close());
-      li.append(a);
-      ol.append(li);
-    }
-    seccion.append(h, ol);
+    const titulo = d.meta.title ?? d.url;
+    const subs = d.sub_results.filter((s) => s.anchor).slice(0, 3);
+    const propia = d.sub_results.find((s) => !s.anchor);
+    // La página como primer resultado; debajo, las secciones que coinciden.
+    ol.append(enlace(propia?.url ?? d.url, titulo, (propia ?? d).excerpt, true));
+    for (const s of subs) ol.append(enlace(s.url, `# ${s.title}`, s.excerpt, false));
+    seccion.append(ol);
     lista.append(seccion);
   }
 }
 
 if (boton && dialogo && consulta) {
   boton.hidden = false;
-  let espera: number | undefined;
   boton.addEventListener('click', () => {
     dialogo.showModal();
     consulta.focus();
     void cargar().then(() => mostrar(consulta.value));
   });
-  consulta.addEventListener('input', () => {
-    window.clearTimeout(espera);
-    espera = window.setTimeout(() => { void cargar().then(() => mostrar(consulta.value)); }, 120);
-  });
+  consulta.addEventListener('input', () => { void cargar().then(() => mostrar(consulta.value)); });
   // Escape cierra de una vez, también cuando el campo tiene texto (el navegador solo lo borraría).
   consulta.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { e.preventDefault(); dialogo.close(); }
@@ -144,3 +116,16 @@ if (boton && dialogo && consulta) {
   dialogo.querySelector('[data-cerrar-busqueda]')?.addEventListener('click', () => dialogo.close());
   dialogo.addEventListener('close', () => boton.focus());
 }
+
+// Resaltado en destino (RQ-16 enmendado): solo si la dirección lo pide.
+if (new URLSearchParams(location.search).has(PARAMETRO)) {
+  const ruta = '/pagefind/pagefind-highlight.js';
+  void import(/* @vite-ignore */ ruta)
+    .then(() => {
+      const R = (window as unknown as { PagefindHighlight?: new (o: Record<string, unknown>) => unknown }).PagefindHighlight;
+      if (R) new R({ highlightParam: PARAMETRO });
+    })
+    .catch(() => { /* sin resaltado: la página se lee igual */ });
+}
+
+export {};

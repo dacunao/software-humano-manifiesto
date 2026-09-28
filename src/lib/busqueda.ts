@@ -100,8 +100,22 @@ export function construirIndice(c: Contenido, canon: Canon, locale: Locale): Ent
     const p = `${pr.id}${nombre && markdownDe(c, nombre, locale) ? ` · ${plano(markdownDe(c, nombre, locale))}` : ''}`;
     for (const [clave, e] of Object.entries(pr.entries))
       r.push({ u: `${base}#${clave}`, p, s: cadena(`principio.${clave}`) || clave, t: plano(textoDe(e.text, locale)) });
-    for (const n of canon.nodos)
-      if (n.section === seccion && n.kind !== 'encabezado' && mapa.get(n.id) === 'principio') r.push(...entradasDeNodo(c, n, locale, base, p, p));
+    // Cada pasaje canónico va en la sección de la página donde se lee (vista Principio, PRD §17).
+    const nodos = canon.nodos.filter((n) => n.section === seccion);
+    const tras = (titulo: string) => nodos[nodos.findIndex((n) => n.kind === 'encabezado' && n.titulo === titulo) + 1]?.id;
+    const seccionDe = new Map<string, string>([
+      [nombre ? nodos[nodos.indexOf(nombre) + 1]?.id ?? '' : '', 'declaracion'],
+      [tras('Por qué importa') ?? '', 'tension'],
+      [tras('Qué significa') ?? '', 'significado'],
+      [tras('Reglas de diseño') ?? '', 'consecuencia'],
+      [tras('Pruebas de decisión') ?? '', 'prueba'],
+      [nodos.find((n) => n.source.startsWith('**Señal de incumplimiento.**'))?.id ?? '', 'contraejemplo'],
+    ]);
+    for (const n of nodos)
+      if (n.kind !== 'encabezado' && mapa.get(n.id) === 'principio') {
+        const sec = seccionDe.get(n.id);
+        r.push(...entradasDeNodo(c, n, locale, base, p, sec ? cadena(`principio.${sec}`) || p : p));
+      }
   }
   return r.filter((e) => e.t || e.c);
 }

@@ -240,6 +240,12 @@ dialog.busqueda input { width: 100%; min-height: 48px; font: inherit; font-size:
 .resultado-titulo { display: block; font-weight: 600; }
 .resultado-texto { display: block; font-size: 0.9rem; color: var(--sh-text-muted); }
 .busqueda-resultados mark { background: var(--sh-indigo-soft); color: var(--sh-text); padding: 0 0.1em; border-radius: 2px; }
+/* Resultados por página y subresultados por sección (RQ-16 enmendado). */
+.resultado-pagina { border: 1px solid var(--sh-border); border-radius: var(--radius-md); padding: 0.35rem; margin-top: 0.75rem; }
+.busqueda-resultados a.subresultado { margin-left: 1rem; padding-left: 0.85rem; border-left: 2px solid var(--sh-border); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.busqueda-resultados a.subresultado .resultado-titulo { font-weight: 500; }
+/* Término resaltado en la página de destino. */
+mark.pagefind-highlight { background: var(--sh-indigo-soft); color: inherit; outline: 1px solid var(--sh-interactive); border-radius: 2px; }
 
 /* ── Tablas del núcleo en pantallas angostas (T140, PRD v1.2 §21.4) ── */
 @media (max-width: 40rem) {

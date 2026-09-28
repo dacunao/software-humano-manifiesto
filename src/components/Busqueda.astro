@@ -11,14 +11,12 @@ interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
-const archivo = `/buscar/indice-${locale === 'pt-BR' ? 'pt-br' : locale}.json`;
 ---
 <button type="button" class="abrir-busqueda" data-abrir-busqueda hidden aria-haspopup="dialog">{t('busqueda.abrir', locale)}</button>
 <dialog
   class="busqueda"
   aria-labelledby="busqueda-titulo"
   data-busqueda
-  data-indice={archivo}
   data-cargando={t('busqueda.cargando', locale)}
   data-sin-resultados={t('busqueda.sinResultados', locale)}
   data-error={t('busqueda.error', locale)}
