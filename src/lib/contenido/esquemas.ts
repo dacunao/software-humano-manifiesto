@@ -60,6 +60,8 @@ export const Bloque = z.discriminatedUnion('kind', [
   }).strict().refine((b) => !!b.nodos !== !!(b.desde && b.hasta), { message: 'canon: usar nodos o desde/hasta, no ambos' }),
   z.object({ kind: z.literal('principios') }).strict(),
   z.object({ kind: z.literal('estado-adaptacion') }).strict(),
+  /** Enlace al editor (PRD v1.3 §18.4): solo se muestra si su sitio está en línea. */
+  z.object({ kind: z.literal('editor') }).strict(),
   z.object({ kind: z.literal('comparacion'), sistema: Entrada, persona: Entrada }).strict(),
 ]);
 export type Bloque = z.infer<typeof Bloque>;
@@ -112,6 +114,8 @@ export const Sitio = z
     name: z.string(),
     domain: z.string(),
     author: z.object({ type: z.literal('Person'), name: z.string(), url: z.string().nullable() }).strict(),
+    /** Editor del sitio (PRD v1.3 §18.4). `enLinea`: su sitio responde; sin eso no se enlaza. */
+    publisher: z.object({ type: z.literal('Organization'), name: z.string(), url: z.string(), enLinea: z.boolean() }).strict(),
     licenses: z.object({ content: z.string(), code: z.string() }).strict(),
     contact: z.object({ email: z.string().nullable(), issues: z.string().nullable() }).strict(),
     core: z.object({ version: z.string(), date: z.string() }).strict(),

@@ -1,10 +1,15 @@
-# Datos del sitio (data-model.md · Sitio). Decisiones de la autoridad de producto, 2026-09-27.
-name: Software Humano
-domain: softwarehumano.com
+# Datos del sitio (data-model.md · Sitio). Decisiones de la autoridad de producto, 2026-09-27 y 2026-09-28 (PRD v1.3).
+name: Manifiesto
+domain: manifiesto.softwarehumano.com
 author:
   type: Person
   name: Damián Acuña
   url: null # Pendiente: solo si Damián la aprueba (T107)
+publisher: # Editor del sitio (PRD v1.3 §18.4)
+  type: Organization
+  name: Software Humano
+  url: https://softwarehumano.com
+  enLinea: false # El sitio de la agencia no responde al 2026-09-28: el pie no enlaza hasta que exista
 licenses:
   content: CC BY 4.0
   code: MIT

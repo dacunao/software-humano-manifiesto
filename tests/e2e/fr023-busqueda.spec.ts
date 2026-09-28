@@ -56,4 +56,17 @@ test.describe('FR-023 · búsqueda', () => {
     const r = await new AxeBuilder({ page }).include('dialog.busqueda').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(r.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
   });
+
+  test('un resultado por sección y solo textos en el idioma de la página (RQ-16 enmendado)', async ({ page, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'la búsqueda es una mejora progresiva');
+    await page.goto('/about');
+    await page.getByRole('button', { name: 'Search' }).click();
+    await page.getByRole('searchbox').fill('manifesto');
+    const titulos = page.locator('.busqueda-resultados .resultado-titulo');
+    await expect(titulos.first()).toBeVisible();
+    const lista = await page.locator('.busqueda-resultados li a').evaluateAll((as) => as.map((a) => `${a.closest('section')?.querySelector('h3')?.textContent}|${a.querySelector('.resultado-titulo')?.textContent}`));
+    expect(new Set(lista).size).toBe(lista.length);
+    await page.getByRole('searchbox').fill('manifiesto');
+    await expect(page.getByRole('dialog').getByRole('status')).toContainText('Nothing matches');
+  });
 });

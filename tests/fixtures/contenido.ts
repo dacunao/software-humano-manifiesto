@@ -48,8 +48,9 @@ export function contenidoValido(): Contenido {
   const entries = Object.fromEntries(canon.nodos.map((n) => [n.id, { sourceHash: n.hash, state: 'pendiente' as const }]));
   return {
     sitio: {
-      name: 'Software Humano', domain: 'softwarehumano.com',
+      name: 'Manifiesto', domain: 'manifiesto.softwarehumano.com',
       author: { type: 'Person', name: 'Damián Acuña', url: null },
+      publisher: { type: 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com', enLinea: false },
       licenses: { content: 'CC BY 4.0', code: 'MIT' },
       contact: { email: null, issues: null }, core: { version: '2.1', date: '2026-09' },
       analytics: { cloudflareToken: null },

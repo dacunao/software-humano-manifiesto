@@ -9,6 +9,7 @@ import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
 import Busqueda from '../components/Busqueda.astro';
+import { esDivision } from '../lib/manifiesto';
 
 interface Props {
   locale: Locale;
@@ -34,6 +35,8 @@ const nodosLD: NodoLD[] = [
   ...(pagina.tipo === '404' ? [] : ld),
 ];
 const token = contenido.sitio.analytics.cloudflareToken;
+// T151: el índice plegado dice qué índice es.
+const delManifiesto = pagina.tipo === 'principio' || esDivision(pagina.tipo);
 // FR-003 v1.2: solo la descarga del idioma de la página; en traducción, el original queda a un paso.
 const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.traduccionEn', 'pt-BR': 'integro.traduccionPt' };
 ---
@@ -70,7 +73,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
       </main>
       {indice?.length ? (
         <details class="indice-plegable" data-indice-plegable>
-          <summary><span>{t('indice.rotulo', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
+          <summary><span>{t(delManifiesto ? 'indice.manifiesto' : 'indice.enEstaPagina', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
           <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} />
         </details>
       ) : null}
@@ -83,7 +86,12 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
         {locale !== 'es' && <> · {t('pie.traduccion', locale)} <a href={rutaDescarga('es')} download hreflang="es" lang="es">{t('integro.original', 'es')}</a></>}
       </p>
       <Procedencia locale={locale} actualizado={actualizado} />
-      <p>{t('pie.licencia', locale)}</p>
+      <p class="licencia-pie">{t('pie.licencia', locale)} <a href={`${ruta({ tipo: 'acerca' }, locale)}#licencias`}>{t('pie.licenciasDetalle', locale)}</a></p>
+      {/* PRD v1.3 §18.4: el editor siempre; el enlace, solo si su sitio está en línea (sin enlaces sin destino). */}
+      <p class="editor-pie">
+        {t('pie.editor', locale, { editor: contenido.sitio.publisher.name })}
+        {contenido.sitio.publisher.enLinea && <> · <a href={contenido.sitio.publisher.url} rel="noopener">{t('pie.conocer', locale)} <span aria-hidden="true">↗</span></a></>}
+      </p>
     </footer>
     <script>import '../cliente/seguimiento';</script>
   </body>

@@ -99,6 +99,29 @@ sections:
               state: pendiente
             pt-BR:
               state: pendiente
+  - id: software-humano
+    title:
+      es:
+        state: borrador
+        text: Software Humano y el Manifiesto
+      en:
+        state: pendiente
+      pt-BR:
+        state: pendiente
+    blocks:
+      - kind: entrada
+        entrada:
+          id: acerca-software-humano
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: "El Manifiesto es obra de Damián Acuña. Lo publica y lo cuida **Software Humano**, la agencia que crea productos digitales bajo esta doctrina y acepta ser evaluada con ella. Cada sitio tiene su trabajo: este explica, fundamenta y gobierna; a Software Humano le corresponde presentar su propuesta y sus productos, en su propio sitio. Por eso aquí no hay oferta comercial, y los pasajes del núcleo se leen completos solo en este sitio."
+            en:
+              state: pendiente
+            pt-BR:
+              state: pendiente
+      - kind: editor
   - id: procedencia
     title:
       es:
@@ -163,7 +186,14 @@ sections:
           text:
             es:
               state: borrador
-              text: El texto del manifiesto y el contenido editorial del sitio se publican bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) — se pueden copiar, adaptar y compartir citando la fuente. El código del sitio se publica bajo licencia MIT.
+              text: |-
+                | Material | Licencia | Qué puedes hacer |
+                |---|---|---|
+                | Texto del núcleo del manifiesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) | Copiarlo, traducirlo, adaptarlo y compartirlo, también con fines comerciales, citando a Damián Acuña como autor, enlazando la licencia e indicando si hiciste cambios |
+                | Contenido editorial del sitio: explicaciones, ejemplos y textos de página | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) | Lo mismo, con la misma atribución |
+                | Código del sitio | [MIT](https://opensource.org/license/mit) | Usarlo, modificarlo y distribuirlo conservando el aviso de copyright y la licencia |
+                | Método para SpecKit (preset y herramientas), cuando se publique | [MIT](https://opensource.org/license/mit) | Lo mismo |
+                | Los nombres «Software Humano» y «Manifiesto», y el logotipo | Reservados | No forman parte de esas licencias. Una adaptación no debe presentarse como oficial, certificada ni respaldada por Software Humano |
             en:
               state: pendiente
             pt-BR:

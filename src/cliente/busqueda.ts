@@ -85,6 +85,12 @@ function mostrar(q: string): void {
     })
     .filter((y): y is { x: NonNullable<typeof indice>[number]; puntos: number } => !!y)
     .sort((a, b) => b.puntos - a.puntos)
+    // Un resultado por sección, con su mejor coincidencia (RQ-16 enmendado, P06); un identificador
+    // buscado conserva su propio resultado.
+    .filter((y, i, todos) => {
+      const clave = (z: typeof y) => `${z.x.e.p}|${z.x.e.s}|${y.x.e.c && terminos.includes(normal(y.x.e.c)) ? y.x.e.c : ''}`;
+      return todos.findIndex((z) => clave(z) === clave(y)) === i;
+    })
     .slice(0, 30);
   if (!puntuados.length) {
     estado.textContent = (dialogo.dataset['sinResultados'] ?? '').replace('{q}', q.trim());

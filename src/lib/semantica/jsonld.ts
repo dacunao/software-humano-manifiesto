@@ -9,8 +9,13 @@ export function persona(sitio: Sitio): NodoLD {
   return p;
 }
 
+/** Editor del sitio (PRD v1.3 §25.2): la organización Software Humano. */
+export function editor(sitio: Sitio): NodoLD {
+  return { '@type': 'Organization', name: sitio.publisher.name, url: sitio.publisher.url };
+}
+
 export function sitioWeb(sitio: Sitio, url: string, idioma: string): NodoLD {
-  return { '@type': 'WebSite', name: sitio.name, url, inLanguage: idioma, author: persona(sitio) };
+  return { '@type': 'WebSite', name: sitio.name, url, inLanguage: idioma, author: persona(sitio), publisher: editor(sitio) };
 }
 
 export function paginaWeb(nombre: string, url: string, idioma: string, descripcion: string): NodoLD {
@@ -32,6 +37,7 @@ export function obraManifiesto(o: {
     version: o.sitio.core.version,
     inLanguage: o.idioma,
     author: persona(o.sitio),
+    publisher: editor(o.sitio),
     datePublished: o.fecha,
     license: 'https://creativecommons.org/licenses/by/4.0/',
   };

@@ -280,15 +280,9 @@ compartir.error:
     state: borrador
     text: Não foi possível copiar. O link está visível ao lado do título.
 pie.licencia:
-  es:
-    state: borrador
-    text: Texto y contenido editorial bajo CC BY 4.0. Código bajo MIT.
-  en:
-    state: borrador
-    text: Text and editorial content under CC BY 4.0. Code under MIT.
-  pt-BR:
-    state: borrador
-    text: Texto e conteúdo editorial sob CC BY 4.0. Código sob MIT.
+  es: { state: borrador, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias." }
+  en: { state: borrador, text: "Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not covered by those licenses." }
+  pt-BR: { state: borrador, text: "Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças." }
 pie.procedencia:
   es:
     state: borrador
@@ -595,3 +589,19 @@ busqueda.cerrar:
   es: { state: borrador, text: "Cerrar" }
   en: { state: borrador, text: "Close" }
   pt-BR: { state: borrador, text: "Fechar" }
+pie.licenciasDetalle:
+  es: { state: borrador, text: "Qué puedes reutilizar" }
+  en: { state: borrador, text: "What you can reuse" }
+  pt-BR: { state: borrador, text: "O que você pode reutilizar" }
+pie.editor:
+  es: { state: borrador, text: "Publicado por {editor}" }
+  en: { state: borrador, text: "Published by {editor}" }
+  pt-BR: { state: borrador, text: "Publicado por {editor}" }
+pie.conocer:
+  es: { state: borrador, text: "Conoce la empresa" }
+  en: { state: borrador, text: "Meet the company" }
+  pt-BR: { state: borrador, text: "Conheça a empresa" }
+indice.manifiesto:
+  es: { state: borrador, text: "Índice del manifiesto" }
+  en: { state: borrador, text: "Manifesto index" }
+  pt-BR: { state: borrador, text: "Índice do manifesto" }

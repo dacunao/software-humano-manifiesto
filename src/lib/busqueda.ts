@@ -38,18 +38,26 @@ const plano = (md: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+/**
+ * RQ-16 enmendado (PRD §19.4): el índice de un idioma solo guarda textos escritos en ese idioma.
+ * Lo que la página muestra en el original por falta de traducción no entra.
+ */
 function textoDe(l: Localizado | undefined, locale: Locale): string {
-  return l?.[locale]?.text || l?.es?.text || '';
+  return l?.[locale]?.text || '';
 }
 
 function markdownDe(c: Contenido, n: NodoCanonico, locale: Locale): string {
   if (locale === 'es') return n.source;
-  return c.traducciones.find((x) => x.locale === locale)?.entries[n.id]?.text || n.source;
+  return c.traducciones.find((x) => x.locale === locale)?.entries[n.id]?.text || '';
 }
+
+/** El pasaje tiene texto en ese idioma (original o traducción). */
+export const tieneTexto = (c: Contenido, n: NodoCanonico, locale: Locale) => !!markdownDe(c, n, locale);
 
 /** Entradas de un nodo: una por fila o elemento con identificador (tablas y listas), o una por nodo. */
 function entradasDeNodo(c: Contenido, n: NodoCanonico, locale: Locale, base: string, p: string, s: string): EntradaIndice[] {
   const md = markdownDe(c, n, locale);
+  if (!md) return [];
   const ids = n.anclas.filter((a) => a !== n.id && IDENTIFICADOR.test(a));
   if (ids.length > 1 || (n.kind === 'tabla' && ids.length)) {
     const filas = md.split('\n');
@@ -70,7 +78,8 @@ export function construirIndice(c: Contenido, canon: Canon, locale: Locale): Ent
     const base = ruta({ tipo: sup.id }, locale);
     const p = textoDe(sup.title, locale);
     for (const sec of sup.sections) {
-      const s = textoDe(sec.title, locale);
+      // Si el título de la sección no está en este idioma, el resultado usa el nombre de la página.
+      const s = textoDe(sec.title, locale) || p;
       const codigo = IDENTIFICADOR.test(sec.id) ? sec.id.toUpperCase() : undefined;
       r.push({ u: `${base}#${sec.id}`, p, s, ...(codigo ? { c: codigo } : {}), t: plano(textoDe(sec.question, locale)) });
       for (const b of [...sec.blocks, ...sec.depth]) {
@@ -88,7 +97,7 @@ export function construirIndice(c: Contenido, canon: Canon, locale: Locale): Ent
     const i = canon.nodos.findIndex((n) => n.id === pid);
     const seccion = canon.nodos[i]?.section;
     const nombre = canon.nodos.slice(i + 1).find((n) => n.kind === 'encabezado' && n.nivel === 3);
-    const p = `${pr.id} · ${nombre ? plano(markdownDe(c, nombre, locale)) : ''}`;
+    const p = `${pr.id}${nombre && markdownDe(c, nombre, locale) ? ` · ${plano(markdownDe(c, nombre, locale))}` : ''}`;
     for (const [clave, e] of Object.entries(pr.entries))
       r.push({ u: `${base}#${clave}`, p, s: cadena(`principio.${clave}`) || clave, t: plano(textoDe(e.text, locale)) });
     for (const n of canon.nodos)
@@ -118,7 +127,10 @@ export function validarIndice(c: Contenido, canon: Canon, locale: Locale): { ent
       if (donde) h.push({ entidad: n.id, mensaje: `${locale}: un pasaje que solo vive en la descarga aparece en el índice` });
       continue;
     }
-    if (!donde) { h.push({ entidad: n.id, mensaje: `${locale}: el pasaje falta en el índice` }); continue; }
+    if (!donde) {
+      if (tieneTexto(c, n, locale)) h.push({ entidad: n.id, mensaje: `${locale}: el pasaje falta en el índice` });
+      continue;
+    }
     if (donde.size > 1) h.push({ entidad: n.id, mensaje: `${locale}: el pasaje aparece en ${donde.size} páginas` });
     const esperada = casa === 'principio'
       ? ruta({ tipo: 'principio', principio: canon.nodos.find((x) => x.section === n.section && /^p(0[1-9]|10)$/.test(x.id))!.id }, locale)

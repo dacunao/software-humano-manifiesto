@@ -1,6 +1,6 @@
 ---
 import type { Bloque, IdSuperficie, Locale, SeccionSuperficie } from '../lib/contenido/esquemas';
-import { canon, markdownDe, rutaCasa, t, texto } from '../lib/sitio';
+import { canon, contenido as datos, markdownDe, rutaCasa, t, texto } from '../lib/sitio';
 import { casas, nodosDelBloque } from '../lib/casas';
 import BloqueEditorial from './BloqueEditorial.astro';
 import CitaCanonica from './CitaCanonica.astro';
@@ -23,6 +23,8 @@ interface Props {
 const { seccion: sec, locale, superficie } = Astro.props;
 // Dentro de su casa, el pasaje de origen está en la misma página: no se repite el enlace (P06).
 const enCasa = (id?: string) => !!id && casas(canon).get(id) === superficie;
+const datosSitio = datos.sitio;
+const editorEnLinea = datosSitio.publisher.enLinea;
 const titulo = texto(sec.title, locale);
 const pregunta = sec.question ? texto(sec.question, locale) : undefined;
 const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
@@ -51,6 +53,7 @@ const grupos = [sec.blocks, sec.depth] as const;
       if (b.kind === 'comparacion') return <Comparacion sistema={b.sistema} persona={b.persona} locale={locale} />;
       if (b.kind === 'principios') return <ListaPrincipios locale={locale} />;
       if (b.kind === 'estado-adaptacion') return <EstadoAdaptacion locale={locale} />;
+      if (b.kind === 'editor') return editorEnLinea && <p class="enlace-agencia"><a href={datosSitio.publisher.url} rel="noopener">{t('pie.conocer', locale)} <span aria-hidden="true">↗</span></a></p>;
       const c = cita(b);
       return <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={c.fuente} textoFuente={c.textoFuente} />;
     });
