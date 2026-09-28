@@ -166,9 +166,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-04`, con y sin JavaScript y con movimiento reducido.
 
-- [ ] T058 [P] [US4] Escribir `tests/e2e/js04-diferencia.spec.ts` con los escenarios 1 y 2 de `JS-04` en los proyectos `js`, `sin-js` y `movimiento-reducido`
-- [ ] T059 [US4] Redactar el acto 5 en `src/content/superficies/inicio.yaml` (`es`, borrador) con entradas `example` y `counterexample` que declaren su `derivedFrom`
-- [ ] T060 [US4] Mostrar el acto 5 en `src/views/Inicio.astro` con `Comparacion.astro` y una alternativa textual equivalente (PRD §21.3)
+- [X] T058 [P] [US4] Escribir `tests/e2e/js04-diferencia.spec.ts` con los escenarios 1 y 2 de `JS-04` en los proyectos `js`, `sin-js` y `movimiento-reducido`
+- [X] T059 [US4] Redactar el acto 5 en `src/content/superficies/inicio.yaml` (`es`, borrador) con entradas `example` y `counterexample` que declaren su `derivedFrom`
+- [X] T060 [US4] Mostrar el acto 5 en `src/views/Inicio.astro` con `Comparacion.astro` y una alternativa textual equivalente (PRD §21.3)
 
 ---
 

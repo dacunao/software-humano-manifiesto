@@ -151,3 +151,79 @@ sections:
     depth:
       - kind: canon
         nodos: [principios-de-diseno-04]
+
+  # Acto 5 · PRD §16. Un principio cambia una decisión, exige evidencia o detiene una implementación.
+  - id: acto-5
+    title:
+      es: { state: borrador, text: Del principio a la decisión }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-5-intro
+          type: explanation
+          derivedFrom: principios-de-diseno-03
+          text:
+            es:
+              state: borrador
+              text: Un principio sirve cuando cambia lo que se hace. Hay tres formas en que puede actuar sobre una decisión concreta.
+            en: *pend
+            pt-BR: *pend
+      - kind: entrada
+        entrada:
+          id: inicio-acto-5-cambia
+          type: example
+          derivedFrom: p06
+          text:
+            es:
+              state: borrador
+              text: '**Cambia una decisión.** Una pantalla de inicio presenta cinco acciones con el mismo peso. Con `P06` en la mesa, la pregunta es qué necesita la persona en ese momento: queda una acción principal y el resto aparece donde el contexto lo vuelve relevante.'
+            en: *pend
+            pt-BR: *pend
+      - kind: entrada
+        entrada:
+          id: inicio-acto-5-evidencia
+          type: example
+          derivedFrom: p01
+          text:
+            es:
+              state: borrador
+              text: '**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito.'
+            en: *pend
+            pt-BR: *pend
+      - kind: entrada
+        entrada:
+          id: inicio-acto-5-detiene
+          type: example
+          derivedFrom: p10
+          text:
+            es:
+              state: borrador
+              text: '**Detiene una implementación.** Un asistente reescribe textos y los publica sin vista previa. Con `P10`, la implementación se detiene hasta que la persona pueda revisar, aceptar o rechazar el cambio antes de que se publique.'
+            en: *pend
+            pt-BR: *pend
+      - kind: comparacion
+        sistema:
+          id: inicio-acto-5-sin-principio
+          type: counterexample
+          derivedFrom: p07
+          text:
+            es:
+              state: borrador
+              text: '**Sin el principio.** Un agente de código termina una tarea y responde «listo». Para saber qué cambió, hay que revisar todo y confiar en su tono.'
+            en: *pend
+            pt-BR: *pend
+        persona:
+          id: inicio-acto-5-con-principio
+          type: example
+          derivedFrom: p07
+          text:
+            es:
+              state: borrador
+              text: '**Con el principio.** El agente muestra qué archivos cambió, qué decidió por su cuenta y cómo deshacerlo. La confianza descansa en evidencia, no en el tono.'
+            en: *pend
+            pt-BR: *pend
+    depth:
+      - kind: canon
+        nodos: [verificacion-09, verificacion-10]
