@@ -66,6 +66,8 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 
 ## RQ-10 · Estilos y componentes
 
+> **Reemplazada en lo visual por RQ-18 (PRD v1.5)**: los tokens son los de la especificación visual compartida.
+
 - **Decision**: Tailwind CSS con daisyUI como base, bajo **tokens propios**; solo se emiten las clases usadas. Mientras la dirección visual no esté elegida (puerta humana), se trabaja con un conjunto provisional mínimo de tokens, declarado como tal. Tipografías autoalojadas, en subconjuntos y con presupuesto explícito, sin bloquear la lectura.
 - **Rationale**: PRD §24.6 (daisyUI no define la identidad), §24.1 (presupuestos de fuentes), §21.2. La lección del traspaso: cuando se corrigió la estructura, se tiró lo que funcionaba de A y B. Separar tokens de estructura permite aplicar la dirección elegida sin rehacer la estructura.
 - **Alternatives considered**: esperar la dirección visual para empezar (bloquearía trabajo que no depende de ella: fuente canónica, rutas, validación, semántica).
@@ -182,3 +184,18 @@ Reemplaza en parte RQ-05: además del idioma, el tema claro u oscuro es una pref
   - **Tema**: tokens oscuros en `src/styles/tokens.css`, dentro de la dirección visual. Sin elección guardada, rige `prefers-color-scheme`, también sin JavaScript. Un script síncrono mínimo (`public/tema.js`, menos de 1 KB, permitido por `script-src 'self'`) aplica la elección guardada antes de pintar, para que no haya destello. El control de día y noche es un botón con `aria-pressed`, y permite volver a seguir al sistema. Axe verifica el contraste AA en los dos temas.
 - **Rationale**: PRD §21.2, §18.2 y §21.7 v1.4; `FR-020` (preferencia local, transparente, reversible y prescindible); `P03` (resolver por contexto: el sistema ya sabe qué prefiere la persona); `P09` (sin tipografías web ni destellos).
 - **Alternatives considered**: la tipografía cargada como fuente web (rompe el presupuesto de solo fuentes del sistema); dos archivos de logotipo por tema (duplica recursos); aplicar el tema con un script de módulo (se ejecuta tarde y produce un destello del tema equivocado).
+
+## RQ-18 · Sistema visual compartido (PRD v1.5, 2026-09-28)
+
+Reemplaza los tokens de RQ-10 y la dirección A + B en lo visual. Se conserva la arquitectura editorial.
+
+- **Decision**:
+  - **Fuente autorizada**: `docs/design/Software_Humano_Especificacion_Visual_v1.0.md`. Sus criterios de aceptación (§10) son pruebas del sitio;
+  - **Tipografía**: Noto Sans (licencia OFL), autoalojada desde el paquete Fontsource, en WOFF2, con los pesos 400, 500 y 600 y el subconjunto latino, que cubre el español y el portugués. Se mide la versión estática por peso contra la variable y se elige la de menor peso total dentro del presupuesto de tipografías (≤ 100 KB). `font-display: swap`. Los identificadores (`P03`) y las etiquetas usan también Noto Sans, con cifras tabulares, porque la especificación no admite otra familia. Se retiran Georgia y la monoespaciada;
+  - **Tokens**: los nombres y valores de la especificación §8 (`--sh-canvas`, `--sh-surface`, `--sh-text`, `--sh-text-muted`, `--sh-border`, `--sh-subtle`, `--sh-interactive`, `--sh-focus`, colores del ciclo y tintes). El atributo del tema sigue siendo `data-tema` (RQ-17), equivalente al `data-theme` de la especificación;
+  - **Componentes**: cabecera de 64 px en escritorio y 56 px en móvil, con borde inferior; controles de 44 × 44 px; botones con radio de 8 px (sin cápsulas); índice de 256 px, con los inactivos en texto secundario y el activo con fondo índigo suave, borde izquierdo de 3 px y peso 600; «Contenido» en teléfonos; enlaces índigo subrayados en el texto corrido; aviso de borrador con ícono, título y borde ámbar; búsqueda de hasta 720 px de ancho, con campo de 48 px y foco de 3 px;
+  - **Texto canónico**: panel Tinta en las declaraciones de los principios y en las citas breves; en los pasajes largos, borde índigo y etiqueta secundaria (interpretación de la autoridad);
+  - **Expandibles**: `<details>` con chevron que gira en 160 ms, y sin giro con movimiento reducido (interpretación de la autoridad);
+  - **Colores del ciclo**: no se asignan a las rutas del núcleo. El Ámbar se usa solo en avisos. El flywheel es del sitio de la agencia.
+- **Rationale**: PRD §21.2 y §21.7 v1.5; `P06`, `P07`, `P08` y `P09`; `AC-07`.
+- **Alternatives considered**: cargar Noto Sans desde Google Fonts (tercero, contra `FR-018`); conservar una monoespaciada para los identificadores (va contra la regla de una sola familia).

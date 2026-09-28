@@ -127,8 +127,8 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.4.md` (SHA-256 `8ad88bdd85b3d2862527c98d23b30ec9b5e0514af615a2191e39d156e03681af`)
-- **Versión**: 1.4, fecha 2026-09-28, vigente. Suma el logotipo SVG de Software Humano con «Manifiesto», la entrada «GitHub» del menú (solo cuando el repositorio de la adaptación sea público), el selector de idioma compacto EN · ES · PT y el tema claro u oscuro (ver «Cambios de la versión 1.4»). La v1.3 (`ba39d39d…`), la v1.2 (`a353a214…`), la v1.1 (`bf964e19…`) y la v1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.5.md` (SHA-256 `538a567c75eb8547c75679e3ed953e1b73bc013c032ff196703ef8936cbe277c`)
+- **Versión**: 1.5, fecha 2026-09-28, vigente. Adopta el sistema visual compartido de Software Humano (`docs/design/Software_Humano_Especificacion_Visual_v1.0.md`): Noto Sans como única familia, paleta oficial, escala oscura y reglas de componentes (ver «Cambios de la versión 1.5»). Las versiones 1.4 (`8ad88bdd…`), 1.3 (`ba39d39d…`), 1.2 (`a353a214…`), 1.1 (`bf964e19…`) y 1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
 - **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
@@ -182,7 +182,9 @@ Una sola sesión trabaja este repositorio. La sesión del piloto anterior (`/Use
 
 ## Archivos protegidos adicionales
 
-Ninguno. El PRD ya está protegido por el método como fundamento autorizado.
+- `docs/design/Software_Humano_Especificacion_Visual_v1.0.md` (SHA-256 `721a409e8ef6fc60226d46729152274e4ad8e60ca6a914b5888ec7af684a0cad`): fuente autorizada del sistema visual, compartida con `softwarehumano.com` (PRD v1.5 §21.2). Autoridad: Damián Acuña.
+
+El PRD ya está protegido por el método como fundamento autorizado.
 
 ## Registro del piloto
 
@@ -200,7 +202,7 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 |---|---|
 | 1 · Nombre y dominio | Sitio: «Manifiesto», valor único en los tres idiomas · `manifiesto.softwarehumano.com` (resolución del 2026-09-28, PRD v1.3). «Software Humano» es la marca de la agencia, en `softwarehumano.com` |
 | 2 · Autoría visible | Autor: Damián Acuña, persona. Editor: Software Humano, organización (PRD v1.3 §18.4) |
-| 3 · Identidad visual | Sin identidad previa vinculante; libertad de exploración. Se exploraron A, B y su síntesis C; **ninguna está aprobada** |
+| 3 · Identidad visual | **Sistema visual compartido de Software Humano v1.0**, definido por la autoridad (PRD v1.5 §21.2). Reemplaza los tokens de la síntesis A + B; se conservan la arquitectura editorial, el índice lateral, la profundidad progresiva y la calma de los márgenes |
 | 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona |
 | 5 · Licencia | Texto del núcleo y contenido editorial: CC BY 4.0 · código y método: MIT · nombres «Software Humano» y «Manifiesto» y logotipo excluidos de ambas · tabla por tipo de material en Acerca de (PRD v1.3 §29) |
 | 6 · Acción pública sin preset publicado | **Solo estado, sin captura.** El estado de la adaptación se modela como dato; se declara disponibilidad futura, sin botón, formulario ni enlace sin destino |

@@ -6,7 +6,7 @@
 
 **Status**: Draft
 
-**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.4.md` (v1.4, SHA-256 `8ad88bdd…`), más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27 y el 2026-09-28.
+**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.5.md` (v1.5, SHA-256 `538a567c…`) y la especificación visual `docs/design/Software_Humano_Especificacion_Visual_v1.0.md`, más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27 y el 2026-09-28.
 
 **Actualización v1.1** (2026-09-27): la arquitectura de información sigue las cuatro rutas de lectura del núcleo (PRD §18.1), cada pasaje tiene una sola casa (PRD §18.3), el texto íntegro es una página de consulta con descarga (`FR-003`), el fundamento pasa a Principios (`FR-007`) y se agrega Verificación (`FR-022`). Las secciones afectadas están marcadas «v1.1».
 
@@ -15,6 +15,8 @@
 **Actualización v1.3** (2026-09-28): el sitio se llama «Manifiesto» en los tres idiomas y vive en `manifiesto.softwarehumano.com`. Su autor es Damián Acuña y su editor, Software Humano, la agencia que publica la doctrina y cuyo sitio es `softwarehumano.com`. El pie y Acerca de enlazan a la agencia; Acerca de explica las licencias por tipo de material; los pasajes del núcleo viven solo aquí y este sitio no presenta oferta comercial (PRD §18.4, §29). Las secciones afectadas están marcadas «v1.3».
 
 **Actualización v1.4** (2026-09-28): logotipo SVG de Software Humano con «Manifiesto» (ícono y nombre en pantallas anchas, solo el ícono en teléfonos); entrada «GitHub» del menú, solo cuando el repositorio de la adaptación sea público; selector de idioma compacto EN · ES · PT con nombres completos accesibles; tema claro u oscuro, que por defecto sigue al sistema (PRD §21.2, §18.2, §21.7, `FR-020`). Las secciones afectadas están marcadas «v1.4».
+
+**Actualización v1.5** (2026-09-28): el aspecto sigue el sistema visual compartido de Software Humano (Noto Sans como única familia, paleta oficial, escala oscura derivada de la Tinta, reglas de componentes y criterios de aceptación de la especificación §10). Las expandibles conservan el control nativo; el panel oscuro canónico se usa en declaraciones y citas; en teléfonos, el índice se abre con «Contenido» (PRD §21.2, §21.7 v1.5).
 
 > **Cómo leer esta especificación.** El PRD es la fuente y conserva la autoridad. Esta especificación **no la reemplaza ni la resume**: organiza su alcance completo para planificar, conserva sus identificadores (`JS-01`–`JS-09`, `FR-001`–`FR-022`, `AC-01`–`AC-16`, `P01`–`P10`) y remite a la sección del PRD donde está el texto íntegro. Ante cualquier diferencia de redacción, vale el PRD.
 
