@@ -269,8 +269,8 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: función sin JavaScript, accesibilidad, bordes, rendimiento y privacidad (bloque 7).
 
-- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 48 páginas con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 48 páginas (PRD §21.4)
-- [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 48 páginas y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
+- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 54 páginas (PRD v1.1) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 48 páginas (PRD §21.4)
+- [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 54 páginas (PRD v1.1) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
 - [ ] T090 [P] Escribir `tests/e2e/bordes.spec.ts` con los bordes de spec.md:
   - 404 por idioma;
   - una URL antigua redirige (caso de prueba en `_redirects`);
@@ -417,6 +417,7 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | `FR-015` | `JS-04` | — | T028, T037, T077, T082 | T088 | Planificado | — |
 | `FR-016` | `JS-05` | T032 | T027, T033, T057, T066 | T020, T080 | Planificado | — |
 | `FR-017` | `JS-01`, `JS-08` | T014 | T013, T029, T037 | T034 | Planificado | — |
+| `FR-022` (v1.1) | `JS-06` | T112, T113 | T116 | T122 | Planificado | — |
 | `FR-018` | Todas · `AC-12` | T008 | T027, T077 | T090 | Planificado | — |
 | `FR-019` | `JS-09` | T003 | T025, T030, T017, T083, T084 | T024, T080 | Planificado | — |
 | `FR-020` | `JS-09` | T025 | T081, T082 | T079 | Planificado | Preferencia solo en `/` (RQ-04) |
@@ -437,9 +438,9 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 ## Phase 17: Convergence
 
 - [ ] T112 Agregar `verificacion` y `texto-integro` a `ID_SUPERFICIES` en `src/lib/contenido/esquemas.ts` y a `src/lib/i18n/rutas.ts` con las rutas de contracts/rutas.md (`/verification`, `/es/verificacion`, `/pt-br/verificacao`; `/manifesto/full-text`, `/es/manifiesto/texto-integro`, `/pt-br/manifesto/texto-integral`); actualizar `tests/unit/i18n/rutas.test.ts` a 54 páginas per PRD §18.1 v1.1 (missing)
-- [ ] T113 Crear `src/lib/casas.ts` con la casa de cada nodo canónico según la tabla de docs/design/propuesta-arquitectura-rutas-del-manifiesto.md (Propósito y Gobernanza divididos por subsección) e implementar `RV-13` en `src/lib/validacion/reglas.ts`: cada nodo con contenido aparece completo en su casa y en ninguna otra superficie; fuera de ella solo en bloques `breve` de 60 palabras como máximo; agregar el campo `breve` al bloque `canon`, con su prueba en `tests/unit/validacion/casas.test.ts` per PRD §18.3, RQ-14 (missing)
+- [ ] T113 Crear `src/lib/casas.ts` con la casa de cada nodo canónico según la tabla de docs/design/propuesta-arquitectura-rutas-del-manifiesto.md (Propósito y Gobernanza divididos por subsección) e implementar `RV-13` en `src/lib/validacion/reglas.ts`: cada nodo con contenido aparece completo en su casa y en ninguna otra superficie; fuera de ella solo en bloques `breve` de 60 palabras como máximo; agregar el campo `breve` al bloque `canon`, con su prueba en `tests/unit/validacion/casas.test.ts`. Las secciones `principio-N` tienen como casa su página de principio, que la vista arma completa: `casas.ts` las declara casa por construcción y `RV-13` las cuenta así per PRD §18.3, RQ-14 (missing)
 - [ ] T114 Reescribir `src/content/superficies/manifiesto.yaml` y `src/views/Manifiesto.astro` como ruta Comprender: texto canónico, el problema, la conclusión central y el mapa de las cuatro rutas, con la explicación en borrador y el enlace al texto íntegro per FR-003 v1.1, §18.1 (contradicts)
-- [ ] T115 Crear `src/views/TextoIntegro.astro`, sus tres rutas y `src/content/superficies/texto-integro.yaml`: núcleo íntegro con índice lateral, anclas y versión; generar en la construcción `/descargas/nucleo-v2.1-es.md` (el archivo original, idéntico byte a byte), `-en.md` y `-pt-br.md` (traducciones rotuladas) y enlazarlas; mover el `CreativeWork` a esta página per FR-003 v1.1, §25.2 (missing)
+- [ ] T115 Crear `src/views/TextoIntegro.astro`, sus tres rutas y `src/content/superficies/texto-integro.yaml`: núcleo íntegro con índice lateral, anclas y versión; generar en la construcción `/descargas/nucleo-v2.1-es.md` (el archivo original, idéntico byte a byte), `-en.md` y `-pt-br.md` (traducciones rotuladas) y enlazarlas; mover el `CreativeWork` a esta página; en el texto íntegro, `Compartir.astro` copia la dirección de la casa de cada pasaje, no la del texto íntegro per FR-003 v1.1, §18.3, §25.2 (missing)
 - [ ] T116 Crear `src/content/superficies/verificacion.yaml` (explicaciones en borrador y canon completo de `verificacion`, `sh-ap`, `sh-done` y `sh-pocket`), `src/views/Verificacion.astro` y sus tres rutas per FR-022 (missing)
 - [ ] T117 Reorganizar `src/content/superficies/aplicacion.yaml`: sale el fundamento (a Principios) y la definición de terminado (a Verificación); entran la doctrina para IA, las responsabilidades y los puntos de control, y el ejemplo aplicado, cada uno con su canon completo per FR-007 v1.1 (partial)
 - [ ] T118 Agregar a `src/content/superficies/principios.yaml` el fundamento de producto, las Job Stories como forma de referencia y la arquitectura del marco, con canon completo, además de la colección per §18.1 v1.1 (missing)

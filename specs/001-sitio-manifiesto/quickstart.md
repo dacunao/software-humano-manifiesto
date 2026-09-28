@@ -25,7 +25,7 @@ Guía para comprobar de punta a punta que el sitio cumple lo especificado. No co
 1. Abre `/` con el navegador en portugués: **debe** verse en inglés.
 2. En `/principles/p03`, cambia a Español: llegas a `/es/principios/p03`.
 3. Recarga `/` con la preferencia en Español: llegas a `/es/`. Desactiva JavaScript y recarga: inglés.
-4. Abre `/es/manifiesto#cr03`: aterrizas en `CR03`.
+4. Abre `/es/aplicacion#cr03` (su casa) y `/es/manifiesto/texto-integro#cr03`: en las dos aterrizas en `CR03` (PRD v1.1).
 5. Abre `/speckit`: estado «no publicada», versión igual a la del preset instalado, sin botón ni enlace de descarga.
 6. Abre `/es/no-existe`: 404 en español con salida clara.
 
