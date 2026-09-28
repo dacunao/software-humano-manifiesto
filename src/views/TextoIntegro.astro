@@ -29,7 +29,8 @@ const indice = [{ titulo: t('manifiesto.indice', locale), items: canon.secciones
 }) }];
 const pendientes = nodos.filter((x) => x.sustituido).length;
 const { version, date } = contenido.sitio.core;
-// Solo la descarga del idioma seleccionado (PRD §21.7: la interfaz no mezcla idiomas).
+// Solo la descarga del idioma seleccionado (decisión de Damián Acuña, P06). El original y su descarga
+// quedan a un paso: el aviso de traducción enlaza al texto íntegro en español (FR-003, PRD §19.4).
 const DESCARGAS: Record<Locale, { href: string; clave: string }> = {
   es: { href: '/descargas/nucleo-v2.1-es.md', clave: 'integro.original' },
   en: { href: '/descargas/nucleo-v2.1-en.md', clave: 'integro.traduccionEn' },
@@ -56,7 +57,7 @@ const ld = [obraManifiesto({
     <p class="version-nucleo">{t('manifiesto.version', locale, { version, fecha: date })}</p>
     {locale !== 'es' && (
       <p class="aviso-traduccion" data-tipo="traduccion">
-        {t('contenido.traduccion', locale)} <a href={ruta({ tipo: 'manifiesto' }, 'es')} hreflang="es" lang="es">{t('manifiesto.original', locale)}</a>
+        {t('contenido.traduccion', locale)} <a href={ruta({ tipo: 'texto-integro' }, 'es')} hreflang="es" lang="es">{t('manifiesto.original', locale)}</a>
       </p>
     )}
     {pendientes > 0 && <p class="aviso-traduccion">{t('contenido.traduccionPendiente', locale)}</p>}

@@ -63,7 +63,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 | `SH-FUND`, `CR03`, `F03` | Alcance completo, sin omitir ni postergar | Pasa: diez bloques cubren las nueve historias, los veintiún requisitos, los dieciséis criterios y las secciones sin identificador | Pasa |
 | `AGENTS.md` regla 3 | Sin prioridad, MVP ni incrementalidad | Pasa: el orden es por dependencias | Pasa |
 | `D01`, `SH-STOP` | Sin ambigüedad material abierta | Pasa: la especificación no tiene marcadores; queda abierta la PRD §29.10, que no bloquea | Pasa |
-| `D03`, `CR01`, `CR07` | Solución más simple; sin modos, paneles ni abstracciones sin fundamento | Pasa: sin panel de ajustes (RQ-05), sin framework en el cliente (RQ-06), sin modos de construcción (RQ-07) | Pasa |
+| `D03`, `CR01`, `CR07` | Solución más simple; sin modos, paneles ni abstracciones sin fundamento | Pasa: sin panel de ajustes (RQ-05), sin framework en el cliente (RQ-06), sin modos de construcción (RQ-07). El único panel agregado es de navegación («En esta sección»), con fundamento en `FR-003` y una decisión de la autoridad (RQ-06 enmendado) | Pasa |
 | `D04`, `CR06` | Reglas críticas deterministas | Pasa: sitio determinista; `RV-01`–`RV-12` detienen la construcción | Pasa |
 | `P07`, `FR-017` | Distinguir cita, explicación, ejemplo y estado | Pasa: tipos de entrada y `derivedFrom` obligatorio (`RV-06`) | Pasa |
 | `P09`, `FR-015` | Tiempo y continuidad | Pasa: HTML utilizable antes de JavaScript; URL profunda restituye la sección | Pasa |
@@ -113,7 +113,7 @@ src/
 ├── integrations/             # Validación durante la construcción (RV-01 a RV-12)
 ├── views/                    # Una vista por superficie, compartida por los tres idiomas
 ├── pages/                    # Rutas por idioma según contracts/rutas.md
-├── cliente/                  # Scripts del navegador: preferencia-idioma.ts, compartir.ts (RQ-06)
+├── cliente/                  # Scripts del navegador: preferencia-idioma.ts, compartir.ts, seguimiento.ts (RQ-06 y su enmienda)
 └── styles/                   # Tokens propios y tema de daisyUI
 
 scripts/                      # Scripts de construcción: check-publish.ts
@@ -173,13 +173,13 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 | RQ-05 · Ajustes: panel propio / solo selector de idioma | El panel agrega un concepto sin resolver nada | La dirección visual no tendrá movimiento no esencial | **Solo selector**; se reabre si hay movimiento no esencial · confirmada por Damián Acuña | 2026-09-27 | Dirección visual elegida |
 | RQ-03 · Nombres de ruta: localizados / en inglés para todos | Localizados exigen revisión lingüística de las rutas; en inglés mezclan idiomas | — | **Localizados**, con `pNN` estable | 2026-09-27 | Revisión lingüística de las rutas |
 | RQ-02 · Traducción del núcleo: nodo a nodo en YAML / Markdown completo | Nodo a nodo exige más estructura, pero hace verificables la paridad y la obsolescencia | — | **Nodo a nodo** | 2026-09-27 | — |
-| RQ-06 · Interactividad: sin framework / con framework | Sin framework limita la interactividad; ninguna historia necesita más | — | **Sin framework**; dos scripts | 2026-09-27 | — |
+| RQ-06 · Interactividad: sin framework / con framework | Sin framework limita la interactividad; ninguna historia necesita más | — | **Sin framework**; dos scripts, hoy tres (RQ-06 enmendado) | 2026-09-27 | — |
 | RQ-07 · Publicación: comando previo aparte / modos de construcción | El comando aparte no agrega configuración | — | **Comando previo aparte** | 2026-09-27 | — |
 | Pruebas con personas: una ronda temprana en español con borradores y la ronda final / solo la final | La temprana cuesta sesiones extra; solo la final arriesga retraducir y rediseñar | Las Job Stories no tienen evidencia observada (spec.md) | **Ronda temprana y ronda final** (`F07`) · decidida por Damián Acuña | 2026-09-27 | Notas de la ronda temprana |
 | Dirección visual: A / B / síntesis A + B / decidir después de la ronda | La síntesis conserva la jerarquía de A y la navegación de B sobre la estructura de C; elegir antes de la ronda adelanta ese paso | La ronda temprana se hace con la dirección ya aplicada | **Síntesis A + B**, sin animaciones de aparición ni filtros; solo fuentes del sistema · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
 | Titular de portada: frase canónica / copy A / copy C | El copy C sigue el orden del PRD §16 (oportunidad antes que costo); no tiene autoridad canónica | — | **Copy C, a prueba** como primera alternativa · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
 | Arquitectura por rutas del núcleo (PRD v1.1): superficies por ruta con una casa por pasaje / manifiesto íntegro como superficie principal | Menos repetición y rutas por necesidad; exige reorganizar contenido | — | **Rutas y una casa por pasaje; texto íntegro como consulta con descarga; fundamento en Principios; nombres conocidos con la ruta como subtítulo** · decidida por Damián Acuña | 2026-09-27 | Ronda temprana |
-| Navegación del texto íntegro: una página con panel que sigue la lectura / una página por sección / paneles estáticos h2+h3 | El panel exige un tercer script, prescindible; las otras opciones cambian `FR-003` o duplican el índice | — | **Una página, índice h1/h2 a la izquierda y h3/h4 de la sección actual a la derecha** (RQ-06 enmendado) · decidida por Damián Acuña | 2026-09-27 | — |
+| Navegación del texto íntegro: una página con panel que sigue la lectura / una página por sección / paneles estáticos h2+h3 | El panel exige un tercer script, prescindible; las otras opciones cambian `FR-003` o duplican el índice | — | **Una página, índice h1/h2 a la izquierda y h3/h4 de la sección actual a la derecha** (RQ-06 enmendado) · decidida por Damián Acuña; ampliada a Principios, Aplicación y Verificación el 2026-09-28 | 2026-09-27 | Ronda temprana |
 | RQ-10 · Estilos: tokens provisionales ahora / esperar la dirección visual | Esperar bloquea bloques que no dependen de ella | La dirección se aplica sobre tokens sin rehacer la estructura | **Tokens provisionales, declarados como tales** | 2026-09-27 | Elección de dirección visual |
 
 **Pendientes que requieren juicio humano** (`O09`):

@@ -30,6 +30,8 @@ test.describe('JS-05 · Consultar y citar la fuente', () => {
       await expect(page.locator('.descargas a')).toHaveCount(1);
       await expect(page.locator('.descargas a')).toHaveAttribute('hreflang', l);
       await expect(page.locator('.descargas a')).toHaveAttribute('href', `/descargas/nucleo-v2.1-${f}.md`);
+      // El original y su descarga quedan a un paso (FR-003, PRD §19.4).
+      await expect(page.locator('.aviso-traduccion[data-tipo="traduccion"] a')).toHaveAttribute('href', '/es/manifiesto/texto-integro');
     }
   });
 

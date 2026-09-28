@@ -269,7 +269,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: función sin JavaScript, accesibilidad, bordes, rendimiento y privacidad (bloque 7).
 
-- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 54 páginas (PRD v1.1) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 48 páginas (PRD §21.4)
+- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 54 páginas (PRD v1.1) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 54 páginas (PRD §21.4)
 - [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 54 páginas (PRD v1.1) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
 - [ ] T090 [P] Escribir `tests/e2e/bordes.spec.ts` con los bordes de spec.md:
   - 404 por idioma;
@@ -451,7 +451,13 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 
 ## Phase 18: Ajustes de navegación decididos por la autoridad
 
-- [X] T123 Ofrecer en el texto íntegro solo la descarga del idioma seleccionado, en `src/views/TextoIntegro.astro`, con su prueba en `tests/e2e/js05-fuente.spec.ts` per PRD §21.7 (decisión de Damián Acuña, 2026-09-27)
-- [X] T124 Texto íntegro en tres columnas: índice h1/h2 a la izquierda y «En esta sección» (h3 y h4 de la sección en pantalla) a la derecha, con `src/cliente/seguimiento.ts` como mejora progresiva y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per RQ-06 enmendado (decisión de Damián Acuña, 2026-09-27)
-- [X] T125 Aplicar el esquema de tres columnas a Principios y Aplicación: `src/components/EnEstaSeccion.astro` reutilizable, con los h3 y h4 canónicos de la sección en pantalla, y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` (decisión de Damián Acuña, 2026-09-28)
-- [X] T126 Aplicar el esquema de tres columnas a Verificación, con su prueba en `tests/e2e/texto-integro-navegacion.spec.ts` (decisión de Damián Acuña, 2026-09-28)
+- [X] T123 Ofrecer en el texto íntegro solo la descarga del idioma seleccionado, en `src/views/TextoIntegro.astro`, con su prueba en `tests/e2e/js05-fuente.spec.ts` per FR-003 v1.1 y `P06` (decisión de Damián Acuña, 2026-09-27)
+- [X] T124 Texto íntegro en tres columnas: índice h1/h2 a la izquierda y «En esta sección» (h3 y h4 de la sección en pantalla) a la derecha, con `src/cliente/seguimiento.ts` como mejora progresiva y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per FR-003 v1.1 (índice) y RQ-06 enmendado (decisión de Damián Acuña, 2026-09-27)
+- [X] T125 Aplicar el esquema de tres columnas a Principios y Aplicación: `src/components/EnEstaSeccion.astro` reutilizable, con los h3 y h4 canónicos de la sección en pantalla, y prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per FR-007 v1.1, §18.1, `V04` y RQ-06 enmendado (decisión de Damián Acuña, 2026-09-28)
+- [X] T126 Aplicar el esquema de tres columnas a Verificación, con su prueba en `tests/e2e/texto-integro-navegacion.spec.ts` per FR-022, `V04` y RQ-06 enmendado (decisión de Damián Acuña, 2026-09-28)
+
+## Phase 19: Correcciones del análisis de la fase 18
+
+Registradas antes de implementar, a partir del `analyze` del 2026-09-28 (hallazgos C1, I1–I4, U1), autorizadas por Damián Acuña.
+
+- [X] T127 En el texto íntegro en `en` y `pt-BR`, el aviso de traducción enlaza al texto íntegro en español (`/es/manifiesto/texto-integro`), donde está la descarga del original, y no a Manifiesto, en `src/views/TextoIntegro.astro`, con su prueba en `tests/e2e/js05-fuente.spec.ts` per FR-003 v1.1 y PRD §19.4 (hallazgo C1)

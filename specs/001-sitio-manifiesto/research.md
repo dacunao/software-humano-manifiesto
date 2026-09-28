@@ -44,6 +44,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 - **Decision**: **sin framework de interfaz en el cliente.** Solo dos scripts, escritos en TypeScript y compilados: preferencia de idioma (RQ-04) y copiar o compartir con confirmación (`FR-011`, PRD §17 `P10`). La profundidad progresiva usa `<details>`/`<summary>` nativos y la comparación de `JS-04` es contenido estático accesible.
 - **Rationale**: `FR-015`, PRD §24.1 («el JavaScript debe justificarse por interacción necesaria»), §24.6 (islas solo cuando se requieran), `P09`.
 - **Alternatives considered**: componentes interactivos con un framework (peso y fragilidad sin una historia que lo pida); comparación interactiva con estado (mejora posible, pero `JS-04` se cumple sin ella y exigiría alternativa textual de todos modos).
+- **Enmienda**: hoy son tres scripts. El tercero, el seguimiento de lectura, se describe en «RQ-06 enmendado».
 
 ## RQ-07 · Modelo y validación del contenido
 
@@ -123,8 +124,9 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
 - **Rationale**: PRD §18.3 y `FR-003` v1.1. Que la regla sea verificable evita que la unicidad dependa de la disciplina de quien edita (`D04`). Mostrar el canon visible en su casa evita que un enlace a `#cr03` caiga dentro de un `<details>` cerrado.
 - **Alternatives considered**: el canon plegado en `<details>` dentro de su casa (los enlaces profundos no abren el pliegue sin JavaScript en todos los navegadores); controlar la unicidad solo a mano (se degrada en silencio).
 
-## RQ-06 enmendado · tercer script: seguimiento de lectura del texto íntegro (2026-09-27)
+## RQ-06 enmendado · tercer script: seguimiento de lectura (2026-09-27, ampliado el 2026-09-28)
 
 - **Decision**: el texto íntegro usa tres columnas. A la izquierda, el título y las 24 secciones del núcleo (h1 y h2). En el centro, el texto. A la derecha, «En esta sección»: los h3 y h4 de la sección en pantalla. Un tercer script de cliente (`src/cliente/seguimiento.ts`, menos de 1 KB) muestra el grupo de la sección actual y la marca en el índice izquierdo. Sin JavaScript, el panel derecho no aparece; en pantallas angostas tampoco.
-- **Rationale**: decisión de Damián Acuña. El núcleo tiene 24 h2, 23 h3 (casi siempre un subtítulo único) y 80 h4, que son la navegación fina. Con los h3 y h4 de la sección actual, el panel derecho no repite el izquierdo (`P06`) y el texto sigue siendo una sola página (`FR-003` v1.1: lectura de corrido, búsqueda y una sola dirección).
+- **Ampliación (2026-09-28)**: el mismo esquema se aplica a Principios, Aplicación y Verificación, las superficies largas de las rutas Decidir, Construir y Verificar. El panel derecho sale de un componente reutilizable (`src/components/EnEstaSeccion.astro`) y muestra los h3 y h4 canónicos de la sección en pantalla; el índice izquierdo es el índice lateral de cada superficie. Es el mismo script, no uno nuevo.
+- **Rationale**: decisiones de Damián Acuña (2026-09-27 para el texto íntegro; 2026-09-28 para las otras tres superficies). El núcleo tiene 24 h2, 23 h3 (casi siempre un subtítulo único) y 80 h4, que son la navegación fina. Con los h3 y h4 de la sección actual, el panel derecho no repite el izquierdo (`P06`) y el texto sigue siendo una sola página (`FR-003` v1.1: lectura de corrido, búsqueda y una sola dirección).
 - **Alternatives considered**: una página por sección (sin JavaScript, pero cambia `FR-003` y suma 72 páginas); paneles estáticos con h2 y h3 (la derecha duplicaría la izquierda y omitiría los h4).
