@@ -29,6 +29,14 @@ const codigo = pid.toUpperCase();
 const i = PRINCIPIOS.indexOf(pid);
 const anterior = PRINCIPIOS[i - 1];
 const siguiente = PRINCIPIOS[i + 1];
+const indice = [
+  { titulo: t('indice.enEstaPagina', locale), items: ['declaracion', 'tension', 'significado', 'consecuencia', 'ejemplo', 'contraejemplo', 'prueba', 'fuente']
+    .map((id) => ({ href: `#${id}`, texto: t(`principio.${id}`, locale) })) },
+  { titulo: t('nav.principios', locale), items: PRINCIPIOS.map((otro) => {
+    const md = markdownDe(canonicoDePrincipio(otro).nombre, locale);
+    return { href: ruta({ tipo: 'principio', principio: otro }, locale), codigo: otro.toUpperCase(), texto: md.markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, ''), actual: otro === pid, lang: md.lang !== locale ? md.lang : undefined };
+  }) },
+];
 const fuente = (n: NodoCanonico) => `${ruta({ tipo: 'manifiesto' }, locale)}#${n.id}`;
 const cita = (nodos: NodoCanonico[]) => {
   const ns = nodos.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
@@ -60,6 +68,7 @@ const ld = [{
   descripcion={descripcion}
   ld={ld}
   actualizado={fechaActualizacion([`src/content/principios/${pid}.yaml`])}
+  indice={indice}
 >
   <article class="principio" aria-labelledby="declaracion-titulo">
     <header id="declaracion">
@@ -76,7 +85,7 @@ const ld = [{
       return (
         <section id={s.id} aria-labelledby={`${s.id}-titulo`} class="seccion">
           <h2 id={`${s.id}-titulo`}>{t(s.clave, locale)}</h2>
-          <BloqueEditorial entrada={s.entrada} locale={locale} sinRotulo={s.id !== 'tension' && s.id !== 'significado' && s.id !== 'consecuencia'} />
+          <BloqueEditorial entrada={s.entrada} locale={locale} sinRotulo={s.id !== 'tension' && s.id !== 'significado' && s.id !== 'consecuencia'} sinOrigen={!!s.canon} />
           {c && s.canon && (s.visible ? (
             <CitaCanonica nodos={c.nodos} lang={c.lang} rotulo={c.rotulo} fuente={fuente(s.canon)} textoFuente={t('contenido.fuente', locale)} />
           ) : (

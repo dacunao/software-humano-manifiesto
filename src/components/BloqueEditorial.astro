@@ -9,8 +9,10 @@ interface Props {
   locale: Locale;
   /** Oculta el rótulo de tipo cuando el encabezado de la sección ya lo nombra. */
   sinRotulo?: boolean;
+  /** Oculta el enlace de origen cuando la cita canónica de ese pasaje sigue inmediatamente (P06). */
+  sinOrigen?: boolean;
 }
-const { entrada, locale, sinRotulo = false } = Astro.props;
+const { entrada, locale, sinRotulo = false, sinOrigen = false } = Astro.props;
 const ROTULO: Record<Entrada['type'], string | undefined> = {
   explanation: 'contenido.explicacion',
   example: 'contenido.ejemplo',
@@ -29,7 +31,7 @@ const publico = /^(p(0[1-9]|10)|d0[1-6]|f0[1-8]|a0[1-8]|stop0[1-7]|cr0[1-8]|o0[1
   <div class="bloque-editorial" data-tipo={entrada.type} data-id={entrada.id} lang={tx.lang !== locale ? tx.lang : undefined}>
     {clave && !sinRotulo && <p class="rotulo-contenido">{t(clave, locale)}</p>}
     <div class="lectura" set:html={renderMarkdown(tx.texto)} />
-    {origen && entrada.type !== 'surface-text' && (
+    {origen && !sinOrigen && entrada.type !== 'surface-text' && (
       <p class="origen"><a href={origen}>{publico ? <>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></> : t('contenido.fuente', locale)}</a></p>
     )}
   </div>

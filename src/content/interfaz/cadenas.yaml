@@ -535,3 +535,11 @@ inicio.entrada:
   es: { state: borrador, text: "Se puede leer el recorrido completo o entrar en cualquier punto; nada exige haber leído lo anterior." }
   en: { state: borrador, text: "You can read the whole journey or enter at any point; nothing requires reading what came before." }
   pt-BR: { state: borrador, text: "É possível ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o anterior." }
+indice.enEstaPagina:
+  es: { state: borrador, text: "En esta página" }
+  en: { state: borrador, text: "On this page" }
+  pt-BR: { state: borrador, text: "Nesta página" }
+indice.rotulo:
+  es: { state: borrador, text: "Índice de la sección" }
+  en: { state: borrador, text: "Section index" }
+  pt-BR: { state: borrador, text: "Índice da seção" }

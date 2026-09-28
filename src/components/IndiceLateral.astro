@@ -1,0 +1,39 @@
+---
+/**
+ * Índice lateral (mérito de B, T095): muestra qué hay en la superficie actual, incluidas sus
+ * páginas hijas. El menú superior dice dónde; este índice, qué hay aquí. Sin JavaScript.
+ */
+export interface ItemIndice {
+  href: string;
+  texto: string;
+  codigo?: string | undefined;
+  actual?: boolean;
+  lang?: string | undefined;
+}
+export interface GrupoIndice {
+  titulo: string;
+  items: ItemIndice[];
+}
+interface Props {
+  grupos: GrupoIndice[];
+  etiqueta: string;
+  clase?: string | undefined;
+}
+const { grupos, etiqueta, clase } = Astro.props;
+---
+<nav class:list={['indice-lateral', clase]} aria-label={etiqueta}>
+  {grupos.map((g) => (
+    <div class="grupo">
+      <p class="rotulo-contenido">{g.titulo}</p>
+      <ol>
+        {g.items.map((i) => (
+          <li>
+            <a href={i.href} aria-current={i.actual ? 'page' : undefined} lang={i.lang}>
+              {i.codigo && <code>{i.codigo}</code>} <span>{i.texto}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  ))}
+</nav>

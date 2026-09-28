@@ -7,6 +7,7 @@ import { grafo, paginaWeb, persona, sitioWeb, type NodoLD } from '../lib/semanti
 import { contenido, hayBorrador, t, URL_SITIO } from '../lib/sitio';
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
+import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
 
 interface Props {
   locale: Locale;
@@ -17,8 +18,13 @@ interface Props {
   ld?: NodoLD[];
   /** Pie: fecha del último cambio de la página (FR-012). */
   actualizado?: string;
+  /** Índice lateral de la superficie actual (T095). */
+  indice?: GrupoIndice[] | undefined;
+  /** En pantallas angostas, el índice va antes del contenido (solo documentos largos). */
+  indiceArriba?: boolean;
+  claseIndice?: string | undefined;
 }
-const { locale, pagina, titulo, descripcion, ld = [], actualizado } = Astro.props;
+const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, indiceArriba = false, claseIndice } = Astro.props;
 const lang = IDIOMAS[locale].hreflang;
 const url = `${URL_SITIO}${ruta(pagina, locale)}`;
 const esInicio = pagina.tipo === 'inicio';
@@ -56,9 +62,12 @@ const token = contenido.sitio.analytics.cloudflareToken;
       <NavegacionGlobal locale={locale} pagina={pagina} />
     </header>
     {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
-    <main id="contenido" tabindex="-1">
-      <slot />
-    </main>
+    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'indice-arriba': indiceArriba }]}>
+      <main id="contenido" tabindex="-1">
+        <slot />
+      </main>
+      {indice?.length ? <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} /> : null}
+    </div>
     <footer class="pie">
       <slot name="pie" />
       <Procedencia locale={locale} actualizado={actualizado} />

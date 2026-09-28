@@ -2,7 +2,7 @@
 import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
 import { PRINCIPIOS, ruta } from '../lib/i18n/rutas';
-import { canonicoDePrincipio, markdownDe, superficie, texto, URL_SITIO } from '../lib/sitio';
+import { canonicoDePrincipio, markdownDe, superficie, t, texto, URL_SITIO } from '../lib/sitio';
 
 /** Colección P01–P10 en orden canónico (FR-004) con su DefinedTermSet (contracts/datos-estructurados.md). */
 interface Props {
@@ -21,5 +21,12 @@ const ld = [{
     url: `${URL_SITIO}${ruta({ tipo: 'principio', principio: pid }, locale)}`,
   })),
 }];
+const indice = [{
+  titulo: t('nav.principios', locale),
+  items: PRINCIPIOS.map((pid) => {
+    const md = markdownDe(canonicoDePrincipio(pid).nombre, locale);
+    return { href: ruta({ tipo: 'principio', principio: pid }, locale), codigo: pid.toUpperCase(), texto: md.markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, ''), lang: md.lang !== locale ? md.lang : undefined };
+  }),
+}];
 ---
-<Superficie id="principios" locale={locale} ld={ld} archivos={['src/content/principios']} />
+<Superficie id="principios" locale={locale} ld={ld} archivos={['src/content/principios']} indice={indice} />

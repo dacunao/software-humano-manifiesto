@@ -50,7 +50,7 @@
 /* Estructura */
 .saltar { position: absolute; left: -9999px; }
 .saltar:focus { left: 1rem; top: 0.5rem; z-index: 20; background: var(--sh-tinta); color: var(--sh-papel); padding: 0.6rem 1rem; border-radius: 4px; }
-.cabecera, main, .pie, .aviso-borrador { max-width: var(--sh-ancho); margin-inline: auto; padding-inline: var(--sh-espacio); }
+.cabecera, .lienzo, .pie, .aviso-borrador { max-width: var(--sh-ancho); margin-inline: auto; padding-inline: var(--sh-espacio); }
 main > *, main section > *, main article > *, main header > * { max-width: var(--sh-medida); }
 main .manifiesto table, main .cita-canonica table, main .comparacion, main .lista-principios { max-width: 100%; }
 .cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; padding-block: 0.8rem; border-bottom: 1px solid var(--sh-linea); }
@@ -124,3 +124,30 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
 .version-nucleo { font-family: var(--sh-mono); font-size: 0.8rem; color: var(--sh-suave); }
 .aviso-traduccion { font-size: 0.9rem; color: var(--sh-suave); }
 .manifiesto h2, .manifiesto h3 { font-family: var(--sh-voz); }
+
+/* Índice lateral (B, T095): contenido primero en el DOM; en pantallas anchas el índice va a la izquierda y fijo. */
+.lienzo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 3rem; }
+.lienzo > main { min-width: 0; }
+.indice-lateral { font-size: 0.875rem; padding-block: var(--sh-espacio); border-top: 1px solid var(--sh-linea); }
+.indice-lateral .grupo + .grupo { margin-top: 1.25rem; }
+.indice-lateral ol { list-style: none; padding: 0; margin: 0; }
+.indice-lateral li { margin: 0; }
+.indice-lateral a { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.25rem 0.5rem; margin-left: -0.5rem; border-radius: 4px; color: var(--sh-tinta); text-decoration: none; line-height: 1.35; }
+.indice-lateral a:hover { background: var(--sh-tarjeta); text-decoration: underline; }
+.indice-lateral a[aria-current='page'] { background: var(--sh-blanco); font-weight: 700; box-shadow: inset 0 0 0 1px var(--sh-linea); }
+.indice-lateral code { font-size: 0.72rem; color: var(--sh-suave); min-width: 2.6rem; }
+.lienzo.indice-arriba > .indice-lateral { order: -1; border-top: 0; border-bottom: 1px solid var(--sh-linea); }
+@media (min-width: 62rem) {
+  .lienzo.con-indice { grid-template-columns: 15rem minmax(0, 1fr); }
+  .lienzo.con-indice > main { grid-column: 2; grid-row: 1; }
+  .lienzo.con-indice > .indice-lateral { grid-column: 1; grid-row: 1; order: 0; border: 0; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; }
+}
+
+/* Cabecera en pantallas angostas: marca arriba, navegación en línea debajo, idioma compacto (P06). */
+@media (max-width: 48rem) {
+  .cabecera { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+  .navegacion-global { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .navegacion-global ul { gap: 0.2rem 0.9rem; }
+  .selector-idioma { margin-left: 0; }
+  .aviso-borrador { font-size: 0.85rem; }
+}

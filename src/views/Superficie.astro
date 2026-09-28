@@ -3,7 +3,8 @@ import type { IdSuperficie, Locale } from '../lib/contenido/esquemas';
 import type { NodoLD } from '../lib/semantica/jsonld';
 import Base from '../layouts/Base.astro';
 import Secciones from '../components/Secciones.astro';
-import { fechaActualizacion, superficie, texto } from '../lib/sitio';
+import type { GrupoIndice } from '../components/IndiceLateral.astro';
+import { fechaActualizacion, superficie, t, texto } from '../lib/sitio';
 
 /** Vista común de una superficie: encabezado, secciones y ranura para lo propio de cada una. */
 interface Props {
@@ -11,14 +12,25 @@ interface Props {
   locale: Locale;
   ld?: NodoLD[];
   archivos?: string[];
+  /** Grupos adicionales del índice lateral, antes o en lugar de las secciones. */
+  indice?: GrupoIndice[] | undefined;
+  indiceArriba?: boolean;
+  claseIndice?: string | undefined;
 }
-const { id, locale, ld = [], archivos = [] } = Astro.props;
+const { id, locale, ld = [], archivos = [], indice, indiceArriba = false, claseIndice } = Astro.props;
 const s = superficie(id);
 const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
 const actualizado = fechaActualizacion([`src/content/superficies/${id}.yaml`, ...archivos]);
+const propio: GrupoIndice[] = s.sections.length > 1
+  ? [{ titulo: t('indice.enEstaPagina', locale), items: s.sections.map((sec) => {
+      const x = texto(sec.title, locale);
+      return { href: `#${sec.id}`, texto: x.texto, lang: x.lang !== locale ? x.lang : undefined };
+    }) }]
+  : [];
+const grupos = indice ?? propio;
 ---
-<Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado}>
+<Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} indiceArriba={indiceArriba} claseIndice={claseIndice}>
   <header class="encabezado-superficie">
     <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h1>
     <p class="entradilla" lang={descripcion.lang !== locale ? descripcion.lang : undefined}>{descripcion.texto}</p>

@@ -18,8 +18,12 @@ const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
 const hero = s.hero ? { titulo: texto(s.hero.title, locale), texto: texto(s.hero.text, locale) } : undefined;
 const lang = (x: { lang: string }) => (x.lang !== locale ? x.lang : undefined);
+const indice = [{ titulo: t('indice.enEstaPagina', locale), items: s.sections.map((sec) => {
+  const x = texto(sec.title, locale);
+  return { href: `#${sec.id}`, texto: x.texto, lang: lang(x) };
+}) }];
 ---
-<Base locale={locale} pagina={{ tipo: 'inicio' }} titulo={titulo.texto} descripcion={descripcion.texto} actualizado={fechaActualizacion(['src/content/superficies/inicio.yaml'])}>
+<Base locale={locale} pagina={{ tipo: 'inicio' }} titulo={titulo.texto} descripcion={descripcion.texto} actualizado={fechaActualizacion(['src/content/superficies/inicio.yaml'])} indice={indice}>
   <header class="portada">
     <h1 class="voz" lang={hero ? lang(hero.titulo) : lang(titulo)}>{hero?.titulo.texto || titulo.texto}</h1>
     <p class="bajada" lang={hero ? lang(hero.texto) : lang(descripcion)}>{hero?.texto.texto || descripcion.texto}</p>
