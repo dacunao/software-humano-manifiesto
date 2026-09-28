@@ -44,7 +44,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 - **Decision**: **sin framework de interfaz en el cliente.** Solo dos scripts, escritos en TypeScript y compilados: preferencia de idioma (RQ-04) y copiar o compartir con confirmación (`FR-011`, PRD §17 `P10`). La profundidad progresiva usa `<details>`/`<summary>` nativos y la comparación de `JS-04` es contenido estático accesible.
 - **Rationale**: `FR-015`, PRD §24.1 («el JavaScript debe justificarse por interacción necesaria»), §24.6 (islas solo cuando se requieran), `P09`.
 - **Alternatives considered**: componentes interactivos con un framework (peso y fragilidad sin una historia que lo pida); comparación interactiva con estado (mejora posible, pero `JS-04` se cumple sin ella y exigiría alternativa textual de todos modos).
-- **Enmienda**: hoy son cuatro scripts. El tercero, el seguimiento de lectura, se describe en «RQ-06 enmendado»; el cuarto, la búsqueda, en RQ-16 (v1.2).
+- **Enmienda**: hoy son cinco scripts. El tercero, el seguimiento de lectura, se describe en «RQ-06 enmendado»; el cuarto, la búsqueda, en RQ-16 (v1.2); el quinto, el tema claro u oscuro, en RQ-17 (v1.4).
 
 ## RQ-07 · Modelo y validación del contenido
 
