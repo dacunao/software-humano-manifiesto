@@ -643,3 +643,35 @@ nav.mapa:
   es: { state: borrador, text: "Mapa del manifiesto" }
   en: { state: borrador, text: "Manifesto map" }
   pt-BR: { state: borrador, text: "Mapa do manifesto" }
+busqueda.abrir:
+  es: { state: borrador, text: "Buscar" }
+  en: { state: borrador, text: "Search" }
+  pt-BR: { state: borrador, text: "Buscar" }
+busqueda.titulo:
+  es: { state: borrador, text: "Buscar en el sitio" }
+  en: { state: borrador, text: "Search the site" }
+  pt-BR: { state: borrador, text: "Buscar no site" }
+busqueda.etiqueta:
+  es: { state: borrador, text: "Palabras o identificador, como CR03" }
+  en: { state: borrador, text: "Words or an identifier, such as CR03" }
+  pt-BR: { state: borrador, text: "Palavras ou um identificador, como CR03" }
+busqueda.cargando:
+  es: { state: borrador, text: "Cargando el índice de búsqueda…" }
+  en: { state: borrador, text: "Loading the search index…" }
+  pt-BR: { state: borrador, text: "Carregando o índice de busca…" }
+busqueda.sinResultados:
+  es: { state: borrador, text: "Nada coincide con «{q}». Prueba con otras palabras o con menos palabras." }
+  en: { state: borrador, text: "Nothing matches “{q}”. Try other words or fewer words." }
+  pt-BR: { state: borrador, text: "Nada corresponde a “{q}”. Tente outras palavras ou menos palavras." }
+busqueda.error:
+  es: { state: borrador, text: "No se pudo cargar el índice de búsqueda. La navegación del sitio sigue disponible." }
+  en: { state: borrador, text: "The search index could not be loaded. Site navigation is still available." }
+  pt-BR: { state: borrador, text: "Não foi possível carregar o índice de busca. A navegação do site continua disponível." }
+busqueda.resultados:
+  es: { state: borrador, text: "Resultados: {n}" }
+  en: { state: borrador, text: "Results: {n}" }
+  pt-BR: { state: borrador, text: "Resultados: {n}" }
+busqueda.cerrar:
+  es: { state: borrador, text: "Cerrar" }
+  en: { state: borrador, text: "Close" }
+  pt-BR: { state: borrador, text: "Fechar" }

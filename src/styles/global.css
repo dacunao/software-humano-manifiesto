@@ -197,3 +197,23 @@ details.profundidad > summary { cursor: pointer; font-weight: 650; color: var(--
 .lista-recorrido a { font-weight: 650; }
 .relacionados ul { padding-left: 1.25rem; }
 .descarga-pie { font-size: 0.9rem; }
+
+/* Búsqueda (FR-023, RQ-16). */
+.abrir-busqueda { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 999px; padding: 0.3rem 0.9rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.abrir-busqueda[hidden] { display: none; }
+dialog.busqueda { margin: 4rem auto auto; width: min(40rem, calc(100vw - 2rem)); max-height: min(40rem, calc(100vh - 4rem)); border: 1px solid var(--sh-linea); border-radius: var(--sh-radio); padding: var(--sh-espacio); background: var(--sh-papel); color: var(--sh-tinta); }
+dialog.busqueda::backdrop { background: rgba(23, 32, 29, 0.45); }
+.busqueda-cabecera { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.busqueda-cabecera h2 { margin: 0; font-size: 1.25rem; }
+.busqueda-cabecera form { margin: 0; }
+.cerrar-busqueda { border: 1px solid var(--sh-linea); background: var(--sh-blanco); border-radius: 4px; padding: 0.2rem 0.6rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
+dialog.busqueda label { display: block; margin-top: 1rem; font-size: 0.9rem; color: var(--sh-suave); }
+dialog.busqueda input { width: 100%; font: inherit; font-size: 1.05rem; padding: 0.5rem 0.75rem; margin-top: 0.3rem; border: 1px solid var(--sh-tinta); border-radius: 6px; background: var(--sh-blanco); }
+.busqueda-estado { font-size: 0.9rem; color: var(--sh-suave); min-height: 1.4em; margin: 0.6rem 0; }
+.busqueda-resultados h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sh-suave); margin: 1rem 0 0.3rem; font-family: var(--sh-ui); }
+.busqueda-resultados ol { list-style: none; padding: 0; margin: 0; }
+.busqueda-resultados a { display: block; padding: 0.5rem 0.6rem; border-radius: 6px; text-decoration: none; color: var(--sh-tinta); }
+.busqueda-resultados a:hover, .busqueda-resultados a:focus-visible { background: var(--sh-blanco); }
+.resultado-titulo { display: block; font-weight: 650; }
+.resultado-texto { display: block; font-size: 0.85rem; color: var(--sh-suave); }
+.busqueda-resultados mark { background: var(--sh-acento-suave); color: var(--sh-tinta); padding: 0 0.1em; }

@@ -7,7 +7,7 @@ import { formatear, validarContenido, versionInstalada } from '../lib/validacion
 import { validarSalida } from '../lib/validacion/salida';
 import { informeVisibilidad } from '../lib/validacion/visibilidad';
 
-/** RV-01–RV-10 y RV-13 al iniciar y RV-11–RV-12 al terminar; cualquier fallo detiene la construcción (T022). */
+/** RV-01–RV-10, RV-13 y RV-14 al iniciar y RV-11–RV-12 al terminar; cualquier fallo detiene la construcción (T022). */
 export default function validacion(): AstroIntegration {
   return {
     name: 'software-humano-validacion',
@@ -16,7 +16,7 @@ export default function validacion(): AstroIntegration {
         const canon = leerCanon(); // RV-01 lanza si la huella no coincide
         const hallazgos = validarContenido(cargarContenido(), canon, versionInstalada());
         if (hallazgos.length) throw new Error(`Contenido inválido:\n${hallazgos.map(formatear).join('\n')}`);
-        logger.info(`RV-01–RV-10 y RV-13: sin hallazgos (${canon.nodos.length} nodos canónicos)`);
+        logger.info(`RV-01–RV-10, RV-13 y RV-14: sin hallazgos (${canon.nodos.length} nodos canónicos)`);
       },
       'astro:build:done': ({ dir, logger }) => {
         const salida = fileURLToPath(dir);

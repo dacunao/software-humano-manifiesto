@@ -1,0 +1,38 @@
+---
+import type { Locale } from '../lib/contenido/esquemas';
+import { t } from '../lib/sitio';
+
+/**
+ * Búsqueda (FR-023, RQ-16). Mejora progresiva: sin JavaScript el botón no aparece y el sitio
+ * sigue completo (FR-015). El índice del idioma se descarga solo al abrir (§24.1); no se envía
+ * ni se guarda lo que se busca (FR-018).
+ */
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const archivo = `/buscar/indice-${locale === 'pt-BR' ? 'pt-br' : locale}.json`;
+---
+<button type="button" class="abrir-busqueda" data-abrir-busqueda hidden aria-haspopup="dialog">{t('busqueda.abrir', locale)}</button>
+<dialog
+  class="busqueda"
+  aria-labelledby="busqueda-titulo"
+  data-busqueda
+  data-indice={archivo}
+  data-cargando={t('busqueda.cargando', locale)}
+  data-sin-resultados={t('busqueda.sinResultados', locale)}
+  data-error={t('busqueda.error', locale)}
+  data-resultados={t('busqueda.resultados', locale)}
+>
+  <div class="busqueda-cabecera">
+    <h2 id="busqueda-titulo">{t('busqueda.titulo', locale)}</h2>
+    <form method="dialog"><button type="submit" class="cerrar-busqueda">{t('busqueda.cerrar', locale)}</button></form>
+  </div>
+  <label for="busqueda-consulta">{t('busqueda.etiqueta', locale)}</label>
+  <input id="busqueda-consulta" type="search" autocomplete="off" spellcheck="false" data-consulta />
+  <p class="busqueda-estado" role="status" aria-live="polite" data-estado></p>
+  <div class="busqueda-resultados" data-resultados-lista></div>
+</dialog>
+<script>
+  import '../cliente/busqueda';
+</script>

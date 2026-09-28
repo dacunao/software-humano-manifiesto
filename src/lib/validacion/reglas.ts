@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Canon } from '../canon/lector';
 import { casas, nodosDelBloque, palabras } from '../casas';
+import { validarIndice } from '../busqueda';
 import type { Contenido } from '../contenido/cargar';
 import { CLAVES_PRINCIPIO, LOCALES, type Entrada, type Localizado, type TipoEntrada } from '../contenido/esquemas';
 
@@ -156,6 +157,11 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
     if (hayCasas && casa && casa !== 'principio' && casa !== 'descarga' && !donde.has(casa))
       falla('RV-13', `src/content/superficies/${casa}.yaml`, n.id, `falta en su casa (${casa})`);
   }
+
+  // RV-14 · el índice de búsqueda de cada idioma lleva cada pasaje a su casa, una sola vez (FR-023, RQ-16).
+  if (hayCasas)
+    for (const locale of ['en', 'es', 'pt-BR'] as const)
+      for (const x of validarIndice(c, canon, locale)) falla('RV-14', `/buscar/indice-${locale.toLowerCase()}.json`, x.entidad, x.mensaje);
 
   return h;
 }

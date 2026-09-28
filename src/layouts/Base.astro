@@ -8,6 +8,7 @@ import { contenido, hayBorrador, rutaDescarga, t, URL_SITIO } from '../lib/sitio
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
+import Busqueda from '../components/Busqueda.astro';
 
 interface Props {
   locale: Locale;
@@ -60,6 +61,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
     <header class="cabecera">
       <p class="marca"><a href={ruta({ tipo: 'inicio' }, locale)}>{contenido.sitio.name}</a></p>
       <NavegacionGlobal locale={locale} pagina={pagina} />
+      <Busqueda locale={locale} />
     </header>
     {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
     <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
