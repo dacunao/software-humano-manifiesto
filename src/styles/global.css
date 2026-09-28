@@ -7,7 +7,6 @@
 @plugin 'daisyui/theme' {
   name: 'software-humano';
   default: true;
-  color-scheme: light;
   --color-base-100: var(--sh-papel);
   --color-base-content: var(--sh-tinta);
   --color-primary: var(--sh-tinta);
@@ -68,7 +67,7 @@ main .manifiesto table, main .cita-canonica table, main .comparacion, main .list
 .selector-idioma a { color: var(--sh-tinta); }
 .selector-idioma a[aria-current='true'] { font-weight: 700; text-decoration: none; }
 .selector-idioma button { font-size: 0.8rem; border: 1px solid var(--sh-linea); padding: 0 0.5rem; border-radius: 4px; background: var(--sh-blanco); }
-.aviso-borrador { margin-block: 0.75rem; padding-block: 0.5rem; background: #fff4d6; border-radius: var(--sh-radio); font-size: 0.9rem; }
+.aviso-borrador { margin-block: 0.75rem; padding-block: 0.5rem; background: var(--sh-aviso); border-radius: var(--sh-radio); font-size: 0.9rem; }
 .pie { margin-top: var(--sh-seccion); padding-block: var(--sh-espacio) var(--sh-bloque); border-top: 1px solid var(--sh-linea); color: var(--sh-suave); font-size: 0.875rem; }
 .pie p { margin-bottom: 0.4rem; }
 
@@ -98,9 +97,9 @@ main .manifiesto table, main .cita-canonica table, main .comparacion, main .list
 .cita-canonica { margin: 1.5rem 0; padding: 1rem 0 0.25rem 1.25rem; border-left: 3px solid var(--sh-acento); }
 .cita-canonica figcaption { display: inline-block; font-family: var(--sh-ui); font-size: 0.75rem; font-weight: 750; color: var(--sh-acento); background: var(--sh-acento-suave); border: 1px solid var(--sh-acento); border-radius: 999px; padding: 0.05rem 0.6rem; margin-bottom: 0.6rem; text-transform: none; letter-spacing: 0; }
 .cita-canonica blockquote, .manifiesto, .principio header .cita-canonica p { font-family: var(--sh-voz); font-size: 1.12rem; line-height: 1.6; }
-.principio header .cita-canonica { border-left: 0; padding: 1.5rem 1.75rem; background: var(--sh-tinta); color: var(--sh-papel); border-radius: var(--sh-radio); }
+.principio header .cita-canonica { border-left: 0; padding: 1.5rem 1.75rem; background: var(--sh-destacado-fondo); color: var(--sh-destacado-texto); border-radius: var(--sh-radio); }
 .principio header .cita-canonica blockquote { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.3; }
-.principio header .cita-canonica a { color: var(--sh-papel); }
+.principio header .cita-canonica a { color: var(--sh-destacado-texto); }
 
 /* Tarjetas (A) */
 .lista-principios { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
@@ -225,3 +224,28 @@ dialog.busqueda input { width: 100%; font: inherit; font-size: 1.05rem; padding:
 }
 /* El índice plegado queda fijo arriba en pantallas angostas: un ancla no debe quedar debajo (T138). */
 @media (max-width: 61.99rem) { main [id] { scroll-margin-top: 3.5rem; } }
+
+/* Solo para tecnologías de asistencia (rótulo del selector compacto, T156). */
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.selector-idioma ul { display: flex; gap: 0; list-style: none; margin: 0; padding: 0.1rem; border: 1px solid var(--sh-linea); border-radius: 999px; }
+.selector-idioma li + li { border-left: 1px solid var(--sh-linea); }
+.selector-idioma a { display: inline-block; padding: 0.15rem 0.6rem; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-decoration: none; border-radius: 999px; }
+.selector-idioma a[aria-current='true'] { background: var(--sh-blanco); box-shadow: inset 0 0 0 1px var(--sh-linea); }
+/* Control de día y noche (T155). */
+.control-tema { display: inline-flex; align-items: center; gap: 0.35rem; }
+.control-tema[hidden] { display: none; }
+.control-tema button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 999px; padding: 0.25rem 0.55rem; font: inherit; font-size: 0.8rem; cursor: pointer; line-height: 1; }
+.control-tema svg { width: 1rem; height: 1rem; vertical-align: -0.15em; }
+.control-tema .icono-luna { display: none; }
+.control-tema [aria-pressed='true'] .icono-sol { display: none; }
+.control-tema [aria-pressed='true'] .icono-luna { display: inline; }
+.preferencias-pie button { border: 1px solid var(--sh-linea); background: var(--sh-blanco); color: var(--sh-tinta); border-radius: 4px; padding: 0.1rem 0.6rem; font: inherit; font-size: 0.8rem; cursor: pointer; }
+.preferencias-pie:has(button[hidden]) { display: none; }
+/* Cabecera en teléfono (T155, P06): nombre, búsqueda y tema en la primera línea; el menú y el idioma debajo. */
+@media (max-width: 48rem) {
+  .cabecera { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 0.5rem; }
+  .cabecera .marca { grid-column: 1; grid-row: 1; margin: 0; }
+  .cabecera .abrir-busqueda { grid-column: 2; grid-row: 1; }
+  .cabecera .control-tema { grid-column: 3; grid-row: 1; }
+  .cabecera .navegacion-global { grid-column: 1 / -1; grid-row: 2; }
+}

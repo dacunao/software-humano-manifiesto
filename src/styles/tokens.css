@@ -24,4 +24,47 @@
   --sh-bloque: 3rem;
   --sh-seccion: 5rem;
   --sh-radio: 0.55rem;
+  --sh-aviso: #fff4d6;
+  /* Tarjeta destacada de la declaración de un principio: invertida en claro, tonal en oscuro. */
+  --sh-destacado-fondo: #17201d;
+  --sh-destacado-texto: #f5f1e8;
+  color-scheme: light;
+}
+
+/*
+ * Tema oscuro (PRD v1.4 §21.7, RQ-17), en borrador para la aprobación de Damián Acuña: los mismos
+ * tonos de A + B invertidos. La tinta verde casi negra pasa a ser el fondo y el papel cálido, el
+ * texto. Sin elección guardada rige el sistema; `data-tema` es la elección de la persona.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='claro']) {
+    --sh-tinta: #ece6da;
+    --sh-papel: #141a18;
+    --sh-suave: #a7b1ac;
+    --sh-linea: #34403b;
+    --sh-tarjeta: rgba(255, 255, 255, 0.04);
+    --sh-blanco: #1d2522;
+    --sh-acento: #9ab8ff;
+    --sh-acento-suave: #1c2740;
+    --sh-foco: #a9c6ff;
+    --sh-aviso: #3a3320;
+    --sh-destacado-fondo: #24322d;
+    --sh-destacado-texto: #f3eee4;
+    color-scheme: dark;
+  }
+}
+:root[data-tema='oscuro'] {
+  --sh-tinta: #ece6da;
+  --sh-papel: #141a18;
+  --sh-suave: #a7b1ac;
+  --sh-linea: #34403b;
+  --sh-tarjeta: rgba(255, 255, 255, 0.04);
+  --sh-blanco: #1d2522;
+  --sh-acento: #9ab8ff;
+  --sh-acento-suave: #1c2740;
+  --sh-foco: #a9c6ff;
+  --sh-aviso: #3a3320;
+  --sh-destacado-fondo: #24322d;
+  --sh-destacado-texto: #f3eee4;
+  color-scheme: dark;
 }

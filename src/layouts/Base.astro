@@ -9,6 +9,7 @@ import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
 import Busqueda from '../components/Busqueda.astro';
+import ControlTema from '../components/ControlTema.astro';
 import { esDivision } from '../lib/manifiesto';
 
 interface Props {
@@ -45,6 +46,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline src="/tema.js"></script>
     <title>{tituloCompleto}</title>
     <meta name="description" content={descripcion} />
     {pagina.tipo !== '404' && <link rel="canonical" href={url} />}
@@ -65,6 +67,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
       <p class="marca"><a href={ruta({ tipo: 'inicio' }, locale)}>{contenido.sitio.name}</a></p>
       <NavegacionGlobal locale={locale} pagina={pagina} />
       <Busqueda locale={locale} />
+      <ControlTema locale={locale} />
     </header>
     {hayBorrador(locale) && <p class="aviso-borrador" role="note">{t('aviso.borrador', locale)}</p>}
     <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
@@ -86,6 +89,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
         {locale !== 'es' && <> · {t('pie.traduccion', locale)} <a href={rutaDescarga('es')} download hreflang="es" lang="es">{t('integro.original', 'es')}</a></>}
       </p>
       <Procedencia locale={locale} actualizado={actualizado} />
+      <p class="preferencias-pie"><button type="button" data-tema-sistema hidden>{t('tema.sistema', locale)}</button></p>
       <p class="licencia-pie">{t('pie.licencia', locale)} <a href={`${ruta({ tipo: 'acerca' }, locale)}#licencias`}>{t('pie.licenciasDetalle', locale)}</a></p>
       {/* PRD v1.3 §18.4: el editor siempre; el enlace, solo si su sitio está en línea (sin enlaces sin destino). */}
       <p class="editor-pie">

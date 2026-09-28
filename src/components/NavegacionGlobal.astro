@@ -29,6 +29,10 @@ const actual = pagina.tipo === 'principio' || esDivision(pagina.tipo) ? 'manifie
         </a>
       </li>
     ))}
+    {/* PRD v1.4 §18.2: solo cuando el repositorio de la adaptación sea público (FR-010, RV-10). */}
+    {contenido.estado.published && contenido.estado.url && (
+      <li><a href={contenido.estado.url} rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+    )}
   </ul>
   <p class="version"><a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
   <SelectorIdioma locale={locale} pagina={pagina} />

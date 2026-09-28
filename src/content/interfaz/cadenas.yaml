@@ -605,3 +605,11 @@ indice.manifiesto:
   es: { state: borrador, text: "Índice del manifiesto" }
   en: { state: borrador, text: "Manifesto index" }
   pt-BR: { state: borrador, text: "Índice do manifesto" }
+tema.oscuro:
+  es: { state: borrador, text: "Tema oscuro" }
+  en: { state: borrador, text: "Dark theme" }
+  pt-BR: { state: borrador, text: "Tema escuro" }
+tema.sistema:
+  es: { state: borrador, text: "Usar el del sistema" }
+  en: { state: borrador, text: "Use system setting" }
+  pt-BR: { state: borrador, text: "Usar o do sistema" }

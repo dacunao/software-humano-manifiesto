@@ -5,7 +5,7 @@ import { ruta, type Pagina } from '../lib/i18n/rutas';
 import { t } from '../lib/sitio';
 
 /**
- * Selector nativo (PRD §21.7): nombres reconocibles, sin banderas, idioma activo perceptible
+ * Selector nativo (PRD §21.7; compacto EN · ES · PT desde la v1.4): códigos visibles y nombres completos accesibles, sin banderas, idioma activo perceptible
  * también para tecnologías de asistencia. Los enlaces van a la página equivalente; el ancla se
  * conserva al cambiar si la página la tiene (JS-09). Funciona sin JavaScript.
  */
@@ -16,7 +16,7 @@ interface Props {
 const { locale, pagina } = Astro.props;
 ---
 <div class="selector-idioma" data-selector-idioma data-restablecido={t('idioma.restablecido', locale)}>
-  <p id="rotulo-idioma" class="rotulo">{t('idioma.rotulo', locale)}</p>
+  <p id="rotulo-idioma" class="rotulo solo-lectores">{t('idioma.rotulo', locale)}</p>
   <ul aria-labelledby="rotulo-idioma">
     {ORDEN_IDIOMAS.map((l) => (
       <li>
@@ -26,7 +26,9 @@ const { locale, pagina } = Astro.props;
           lang={IDIOMAS[l].hreflang}
           data-idioma={l}
           aria-current={l === locale ? 'true' : undefined}
-        >{IDIOMAS[l].label}</a>
+          aria-label={IDIOMAS[l].label}
+          title={IDIOMAS[l].label}
+        >{IDIOMAS[l].codigo}</a>
       </li>
     ))}
   </ul>

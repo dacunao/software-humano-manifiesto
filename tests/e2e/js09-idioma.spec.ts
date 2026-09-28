@@ -16,7 +16,10 @@ test.describe('JS-09 · Idioma', () => {
     await page.locator('[data-selector-idioma]').getByRole('link', { name: 'Español' }).click();
     await expect(page).toHaveURL(/\/es\/principios\/p03$/);
     await expect(page.locator('html')).toHaveAttribute('lang', 'es');
-    await expect(page.locator('[data-selector-idioma] a[aria-current="true"]')).toHaveText('Español');
+    // Selector compacto (PRD v1.4 §21.7): código visible y nombre completo accesible.
+    const activo = page.locator('[data-selector-idioma] a[aria-current="true"]');
+    await expect(activo).toHaveText('ES');
+    await expect(activo).toHaveAccessibleName('Español');
   });
 
   test('escenario 3 · una URL localizada explícita prevalece sobre la preferencia guardada', async ({ page }, info) => {
