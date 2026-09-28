@@ -259,7 +259,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: obtener evidencia de las Job Stories antes de optimizar, diseñar y traducir (`F07`; decisión de Damián Acuña del 2026-09-27). La ronda final de la fase 16 se mantiene.
 
-- [ ] T085 Preparar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`: tareas derivadas de la evidencia de cumplimiento de `JS-01`–`JS-09`, participantes de las audiencias del PRD §14.1 y plantilla de notas por sesión, **sin umbral numérico** (decisión del 2026-09-27)
+- [X] T085 Preparar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`: tareas derivadas de la evidencia de cumplimiento de `JS-01`–`JS-09`, participantes de las audiencias del PRD §14.1 y plantilla de notas por sesión, **sin umbral numérico** (decisión del 2026-09-27)
 - [ ] T086 STOP · Damián conduce o supervisa unas pocas sesiones en español sobre el sitio con el contenido en borrador y los tokens provisionales; las notas quedan en `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`
 - [ ] T087 Incorporar los hallazgos al contenido `es` (sigue en `borrador`) y registrarlos en `docs/pilot/registro-del-piloto.md`. Si un hallazgo cambiaría el alcance, un requisito o una historia: STOP y presentarlo a Damián, sin cambiarlo
 
