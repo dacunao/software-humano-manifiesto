@@ -3,16 +3,29 @@ import type { Locale } from '../lib/contenido/esquemas';
 import { renderMarkdown } from '../lib/canon/render';
 import { contenido, t, texto } from '../lib/sitio';
 
-/** Estado de la adaptación como dato (RQ-09). Sin botón, formulario ni enlace mientras no esté publicada (FR-010). */
+/**
+ * Estado de la adaptación como dato (RQ-09): los seis puntos de FR-009 con la versión instalada
+ * y verificada. Sin botón, formulario ni enlace mientras no esté publicada (FR-010, PRD §29.6).
+ */
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
 const e = contenido.estado;
 const limites = texto(e.limitations, locale);
+const puntos = [
+  t('estado.independiente', locale),
+  t('estado.presets', locale),
+  t('estado.core', locale),
+  t('estado.validada', locale, { version: e.version, fecha: e.verifiedAt }),
+  ...(e.published ? [] : [t('estado.noPublicada', locale)]),
+  t('estado.noOficial', locale),
+];
 ---
-<div class="estado-adaptacion" data-tipo="estado-tecnico">
+<div class="estado-adaptacion" data-tipo="estado-tecnico" data-version={e.version}>
   <p class="rotulo-contenido">{t('contenido.estadoTecnico', locale)}</p>
-  <p>{t('pie.estadoPreset', locale, { version: e.version })}</p>
+  <ul>
+    {puntos.map((p) => <li>{p}</li>)}
+  </ul>
   <div class="lectura" lang={limites.lang !== locale ? limites.lang : undefined} set:html={renderMarkdown(limites.texto)} />
 </div>

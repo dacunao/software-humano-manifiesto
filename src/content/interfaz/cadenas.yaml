@@ -499,3 +499,27 @@ acerca.contacto:
   pt-BR:
     state: borrador
     text: Contato
+estado.independiente:
+  es: { state: borrador, text: "Es una adaptación independiente." }
+  en: { state: borrador, text: "It is an independent adaptation." }
+  pt-BR: { state: borrador, text: "É uma adaptação independente." }
+estado.presets:
+  es: { state: borrador, text: "Usa los mecanismos nativos de personalización de SpecKit (presets)." }
+  en: { state: borrador, text: "It uses SpecKit's native customization mechanisms (presets)." }
+  pt-BR: { state: borrador, text: "Usa os mecanismos nativos de personalização do SpecKit (presets)." }
+estado.core:
+  es: { state: borrador, text: "No modifica el código de SpecKit." }
+  en: { state: borrador, text: "It does not modify SpecKit's code." }
+  pt-BR: { state: borrador, text: "Não modifica o código do SpecKit." }
+estado.validada:
+  es: { state: borrador, text: 'Validada técnicamente en la versión {version}, el {fecha}.' }
+  en: { state: borrador, text: 'Technically validated in version {version}, on {fecha}.' }
+  pt-BR: { state: borrador, text: 'Validada tecnicamente na versão {version}, em {fecha}.' }
+estado.noPublicada:
+  es: { state: borrador, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones." }
+  en: { state: borrador, text: "It is not published yet. When it is, the link and instructions will appear here." }
+  pt-BR: { state: borrador, text: "Ainda não está publicada. Quando estiver, o link e as instruções aparecerão aqui." }
+estado.noOficial:
+  es: { state: borrador, text: "No es una integración oficial ni cuenta con respaldo de GitHub." }
+  en: { state: borrador, text: "It is not an official integration and is not endorsed by GitHub." }
+  pt-BR: { state: borrador, text: "Não é uma integração oficial nem tem endosso do GitHub." }

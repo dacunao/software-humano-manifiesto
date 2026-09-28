@@ -25,7 +25,7 @@ fr:
 sections:
   - id: origen
     title:
-      es: { state: borrador, text: Origen }
+      es: { state: borrador, text: "Origen" }
       en: &pend { state: pendiente }
       pt-BR: *pend
     blocks:
@@ -40,7 +40,7 @@ sections:
         nodos: [influencias-y-notas-03]
   - id: autoria
     title:
-      es: { state: borrador, text: Autoría y versiones }
+      es: { state: borrador, text: "Autoría y versiones" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -59,7 +59,7 @@ sections:
             pt-BR: *pend
   - id: procedencia
     title:
-      es: { state: borrador, text: De dónde viene cada texto }
+      es: { state: borrador, text: "De dónde viene cada texto" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -78,7 +78,7 @@ sections:
             pt-BR: *pend
   - id: independencia
     title:
-      es: { state: borrador, text: Una iniciativa independiente }
+      es: { state: borrador, text: "Una iniciativa independiente" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -97,7 +97,7 @@ sections:
         nodos: [influencias-y-notas-04, influencias-y-notas-05, influencias-y-notas-06, influencias-y-notas-08, influencias-y-notas-09, influencias-y-notas-10, influencias-y-notas-11]
   - id: licencias
     title:
-      es: { state: borrador, text: Licencias }
+      es: { state: borrador, text: "Licencias" }
       en: *pend
       pt-BR: *pend
     blocks:

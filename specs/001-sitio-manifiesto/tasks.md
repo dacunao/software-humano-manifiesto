@@ -211,11 +211,11 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Verificación**: escenarios de `JS-07`; `AC-09`.
 
-- [ ] T071 [P] [US7] Escribir `tests/e2e/js07-speckit.spec.ts` con los escenarios 1 a 3 de `JS-07`: ningún enlace de descarga o instalación ni `SoftwareSourceCode`
-- [ ] T072 [P] [US7] Escribir `tests/unit/validacion/estado-adaptacion.test.ts`: `RV-09` falla si el YAML difiere del registro instalado; `RV-10` falla si hay `url` con `published: false`
-- [ ] T073 [US7] Redactar `src/content/superficies/speckit.yaml` (`es`, borrador): la relación núcleo → constitución → anexo → preset → SpecKit nativo (`FR-008`), qué conserva, qué adapta y sus límites, presentado después del método (PRD §28)
-- [ ] T074 [US7] Implementar `src/views/Speckit.astro`: estado leído de `estado-adaptacion.yaml` con los seis puntos de `FR-009` y la versión instalada; disponibilidad futura **sin botón, formulario ni enlace** (`FR-010`, decisión PRD §29.6)
-- [ ] T075 [US7] Redactar y mostrar el acto 7 en `src/content/superficies/inicio.yaml` y `src/views/Inicio.astro`: cierre con el estado real y las acciones disponibles (leer, explorar, aplicar conceptualmente, conocer el estado)
+- [X] T071 [P] [US7] Escribir `tests/e2e/js07-speckit.spec.ts` con los escenarios 1 a 3 de `JS-07`: ningún enlace de descarga o instalación ni `SoftwareSourceCode`
+- [X] T072 [P] [US7] Escribir `tests/unit/validacion/estado-adaptacion.test.ts`: `RV-09` falla si el YAML difiere del registro instalado; `RV-10` falla si hay `url` con `published: false`
+- [X] T073 [US7] Redactar `src/content/superficies/speckit.yaml` (`es`, borrador): la relación núcleo → constitución → anexo → preset → SpecKit nativo (`FR-008`), qué conserva, qué adapta y sus límites, presentado después del método (PRD §28)
+- [X] T074 [US7] Implementar `src/views/Speckit.astro`: estado leído de `estado-adaptacion.yaml` con los seis puntos de `FR-009` y la versión instalada; disponibilidad futura **sin botón, formulario ni enlace** (`FR-010`, decisión PRD §29.6)
+- [X] T075 [US7] Redactar y mostrar el acto 7 en `src/content/superficies/inicio.yaml` y `src/views/Inicio.astro`: cierre con el estado real y las acciones disponibles (leer, explorar, aplicar conceptualmente, conocer el estado)
 
 ---
 

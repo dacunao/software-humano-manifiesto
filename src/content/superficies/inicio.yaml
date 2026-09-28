@@ -27,7 +27,7 @@ sections:
   # Acto 1 · PRD §16. Voz impersonal (decisión de la autoridad, 2026-09-27).
   - id: acto-1
     title:
-      es: { state: borrador, text: Construir software es cada vez más fácil }
+      es: { state: borrador, text: "Construir software es cada vez más fácil" }
       en: &pend { state: pendiente }
       pt-BR: *pend
     question:
@@ -56,7 +56,7 @@ sections:
   # Acto 2 · PRD §16. Idea central tomada del borrador de copy del hero (docs/design/), reescrita en voz impersonal.
   - id: acto-2
     title:
-      es: { state: borrador, text: Poder construir no significa deber construir }
+      es: { state: borrador, text: "Poder construir no significa deber construir" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -104,7 +104,7 @@ sections:
   # Acto 3 · PRD §16. El texto canónico breve se cita por sus nodos; no se copia (RQ-01).
   - id: acto-3
     title:
-      es: { state: borrador, text: El progreso humano es el producto }
+      es: { state: borrador, text: "El progreso humano es el producto" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -131,7 +131,7 @@ sections:
   # Acto 4 · PRD §16. Los diez principios en orden canónico; sin capítulos por ahora (opcional, lo decide el diseño).
   - id: acto-4
     title:
-      es: { state: borrador, text: Diez principios para decidir }
+      es: { state: borrador, text: "Diez principios para decidir" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -155,7 +155,7 @@ sections:
   # Acto 5 · PRD §16. Un principio cambia una decisión, exige evidencia o detiene una implementación.
   - id: acto-5
     title:
-      es: { state: borrador, text: Del principio a la decisión }
+      es: { state: borrador, text: "Del principio a la decisión" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -231,7 +231,7 @@ sections:
   # Acto 6 · PRD §16.
   - id: acto-6
     title:
-      es: { state: borrador, text: De la doctrina al desarrollo }
+      es: { state: borrador, text: "De la doctrina al desarrollo" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -252,3 +252,34 @@ sections:
     depth:
       - kind: canon
         nodos: [guia-de-bolsillo-18]
+
+  # Acto 7 · PRD §16. Cierra con el estado real y las acciones disponibles.
+  - id: acto-7
+    title:
+      es: { state: borrador, text: "Una implementación mediante SpecKit" }
+      en: *pend
+      pt-BR: *pend
+    blocks:
+      - kind: entrada
+        entrada:
+          id: inicio-acto-7-implementacion
+          type: explanation
+          derivedFrom: proposito-del-documento-21
+          text:
+            es:
+              state: borrador
+              text: |-
+                El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit).
+            en: *pend
+            pt-BR: *pend
+      - kind: estado-adaptacion
+      - kind: entrada
+        entrada:
+          id: inicio-acto-7-acciones
+          type: surface-text
+          text:
+            es:
+              state: borrador
+              text: 'Para seguir: [leer el manifiesto completo](/es/manifiesto), [recorrer los principios](/es/principios), [ver cómo se aplica](/es/aplicacion) o [conocer el estado de la adaptación](/es/speckit).'
+            en: *pend
+            pt-BR: *pend

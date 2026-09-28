@@ -25,7 +25,7 @@ fr:
 sections:
   - id: coleccion
     title:
-      es: { state: borrador, text: Diez principios para decidir }
+      es: { state: borrador, text: "Diez principios para decidir" }
       en: &pend { state: pendiente }
       pt-BR: *pend
     blocks:

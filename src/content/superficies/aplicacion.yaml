@@ -25,7 +25,7 @@ fr:
 sections:
   - id: fundamento
     title:
-      es: { state: borrador, text: Fundamento de producto }
+      es: { state: borrador, text: "Fundamento de producto" }
       en: &pend { state: pendiente }
       pt-BR: *pend
     blocks:
@@ -48,7 +48,7 @@ sections:
         nodos: [fundamento-de-producto-y-forma-de-referencia-05, fundamento-de-producto-y-forma-de-referencia-06, fundamento-de-producto-y-forma-de-referencia-09, fundamento-de-producto-y-forma-de-referencia-10, fundamento-de-producto-y-forma-de-referencia-11]
   - id: job-stories
     title:
-      es: { state: borrador, text: Job Stories como forma de referencia }
+      es: { state: borrador, text: "Job Stories como forma de referencia" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -71,7 +71,7 @@ sections:
         nodos: [fundamento-de-producto-y-forma-de-referencia-22, fundamento-de-producto-y-forma-de-referencia-23, fundamento-de-producto-y-forma-de-referencia-24, fundamento-de-producto-y-forma-de-referencia-27, fundamento-de-producto-y-forma-de-referencia-31]
   - id: flujo
     title:
-      es: { state: borrador, text: Un flujo del fundamento a la verificación }
+      es: { state: borrador, text: "Un flujo del fundamento a la verificación" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -92,7 +92,7 @@ sections:
         nodos: [flujo-de-trabajo-03, flujo-de-trabajo-04]
   - id: artefactos
     title:
-      es: { state: borrador, text: Artefactos que responden preguntas }
+      es: { state: borrador, text: "Artefactos que responden preguntas" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -113,7 +113,7 @@ sections:
         nodos: [flujo-de-trabajo-06, flujo-de-trabajo-07]
   - id: contrato
     title:
-      es: { state: borrador, text: El contrato del agente }
+      es: { state: borrador, text: "El contrato del agente" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -134,7 +134,7 @@ sections:
         nodos: [contrato-reutilizable-03, cr01, cr02, cr03, cr04, cr05, cr06, cr07, cr08]
   - id: detenciones
     title:
-      es: { state: borrador, text: Cuándo detenerse }
+      es: { state: borrador, text: "Cuándo detenerse" }
       en: *pend
       pt-BR: *pend
     blocks:
@@ -157,7 +157,7 @@ sections:
         nodos: [flujo-de-trabajo-09, flujo-de-trabajo-10, flujo-de-trabajo-11]
   - id: terminado
     title:
-      es: { state: borrador, text: Qué significa terminado }
+      es: { state: borrador, text: "Qué significa terminado" }
       en: *pend
       pt-BR: *pend
     blocks:
