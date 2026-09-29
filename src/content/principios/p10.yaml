@@ -22,9 +22,11 @@ entries:
         state: borrador
         text: La automatización sin agencia humana puede acelerar el camino equivocado. Cuando la ayuda decide en silencio o encierra la información, la persona pierde el control de su propio trabajo.
       en:
-        state: pendiente
+        state: borrador
+        text: Automation without human agency can accelerate the wrong path. When assistance decides silently or locks information away, the person loses control of their own work.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: A automação sem agência humana pode acelerar o caminho errado. Quando a ajuda decide em silêncio ou retém a informação, a pessoa perde o controle do próprio trabalho.
   significado:
     id: p10-significado
     type: explanation
@@ -34,9 +36,11 @@ entries:
         state: borrador
         text: El software puede anticipar, recomendar y automatizar sin ocultar decisiones, encerrar información ni impedir alternativas. Con IA, el control incluye saber qué información se usó y qué acción se ejecutó.
       en:
-        state: pendiente
+        state: borrador
+        text: Software can anticipate, recommend and automate without hiding decisions, locking information away or preventing alternatives. With AI, control includes knowing what information was used and what action was carried out.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O software pode antecipar, recomendar e automatizar sem ocultar decisões, reter informação nem impedir alternativas. Com IA, o controle inclui saber que informação foi usada e que ação foi executada.
   consecuencia:
     id: p10-consecuencia
     type: explanation
@@ -46,9 +50,11 @@ entries:
         state: borrador
         text: La confirmación se pide en proporción al impacto. Se puede revisar, editar, exportar y revertir cuando el dominio lo permite, y se separan autorización, recomendación y ejecución.
       en:
-        state: pendiente
+        state: borrador
+        text: Confirmation is requested in proportion to the impact. You can review, edit, export and revert where the domain permits it, and authorisation, recommendation and execution are kept separate.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: A confirmação é pedida na proporção do impacto. É possível revisar, editar, exportar e reverter quando o domínio permite, e autorização, recomendação e execução são separadas.
   ejemplo:
     id: p10-ejemplo
     type: example
@@ -58,9 +64,11 @@ entries:
         state: borrador
         text: En este sitio se puede leer sin un orden impuesto, copiar cualquier pasaje y compartir una dirección estable, sin crear una cuenta ni entregar datos.
       en:
-        state: pendiente
+        state: borrador
+        text: On this site you can read without an imposed order, copy any passage and share a stable address, without creating an account or handing over any data.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Neste site, é possível ler sem uma ordem imposta, copiar qualquer trecho e compartilhar um endereço estável, sem criar uma conta nem fornecer dados.
   contraejemplo:
     id: p10-contraejemplo
     type: counterexample
@@ -70,9 +78,11 @@ entries:
         state: borrador
         text: Secuestrar el desplazamiento de la página, reproducir audio sin pedirlo, exigir un registro o impedir el acceso al texto completo.
       en:
-        state: pendiente
+        state: borrador
+        text: Hijacking page scrolling, playing audio without being asked, requiring registration or preventing access to the full text.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Sequestrar a rolagem da página, reproduzir áudio sem que ninguém tenha pedido, exigir cadastro ou impedir o acesso ao texto completo.
   prueba:
     id: p10-prueba
     type: decision-test
@@ -82,6 +92,8 @@ entries:
         state: borrador
         text: Estas preguntas verifican que la ayuda no se convierta en apropiación.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions check that assistance does not turn into appropriation.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas verificam que a ajuda não se transforme em apropriação.

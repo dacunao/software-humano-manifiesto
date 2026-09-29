@@ -8,7 +8,7 @@ nav.saltar:
     text: Skip to content
   pt-BR:
     state: borrador
-    text: Ir para o conteúdo
+    text: Pular para o conteúdo
 nav.principal:
   es:
     state: borrador
@@ -251,8 +251,12 @@ compartir.error:
     text: Não foi possível copiar. O link está visível ao lado do título.
 pie.licencia:
   es: { state: borrador, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias." }
-  en: { state: borrador, text: "Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not covered by those licenses." }
-  pt-BR: { state: borrador, text: "Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças." }
+  en:
+    state: borrador
+    text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not part of those licences.
+  pt-BR:
+    state: borrador
+    text: Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças.
 pie.procedencia:
   es:
     state: borrador
@@ -405,189 +409,377 @@ acerca.contacto:
     text: Contato
 estado.independiente:
   es: { state: borrador, text: "Es una adaptación independiente." }
-  en: { state: borrador, text: "It is an independent adaptation." }
-  pt-BR: { state: borrador, text: "É uma adaptação independente." }
+  en:
+    state: borrador
+    text: It is an independent adaptation.
+  pt-BR:
+    state: borrador
+    text: É uma adaptação independente.
 estado.presets:
   es: { state: borrador, text: "Usa los mecanismos nativos de personalización de SpecKit (presets)." }
-  en: { state: borrador, text: "It uses SpecKit's native customization mechanisms (presets)." }
-  pt-BR: { state: borrador, text: "Usa os mecanismos nativos de personalização do SpecKit (presets)." }
+  en:
+    state: borrador
+    text: It uses SpecKit's native customisation mechanisms (presets).
+  pt-BR:
+    state: borrador
+    text: Usa os mecanismos nativos de personalização do SpecKit (presets).
 estado.core:
   es: { state: borrador, text: "No modifica el código de SpecKit." }
-  en: { state: borrador, text: "It does not modify SpecKit's code." }
-  pt-BR: { state: borrador, text: "Não modifica o código do SpecKit." }
+  en:
+    state: borrador
+    text: It does not modify SpecKit's code.
+  pt-BR:
+    state: borrador
+    text: Não modifica o código do SpecKit.
 estado.validada:
   es: { state: borrador, text: 'Validada técnicamente en la versión {version}, el {fecha}.' }
-  en: { state: borrador, text: 'Technically validated in version {version}, on {fecha}.' }
-  pt-BR: { state: borrador, text: 'Validada tecnicamente na versão {version}, em {fecha}.' }
+  en:
+    state: borrador
+    text: Technically validated in version {version}, on {fecha}.
+  pt-BR:
+    state: borrador
+    text: Validada tecnicamente na versão {version}, em {fecha}.
 estado.noPublicada:
   es: { state: borrador, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones." }
-  en: { state: borrador, text: "It is not published yet. When it is, the link and instructions will appear here." }
-  pt-BR: { state: borrador, text: "Ainda não está publicada. Quando estiver, o link e as instruções aparecerão aqui." }
+  en:
+    state: borrador
+    text: It is not published yet. When it is, the link and instructions will appear here.
+  pt-BR:
+    state: borrador
+    text: Ainda não está publicada. Quando estiver, o link e as instruções aparecerão aqui.
 estado.noOficial:
   es: { state: borrador, text: "No es una integración oficial ni cuenta con respaldo de GitHub." }
-  en: { state: borrador, text: "It is not an official integration and is not endorsed by GitHub." }
-  pt-BR: { state: borrador, text: "Não é uma integração oficial nem tem endosso do GitHub." }
+  en:
+    state: borrador
+    text: It is not an official integration and is not endorsed by GitHub.
+  pt-BR:
+    state: borrador
+    text: Não é uma integração oficial nem tem endosso do GitHub.
 inicio.comenzar:
   es: { state: borrador, text: "Comenzar por el problema" }
-  en: { state: borrador, text: "Start with the problem" }
-  pt-BR: { state: borrador, text: "Começar pelo problema" }
+  en:
+    state: borrador
+    text: Start with the problem
+  pt-BR:
+    state: borrador
+    text: Começar pelo problema
 inicio.principios:
   es: { state: borrador, text: "Ir directo a los principios" }
-  en: { state: borrador, text: "Go straight to the principles" }
-  pt-BR: { state: borrador, text: "Ir direto aos princípios" }
+  en:
+    state: borrador
+    text: Go straight to the principles
+  pt-BR:
+    state: borrador
+    text: Ir direto aos princípios
 inicio.entrada:
   es: { state: borrador, text: "Se puede leer el recorrido completo o entrar en cualquier punto; nada exige haber leído lo anterior." }
-  en: { state: borrador, text: "You can read the whole journey or enter at any point; nothing requires reading what came before." }
-  pt-BR: { state: borrador, text: "É possível ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o anterior." }
+  en:
+    state: borrador
+    text: You can read the whole way through or start at any point; nothing requires you to have read what came before.
+  pt-BR:
+    state: borrador
+    text: É possível ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o que vem antes.
 indice.enEstaPagina:
   es: { state: borrador, text: "En esta página" }
-  en: { state: borrador, text: "On this page" }
-  pt-BR: { state: borrador, text: "Nesta página" }
+  en:
+    state: borrador
+    text: On this page
+  pt-BR:
+    state: borrador
+    text: Nesta página
 indice.rotulo:
   es: { state: borrador, text: "Índice de la sección" }
-  en: { state: borrador, text: "Section index" }
-  pt-BR: { state: borrador, text: "Índice da seção" }
+  en:
+    state: borrador
+    text: Section index
+  pt-BR:
+    state: borrador
+    text: Índice da seção
 ruta.manifiesto:
   es: { state: borrador, text: "Comprender" }
-  en: { state: borrador, text: "Understand" }
-  pt-BR: { state: borrador, text: "Compreender" }
+  en:
+    state: borrador
+    text: Understand
+  pt-BR:
+    state: borrador
+    text: Compreender
 ruta.principios:
   es: { state: borrador, text: "Decidir" }
-  en: { state: borrador, text: "Decide" }
-  pt-BR: { state: borrador, text: "Decidir" }
+  en:
+    state: borrador
+    text: Decide
+  pt-BR:
+    state: borrador
+    text: Decidir
 ruta.aplicacion:
   es: { state: borrador, text: "Construir" }
-  en: { state: borrador, text: "Build" }
-  pt-BR: { state: borrador, text: "Construir" }
+  en:
+    state: borrador
+    text: Build
+  pt-BR:
+    state: borrador
+    text: Construir
 ruta.verificacion:
   es: { state: borrador, text: "Verificar" }
-  en: { state: borrador, text: "Verify" }
-  pt-BR: { state: borrador, text: "Verificar" }
+  en:
+    state: borrador
+    text: Verify
+  pt-BR:
+    state: borrador
+    text: Verificar
 ruta.rotulo:
   es: { state: borrador, text: "Ruta de lectura" }
-  en: { state: borrador, text: "Reading path" }
-  pt-BR: { state: borrador, text: "Rota de leitura" }
+  en:
+    state: borrador
+    text: Reading route
+  pt-BR:
+    state: borrador
+    text: Rota de leitura
 integro.descargas:
   es: { state: borrador, text: "Descargar el núcleo" }
-  en: { state: borrador, text: "Download the core" }
-  pt-BR: { state: borrador, text: "Baixar o núcleo" }
+  en:
+    state: borrador
+    text: Download the core
+  pt-BR:
+    state: borrador
+    text: Baixar o núcleo
 integro.original:
   es: { state: borrador, text: "Original en español (Markdown)" }
-  en: { state: borrador, text: "Spanish original (Markdown)" }
-  pt-BR: { state: borrador, text: "Original em espanhol (Markdown)" }
+  en:
+    state: borrador
+    text: Spanish original (Markdown)
+  pt-BR:
+    state: borrador
+    text: Original em espanhol (Markdown)
 integro.traduccionEn:
   es: { state: borrador, text: "Traducción al inglés (Markdown)" }
-  en: { state: borrador, text: "English translation (Markdown)" }
-  pt-BR: { state: borrador, text: "Tradução para o inglês (Markdown)" }
+  en:
+    state: borrador
+    text: English translation (Markdown)
+  pt-BR:
+    state: borrador
+    text: Tradução para o inglês (Markdown)
 integro.traduccionPt:
   es: { state: borrador, text: "Traducción al portugués de Brasil (Markdown)" }
-  en: { state: borrador, text: "Brazilian Portuguese translation (Markdown)" }
-  pt-BR: { state: borrador, text: "Tradução para o português do Brasil (Markdown)" }
+  en:
+    state: borrador
+    text: Brazilian Portuguese translation (Markdown)
+  pt-BR:
+    state: borrador
+    text: Tradução para o português do Brasil (Markdown)
 indice.enEstaSeccion:
   es: { state: borrador, text: "En esta sección" }
-  en: { state: borrador, text: "In this section" }
-  pt-BR: { state: borrador, text: "Nesta seção" }
+  en:
+    state: borrador
+    text: In this section
+  pt-BR:
+    state: borrador
+    text: Nesta seção
 ruta.practica:
   es: { state: borrador, text: "Llevarlo a la práctica" }
-  en: { state: borrador, text: "Putting it into practice" }
-  pt-BR: { state: borrador, text: "Levar à prática" }
+  en:
+    state: borrador
+    text: Putting it into practice
+  pt-BR:
+    state: borrador
+    text: Pôr em prática
 nav.anterior:
   es: { state: borrador, text: "Anterior" }
-  en: { state: borrador, text: "Previous" }
-  pt-BR: { state: borrador, text: "Anterior" }
+  en:
+    state: borrador
+    text: Previous
+  pt-BR:
+    state: borrador
+    text: Anterior
 nav.siguiente:
   es: { state: borrador, text: "Siguiente" }
-  en: { state: borrador, text: "Next" }
-  pt-BR: { state: borrador, text: "Próximo" }
+  en:
+    state: borrador
+    text: Next
+  pt-BR:
+    state: borrador
+    text: Próximo
 nav.lectura:
   es: { state: borrador, text: "Recorrido del núcleo" }
-  en: { state: borrador, text: "Reading through the core" }
-  pt-BR: { state: borrador, text: "Percurso do núcleo" }
+  en:
+    state: borrador
+    text: Reading through the core
+  pt-BR:
+    state: borrador
+    text: Percurso do núcleo
 mapa.recorrido:
   es: { state: borrador, text: "Las nueve divisiones" }
-  en: { state: borrador, text: "The nine divisions" }
-  pt-BR: { state: borrador, text: "As nove divisões" }
+  en:
+    state: borrador
+    text: The nine divisions
+  pt-BR:
+    state: borrador
+    text: As nove divisões
 verificar.relacionados:
   es: { state: borrador, text: "También para verificar" }
-  en: { state: borrador, text: "Also for verifying" }
-  pt-BR: { state: borrador, text: "Também para verificar" }
+  en:
+    state: borrador
+    text: Also for verification
+  pt-BR:
+    state: borrador
+    text: Também para verificar
 verificar.terminado:
   es: { state: borrador, text: "Definición de terminado, en Gobernanza" }
-  en: { state: borrador, text: "Definition of done, in Governance" }
-  pt-BR: { state: borrador, text: "Definição de pronto, em Governança" }
+  en:
+    state: borrador
+    text: Definition of done, in Governance
+  pt-BR:
+    state: borrador
+    text: Definição de conclusão, em Governança
 contenido.fuenteNucleo:
   es: { state: borrador, text: "Núcleo del manifiesto v{version}, sección {codigo}." }
-  en: { state: borrador, text: "Core of the manifesto v{version}, section {codigo}." }
-  pt-BR: { state: borrador, text: "Núcleo do manifesto v{version}, seção {codigo}." }
+  en:
+    state: borrador
+    text: Core of the manifesto v{version}, section {codigo}.
+  pt-BR:
+    state: borrador
+    text: Núcleo do manifesto v{version}, seção {codigo}.
 pie.traduccion:
   es: { state: borrador, text: "Es una traducción; el original en español conserva la autoridad." }
-  en: { state: borrador, text: "This is a translation; the Spanish original remains authoritative." }
-  pt-BR: { state: borrador, text: "É uma tradução; o original em espanhol mantém a autoridade." }
+  en:
+    state: borrador
+    text: This is a translation; the Spanish original remains authoritative.
+  pt-BR:
+    state: borrador
+    text: É uma tradução; o original em espanhol mantém a autoridade.
 nav.mapa:
   es: { state: borrador, text: "Mapa del manifiesto" }
-  en: { state: borrador, text: "Manifesto map" }
-  pt-BR: { state: borrador, text: "Mapa do manifesto" }
+  en:
+    state: borrador
+    text: Manifesto map
+  pt-BR:
+    state: borrador
+    text: Mapa do manifesto
 busqueda.abrir:
   es: { state: borrador, text: "Buscar" }
-  en: { state: borrador, text: "Search" }
-  pt-BR: { state: borrador, text: "Buscar" }
+  en:
+    state: borrador
+    text: Search
+  pt-BR:
+    state: borrador
+    text: Buscar
 busqueda.titulo:
   es: { state: borrador, text: "Buscar en el sitio" }
-  en: { state: borrador, text: "Search the site" }
-  pt-BR: { state: borrador, text: "Buscar no site" }
+  en:
+    state: borrador
+    text: Search the site
+  pt-BR:
+    state: borrador
+    text: Buscar no site
 busqueda.etiqueta:
   es: { state: borrador, text: "Palabras o identificador, como CR03" }
-  en: { state: borrador, text: "Words or an identifier, such as CR03" }
-  pt-BR: { state: borrador, text: "Palavras ou um identificador, como CR03" }
+  en:
+    state: borrador
+    text: Words or an identifier, such as CR03
+  pt-BR:
+    state: borrador
+    text: Palavras ou identificador, como CR03
 busqueda.cargando:
   es: { state: borrador, text: "Cargando el índice de búsqueda…" }
-  en: { state: borrador, text: "Loading the search index…" }
-  pt-BR: { state: borrador, text: "Carregando o índice de busca…" }
+  en:
+    state: borrador
+    text: Loading the search index…
+  pt-BR:
+    state: borrador
+    text: Carregando o índice de busca…
 busqueda.sinResultados:
   es: { state: borrador, text: "Nada coincide con «{q}». Prueba con otras palabras o con menos palabras." }
-  en: { state: borrador, text: "Nothing matches “{q}”. Try other words or fewer words." }
-  pt-BR: { state: borrador, text: "Nada corresponde a “{q}”. Tente outras palavras ou menos palavras." }
+  en:
+    state: borrador
+    text: Nothing matches “{q}”. Try other words or fewer words.
+  pt-BR:
+    state: borrador
+    text: Nada corresponde a “{q}”. Tente outras palavras ou menos palavras.
 busqueda.error:
   es: { state: borrador, text: "No se pudo cargar el índice de búsqueda. La navegación del sitio sigue disponible." }
-  en: { state: borrador, text: "The search index could not be loaded. Site navigation is still available." }
-  pt-BR: { state: borrador, text: "Não foi possível carregar o índice de busca. A navegação do site continua disponível." }
+  en:
+    state: borrador
+    text: The search index could not be loaded. Site navigation is still available.
+  pt-BR:
+    state: borrador
+    text: Não foi possível carregar o índice de busca. A navegação do site continua disponível.
 busqueda.resultados:
   es: { state: borrador, text: "Resultados: {n}" }
-  en: { state: borrador, text: "Results: {n}" }
-  pt-BR: { state: borrador, text: "Resultados: {n}" }
+  en:
+    state: borrador
+    text: "Results: {n}"
+  pt-BR:
+    state: borrador
+    text: "Resultados: {n}"
 busqueda.cerrar:
   es: { state: borrador, text: "Cerrar" }
-  en: { state: borrador, text: "Close" }
-  pt-BR: { state: borrador, text: "Fechar" }
+  en:
+    state: borrador
+    text: Close
+  pt-BR:
+    state: borrador
+    text: Fechar
 pie.licenciasDetalle:
   es: { state: borrador, text: "Qué puedes reutilizar" }
-  en: { state: borrador, text: "What you can reuse" }
-  pt-BR: { state: borrador, text: "O que você pode reutilizar" }
+  en:
+    state: borrador
+    text: What you can reuse
+  pt-BR:
+    state: borrador
+    text: O que você pode reutilizar
 pie.editor:
   es: { state: borrador, text: "Publicado por {editor}" }
-  en: { state: borrador, text: "Published by {editor}" }
-  pt-BR: { state: borrador, text: "Publicado por {editor}" }
+  en:
+    state: borrador
+    text: Published by {editor}
+  pt-BR:
+    state: borrador
+    text: Publicado por {editor}
 pie.conocer:
   es: { state: borrador, text: "Conoce la empresa" }
-  en: { state: borrador, text: "Meet the company" }
-  pt-BR: { state: borrador, text: "Conheça a empresa" }
+  en:
+    state: borrador
+    text: Get to know the company
+  pt-BR:
+    state: borrador
+    text: Conheça a empresa
 tema.oscuro:
   es: { state: borrador, text: "Tema oscuro" }
-  en: { state: borrador, text: "Dark theme" }
-  pt-BR: { state: borrador, text: "Tema escuro" }
+  en:
+    state: borrador
+    text: Dark theme
+  pt-BR:
+    state: borrador
+    text: Tema escuro
 tema.sistema:
   es: { state: borrador, text: "Usar el del sistema" }
-  en: { state: borrador, text: "Use system setting" }
-  pt-BR: { state: borrador, text: "Usar o do sistema" }
+  en:
+    state: borrador
+    text: Use system theme
+  pt-BR:
+    state: borrador
+    text: Usar o do sistema
 indice.contenido:
   es: { state: borrador, text: "Contenido" }
-  en: { state: borrador, text: "Contents" }
-  pt-BR: { state: borrador, text: "Conteúdo" }
+  en:
+    state: borrador
+    text: Contents
+  pt-BR:
+    state: borrador
+    text: Conteúdo
 nav.menu:
   es: { state: borrador, text: "Menú" }
-  en: { state: borrador, text: "Menu" }
-  pt-BR: { state: borrador, text: "Menu" }
+  en:
+    state: borrador
+    text: Menu
+  pt-BR:
+    state: borrador
+    text: Menu
 social.alt:
   es: { state: borrador, text: "Manifiesto, de Software Humano: «{frase}»" }
-  en: { state: borrador, text: "Manifiesto, by Software Humano: “{frase}”" }
-  pt-BR: { state: borrador, text: "Manifiesto, da Software Humano: “{frase}”" }
+  en:
+    state: borrador
+    text: "Manifiesto, by Software Humano: “{frase}”"
+  pt-BR:
+    state: borrador
+    text: "Manifiesto, da Software Humano: “{frase}”"

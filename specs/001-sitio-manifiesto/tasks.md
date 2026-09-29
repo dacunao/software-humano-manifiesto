@@ -251,7 +251,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
   - acción para restablecer la preferencia
 - [X] T082 [US9] Implementar `src/cliente/preferencia-idioma.ts`: guarda la elección (protegido ante almacenamiento no disponible), permite restablecerla y redirige **solo** desde `/` (RQ-04); nunca actúa en otras rutas
 - [X] T083 [US9] Completar en `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` (creados en T017) un borrador de traducción **nodo a nodo** para todos los nodos, con `sourceHash` y `state: borrador` (RQ-02)
-- [ ] T084 [US9] **Se ejecuta después de la fase 12** (ajuste de orden del 2026-09-27: la ronda temprana en español puede cambiar el contenido y traducirlo antes obligaría a retraducir; el alcance no cambia). Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
+- [X] T084 [US9] **Se ejecuta después de la fase 12** (ajuste de orden del 2026-09-27: la ronda temprana en español puede cambiar el contenido y traducirlo antes obligaría a retraducir; el alcance no cambia). Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
   - *Avance, 2026-09-28*: parte canónica hecha. Los 341 nodos del núcleo en `en` y `pt-BR` vienen de la traducción revisada del 2026-09-21, verificada contra el original, y están aprobados por Damián (`evidencia/revision-linguistica/`). Faltan las superficies, los principios y la interfaz. La fase 12 quedó cerrada, así que el orden se cumple
 
 ---
@@ -304,7 +304,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 **Purpose**: bloque 9.
 
 - [ ] T098 [P] Escribir `tests/unit/lenguaje/neutralidad.test.ts`, que detecte en el contenido `es` formas de voseo (`vos`, `sos`, `tenés`, `podés`) y de `vosotros`. Es una ayuda previa a la revisión humana, no la sustituye
-- [ ] T099 Preparar en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/` el paquete de revisión de `en` y `pt-BR`, con los textos por id y los nombres de ruta (RQ-03). Desde el 2026-09-28 el paquete sirve para la aprobación de Damián, no para un revisor externo
+- [X] T099 Preparar en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/` el paquete de revisión de `en` y `pt-BR`, con los textos por id y los nombres de ruta (RQ-03). Desde el 2026-09-28 el paquete sirve para la aprobación de Damián, no para un revisor externo
 - [ ] T100 STOP · Damián contrata la revisión profesional de `en` y `pt-BR`; se registran revisor, fecha y resultado. El agente no marca nada como aprobado
   - *Decisión de la autoridad, 2026-09-28*: Damián aprueba `en` y `pt-BR` en lugar del servicio profesional. Los 341 nodos del núcleo quedaron aprobados por él; falta aprobar las superficies, los principios y la interfaz cuando estén traducidos (T084), y registrar la revisión de cada idioma en `src/content/revisiones.yaml`
 - [ ] T101 Incorporar las correcciones de Damián (antes, del revisor externo; decisión del 2026-09-28) en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián

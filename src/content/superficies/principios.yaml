@@ -30,9 +30,11 @@ sections:
         state: borrador
         text: Diez principios para decidir
       en:
-        state: pendiente
+        state: borrador
+        text: Ten principles for deciding
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Dez princípios para decidir
     blocks:
       - kind: canon
         nodos:

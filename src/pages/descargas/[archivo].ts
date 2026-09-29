@@ -12,8 +12,9 @@ export function getStaticPaths() {
 }
 
 const AVISO: Record<string, string> = {
-  en: '> Translation of the core of the Human Software Manifesto v2.1. The Spanish original remains authoritative. Draft pending professional review.',
-  'pt-br': '> Tradução do núcleo do Manifesto de Software Humano v2.1. O original em espanhol mantém a autoridade. Rascunho pendente de revisão profissional.',
+  // Texto del aviso de las traducciones aprobadas por Damián Acuña el 2026-09-28.
+  en: '> Translation of the core of the Software Humano Manifesto v2.1. The Spanish original retains doctrinal authority; where the two diverge, the Spanish text governs.',
+  'pt-br': '> Tradução do núcleo do Manifesto de Software Humano v2.1. O original em espanhol mantém a autoridade doutrinária; havendo divergência entre os dois, prevalece o texto em espanhol.',
 };
 
 export const GET: APIRoute = ({ params }) => {

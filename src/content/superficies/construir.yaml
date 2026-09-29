@@ -6,20 +6,20 @@ title:
     text: "Construir con IA"
   en:
     state: borrador
-    text: "Building with AI"
+    text: Building with AI
   pt-BR:
     state: borrador
-    text: "Construir com IA"
+    text: Construir com IA
 description:
   es:
     state: borrador
     text: "Doctrina para desarrollar con IA, el flujo de trabajo, cuándo detenerse y el contrato del agente."
   en:
     state: borrador
-    text: "Doctrine for building with AI, the workflow, when to stop and the agent contract."
+    text: Doctrine for development with AI, the workflow, when to stop and the agent contract.
   pt-BR:
     state: borrador
-    text: "Doutrina para desenvolver com IA, o fluxo de trabalho, quando parar e o contrato do agente."
+    text: Doutrina para desenvolver com IA, o fluxo de trabalho, quando parar e o contrato do agente.
 fr:
   - FR-007
 sections:
@@ -29,9 +29,11 @@ sections:
         state: borrador
         text: Cuando construir cuesta menos
       en:
-        state: pendiente
+        state: borrador
+        text: When building costs less
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Quando construir custa menos
     depth: []
     blocks:
       - kind: entrada
@@ -44,9 +46,11 @@ sections:
               state: borrador
               text: "La IA abarata construir y, con eso, mueve el cuello de botella: la pregunta deja de ser si algo puede hacerse y pasa a ser si merece existir. Seis directivas ponen límites al trabajo de equipos y agentes, y una tabla separa lo que debe ser determinista de lo que admite generación."
             en:
-              state: pendiente
+              state: borrador
+              text: "AI makes building cheaper and, in doing so, shifts the bottleneck: the question is no longer whether something can be done but whether it deserves to exist. Six directives set limits on the work of teams and agents, and a table separates what must be deterministic from what admits generation."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "A IA barateia a construção e, com isso, desloca o gargalo: a pergunta deixa de ser se algo pode ser feito e passa a ser se merece existir. Seis diretrizes estabelecem limites para o trabalho de times e agentes, e uma tabela separa o que deve ser determinista do que admite geração."
       - kind: canon
         desde: doctrina-para-desarrollo-con-ia-03
         hasta: doctrina-para-desarrollo-con-ia-13
@@ -56,9 +60,11 @@ sections:
         state: borrador
         text: Un flujo del fundamento a la verificación
       en:
-        state: pendiente
+        state: borrador
+        text: A flow from the foundation to verification
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Um fluxo do fundamento à verificação
     depth: []
     blocks:
       - kind: entrada
@@ -71,9 +77,11 @@ sections:
               state: borrador
               text: "El flujo evita que generar código sea el primer acto de diseño. Ocho pasos llevan del fundamento a una solución verificable: comprender, establecer cobertura, planificar, concretar el progreso, definir la experiencia, modelar reglas y riesgos, explorar, y construir verificando. Descomponer el trabajo no autoriza a omitir parte del alcance."
             en:
-              state: pendiente
+              state: borrador
+              text: "The flow prevents code generation from becoming the first act of design. Eight steps lead from the foundation to a verifiable solution: understand, establish coverage, plan, make progress concrete, define the experience, model rules and risks, explore, and build while verifying. Breaking the work down does not authorise omitting part of the scope."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "O fluxo evita que gerar código seja o primeiro ato de design. Oito passos levam do fundamento a uma solução verificável: compreender, estabelecer cobertura, planejar, concretizar o progresso, definir a experiência, modelar regras e riscos, explorar e construir verificando. Decompor o trabalho não autoriza omitir parte do escopo."
       - kind: canon
         desde: flujo-de-trabajo-03
         hasta: flujo-de-trabajo-04
@@ -83,9 +91,11 @@ sections:
         state: borrador
         text: Artefactos que responden preguntas
       en:
-        state: pendiente
+        state: borrador
+        text: Artefacts that answer questions
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Artefatos que respondem a perguntas
     depth: []
     blocks:
       - kind: entrada
@@ -98,9 +108,11 @@ sections:
               state: borrador
               text: Cada artefacto existe para responder una pregunta, no para llenar una plantilla. Si la información ya existe, se referencia. Si un artefacto no cambia una decisión ni ayuda a verificarla, sobra.
             en:
-              state: pendiente
+              state: borrador
+              text: Each artefact exists to answer a question, not to fill in a template. If the information already exists, it is referenced. If an artefact neither changes a decision nor helps verify one, it is superfluous.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: Cada artefato existe para responder a uma pergunta, não para preencher um modelo. Se a informação já existe, ela é referenciada. Se um artefato não muda uma decisão nem ajuda a verificá-la, ele é supérfluo.
       - kind: canon
         desde: flujo-de-trabajo-06
         hasta: flujo-de-trabajo-07
@@ -110,9 +122,11 @@ sections:
         state: borrador
         text: Cuándo detenerse
       en:
-        state: pendiente
+        state: borrador
+        text: When to stop
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Quando parar
     depth: []
     blocks:
       - kind: entrada
@@ -125,9 +139,11 @@ sections:
               state: borrador
               text: Un agente no debería empezar a construir si no puede decir cuál es el fundamento, qué alcance establece, qué evidencia lo respalda y qué tiene que decidir la persona. Las siete razones para detener una implementación que ya está en marcha están en la [Guía de bolsillo](/es/manifiesto/guia-de-bolsillo#sh-pocket).
             en:
-              state: pendiente
+              state: borrador
+              text: An agent should not start building if it cannot say what the foundation is, what scope it establishes, what evidence supports it and what the person has to decide. The seven reasons to stop an implementation that is already under way are in the [Pocket guide](/manifesto/pocket-guide#sh-pocket).
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: Um agente não deveria começar a construir se não consegue dizer qual é o fundamento, que escopo ele estabelece, que evidência o sustenta e o que a pessoa tem de decidir. As sete razões para parar uma implementação que já está em andamento estão no [Guia de bolso](/pt-br/manifesto/guia-de-bolso#sh-pocket).
       - kind: canon
         desde: flujo-de-trabajo-09
         hasta: flujo-de-trabajo-11
@@ -137,9 +153,11 @@ sections:
         state: borrador
         text: El contrato del agente
       en:
-        state: pendiente
+        state: borrador
+        text: The agent contract
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O contrato do agente
     depth: []
     blocks:
       - kind: entrada
@@ -152,9 +170,11 @@ sections:
               state: borrador
               text: "Ocho instrucciones que pueden incorporarse a un repositorio o al pedido que recibe un agente de código: construir lo más simple que cumpla, comprender antes de programar, dar cuenta de todo el alcance, proponer con alternativas, no exponer estructuras internas, usar la IA con límites, no agregar lo que nadie pidió y reconciliar antes de declarar terminado."
             en:
-              state: pendiente
+              state: borrador
+              text: "Eight instructions that can be incorporated into a repository or into the request a coding agent receives: build the simplest solution that meets what is required, understand before programming, account for the full scope, propose with alternatives, do not expose internal structures, use AI within limits, do not add what nobody asked for, and reconcile before declaring the work done."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Oito instruções que podem ser incorporadas a um repositório ou ao pedido que um agente de código recebe: construir o mais simples que cumpra o definido, compreender antes de programar, dar conta de todo o escopo, propor com alternativas, não expor estruturas internas, usar a IA com limites, não acrescentar o que ninguém pediu e reconciliar antes de declarar o trabalho concluído."
       - kind: canon
         desde: contrato-reutilizable-03
         hasta: contrato-reutilizable-23

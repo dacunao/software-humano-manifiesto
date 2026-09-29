@@ -6,20 +6,20 @@ title:
     text: "Guía de bolsillo"
   en:
     state: borrador
-    text: "Pocket guide"
+    text: Pocket guide
   pt-BR:
     state: borrador
-    text: "Guia de bolso"
+    text: Guia de bolso
 description:
   es:
     state: borrador
     text: "Catorce preguntas antes de aceptar una decisión, siete razones para detenerse y la declaración final del manifiesto."
   en:
     state: borrador
-    text: "Fourteen questions before accepting a decision, seven reasons to stop and the manifesto’s closing statement."
+    text: Fourteen questions before accepting a decision, seven reasons to stop and the manifesto’s closing statement.
   pt-BR:
     state: borrador
-    text: "Catorze perguntas antes de aceitar uma decisão, sete razões para parar e a declaração final do manifesto."
+    text: Catorze perguntas antes de aceitar uma decisão, sete razões para parar e a declaração final do manifesto.
 fr:
   - FR-022
 sections:
@@ -29,9 +29,11 @@ sections:
         state: borrador
         text: Guía de bolsillo
       en:
-        state: pendiente
+        state: borrador
+        text: Pocket guide
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Guia de bolso
     depth: []
     blocks:
       - kind: entrada
@@ -44,9 +46,11 @@ sections:
               state: borrador
               text: "Para tener a mano: catorce preguntas antes de aceptar una decisión, siete razones para detener una implementación y tres frases que protegen el criterio."
             en:
-              state: pendiente
+              state: borrador
+              text: "To keep at hand: fourteen questions before accepting a decision, seven reasons to stop an implementation and three sentences that protect judgement."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Para ter à mão: catorze perguntas antes de aceitar uma decisão, sete razões para parar uma implementação e três frases que protegem o critério."
       - kind: canon
         desde: guia-de-bolsillo-03
         hasta: guia-de-bolsillo-22
@@ -57,10 +61,10 @@ sections:
         text: "Declaración final"
       en:
         state: borrador
-        text: "Final statement"
+        text: Closing statement
       pt-BR:
         state: borrador
-        text: "Declaração final"
+        text: Declaração final
     depth: []
     blocks:
       - kind: canon

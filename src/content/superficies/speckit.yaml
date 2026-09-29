@@ -31,9 +31,11 @@ sections:
         state: borrador
         text: Qué es y qué no es
       en:
-        state: pendiente
+        state: borrador
+        text: What it is and what it is not
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O que é e o que não é
     blocks:
       - kind: entrada
         entrada:
@@ -45,18 +47,22 @@ sections:
               state: borrador
               text: "SpecKit es una herramienta de desarrollo guiado por especificaciones: ordena el trabajo en especificar, aclarar, planificar, dividir en tareas, analizar, implementar y converger. No define el manifiesto ni el producto. La adaptación Software Humano lo usa para que la doctrina esté presente mientras un agente de código trabaja. Es una forma de aplicar el manifiesto, no el manifiesto."
             en:
-              state: pendiente
+              state: borrador
+              text: "SpecKit is a specification-driven development tool: it organises the work into specifying, clarifying, planning, breaking down into tasks, analysing, implementing and converging. It does not define the manifesto or the product. The Software Humano adaptation uses it so that the doctrine is present while a coding agent works. It is one way of applying the manifesto, not the manifesto itself."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "O SpecKit é uma ferramenta de desenvolvimento guiado por especificações: organiza o trabalho em especificar, esclarecer, planejar, dividir em tarefas, analisar, implementar e convergir. Não define o manifesto nem o produto. A adaptação Software Humano o usa para que a doutrina esteja presente enquanto um agente de código trabalha. É uma forma de aplicar o manifesto, não o manifesto."
   - id: capas
     title:
       es:
         state: borrador
         text: Cuatro capas, cada una con su autoridad
       en:
-        state: pendiente
+        state: borrador
+        text: Four layers, each with its own authority
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Quatro camadas, cada uma com sua autoridade
     blocks:
       - kind: entrada
         entrada:
@@ -73,18 +79,32 @@ sections:
                 - **El preset, la extensión y el workflow Software Humano** materializan esa correspondencia. El preset agrega a cada operación lo que el manifiesto exige en ella; la extensión comprueba que los artefactos lo tengan; el workflow pone las compuertas que el manifiesto nombra.
                 - **SpecKit nativo** conserva su comportamiento en todo lo que la adaptación no toca.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                - **The core of the manifesto** governs the principles, the flow, the artefacts and the acceptance criteria.
+                - **The operational constitution** is the complete core, installed where the agent reads it before each operation. It conditions how the agent acts.
+                - **The application annex** defines how each obligation of the core corresponds to a SpecKit operation.
+                - **The Software Humano preset, extension and workflow** materialise that correspondence. The preset adds to each operation what the manifesto requires at that point; the extension checks that the artefacts include it; the workflow sets up the gates the manifesto names.
+                - **Native SpecKit** keeps its behaviour in everything the adaptation does not touch.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                - **O núcleo do manifesto** governa os princípios, o fluxo, os artefatos e os critérios de aceitação.
+                - **A constituição operacional** é o núcleo completo, instalado onde o agente o lê antes de cada operação. Condiciona a atuação dele.
+                - **O anexo de aplicação** define como cada obrigação do núcleo corresponde a uma operação do SpecKit.
+                - **O preset, a extensão e o workflow Software Humano** materializam essa correspondência. O preset acrescenta a cada operação o que o manifesto exige nela; a extensão verifica se os artefatos contêm isso; o workflow coloca os portões que o manifesto nomeia.
+                - **O SpecKit nativo** conserva seu comportamento em tudo o que a adaptação não toca.
   - id: conserva
     title:
       es:
         state: borrador
         text: Qué conserva y qué cambia
       en:
-        state: pendiente
+        state: borrador
+        text: What stays and what changes
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O que se mantém e o que muda
     blocks:
       - kind: entrada
         entrada:
@@ -96,17 +116,21 @@ sections:
               state: borrador
               text: "Los comandos nativos conservan su descripción, su encadenamiento y sus scripts, y la lista de verificación nativa queda intacta. Lo que cambia es el contenido de las plantillas: cada operación incorpora, citado textualmente del núcleo, lo que el manifiesto exige en ese momento, y los artefactos del núcleo aparecen donde corresponden. Nada de esto requiere modificar el código de SpecKit."
             en:
-              state: pendiente
+              state: borrador
+              text: "The native commands keep their description, their chaining and their scripts, and the native checklist remains intact. What changes is the content of the templates: each operation incorporates, quoted verbatim from the core, what the manifesto requires at that moment, and the core's artefacts appear where they belong. None of this requires modifying SpecKit's code."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Os comandos nativos mantêm sua descrição, seu encadeamento e seus scripts, e a lista de verificação nativa permanece intacta. O que muda é o conteúdo dos modelos: cada operação incorpora, citado textualmente do núcleo, o que o manifesto exige naquele momento, e os artefatos do núcleo aparecem nos lugares correspondentes. Nada disso exige modificar o código do SpecKit."
   - id: estado
     title:
       es:
         state: borrador
         text: Estado actual
       en:
-        state: pendiente
+        state: borrador
+        text: Current status
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Status atual
     blocks:
       - kind: estado-adaptacion

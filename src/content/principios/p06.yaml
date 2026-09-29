@@ -19,9 +19,11 @@ entries:
         state: borrador
         text: Menús, alertas, animaciones, elecciones y textos compiten por la misma atención, que es finita. Una interfaz puede no tener errores y aun así fracasar por saturación.
       en:
-        state: pendiente
+        state: borrador
+        text: Menus, alerts, animations, choices and text compete for the same attention, which is finite. An interface can be free of errors and still fail through saturation.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Menus, alertas, animações, escolhas e textos competem pela mesma atenção, que é finita. Uma interface pode não ter erros e ainda assim fracassar por saturação.
   significado:
     id: p06-significado
     type: explanation
@@ -31,9 +33,11 @@ entries:
         state: borrador
         text: "La atención se administra con la misma disciplina que el rendimiento o el costo: cada elemento visible y cada decisión solicitada tienen que justificar lo que consumen."
       en:
-        state: pendiente
+        state: borrador
+        text: "Attention is managed with the same discipline as performance or cost: every visible element and every decision requested must justify what it consumes."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "A atenção é administrada com a mesma disciplina que o desempenho ou o custo: cada elemento visível e cada decisão solicitada têm de justificar o que consomem."
   consecuencia:
     id: p06-consecuencia
     type: explanation
@@ -43,9 +47,11 @@ entries:
         state: borrador
         text: Se jerarquiza por relevancia para el momento actual, no por igualdad entre funcionalidades. Las señales intensas se reservan para lo que de verdad requiere atención.
       en:
-        state: pendiente
+        state: borrador
+        text: Hierarchy is established by relevance to the current moment, not by treating all features as equal. Strong signals are reserved for what genuinely requires attention.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Hierarquiza-se por relevância para o momento atual, não por igualdade entre funcionalidades. Os sinais intensos são reservados para o que de fato exige atenção.
   ejemplo:
     id: p06-ejemplo
     type: example
@@ -55,9 +61,11 @@ entries:
         state: borrador
         text: Una página con una idea dominante por sección y una sola acción principal deja claro qué hacer después, sin pedir que la persona ordene opciones que el producto podía ordenar.
       en:
-        state: pendiente
+        state: borrador
+        text: A page with one dominant idea per section and a single primary action makes it clear what to do next, without asking the person to sort options the product could have sorted.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma página com uma ideia dominante por seção e uma única ação principal deixa claro o que fazer em seguida, sem pedir que a pessoa ordene opções que o produto podia ordenar.
   contraejemplo:
     id: p06-contraejemplo
     type: counterexample
@@ -67,9 +75,11 @@ entries:
         state: borrador
         text: Animaciones continuas, llamados simultáneos con el mismo peso o fondos que reducen la legibilidad del texto.
       en:
-        state: pendiente
+        state: borrador
+        text: Continuous animations, simultaneous calls to action with equal weight, or backgrounds that reduce the legibility of the text.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Animações contínuas, chamadas simultâneas com o mesmo peso ou fundos que reduzem a legibilidade do texto.
   prueba:
     id: p06-prueba
     type: decision-test
@@ -79,6 +89,8 @@ entries:
         state: borrador
         text: Estas preguntas ayudan a decidir qué puede quitarse sin perder información ni control.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions help decide what can be removed without losing information or control.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas ajudam a decidir o que pode ser retirado sem perder informação nem controle.

@@ -16,7 +16,7 @@ description:
     text: Origen, autoría, versiones, procedencia y licencias del sitio.
   en:
     state: borrador
-    text: Origin, authorship, versions, provenance and licenses of the site.
+    text: Origin, authorship, versions, provenance and licences of the site.
   pt-BR:
     state: borrador
     text: Origem, autoria, versões, procedência e licenças do site.
@@ -29,9 +29,11 @@ sections:
         state: borrador
         text: Origen
       en:
-        state: pendiente
+        state: borrador
+        text: Origin
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Origem
     blocks:
       - kind: entrada
         entrada:
@@ -55,10 +57,10 @@ sections:
         text: "Influencias y fuentes"
       en:
         state: borrador
-        text: "Influences and sources"
+        text: Influences and sources
       pt-BR:
         state: borrador
-        text: "Influências e fontes"
+        text: Influências e fontes
     depth: []
     blocks:
       - kind: entrada
@@ -71,18 +73,22 @@ sections:
               state: borrador
               text: "El manifiesto recoge cuatro ideas de Craft: que forma y función van juntas; que una herramienta se mide por la energía y la capacidad que deja en quien la usa; que la complejidad debe aparecer cuando se necesita; y el enfoque *human first*, frente a sistemas que obligan a las personas a acomodarse a su estructura. De Jobs to Be Done conserva el progreso como referencia superior, y de las Job Stories, la forma de llevarlo al diseño: circunstancia, motivación, resultado y evidencia. Fuentes: [Acerca de Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) y [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
             en:
-              state: pendiente
+              state: borrador
+              text: "The manifesto takes four ideas from Craft: that form and function belong together; that a tool is measured by the energy and capability it leaves in whoever uses it; that complexity should appear when it is needed; and the *human-first* approach, as against systems that force people to accommodate themselves to their structure. From Jobs to Be Done it retains progress as the higher-level reference, and from Job Stories, the way of carrying that progress into design: circumstance, motivation, outcome and evidence. Sources: [About Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) and [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "O manifesto reúne quatro ideias da Craft: que forma e função andam juntas; que uma ferramenta se mede pela energia e pela capacidade que deixa em quem a usa; que a complexidade deve aparecer quando é necessária; e a abordagem *human first*, em contraste com sistemas que obrigam as pessoas a se acomodarem à sua estrutura. De Jobs to Be Done, conserva o progresso como referência superior e, das Job Stories, a forma de levá-lo ao design: circunstância, motivação, resultado e evidência. Fontes: [Sobre a Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) e [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
   - id: autoria
     title:
       es:
         state: borrador
         text: Autoría y versiones
       en:
-        state: pendiente
+        state: borrador
+        text: Authorship and versions
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Autoria e versões
     blocks:
       - kind: entrada
         entrada:
@@ -96,18 +102,28 @@ sections:
 
                 Una versión nueva no reemplaza en silencio a la anterior: se registra qué cambió y se revisan las páginas que dependen de ella.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                The manifesto and this site are the work of Damián Acuña. The published text is the core of the manifesto, version 2.1, dated September 2026.
+
+                A new version does not silently replace the previous one: what changed is recorded, and the pages that depend on it are reviewed.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                O manifesto e este site são obra de Damián Acuña. O texto publicado corresponde ao núcleo do manifesto, versão 2.1, de setembro de 2026.
+
+                Uma versão nova não substitui a anterior em silêncio: registra-se o que mudou e revisam-se as páginas que dependem dela.
   - id: software-humano
     title:
       es:
         state: borrador
         text: Software Humano y el Manifiesto
       en:
-        state: pendiente
+        state: borrador
+        text: Software Humano and the Manifiesto
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Software Humano e o Manifiesto
     blocks:
       - kind: entrada
         entrada:
@@ -118,9 +134,11 @@ sections:
               state: borrador
               text: "El Manifiesto es obra de Damián Acuña. Lo publica y lo cuida **Software Humano**, la agencia que crea productos digitales bajo esta doctrina y acepta ser evaluada con ella. Cada sitio tiene su trabajo: este explica, fundamenta y gobierna; a Software Humano le corresponde presentar su propuesta y sus productos, en su propio sitio. Por eso aquí no hay oferta comercial, y los pasajes del núcleo se leen completos solo en este sitio."
             en:
-              state: pendiente
+              state: borrador
+              text: "The Manifiesto is the work of Damián Acuña. It is published and looked after by **Software Humano**, the agency that creates digital products under this doctrine and accepts being evaluated against it. Each site has its own job: this one explains, grounds and governs; presenting its offering and its products is Software Humano's job, on its own site. That is why there is no commercial offer here, and why the passages of the core can be read in full only on this site."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "O Manifiesto é obra de Damián Acuña. Quem o publica e cuida dele é a **Software Humano**, a agência que cria produtos digitais sob esta doutrina e aceita ser avaliada por ela. Cada site tem sua função: este explica, fundamenta e governa; à Software Humano cabe apresentar sua proposta e seus produtos, em seu próprio site. Por isso, aqui não há oferta comercial, e os trechos do núcleo só podem ser lidos na íntegra neste site."
       - kind: editor
   - id: procedencia
     title:
@@ -128,9 +146,11 @@ sections:
         state: borrador
         text: De dónde viene cada texto
       en:
-        state: pendiente
+        state: borrador
+        text: Where each text comes from
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: De onde vem cada texto
     blocks:
       - kind: entrada
         entrada:
@@ -144,18 +164,28 @@ sections:
 
                 Todo el contenido vive en archivos versionados: cada cambio queda registrado con quién lo aprobó y qué idiomas afecta.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                The site distinguishes and labels each kind of content. The **canonical text** is shown exactly as it appears in the manifesto. The **explanations**, **examples** and **tests** are written for the site from an identified passage, which can always be opened. The **translations** keep the reference to the Spanish original, which is the one that holds authority. The **technical status** of the SpecKit adaptation is shown as verified data, with its version and its date.
+
+                All content lives in versioned files: every change is recorded along with who approved it and which languages it affects.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                O site distingue e rotula cada tipo de conteúdo. O **texto canônico** é mostrado tal como está no manifesto. As **explicações**, os **exemplos** e os **testes** são redigidos para o site a partir de um trecho identificado, que sempre pode ser aberto. As **traduções** mantêm a referência ao original em espanhol, que é o que tem autoridade. O **status técnico** da adaptação ao SpecKit é mostrado como um dado verificado, com sua versão e sua data.
+
+                Todo o conteúdo vive em arquivos versionados: cada mudança fica registrada com quem a aprovou e que idiomas ela afeta.
   - id: independencia
     title:
       es:
         state: borrador
         text: Una iniciativa independiente
       en:
-        state: pendiente
+        state: borrador
+        text: An independent initiative
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma iniciativa independente
     blocks:
       - kind: entrada
         entrada:
@@ -166,18 +196,22 @@ sections:
               state: borrador
               text: Software Humano no tiene afiliación con las empresas, herramientas ni autores que lo influyeron. La adaptación a SpecKit es una implementación de referencia independiente, sin respaldo de GitHub.
             en:
-              state: pendiente
+              state: borrador
+              text: Software Humano has no affiliation with the companies, tools or authors that influenced it. The SpecKit adaptation is an independent reference implementation, not endorsed by GitHub.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: A Software Humano não tem afiliação com as empresas, ferramentas nem autores que a influenciaram. A adaptação ao SpecKit é uma implementação de referência independente, sem endosso do GitHub.
   - id: licencias
     title:
       es:
         state: borrador
         text: Licencias
       en:
-        state: pendiente
+        state: borrador
+        text: Licences
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Licenças
     blocks:
       - kind: entrada
         entrada:
@@ -195,6 +229,22 @@ sections:
                 | Método para SpecKit (preset y herramientas), cuando se publique | [MIT](https://opensource.org/license/mit) | Lo mismo |
                 | Los nombres «Software Humano» y «Manifiesto», y el logotipo | Reservados | No forman parte de esas licencias. Una adaptación no debe presentarse como oficial, certificada ni respaldada por Software Humano |
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                | Material | Licence | What you can do |
+                |---|---|---|
+                | Text of the core of the manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, translate, adapt and share it, including for commercial purposes, crediting Damián Acuña as the author, linking to the licence and indicating whether you made changes |
+                | Editorial content of the site: explanations, examples and page texts | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | The same, with the same attribution |
+                | Site code | [MIT](https://opensource.org/license/mit) | Use, modify and distribute it, keeping the copyright notice and the licence |
+                | Method for SpecKit (preset and tools), once published | [MIT](https://opensource.org/license/mit) | The same |
+                | The names “Software Humano” and “Manifiesto”, and the logo | Reserved | They are not part of those licences. An adaptation must not present itself as official, certified or endorsed by Software Humano |
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                | Material | Licença | O que você pode fazer |
+                |---|---|---|
+                | Texto do núcleo do manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copiá-lo, traduzi-lo, adaptá-lo e compartilhá-lo, inclusive para fins comerciais, citando Damián Acuña como autor, com link para a licença e indicando se você fez alterações |
+                | Conteúdo editorial do site: explicações, exemplos e textos de página | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | O mesmo, com a mesma atribuição |
+                | Código do site | [MIT](https://opensource.org/license/mit) | Usá-lo, modificá-lo e distribuí-lo mantendo o aviso de copyright e a licença |
+                | Método para SpecKit (preset e ferramentas), quando for publicado | [MIT](https://opensource.org/license/mit) | O mesmo |
+                | Os nomes “Software Humano” e “Manifiesto”, e o logotipo | Reservados | Não fazem parte dessas licenças. Uma adaptação não deve se apresentar como oficial, certificada nem endossada pela Software Humano |

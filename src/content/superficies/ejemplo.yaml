@@ -6,17 +6,17 @@ title:
     text: "Ejemplo aplicado"
   en:
     state: borrador
-    text: "Applied example"
+    text: Worked example
   pt-BR:
     state: borrador
-    text: "Exemplo aplicado"
+    text: Exemplo aplicado
 description:
   es:
     state: borrador
     text: "El método completo en un caso: un tutor de cálculo para una persona que todavía no entiende."
   en:
     state: borrador
-    text: "The whole method in one case: a calculus tutor for someone who does not understand yet."
+    text: "The whole method in one case: a calculus tutor for someone who does not yet understand."
   pt-BR:
     state: borrador
     text: "O método completo em um caso: um tutor de cálculo para uma pessoa que ainda não entende."
@@ -29,9 +29,11 @@ sections:
         state: borrador
         text: Un ejemplo aplicado
       en:
-        state: pendiente
+        state: borrador
+        text: A worked example
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Um exemplo aplicado
     depth: []
     blocks:
       - kind: entrada
@@ -44,9 +46,11 @@ sections:
               state: borrador
               text: "Un tutor de cálculo recorre todo el método: de un pedido de función a la circunstancia real, del diagnóstico al rediseño, y de lo que debe ser determinista a lo que puede asistir la IA."
             en:
-              state: pendiente
+              state: borrador
+              text: "A calculus tutor goes through the whole method: from a feature request to the real circumstance, from diagnosis to redesign, and from what must be deterministic to what AI can assist with."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Um tutor de cálculo percorre todo o método: do pedido de função à circunstância real, do diagnóstico ao redesenho, e do que deve ser determinista ao que pode ser assistido pela IA."
       - kind: canon
         desde: ejemplo-aplicado-02
         hasta: ejemplo-aplicado-23

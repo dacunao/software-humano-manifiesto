@@ -17,9 +17,11 @@ entries:
         state: borrador
         text: "La lentitud cambia la conducta: provoca clics repetidos, dudas y abandono. Perder un avance obliga a reconstruir el contexto y destruye la confianza muy rápido."
       en:
-        state: pendiente
+        state: borrador
+        text: "Slowness changes behaviour: it produces repeated clicks, hesitation and abandonment. Losing progress forces people to rebuild context and destroys trust very quickly."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "A lentidão muda o comportamento: provoca cliques repetidos, dúvidas e abandono. Perder um avanço obriga a reconstruir o contexto e destrói a confiança muito rapidamente."
   significado:
     id: p09-significado
     type: explanation
@@ -29,9 +31,11 @@ entries:
         state: borrador
         text: Latencia, disponibilidad y preservación del trabajo son propiedades de la experiencia. Quien usa el producto no distingue entre infraestructura e interfaz cuando algo tarda o se pierde.
       en:
-        state: pendiente
+        state: borrador
+        text: Latency, availability and preservation of work are properties of the experience. Whoever uses the product does not distinguish between infrastructure and interface when something is slow or gets lost.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Latência, disponibilidade e preservação do trabalho são propriedades da experiência. Quem usa o produto não distingue infraestrutura de interface quando algo demora ou se perde.
   consecuencia:
     id: p09-consecuencia
     type: explanation
@@ -41,9 +45,11 @@ entries:
         state: borrador
         text: Las interacciones críticas tienen presupuestos de respuesta explícitos. Si una operación puede demorarse se muestra progreso honesto, y el trabajo se guarda con una frecuencia proporcional al costo de perderlo.
       en:
-        state: pendiente
+        state: borrador
+        text: Critical interactions have explicit response budgets. If an operation may take time, honest progress is shown, and work is saved at a frequency proportionate to the cost of losing it.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: As interações críticas têm orçamentos de resposta explícitos. Se uma operação pode demorar, mostra-se progresso honesto, e o trabalho é salvo com uma frequência proporcional ao custo de perdê-lo.
   ejemplo:
     id: p09-ejemplo
     type: example
@@ -53,9 +59,11 @@ entries:
         state: borrador
         text: El contenido de este sitio llega como texto antes de que se ejecute cualquier script; si un script falla, la lectura sigue.
       en:
-        state: pendiente
+        state: borrador
+        text: The content of this site arrives as text before any script runs; if a script fails, reading carries on.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O conteúdo deste site chega como texto antes que qualquer script seja executado; se um script falhar, a leitura continua.
   contraejemplo:
     id: p09-contraejemplo
     type: counterexample
@@ -65,9 +73,11 @@ entries:
         state: borrador
         text: Bloquear la lectura hasta que termine una animación o se descarguen tipografías y recursos pesados.
       en:
-        state: pendiente
+        state: borrador
+        text: Blocking reading until an animation finishes or until fonts and heavy resources have downloaded.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Bloquear a leitura até que termine uma animação ou até que sejam baixados fontes e recursos pesados.
   prueba:
     id: p09-prueba
     type: decision-test
@@ -77,6 +87,8 @@ entries:
         state: borrador
         text: Estas preguntas tratan el tiempo y la continuidad como parte de lo que se entrega.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions treat time and continuity as part of what is delivered.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas tratam o tempo e a continuidade como parte do que é entregue.

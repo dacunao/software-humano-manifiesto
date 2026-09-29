@@ -47,12 +47,16 @@ describe('índice de búsqueda · listas con identificadores', () => {
 describe('índice de búsqueda · solo el idioma vigente (RQ-16 enmendado, PRD §19.4)', () => {
   test('el índice en inglés no guarda textos que solo existen en español', () => {
     const canon = leerCanon();
-    const en = construirIndice(contenido, canon, 'en');
-    // Una explicación editorial todavía sin traducir no aparece en el índice inglés.
-    const pendiente = contenido.superficies.flatMap((s) => s.sections.flatMap((sec) => sec.blocks))
-      .find((b) => b.kind === 'entrada' && b.entrada.text.es?.text && !b.entrada.text.en?.text);
+    // Una explicación editorial sin traducir no aparece en el índice inglés. Como ya no queda
+    // ninguna pendiente, el caso se construye sobre una copia del contenido.
+    const copia = structuredClone(contenido);
+    const pendiente = copia.superficies.flatMap((s) => s.sections.flatMap((sec) => sec.blocks))
+      .find((b) => b.kind === 'entrada' && b.entrada.text.es?.text && b.entrada.text.en?.text);
     expect(pendiente).toBeDefined();
-    if (pendiente?.kind === 'entrada') expect(en.some((e) => e.t.includes(pendiente.entrada.text.es!.text!.slice(0, 40)))).toBe(false);
+    if (pendiente?.kind !== 'entrada') return;
+    pendiente.entrada.text.en = { state: 'pendiente' };
+    const en = construirIndice(copia, canon, 'en');
+    expect(en.some((e) => e.t.includes(pendiente.entrada.text.es!.text!.slice(0, 40)))).toBe(false);
     // Ningún título de sección en español en el índice inglés.
     expect(en.some((e) => e.s === 'Cómo cambia el manifiesto')).toBe(false);
   });

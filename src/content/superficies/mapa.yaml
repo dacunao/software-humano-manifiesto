@@ -6,20 +6,20 @@ title:
     text: "Mapa del manifiesto"
   en:
     state: borrador
-    text: "Manifesto map"
+    text: Manifesto map
   pt-BR:
     state: borrador
-    text: "Mapa do manifesto"
+    text: Mapa do manifesto
 description:
   es:
     state: borrador
     text: "La portada del núcleo, sus identificadores y el recorrido completo por sus nueve divisiones."
   en:
     state: borrador
-    text: "The title page of the core, its identifiers and the full path through its nine divisions."
+    text: The title page of the core, its identifiers and the full path through its nine divisions.
   pt-BR:
     state: borrador
-    text: "A capa do núcleo, seus identificadores e o percurso completo pelas nove divisões."
+    text: A capa do núcleo, seus identificadores e o percurso completo pelas nove divisões.
 fr:
   - FR-003
 sections:
@@ -30,10 +30,10 @@ sections:
         text: "El núcleo"
       en:
         state: borrador
-        text: "The core"
+        text: The core
       pt-BR:
         state: borrador
-        text: "O núcleo"
+        text: O núcleo
     depth: []
     blocks:
       - kind: entrada
@@ -45,9 +45,11 @@ sections:
               state: borrador
               text: "Este es el mapa del núcleo del manifiesto. El núcleo se lee en nueve divisiones, en su orden: cada una reúne secciones completas del documento original, sin partirlas ni repetirlas. Con «Siguiente» se recorre entero, y desde el pie de cada página se puede descargar completo."
             en:
-              state: pendiente
+              state: borrador
+              text: "This is the map of the core of the manifesto. The core is read in nine divisions, in their order: each one brings together complete sections of the original document, without splitting or repeating them. With “Next” you can go through all of it, and from the footer of every page you can download it in full."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Este é o mapa do núcleo do manifesto. O núcleo é lido em nove divisões, em sua ordem: cada uma reúne seções completas do documento original, sem dividi-las nem repeti-las. Com “Próximo”, ele é percorrido por inteiro, e no rodapé de cada página é possível baixá-lo completo."
       - kind: canon
         desde: portada-01
         hasta: portada-06
@@ -58,10 +60,10 @@ sections:
         text: "Índice de identificadores"
       en:
         state: borrador
-        text: "Index of identifiers"
+        text: Index of identifiers
       pt-BR:
         state: borrador
-        text: "Índice de identificadores"
+        text: Índice de identificadores
     depth: []
     blocks:
       - kind: entrada
@@ -74,9 +76,11 @@ sections:
               state: borrador
               text: "Cada obligación del núcleo tiene un identificador estable, como `P03`, `CR05` o `STOP02`, que permite citarla sin ambigüedad. La tabla muestra sus familias; en el sitio, cada identificador lleva a la división donde se lee su pasaje."
             en:
-              state: pendiente
+              state: borrador
+              text: Every obligation of the core has a stable identifier, such as `P03`, `CR05` or `STOP02`, that lets you cite it without ambiguity. The table shows their families; on the site, each identifier leads to the division where its passage can be read.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: Cada obrigação do núcleo tem um identificador estável, como `P03`, `CR05` ou `STOP02`, que permite citá-la sem ambiguidade. A tabela mostra suas famílias; no site, cada identificador leva à divisão onde seu trecho é lido.
       - kind: canon
         desde: indice-operativo-para-agentes-02
         hasta: indice-operativo-para-agentes-04

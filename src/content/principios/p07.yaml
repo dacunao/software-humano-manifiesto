@@ -23,9 +23,11 @@ entries:
         state: borrador
         text: La incertidumbre frena la acción. Con IA, además, una respuesta fluida puede ocultar sus límites y hacer difícil distinguir un hecho de una inferencia.
       en:
-        state: pendiente
+        state: borrador
+        text: Uncertainty holds action back. With AI, moreover, a fluent response can conceal its limits and make it hard to tell a fact from an inference.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: A incerteza freia a ação. Com IA, além disso, uma resposta fluente pode ocultar seus limites e dificultar distinguir um fato de uma inferência.
   significado:
     id: p07-significado
     type: explanation
@@ -35,9 +37,11 @@ entries:
         state: borrador
         text: "La confianza no se promete: surge de una conducta predecible. El producto muestra su estado, anticipa consecuencias, confirma resultados y ofrece una forma de recuperarse."
       en:
-        state: pendiente
+        state: borrador
+        text: "Trust is not promised: it arises from predictable behaviour. The product shows its state, anticipates consequences, confirms results and offers a way to recover."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "A confiança não se promete: surge de um comportamento previsível. O produto mostra seu estado, antecipa consequências, confirma resultados e oferece uma forma de se recuperar."
   consecuencia:
     id: p07-consecuencia
     type: explanation
@@ -47,9 +51,11 @@ entries:
         state: borrador
         text: Se distinguen con claridad recomendaciones, decisiones automáticas y resultados confirmados. Antes de una acción irreversible la persona sabe qué va a cambiar y, cuando es razonable, puede deshacer o volver a un estado seguro.
       en:
-        state: pendiente
+        state: borrador
+        text: Recommendations, automatic decisions and confirmed results are clearly distinguished. Before an irreversible action, the person knows what will change and, where reasonable, can undo it or return to a safe state.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Recomendações, decisões automáticas e resultados confirmados são diferenciados com clareza. Antes de uma ação irreversível, a pessoa sabe o que vai mudar e, quando é razoável, pode desfazer ou voltar a um estado seguro.
   ejemplo:
     id: p07-ejemplo
     type: example
@@ -59,9 +65,11 @@ entries:
         state: borrador
         text: Este sitio rotula cada bloque según lo que es —texto canónico, explicación, ejemplo o estado técnico— para que quien lee sepa qué está citando.
       en:
-        state: pendiente
+        state: borrador
+        text: This site labels each block according to what it is—canonical text, explanation, example or technical status—so that whoever is reading knows what they are citing.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Este site rotula cada bloco de acordo com o que ele é — texto canônico, explicação, exemplo ou status técnico — para que quem lê saiba o que está citando.
   contraejemplo:
     id: p07-contraejemplo
     type: counterexample
@@ -71,9 +79,11 @@ entries:
         state: borrador
         text: Presentar una adaptación independiente como oficial, publicada o respaldada por una empresa que no la respalda.
       en:
-        state: pendiente
+        state: borrador
+        text: Presenting an independent adaptation as official, published or endorsed by a company that does not endorse it.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Apresentar uma adaptação independente como oficial, publicada ou endossada por uma empresa que não a endossa.
   prueba:
     id: p07-prueba
     type: decision-test
@@ -83,6 +93,8 @@ entries:
         state: borrador
         text: Estas preguntas comprueban si la confianza descansa en evidencia o en el tono.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions check whether trust rests on evidence or on tone.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas verificam se a confiança se apoia em evidência ou no tom.

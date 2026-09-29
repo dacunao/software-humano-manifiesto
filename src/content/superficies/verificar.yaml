@@ -6,20 +6,20 @@ title:
     text: "Verificar"
   en:
     state: borrador
-    text: "Verify"
+    text: Verify
   pt-BR:
     state: borrador
-    text: "Verificar"
+    text: Verificar
 description:
   es:
     state: borrador
     text: "Doce dimensiones para aceptar una solución, un puntaje de decisión y las señales de que el producto se aleja del manifiesto."
   en:
     state: borrador
-    text: "Twelve dimensions for accepting a solution, a decision scorecard and the signs that a product is drifting from the manifesto."
+    text: Twelve dimensions for accepting a solution, a decision scorecard and the signs that the product is drifting away from the manifesto.
   pt-BR:
     state: borrador
-    text: "Doze dimensões para aceitar uma solução, um placar de decisão e os sinais de que o produto se afasta do manifesto."
+    text: Doze dimensões para aceitar uma solução, uma pontuação de decisão e os sinais de que o produto se afasta do manifesto.
 fr:
   - FR-022
 sections:
@@ -29,9 +29,11 @@ sections:
         state: borrador
         text: Doce dimensiones para aceptar una solución
       en:
-        state: pendiente
+        state: borrador
+        text: Twelve dimensions for accepting a solution
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Doze dimensões para aceitar uma solução
     depth: []
     blocks:
       - kind: entrada
@@ -44,9 +46,11 @@ sections:
               state: borrador
               text: "Aceptar exige evidencia. Que una pantalla se vea limpia o que el código compile no demuestra que el producto cumpla su propósito: la cobertura, el progreso, la comprensión, la carga, la confianza, el control y los estados también se verifican."
             en:
-              state: pendiente
+              state: borrador
+              text: "Acceptance requires evidence. A screen that looks clean, or code that compiles, does not demonstrate that the product fulfils its purpose: coverage, progress, understanding, burden, trust, control and states are verified too."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Aceitar exige evidência. Uma tela parecer limpa ou o código compilar não demonstra que o produto cumpre seu propósito: a cobertura, o progresso, a compreensão, a carga, a confiança, o controle e os estados também são verificados."
       - kind: canon
         desde: verificacion-03
         hasta: verificacion-04
@@ -56,9 +60,11 @@ sections:
         state: borrador
         text: Un puntaje para orientar la conversación
       en:
-        state: pendiente
+        state: borrador
+        text: A score to guide the conversation
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma pontuação para orientar a conversa
     depth: []
     blocks:
       - kind: entrada
@@ -71,9 +77,11 @@ sections:
               state: borrador
               text: "Once criterios se puntúan de 0 a 2. El puntaje no reemplaza el juicio: ordena la conversación y marca lo que no puede quedar en cero."
             en:
-              state: pendiente
+              state: borrador
+              text: "Eleven criteria are scored from 0 to 2. The score does not replace judgement: it gives the conversation an order and flags what cannot be left at zero."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o julgamento: organiza a conversa e marca o que não pode ficar em zero."
       - kind: canon
         desde: verificacion-06
         hasta: verificacion-08
@@ -83,9 +91,11 @@ sections:
         state: borrador
         text: Preguntas para una revisión de producto
       en:
-        state: pendiente
+        state: borrador
+        text: Questions for a product review
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Perguntas para uma revisão de produto
     depth: []
     blocks:
       - kind: entrada
@@ -98,9 +108,11 @@ sections:
               state: borrador
               text: "Once preguntas para revisar una decisión de producto, incluida la más difícil: qué haría rechazar una implementación aunque funcione técnicamente."
             en:
-              state: pendiente
+              state: borrador
+              text: "Eleven questions for reviewing a product decision, including the hardest one: what would make you reject an implementation even though it technically works."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Onze perguntas para revisar uma decisão de produto, inclusive a mais difícil: o que faria rejeitar uma implementação ainda que ela funcione tecnicamente."
       - kind: canon
         nodos:
           - verificacion-10
@@ -110,9 +122,11 @@ sections:
         state: borrador
         text: Señales de que el producto se aleja
       en:
-        state: pendiente
+        state: borrador
+        text: Signs that the product is drifting away
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Sinais de que o produto se afasta
     depth: []
     blocks:
       - kind: entrada
@@ -125,9 +139,11 @@ sections:
               state: borrador
               text: "Catorce antipatrones, cada uno con la forma en que aparece y su respuesta, y una advertencia: la simplicidad también puede ser una excusa para ocultar lo necesario."
             en:
-              state: pendiente
+              state: borrador
+              text: "Fourteen anti-patterns, each with how it shows up and its response, and a warning: simplicity can also be an excuse for hiding what is necessary."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Catorze antipadrões, cada um com a forma como aparece e sua resposta, e uma advertência: a simplicidade também pode ser uma desculpa para ocultar o necessário."
       - kind: canon
         desde: antipatrones-03
         hasta: antipatrones-06

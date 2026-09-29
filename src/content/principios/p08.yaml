@@ -19,9 +19,11 @@ entries:
         state: borrador
         text: "Nadie separa la interfaz, la ingeniería y el contenido: se experimenta un producto completo. Una inconsistencia pequeña se tolera; cien convierten el uso en fricción constante."
       en:
-        state: pendiente
+        state: borrador
+        text: "Nobody separates interface, engineering and content: people experience a complete product. One small inconsistency is tolerated; a hundred turn use into constant friction."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Ninguém separa a interface, a engenharia e o conteúdo: o que se experimenta é um produto completo. Uma inconsistência pequena é tolerada; cem transformam o uso em atrito constante."
   significado:
     id: p08-significado
     type: explanation
@@ -31,9 +33,11 @@ entries:
         state: borrador
         text: Tipografía, textos, foco, estados vacíos, errores y transiciones forman una sola experiencia. Ningún detalle compensa por sí solo una mala solución, pero su acumulación refuerza o erosiona la confianza.
       en:
-        state: pendiente
+        state: borrador
+        text: Typography, wording, focus, empty states, errors and transitions form a single experience. No detail compensates on its own for a poor solution, but their accumulation reinforces or erodes trust.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Tipografia, textos, foco, estados vazios, erros e transições formam uma única experiência. Nenhum detalhe compensa sozinho uma solução ruim, mas o acúmulo deles reforça ou corrói a confiança.
   consecuencia:
     id: p08-consecuencia
     type: explanation
@@ -43,9 +47,11 @@ entries:
         state: borrador
         text: "Se diseñan y se verifican también los estados menos frecuentes: vacío, carga, error, éxito y recuperación. Lenguaje, jerarquía y comportamiento se mantienen en todo el recorrido, y se revisa con contenido real antes de aprobar."
       en:
-        state: pendiente
+        state: borrador
+        text: "The less frequent states are designed and verified too: empty, loading, error, success and recovery. Language, hierarchy and behaviour stay consistent throughout the journey, and the product is reviewed with real content before it is approved."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Também são projetados e verificados os estados menos frequentes: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento se mantêm em todo o percurso, e revisa-se com conteúdo real antes de aprovar."
   ejemplo:
     id: p08-ejemplo
     type: example
@@ -55,9 +61,11 @@ entries:
         state: borrador
         text: Un enlace compartido abre exactamente la sección citada y en el idioma elegido. Nadie lo nota cuando funciona; todos lo notan cuando falla.
       en:
-        state: pendiente
+        state: borrador
+        text: A shared link opens exactly the section cited, in the chosen language. Nobody notices when it works; everyone notices when it fails.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Um link compartilhado abre exatamente a seção citada e no idioma escolhido. Ninguém percebe quando funciona; todos percebem quando falha.
   contraejemplo:
     id: p08-contraejemplo
     type: counterexample
@@ -67,9 +75,11 @@ entries:
         state: borrador
         text: Tratar los errores, la carga, las pantallas pequeñas o el teclado como terminaciones que se resuelven después.
       en:
-        state: pendiente
+        state: borrador
+        text: Treating errors, loading, small screens or the keyboard as finishing touches to be sorted out later.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Tratar os erros, o carregamento, as telas pequenas ou o teclado como acabamentos que se resolvem depois.
   prueba:
     id: p08-prueba
     type: decision-test
@@ -79,6 +89,8 @@ entries:
         state: borrador
         text: Estas preguntas buscan los detalles que contradicen la lógica del resto.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions look for the details that contradict the logic of the rest.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas buscam os detalhes que contradizem a lógica do restante.

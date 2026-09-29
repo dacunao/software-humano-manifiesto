@@ -20,9 +20,11 @@ entries:
         state: borrador
         text: Cada convención propia que hay que memorizar consume la capacidad que la persona necesitaba para su problema real. En productos de uso infrecuente, o con contenido difícil, esa carga es especialmente dañina.
       en:
-        state: pendiente
+        state: borrador
+        text: Every custom convention that has to be memorised consumes the capacity the person needed for their real problem. In infrequently used products, or those with difficult content, that burden is especially damaging.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Cada convenção própria que é preciso memorizar consome a capacidade de que a pessoa precisava para seu problema real. Em produtos de uso pouco frequente, ou com conteúdo difícil, essa carga é especialmente danosa.
   significado:
     id: p05-significado
     type: explanation
@@ -32,9 +34,11 @@ entries:
         state: borrador
         text: La interfaz se apoya en expectativas conocidas, jerarquía comprensible y respuesta inmediata. Quien llega viene a hacer su trabajo, no a aprender el del equipo.
       en:
-        state: pendiente
+        state: borrador
+        text: The interface builds on familiar expectations, an understandable hierarchy and immediate feedback. People come to do their work, not to learn the team's.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: A interface se apoia em expectativas conhecidas, hierarquia compreensível e resposta imediata. Quem chega veio fazer seu trabalho, não aprender o do time.
   consecuencia:
     id: p05-consecuencia
     type: explanation
@@ -44,9 +48,11 @@ entries:
         state: borrador
         text: Se prefieren patrones conocidos cuando resuelven bien el problema. La acción principal, el estado actual y el siguiente paso posible tienen que ser evidentes sin un tutorial previo.
       en:
-        state: pendiente
+        state: borrador
+        text: Known patterns are preferred where they solve the problem well. The primary action, the current state and the next possible step must be evident without a prior tutorial.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Padrões conhecidos são preferidos quando resolvem bem o problema. A ação principal, o estado atual e o próximo passo possível têm de ser evidentes sem um tutorial prévio.
   ejemplo:
     id: p05-ejemplo
     type: example
@@ -56,9 +62,11 @@ entries:
         state: borrador
         text: Una navegación que nombra cada destino por lo que contiene («Manifiesto», «Principios», «Aplicación») permite elegir sin haber recorrido nada antes.
       en:
-        state: pendiente
+        state: borrador
+        text: Navigation that names each destination by what it contains (“Manifesto”, “Principles”, “Application”) lets people choose without having gone through anything first.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma navegação que nomeia cada destino pelo que ele contém (“Manifesto”, “Princípios”, “Aplicação”) permite escolher sem ter percorrido nada antes.
   contraejemplo:
     id: p05-contraejemplo
     type: counterexample
@@ -68,9 +76,11 @@ entries:
         state: borrador
         text: Obligar a descubrir cómo avanzar, o a interpretar gestos ocultos, antes de poder leer.
       en:
-        state: pendiente
+        state: borrador
+        text: Forcing people to work out how to move forward, or to interpret hidden gestures, before they can read.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Obrigar a descobrir como avançar, ou a interpretar gestos ocultos, antes de poder ler.
   prueba:
     id: p05-prueba
     type: decision-test
@@ -80,6 +90,8 @@ entries:
         state: borrador
         text: Estas preguntas detectan el aprendizaje que la interfaz agrega sin que el problema lo pida.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions detect the learning that the interface adds without the problem calling for it.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas detectam o aprendizado que a interface acrescenta sem que o problema o exija.

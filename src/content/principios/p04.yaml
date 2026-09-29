@@ -19,9 +19,11 @@ entries:
         state: borrador
         text: Un producto mínimo puede ser fácil el primer día y limitante el décimo. Uno que muestra toda su potencia desde el inicio puede resultar inabordable. Los dos extremos fallan, por razones opuestas.
       en:
-        state: pendiente
+        state: borrador
+        text: A minimal product can be easy on day one and limiting on day ten. One that displays all of its power from the outset can be unapproachable. Both extremes fail, for opposite reasons.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Um produto mínimo pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser inabordável. Os dois extremos falham, por razões opostas.
   significado:
     id: p04-significado
     type: explanation
@@ -31,9 +33,11 @@ entries:
         state: borrador
         text: "La simplicidad no reduce la capacidad: decide cuándo aparece. Lo visible se adapta al momento, a la experiencia y a la decisión actual, y la profundidad queda disponible sin imponerse."
       en:
-        state: pendiente
+        state: borrador
+        text: "Simplicity does not reduce capability: it decides when that capability appears. What is visible adapts to the moment, the level of experience and the decision at hand, and depth remains available without being imposed."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "A simplicidade não reduz a capacidade: decide quando ela aparece. O que está visível se adapta ao momento, à experiência e à decisão atual, e a profundidade fica disponível sem se impor."
   consecuencia:
     id: p04-consecuencia
     type: explanation
@@ -43,9 +47,11 @@ entries:
         state: borrador
         text: Primero se muestra la ruta principal; las opciones avanzadas aparecen cuando el contexto las vuelve relevantes. Los valores predeterminados se eligen con cuidado y pueden cambiarse cuando la decisión importa.
       en:
-        state: pendiente
+        state: borrador
+        text: The main route is shown first; advanced options appear when the context makes them relevant. Defaults are chosen with care and can be changed where the decision matters.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Primeiro se mostra o caminho principal; as opções avançadas aparecem quando o contexto as torna relevantes. Os valores padrão são escolhidos com cuidado e podem ser alterados quando a decisão importa.
   ejemplo:
     id: p04-ejemplo
     type: example
@@ -55,9 +61,11 @@ entries:
         state: borrador
         text: Cada principio de este sitio se entiende en su página sin abrir nada; quien quiere el texto completo, las reglas o las pruebas los encuentra a un paso, en el mismo lugar.
       en:
-        state: pendiente
+        state: borrador
+        text: Each principle on this site can be understood on its own page without opening anything; anyone who wants the full text, the rules or the tests finds them one step away, in the same place.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Cada princípio deste site é compreendido em sua página sem abrir nada; quem quer o texto completo, as regras ou os testes os encontra a um passo, no mesmo lugar.
   contraejemplo:
     id: p04-contraejemplo
     type: counterexample
@@ -67,9 +75,11 @@ entries:
         state: borrador
         text: Una portada mínima que oculta el contenido, o una página inicial que lo muestra todo a la vez.
       en:
-        state: pendiente
+        state: borrador
+        text: A minimal front page that hides the content, or a home page that shows everything at once.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma capa mínima que oculta o conteúdo, ou uma página inicial que mostra tudo de uma vez.
   prueba:
     id: p04-prueba
     type: decision-test
@@ -79,6 +89,8 @@ entries:
         state: borrador
         text: Estas preguntas distinguen la simplificación que quita ruido de la que quita capacidad.
       en:
-        state: pendiente
+        state: borrador
+        text: These questions distinguish simplification that removes noise from simplification that removes capability.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Estas perguntas distinguem a simplificação que tira ruído da que tira capacidade.

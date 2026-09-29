@@ -21,9 +21,11 @@ entries:
         state: borrador
         text: "Dos productos pueden entregar el mismo resultado y dejar a sus usuarios en estados muy distintos: uno con energía para seguir, otro con dudas, errores y ganas de abandonar. Ese desgaste rara vez aparece en una especificación técnica."
       en:
-        state: pendiente
+        state: borrador
+        text: "Two products can deliver the same result and leave their users in very different states: one with energy to carry on, the other with doubts, errors and the urge to give up. That wear rarely appears in a technical specification."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Dois produtos podem entregar o mesmo resultado e deixar seus usuários em estados muito diferentes: um com energia para continuar, outro com dúvidas, erros e vontade de desistir. Esse desgaste raramente aparece em uma especificação técnica."
   significado:
     id: p02-significado
     type: explanation
@@ -33,9 +35,11 @@ entries:
         state: borrador
         text: El resultado de un producto incluye cuánto esfuerzo, incertidumbre y atención exige obtenerlo. Si algo funciona pero desgasta, todavía no funciona bien.
       en:
-        state: pendiente
+        state: borrador
+        text: The result of a product includes how much effort, uncertainty and attention it demands in order to obtain it. If something works but wears you down, it does not yet work well.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O resultado de um produto inclui quanto esforço, incerteza e atenção ele exige para ser obtido. Se algo funciona mas desgasta, ainda não funciona bem.
   consecuencia:
     id: p02-consecuencia
     type: explanation
@@ -45,9 +49,11 @@ entries:
         state: borrador
         text: Esfuerzo, claridad y confianza entran en los criterios de aceptación, igual que la exactitud. Se prueba el recorrido completo, no cada pantalla por separado.
       en:
-        state: pendiente
+        state: borrador
+        text: Effort, clarity and trust are part of the acceptance criteria, just as accuracy is. The complete journey is tested, not each screen separately.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Esforço, clareza e confiança entram nos critérios de aceitação, assim como a exatidão. Testa-se o percurso completo, e não cada tela separadamente.
   ejemplo:
     id: p02-ejemplo
     type: example
@@ -57,9 +63,11 @@ entries:
         state: borrador
         text: Dos buscadores devuelven los mismos resultados. Uno muestra enseguida por qué coincide cada resultado; el otro obliga a abrirlos uno por uno para saberlo. Los dos son exactos; solo uno ahorra el trabajo de verificar.
       en:
-        state: pendiente
+        state: borrador
+        text: Two search engines return the same results. One immediately shows why each result matches; the other forces you to open them one by one to find out. Both are accurate; only one saves you the work of verifying.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Dois buscadores retornam os mesmos resultados. Um mostra imediatamente por que cada resultado corresponde à busca; o outro obriga a abri-los um por um para saber. Os dois são exatos; só um poupa o trabalho de verificar.
   contraejemplo:
     id: p02-contraejemplo
     type: counterexample
@@ -69,9 +77,11 @@ entries:
         state: borrador
         text: Dar por cumplido un requisito porque todo el texto está técnicamente disponible, aunque llegar a él exija luchar con la navegación, la tipografía o el movimiento.
       en:
-        state: pendiente
+        state: borrador
+        text: Considering a requirement met because all the text is technically available, even though reaching it means struggling with the navigation, the typography or the motion.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Dar um requisito por cumprido porque todo o texto está tecnicamente disponível, ainda que chegar até ele exija lutar com a navegação, a tipografia ou o movimento.
   prueba:
     id: p02-prueba
     type: decision-test
@@ -81,6 +91,8 @@ entries:
         state: borrador
         text: "Estas preguntas miden lo que una prueba técnica no ve: el costo de usar el producto."
       en:
-        state: pendiente
+        state: borrador
+        text: "These questions measure what a technical test does not see: the cost of using the product."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Estas perguntas medem o que um teste técnico não vê: o custo de usar o produto."

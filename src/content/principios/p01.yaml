@@ -20,9 +20,11 @@ entries:
         state: borrador
         text: Un equipo puede entregar muchas funcionalidades y resolver poco. Cuando el trabajo se organiza por features o por perfiles genéricos, nadie tiene que explicar qué cambia para la persona después de usar el producto.
       en:
-        state: pendiente
+        state: borrador
+        text: A team can deliver a great many features and resolve very little. When work is organised around features or generic profiles, nobody has to explain what changes for the person after using the product.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Um time pode entregar muitas funcionalidades e resolver pouco. Quando o trabalho se organiza por features ou por perfis genéricos, ninguém precisa explicar o que muda para a pessoa depois de usar o produto.
   significado:
     id: p01-significado
     type: explanation
@@ -32,9 +34,11 @@ entries:
         state: borrador
         text: "Una capacidad importa solo cuando produce un cambio reconocible para alguien: pasar de una situación actual a un resultado buscado. Antes de diseñar una respuesta se describe cuándo surge la necesidad, qué la motiva y qué resultado permitiría reconocer el avance."
       en:
-        state: pendiente
+        state: borrador
+        text: "A capability matters only when it produces a recognisable change for someone: moving from a current situation to a desired outcome. Before designing a response, we describe when the need arises, what motivates it and what outcome would make progress recognisable."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Uma capacidade só importa quando produz uma mudança reconhecível para alguém: passar de uma situação atual para um resultado buscado. Antes de projetar uma resposta, descreve-se quando surge a necessidade, o que a motiva e que resultado permitiria reconhecer o avanço."
   consecuencia:
     id: p01-consecuencia
     type: explanation
@@ -44,9 +48,11 @@ entries:
         state: borrador
         text: Cada decisión tiene que poder rastrearse hasta el fundamento de producto que la justifica. Un pedido de funcionalidad se reformula como circunstancia, motivación y resultado antes de discutir soluciones, y esa formulación admite más de una respuesta, incluida la de no construir.
       en:
-        state: pendiente
+        state: borrador
+        text: Every decision must be traceable back to the product foundation that justifies it. A feature request is reformulated as circumstance, motivation and outcome before solutions are discussed, and that formulation admits more than one response, including not building.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Cada decisão tem de poder ser rastreada até o fundamento de produto que a justifica. Um pedido de funcionalidade é reformulado como circunstância, motivação e resultado antes de se discutirem soluções, e essa formulação admite mais de uma resposta, inclusive a de não construir.
   ejemplo:
     id: p01-ejemplo
     type: example
@@ -56,9 +62,11 @@ entries:
         state: borrador
         text: "Un pedido llega como «agregar un botón de exportar». Reformulado, dice: cuando alguien tiene que presentar sus datos a otra persona, necesita llevarlos fuera de la herramienta sin rehacer el trabajo. Esa formulación admite un botón, un enlace para compartir o un informe automático, y permite elegir la respuesta que menos carga agrega."
       en:
-        state: pendiente
+        state: borrador
+        text: "A request arrives as “add an export button”. Reformulated, it reads: when someone has to present their data to another person, they need to take it out of the tool without redoing the work. That formulation admits a button, a sharing link or an automatic report, and makes it possible to choose the response that adds the least burden."
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: "Um pedido chega como “adicionar um botão de exportar”. Reformulado, ele diz: quando alguém tem de apresentar seus dados a outra pessoa, precisa levá-los para fora da ferramenta sem refazer o trabalho. Essa formulação admite um botão, um link para compartilhar ou um relatório automático, e permite escolher a resposta que acrescenta menos carga."
   contraejemplo:
     id: p01-contraejemplo
     type: counterexample
@@ -68,9 +76,11 @@ entries:
         state: borrador
         text: Describir un sitio como una colección de páginas o de efectos. La lista de lo que contiene no dice qué comprensión o capacidad obtiene quien lo recorre.
       en:
-        state: pendiente
+        state: borrador
+        text: Describing a site as a collection of pages or effects. The list of what it contains does not say what understanding or capability the person going through it gains.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Descrever um site como uma coleção de páginas ou de efeitos. A lista do que ele contém não diz que compreensão ou capacidade obtém quem o percorre.
   prueba:
     id: p01-prueba
     type: decision-test
@@ -80,6 +90,8 @@ entries:
         state: borrador
         text: Una decisión está lista cuando estas preguntas tienen respuesta con evidencia, no con intuición.
       en:
-        state: pendiente
+        state: borrador
+        text: A decision is ready when these questions are answered with evidence, not with intuition.
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma decisão está pronta quando estas perguntas são respondidas com evidência, não com intuição.

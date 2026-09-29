@@ -26,17 +26,21 @@ hero:
       state: borrador
       text: Antes, construir era caro. Eso obligaba a elegir.
     en:
-      state: pendiente
+      state: borrador
+      text: Building used to be expensive. That forced a choice.
     pt-BR:
-      state: pendiente
+      state: borrador
+      text: Antes, construir era caro. Isso obrigava a escolher.
   text:
     es:
       state: borrador
       text: Hoy agregar una opción más cuesta minutos, y la pregunta de si vale la pena es cada vez más fácil de saltar. El Manifiesto de Software Humano repone esa pregunta y le da un lugar en el proceso donde no se puede saltar.
     en:
-      state: pendiente
+      state: borrador
+      text: Today, adding one more option takes minutes, and the question of whether it is worth it gets easier and easier to skip. The Software Humano Manifesto puts that question back and gives it a place in the process where it cannot be skipped.
     pt-BR:
-      state: pendiente
+      state: borrador
+      text: Hoje, acrescentar mais uma opção custa minutos, e a pergunta sobre se vale a pena é cada vez mais fácil de pular. O Manifiesto de Software Humano recoloca essa pergunta e lhe dá um lugar no processo onde ela não pode ser pulada.
 fr:
   - FR-001
   - FR-002
@@ -47,17 +51,21 @@ sections:
         state: borrador
         text: Construir software es cada vez más fácil
       en:
-        state: pendiente
+        state: borrador
+        text: Building software keeps getting easier
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Construir software está cada vez mais fácil
     question:
       es:
         state: borrador
         text: Si construir dejó de ser el principal límite, ¿qué pasa a limitar la calidad?
       en:
-        state: pendiente
+        state: borrador
+        text: If building is no longer the main constraint, what constrains quality now?
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Se construir deixou de ser o principal limite, o que passa a limitar a qualidade?
     blocks:
       - kind: entrada
         entrada:
@@ -72,9 +80,17 @@ sections:
 
                 Esa velocidad es una oportunidad real. También mueve el límite: cuando construir deja de ser lo difícil, lo difícil pasa a ser decidir qué merece existir y cómo debe sentirse al usarlo.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                Artificial intelligence has reduced the cost of generating code, screens, text and automations. Small teams now build products that once required entire organisations, and a good decision can reach people in days.
+
+                That speed is a real opportunity. It also moves the limit: when building stops being the hard part, the hard part becomes deciding what deserves to exist and how it should feel to use.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                A inteligência artificial reduziu o custo de gerar código, telas, textos e automações. Times pequenos constroem hoje produtos que antes exigiam organizações inteiras, e uma boa decisão pode chegar às mãos das pessoas em dias.
+
+                Essa velocidade é uma oportunidade real. Ela também desloca o limite: quando construir deixa de ser o difícil, o difícil passa a ser decidir o que merece existir e como deve ser a sensação de usá-lo.
       - kind: canon
         nodos:
           - proposito-del-documento-03
@@ -86,9 +102,11 @@ sections:
         state: borrador
         text: Poder construir no significa deber construir
       en:
-        state: pendiente
+        state: borrador
+        text: Being able to build does not mean you should
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Poder construir não significa dever construir
     blocks:
       - kind: entrada
         entrada:
@@ -103,9 +121,17 @@ sections:
 
                 Cuando construir es barato, una idea débil se convierte rápido en una implementación extensa, y una ambigüedad de producto en un comportamiento que parece terminado. El código puede ser correcto y aun así dejar en manos de la persona la complejidad que el equipo no resolvió.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                Building software has become cheaper. The cost did not disappear: it passed to whoever uses it. It is paid in attention, in learning and in decisions nobody came to make.
+
+                When building is cheap, a weak idea quickly becomes an extensive implementation, and a product ambiguity becomes behaviour that looks done. The code can be correct and still leave the person with the complexity the team did not resolve.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                Construir software ficou mais barato. O custo não desapareceu: passou para quem o usa. Ele é pago em atenção, em aprendizado e em decisões que ninguém veio tomar.
+
+                Quando construir é barato, uma ideia fraca se transforma rapidamente em uma implementação extensa, e uma ambiguidade de produto, em um comportamento que parece concluído. O código pode estar correto e, ainda assim, deixar nas mãos da pessoa a complexidade que o time não resolveu.
       - kind: comparacion
         sistema:
           id: inicio-acto-2-sistema
@@ -116,9 +142,11 @@ sections:
               state: borrador
               text: "**Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo."
             en:
-              state: pendiente
+              state: borrador
+              text: "**System-centred response.** When a form is submitted with a missing field, the page reloads, wipes what was typed and shows “Validation error” at the top. The system did its job: it rejected incomplete data. The person using it has to guess what was missing and type everything again."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Resposta centrada no sistema.** Ao enviar um formulário com um dado faltando, a página recarrega, apaga o que foi digitado e mostra no topo “Erro de validação”. O sistema cumpriu sua função: rejeitou um dado incompleto. Quem o usa tem de adivinhar o que faltou e digitar tudo de novo."
         persona:
           id: inicio-acto-2-persona
           type: example
@@ -128,9 +156,11 @@ sections:
               state: borrador
               text: "**Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa."
             en:
-              state: pendiente
+              state: borrador
+              text: "**Person-centred response.** The form keeps what was typed, points out next to the field what is missing and explains what is expected. The validation rule is the same; what changes is how much work falls on the person using it."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Resposta centrada na pessoa.** O formulário conserva o que foi digitado, indica ao lado do campo o que falta e explica o que se espera. A regra de validação é a mesma; o que muda é quanto trabalho recai sobre quem o usa."
       - kind: canon
         nodos:
           - doctrina-para-desarrollo-con-ia-04
@@ -142,9 +172,11 @@ sections:
         state: borrador
         text: El progreso humano es el producto
       en:
-        state: pendiente
+        state: borrador
+        text: Human progress is the product
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: O progresso humano é o produto
     blocks:
       - kind: entrada
         entrada:
@@ -159,9 +191,17 @@ sections:
 
                 Un sistema que entrega el resultado correcto, pero obliga a interpretar la interfaz, recordar convenciones o temer equivocarse, todavía no resolvió el problema. Solo lo trasladó.
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                The thesis fits into a single idea: the product is not the software, but the progress a person achieves with it. That is why experience is not a finish added at the end; it is part of the function.
+
+                A system that delivers the correct result but forces people to interpret the interface, remember conventions or fear making a mistake has not yet solved the problem. It has only moved it.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                A tese cabe em uma ideia: o produto não é o software, e sim o progresso que uma pessoa alcança com ele. Por isso, a experiência não é um acabamento acrescentado no final; ela faz parte da função.
+
+                Um sistema que entrega o resultado correto, mas obriga a interpretar a interface, lembrar convenções ou temer errar, ainda não resolveu o problema. Apenas o transferiu.
       - kind: canon
         nodos:
           - texto-canonico-03
@@ -174,9 +214,11 @@ sections:
         state: borrador
         text: Diez principios para decidir
       en:
-        state: pendiente
+        state: borrador
+        text: Ten principles for deciding
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Dez princípios para decidir
     blocks:
       - kind: entrada
         entrada:
@@ -188,9 +230,11 @@ sections:
               state: borrador
               text: Los principios no son aspiraciones. Cada uno tiene que poder cambiar una decisión, detener una implementación o exigir más evidencia; si una frase no tiene consecuencias prácticas, no cumple una función. Cada principio tiene su propia página, con su tensión, su significado, un ejemplo, un contraejemplo y las preguntas para usarlo en una revisión real.
             en:
-              state: pendiente
+              state: borrador
+              text: The principles are not aspirations. Each one must be able to change a decision, stop an implementation or require more evidence; if a sentence has no practical consequences, it serves no function. Each principle has its own page, with its tension, its meaning, an example, a counterexample and the questions for using it in a real review.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: Os princípios não são aspirações. Cada um tem de ser capaz de mudar uma decisão, parar uma implementação ou exigir mais evidência; se uma frase não tem consequências práticas, não cumpre função alguma. Cada princípio tem sua própria página, com sua tensão, seu significado, um exemplo, um contraexemplo e as perguntas para usá-lo em uma revisão real.
       - kind: principios
     depth: []
   - id: acto-5
@@ -199,9 +243,11 @@ sections:
         state: borrador
         text: Del principio a la decisión
       en:
-        state: pendiente
+        state: borrador
+        text: From principle to decision
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Do princípio à decisão
     blocks:
       - kind: entrada
         entrada:
@@ -213,9 +259,11 @@ sections:
               state: borrador
               text: Un principio sirve cuando cambia lo que se hace. Hay tres formas en que puede actuar sobre una decisión concreta.
             en:
-              state: pendiente
+              state: borrador
+              text: A principle is useful when it changes what gets done. There are three ways it can act on a concrete decision.
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: Um princípio serve quando muda o que se faz. Há três formas de ele atuar sobre uma decisão concreta.
       - kind: entrada
         entrada:
           id: inicio-acto-5-cambia
@@ -226,9 +274,11 @@ sections:
               state: borrador
               text: "**Cambia una decisión.** Una pantalla de inicio presenta cinco acciones con el mismo peso. Con `P06` en la mesa, la pregunta es qué necesita la persona en ese momento: queda una acción principal y el resto aparece donde el contexto lo vuelve relevante."
             en:
-              state: pendiente
+              state: borrador
+              text: "**It changes a decision.** A home screen presents five actions with equal weight. With `P06` on the table, the question is what the person needs at that moment: one primary action remains, and the rest appear where the context makes them relevant."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Muda uma decisão.** Uma tela inicial apresenta cinco ações com o mesmo peso. Com `P06` na mesa, a pergunta é do que a pessoa precisa naquele momento: fica uma ação principal, e o resto aparece onde o contexto o torna relevante."
       - kind: entrada
         entrada:
           id: inicio-acto-5-evidencia
@@ -239,9 +289,11 @@ sections:
               state: borrador
               text: "**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito."
             en:
-              state: pendiente
+              state: borrador
+              text: "**It requires evidence.** A story says “As a student I want to receive hints so that I can solve derivatives”. With `P01`, the question is when the blockage arises and how progress would be recognised. Until an observation backs it up, the story is a hypothesis to be tested, not a requirement."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Exige evidência.** Uma história diz “como estudante, quero receber dicas para resolver derivadas”. Com `P01`, a pergunta é quando surge o bloqueio e como o avanço seria reconhecido. Enquanto não houver uma observação que a sustente, a história é uma hipótese a ser comprovada, não um requisito."
       - kind: entrada
         entrada:
           id: inicio-acto-5-detiene
@@ -252,9 +304,11 @@ sections:
               state: borrador
               text: "**Detiene una implementación.** Un asistente reescribe textos y los publica sin vista previa. Con `P10`, la implementación se detiene hasta que la persona pueda revisar, aceptar o rechazar el cambio antes de que se publique."
             en:
-              state: pendiente
+              state: borrador
+              text: "**It stops an implementation.** An assistant rewrites texts and publishes them without a preview. With `P10`, the implementation stops until the person can review, accept or reject the change before it is published."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Interrompe uma implementação.** Um assistente reescreve textos e os publica sem visualização prévia. Com `P10`, a implementação é interrompida até que a pessoa possa revisar, aceitar ou rejeitar a mudança antes que ela seja publicada."
       - kind: comparacion
         sistema:
           id: inicio-acto-5-sin-principio
@@ -265,9 +319,11 @@ sections:
               state: borrador
               text: "**Sin el principio.** Un agente de código termina una tarea y responde «listo». Para saber qué cambió, hay que revisar todo y confiar en su tono."
             en:
-              state: pendiente
+              state: borrador
+              text: "**Without the principle.** A coding agent finishes a task and replies “done”. To find out what changed, you have to review everything and trust its tone."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Sem o princípio.** Um agente de código termina uma tarefa e responde “pronto”. Para saber o que mudou, é preciso revisar tudo e confiar no tom dele."
         persona:
           id: inicio-acto-5-con-principio
           type: example
@@ -277,9 +333,11 @@ sections:
               state: borrador
               text: "**Con el principio.** El agente muestra qué archivos cambió, qué decidió por su cuenta y cómo deshacerlo. La confianza descansa en evidencia, no en el tono."
             en:
-              state: pendiente
+              state: borrador
+              text: "**With the principle.** The agent shows which files it changed, what it decided on its own and how to undo it. Trust rests on evidence, not on tone."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "**Com o princípio.** O agente mostra que arquivos alterou, o que decidiu por conta própria e como desfazer. A confiança se apoia em evidência, não no tom."
       - kind: canon
         nodos:
           - guia-de-bolsillo-20
@@ -293,9 +351,11 @@ sections:
         state: borrador
         text: De la doctrina al desarrollo
       en:
-        state: pendiente
+        state: borrador
+        text: From doctrine to development
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Da doutrina ao desenvolvimento
     blocks:
       - kind: entrada
         entrada:
@@ -310,9 +370,17 @@ sections:
 
                 [Ver cómo se construye con IA](/es/manifiesto/construir-con-ia).
             en:
-              state: pendiente
+              state: borrador
+              text: |-
+                The principles become practice through a method: a product foundation with authority, Job Stories as a reference form, an eight-step flow, artefacts that exist only if they answer a question, a contract for coding agents, explicit reasons to stop and a definition of done that is not satisfied by correct code alone.
+
+                [See how to build with AI](/manifesto/building-with-ai).
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: |-
+                Os princípios se tornam prática em um método: um fundamento de produto com autoridade, as Job Stories como forma de referência, um fluxo de oito passos, artefatos que só existem se responderem a uma pergunta, um contrato para agentes de código, razões explícitas para parar e uma definição de conclusão que não se contenta com código correto.
+
+                [Ver como se constrói com IA](/pt-br/manifesto/construir-com-ia).
     depth: []
   - id: acto-7
     title:
@@ -320,9 +388,11 @@ sections:
         state: borrador
         text: Una implementación mediante SpecKit
       en:
-        state: pendiente
+        state: borrador
+        text: An implementation through SpecKit
       pt-BR:
-        state: pendiente
+        state: borrador
+        text: Uma implementação por meio do SpecKit
     blocks:
       - kind: entrada
         entrada:
@@ -334,9 +404,11 @@ sections:
               state: borrador
               text: "El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit)."
             en:
-              state: pendiente
+              state: borrador
+              text: "The manifesto can be applied with any method. A reference implementation brings it to SpecKit: the core governs an operational constitution, that constitution conditions the coding agent, and SpecKit, adapted without modifying its code, organises the specification, the plan, the tasks, the analysis and the implementation. [How the adaptation works](/speckit)."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "O manifesto pode ser aplicado com qualquer método. Uma implementação de referência o leva ao SpecKit: o núcleo governa uma constituição operacional, essa constituição condiciona o agente de código, e o SpecKit, adaptado sem modificar seu código, organiza a especificação, o plano, as tarefas, a análise e a implementação. [Como a adaptação funciona](/pt-br/speckit)."
       - kind: estado-adaptacion
       - kind: entrada
         entrada:
@@ -347,6 +419,8 @@ sections:
               state: borrador
               text: "Para seguir: [leer el manifiesto completo](/es/manifiesto), [recorrer los principios](/es/principios), [ver cómo se construye con IA](/es/manifiesto/construir-con-ia) o [conocer el estado de la adaptación](/es/speckit)."
             en:
-              state: pendiente
+              state: borrador
+              text: "To continue: [read the full manifesto](/manifesto), [go through the principles](/principles), [see how to build with AI](/manifesto/building-with-ai) or [check the status of the adaptation](/speckit)."
             pt-BR:
-              state: pendiente
+              state: borrador
+              text: "Para continuar: [ler o manifesto completo](/pt-br/manifesto), [percorrer os princípios](/pt-br/principios), [ver como se constrói com IA](/pt-br/manifesto/construir-com-ia) ou [conhecer o status da adaptação](/pt-br/speckit)."
