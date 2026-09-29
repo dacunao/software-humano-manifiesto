@@ -252,6 +252,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [X] T082 [US9] Implementar `src/cliente/preferencia-idioma.ts`: guarda la elección (protegido ante almacenamiento no disponible), permite restablecerla y redirige **solo** desde `/` (RQ-04); nunca actúa en otras rutas
 - [X] T083 [US9] Completar en `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` (creados en T017) un borrador de traducción **nodo a nodo** para todos los nodos, con `sourceHash` y `state: borrador` (RQ-02)
 - [ ] T084 [US9] **Se ejecuta después de la fase 12** (ajuste de orden del 2026-09-27: la ronda temprana en español puede cambiar el contenido y traducirlo antes obligaría a retraducir; el alcance no cambia). Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
+  - *Avance, 2026-09-28*: parte canónica hecha. Los 341 nodos del núcleo en `en` y `pt-BR` vienen de la traducción revisada del 2026-09-21, verificada contra el original, y están aprobados por Damián (`evidencia/revision-linguistica/`). Faltan las superficies, los principios y la interfaz. La fase 12 quedó cerrada, así que el orden se cumple
 
 ---
 
@@ -260,8 +261,10 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 **Purpose**: obtener evidencia de las Job Stories antes de optimizar, diseñar y traducir (`F07`; decisión de Damián Acuña del 2026-09-27). La ronda final de la fase 16 se mantiene.
 
 - [X] T085 Preparar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`: tareas derivadas de la evidencia de cumplimiento de `JS-01`–`JS-09`, participantes de las audiencias del PRD §14.1 y plantilla de notas por sesión, **sin umbral numérico** (decisión del 2026-09-27)
-- [ ] T086 STOP · Damián conduce o supervisa unas pocas sesiones en español sobre el sitio con el contenido en borrador y los tokens provisionales; las notas quedan en `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`
-- [ ] T087 Incorporar los hallazgos al contenido `es` (sigue en `borrador`) y registrarlos en `docs/pilot/registro-del-piloto.md`. Si un hallazgo cambiaría el alcance, un requisito o una historia: STOP y presentarlo a Damián, sin cambiarlo
+- [X] T086 STOP · Damián conduce o supervisa unas pocas sesiones en español sobre el sitio con el contenido en borrador y los tokens provisionales; las notas quedan en `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md`
+  - *Cerrada (decisión de Damián Acuña, 2026-09-28)*: la retroalimentación de las personas que revisan el sitio antes de su publicación cuenta como la ronda temprana; su origen y lo que cambió están en `pruebas-comprension.md`
+- [X] T087 Incorporar los hallazgos al contenido `es` (sigue en `borrador`) y registrarlos en `docs/pilot/registro-del-piloto.md`. Si un hallazgo cambiaría el alcance, un requisito o una historia: STOP y presentarlo a Damián, sin cambiarlo
+  - *Cerrada (decisión de Damián Acuña, 2026-09-28)*: los hallazgos de esa ronda ya se incorporaron por las fases 17 a 27 (divisiones, búsqueda, cabecera, sistema visual), cada uno con decisión de la autoridad; el registro del piloto recoge el origen de la evidencia (C5)
 
 ---
 
@@ -301,11 +304,11 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 **Purpose**: bloque 9.
 
 - [ ] T098 [P] Escribir `tests/unit/lenguaje/neutralidad.test.ts`, que detecte en el contenido `es` formas de voseo (`vos`, `sos`, `tenés`, `podés`) y de `vosotros`. Es una ayuda previa a la revisión humana, no la sustituye
-- [ ] T099 Preparar en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/` el paquete de revisión de `en` y `pt-BR`, con los textos por id y los nombres de ruta (RQ-03)
+- [ ] T099 Preparar en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/` el paquete de revisión de `en` y `pt-BR`, con los textos por id y los nombres de ruta (RQ-03). Desde el 2026-09-28 el paquete sirve para la aprobación de Damián, no para un revisor externo
 - [ ] T100 STOP · Damián contrata la revisión profesional de `en` y `pt-BR`; se registran revisor, fecha y resultado. El agente no marca nada como aprobado
   - *Decisión de la autoridad, 2026-09-28*: Damián aprueba `en` y `pt-BR` en lugar del servicio profesional. Los 341 nodos del núcleo quedaron aprobados por él; falta aprobar las superficies, los principios y la interfaz cuando estén traducidos (T084), y registrar la revisión de cada idioma en `src/content/revisiones.yaml`
-- [ ] T101 Incorporar las correcciones del revisor en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián
-- [ ] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`)
+- [ ] T101 Incorporar las correcciones de Damián (antes, del revisor externo; decisión del 2026-09-28) en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián
+- [ ] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`). El núcleo en `en` y `pt-BR` ya está aprobado (2026-09-28); queda el resto. Al terminar cada idioma, Damián registra su revisión en `src/content/revisiones.yaml`
 
 ---
 
@@ -337,7 +340,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - **Setup (1)** → **Foundational (2)** → fases de historia **3 a 11** → **Primera ronda de comprensión (12)** → **Calidad transversal (13)** → **Dirección visual (14)** → **Idiomas (15)** → **Validación y aceptación (16)**.
 - **Fases 17 a 20 (PRD v1.1 y v1.2)** van antes de la 12: la ronda temprana observa la estructura vigente, con las divisiones del núcleo, la búsqueda y las mejoras de móvil (hallazgo O1 del `analyze` del 2026-09-28).
 - Las fases 3 a 11 dependen de la 2. Entre ellas, 4 y 6 amplían `Inicio.astro` después de la 3; 8 y 9 agregan los actos 6 y 7 a la misma vista; 10 usa las vistas de 5 y 7.
-- La fase 12 depende de 3 a 11 **y de la conducción humana de las sesiones**. La traducción definitiva y la revisión profesional (fase 15) usan el contenido `es` ya corregido por la ronda temprana.
+- La fase 12 depende de 3 a 11 **y de la conducción humana de las sesiones**. La traducción definitiva y la aprobación de los idiomas (fase 15) usan el contenido `es` ya corregido por la ronda temprana.
 - La fase 14 depende de 13 y **de la elección humana** de la dirección visual. La 15 depende de 12. La 16 depende de 14 y 15.
 
 ### User Story Dependencies

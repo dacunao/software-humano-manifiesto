@@ -94,4 +94,4 @@ Damián Acuña declara que los comentarios que entregó durante el desarrollo pr
 | El menú superior debería estar siempre presente | Cabecera fija (T180) |
 | Aspecto visual | Sistema visual v1.0, aprobado (T171) |
 
-Estas observaciones no reemplazan la ronda de T086, que sigue siendo una puerta de Damián.
+Por decisión de Damián Acuña (2026-09-28), esta retroalimentación **cuenta como la ronda temprana** y cierra T086 y T087. La ronda final (T103, T104) se mantiene.
