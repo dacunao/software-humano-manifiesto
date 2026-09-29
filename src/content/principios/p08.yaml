@@ -20,10 +20,10 @@ entries:
         text: "Nadie separa la interfaz, la ingeniería y el contenido: se experimenta un producto completo. Una inconsistencia pequeña se tolera; cien convierten el uso en fricción constante."
       en:
         state: borrador
-        text: "Nobody separates interface, engineering and content: people experience a complete product. One small inconsistency is tolerated; a hundred turn use into constant friction."
+        text: "No one separates the interface, engineering, and content: people experience a complete product. One small inconsistency is tolerated; a hundred turn its use into constant friction."
       pt-BR:
         state: borrador
-        text: "Ninguém separa a interface, a engenharia e o conteúdo: o que se experimenta é um produto completo. Uma inconsistência pequena é tolerada; cem transformam o uso em atrito constante."
+        text: "Ninguém separa a interface, a engenharia e o conteúdo: a experiência é a de um produto completo. Uma pequena inconsistência é tolerada; cem transformam o uso em atrito constante."
   significado:
     id: p08-significado
     type: explanation
@@ -34,10 +34,10 @@ entries:
         text: Tipografía, textos, foco, estados vacíos, errores y transiciones forman una sola experiencia. Ningún detalle compensa por sí solo una mala solución, pero su acumulación refuerza o erosiona la confianza.
       en:
         state: borrador
-        text: Typography, wording, focus, empty states, errors and transitions form a single experience. No detail compensates on its own for a poor solution, but their accumulation reinforces or erodes trust.
+        text: Typography, copy, focus, empty states, errors, and transitions form a single experience. No detail can compensate for a poor solution on its own, but their accumulation strengthens or erodes trust.
       pt-BR:
         state: borrador
-        text: Tipografia, textos, foco, estados vazios, erros e transições formam uma única experiência. Nenhum detalhe compensa sozinho uma solução ruim, mas o acúmulo deles reforça ou corrói a confiança.
+        text: Tipografia, textos, foco, estados vazios, erros e transições formam uma única experiência. Nenhum detalhe compensa sozinho uma solução ruim, mas seu acúmulo fortalece ou corrói a confiança.
   consecuencia:
     id: p08-consecuencia
     type: explanation
@@ -48,10 +48,10 @@ entries:
         text: "Se diseñan y se verifican también los estados menos frecuentes: vacío, carga, error, éxito y recuperación. Lenguaje, jerarquía y comportamiento se mantienen en todo el recorrido, y se revisa con contenido real antes de aprobar."
       en:
         state: borrador
-        text: "The less frequent states are designed and verified too: empty, loading, error, success and recovery. Language, hierarchy and behavior stay consistent throughout the journey, and the product is reviewed with real content before it is approved."
+        text: "Less frequent states are also designed and verified: empty, loading, error, success, and recovery. Language, hierarchy, and behavior are maintained throughout the journey, and the experience is reviewed with real content before approval."
       pt-BR:
         state: borrador
-        text: "Também são projetados e verificados os estados menos frequentes: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento se mantêm em todo o percurso, e revisa-se com conteúdo real antes de aprovar."
+        text: "Os estados menos frequentes também são projetados e verificados: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento são mantidos ao longo de todo o percurso, e a experiência é revisada com conteúdo real antes da aprovação."
   ejemplo:
     id: p08-ejemplo
     type: example
@@ -62,7 +62,7 @@ entries:
         text: Un enlace compartido abre exactamente la sección citada y en el idioma elegido. Nadie lo nota cuando funciona; todos lo notan cuando falla.
       en:
         state: borrador
-        text: A shared link opens exactly the section cited, in the chosen language. Nobody notices when it works; everyone notices when it fails.
+        text: A shared link opens exactly the cited section and in the selected language. No one notices when it works; everyone notices when it fails.
       pt-BR:
         state: borrador
         text: Um link compartilhado abre exatamente a seção citada e no idioma escolhido. Ninguém percebe quando funciona; todos percebem quando falha.
@@ -76,10 +76,10 @@ entries:
         text: Tratar los errores, la carga, las pantallas pequeñas o el teclado como terminaciones que se resuelven después.
       en:
         state: borrador
-        text: Treating errors, loading, small screens or the keyboard as finishing touches to be sorted out later.
+        text: Treating errors, loading, small screens, or keyboard use as finishing touches to be addressed later.
       pt-BR:
         state: borrador
-        text: Tratar os erros, o carregamento, as telas pequenas ou o teclado como acabamentos que se resolvem depois.
+        text: Tratar os erros, o carregamento, as telas pequenas ou o teclado como acabamentos a serem resolvidos depois.
   prueba:
     id: p08-prueba
     type: decision-test
@@ -90,7 +90,7 @@ entries:
         text: Estas preguntas buscan los detalles que contradicen la lógica del resto.
       en:
         state: borrador
-        text: These questions look for the details that contradict the logic of the rest.
+        text: These questions look for details that contradict the logic of the rest.
       pt-BR:
         state: borrador
         text: Estas perguntas buscam os detalhes que contradizem a lógica do restante.

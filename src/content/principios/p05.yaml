@@ -21,10 +21,10 @@ entries:
         text: Cada convención propia que hay que memorizar consume la capacidad que la persona necesitaba para su problema real. En productos de uso infrecuente, o con contenido difícil, esa carga es especialmente dañina.
       en:
         state: borrador
-        text: Every custom convention that has to be memorized consumes the capacity the person needed for their real problem. In infrequently used products, or those with difficult content, that burden is especially damaging.
+        text: Every custom convention that must be memorized consumes the capacity the person needed for their actual problem. In products used infrequently, or with difficult content, that load is especially harmful.
       pt-BR:
         state: borrador
-        text: Cada convenção própria que é preciso memorizar consome a capacidade de que a pessoa precisava para seu problema real. Em produtos de uso pouco frequente, ou com conteúdo difícil, essa carga é especialmente danosa.
+        text: Cada convenção própria que precisa ser memorizada consome a capacidade de que a pessoa precisava para seu problema real. Em produtos de uso infrequente, ou com conteúdo difícil, essa carga é especialmente prejudicial.
   significado:
     id: p05-significado
     type: explanation
@@ -35,10 +35,10 @@ entries:
         text: La interfaz se apoya en expectativas conocidas, jerarquía comprensible y respuesta inmediata. Quien llega viene a hacer su trabajo, no a aprender el del equipo.
       en:
         state: borrador
-        text: The interface builds on familiar expectations, an understandable hierarchy and immediate feedback. People come to do their work, not to learn the team's.
+        text: The interface relies on familiar expectations, understandable hierarchy, and immediate response. The person who arrives is there to do their work, not to learn the team's work.
       pt-BR:
         state: borrador
-        text: A interface se apoia em expectativas conhecidas, hierarquia compreensível e resposta imediata. Quem chega veio fazer seu trabalho, não aprender o do time.
+        text: A interface se apoia em expectativas conhecidas, hierarquia compreensível e resposta imediata. Quem chega vem fazer seu trabalho, não aprender o trabalho do time.
   consecuencia:
     id: p05-consecuencia
     type: explanation
@@ -49,10 +49,10 @@ entries:
         text: Se prefieren patrones conocidos cuando resuelven bien el problema. La acción principal, el estado actual y el siguiente paso posible tienen que ser evidentes sin un tutorial previo.
       en:
         state: borrador
-        text: Known patterns are preferred where they solve the problem well. The primary action, the current state and the next possible step must be evident without a prior tutorial.
+        text: Familiar patterns are preferred when they solve the problem well. The primary action, the current state, and the possible next step must be evident without a prior tutorial.
       pt-BR:
         state: borrador
-        text: Padrões conhecidos são preferidos quando resolvem bem o problema. A ação principal, o estado atual e o próximo passo possível têm de ser evidentes sem um tutorial prévio.
+        text: Padrões conhecidos são preferidos quando resolvem bem o problema. A ação principal, o estado atual e o próximo passo possível têm que ser evidentes sem um tutorial prévio.
   ejemplo:
     id: p05-ejemplo
     type: example
@@ -63,10 +63,10 @@ entries:
         text: Una navegación que nombra cada destino por lo que contiene («Manifiesto», «Principios», «Aplicación») permite elegir sin haber recorrido nada antes.
       en:
         state: borrador
-        text: Navigation that names each destination by what it contains (“Manifesto”, “Principles”, “Application”) lets people choose without having gone through anything first.
+        text: Navigation that names each destination by what it contains (“Manifiesto,” “Principles,” “Application”) lets people choose without having gone through anything beforehand.
       pt-BR:
         state: borrador
-        text: Uma navegação que nomeia cada destino pelo que ele contém (“Manifesto”, “Princípios”, “Aplicação”) permite escolher sem ter percorrido nada antes.
+        text: Uma navegação que nomeia cada destino pelo que contém (“Manifiesto”, “Princípios”, “Aplicação”) permite escolher sem ter percorrido nada antes.
   contraejemplo:
     id: p05-contraejemplo
     type: counterexample
@@ -77,10 +77,10 @@ entries:
         text: Obligar a descubrir cómo avanzar, o a interpretar gestos ocultos, antes de poder leer.
       en:
         state: borrador
-        text: Forcing people to work out how to move forward, or to interpret hidden gestures, before they can read.
+        text: Forcing people to figure out how to proceed, or to interpret hidden gestures, before they can read.
       pt-BR:
         state: borrador
-        text: Obrigar a descobrir como avançar, ou a interpretar gestos ocultos, antes de poder ler.
+        text: Obrigar as pessoas a descobrir como avançar ou a interpretar gestos ocultos antes de poderem ler.
   prueba:
     id: p05-prueba
     type: decision-test
@@ -91,7 +91,7 @@ entries:
         text: Estas preguntas detectan el aprendizaje que la interfaz agrega sin que el problema lo pida.
       en:
         state: borrador
-        text: These questions detect the learning that the interface adds without the problem calling for it.
+        text: These questions detect the learning that the interface adds without the problem requiring it.
       pt-BR:
         state: borrador
         text: Estas perguntas detectam o aprendizado que a interface acrescenta sem que o problema o exija.

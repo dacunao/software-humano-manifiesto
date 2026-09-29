@@ -24,7 +24,7 @@ entries:
         text: When the interface mirrors the architecture, the person has to learn how the product was built before getting anything from it. That transfer seems inevitable only because it is convenient for the team.
       pt-BR:
         state: borrador
-        text: Quando a interface replica a arquitetura, a pessoa precisa aprender como o produto foi construído antes de obter algo dele. Essa transferência só parece inevitável porque é conveniente para o time.
+        text: Quando a interface replica a arquitetura, a pessoa tem que aprender como o produto foi construído antes de obter algo dele. Essa transferência parece inevitável apenas porque é conveniente para o time.
   significado:
     id: p03-significado
     type: explanation
@@ -35,7 +35,7 @@ entries:
         text: El dominio puede exigir reglas, integraciones y excepciones. El equipo absorbe esa complejidad y la presenta como decisiones comprensibles; las tablas y los estados internos no dictan el lenguaje ni la navegación.
       en:
         state: borrador
-        text: The domain may require rules, integrations and exceptions. The team absorbs that complexity and presents it as understandable decisions; internal tables and states do not dictate the language or the navigation.
+        text: The domain may require rules, integrations, and exceptions. The team absorbs that complexity and presents it as understandable decisions; internal tables and states do not dictate the language or navigation.
       pt-BR:
         state: borrador
         text: O domínio pode exigir regras, integrações e exceções. O time absorve essa complexidade e a apresenta como decisões compreensíveis; as tabelas e os estados internos não ditam a linguagem nem a navegação.
@@ -49,10 +49,10 @@ entries:
         text: Los conceptos internos se traducen al modelo mental de quien usa el producto. El sistema resuelve lo que puede resolver con el contexto disponible, y una excepción solo se muestra a quien realmente debe decidirla.
       en:
         state: borrador
-        text: Internal concepts are translated into the mental model of whoever uses the product. The system resolves what it can with the context available, and an exception is shown only to those who genuinely have to decide it.
+        text: Internal concepts are translated into the mental model of the person using the product. The system resolves what it can with the available context, and an exception is shown only to the person who actually must decide it.
       pt-BR:
         state: borrador
-        text: Os conceitos internos são traduzidos para o modelo mental de quem usa o produto. O sistema resolve o que pode resolver com o contexto disponível, e uma exceção só é mostrada a quem realmente deve decidi-la.
+        text: Os conceitos internos são traduzidos para o modelo mental da pessoa que usa o produto. O sistema resolve o que pode com o contexto disponível, e uma exceção só é mostrada à pessoa que realmente deve decidi-la.
   ejemplo:
     id: p03-ejemplo
     type: example
@@ -63,10 +63,10 @@ entries:
         text: Un servicio de envíos necesita saber si un paquete es nacional o internacional. En lugar de preguntarlo, lo deduce de la dirección de destino y solo pide los datos de aduana cuando corresponden.
       en:
         state: borrador
-        text: A shipping service needs to know whether a parcel is domestic or international. Instead of asking, it infers this from the destination address and only asks for customs details when they apply.
+        text: A shipping service needs to know whether a package is domestic or international. Instead of asking, it infers this from the destination address and requests customs information only when applicable.
       pt-BR:
         state: borrador
-        text: Um serviço de envios precisa saber se um pacote é nacional ou internacional. Em vez de perguntar, ele deduz isso pelo endereço de destino e só pede os dados alfandegários quando se aplicam.
+        text: Um serviço de entregas precisa saber se um pacote é nacional ou internacional. Em vez de perguntar, ele deduz isso pelo endereço de destino e só solicita os dados aduaneiros quando são necessários.
   contraejemplo:
     id: p03-contraejemplo
     type: counterexample
@@ -77,10 +77,10 @@ entries:
         text: Abrir una explicación con rutas de archivos, configuraciones o comandos antes de que la persona entienda para qué sirven.
       en:
         state: borrador
-        text: Opening an explanation with file paths, configurations or commands before the person understands what they are for.
+        text: Opening an explanation with file paths, configurations, or commands before the person understands what they are for.
       pt-BR:
         state: borrador
-        text: Abrir uma explicação com caminhos de arquivos, configurações ou comandos antes que a pessoa entenda para que servem.
+        text: Começar uma explicação com caminhos de arquivos, configurações ou comandos antes que a pessoa entenda para que servem.
   prueba:
     id: p03-prueba
     type: decision-test
@@ -94,4 +94,4 @@ entries:
         text: These questions separate the steps that exist for the person from those that exist for the system.
       pt-BR:
         state: borrador
-        text: Estas perguntas separam os passos que existem por causa da pessoa dos que existem por causa do sistema.
+        text: Estas perguntas separam os passos que existem para a pessoa daqueles que existem para o sistema.

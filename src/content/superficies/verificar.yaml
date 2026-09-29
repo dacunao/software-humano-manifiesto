@@ -16,10 +16,10 @@ description:
     text: "Doce dimensiones para aceptar una solución, un puntaje de decisión y las señales de que el producto se aleja del manifiesto."
   en:
     state: borrador
-    text: Twelve dimensions for accepting a solution, a decision scorecard and the signs that the product is drifting away from the manifesto.
+    text: Twelve dimensions for accepting a solution, a decision scorecard, and the signs that the product is moving away from the manifesto.
   pt-BR:
     state: borrador
-    text: Doze dimensões para aceitar uma solução, uma pontuação de decisão e os sinais de que o produto se afasta do manifesto.
+    text: Doze dimensões para aceitar uma solução, uma pontuação de decisão e os sinais de que o produto está se afastando do manifesto.
 fr:
   - FR-022
 sections:
@@ -47,7 +47,7 @@ sections:
               text: "Aceptar exige evidencia. Que una pantalla se vea limpia o que el código compile no demuestra que el producto cumpla su propósito: la cobertura, el progreso, la comprensión, la carga, la confianza, el control y los estados también se verifican."
             en:
               state: borrador
-              text: "Acceptance requires evidence. A screen that looks clean, or code that compiles, does not demonstrate that the product fulfills its purpose: coverage, progress, understanding, burden, trust, control and states are verified too."
+              text: "Acceptance requires evidence. A screen looking clean or the code compiling does not prove that the product fulfills its purpose: coverage, progress, understanding, load, trust, control, and states must also be verified."
             pt-BR:
               state: borrador
               text: "Aceitar exige evidência. Uma tela parecer limpa ou o código compilar não demonstra que o produto cumpre seu propósito: a cobertura, o progresso, a compreensão, a carga, a confiança, o controle e os estados também são verificados."
@@ -78,10 +78,10 @@ sections:
               text: "Once criterios se puntúan de 0 a 2. El puntaje no reemplaza el juicio: ordena la conversación y marca lo que no puede quedar en cero."
             en:
               state: borrador
-              text: "Eleven criteria are scored from 0 to 2. The score does not replace judgment: it gives the conversation an order and flags what cannot be left at zero."
+              text: "Eleven criteria are scored from 0 to 2. The score does not replace judgment: it structures the conversation and flags what cannot remain at zero."
             pt-BR:
               state: borrador
-              text: "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o julgamento: organiza a conversa e marca o que não pode ficar em zero."
+              text: "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o discernimento: ela organiza a conversa e sinaliza o que não pode permanecer em zero."
       - kind: canon
         desde: verificacion-06
         hasta: verificacion-08
@@ -109,10 +109,10 @@ sections:
               text: "Once preguntas para revisar una decisión de producto, incluida la más difícil: qué haría rechazar una implementación aunque funcione técnicamente."
             en:
               state: borrador
-              text: "Eleven questions for reviewing a product decision, including the hardest one: what would make you reject an implementation even though it technically works."
+              text: "Eleven questions for reviewing a product decision, including the hardest one: what would cause an implementation to be rejected even if it works technically."
             pt-BR:
               state: borrador
-              text: "Onze perguntas para revisar uma decisão de produto, inclusive a mais difícil: o que faria rejeitar uma implementação ainda que ela funcione tecnicamente."
+              text: "Onze perguntas para revisar uma decisão de produto, incluindo a mais difícil: o que faria uma implementação ser rejeitada mesmo que funcione tecnicamente."
       - kind: canon
         nodos:
           - verificacion-10
@@ -123,10 +123,10 @@ sections:
         text: Señales de que el producto se aleja
       en:
         state: borrador
-        text: Signs that the product is drifting away
+        text: Signs that the product is moving away
       pt-BR:
         state: borrador
-        text: Sinais de que o produto se afasta
+        text: Sinais de que o produto está se afastando
     depth: []
     blocks:
       - kind: entrada
@@ -140,7 +140,7 @@ sections:
               text: "Catorce antipatrones, cada uno con la forma en que aparece y su respuesta, y una advertencia: la simplicidad también puede ser una excusa para ocultar lo necesario."
             en:
               state: borrador
-              text: "Fourteen anti-patterns, each with how it shows up and its response, and a warning: simplicity can also be an excuse for hiding what is necessary."
+              text: "Fourteen anti-patterns, each with the form it takes and its response, and a warning: simplicity may also be an excuse to hide what is necessary."
             pt-BR:
               state: borrador
               text: "Catorze antipadrões, cada um com a forma como aparece e sua resposta, e uma advertência: a simplicidade também pode ser uma desculpa para ocultar o necessário."

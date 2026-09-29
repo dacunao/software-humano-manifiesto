@@ -16,10 +16,10 @@ description:
     text: "Cómo convertir el manifiesto en una práctica habitual: responsabilidades, puntos de control, evolución y definición de terminado."
   en:
     state: borrador
-    text: "How to turn the manifesto into everyday practice: responsibilities, control points, evolution and definition of done."
+    text: "How to turn the manifesto into a regular practice: responsibilities, checkpoints, evolution, and definition of done."
   pt-BR:
     state: borrador
-    text: "Como transformar o manifesto em prática habitual: responsabilidades, pontos de controle, evolução e definição de conclusão."
+    text: "Como transformar o manifesto em uma prática habitual: responsabilidades, pontos de controle, evolução e definição de conclusão."
 fr:
   - FR-007
   - FR-022
@@ -31,7 +31,7 @@ sections:
         text: Una práctica habitual
       en:
         state: borrador
-        text: An everyday practice
+        text: A regular practice
       pt-BR:
         state: borrador
         text: Uma prática habitual
@@ -48,10 +48,10 @@ sections:
               text: "El manifiesto pierde valor si queda en una presentación inicial. Tiene que aparecer donde el equipo decide: cada rol tiene una obligación principal, y cada momento del desarrollo —antes de diseñar, de generar código, de integrar, de liberar y después— tiene una decisión que no se puede saltar."
             en:
               state: borrador
-              text: "The manifesto loses value if it is confined to an opening presentation. It has to appear where the team makes decisions: each role has a main obligation, and each moment of development—before designing, before generating code, before integrating, before release and afterwards—has a decision that cannot be skipped."
+              text: "The manifesto loses value if it never goes beyond a kickoff presentation. It must appear wherever the team makes decisions: each role has one primary obligation, and each stage of development—before designing, generating code, integrating, releasing, and afterward—has a decision that cannot be skipped."
             pt-BR:
               state: borrador
-              text: "O manifesto perde valor se ficar restrito a uma apresentação inicial. Ele tem de aparecer onde o time decide: cada papel tem uma obrigação principal, e cada momento do desenvolvimento — antes de projetar, de gerar código, de integrar, de liberar e depois — tem uma decisão que não pode ser pulada."
+              text: "O manifesto perde valor se ficar em uma apresentação inicial. Ele tem que aparecer onde o time decide: cada função tem uma obrigação principal, e cada momento do desenvolvimento —antes de projetar, de gerar código, de integrar, de liberar e depois— tem uma decisão que não pode ser ignorada."
       - kind: canon
         desde: gobernanza-03
         hasta: gobernanza-07
@@ -79,10 +79,10 @@ sections:
               text: Los principios son estables; las reglas y las pruebas pueden cambiar con evidencia nueva. Cada versión registra qué problema resolvió y qué conserva de la anterior.
             en:
               state: borrador
-              text: The principles are stable; the rules and tests may change with new evidence. Each version records what problem it solved and what it keeps from the previous one.
+              text: The principles are stable; the rules and tests may change with new evidence. Each version records what problem it solved and what it retains from the previous version.
             pt-BR:
               state: borrador
-              text: Os princípios são estáveis; as regras e os testes podem mudar com evidência nova. Cada versão registra que problema resolveu e o que conserva da anterior.
+              text: Os princípios são estáveis; as regras e os testes podem mudar com nova evidência. Cada versão registra qual problema resolveu e o que conserva da anterior.
       - kind: canon
         desde: gobernanza-09
         hasta: gobernanza-14
@@ -93,10 +93,10 @@ sections:
         text: Qué significa terminado
       en:
         state: borrador
-        text: What done means
+        text: What it means to be done
       pt-BR:
         state: borrador
-        text: O que significa concluído
+        text: O que significa estar concluído
     depth: []
     blocks:
       - kind: entrada
@@ -110,7 +110,7 @@ sections:
               text: Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
             en:
               state: borrador
-              text: A development is done when every mandatory element has an implementation and evidence, or an approved exception, and people achieve the intended outcomes. Correct code is part of that completeness; it is not all of it.
+              text: Development is done when every required element has an implementation and evidence, or an approved exception, and people achieve the intended outcomes. Correct code is part of that completeness; it does not exhaust it.
             pt-BR:
               state: borrador
               text: Um desenvolvimento está concluído quando cada elemento obrigatório tem implementação e evidência, ou uma exceção aprovada, e as pessoas alcançam os resultados previstos. O código correto faz parte dessa completude; não a esgota.

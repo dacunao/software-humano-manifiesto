@@ -16,7 +16,7 @@ terminos:
   - { id: antipatrones, es: 'anti ?patr[oó]n', en: 'anti-patterns?', pt: 'antipadr' }
   - { id: carga-cognitiva, es: 'carga cognitiva', en: 'cognitive load', pt: 'carga cognitiva' }
   - { id: revelacion, es: 'revelación progresiva', en: 'progressive disclosure', pt: 'revelação progressiva' }
-  - { id: determinismo, es: 'determinis', en: 'determinis', pt: 'determinis' }
+  - { id: determinismo, es: 'determinis', en: 'determinis', pt: 'determin[ií]s' }
   - { id: job-story, es: 'Job Stor', en: 'Job Stor', pt: 'Job Stor' }
   - { id: jtbd, es: 'Jobs to Be Done', en: 'Jobs to Be Done', pt: 'Jobs to Be Done' }
   - { id: autoridad-producto, es: 'autoridad de producto', en: 'product authority', pt: 'autoridade de produto' }

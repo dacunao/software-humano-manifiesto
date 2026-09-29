@@ -23,10 +23,10 @@ entries:
         text: La automatización sin agencia humana puede acelerar el camino equivocado. Cuando la ayuda decide en silencio o encierra la información, la persona pierde el control de su propio trabajo.
       en:
         state: borrador
-        text: Automation without human agency can accelerate the wrong path. When assistance decides silently or locks information away, the person loses control of their own work.
+        text: Automation without human agency may accelerate the wrong path. When assistance makes decisions silently or locks information away, the person loses control of their own work.
       pt-BR:
         state: borrador
-        text: A automação sem agência humana pode acelerar o caminho errado. Quando a ajuda decide em silêncio ou retém a informação, a pessoa perde o controle do próprio trabalho.
+        text: A automação sem agência humana pode acelerar o caminho errado. Quando a ajuda decide em silêncio ou aprisiona a informação, a pessoa perde o controle do próprio trabalho.
   significado:
     id: p10-significado
     type: explanation
@@ -37,10 +37,10 @@ entries:
         text: El software puede anticipar, recomendar y automatizar sin ocultar decisiones, encerrar información ni impedir alternativas. Con IA, el control incluye saber qué información se usó y qué acción se ejecutó.
       en:
         state: borrador
-        text: Software can anticipate, recommend and automate without hiding decisions, locking information away or preventing alternatives. With AI, control includes knowing what information was used and what action was carried out.
+        text: Software may anticipate, recommend, and automate without hiding decisions, locking information away, or preventing alternatives. With AI, control includes knowing what information was used and what action was executed.
       pt-BR:
         state: borrador
-        text: O software pode antecipar, recomendar e automatizar sem ocultar decisões, reter informação nem impedir alternativas. Com IA, o controle inclui saber que informação foi usada e que ação foi executada.
+        text: O software pode antecipar, recomendar e automatizar sem ocultar decisões, aprisionar informações nem impedir alternativas. Com IA, o controle inclui saber quais informações foram usadas e qual ação foi executada.
   consecuencia:
     id: p10-consecuencia
     type: explanation
@@ -51,10 +51,10 @@ entries:
         text: La confirmación se pide en proporción al impacto. Se puede revisar, editar, exportar y revertir cuando el dominio lo permite, y se separan autorización, recomendación y ejecución.
       en:
         state: borrador
-        text: Confirmation is requested in proportion to the impact. You can review, edit, export and revert where the domain permits it, and authorization, recommendation and execution are kept separate.
+        text: Confirmation is requested in proportion to the impact. You may review, edit, export, and revert when the domain allows it, and authorization, recommendation, and execution are kept separate.
       pt-BR:
         state: borrador
-        text: A confirmação é pedida na proporção do impacto. É possível revisar, editar, exportar e reverter quando o domínio permite, e autorização, recomendação e execução são separadas.
+        text: A confirmação é solicitada em proporção ao impacto. É possível revisar, editar, exportar e reverter quando o domínio permite, e autorização, recomendação e execução são mantidas separadas.
   ejemplo:
     id: p10-ejemplo
     type: example
@@ -65,10 +65,10 @@ entries:
         text: En este sitio se puede leer sin un orden impuesto, copiar cualquier pasaje y compartir una dirección estable, sin crear una cuenta ni entregar datos.
       en:
         state: borrador
-        text: On this site you can read without an imposed order, copy any passage and share a stable address, without creating an account or handing over any data.
+        text: On this site, you can read without a prescribed order, copy any passage, and share a stable address, without creating an account or providing data.
       pt-BR:
         state: borrador
-        text: Neste site, é possível ler sem uma ordem imposta, copiar qualquer trecho e compartilhar um endereço estável, sem criar uma conta nem fornecer dados.
+        text: Neste site, você pode ler sem uma ordem imposta, copiar qualquer passagem e compartilhar um endereço estável, sem criar uma conta nem fornecer dados.
   contraejemplo:
     id: p10-contraejemplo
     type: counterexample
@@ -79,10 +79,10 @@ entries:
         text: Secuestrar el desplazamiento de la página, reproducir audio sin pedirlo, exigir un registro o impedir el acceso al texto completo.
       en:
         state: borrador
-        text: Hijacking page scrolling, playing audio without being asked, requiring registration or preventing access to the full text.
+        text: Hijacking page scrolling, playing audio without permission, requiring registration, or preventing access to the complete text.
       pt-BR:
         state: borrador
-        text: Sequestrar a rolagem da página, reproduzir áudio sem que ninguém tenha pedido, exigir cadastro ou impedir o acesso ao texto completo.
+        text: Sequestrar a rolagem da página, reproduzir áudio sem permissão, exigir um cadastro ou impedir o acesso ao texto completo.
   prueba:
     id: p10-prueba
     type: decision-test
@@ -93,7 +93,7 @@ entries:
         text: Estas preguntas verifican que la ayuda no se convierta en apropiación.
       en:
         state: borrador
-        text: These questions check that assistance does not turn into appropriation.
+        text: These questions verify that assistance does not become appropriation.
       pt-BR:
         state: borrador
         text: Estas perguntas verificam que a ajuda não se transforme em apropriação.

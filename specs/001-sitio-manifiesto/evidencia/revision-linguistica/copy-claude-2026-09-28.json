@@ -1,0 +1,1070 @@
+{
+ "superficies/construir.yaml::title": {
+  "en": "Building with AI",
+  "pt": "Construir com IA"
+ },
+ "superficies/construir.yaml::description": {
+  "en": "Doctrine for development with AI, the workflow, when to stop and the agent contract.",
+  "pt": "Doutrina para desenvolver com IA, o fluxo de trabalho, quando parar e o contrato do agente."
+ },
+ "superficies/construir.yaml::sections/0/title": {
+  "en": "When building costs less",
+  "pt": "Quando construir custa menos"
+ },
+ "superficies/construir.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "AI makes building cheaper and, in doing so, shifts the bottleneck: the question is no longer whether something can be done but whether it deserves to exist. Six directives set limits on the work of teams and agents, and a table separates what must be deterministic from what admits generation.",
+  "pt": "A IA barateia a construção e, com isso, desloca o gargalo: a pergunta deixa de ser se algo pode ser feito e passa a ser se merece existir. Seis diretrizes estabelecem limites para o trabalho de times e agentes, e uma tabela separa o que deve ser determinista do que admite geração."
+ },
+ "superficies/construir.yaml::sections/1/title": {
+  "en": "A flow from the foundation to verification",
+  "pt": "Um fluxo do fundamento à verificação"
+ },
+ "superficies/construir.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "The flow prevents code generation from becoming the first act of design. Eight steps lead from the foundation to a verifiable solution: understand, establish coverage, plan, make progress concrete, define the experience, model rules and risks, explore, and build while verifying. Breaking the work down does not authorize omitting part of the scope.",
+  "pt": "O fluxo evita que gerar código seja o primeiro ato de design. Oito passos levam do fundamento a uma solução verificável: compreender, estabelecer cobertura, planejar, concretizar o progresso, definir a experiência, modelar regras e riscos, explorar e construir verificando. Decompor o trabalho não autoriza omitir parte do escopo."
+ },
+ "superficies/construir.yaml::sections/2/title": {
+  "en": "Artifacts that answer questions",
+  "pt": "Artefatos que respondem a perguntas"
+ },
+ "superficies/construir.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "Each artifact exists to answer a question, not to fill in a template. If the information already exists, it is referenced. If an artifact neither changes a decision nor helps verify one, it is superfluous.",
+  "pt": "Cada artefato existe para responder a uma pergunta, não para preencher um modelo. Se a informação já existe, ela é referenciada. Se um artefato não muda uma decisão nem ajuda a verificá-la, ele é supérfluo."
+ },
+ "superficies/construir.yaml::sections/3/title": {
+  "en": "When to stop",
+  "pt": "Quando parar"
+ },
+ "superficies/construir.yaml::sections/3/blocks/0/entrada/text": {
+  "en": "An agent should not start building if it cannot say what the foundation is, what scope it establishes, what evidence supports it and what the person has to decide. The seven reasons to stop an implementation that is already under way are in the [Pocket guide](/manifesto/pocket-guide#sh-pocket).",
+  "pt": "Um agente não deveria começar a construir se não consegue dizer qual é o fundamento, que escopo ele estabelece, que evidência o sustenta e o que a pessoa tem de decidir. As sete razões para parar uma implementação que já está em andamento estão no [Guia de bolso](/pt-br/manifesto/guia-de-bolso#sh-pocket)."
+ },
+ "superficies/construir.yaml::sections/4/title": {
+  "en": "The agent contract",
+  "pt": "O contrato do agente"
+ },
+ "superficies/construir.yaml::sections/4/blocks/0/entrada/text": {
+  "en": "Eight instructions that can be incorporated into a repository or into the request a coding agent receives: build the simplest solution that meets what is required, understand before programming, account for the full scope, propose with alternatives, do not expose internal structures, use AI within limits, do not add what nobody asked for, and reconcile before declaring the work done.",
+  "pt": "Oito instruções que podem ser incorporadas a um repositório ou ao pedido que um agente de código recebe: construir o mais simples que cumpra o definido, compreender antes de programar, dar conta de todo o escopo, propor com alternativas, não expor estruturas internas, usar a IA com limites, não acrescentar o que ninguém pediu e reconciliar antes de declarar o trabalho concluído."
+ },
+ "superficies/fundamento.yaml::title": {
+  "en": "Product foundation",
+  "pt": "Fundamento de produto"
+ },
+ "superficies/fundamento.yaml::description": {
+  "en": "What must be defined before building, and Job Stories as a reference form.",
+  "pt": "O que deve estar definido antes de construir, e as Job Stories como forma de referência."
+ },
+ "superficies/fundamento.yaml::sections/0/title": {
+  "en": "Product foundation",
+  "pt": "Fundamento de produto"
+ },
+ "superficies/fundamento.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "Everything starts with knowing what must be built and with what authority. The product foundation is the authorized content that says what to build, why, what results it must produce, what conditions it must respect and how you will know it has been met. It is not a new document: it can be found in a PRD, in stories, in rules or in acceptance criteria.",
+  "pt": "Tudo começa por saber o que deve ser construído e com que autoridade. O fundamento de produto é o conteúdo autorizado que diz o que construir, por quê, que resultados deve produzir, que condições respeitar e como se saberá que foi cumprido. Não é um documento novo: pode estar em um PRD, em histórias, em regras ou em critérios de aceitação."
+ },
+ "superficies/fundamento.yaml::sections/1/title": {
+  "en": "Job Stories as a reference form",
+  "pt": "Job Stories como forma de referência"
+ },
+ "superficies/fundamento.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "Job Stories describe progress: when a need arises, what motivates it and what outcome is sought, without anticipating the solution. They are the manifesto's reference form, not an obligation. A foundation may arrive as epics, requirements or journeys, and the method has to respect that form instead of converting it.",
+  "pt": "As Job Stories descrevem o progresso: quando surge uma necessidade, o que a motiva e que resultado se busca, sem antecipar a solução. São a forma de referência do manifesto, não uma obrigação. Um fundamento pode chegar como épicos, requisitos ou jornadas, e o método tem de respeitar essa forma em vez de convertê-la."
+ },
+ "superficies/acerca.yaml::title": {
+  "en": "About",
+  "pt": "Sobre"
+ },
+ "superficies/acerca.yaml::description": {
+  "en": "Origin, authorship, versions, provenance and licenses of the site.",
+  "pt": "Origem, autoria, versões, procedência e licenças do site."
+ },
+ "superficies/acerca.yaml::sections/0/title": {
+  "en": "Origin",
+  "pt": "Origem"
+ },
+ "superficies/acerca.yaml::sections/1/title": {
+  "en": "Influences and sources",
+  "pt": "Influências e fontes"
+ },
+ "superficies/acerca.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "The manifesto takes four ideas from Craft: that form and function belong together; that a tool is measured by the energy and capability it leaves in whoever uses it; that complexity should appear when it is needed; and the *human-first* approach, as against systems that force people to accommodate themselves to their structure. From Jobs to Be Done it retains progress as the higher-level reference, and from Job Stories, the way of carrying that progress into design: circumstance, motivation, outcome and evidence. Sources: [About Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) and [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013).",
+  "pt": "O manifesto reúne quatro ideias da Craft: que forma e função andam juntas; que uma ferramenta se mede pela energia e pela capacidade que deixa em quem a usa; que a complexidade deve aparecer quando é necessária; e a abordagem *human first*, em contraste com sistemas que obrigam as pessoas a se acomodarem à sua estrutura. De Jobs to Be Done, conserva o progresso como referência superior e, das Job Stories, a forma de levá-lo ao design: circunstância, motivação, resultado e evidência. Fontes: [Sobre a Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) e [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
+ },
+ "superficies/acerca.yaml::sections/2/title": {
+  "en": "Authorship and versions",
+  "pt": "Autoria e versões"
+ },
+ "superficies/acerca.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "The manifesto and this site are the work of Damián Acuña. The published text is the core of the manifesto, version 2.1, dated September 2026.\n\nA new version does not silently replace the previous one: what changed is recorded, and the pages that depend on it are reviewed.",
+  "pt": "O manifesto e este site são obra de Damián Acuña. O texto publicado corresponde ao núcleo do manifesto, versão 2.1, de setembro de 2026.\n\nUma versão nova não substitui a anterior em silêncio: registra-se o que mudou e revisam-se as páginas que dependem dela."
+ },
+ "superficies/acerca.yaml::sections/3/title": {
+  "en": "Software Humano and the Manifiesto",
+  "pt": "Software Humano e o Manifiesto"
+ },
+ "superficies/acerca.yaml::sections/3/blocks/0/entrada/text": {
+  "en": "The Manifiesto is the work of Damián Acuña. It is published and looked after by **Software Humano**, the agency that creates digital products under this doctrine and accepts being evaluated against it. Each site has its own job: this one explains, grounds and governs; presenting its offering and its products is Software Humano's job, on its own site. That is why there is no commercial offer here, and why the passages of the core can be read in full only on this site.",
+  "pt": "O Manifiesto é obra de Damián Acuña. Quem o publica e cuida dele é a **Software Humano**, a agência que cria produtos digitais sob esta doutrina e aceita ser avaliada por ela. Cada site tem sua função: este explica, fundamenta e governa; à Software Humano cabe apresentar sua proposta e seus produtos, em seu próprio site. Por isso, aqui não há oferta comercial, e os trechos do núcleo só podem ser lidos na íntegra neste site."
+ },
+ "superficies/acerca.yaml::sections/4/title": {
+  "en": "Where each text comes from",
+  "pt": "De onde vem cada texto"
+ },
+ "superficies/acerca.yaml::sections/4/blocks/0/entrada/text": {
+  "en": "The site distinguishes and labels each kind of content. The **canonical text** is shown exactly as it appears in the manifesto. The **explanations**, **examples** and **tests** are written for the site from an identified passage, which can always be opened. The **translations** keep the reference to the Spanish original, which is the one that holds authority. The **technical status** of the SpecKit adaptation is shown as verified data, with its version and its date.\n\nAll content lives in versioned files: every change is recorded along with who approved it and which languages it affects.",
+  "pt": "O site distingue e rotula cada tipo de conteúdo. O **texto canônico** é mostrado tal como está no manifesto. As **explicações**, os **exemplos** e os **testes** são redigidos para o site a partir de um trecho identificado, que sempre pode ser aberto. As **traduções** mantêm a referência ao original em espanhol, que é o que tem autoridade. O **status técnico** da adaptação ao SpecKit é mostrado como um dado verificado, com sua versão e sua data.\n\nTodo o conteúdo vive em arquivos versionados: cada mudança fica registrada com quem a aprovou e que idiomas ela afeta."
+ },
+ "superficies/acerca.yaml::sections/5/title": {
+  "en": "An independent initiative",
+  "pt": "Uma iniciativa independente"
+ },
+ "superficies/acerca.yaml::sections/5/blocks/0/entrada/text": {
+  "en": "Software Humano has no affiliation with the companies, tools or authors that influenced it. The SpecKit adaptation is an independent reference implementation, not endorsed by GitHub.",
+  "pt": "A Software Humano não tem afiliação com as empresas, ferramentas nem autores que a influenciaram. A adaptação ao SpecKit é uma implementação de referência independente, sem endosso do GitHub."
+ },
+ "superficies/acerca.yaml::sections/6/title": {
+  "en": "Licenses",
+  "pt": "Licenças"
+ },
+ "superficies/acerca.yaml::sections/6/blocks/0/entrada/text": {
+  "en": "| Material | License | What you can do |\n|---|---|---|\n| Text of the core of the manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, translate, adapt and share it, including for commercial purposes, crediting Damián Acuña as the author, linking to the license and indicating whether you made changes |\n| Editorial content of the site: explanations, examples and page texts | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | The same, with the same attribution |\n| Site code | [MIT](https://opensource.org/license/mit) | Use, modify and distribute it, keeping the copyright notice and the license |\n| Method for SpecKit (preset and tools), once published | [MIT](https://opensource.org/license/mit) | The same |\n| The names “Software Humano” and “Manifiesto”, and the logo | Reserved | They are not part of those licenses. An adaptation must not present itself as official, certified or endorsed by Software Humano |",
+  "pt": "| Material | Licença | O que você pode fazer |\n|---|---|---|\n| Texto do núcleo do manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copiá-lo, traduzi-lo, adaptá-lo e compartilhá-lo, inclusive para fins comerciais, citando Damián Acuña como autor, com link para a licença e indicando se você fez alterações |\n| Conteúdo editorial do site: explicações, exemplos e textos de página | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | O mesmo, com a mesma atribuição |\n| Código do site | [MIT](https://opensource.org/license/mit) | Usá-lo, modificá-lo e distribuí-lo mantendo o aviso de copyright e a licença |\n| Método para SpecKit (preset e ferramentas), quando for publicado | [MIT](https://opensource.org/license/mit) | O mesmo |\n| Os nomes “Software Humano” e “Manifiesto”, e o logotipo | Reservados | Não fazem parte dessas licenças. Uma adaptação não deve se apresentar como oficial, certificada nem endossada pela Software Humano |"
+ },
+ "superficies/mapa.yaml::title": {
+  "en": "Manifesto map",
+  "pt": "Mapa do manifesto"
+ },
+ "superficies/mapa.yaml::description": {
+  "en": "The title page of the core, its identifiers and the full path through its nine divisions.",
+  "pt": "A capa do núcleo, seus identificadores e o percurso completo pelas nove divisões."
+ },
+ "superficies/mapa.yaml::sections/0/title": {
+  "en": "The core",
+  "pt": "O núcleo"
+ },
+ "superficies/mapa.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "This is the map of the core of the manifesto. The core is read in nine divisions, in their order: each one brings together complete sections of the original document, without splitting or repeating them. With “Next” you can go through all of it, and from the footer of every page you can download it in full.",
+  "pt": "Este é o mapa do núcleo do manifesto. O núcleo é lido em nove divisões, em sua ordem: cada uma reúne seções completas do documento original, sem dividi-las nem repeti-las. Com “Próximo”, ele é percorrido por inteiro, e no rodapé de cada página é possível baixá-lo completo."
+ },
+ "superficies/mapa.yaml::sections/1/title": {
+  "en": "Index of identifiers",
+  "pt": "Índice de identificadores"
+ },
+ "superficies/mapa.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "Every obligation of the core has a stable identifier, such as `P03`, `CR05` or `STOP02`, that lets you cite it without ambiguity. The table shows their families; on the site, each identifier leads to the division where its passage can be read.",
+  "pt": "Cada obrigação do núcleo tem um identificador estável, como `P03`, `CR05` ou `STOP02`, que permite citá-la sem ambiguidade. A tabela mostra suas famílias; no site, cada identificador leva à divisão onde seu trecho é lido."
+ },
+ "superficies/speckit.yaml::title": {
+  "en": "SpecKit",
+  "pt": "SpecKit"
+ },
+ "superficies/speckit.yaml::description": {
+  "en": "An independent reference implementation of the manifesto on SpecKit, its actual status and its limits.",
+  "pt": "Uma implementação de referência independente do manifesto sobre o SpecKit, seu status real e seus limites."
+ },
+ "superficies/speckit.yaml::sections/0/title": {
+  "en": "What it is and what it is not",
+  "pt": "O que é e o que não é"
+ },
+ "superficies/speckit.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "SpecKit is a specification-driven development tool: it organizes the work into specifying, clarifying, planning, breaking down into tasks, analyzing, implementing and converging. It does not define the manifesto or the product. The Software Humano adaptation uses it so that the doctrine is present while a coding agent works. It is one way of applying the manifesto, not the manifesto itself.",
+  "pt": "O SpecKit é uma ferramenta de desenvolvimento guiado por especificações: organiza o trabalho em especificar, esclarecer, planejar, dividir em tarefas, analisar, implementar e convergir. Não define o manifesto nem o produto. A adaptação Software Humano o usa para que a doutrina esteja presente enquanto um agente de código trabalha. É uma forma de aplicar o manifesto, não o manifesto."
+ },
+ "superficies/speckit.yaml::sections/1/title": {
+  "en": "Four layers, each with its own authority",
+  "pt": "Quatro camadas, cada uma com sua autoridade"
+ },
+ "superficies/speckit.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "- **The core of the manifesto** governs the principles, the flow, the artifacts and the acceptance criteria.\n- **The operational constitution** is the complete core, installed where the agent reads it before each operation. It conditions how the agent acts.\n- **The application annex** defines how each obligation of the core corresponds to a SpecKit operation.\n- **The Software Humano preset, extension and workflow** materialize that correspondence. The preset adds to each operation what the manifesto requires at that point; the extension checks that the artifacts include it; the workflow sets up the gates the manifesto names.\n- **Native SpecKit** keeps its behavior in everything the adaptation does not touch.",
+  "pt": "- **O núcleo do manifesto** governa os princípios, o fluxo, os artefatos e os critérios de aceitação.\n- **A constituição operacional** é o núcleo completo, instalado onde o agente o lê antes de cada operação. Condiciona a atuação dele.\n- **O anexo de aplicação** define como cada obrigação do núcleo corresponde a uma operação do SpecKit.\n- **O preset, a extensão e o workflow Software Humano** materializam essa correspondência. O preset acrescenta a cada operação o que o manifesto exige nela; a extensão verifica se os artefatos contêm isso; o workflow coloca os portões que o manifesto nomeia.\n- **O SpecKit nativo** conserva seu comportamento em tudo o que a adaptação não toca."
+ },
+ "superficies/speckit.yaml::sections/2/title": {
+  "en": "What stays and what changes",
+  "pt": "O que se mantém e o que muda"
+ },
+ "superficies/speckit.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "The native commands keep their description, their chaining and their scripts, and the native checklist remains intact. What changes is the content of the templates: each operation incorporates, quoted verbatim from the core, what the manifesto requires at that moment, and the core's artifacts appear where they belong. None of this requires modifying SpecKit's code.",
+  "pt": "Os comandos nativos mantêm sua descrição, seu encadeamento e seus scripts, e a lista de verificação nativa permanece intacta. O que muda é o conteúdo dos modelos: cada operação incorpora, citado textualmente do núcleo, o que o manifesto exige naquele momento, e os artefatos do núcleo aparecem nos lugares correspondentes. Nada disso exige modificar o código do SpecKit."
+ },
+ "superficies/speckit.yaml::sections/3/title": {
+  "en": "Current status",
+  "pt": "Status atual"
+ },
+ "superficies/gobernanza.yaml::title": {
+  "en": "Governance",
+  "pt": "Governança"
+ },
+ "superficies/gobernanza.yaml::description": {
+  "en": "How to turn the manifesto into everyday practice: responsibilities, control points, evolution and definition of done.",
+  "pt": "Como transformar o manifesto em prática habitual: responsabilidades, pontos de controle, evolução e definição de conclusão."
+ },
+ "superficies/gobernanza.yaml::sections/0/title": {
+  "en": "An everyday practice",
+  "pt": "Uma prática habitual"
+ },
+ "superficies/gobernanza.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "The manifesto loses value if it is confined to an opening presentation. It has to appear where the team makes decisions: each role has a main obligation, and each moment of development—before designing, before generating code, before integrating, before release and afterwards—has a decision that cannot be skipped.",
+  "pt": "O manifesto perde valor se ficar restrito a uma apresentação inicial. Ele tem de aparecer onde o time decide: cada papel tem uma obrigação principal, e cada momento do desenvolvimento — antes de projetar, de gerar código, de integrar, de liberar e depois — tem uma decisão que não pode ser pulada."
+ },
+ "superficies/gobernanza.yaml::sections/1/title": {
+  "en": "How the manifesto changes",
+  "pt": "Como o manifesto muda"
+ },
+ "superficies/gobernanza.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "The principles are stable; the rules and tests may change with new evidence. Each version records what problem it solved and what it keeps from the previous one.",
+  "pt": "Os princípios são estáveis; as regras e os testes podem mudar com evidência nova. Cada versão registra que problema resolveu e o que conserva da anterior."
+ },
+ "superficies/gobernanza.yaml::sections/2/title": {
+  "en": "What done means",
+  "pt": "O que significa concluído"
+ },
+ "superficies/gobernanza.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "A development is done when every mandatory element has an implementation and evidence, or an approved exception, and people achieve the intended outcomes. Correct code is part of that completeness; it is not all of it.",
+  "pt": "Um desenvolvimento está concluído quando cada elemento obrigatório tem implementação e evidência, ou uma exceção aprovada, e as pessoas alcançam os resultados previstos. O código correto faz parte dessa completude; não a esgota."
+ },
+ "superficies/ejemplo.yaml::title": {
+  "en": "Worked example",
+  "pt": "Exemplo aplicado"
+ },
+ "superficies/ejemplo.yaml::description": {
+  "en": "The whole method in one case: a calculus tutor for someone who does not yet understand.",
+  "pt": "O método completo em um caso: um tutor de cálculo para uma pessoa que ainda não entende."
+ },
+ "superficies/ejemplo.yaml::sections/0/title": {
+  "en": "A worked example",
+  "pt": "Um exemplo aplicado"
+ },
+ "superficies/ejemplo.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "A calculus tutor goes through the whole method: from a feature request to the real circumstance, from diagnosis to redesign, and from what must be deterministic to what AI can assist with.",
+  "pt": "Um tutor de cálculo percorre todo o método: do pedido de função à circunstância real, do diagnóstico ao redesenho, e do que deve ser determinista ao que pode ser assistido pela IA."
+ },
+ "superficies/manifiesto.yaml::title": {
+  "en": "The manifesto",
+  "pt": "O manifesto"
+ },
+ "superficies/manifiesto.yaml::description": {
+  "en": "The problem the manifesto sets out to solve, who it is for, how to read it, where the core ends and the text of the manifesto.",
+  "pt": "O problema que o manifesto busca resolver, para quem é, como lê-lo, onde termina o núcleo e o texto do manifesto."
+ },
+ "superficies/manifiesto.yaml::sections/0/title": {
+  "en": "The problem it sets out to solve",
+  "pt": "O problema que ele busca resolver"
+ },
+ "superficies/manifiesto.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "Before proposing anything, the manifesto names the problem: the capacity to build is growing faster than the capacity to decide what deserves to exist. Its central conclusion separates function—what the software makes possible—from experience—how much of that a person can actually put to use.",
+  "pt": "Antes de propor qualquer coisa, o manifesto nomeia o problema: a capacidade de construir cresce mais rápido do que a capacidade de decidir o que merece existir. Sua conclusão central separa a função — o que o software permite fazer — da experiência — quanto disso uma pessoa consegue aproveitar."
+ },
+ "superficies/manifiesto.yaml::sections/1/title": {
+  "en": "Who it is for",
+  "pt": "Para quem é"
+ },
+ "superficies/manifiesto.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "The framework is for products where the user experience influences the outcome, and it is intended for those who make decisions about them: product, design, development and coding agents. It does not prescribe a style, a technology or a delivery method.",
+  "pt": "A estrutura serve para produtos em que a experiência de uso influencia o resultado, e foi pensada para quem decide sobre eles: produto, design, desenvolvimento e agentes de código. Não prescreve estilo, tecnologia nem método de entrega."
+ },
+ "superficies/manifiesto.yaml::sections/2/title": {
+  "en": "Four ways to read it",
+  "pt": "Quatro maneiras de lê-lo"
+ },
+ "superficies/manifiesto.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "The core proposes four reading routes, and the site uses them to group the manifesto's index: **understand** starts here; **decide** brings together the [principles](/principles) and the [product foundation](/manifesto/product-foundation); **build**, the [doctrine, the flow and the agent contract](/manifesto/building-with-ai); **verify**, the [tests and the anti-patterns](/manifesto/verify). Read in order, the divisions reproduce the complete core, which you can also download from the footer of every page.",
+  "pt": "O núcleo propõe quatro rotas de leitura, e o site as usa para agrupar o índice do manifesto: **compreender** começa aqui; **decidir** reúne os [princípios](/pt-br/principios) e o [fundamento de produto](/pt-br/manifesto/fundamento-de-produto); **construir**, a [doutrina, o fluxo e o contrato do agente](/pt-br/manifesto/construir-com-ia); **verificar**, os [testes e os antipadrões](/pt-br/manifesto/verificar). Percorridas em ordem, as divisões reproduzem o núcleo completo, que você também pode baixar no rodapé de cada página."
+ },
+ "superficies/manifiesto.yaml::sections/3/title": {
+  "en": "How the framework is organized",
+  "pt": "Como a estrutura se organiza"
+ },
+ "superficies/manifiesto.yaml::sections/3/blocks/0/entrada/text": {
+  "en": "Each principle is translated into levels that do not replace one another: the principle says what we believe; the product foundation, what must be built; the Job Story, when the need arises; the rule, what it demands; the test, how we know whether it has been met.",
+  "pt": "Cada princípio se traduz em níveis que não se substituem entre si: o princípio diz o que se acredita; o fundamento de produto, o que deve ser construído; a Job Story, quando surge a necessidade; a regra, o que exige; o teste, como se sabe se foi cumprido."
+ },
+ "superficies/manifiesto.yaml::sections/4/title": {
+  "en": "Core and implementation",
+  "pt": "Núcleo e implementação"
+ },
+ "superficies/manifiesto.yaml::sections/4/blocks/0/entrada/text": {
+  "en": "The core sets principles, authorities and criteria; it does not prescribe tools. Carrying it into a particular method or framework is the task of separate annexes and adapters, which cannot modify it. The [SpecKit adaptation](/speckit) is one of them.",
+  "pt": "O núcleo fixa princípios, autoridades e critérios; não prescreve ferramentas. Levá-lo a um método ou a um framework específico cabe a anexos e adaptadores separados, que não podem modificá-lo. A [adaptação para o SpecKit](/pt-br/speckit) é um deles."
+ },
+ "superficies/manifiesto.yaml::sections/5/title": {
+  "en": "The text of the manifesto",
+  "pt": "O texto do manifesto"
+ },
+ "superficies/manifiesto.yaml::sections/5/blocks/0/entrada/text": {
+  "en": "The manifesto's stance can be read in a few minutes. Everything else—the principles, the method, the verification—develops what these paragraphs state.",
+  "pt": "A postura do manifesto cabe em poucos minutos de leitura. Todo o resto — os princípios, o método, a verificação — desenvolve o que estes parágrafos afirmam."
+ },
+ "superficies/verificar.yaml::title": {
+  "en": "Verify",
+  "pt": "Verificar"
+ },
+ "superficies/verificar.yaml::description": {
+  "en": "Twelve dimensions for accepting a solution, a decision scorecard and the signs that the product is drifting away from the manifesto.",
+  "pt": "Doze dimensões para aceitar uma solução, uma pontuação de decisão e os sinais de que o produto se afasta do manifesto."
+ },
+ "superficies/verificar.yaml::sections/0/title": {
+  "en": "Twelve dimensions for accepting a solution",
+  "pt": "Doze dimensões para aceitar uma solução"
+ },
+ "superficies/verificar.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "Acceptance requires evidence. A screen that looks clean, or code that compiles, does not demonstrate that the product fulfills its purpose: coverage, progress, understanding, burden, trust, control and states are verified too.",
+  "pt": "Aceitar exige evidência. Uma tela parecer limpa ou o código compilar não demonstra que o produto cumpre seu propósito: a cobertura, o progresso, a compreensão, a carga, a confiança, o controle e os estados também são verificados."
+ },
+ "superficies/verificar.yaml::sections/1/title": {
+  "en": "A score to guide the conversation",
+  "pt": "Uma pontuação para orientar a conversa"
+ },
+ "superficies/verificar.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "Eleven criteria are scored from 0 to 2. The score does not replace judgment: it gives the conversation an order and flags what cannot be left at zero.",
+  "pt": "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o julgamento: organiza a conversa e marca o que não pode ficar em zero."
+ },
+ "superficies/verificar.yaml::sections/2/title": {
+  "en": "Questions for a product review",
+  "pt": "Perguntas para uma revisão de produto"
+ },
+ "superficies/verificar.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "Eleven questions for reviewing a product decision, including the hardest one: what would make you reject an implementation even though it technically works.",
+  "pt": "Onze perguntas para revisar uma decisão de produto, inclusive a mais difícil: o que faria rejeitar uma implementação ainda que ela funcione tecnicamente."
+ },
+ "superficies/verificar.yaml::sections/3/title": {
+  "en": "Signs that the product is drifting away",
+  "pt": "Sinais de que o produto se afasta"
+ },
+ "superficies/verificar.yaml::sections/3/blocks/0/entrada/text": {
+  "en": "Fourteen anti-patterns, each with how it shows up and its response, and a warning: simplicity can also be an excuse for hiding what is necessary.",
+  "pt": "Catorze antipadrões, cada um com a forma como aparece e sua resposta, e uma advertência: a simplicidade também pode ser uma desculpa para ocultar o necessário."
+ },
+ "superficies/principios.yaml::title": {
+  "en": "Principles",
+  "pt": "Princípios"
+ },
+ "superficies/principios.yaml::description": {
+  "en": "The ten principles of the manifesto, in their canonical order.",
+  "pt": "Os dez princípios do manifesto, em sua ordem canônica."
+ },
+ "superficies/principios.yaml::sections/0/title": {
+  "en": "Ten principles for deciding",
+  "pt": "Dez princípios para decidir"
+ },
+ "superficies/inicio.yaml::title": {
+  "en": "Manifiesto",
+  "pt": "Manifiesto"
+ },
+ "superficies/inicio.yaml::description": {
+  "en": "Why more capacity to build software does not guarantee more progress for people, and what to do about it.",
+  "pt": "Por que mais capacidade de construir software não garante mais progresso para as pessoas, e o que fazer a respeito."
+ },
+ "superficies/inicio.yaml::hero/title": {
+  "en": "Building used to be expensive. That forced a choice.",
+  "pt": "Antes, construir era caro. Isso obrigava a escolher."
+ },
+ "superficies/inicio.yaml::hero/text": {
+  "en": "Today, adding one more option takes minutes, and the question of whether it is worth it gets easier and easier to skip. The Software Humano Manifesto puts that question back and gives it a place in the process where it cannot be skipped.",
+  "pt": "Hoje, acrescentar mais uma opção custa minutos, e a pergunta sobre se vale a pena é cada vez mais fácil de pular. O Manifiesto de Software Humano recoloca essa pergunta e lhe dá um lugar no processo onde ela não pode ser pulada."
+ },
+ "superficies/inicio.yaml::sections/0/title": {
+  "en": "Building software keeps getting easier",
+  "pt": "Construir software está cada vez mais fácil"
+ },
+ "superficies/inicio.yaml::sections/0/question": {
+  "en": "If building is no longer the main constraint, what constrains quality now?",
+  "pt": "Se construir deixou de ser o principal limite, o que passa a limitar a qualidade?"
+ },
+ "superficies/inicio.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "Artificial intelligence has reduced the cost of generating code, screens, text and automations. Small teams now build products that once required entire organizations, and a good decision can reach people in days.\n\nThat speed is a real opportunity. It also moves the limit: when building stops being the hard part, the hard part becomes deciding what deserves to exist and how it should feel to use.",
+  "pt": "A inteligência artificial reduziu o custo de gerar código, telas, textos e automações. Times pequenos constroem hoje produtos que antes exigiam organizações inteiras, e uma boa decisão pode chegar às mãos das pessoas em dias.\n\nEssa velocidade é uma oportunidade real. Ela também desloca o limite: quando construir deixa de ser o difícil, o difícil passa a ser decidir o que merece existir e como deve ser a sensação de usá-lo."
+ },
+ "superficies/inicio.yaml::sections/1/title": {
+  "en": "Being able to build does not mean you should",
+  "pt": "Poder construir não significa dever construir"
+ },
+ "superficies/inicio.yaml::sections/1/blocks/0/entrada/text": {
+  "en": "Building software has become cheaper. The cost did not disappear: it passed to whoever uses it. It is paid in attention, in learning and in decisions nobody came to make.\n\nWhen building is cheap, a weak idea quickly becomes an extensive implementation, and a product ambiguity becomes behavior that looks done. The code can be correct and still leave the person with the complexity the team did not resolve.",
+  "pt": "Construir software ficou mais barato. O custo não desapareceu: passou para quem o usa. Ele é pago em atenção, em aprendizado e em decisões que ninguém veio tomar.\n\nQuando construir é barato, uma ideia fraca se transforma rapidamente em uma implementação extensa, e uma ambiguidade de produto, em um comportamento que parece concluído. O código pode estar correto e, ainda assim, deixar nas mãos da pessoa a complexidade que o time não resolveu."
+ },
+ "superficies/inicio.yaml::sections/1/blocks/1/sistema/text": {
+  "en": "**System-centered response.** When a form is submitted with a missing field, the page reloads, wipes what was typed and shows “Validation error” at the top. The system did its job: it rejected incomplete data. The person using it has to guess what was missing and type everything again.",
+  "pt": "**Resposta centrada no sistema.** Ao enviar um formulário com um dado faltando, a página recarrega, apaga o que foi digitado e mostra no topo “Erro de validação”. O sistema cumpriu sua função: rejeitou um dado incompleto. Quem o usa tem de adivinhar o que faltou e digitar tudo de novo."
+ },
+ "superficies/inicio.yaml::sections/1/blocks/1/persona/text": {
+  "en": "**Person-centered response.** The form keeps what was typed, points out next to the field what is missing and explains what is expected. The validation rule is the same; what changes is how much work falls on the person using it.",
+  "pt": "**Resposta centrada na pessoa.** O formulário conserva o que foi digitado, indica ao lado do campo o que falta e explica o que se espera. A regra de validação é a mesma; o que muda é quanto trabalho recai sobre quem o usa."
+ },
+ "superficies/inicio.yaml::sections/2/title": {
+  "en": "Human progress is the product",
+  "pt": "O progresso humano é o produto"
+ },
+ "superficies/inicio.yaml::sections/2/blocks/0/entrada/text": {
+  "en": "The thesis fits into a single idea: the product is not the software, but the progress a person achieves with it. That is why experience is not a finish added at the end; it is part of the function.\n\nA system that delivers the correct result but forces people to interpret the interface, remember conventions or fear making a mistake has not yet solved the problem. It has only moved it.",
+  "pt": "A tese cabe em uma ideia: o produto não é o software, e sim o progresso que uma pessoa alcança com ele. Por isso, a experiência não é um acabamento acrescentado no final; ela faz parte da função.\n\nUm sistema que entrega o resultado correto, mas obriga a interpretar a interface, lembrar convenções ou temer errar, ainda não resolveu o problema. Apenas o transferiu."
+ },
+ "superficies/inicio.yaml::sections/3/title": {
+  "en": "Ten principles for deciding",
+  "pt": "Dez princípios para decidir"
+ },
+ "superficies/inicio.yaml::sections/3/blocks/0/entrada/text": {
+  "en": "The principles are not aspirations. Each one must be able to change a decision, stop an implementation or require more evidence; if a sentence has no practical consequences, it serves no function. Each principle has its own page, with its tension, its meaning, an example, a counterexample and the questions for using it in a real review.",
+  "pt": "Os princípios não são aspirações. Cada um tem de ser capaz de mudar uma decisão, parar uma implementação ou exigir mais evidência; se uma frase não tem consequências práticas, não cumpre função alguma. Cada princípio tem sua própria página, com sua tensão, seu significado, um exemplo, um contraexemplo e as perguntas para usá-lo em uma revisão real."
+ },
+ "superficies/inicio.yaml::sections/4/title": {
+  "en": "From principle to decision",
+  "pt": "Do princípio à decisão"
+ },
+ "superficies/inicio.yaml::sections/4/blocks/0/entrada/text": {
+  "en": "A principle is useful when it changes what gets done. There are three ways it can act on a concrete decision.",
+  "pt": "Um princípio serve quando muda o que se faz. Há três formas de ele atuar sobre uma decisão concreta."
+ },
+ "superficies/inicio.yaml::sections/4/blocks/1/entrada/text": {
+  "en": "**It changes a decision.** A home screen presents five actions with equal weight. With `P06` on the table, the question is what the person needs at that moment: one primary action remains, and the rest appear where the context makes them relevant.",
+  "pt": "**Muda uma decisão.** Uma tela inicial apresenta cinco ações com o mesmo peso. Com `P06` na mesa, a pergunta é do que a pessoa precisa naquele momento: fica uma ação principal, e o resto aparece onde o contexto o torna relevante."
+ },
+ "superficies/inicio.yaml::sections/4/blocks/2/entrada/text": {
+  "en": "**It requires evidence.** A story says “As a student I want to receive hints so that I can solve derivatives”. With `P01`, the question is when the blockage arises and how progress would be recognized. Until an observation backs it up, the story is a hypothesis to be tested, not a requirement.",
+  "pt": "**Exige evidência.** Uma história diz “como estudante, quero receber dicas para resolver derivadas”. Com `P01`, a pergunta é quando surge o bloqueio e como o avanço seria reconhecido. Enquanto não houver uma observação que a sustente, a história é uma hipótese a ser comprovada, não um requisito."
+ },
+ "superficies/inicio.yaml::sections/4/blocks/3/entrada/text": {
+  "en": "**It stops an implementation.** An assistant rewrites texts and publishes them without a preview. With `P10`, the implementation stops until the person can review, accept or reject the change before it is published.",
+  "pt": "**Interrompe uma implementação.** Um assistente reescreve textos e os publica sem visualização prévia. Com `P10`, a implementação é interrompida até que a pessoa possa revisar, aceitar ou rejeitar a mudança antes que ela seja publicada."
+ },
+ "superficies/inicio.yaml::sections/4/blocks/4/sistema/text": {
+  "en": "**Without the principle.** A coding agent finishes a task and replies “done”. To find out what changed, you have to review everything and trust its tone.",
+  "pt": "**Sem o princípio.** Um agente de código termina uma tarefa e responde “pronto”. Para saber o que mudou, é preciso revisar tudo e confiar no tom dele."
+ },
+ "superficies/inicio.yaml::sections/4/blocks/4/persona/text": {
+  "en": "**With the principle.** The agent shows which files it changed, what it decided on its own and how to undo it. Trust rests on evidence, not on tone.",
+  "pt": "**Com o princípio.** O agente mostra que arquivos alterou, o que decidiu por conta própria e como desfazer. A confiança se apoia em evidência, não no tom."
+ },
+ "superficies/inicio.yaml::sections/5/title": {
+  "en": "From doctrine to development",
+  "pt": "Da doutrina ao desenvolvimento"
+ },
+ "superficies/inicio.yaml::sections/5/blocks/0/entrada/text": {
+  "en": "The principles become practice through a method: a product foundation with authority, Job Stories as a reference form, an eight-step flow, artifacts that exist only if they answer a question, a contract for coding agents, explicit reasons to stop and a definition of done that is not satisfied by correct code alone.\n\n[See how to build with AI](/manifesto/building-with-ai).",
+  "pt": "Os princípios se tornam prática em um método: um fundamento de produto com autoridade, as Job Stories como forma de referência, um fluxo de oito passos, artefatos que só existem se responderem a uma pergunta, um contrato para agentes de código, razões explícitas para parar e uma definição de conclusão que não se contenta com código correto.\n\n[Ver como se constrói com IA](/pt-br/manifesto/construir-com-ia)."
+ },
+ "superficies/inicio.yaml::sections/6/title": {
+  "en": "An implementation through SpecKit",
+  "pt": "Uma implementação por meio do SpecKit"
+ },
+ "superficies/inicio.yaml::sections/6/blocks/0/entrada/text": {
+  "en": "The manifesto can be applied with any method. A reference implementation brings it to SpecKit: the core governs an operational constitution, that constitution conditions the coding agent, and SpecKit, adapted without modifying its code, organizes the specification, the plan, the tasks, the analysis and the implementation. [How the adaptation works](/speckit).",
+  "pt": "O manifesto pode ser aplicado com qualquer método. Uma implementação de referência o leva ao SpecKit: o núcleo governa uma constituição operacional, essa constituição condiciona o agente de código, e o SpecKit, adaptado sem modificar seu código, organiza a especificação, o plano, as tarefas, a análise e a implementação. [Como a adaptação funciona](/pt-br/speckit)."
+ },
+ "superficies/inicio.yaml::sections/6/blocks/2/entrada/text": {
+  "en": "To continue: [read the full manifesto](/manifesto), [go through the principles](/principles), [see how to build with AI](/manifesto/building-with-ai) or [check the status of the adaptation](/speckit).",
+  "pt": "Para continuar: [ler o manifesto completo](/pt-br/manifesto), [percorrer os princípios](/pt-br/principios), [ver como se constrói com IA](/pt-br/manifesto/construir-com-ia) ou [conhecer o status da adaptação](/pt-br/speckit)."
+ },
+ "superficies/bolsillo.yaml::title": {
+  "en": "Pocket guide",
+  "pt": "Guia de bolso"
+ },
+ "superficies/bolsillo.yaml::description": {
+  "en": "Fourteen questions before accepting a decision, seven reasons to stop and the manifesto’s closing statement.",
+  "pt": "Catorze perguntas antes de aceitar uma decisão, sete razões para parar e a declaração final do manifesto."
+ },
+ "superficies/bolsillo.yaml::sections/0/title": {
+  "en": "Pocket guide",
+  "pt": "Guia de bolso"
+ },
+ "superficies/bolsillo.yaml::sections/0/blocks/0/entrada/text": {
+  "en": "To keep at hand: fourteen questions before accepting a decision, seven reasons to stop an implementation and three sentences that protect judgment.",
+  "pt": "Para ter à mão: catorze perguntas antes de aceitar uma decisão, sete razões para parar uma implementação e três frases que protegem o critério."
+ },
+ "superficies/bolsillo.yaml::sections/1/title": {
+  "en": "Closing statement",
+  "pt": "Declaração final"
+ },
+ "principios/p01.yaml::entries/tension/text": {
+  "en": "A team can deliver a great many features and resolve very little. When work is organized around features or generic profiles, nobody has to explain what changes for the person after using the product.",
+  "pt": "Um time pode entregar muitas funcionalidades e resolver pouco. Quando o trabalho se organiza por features ou por perfis genéricos, ninguém precisa explicar o que muda para a pessoa depois de usar o produto."
+ },
+ "principios/p01.yaml::entries/significado/text": {
+  "en": "A capability matters only when it produces a recognizable change for someone: moving from a current situation to a desired outcome. Before designing a response, we describe when the need arises, what motivates it and what outcome would make progress recognizable.",
+  "pt": "Uma capacidade só importa quando produz uma mudança reconhecível para alguém: passar de uma situação atual para um resultado buscado. Antes de projetar uma resposta, descreve-se quando surge a necessidade, o que a motiva e que resultado permitiria reconhecer o avanço."
+ },
+ "principios/p01.yaml::entries/consecuencia/text": {
+  "en": "Every decision must be traceable back to the product foundation that justifies it. A feature request is reformulated as circumstance, motivation and outcome before solutions are discussed, and that formulation admits more than one response, including not building.",
+  "pt": "Cada decisão tem de poder ser rastreada até o fundamento de produto que a justifica. Um pedido de funcionalidade é reformulado como circunstância, motivação e resultado antes de se discutirem soluções, e essa formulação admite mais de uma resposta, inclusive a de não construir."
+ },
+ "principios/p01.yaml::entries/ejemplo/text": {
+  "en": "A request arrives as “add an export button”. Reformulated, it reads: when someone has to present their data to another person, they need to take it out of the tool without redoing the work. That formulation admits a button, a sharing link or an automatic report, and makes it possible to choose the response that adds the least burden.",
+  "pt": "Um pedido chega como “adicionar um botão de exportar”. Reformulado, ele diz: quando alguém tem de apresentar seus dados a outra pessoa, precisa levá-los para fora da ferramenta sem refazer o trabalho. Essa formulação admite um botão, um link para compartilhar ou um relatório automático, e permite escolher a resposta que acrescenta menos carga."
+ },
+ "principios/p01.yaml::entries/contraejemplo/text": {
+  "en": "Describing a site as a collection of pages or effects. The list of what it contains does not say what understanding or capability the person going through it gains.",
+  "pt": "Descrever um site como uma coleção de páginas ou de efeitos. A lista do que ele contém não diz que compreensão ou capacidade obtém quem o percorre."
+ },
+ "principios/p01.yaml::entries/prueba/text": {
+  "en": "A decision is ready when these questions are answered with evidence, not with intuition.",
+  "pt": "Uma decisão está pronta quando estas perguntas são respondidas com evidência, não com intuição."
+ },
+ "principios/p06.yaml::entries/tension/text": {
+  "en": "Menus, alerts, animations, choices and text compete for the same attention, which is finite. An interface can be free of errors and still fail through saturation.",
+  "pt": "Menus, alertas, animações, escolhas e textos competem pela mesma atenção, que é finita. Uma interface pode não ter erros e ainda assim fracassar por saturação."
+ },
+ "principios/p06.yaml::entries/significado/text": {
+  "en": "Attention is managed with the same discipline as performance or cost: every visible element and every decision requested must justify what it consumes.",
+  "pt": "A atenção é administrada com a mesma disciplina que o desempenho ou o custo: cada elemento visível e cada decisão solicitada têm de justificar o que consomem."
+ },
+ "principios/p06.yaml::entries/consecuencia/text": {
+  "en": "Hierarchy is established by relevance to the current moment, not by treating all features as equal. Strong signals are reserved for what genuinely requires attention.",
+  "pt": "Hierarquiza-se por relevância para o momento atual, não por igualdade entre funcionalidades. Os sinais intensos são reservados para o que de fato exige atenção."
+ },
+ "principios/p06.yaml::entries/ejemplo/text": {
+  "en": "A page with one dominant idea per section and a single primary action makes it clear what to do next, without asking the person to sort options the product could have sorted.",
+  "pt": "Uma página com uma ideia dominante por seção e uma única ação principal deixa claro o que fazer em seguida, sem pedir que a pessoa ordene opções que o produto podia ordenar."
+ },
+ "principios/p06.yaml::entries/contraejemplo/text": {
+  "en": "Continuous animations, simultaneous calls to action with equal weight, or backgrounds that reduce the legibility of the text.",
+  "pt": "Animações contínuas, chamadas simultâneas com o mesmo peso ou fundos que reduzem a legibilidade do texto."
+ },
+ "principios/p06.yaml::entries/prueba/text": {
+  "en": "These questions help decide what can be removed without losing information or control.",
+  "pt": "Estas perguntas ajudam a decidir o que pode ser retirado sem perder informação nem controle."
+ },
+ "principios/p10.yaml::entries/tension/text": {
+  "en": "Automation without human agency can accelerate the wrong path. When assistance decides silently or locks information away, the person loses control of their own work.",
+  "pt": "A automação sem agência humana pode acelerar o caminho errado. Quando a ajuda decide em silêncio ou retém a informação, a pessoa perde o controle do próprio trabalho."
+ },
+ "principios/p10.yaml::entries/significado/text": {
+  "en": "Software can anticipate, recommend and automate without hiding decisions, locking information away or preventing alternatives. With AI, control includes knowing what information was used and what action was carried out.",
+  "pt": "O software pode antecipar, recomendar e automatizar sem ocultar decisões, reter informação nem impedir alternativas. Com IA, o controle inclui saber que informação foi usada e que ação foi executada."
+ },
+ "principios/p10.yaml::entries/consecuencia/text": {
+  "en": "Confirmation is requested in proportion to the impact. You can review, edit, export and revert where the domain permits it, and authorization, recommendation and execution are kept separate.",
+  "pt": "A confirmação é pedida na proporção do impacto. É possível revisar, editar, exportar e reverter quando o domínio permite, e autorização, recomendação e execução são separadas."
+ },
+ "principios/p10.yaml::entries/ejemplo/text": {
+  "en": "On this site you can read without an imposed order, copy any passage and share a stable address, without creating an account or handing over any data.",
+  "pt": "Neste site, é possível ler sem uma ordem imposta, copiar qualquer trecho e compartilhar um endereço estável, sem criar uma conta nem fornecer dados."
+ },
+ "principios/p10.yaml::entries/contraejemplo/text": {
+  "en": "Hijacking page scrolling, playing audio without being asked, requiring registration or preventing access to the full text.",
+  "pt": "Sequestrar a rolagem da página, reproduzir áudio sem que ninguém tenha pedido, exigir cadastro ou impedir o acesso ao texto completo."
+ },
+ "principios/p10.yaml::entries/prueba/text": {
+  "en": "These questions check that assistance does not turn into appropriation.",
+  "pt": "Estas perguntas verificam que a ajuda não se transforme em apropriação."
+ },
+ "principios/p07.yaml::entries/tension/text": {
+  "en": "Uncertainty holds action back. With AI, moreover, a fluent response can conceal its limits and make it hard to tell a fact from an inference.",
+  "pt": "A incerteza freia a ação. Com IA, além disso, uma resposta fluente pode ocultar seus limites e dificultar distinguir um fato de uma inferência."
+ },
+ "principios/p07.yaml::entries/significado/text": {
+  "en": "Trust is not promised: it arises from predictable behavior. The product shows its state, anticipates consequences, confirms results and offers a way to recover.",
+  "pt": "A confiança não se promete: surge de um comportamento previsível. O produto mostra seu estado, antecipa consequências, confirma resultados e oferece uma forma de se recuperar."
+ },
+ "principios/p07.yaml::entries/consecuencia/text": {
+  "en": "Recommendations, automatic decisions and confirmed results are clearly distinguished. Before an irreversible action, the person knows what will change and, where reasonable, can undo it or return to a safe state.",
+  "pt": "Recomendações, decisões automáticas e resultados confirmados são diferenciados com clareza. Antes de uma ação irreversível, a pessoa sabe o que vai mudar e, quando é razoável, pode desfazer ou voltar a um estado seguro."
+ },
+ "principios/p07.yaml::entries/ejemplo/text": {
+  "en": "This site labels each block according to what it is—canonical text, explanation, example or technical status—so that whoever is reading knows what they are citing.",
+  "pt": "Este site rotula cada bloco de acordo com o que ele é — texto canônico, explicação, exemplo ou status técnico — para que quem lê saiba o que está citando."
+ },
+ "principios/p07.yaml::entries/contraejemplo/text": {
+  "en": "Presenting an independent adaptation as official, published or endorsed by a company that does not endorse it.",
+  "pt": "Apresentar uma adaptação independente como oficial, publicada ou endossada por uma empresa que não a endossa."
+ },
+ "principios/p07.yaml::entries/prueba/text": {
+  "en": "These questions check whether trust rests on evidence or on tone.",
+  "pt": "Estas perguntas verificam se a confiança se apoia em evidência ou no tom."
+ },
+ "principios/p08.yaml::entries/tension/text": {
+  "en": "Nobody separates interface, engineering and content: people experience a complete product. One small inconsistency is tolerated; a hundred turn use into constant friction.",
+  "pt": "Ninguém separa a interface, a engenharia e o conteúdo: o que se experimenta é um produto completo. Uma inconsistência pequena é tolerada; cem transformam o uso em atrito constante."
+ },
+ "principios/p08.yaml::entries/significado/text": {
+  "en": "Typography, wording, focus, empty states, errors and transitions form a single experience. No detail compensates on its own for a poor solution, but their accumulation reinforces or erodes trust.",
+  "pt": "Tipografia, textos, foco, estados vazios, erros e transições formam uma única experiência. Nenhum detalhe compensa sozinho uma solução ruim, mas o acúmulo deles reforça ou corrói a confiança."
+ },
+ "principios/p08.yaml::entries/consecuencia/text": {
+  "en": "The less frequent states are designed and verified too: empty, loading, error, success and recovery. Language, hierarchy and behavior stay consistent throughout the journey, and the product is reviewed with real content before it is approved.",
+  "pt": "Também são projetados e verificados os estados menos frequentes: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento se mantêm em todo o percurso, e revisa-se com conteúdo real antes de aprovar."
+ },
+ "principios/p08.yaml::entries/ejemplo/text": {
+  "en": "A shared link opens exactly the section cited, in the chosen language. Nobody notices when it works; everyone notices when it fails.",
+  "pt": "Um link compartilhado abre exatamente a seção citada e no idioma escolhido. Ninguém percebe quando funciona; todos percebem quando falha."
+ },
+ "principios/p08.yaml::entries/contraejemplo/text": {
+  "en": "Treating errors, loading, small screens or the keyboard as finishing touches to be sorted out later.",
+  "pt": "Tratar os erros, o carregamento, as telas pequenas ou o teclado como acabamentos que se resolvem depois."
+ },
+ "principios/p08.yaml::entries/prueba/text": {
+  "en": "These questions look for the details that contradict the logic of the rest.",
+  "pt": "Estas perguntas buscam os detalhes que contradizem a lógica do restante."
+ },
+ "principios/p04.yaml::entries/tension/text": {
+  "en": "A minimal product can be easy on day one and limiting on day ten. One that displays all of its power from the outset can be unapproachable. Both extremes fail, for opposite reasons.",
+  "pt": "Um produto mínimo pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser inabordável. Os dois extremos falham, por razões opostas."
+ },
+ "principios/p04.yaml::entries/significado/text": {
+  "en": "Simplicity does not reduce capability: it decides when that capability appears. What is visible adapts to the moment, the level of experience and the decision at hand, and depth remains available without being imposed.",
+  "pt": "A simplicidade não reduz a capacidade: decide quando ela aparece. O que está visível se adapta ao momento, à experiência e à decisão atual, e a profundidade fica disponível sem se impor."
+ },
+ "principios/p04.yaml::entries/consecuencia/text": {
+  "en": "The main route is shown first; advanced options appear when the context makes them relevant. Defaults are chosen with care and can be changed where the decision matters.",
+  "pt": "Primeiro se mostra o caminho principal; as opções avançadas aparecem quando o contexto as torna relevantes. Os valores padrão são escolhidos com cuidado e podem ser alterados quando a decisão importa."
+ },
+ "principios/p04.yaml::entries/ejemplo/text": {
+  "en": "Each principle on this site can be understood on its own page without opening anything; anyone who wants the full text, the rules or the tests finds them one step away, in the same place.",
+  "pt": "Cada princípio deste site é compreendido em sua página sem abrir nada; quem quer o texto completo, as regras ou os testes os encontra a um passo, no mesmo lugar."
+ },
+ "principios/p04.yaml::entries/contraejemplo/text": {
+  "en": "A minimal front page that hides the content, or a home page that shows everything at once.",
+  "pt": "Uma capa mínima que oculta o conteúdo, ou uma página inicial que mostra tudo de uma vez."
+ },
+ "principios/p04.yaml::entries/prueba/text": {
+  "en": "These questions distinguish simplification that removes noise from simplification that removes capability.",
+  "pt": "Estas perguntas distinguem a simplificação que tira ruído da que tira capacidade."
+ },
+ "principios/p05.yaml::entries/tension/text": {
+  "en": "Every custom convention that has to be memorized consumes the capacity the person needed for their real problem. In infrequently used products, or those with difficult content, that burden is especially damaging.",
+  "pt": "Cada convenção própria que é preciso memorizar consome a capacidade de que a pessoa precisava para seu problema real. Em produtos de uso pouco frequente, ou com conteúdo difícil, essa carga é especialmente danosa."
+ },
+ "principios/p05.yaml::entries/significado/text": {
+  "en": "The interface builds on familiar expectations, an understandable hierarchy and immediate feedback. People come to do their work, not to learn the team's.",
+  "pt": "A interface se apoia em expectativas conhecidas, hierarquia compreensível e resposta imediata. Quem chega veio fazer seu trabalho, não aprender o do time."
+ },
+ "principios/p05.yaml::entries/consecuencia/text": {
+  "en": "Known patterns are preferred where they solve the problem well. The primary action, the current state and the next possible step must be evident without a prior tutorial.",
+  "pt": "Padrões conhecidos são preferidos quando resolvem bem o problema. A ação principal, o estado atual e o próximo passo possível têm de ser evidentes sem um tutorial prévio."
+ },
+ "principios/p05.yaml::entries/ejemplo/text": {
+  "en": "Navigation that names each destination by what it contains (“Manifesto”, “Principles”, “Application”) lets people choose without having gone through anything first.",
+  "pt": "Uma navegação que nomeia cada destino pelo que ele contém (“Manifesto”, “Princípios”, “Aplicação”) permite escolher sem ter percorrido nada antes."
+ },
+ "principios/p05.yaml::entries/contraejemplo/text": {
+  "en": "Forcing people to work out how to move forward, or to interpret hidden gestures, before they can read.",
+  "pt": "Obrigar a descobrir como avançar, ou a interpretar gestos ocultos, antes de poder ler."
+ },
+ "principios/p05.yaml::entries/prueba/text": {
+  "en": "These questions detect the learning that the interface adds without the problem calling for it.",
+  "pt": "Estas perguntas detectam o aprendizado que a interface acrescenta sem que o problema o exija."
+ },
+ "principios/p09.yaml::entries/tension/text": {
+  "en": "Slowness changes behavior: it produces repeated clicks, hesitation and abandonment. Losing progress forces people to rebuild context and destroys trust very quickly.",
+  "pt": "A lentidão muda o comportamento: provoca cliques repetidos, dúvidas e abandono. Perder um avanço obriga a reconstruir o contexto e destrói a confiança muito rapidamente."
+ },
+ "principios/p09.yaml::entries/significado/text": {
+  "en": "Latency, availability and preservation of work are properties of the experience. Whoever uses the product does not distinguish between infrastructure and interface when something is slow or gets lost.",
+  "pt": "Latência, disponibilidade e preservação do trabalho são propriedades da experiência. Quem usa o produto não distingue infraestrutura de interface quando algo demora ou se perde."
+ },
+ "principios/p09.yaml::entries/consecuencia/text": {
+  "en": "Critical interactions have explicit response budgets. If an operation may take time, honest progress is shown, and work is saved at a frequency proportionate to the cost of losing it.",
+  "pt": "As interações críticas têm orçamentos de resposta explícitos. Se uma operação pode demorar, mostra-se progresso honesto, e o trabalho é salvo com uma frequência proporcional ao custo de perdê-lo."
+ },
+ "principios/p09.yaml::entries/ejemplo/text": {
+  "en": "The content of this site arrives as text before any script runs; if a script fails, reading carries on.",
+  "pt": "O conteúdo deste site chega como texto antes que qualquer script seja executado; se um script falhar, a leitura continua."
+ },
+ "principios/p09.yaml::entries/contraejemplo/text": {
+  "en": "Blocking reading until an animation finishes or until fonts and heavy resources have downloaded.",
+  "pt": "Bloquear a leitura até que termine uma animação ou até que sejam baixados fontes e recursos pesados."
+ },
+ "principios/p09.yaml::entries/prueba/text": {
+  "en": "These questions treat time and continuity as part of what is delivered.",
+  "pt": "Estas perguntas tratam o tempo e a continuidade como parte do que é entregue."
+ },
+ "principios/p02.yaml::entries/tension/text": {
+  "en": "Two products can deliver the same result and leave their users in very different states: one with energy to carry on, the other with doubts, errors and the urge to give up. That wear rarely appears in a technical specification.",
+  "pt": "Dois produtos podem entregar o mesmo resultado e deixar seus usuários em estados muito diferentes: um com energia para continuar, outro com dúvidas, erros e vontade de desistir. Esse desgaste raramente aparece em uma especificação técnica."
+ },
+ "principios/p02.yaml::entries/significado/text": {
+  "en": "The result of a product includes how much effort, uncertainty and attention it demands in order to obtain it. If something works but wears you down, it does not yet work well.",
+  "pt": "O resultado de um produto inclui quanto esforço, incerteza e atenção ele exige para ser obtido. Se algo funciona mas desgasta, ainda não funciona bem."
+ },
+ "principios/p02.yaml::entries/consecuencia/text": {
+  "en": "Effort, clarity and trust are part of the acceptance criteria, just as accuracy is. The complete journey is tested, not each screen separately.",
+  "pt": "Esforço, clareza e confiança entram nos critérios de aceitação, assim como a exatidão. Testa-se o percurso completo, e não cada tela separadamente."
+ },
+ "principios/p02.yaml::entries/ejemplo/text": {
+  "en": "Two search engines return the same results. One immediately shows why each result matches; the other forces you to open them one by one to find out. Both are accurate; only one saves you the work of verifying.",
+  "pt": "Dois buscadores retornam os mesmos resultados. Um mostra imediatamente por que cada resultado corresponde à busca; o outro obriga a abri-los um por um para saber. Os dois são exatos; só um poupa o trabalho de verificar."
+ },
+ "principios/p02.yaml::entries/contraejemplo/text": {
+  "en": "Considering a requirement met because all the text is technically available, even though reaching it means struggling with the navigation, the typography or the motion.",
+  "pt": "Dar um requisito por cumprido porque todo o texto está tecnicamente disponível, ainda que chegar até ele exija lutar com a navegação, a tipografia ou o movimento."
+ },
+ "principios/p02.yaml::entries/prueba/text": {
+  "en": "These questions measure what a technical test does not see: the cost of using the product.",
+  "pt": "Estas perguntas medem o que um teste técnico não vê: o custo de usar o produto."
+ },
+ "principios/p03.yaml::entries/tension/text": {
+  "en": "When the interface mirrors the architecture, the person has to learn how the product was built before getting anything from it. That transfer seems inevitable only because it is convenient for the team.",
+  "pt": "Quando a interface replica a arquitetura, a pessoa precisa aprender como o produto foi construído antes de obter algo dele. Essa transferência só parece inevitável porque é conveniente para o time."
+ },
+ "principios/p03.yaml::entries/significado/text": {
+  "en": "The domain may require rules, integrations and exceptions. The team absorbs that complexity and presents it as understandable decisions; internal tables and states do not dictate the language or the navigation.",
+  "pt": "O domínio pode exigir regras, integrações e exceções. O time absorve essa complexidade e a apresenta como decisões compreensíveis; as tabelas e os estados internos não ditam a linguagem nem a navegação."
+ },
+ "principios/p03.yaml::entries/consecuencia/text": {
+  "en": "Internal concepts are translated into the mental model of whoever uses the product. The system resolves what it can with the context available, and an exception is shown only to those who genuinely have to decide it.",
+  "pt": "Os conceitos internos são traduzidos para o modelo mental de quem usa o produto. O sistema resolve o que pode resolver com o contexto disponível, e uma exceção só é mostrada a quem realmente deve decidi-la."
+ },
+ "principios/p03.yaml::entries/ejemplo/text": {
+  "en": "A shipping service needs to know whether a parcel is domestic or international. Instead of asking, it infers this from the destination address and only asks for customs details when they apply.",
+  "pt": "Um serviço de envios precisa saber se um pacote é nacional ou internacional. Em vez de perguntar, ele deduz isso pelo endereço de destino e só pede os dados alfandegários quando se aplicam."
+ },
+ "principios/p03.yaml::entries/contraejemplo/text": {
+  "en": "Opening an explanation with file paths, configurations or commands before the person understands what they are for.",
+  "pt": "Abrir uma explicação com caminhos de arquivos, configurações ou comandos antes que a pessoa entenda para que servem."
+ },
+ "principios/p03.yaml::entries/prueba/text": {
+  "en": "These questions separate the steps that exist for the person from those that exist for the system.",
+  "pt": "Estas perguntas separam os passos que existem por causa da pessoa dos que existem por causa do sistema."
+ },
+ "interfaz/cadenas.yaml::nav.saltar": {
+  "en": "Skip to content",
+  "pt": "Pular para o conteúdo"
+ },
+ "interfaz/cadenas.yaml::nav.principal": {
+  "en": "Main navigation",
+  "pt": "Navegação principal"
+ },
+ "interfaz/cadenas.yaml::nav.inicio": {
+  "en": "Home",
+  "pt": "Início"
+ },
+ "interfaz/cadenas.yaml::nav.manifiesto": {
+  "en": "Manifesto",
+  "pt": "Manifesto"
+ },
+ "interfaz/cadenas.yaml::nav.principios": {
+  "en": "Principles",
+  "pt": "Princípios"
+ },
+ "interfaz/cadenas.yaml::nav.speckit": {
+  "en": "SpecKit",
+  "pt": "SpecKit"
+ },
+ "interfaz/cadenas.yaml::nav.acerca": {
+  "en": "About",
+  "pt": "Sobre"
+ },
+ "interfaz/cadenas.yaml::nav.estadoSpeckit": {
+  "en": "not published",
+  "pt": "não publicada"
+ },
+ "interfaz/cadenas.yaml::nav.version": {
+  "en": "Core v{version}",
+  "pt": "Núcleo v{version}"
+ },
+ "interfaz/cadenas.yaml::idioma.rotulo": {
+  "en": "Language",
+  "pt": "Idioma"
+ },
+ "interfaz/cadenas.yaml::contenido.canonico": {
+  "en": "Canonical text",
+  "pt": "Texto canônico"
+ },
+ "interfaz/cadenas.yaml::contenido.traduccion": {
+  "en": "Translation of the canonical text. The Spanish original remains authoritative.",
+  "pt": "Tradução do texto canônico. O original em espanhol mantém a autoridade."
+ },
+ "interfaz/cadenas.yaml::contenido.explicacion": {
+  "en": "Explanation",
+  "pt": "Explicação"
+ },
+ "interfaz/cadenas.yaml::contenido.ejemplo": {
+  "en": "Example",
+  "pt": "Exemplo"
+ },
+ "interfaz/cadenas.yaml::contenido.contraejemplo": {
+  "en": "Counterexample",
+  "pt": "Contraexemplo"
+ },
+ "interfaz/cadenas.yaml::contenido.prueba": {
+  "en": "Decision test",
+  "pt": "Teste de decisão"
+ },
+ "interfaz/cadenas.yaml::contenido.inferencia": {
+  "en": "Inference or proposal",
+  "pt": "Inferência ou proposta"
+ },
+ "interfaz/cadenas.yaml::contenido.estadoTecnico": {
+  "en": "Confirmed technical status",
+  "pt": "Status técnico confirmado"
+ },
+ "interfaz/cadenas.yaml::contenido.origen": {
+  "en": "Based on",
+  "pt": "Baseia-se em"
+ },
+ "interfaz/cadenas.yaml::contenido.fuente": {
+  "en": "Read the full passage",
+  "pt": "Ler o trecho completo"
+ },
+ "interfaz/cadenas.yaml::contenido.profundizar": {
+  "en": "Go deeper",
+  "pt": "Aprofundar"
+ },
+ "interfaz/cadenas.yaml::compartir.copiar": {
+  "en": "Copy link",
+  "pt": "Copiar link"
+ },
+ "interfaz/cadenas.yaml::compartir.copiado": {
+  "en": "Link copied",
+  "pt": "Link copiado"
+ },
+ "interfaz/cadenas.yaml::compartir.enlace": {
+  "en": "Link to this section",
+  "pt": "Link para esta seção"
+ },
+ "interfaz/cadenas.yaml::compartir.error": {
+  "en": "Could not copy. The link is visible next to the heading.",
+  "pt": "Não foi possível copiar. O link está visível ao lado do título."
+ },
+ "interfaz/cadenas.yaml::pie.licencia": {
+  "en": "Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not part of those licenses.",
+  "pt": "Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças."
+ },
+ "interfaz/cadenas.yaml::pie.procedencia": {
+  "en": "Provenance",
+  "pt": "Procedência"
+ },
+ "interfaz/cadenas.yaml::pie.actualizado": {
+  "en": "Updated on {fecha}",
+  "pt": "Atualizado em {fecha}"
+ },
+ "interfaz/cadenas.yaml::pie.estadoPreset": {
+  "en": "SpecKit adaptation {version}: not published",
+  "pt": "Adaptação SpecKit {version}: não publicada"
+ },
+ "interfaz/cadenas.yaml::principio.declaracion": {
+  "en": "Statement",
+  "pt": "Declaração"
+ },
+ "interfaz/cadenas.yaml::principio.tension": {
+  "en": "Tension",
+  "pt": "Tensão"
+ },
+ "interfaz/cadenas.yaml::principio.significado": {
+  "en": "Meaning",
+  "pt": "Significado"
+ },
+ "interfaz/cadenas.yaml::principio.consecuencia": {
+  "en": "Consequence",
+  "pt": "Consequência"
+ },
+ "interfaz/cadenas.yaml::principio.ejemplo": {
+  "en": "Example",
+  "pt": "Exemplo"
+ },
+ "interfaz/cadenas.yaml::principio.contraejemplo": {
+  "en": "Counterexample",
+  "pt": "Contraexemplo"
+ },
+ "interfaz/cadenas.yaml::principio.prueba": {
+  "en": "Decision test",
+  "pt": "Teste de decisão"
+ },
+ "interfaz/cadenas.yaml::principio.fuente": {
+  "en": "Source",
+  "pt": "Fonte"
+ },
+ "interfaz/cadenas.yaml::manifiesto.version": {
+  "en": "Version {version} · {fecha}",
+  "pt": "Versão {version} · {fecha}"
+ },
+ "interfaz/cadenas.yaml::error404.titulo": {
+  "en": "This page could not be found",
+  "pt": "Não encontramos esta página"
+ },
+ "interfaz/cadenas.yaml::error404.texto": {
+  "en": "The address does not exist or has changed. These are the starting points of the site:",
+  "pt": "O endereço não existe ou mudou. Estes são os pontos de partida do site:"
+ },
+ "interfaz/cadenas.yaml::acerca.contacto": {
+  "en": "Contact",
+  "pt": "Contato"
+ },
+ "interfaz/cadenas.yaml::estado.independiente": {
+  "en": "It is an independent adaptation.",
+  "pt": "É uma adaptação independente."
+ },
+ "interfaz/cadenas.yaml::estado.presets": {
+  "en": "It uses SpecKit's native customization mechanisms (presets).",
+  "pt": "Usa os mecanismos nativos de personalização do SpecKit (presets)."
+ },
+ "interfaz/cadenas.yaml::estado.core": {
+  "en": "It does not modify SpecKit's code.",
+  "pt": "Não modifica o código do SpecKit."
+ },
+ "interfaz/cadenas.yaml::estado.validada": {
+  "en": "Technically validated in version {version}, on {fecha}.",
+  "pt": "Validada tecnicamente na versão {version}, em {fecha}."
+ },
+ "interfaz/cadenas.yaml::estado.noPublicada": {
+  "en": "It is not published yet. When it is, the link and instructions will appear here.",
+  "pt": "Ainda não está publicada. Quando estiver, o link e as instruções aparecerão aqui."
+ },
+ "interfaz/cadenas.yaml::estado.noOficial": {
+  "en": "It is not an official integration and is not endorsed by GitHub.",
+  "pt": "Não é uma integração oficial nem tem endosso do GitHub."
+ },
+ "interfaz/cadenas.yaml::inicio.comenzar": {
+  "en": "Start with the problem",
+  "pt": "Começar pelo problema"
+ },
+ "interfaz/cadenas.yaml::inicio.principios": {
+  "en": "Go straight to the principles",
+  "pt": "Ir direto aos princípios"
+ },
+ "interfaz/cadenas.yaml::inicio.entrada": {
+  "en": "You can read the whole way through or start at any point; nothing requires you to have read what came before.",
+  "pt": "É possível ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o que vem antes."
+ },
+ "interfaz/cadenas.yaml::indice.enEstaPagina": {
+  "en": "On this page",
+  "pt": "Nesta página"
+ },
+ "interfaz/cadenas.yaml::indice.rotulo": {
+  "en": "Section index",
+  "pt": "Índice da seção"
+ },
+ "interfaz/cadenas.yaml::ruta.manifiesto": {
+  "en": "Understand",
+  "pt": "Compreender"
+ },
+ "interfaz/cadenas.yaml::ruta.principios": {
+  "en": "Decide",
+  "pt": "Decidir"
+ },
+ "interfaz/cadenas.yaml::ruta.aplicacion": {
+  "en": "Build",
+  "pt": "Construir"
+ },
+ "interfaz/cadenas.yaml::ruta.verificacion": {
+  "en": "Verify",
+  "pt": "Verificar"
+ },
+ "interfaz/cadenas.yaml::ruta.rotulo": {
+  "en": "Reading route",
+  "pt": "Rota de leitura"
+ },
+ "interfaz/cadenas.yaml::integro.descargas": {
+  "en": "Download the core",
+  "pt": "Baixar o núcleo"
+ },
+ "interfaz/cadenas.yaml::integro.original": {
+  "en": "Spanish original (Markdown)",
+  "pt": "Original em espanhol (Markdown)"
+ },
+ "interfaz/cadenas.yaml::integro.traduccionEn": {
+  "en": "English translation (Markdown)",
+  "pt": "Tradução para o inglês (Markdown)"
+ },
+ "interfaz/cadenas.yaml::integro.traduccionPt": {
+  "en": "Brazilian Portuguese translation (Markdown)",
+  "pt": "Tradução para o português do Brasil (Markdown)"
+ },
+ "interfaz/cadenas.yaml::indice.enEstaSeccion": {
+  "en": "In this section",
+  "pt": "Nesta seção"
+ },
+ "interfaz/cadenas.yaml::ruta.practica": {
+  "en": "Putting it into practice",
+  "pt": "Pôr em prática"
+ },
+ "interfaz/cadenas.yaml::nav.anterior": {
+  "en": "Previous",
+  "pt": "Anterior"
+ },
+ "interfaz/cadenas.yaml::nav.siguiente": {
+  "en": "Next",
+  "pt": "Próximo"
+ },
+ "interfaz/cadenas.yaml::nav.lectura": {
+  "en": "Reading through the core",
+  "pt": "Percurso do núcleo"
+ },
+ "interfaz/cadenas.yaml::mapa.recorrido": {
+  "en": "The nine divisions",
+  "pt": "As nove divisões"
+ },
+ "interfaz/cadenas.yaml::verificar.relacionados": {
+  "en": "Also for verification",
+  "pt": "Também para verificar"
+ },
+ "interfaz/cadenas.yaml::verificar.terminado": {
+  "en": "Definition of done, in Governance",
+  "pt": "Definição de conclusão, em Governança"
+ },
+ "interfaz/cadenas.yaml::contenido.fuenteNucleo": {
+  "en": "Core of the manifesto v{version}, section {codigo}.",
+  "pt": "Núcleo do manifesto v{version}, seção {codigo}."
+ },
+ "interfaz/cadenas.yaml::pie.traduccion": {
+  "en": "This is a translation; the Spanish original remains authoritative.",
+  "pt": "É uma tradução; o original em espanhol mantém a autoridade."
+ },
+ "interfaz/cadenas.yaml::nav.mapa": {
+  "en": "Manifesto map",
+  "pt": "Mapa do manifesto"
+ },
+ "interfaz/cadenas.yaml::busqueda.abrir": {
+  "en": "Search",
+  "pt": "Buscar"
+ },
+ "interfaz/cadenas.yaml::busqueda.titulo": {
+  "en": "Search the site",
+  "pt": "Buscar no site"
+ },
+ "interfaz/cadenas.yaml::busqueda.etiqueta": {
+  "en": "Words or an identifier, such as CR03",
+  "pt": "Palavras ou identificador, como CR03"
+ },
+ "interfaz/cadenas.yaml::busqueda.cargando": {
+  "en": "Loading the search index…",
+  "pt": "Carregando o índice de busca…"
+ },
+ "interfaz/cadenas.yaml::busqueda.sinResultados": {
+  "en": "Nothing matches “{q}”. Try other words or fewer words.",
+  "pt": "Nada corresponde a “{q}”. Tente outras palavras ou menos palavras."
+ },
+ "interfaz/cadenas.yaml::busqueda.error": {
+  "en": "The search index could not be loaded. Site navigation is still available.",
+  "pt": "Não foi possível carregar o índice de busca. A navegação do site continua disponível."
+ },
+ "interfaz/cadenas.yaml::busqueda.resultados": {
+  "en": "Results: {n}",
+  "pt": "Resultados: {n}"
+ },
+ "interfaz/cadenas.yaml::busqueda.cerrar": {
+  "en": "Close",
+  "pt": "Fechar"
+ },
+ "interfaz/cadenas.yaml::pie.licenciasDetalle": {
+  "en": "What you can reuse",
+  "pt": "O que você pode reutilizar"
+ },
+ "interfaz/cadenas.yaml::pie.editor": {
+  "en": "Published by {editor}",
+  "pt": "Publicado por {editor}"
+ },
+ "interfaz/cadenas.yaml::pie.conocer": {
+  "en": "Get to know the company",
+  "pt": "Conheça a empresa"
+ },
+ "interfaz/cadenas.yaml::tema.oscuro": {
+  "en": "Dark theme",
+  "pt": "Tema escuro"
+ },
+ "interfaz/cadenas.yaml::tema.sistema": {
+  "en": "Use system theme",
+  "pt": "Usar o do sistema"
+ },
+ "interfaz/cadenas.yaml::indice.contenido": {
+  "en": "Contents",
+  "pt": "Conteúdo"
+ },
+ "interfaz/cadenas.yaml::nav.menu": {
+  "en": "Menu",
+  "pt": "Menu"
+ },
+ "interfaz/cadenas.yaml::social.alt": {
+  "en": "Manifiesto, by Software Humano: “{frase}”",
+  "pt": "Manifiesto, da Software Humano: “{frase}”"
+ }
+}

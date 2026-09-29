@@ -16,10 +16,10 @@ description:
     text: "Qué debe estar definido antes de construir, y las Job Stories como forma de referencia."
   en:
     state: borrador
-    text: What must be defined before building, and Job Stories as a reference form.
+    text: What must be defined before building, and Job Stories as the reference form.
   pt-BR:
     state: borrador
-    text: O que deve estar definido antes de construir, e as Job Stories como forma de referência.
+    text: O que deve estar definido antes de construir e as Job Stories como forma de referência.
 fr:
   - FR-007
 sections:
@@ -47,10 +47,10 @@ sections:
               text: "Todo empieza por saber qué debe construirse y con qué autoridad. El fundamento de producto es el contenido autorizado que dice qué construir, por qué, qué resultados debe producir, qué condiciones respetar y cómo se sabrá que se cumplió. No es un documento nuevo: puede estar en un PRD, en historias, en reglas o en criterios de aceptación."
             en:
               state: borrador
-              text: "Everything starts with knowing what must be built and with what authority. The product foundation is the authorized content that says what to build, why, what results it must produce, what conditions it must respect and how you will know it has been met. It is not a new document: it can be found in a PRD, in stories, in rules or in acceptance criteria."
+              text: "Everything begins with knowing what must be built and under what authority. The product foundation is the authorized content that states what to build, why, what outcomes it must produce, what conditions it must respect, and how fulfillment will be determined. It is not a new document: it may be in a PRD, in stories, in rules, or in acceptance criteria."
             pt-BR:
               state: borrador
-              text: "Tudo começa por saber o que deve ser construído e com que autoridade. O fundamento de produto é o conteúdo autorizado que diz o que construir, por quê, que resultados deve produzir, que condições respeitar e como se saberá que foi cumprido. Não é um documento novo: pode estar em um PRD, em histórias, em regras ou em critérios de aceitação."
+              text: "Tudo começa por saber o que deve ser construído e com que autoridade. O fundamento de produto é o conteúdo autorizado que diz o que construir, por quê, que resultados deve produzir, que condições deve respeitar e como se saberá que foi cumprido. Não é um documento novo: pode estar em um PRD, em histórias, em regras ou em critérios de aceitação."
       - kind: canon
         desde: fundamento-de-producto-y-forma-de-referencia-02
         hasta: fundamento-de-producto-y-forma-de-referencia-11
@@ -61,7 +61,7 @@ sections:
         text: Job Stories como forma de referencia
       en:
         state: borrador
-        text: Job Stories as a reference form
+        text: Job Stories as the reference form
       pt-BR:
         state: borrador
         text: Job Stories como forma de referência
@@ -78,10 +78,10 @@ sections:
               text: "Las Job Stories describen el progreso: cuándo surge una necesidad, qué la motiva y qué resultado se busca, sin anticipar la solución. Son la forma de referencia del manifiesto, no una obligación. Un fundamento puede llegar como épicas, requisitos o recorridos, y el método tiene que respetar esa forma en lugar de convertirla."
             en:
               state: borrador
-              text: "Job Stories describe progress: when a need arises, what motivates it and what outcome is sought, without anticipating the solution. They are the manifesto's reference form, not an obligation. A foundation may arrive as epics, requirements or journeys, and the method has to respect that form instead of converting it."
+              text: "Job Stories describe progress: when a need arises, what motivates it, and what outcome is sought, without anticipating the solution. They are the manifesto's reference form, not an obligation. A foundation may arrive as epics, requirements, or journeys, and the method must respect that form instead of converting it."
             pt-BR:
               state: borrador
-              text: "As Job Stories descrevem o progresso: quando surge uma necessidade, o que a motiva e que resultado se busca, sem antecipar a solução. São a forma de referência do manifesto, não uma obrigação. Um fundamento pode chegar como épicos, requisitos ou jornadas, e o método tem de respeitar essa forma em vez de convertê-la."
+              text: "As Job Stories descrevem o progresso: quando surge uma necessidade, o que a motiva e qual resultado se busca, sem antecipar a solução. Elas são a forma de referência do manifesto, não uma obrigação. Um fundamento pode chegar como épicos, requisitos ou jornadas, e o método tem que respeitar essa forma em vez de convertê-la."
       - kind: canon
         desde: fundamento-de-producto-y-forma-de-referencia-13
         hasta: fundamento-de-producto-y-forma-de-referencia-34

@@ -1,0 +1,1205 @@
+[
+ {
+  "clave": "superficies/construir.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/3/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/4/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/4/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/fundamento.yaml::sections/1/blocks/0/entrada/text",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "no una obligación",
+    "fragmento_tr": "not a requirement",
+    "explicacion": "«Obligación» se vierte como «requirement», y la frase siguiente usa «requirements» para «requisitos», una de las formas que puede tomar un fundamento. El lector puede entender que las Job Stories no son un tipo de requisito, cuando lo que dice el español es que no son obligatorias. «otra» conserva «obligation».",
+    "correccion": "not an obligation"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/3/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/4/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/4/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/5/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/5/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/6/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/6/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/1/blocks/0/entrada/text",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "lleva a la división donde se lee su pasaje",
+    "fragmento_tr": "leads to the section where its passage appears",
+    "explicacion": "El sitio llama «divisions» a las nueve partes del núcleo (mapa, «The nine divisions»), y cada división reúne varias secciones del original. Decir «section» confunde los dos niveles. «otra» mantiene «division».",
+    "correccion": "leads to the division where its passage is read"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/speckit.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/0/blocks/0/entrada/text",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "si queda en una presentación inicial",
+    "fragmento_tr": "if it remains in an initial presentation",
+    "explicacion": "«Remain in a presentation» no suena natural en inglés. El sentido es que el manifiesto no pase de una presentación de arranque.",
+    "correccion": "if it never goes beyond a kickoff presentation"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/ejemplo.yaml::title",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "Ejemplo aplicado",
+    "fragmento_tr": "Applied example",
+    "explicacion": "La traducción aprobada del núcleo titula esta parte «WORKED EXAMPLE», y el título de la superficie debería coincidir. «otra» usa «Worked example».",
+    "correccion": "Worked example"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/ejemplo.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/ejemplo.yaml::sections/0/title",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "Un ejemplo aplicado",
+    "fragmento_tr": "An applied example",
+    "explicacion": "Igual que en el título: el núcleo aprobado usa «Worked example».",
+    "correccion": "A worked example"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/ejemplo.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/2/blocks/0/entrada/text",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "las divisiones reproducen el núcleo completo",
+    "fragmento_tr": "the sections reproduce the full core",
+    "explicacion": "«Divisiones» se vierte como «sections», aunque el sitio usa «divisions» para las nueve partes del núcleo. «otra» conserva «divisions».",
+    "correccion": "the divisions reproduce the full core"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/3/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/4/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/4/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/5/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/5/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::description",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "un puntaje de decisión",
+    "fragmento_tr": "a decision score",
+    "explicacion": "El artefacto `SH-SCORE` se llama «Decision scorecard» en el núcleo aprobado. La descripción debería nombrarlo igual. «otra» usa «decision scorecard».",
+    "correccion": "a decision scorecard"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/3/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/principios.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/principios.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/principios.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::description",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::hero/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::hero/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/0/question",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/0/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/1/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/1/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/1/blocks/1/sistema/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/1/blocks/1/persona/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/2/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/2/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/3/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/3/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/1/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/2/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/3/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/4/sistema/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/4/persona/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/5/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/5/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/6/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/6/blocks/0/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/6/blocks/2/entrada/text",
+  "errores": []
+ },
+ {
+  "clave": "superficies/bolsillo.yaml::title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/bolsillo.yaml::description",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "la declaración final del manifiesto",
+    "fragmento_tr": "the manifesto's final declaration",
+    "explicacion": "El núcleo aprobado titula esta sección «Closing statement», y la Guía de bolsillo cierra con esa sección. Conviene usar el mismo nombre. «otra» dice «closing statement».",
+    "correccion": "the manifesto's closing statement"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/bolsillo.yaml::sections/0/title",
+  "errores": []
+ },
+ {
+  "clave": "superficies/bolsillo.yaml::sections/0/blocks/0/entrada/text",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "tres frases que protegen el criterio",
+    "fragmento_tr": "three phrases that protect judgment",
+    "explicacion": "El núcleo aprobado titula esa sección «Three sentences that protect judgment». «Phrases» no coincide con ese título y además sugiere fragmentos, no oraciones completas.",
+    "correccion": "three sentences that protect judgment"
+   }
+  ]
+ },
+ {
+  "clave": "superficies/bolsillo.yaml::sections/1/title",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "Declaración final",
+    "fragmento_tr": "Final declaration",
+    "explicacion": "Este título encabeza la sección del núcleo que el inglés aprobado llama «Closing statement». «otra» coincide con ese título.",
+    "correccion": "Closing statement"
+   }
+  ]
+ },
+ {
+  "clave": "principios/p01.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p01.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p01.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p01.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p01.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p01.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p06.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p10.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p07.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p08.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p04.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p04.yaml::entries/significado/text",
+  "errores": [
+   {
+    "tipo": "cambio-de-sentido",
+    "gravedad": "mayor",
+    "fragmento_es": "a la experiencia",
+    "fragmento_tr": "the experience",
+    "explicacion": "Aquí «experiencia» significa la pericia de quien usa el producto: el núcleo, en `P04`, dice «al nivel de experiencia». En este sitio, «the experience» se lee como experiencia de uso (`P02`), así que un lector atento entendería otra cosa. «otra» lo resuelve con «the level of experience».",
+    "correccion": "the person's level of experience"
+   }
+  ]
+ },
+ {
+  "clave": "principios/p04.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p04.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p04.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p04.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p05.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p09.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p02.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p02.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p02.yaml::entries/consecuencia/text",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "entran en los criterios de aceptación, igual que la exactitud",
+    "fragmento_tr": "enter the acceptance criteria alongside accuracy",
+    "explicacion": "«Enter the acceptance criteria» es un calco poco natural. En inglés se dice que forman parte de los criterios o que se incluyen en ellos.",
+    "correccion": "are part of the acceptance criteria, just as accuracy is"
+   }
+  ]
+ },
+ {
+  "clave": "principios/p02.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p02.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p02.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/tension/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/significado/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/consecuencia/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/ejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/contraejemplo/text",
+  "errores": []
+ },
+ {
+  "clave": "principios/p03.yaml::entries/prueba/text",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.saltar",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.principal",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.inicio",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.manifiesto",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.principios",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.speckit",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.acerca",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.estadoSpeckit",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.version",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::idioma.rotulo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.canonico",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.traduccion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.explicacion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.ejemplo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.contraejemplo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.prueba",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.inferencia",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.estadoTecnico",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.origen",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.fuente",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.profundizar",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::compartir.copiar",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::compartir.copiado",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::compartir.enlace",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::compartir.error",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.licencia",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.procedencia",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.actualizado",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.estadoPreset",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.declaracion",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "Declaración",
+    "fragmento_tr": "Declaration",
+    "explicacion": "Este rótulo presenta el enunciado de un principio. En inglés «Declaration» sugiere una proclamación formal. Lo natural es «Statement», que además es como el núcleo aprobado traduce «Declaración» («Closing statement»). «otra» usa «Statement».",
+    "correccion": "Statement"
+   }
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.tension",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.significado",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.consecuencia",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.ejemplo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.contraejemplo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.prueba",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::principio.fuente",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::manifiesto.version",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::error404.titulo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::error404.texto",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::acerca.contacto",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.independiente",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.presets",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "Usa los mecanismos",
+    "fragmento_tr": "Uses SpecKit's",
+    "explicacion": "Es la única frase del bloque de estado sin sujeto («It is…», «It does not modify…», «It is not…»). La lista queda despareja.",
+    "correccion": "It uses SpecKit's"
+   }
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.core",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.validada",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.noPublicada",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::estado.noOficial",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::inicio.comenzar",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::inicio.principios",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::inicio.entrada",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "Se puede leer el recorrido completo",
+    "fragmento_tr": "You can read the complete journey",
+    "explicacion": "«Read the complete journey» no es idiomático en inglés: un recorrido no se lee. La idea es leerlo todo de principio a fin.",
+    "correccion": "You can read it all the way through"
+   }
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::indice.enEstaPagina",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::indice.rotulo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.manifiesto",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.principios",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.aplicacion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.verificacion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.rotulo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::integro.descargas",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::integro.original",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::integro.traduccionEn",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::integro.traduccionPt",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::indice.enEstaSeccion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::ruta.practica",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.anterior",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.siguiente",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.lectura",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::mapa.recorrido",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::verificar.relacionados",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::verificar.terminado",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.fuenteNucleo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.traduccion",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.mapa",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.abrir",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.titulo",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.etiqueta",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.cargando",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.sinResultados",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.error",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.resultados",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::busqueda.cerrar",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.licenciasDetalle",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.editor",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::pie.conocer",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::tema.oscuro",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::tema.sistema",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::indice.contenido",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.menu",
+  "errores": []
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::social.alt",
+  "errores": []
+ }
+]

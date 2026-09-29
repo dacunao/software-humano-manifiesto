@@ -8,7 +8,7 @@ nav.saltar:
     text: Skip to content
   pt-BR:
     state: borrador
-    text: Pular para o conteúdo
+    text: Ir para o conteúdo
 nav.principal:
   es:
     state: borrador
@@ -38,7 +38,7 @@ nav.manifiesto:
     text: Manifesto
   pt-BR:
     state: borrador
-    text: Manifesto
+    text: Manifiesto
 nav.principios:
   es:
     state: borrador
@@ -75,7 +75,7 @@ nav.estadoSpeckit:
     text: no publicada
   en:
     state: borrador
-    text: not published
+    text: unpublished
   pt-BR:
     state: borrador
     text: não publicada
@@ -115,10 +115,10 @@ contenido.traduccion:
     text: Traducción del texto canónico. El original en español conserva la autoridad.
   en:
     state: borrador
-    text: Translation of the canonical text. The Spanish original remains authoritative.
+    text: Translation of the canonical text. The Spanish original retains authority.
   pt-BR:
     state: borrador
-    text: Tradução do texto canônico. O original em espanhol mantém a autoridade.
+    text: Tradução do texto canônico. O original em espanhol conserva a autoridade.
 contenido.explicacion:
   es:
     state: borrador
@@ -178,7 +178,7 @@ contenido.estadoTecnico:
     text: Confirmed technical status
   pt-BR:
     state: borrador
-    text: Status técnico confirmado
+    text: Estado técnico confirmado
 contenido.origen:
   es:
     state: borrador
@@ -195,10 +195,10 @@ contenido.fuente:
     text: Leer el pasaje completo
   en:
     state: borrador
-    text: Read the full passage
+    text: Read the complete passage
   pt-BR:
     state: borrador
-    text: Ler o trecho completo
+    text: Leia a passagem completa
 contenido.profundizar:
   es:
     state: borrador
@@ -245,7 +245,7 @@ compartir.error:
     text: No se pudo copiar. El enlace está visible junto al título.
   en:
     state: borrador
-    text: Could not copy. The link is visible next to the heading.
+    text: Could not copy. The link is visible next to the title.
   pt-BR:
     state: borrador
     text: Não foi possível copiar. O link está visível ao lado do título.
@@ -253,7 +253,7 @@ pie.licencia:
   es: { state: borrador, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias." }
   en:
     state: borrador
-    text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not part of those licenses.
+    text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not covered by those licenses.
   pt-BR:
     state: borrador
     text: Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças.
@@ -283,10 +283,10 @@ pie.estadoPreset:
     text: "Adaptación SpecKit {version}: no publicada"
   en:
     state: borrador
-    text: "SpecKit adaptation {version}: not published"
+    text: "SpecKit adaptation {version}: unpublished"
   pt-BR:
     state: borrador
-    text: "Adaptação SpecKit {version}: não publicada"
+    text: "Adaptação para o SpecKit {version}: não publicada"
 principio.declaracion:
   es:
     state: borrador
@@ -383,7 +383,7 @@ error404.titulo:
     text: No encontramos esta página
   en:
     state: borrador
-    text: This page could not be found
+    text: We could not find this page
   pt-BR:
     state: borrador
     text: Não encontramos esta página
@@ -393,7 +393,7 @@ error404.texto:
     text: "La dirección no existe o cambió. Estos son los puntos de partida del sitio:"
   en:
     state: borrador
-    text: "The address does not exist or has changed. These are the starting points of the site:"
+    text: "The address does not exist or has changed. These are the site's starting points:"
   pt-BR:
     state: borrador
     text: "O endereço não existe ou mudou. Estes são os pontos de partida do site:"
@@ -443,10 +443,10 @@ estado.noPublicada:
   es: { state: borrador, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones." }
   en:
     state: borrador
-    text: It is not published yet. When it is, the link and instructions will appear here.
+    text: It has not been published yet. When it is, the link and instructions will appear here.
   pt-BR:
     state: borrador
-    text: Ainda não está publicada. Quando estiver, o link e as instruções aparecerão aqui.
+    text: Ainda não foi publicada. Quando for, o link e as instruções aparecerão aqui.
 estado.noOficial:
   es: { state: borrador, text: "No es una integración oficial ni cuenta con respaldo de GitHub." }
   en:
@@ -454,7 +454,7 @@ estado.noOficial:
     text: It is not an official integration and is not endorsed by GitHub.
   pt-BR:
     state: borrador
-    text: Não é uma integração oficial nem tem endosso do GitHub.
+    text: Não é uma integração oficial nem conta com o respaldo do GitHub.
 inicio.comenzar:
   es: { state: borrador, text: "Comenzar por el problema" }
   en:
@@ -467,7 +467,7 @@ inicio.principios:
   es: { state: borrador, text: "Ir directo a los principios" }
   en:
     state: borrador
-    text: Go straight to the principles
+    text: Go directly to the principles
   pt-BR:
     state: borrador
     text: Ir direto aos princípios
@@ -475,10 +475,10 @@ inicio.entrada:
   es: { state: borrador, text: "Se puede leer el recorrido completo o entrar en cualquier punto; nada exige haber leído lo anterior." }
   en:
     state: borrador
-    text: You can read the whole way through or start at any point; nothing requires you to have read what came before.
+    text: You can read it all the way through or enter at any point; nothing requires having read what came before.
   pt-BR:
     state: borrador
-    text: É possível ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o que vem antes.
+    text: Você pode ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o que veio antes.
 indice.enEstaPagina:
   es: { state: borrador, text: "En esta página" }
   en:
@@ -531,7 +531,7 @@ ruta.rotulo:
   es: { state: borrador, text: "Ruta de lectura" }
   en:
     state: borrador
-    text: Reading route
+    text: Reading path
   pt-BR:
     state: borrador
     text: Rota de leitura
@@ -579,10 +579,10 @@ ruta.practica:
   es: { state: borrador, text: "Llevarlo a la práctica" }
   en:
     state: borrador
-    text: Putting it into practice
+    text: Put it into practice
   pt-BR:
     state: borrador
-    text: Pôr em prática
+    text: Levá-lo à prática
 nav.anterior:
   es: { state: borrador, text: "Anterior" }
   en:
@@ -603,7 +603,7 @@ nav.lectura:
   es: { state: borrador, text: "Recorrido del núcleo" }
   en:
     state: borrador
-    text: Reading through the core
+    text: Journey through the core
   pt-BR:
     state: borrador
     text: Percurso do núcleo
@@ -635,7 +635,7 @@ contenido.fuenteNucleo:
   es: { state: borrador, text: "Núcleo del manifiesto v{version}, sección {codigo}." }
   en:
     state: borrador
-    text: Core of the manifesto v{version}, section {codigo}.
+    text: Manifesto core v{version}, section {codigo}.
   pt-BR:
     state: borrador
     text: Núcleo do manifesto v{version}, seção {codigo}.
@@ -643,10 +643,10 @@ pie.traduccion:
   es: { state: borrador, text: "Es una traducción; el original en español conserva la autoridad." }
   en:
     state: borrador
-    text: This is a translation; the Spanish original remains authoritative.
+    text: This is a translation; the Spanish original retains authority.
   pt-BR:
     state: borrador
-    text: É uma tradução; o original em espanhol mantém a autoridade.
+    text: Esta é uma tradução; o original em espanhol conserva a autoridade.
 nav.mapa:
   es: { state: borrador, text: "Mapa del manifiesto" }
   en:
@@ -675,7 +675,7 @@ busqueda.etiqueta:
   es: { state: borrador, text: "Palabras o identificador, como CR03" }
   en:
     state: borrador
-    text: Words or an identifier, such as CR03
+    text: Words or identifier, such as CR03
   pt-BR:
     state: borrador
     text: Palavras ou identificador, como CR03
@@ -691,15 +691,15 @@ busqueda.sinResultados:
   es: { state: borrador, text: "Nada coincide con «{q}». Prueba con otras palabras o con menos palabras." }
   en:
     state: borrador
-    text: Nothing matches “{q}”. Try other words or fewer words.
+    text: Nothing matches “{q}”. Try different words or fewer words.
   pt-BR:
     state: borrador
-    text: Nada corresponde a “{q}”. Tente outras palavras ou menos palavras.
+    text: Nada corresponde a “{q}”. Tente usar outras palavras ou menos palavras.
 busqueda.error:
   es: { state: borrador, text: "No se pudo cargar el índice de búsqueda. La navegación del sitio sigue disponible." }
   en:
     state: borrador
-    text: The search index could not be loaded. Site navigation is still available.
+    text: The search index could not be loaded. Site navigation remains available.
   pt-BR:
     state: borrador
     text: Não foi possível carregar o índice de busca. A navegação do site continua disponível.
@@ -723,7 +723,7 @@ pie.licenciasDetalle:
   es: { state: borrador, text: "Qué puedes reutilizar" }
   en:
     state: borrador
-    text: What you can reuse
+    text: What you may reuse
   pt-BR:
     state: borrador
     text: O que você pode reutilizar
@@ -739,7 +739,7 @@ pie.conocer:
   es: { state: borrador, text: "Conoce la empresa" }
   en:
     state: borrador
-    text: Get to know the company
+    text: Learn about the company
   pt-BR:
     state: borrador
     text: Conheça a empresa
@@ -755,10 +755,10 @@ tema.sistema:
   es: { state: borrador, text: "Usar el del sistema" }
   en:
     state: borrador
-    text: Use system theme
+    text: Use the system theme
   pt-BR:
     state: borrador
-    text: Usar o do sistema
+    text: Usar o tema do sistema
 indice.contenido:
   es: { state: borrador, text: "Contenido" }
   en:

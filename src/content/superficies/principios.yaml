@@ -16,7 +16,7 @@ description:
     text: Los diez principios del manifiesto, en su orden canónico.
   en:
     state: borrador
-    text: The ten principles of the manifesto, in their canonical order.
+    text: The manifesto's ten principles, in their canonical order.
   pt-BR:
     state: borrador
     text: Os dez princípios do manifesto, em sua ordem canônica.
@@ -31,7 +31,7 @@ sections:
         text: Diez principios para decidir
       en:
         state: borrador
-        text: Ten principles for deciding
+        text: Ten principles for making decisions
       pt-BR:
         state: borrador
         text: Dez princípios para decidir

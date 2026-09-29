@@ -16,10 +16,10 @@ description:
     text: "El problema que el manifiesto busca resolver, para quién es, cómo leerlo, dónde termina el núcleo y el texto del manifiesto."
   en:
     state: borrador
-    text: The problem the manifesto sets out to solve, who it is for, how to read it, where the core ends and the text of the manifesto.
+    text: The problem the manifesto seeks to solve, who it is for, how to read it, where the core ends, and the text of the manifesto.
   pt-BR:
     state: borrador
-    text: O problema que o manifesto busca resolver, para quem é, como lê-lo, onde termina o núcleo e o texto do manifesto.
+    text: O problema que o manifesto busca resolver, para quem ele se destina, como lê-lo, onde termina o núcleo e o texto do manifesto.
 fr:
   - FR-003
 sections:
@@ -30,10 +30,10 @@ sections:
         text: El problema que busca resolver
       en:
         state: borrador
-        text: The problem it sets out to solve
+        text: The problem it seeks to solve
       pt-BR:
         state: borrador
-        text: O problema que ele busca resolver
+        text: O problema que busca resolver
     depth: []
     blocks:
       - kind: entrada
@@ -47,10 +47,10 @@ sections:
               text: "Antes de proponer nada, el manifiesto nombra el problema: la capacidad de construir crece más rápido que la capacidad de decidir qué merece existir. Su conclusión central separa la función —lo que el software permite hacer— de la experiencia —cuánto de eso puede aprovechar una persona—."
             en:
               state: borrador
-              text: "Before proposing anything, the manifesto names the problem: the capacity to build is growing faster than the capacity to decide what deserves to exist. Its central conclusion separates function—what the software makes possible—from experience—how much of that a person can actually put to use."
+              text: "Before proposing anything, the manifesto names the problem: the capacity to build is growing faster than the capacity to decide what deserves to exist. Its central conclusion separates function—what the software allows a person to do—from experience—how much of that a person can take advantage of."
             pt-BR:
               state: borrador
-              text: "Antes de propor qualquer coisa, o manifesto nomeia o problema: a capacidade de construir cresce mais rápido do que a capacidade de decidir o que merece existir. Sua conclusão central separa a função — o que o software permite fazer — da experiência — quanto disso uma pessoa consegue aproveitar."
+              text: "Antes de propor qualquer coisa, o manifesto nomeia o problema: a capacidade de construir cresce mais rápido do que a capacidade de decidir o que merece existir. Sua conclusão central separa a função —o que o software permite fazer— da experiência —quanto disso uma pessoa pode aproveitar—."
       - kind: canon
         desde: proposito-del-documento-03
         hasta: proposito-del-documento-09
@@ -78,10 +78,10 @@ sections:
               text: "El marco sirve para productos donde la experiencia de uso influye en el resultado, y está pensado para quienes deciden sobre ellos: producto, diseño, desarrollo y agentes de código. No prescribe estilo, tecnología ni método de entrega."
             en:
               state: borrador
-              text: "The framework is for products where the user experience influences the outcome, and it is intended for those who make decisions about them: product, design, development and coding agents. It does not prescribe a style, a technology or a delivery method."
+              text: "The framework is useful for products where the user experience influences the outcome, and it is intended for those who make decisions about them: product, design, development, and coding agents. It prescribes no style, technology, or delivery method."
             pt-BR:
               state: borrador
-              text: "A estrutura serve para produtos em que a experiência de uso influencia o resultado, e foi pensada para quem decide sobre eles: produto, design, desenvolvimento e agentes de código. Não prescreve estilo, tecnologia nem método de entrega."
+              text: "O framework serve para produtos em que a experiência de uso influencia o resultado e se destina a quem toma decisões sobre eles: produto, design, desenvolvimento e agentes de código. Ele não prescreve estilo, tecnologia nem método de entrega."
       - kind: canon
         desde: proposito-del-documento-11
         hasta: proposito-del-documento-13
@@ -108,10 +108,10 @@ sections:
               text: "El núcleo propone cuatro rutas de lectura, y el sitio las usa para agrupar el índice del manifiesto: **comprender** empieza aquí; **decidir** reúne los [principios](/es/principios) y el [fundamento de producto](/es/manifiesto/fundamento-de-producto); **construir**, la [doctrina, el flujo y el contrato del agente](/es/manifiesto/construir-con-ia); **verificar**, las [pruebas y los antipatrones](/es/manifiesto/verificar). Recorridas en orden, las divisiones reproducen el núcleo completo, que también puedes descargar desde el pie de cada página."
             en:
               state: borrador
-              text: "The core proposes four reading routes, and the site uses them to group the manifesto's index: **understand** starts here; **decide** brings together the [principles](/principles) and the [product foundation](/manifesto/product-foundation); **build**, the [doctrine, the flow and the agent contract](/manifesto/building-with-ai); **verify**, the [tests and the anti-patterns](/manifesto/verify). Read in order, the divisions reproduce the complete core, which you can also download from the footer of every page."
+              text: "The core proposes four reading paths, which the site uses to organize the manifesto index: **understand** begins here; **decide** brings together the [principles](/principles) and the [product foundation](/manifesto/product-foundation); **build**, the [doctrine, workflow, and agent contract](/manifesto/building-with-ai); **verify**, the [tests and anti-patterns](/manifesto/verify). Followed in order, the divisions reproduce the full core, which you may also download from the footer of each page."
             pt-BR:
               state: borrador
-              text: "O núcleo propõe quatro rotas de leitura, e o site as usa para agrupar o índice do manifesto: **compreender** começa aqui; **decidir** reúne os [princípios](/pt-br/principios) e o [fundamento de produto](/pt-br/manifesto/fundamento-de-produto); **construir**, a [doutrina, o fluxo e o contrato do agente](/pt-br/manifesto/construir-com-ia); **verificar**, os [testes e os antipadrões](/pt-br/manifesto/verificar). Percorridas em ordem, as divisões reproduzem o núcleo completo, que você também pode baixar no rodapé de cada página."
+              text: "O núcleo propõe quatro rotas de leitura, e o site as usa para agrupar o índice do manifesto: **compreender** começa aqui; **decidir** reúne os [princípios](/pt-br/principios) e o [fundamento de produto](/pt-br/manifesto/fundamento-de-produto); **construir**, a [doutrina, o fluxo e o contrato do agente](/pt-br/manifesto/construir-com-ia); **verificar**, os [testes e os antipadrões](/pt-br/manifesto/verificar). Percorridas em ordem, as divisões reproduzem o núcleo completo, que você também pode baixar pelo rodapé de cada página."
       - kind: canon
         desde: proposito-del-documento-15
         hasta: proposito-del-documento-16
@@ -125,7 +125,7 @@ sections:
         text: How the framework is organized
       pt-BR:
         state: borrador
-        text: Como a estrutura se organiza
+        text: Como o framework é organizado
     depth: []
     blocks:
       - kind: entrada
@@ -139,10 +139,10 @@ sections:
               text: "Cada principio se traduce en niveles que no se sustituyen entre sí: el principio dice qué se cree; el fundamento de producto, qué debe construirse; la Job Story, cuándo surge la necesidad; la regla, qué exige; la prueba, cómo se sabe si se cumplió."
             en:
               state: borrador
-              text: "Each principle is translated into levels that do not replace one another: the principle says what we believe; the product foundation, what must be built; the Job Story, when the need arises; the rule, what it demands; the test, how we know whether it has been met."
+              text: "Each principle is translated into levels that do not replace one another: the principle states what is believed; the product foundation, what must be built; the Job Story, when the need arises; the rule, what it requires; the test, how to know whether it was fulfilled."
             pt-BR:
               state: borrador
-              text: "Cada princípio se traduz em níveis que não se substituem entre si: o princípio diz o que se acredita; o fundamento de produto, o que deve ser construído; a Job Story, quando surge a necessidade; a regra, o que exige; o teste, como se sabe se foi cumprido."
+              text: "Cada princípio se traduz em níveis que não substituem uns aos outros: o princípio diz em que se acredita; o fundamento de produto, o que deve ser construído; a Job Story, quando surge a necessidade; a regra, o que exige; o teste, como se sabe se foi cumprido."
       - kind: canon
         desde: proposito-del-documento-18
         hasta: proposito-del-documento-19
@@ -170,10 +170,10 @@ sections:
               text: "El núcleo fija principios, autoridades y criterios; no prescribe herramientas. Llevarlo a un método o a un framework concreto corresponde a anexos y adaptadores separados, que no pueden modificarlo. La [adaptación para SpecKit](/es/speckit) es uno de ellos."
             en:
               state: borrador
-              text: The core sets principles, authorities and criteria; it does not prescribe tools. Carrying it into a particular method or framework is the task of separate annexes and adapters, which cannot modify it. The [SpecKit adaptation](/speckit) is one of them.
+              text: The core establishes principles, authorities, and criteria; it does not prescribe tools. Bringing it into a specific method or framework is the role of separate annexes and adapters, which must not modify it. The [adaptation for SpecKit](/speckit) is one of them.
             pt-BR:
               state: borrador
-              text: O núcleo fixa princípios, autoridades e critérios; não prescreve ferramentas. Levá-lo a um método ou a um framework específico cabe a anexos e adaptadores separados, que não podem modificá-lo. A [adaptação para o SpecKit](/pt-br/speckit) é um deles.
+              text: O núcleo estabelece princípios, autoridades e critérios; não prescreve ferramentas. Levá-lo a um método ou framework específico cabe a anexos e adaptadores separados, que não podem modificá-lo. A [adaptação para o SpecKit](/pt-br/speckit) é um deles.
       - kind: canon
         nodos:
           - proposito-del-documento-21
@@ -201,10 +201,10 @@ sections:
               text: La postura del manifiesto cabe en pocos minutos de lectura. Todo lo demás —los principios, el método, la verificación— desarrolla lo que afirman estos párrafos.
             en:
               state: borrador
-              text: The manifesto's stance can be read in a few minutes. Everything else—the principles, the method, the verification—develops what these paragraphs state.
+              text: The manifesto's position can be read in a few minutes. Everything else—the principles, the method, the verification—develops what these paragraphs assert.
             pt-BR:
               state: borrador
-              text: A postura do manifesto cabe em poucos minutos de leitura. Todo o resto — os princípios, o método, a verificação — desenvolve o que estes parágrafos afirmam.
+              text: A posição do manifesto cabe em poucos minutos de leitura. Todo o resto —os princípios, o método, a verificação— desenvolve o que estes parágrafos afirmam.
       - kind: canon
         desde: texto-canonico-02
         hasta: texto-canonico-14

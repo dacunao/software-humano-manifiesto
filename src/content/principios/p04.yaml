@@ -20,10 +20,10 @@ entries:
         text: Un producto mínimo puede ser fácil el primer día y limitante el décimo. Uno que muestra toda su potencia desde el inicio puede resultar inabordable. Los dos extremos fallan, por razones opuestas.
       en:
         state: borrador
-        text: A minimal product can be easy on day one and limiting on day ten. One that displays all of its power from the outset can be unapproachable. Both extremes fail, for opposite reasons.
+        text: A minimal product may be easy on the first day and limiting on the tenth. One that shows its full power from the outset may be overwhelming. Both extremes fail, for opposite reasons.
       pt-BR:
         state: borrador
-        text: Um produto mínimo pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser inabordável. Os dois extremos falham, por razões opostas.
+        text: Um produto mínimo pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser difícil de abordar. Os dois extremos falham, por razões opostas.
   significado:
     id: p04-significado
     type: explanation
@@ -34,10 +34,10 @@ entries:
         text: "La simplicidad no reduce la capacidad: decide cuándo aparece. Lo visible se adapta al momento, a la experiencia y a la decisión actual, y la profundidad queda disponible sin imponerse."
       en:
         state: borrador
-        text: "Simplicity does not reduce capability: it decides when that capability appears. What is visible adapts to the moment, the level of experience and the decision at hand, and depth remains available without being imposed."
+        text: "Simplicity does not reduce capability: it determines when it appears. What is visible adapts to the moment, the person's level of experience, and the current decision, while depth remains available without being imposed."
       pt-BR:
         state: borrador
-        text: "A simplicidade não reduz a capacidade: decide quando ela aparece. O que está visível se adapta ao momento, à experiência e à decisão atual, e a profundidade fica disponível sem se impor."
+        text: "A simplicidade não reduz a capacidade: ela decide quando aparece. O que está visível se adapta ao momento, à experiência e à decisão atual, e a profundidade fica disponível sem ser imposta."
   consecuencia:
     id: p04-consecuencia
     type: explanation
@@ -48,10 +48,10 @@ entries:
         text: Primero se muestra la ruta principal; las opciones avanzadas aparecen cuando el contexto las vuelve relevantes. Los valores predeterminados se eligen con cuidado y pueden cambiarse cuando la decisión importa.
       en:
         state: borrador
-        text: The main route is shown first; advanced options appear when the context makes them relevant. Defaults are chosen with care and can be changed where the decision matters.
+        text: The primary path is shown first; advanced options appear when the context makes them relevant. Defaults are chosen carefully and may be changed when the decision matters.
       pt-BR:
         state: borrador
-        text: Primeiro se mostra o caminho principal; as opções avançadas aparecem quando o contexto as torna relevantes. Os valores padrão são escolhidos com cuidado e podem ser alterados quando a decisão importa.
+        text: Primeiro, mostra-se a rota principal; as opções avançadas aparecem quando o contexto as torna relevantes. Os valores padrão são escolhidos com cuidado e podem ser alterados quando a decisão importa.
   ejemplo:
     id: p04-ejemplo
     type: example
@@ -62,10 +62,10 @@ entries:
         text: Cada principio de este sitio se entiende en su página sin abrir nada; quien quiere el texto completo, las reglas o las pruebas los encuentra a un paso, en el mismo lugar.
       en:
         state: borrador
-        text: Each principle on this site can be understood on its own page without opening anything; anyone who wants the full text, the rules or the tests finds them one step away, in the same place.
+        text: Each principle on this site can be understood on its page without opening anything; anyone who wants the complete text, the rules, or the tests finds them one step away, in the same place.
       pt-BR:
         state: borrador
-        text: Cada princípio deste site é compreendido em sua página sem abrir nada; quem quer o texto completo, as regras ou os testes os encontra a um passo, no mesmo lugar.
+        text: Cada princípio deste site pode ser entendido em sua página sem abrir nada; quem quiser o texto completo, as regras ou os testes os encontra a um passo, no mesmo lugar.
   contraejemplo:
     id: p04-contraejemplo
     type: counterexample
@@ -76,10 +76,10 @@ entries:
         text: Una portada mínima que oculta el contenido, o una página inicial que lo muestra todo a la vez.
       en:
         state: borrador
-        text: A minimal front page that hides the content, or a home page that shows everything at once.
+        text: A minimal landing page that hides the content, or a home page that shows everything at once.
       pt-BR:
         state: borrador
-        text: Uma capa mínima que oculta o conteúdo, ou uma página inicial que mostra tudo de uma vez.
+        text: Uma página de entrada mínima que oculta o conteúdo ou uma página inicial que mostra tudo de uma vez.
   prueba:
     id: p04-prueba
     type: decision-test
@@ -93,4 +93,4 @@ entries:
         text: These questions distinguish simplification that removes noise from simplification that removes capability.
       pt-BR:
         state: borrador
-        text: Estas perguntas distinguem a simplificação que tira ruído da que tira capacidade.
+        text: Estas perguntas distinguem a simplificação que remove ruído daquela que remove capacidade.
