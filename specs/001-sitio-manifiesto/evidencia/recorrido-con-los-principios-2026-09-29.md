@@ -21,6 +21,7 @@ Objetivo: que la navegación no sea un contraejemplo de lo que el manifiesto pla
 | R7 | `P05`, `P06` | Dos entradas al mismo lugar, y una inconsistente | «Núcleo v2.1» en la cabecera y el menú «Manifiesto» llevan ahora los dos al Mapa. La página de error enlaza «Manifesto» a la división 1, no al Mapa | Que «Núcleo v2.1» sea solo un dato, sin enlace, y que la página de error enlace al Mapa |
 | R8 | `P07` | En el teléfono, el estado no es real | En la portada, la barra «Contenido» dice «· Construir software es cada vez más fácil» antes de llegar a esa sección | Mostrar la sección solo cuando se llega a ella |
 | R9 | `P05` | Marca interna visible en la búsqueda | Los subresultados muestran «# Tension» | Quitar el «#» |
+| R11 | `P09` | Al cambiar de idioma se pierde la posición | Si se cambia de idioma a mitad de página, la otra versión abre al inicio. **Corrección:** el agente había informado que la posición se conservaba; lo comprobó con un ancla puesta a mano y la observación de Damián lo reveló | Llevar la posición al otro idioma con el ancla del pasaje en pantalla; los identificadores son los mismos en los tres idiomas |
 | R10 | `P08` | Alineación | En el menú del teléfono, «Núcleo v2.1» queda desalineado respecto de las otras entradas | Alinear |
 
 **Ya evaluado, sin acción:** «Enlace a esta sección» y «Copiar enlace» juntos en cada sección (H7 del 2026-09-28); «Ruta de lectura · Comprender» como vocabulario interno (H6, a observar).
@@ -29,7 +30,7 @@ Objetivo: que la navegación no sea un contraejemplo de lo que el manifiesto pla
 
 - **`P04`:** el recorrido es continuo y sin saltos, del Mapa a la Guía de bolsillo, con anterior y siguiente en cada página.
 - **`P05`:** la columna izquierda muestra dónde se está y la derecha, qué hay en la página; la estructura es la misma en todo el sitio.
-- **`P07` y `P10`:** cambiar de idioma lleva a la misma página y la misma posición, y recuerda la elección sin pedir nada.
+- **`P07` y `P10`:** cambiar de idioma lleva a la misma página y recuerda la elección sin pedir nada; la posición no se conservaba (R11).
 - **`FR-023`:** la búsqueda funciona por idioma, con secciones y el término resaltado.
 - **`P04`:** la profundidad está en «Go deeper», que se abre solo si se quiere.
 - **`P07`:** la página de error dice qué pasó y ofrece por dónde seguir.
