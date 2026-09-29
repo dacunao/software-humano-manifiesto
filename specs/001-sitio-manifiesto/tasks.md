@@ -595,3 +595,25 @@ Se conservan `FR-012` (procedencia visible), PRD §18.4 (sección sobre Software
 - [X] T192 STOP · Damián aprueba el español de Acerca de
 - [X] T193 Implementar la página: permitir en `src/views/Superficie.astro` un título de página distinto del título visible (antetítulo, título y bajada), actualizar `src/content/superficies/acerca.yaml` y las pruebas que dependen de sus secciones; verificar `RV-13` (citas con enlace, sin duplicar) y `FR-012`
 - [X] T194 Traducir a `en` (estadounidense) y `pt-BR` con el mismo flujo del copy: OpenAI traduce y Claude revisa en las capas 1 a 3; Damián aprueba
+
+---
+
+## Phase 30: Convergence
+
+- [ ] T195 Escribir `specs/001-sitio-manifiesto/evidencia/revision-linguistica/verificacion-cuatro-capas.md`, que consolide:
+  - los resultados de cada capa, para el núcleo y el copy;
+  - las decisiones: el copy base es la traducción de OpenAI y el revisor es de otra familia que el traductor;
+  - las correcciones aplicadas, las aprobaciones y los modelos usados;
+
+  per T187, RQ-19, `O08` (missing)
+- [ ] T196 Llevar el aviso de la descarga del núcleo en `en` y `pt-BR` (`src/pages/descargas/[archivo].ts`) a `src/content/interfaz/cadenas.yaml`, con su estado, para que la comprobación previa exija su aprobación. Corregir el comentario que afirma una aprobación inexistente per PRD §19.4, `AC-13` (partial)
+- [ ] T197 Repetir T092 (construcción, pruebas y Lighthouse) con el contenido aprobado y la nueva Acerca de, y actualizar `specs/001-sitio-manifiesto/evidencia/tecnica.md` per `O08`, `AC-08` (partial)
+- [ ] T198 Prueba de extremo a extremo de Acerca del Manifiesto en los tres idiomas: antetítulo y titular, las tres citas del núcleo con enlace a su casa, la nota de origen, procedencia y licencias per `FR-012`, `AC-13`, RV-13 (partial)
+- [ ] T199 Marcar `evidencia/revision-linguistica/paquete-revision-en-pt.md` como reemplazado (muestra la traducción de Claude, sustituida por la de OpenAI revisada), con enlace a la evidencia vigente per T099 (partial)
+- [ ] T200 Registrar en `docs/pilot/registro-del-piloto.md` los hallazgos del 2026-09-29:
+  - el supuesto erróneo de quién tradujo;
+  - las capas gratuitas saturadas o sin cupo y el dato no verificado del plan de Mistral;
+  - la ejecución accidental del script de ortografía;
+  - lo que funcionó: la revisión por otra familia y la alineación a nodos
+
+  per `AGENTS.md` «Registro del piloto», PRD §23.4 (missing)
