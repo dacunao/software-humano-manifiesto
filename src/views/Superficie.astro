@@ -20,8 +20,10 @@ interface Props {
   claseIndice?: string | undefined;
   /** Incluye en «En esta página» los subtítulos del texto canónico de cada sección (T202). */
   seguimiento?: boolean;
+  /** Secciones que agrega la vista después de las del contenido, para «En esta página» (Mapa: «Las nueve divisiones»). */
+  extraPagina?: ItemPagina[];
 }
-const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = false } = Astro.props;
+const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = false, extraPagina = [] } = Astro.props;
 const s = superficie(id);
 const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
@@ -35,14 +37,22 @@ const limpiar = (md: string) => md.replace(/^#{1,6}\s+/, '').replace(/`/g, '');
 // «En esta página» (T202): cada sección y, con `seguimiento`, los subtítulos del texto canónico que contiene.
 const enPagina: ItemPagina[] = s.sections.flatMap((sec) => {
   const x = texto(sec.title, locale);
+  // Con el mismo nivel con que la página muestra cada título citado (CitaCanonica): h3 y h4.
   const propios: ItemPagina[] = seguimiento
-    ? [...sec.blocks, ...sec.depth]
-        .flatMap((b) => (b.kind === 'canon' && !b.breve ? nodosDelBloque(canon, b) : []))
-        .filter((n) => n.kind === 'encabezado' && (n.nivel === 3 || n.nivel === 4))
-        .map((n) => ({ href: `#${n.id}`, texto: limpiar(markdownDe(n, locale).markdown), nivel: n.nivel === 3 ? 3 : 4 }))
+    ? [...sec.blocks, ...sec.depth].flatMap((b) => {
+        if (b.kind !== 'canon' || b.breve) return [];
+        const titulos = nodosDelBloque(canon, b).filter((n) => n.kind === 'encabezado');
+        const minimo = Math.min(...titulos.map((n) => n.nivel ?? 2));
+        let anterior = 2;
+        return titulos.flatMap((n) => {
+          const visto = Math.min(6, 3 + (n.nivel ?? 2) - minimo, anterior + 1);
+          anterior = visto;
+          return visto <= 4 ? [{ href: `#${n.id}`, texto: limpiar(markdownDe(n, locale).markdown), nivel: visto as 3 | 4 }] : [];
+        });
+      })
     : [];
-  return [{ href: `#${sec.id}`, texto: x.texto, nivel: 2, lang: x.lang !== locale ? x.lang : undefined }, ...propios];
-});
+  return [{ href: `#${sec.id}`, texto: x.texto, nivel: 2 as const, lang: x.lang !== locale ? x.lang : undefined }, ...propios];
+}).concat(extraPagina);
 ---
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} claseIndice={claseIndice} enPagina={enPagina}>
   <header class="encabezado-superficie">

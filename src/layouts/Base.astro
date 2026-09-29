@@ -31,7 +31,8 @@ interface Props {
 }
 const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, claseIndice, enPagina = [] } = Astro.props;
 const conArbol = !!indice?.length;
-const conPagina = enPagina.filter((i) => i.nivel === 2).length >= 2;
+// Siempre que la página tenga secciones: la columna derecha es la misma en todo el sitio (T202).
+const conPagina = enPagina.length >= 1;
 const lang = IDIOMAS[locale].hreflang;
 const url = `${URL_SITIO}${ruta(pagina, locale)}`;
 const esInicio = pagina.tipo === 'inicio';

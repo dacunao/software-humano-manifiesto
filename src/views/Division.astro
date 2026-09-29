@@ -53,7 +53,7 @@ const recorrido = id === 'mapa'
     }))
   : [];
 ---
-<Superficie id={id} locale={locale} ld={ld} archivos={archivos} indice={indice} seguimiento>
+<Superficie id={id} locale={locale} ld={ld} archivos={archivos} indice={indice} seguimiento extraPagina={id === 'mapa' ? [{ href: '#recorrido', texto: t('mapa.recorrido', locale), nivel: 2 }] : []}>
   <Fragment slot="antes">
     {(id === 'mapa' || id === 'manifiesto') && <p class="version-nucleo">{t('manifiesto.version', locale, { version, fecha: date })}</p>}
   </Fragment>
