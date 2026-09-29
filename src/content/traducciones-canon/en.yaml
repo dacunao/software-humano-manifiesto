@@ -3,39 +3,55 @@ locale: en
 entries:
   portada-01:
     sourceHash: 75534657fadc9900da2952283f39c802be7a56af7648bf867ed225b608748217
-    state: borrador
+    state: aprobada
     text: "**PRODUCT AND DEVELOPMENT FRAMEWORK CORE**"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   portada-02:
     sourceHash: ba8409b185935e25ccb30a21a7858cbb5ab92c22a49b3e8880503d3b6313b7b5
-    state: borrador
+    state: aprobada
     text: "# Core of the manifesto for human software development with artificial intelligence"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   portada-03:
     sourceHash: cda091763e23e6c02db5031d0e4b5c450d1681a14fb547ed78f30cbcfca5c81a
-    state: borrador
+    state: aprobada
     text: Principles, product foundation, Job Stories and decision tests for building products centred on people's situated progress
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   portada-04:
     sourceHash: b075f765a5ae0b79d4f521c6cdab9521d4e3efacc6238f2e44b6d2d118dc5be9
-    state: borrador
+    state: aprobada
     text: We build tools to extend what people are capable of, not to display what software is capable of.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   portada-05:
     sourceHash: 3da70c00838eaf7080d2920605423f1930d34e49bbb70f8e90a2503178c87b2e
-    state: borrador
+    state: aprobada
     text: "**Version 2.1**"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   portada-06:
     sourceHash: 2df77cd2195a5db8c2e4d46a12ea6f14870579e9e452a2c22f5a0182726113b4
-    state: borrador
+    state: aprobada
     text: September 2026
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-index:
     sourceHash: ba109314dbdc3ddf35668d25498f88d4608ae77ffe14ee0f26f515ae348b5ae9
-    state: borrador
+    state: aprobada
     text: "## OPERATIONAL INDEX FOR AGENTS · `SH-INDEX`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   indice-operativo-para-agentes-02:
     sourceHash: 05b5a020d6b10f738d5d1914557cd9a77a4369d0715de427b4173d4b34f47113
-    state: borrador
+    state: aprobada
     text: "This navigation layer lets people, agents and adapters cite core obligations in a stable way. The identifiers add no doctrine, priority, stages, artefacts or criteria: they only point to content that has already been approved. A reference by identifier never replaces reading the passage cited, nor does it modify the authority of the text."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   indice-operativo-para-agentes-03:
     sourceHash: 621ba255f3ab2920f767f1c87bc0448125934fc43685be2c278a64e0caab1c1d
-    state: borrador
+    state: aprobada
     text: |-
       | **Family** | **Identifiers** | **Content** |
       |---|---|---|
@@ -50,73 +66,107 @@ entries:
       | Agent output | `O01`–`O09` | Expected content of results in natural language |
       | Verification | `V01`–`V12` | Dimensions of evidence for accepting a solution |
       | Cross-cutting controls | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, done and short guide |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   indice-operativo-para-agentes-04:
     sourceHash: 44d6e04f4c3f81e1c7401297481cbd42c56f054c1edccdaae582ac169bcd4b6f
-    state: borrador
+    state: aprobada
     text: Adapters may indicate which identifiers require attention in a particular operation. That selection guides what is loaded and does not authorise ignoring any other provision of the core that applies by reason of context, risk or contradiction.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-01:
     sourceHash: 6bab92148942920f1847d4e2365dac28d0a6fea03349ba27611613e103392796
-    state: borrador
+    state: aprobada
     text: "## PURPOSE OF THIS DOCUMENT"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-02:
     sourceHash: 98d1a37a5b203af175c6267cc8646808a71e0fcad41d76c1c988142389f4f435
-    state: borrador
+    state: aprobada
     text: "### The problem this manifesto sets out to solve"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-03:
     sourceHash: c4614147aa90889d4c77982c0278c0facb598be13c83c4aad152b2e8b5f7860d
-    state: borrador
+    state: aprobada
     text: How do we build software that amplifies people's capacity to achieve what they seek, without transferring the complexity of the technology to them?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-04:
     sourceHash: b8cb5d718ce987d21badbe63495690b4fc2b2094ae65831a27a77b83d7e70f8d
-    state: borrador
+    state: aprobada
     text: "Software gains capability quickly. Artificial intelligence accelerates that process further: today it is cheap to generate screens, options, automations and layers of abstraction. That abundance does not guarantee a better product. It also makes it possible to turn a weak decision into a great deal of correct code, and an unnecessary idea into a finished feature."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-05:
     sourceHash: aec9b16cfdc70cb361b965286200abcf61507ee7b2921f319c87a4833e9c18b6
-    state: borrador
+    state: aprobada
     text: This manifesto establishes a doctrine for deciding what deserves to be built, how it should feel to use, and what evidence must exist before an implementation is accepted. Its unit of measurement is not the number of features delivered. It is the progress a person can achieve with clarity, trust and control.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-06:
     sourceHash: 90484fc6184b9235a873e76a90edb33b8acfa5c698443b4f295386665bd73c10
-    state: borrador
+    state: aprobada
     text: Version 2.1 preserves the concreteness reached through Jobs to Be Done and Job Stories, and extends the framework's capacity to work with product definitions of differing length and depth. A Job Story remains a particularly useful way to describe the circumstance that triggers a need, the motivation that drives action and the outcome being sought. The foundation of a development effort, however, may also be expressed through epics, capabilities, requirements, rules, journeys, criteria or other coherent structures. The format of the input must not force the product's intent to be distorted.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-07:
     sourceHash: aeab38e8b33bdf9d5a7fd873d96215cf6199019cc242bedd715ad22d07f38a44
-    state: borrador
+    state: aprobada
     text: "#### The central conclusion"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-08:
     sourceHash: 447a1bffb732d740b177c91621d15040209dbd0055710ddce5b4e74001add276
-    state: borrador
+    state: aprobada
     text: Function establishes what the software makes possible. Experience determines how much of that capability a person can actually put to use.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-09:
     sourceHash: 27ac52e2d651c68cbb541c17c268b3a140c190950cd5f49509919a9fc3342004
-    state: borrador
+    state: aprobada
     text: Experience is not an aesthetic layer added once the functionality has been solved. It is part of it. If a solution produces the correct result but requires the user to decipher the interface, remember unnecessary rules or fear making a mistake, the solution is still incomplete.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-10:
     sourceHash: 4435ded4c50c7b6fe4a8b32bdaf3da8ac11a77a6dde5ad5559c4560fb9bdd415
-    state: borrador
+    state: aprobada
     text: "#### Scope and readers"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-11:
     sourceHash: 92191be9b407dc6dc1114f8fbffe6906852e56fdb5df9e71cff7405ddd07f215
-    state: borrador
+    state: aprobada
     text: "The framework applies to products where the user experience directly influences the outcome: web and mobile applications, internal tools, learning systems, digital services, agent-enabled products and AI-assisted solutions. It is addressed to product managers, designers, developers and coding agents who take part in product decisions."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-12:
     sourceHash: 89f624aacb21a1c574f506cdfabf79cad4a2a536dba0f5f02b1eb7c4fa94b552
-    state: borrador
+    state: aprobada
     text: It does not prescribe a visual style, a technology, a PRD structure, a delivery strategy or an engineering framework. Neither does it remove the real complexity of the domain. It defines how to prevent the system's internal structure from becoming, for the team's convenience, additional work for the person using it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-13:
     sourceHash: 63661449d40a338ea773823815cab21effc6e6c1ac65c4cff5f29796297ddec5
-    state: borrador
+    state: aprobada
     text: This document contains the core of the manifesto. Translating it into specification-driven development methods and into particular frameworks must be done through separate annexes or adapters. No implementation may reduce its principles, alter the scope defined by product, or attribute to the agent an authority that the core reserves for people.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-14:
     sourceHash: 6a258fb61101e2edd07b18cc3c5eaf77fd9a0e3a9ebb1ad0cbd24eba587c2ca3
-    state: borrador
+    state: aprobada
     text: "#### How to use this document"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-15:
     sourceHash: 65b0dc5c03c85f8b07e3f235b3c858acba4ae9fc63c928c35d3e9e44fdab5e60
-    state: borrador
+    state: aprobada
     text: The document offers two depths of reading. The first makes the stance understandable in a few minutes. The second turns that stance into verifiable decisions during development.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-16:
     sourceHash: 6adbbd4c9722ae1ccc6c83cbe840381699dea65c944624b9332f2045936cf206
-    state: borrador
+    state: aprobada
     text: |-
       | **Route**   | **Content**                                                                        | **Recommended use**                               |
       |-------------|------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -124,17 +174,23 @@ entries:
       | Decide      | Ten principles, product foundation and Job Stories with rules and control questions | Decide between product and UX alternatives              |
       | Build       | Doctrine specific to development with AI                                            | Guide coding agents and human reviewers           |
       | Verify      | Acceptance tests, scorecard and anti-patterns                                       | Evaluate prototypes, implementations and deliveries |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-17:
     sourceHash: 31020a49bf19f87e006aa13d8daf1a45285cf1a58fd2525977a3e45806e3554d
-    state: borrador
+    state: aprobada
     text: "#### The architecture of the framework"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-18:
     sourceHash: ddeb8cf39801855179dc9086bfc4d295351ccca7ee7fa6dfb458cf6bd4e02d3d
-    state: borrador
+    state: aprobada
     text: Each principle is expressed at several operational levels. No level replaces another. The product foundation preserves the authorised definition of what must be built and why. Jobs to Be Done can orient progress in general terms, and the Job Story offers this manifesto's reference form for making that progress concrete, situated and verifiable.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-19:
     sourceHash: a22be2460e71b4eb75e97b94d66d076b91d99bbca3aca7a97835074ce1e70faa
-    state: borrador
+    state: aprobada
     text: |-
       | **Level**               | **Question it answers**                                     | **Result**                                          |
       |-------------------------|-------------------------------------------------------------|-----------------------------------------------------|
@@ -143,85 +199,125 @@ entries:
       | Reference Job Story     | When a need arises and what progress the person is after     | A concrete form for designing and verifying         |
       | Rule                    | What it demands when designing or implementing               | An observable behaviour of the product and the team |
       | Test                    | How we know whether we have met it                           | Evidence that allows accepting, revising or rejecting |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-20:
     sourceHash: 84b864a4736f616a8af387c372722f41e8bb56e713830a3a6ad9e56ea299558e
-    state: borrador
+    state: aprobada
     text: "#### The boundary between core and implementation"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   proposito-del-documento-21:
     sourceHash: f45ddc8e9fe6fe13af8d7c5486dbd32048118cc92aaf36c3689896c7dedce7b8
-    state: borrador
+    state: aprobada
     text: The core defines principles, authorities, traceability conditions, acceptance criteria and limits for teams and agents. A general annex may translate these obligations into a specification-driven development method. Adapters for particular frameworks must resolve commands, templates, flows, persistence and compatibility without modifying the core. A change of framework does not in itself constitute a new version of the manifesto.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-01:
     sourceHash: 3a1c6c4b693b3d050bfd80300dcf4fb6d937c5be796f7d273c6c9b6705efe68e
-    state: borrador
+    state: aprobada
     text: "## CANONICAL TEXT"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-02:
     sourceHash: 24844e6a6b5642d10b55636ee2426da231d2cd076821411bbd15e91d4b9dcb07
-    state: borrador
+    state: aprobada
     text: "### Manifesto for human software development"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-03:
     sourceHash: 738e225c7bf9e2eb2d8def05b636a29468a050950a1a68417dd8b8fe20bab336
-    state: borrador
+    state: aprobada
     text: The purpose of software is to extend what a person can do.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-04:
     sourceHash: e7e802c73362f16ebd7b5d0293bd9a4951d974b35663ef6c4e228489ad1fd1bc
-    state: borrador
+    state: aprobada
     text: People do not come to our products in order to use features. They come because they want to understand, decide, create, learn, communicate, solve problems or move forward. That progress is our real product.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-05:
     sourceHash: 3f64c90522b83efcd226385e97169f244f56ce76a34404935903e1150530f4e0
-    state: borrador
+    state: aprobada
     text: Progress does not happen in the abstract. It is triggered when a circumstance creates a need, a tension or a decision. Before designing a response we describe that circumstance, the motivation it produces and the outcome the person is seeking. The solution comes afterwards.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-06:
     sourceHash: 7423bf31e699bc0784adacb621526e0e91fac56fa82bf2181ceae5a676a6f4a5
-    state: borrador
+    state: aprobada
     text: The product definition governs what must be built. It may be expressed as a single story or through an extensive PRD made up of stories, capabilities, rules, states, journeys and criteria. Development must understand that structure, preserve its meaning and account for its full scope. Breaking the work down, ordering it or running it in parallel does not authorise omitting or redefining it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-07:
     sourceHash: e0f854b8f83d022990d5c2c278a0ad4a52f0092f68b3c280bc14e9aa48e7789b
-    state: borrador
+    state: aprobada
     text: This is why experience is part of functionality. A system that lets someone complete a task but forces them to interpret the interface, remember conventions, work through unnecessary structures or wonder what will happen next, transfers to the user a problem the product should have solved.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-08:
     sourceHash: aaaac0e336bee0b98e3d77f08ea821f1e8a69e9cb00735b8c18c286564e96e7c
-    state: borrador
+    state: aprobada
     text: We do not reject complexity. Many important problems are complex. What we reject is that the complexity of building them should automatically become complexity for whoever uses the tool.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-09:
     sourceHash: 3ee03fdccbab59a58f9bb54fd13862d810f86c6af7202925344ef083741e4aac
-    state: borrador
+    state: aprobada
     text: We seek software that is simple to begin with and deep when needed. Software that reveals capabilities in context, explains without interrupting, anticipates without controlling and lets people recover without fear.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-10:
     sourceHash: 03d785667267259748ca26ced93a8d00d956ff02161f8a9856333b8fb4f07066
-    state: borrador
+    state: aprobada
     text: Every element must justify the attention it consumes. Every interaction must help us understand where we are, what we can do and what will happen next. Every detail must contribute to an experience that is coherent, fast and dependable.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-11:
     sourceHash: 753b32ffda43ce959468d9f0125049a9317ff2dcccd93b94c4f6caa1d850b1ff
-    state: borrador
+    state: aprobada
     text: Artificial intelligence must absorb complexity, not multiply it. It may propose, summarise and automate, but it remains subordinate to the person's intent. Critical rules, permissions, commitments and states that require certainty do not depend on a probabilistic interpretation.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-12:
     sourceHash: 4344d1121dea2b79a10b68bf1017bf30a816aa6fbceb5311990666dcc7fddf95
-    state: borrador
+    state: aprobada
     text: Now that building is easier, our responsibility grows. Before adding a capability we ask what progress it enables, what burden it introduces, what risk it creates and whether it deserves to exist.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-13:
     sourceHash: 39b10c5773e6ad61cd4b4212bb829214bd4e05ddf4f0465f4d45f2050ee8b246
-    state: borrador
+    state: aprobada
     text: Our aim is for sophistication to remain behind the experience, and for the person in front of it to retain their purpose, their attention and their control.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   texto-canonico-14:
     sourceHash: 4ec43bdfecbc77c1a006111d9cfb943b965a338d5b5d94ff8742be4cdc5c006e
-    state: borrador
+    state: aprobada
     text: The best software does not make users admire the software. It makes them marvel at what they can now do.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principios-de-diseno-01:
     sourceHash: 1709fbf88ff80e2c7c937f6e13cfc00427f08352bf2d9ecceb67401fcf0b85ec
-    state: borrador
+    state: aprobada
     text: "## DESIGN PRINCIPLES"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principios-de-diseno-02:
     sourceHash: a0b34f425e42273cad15a3b5ed1ef06582e9362a59cdfe09d870a08e62e09026
-    state: borrador
+    state: aprobada
     text: "### Ten commitments that govern decisions"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principios-de-diseno-03:
     sourceHash: 9f2cb5d21dc2adfa17e45f97e188748300d91197f8bcd2d8ef87141a733a6d0a
-    state: borrador
+    state: aprobada
     text: The principles do not describe decorative aspirations. Each one must be capable of changing a decision, stopping an implementation or requiring additional evidence. A sentence with no practical consequences serves no function within the framework.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principios-de-diseno-04:
     sourceHash: d9356c265d0964113c7470d95574878e867dbb5bf95296991c0f9261d0f7f745
-    state: borrador
+    state: aprobada
     text: |-
       | **N** | **Principle**                                          | **Main consequence**                                                                                     |
       |-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -235,41 +331,59 @@ entries:
       | 8     | Quality lives in the accumulation of details           | Treats micro-decisions and edge states as part of the product                                            |
       | 9     | Time and continuity are part of the interface          | Integrates performance, availability and preservation of work                                            |
       | 10    | The person retains control and ownership               | Subordinates assistance and automation to human intent                                                   |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p01:
     sourceHash: 49945ca8af5f26de61dc59b4b13efc1693814fe17f77aa8bd80d046c9ff4a51b
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 1 · `P01`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-02:
     sourceHash: 23e0e959c84d28e502804a2d466f4a564e0503c783a4f0a23b14918ffde96d79
-    state: borrador
+    state: aprobada
     text: "### The user's progress is the unit of design"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-03:
     sourceHash: 823b09af02b13002d3174c3bbe8fca5c5dbff156cd7b0ee4a38ac0d46cf449d6
-    state: borrador
+    state: aprobada
     text: Do not design what the user can do. Design the progress they need to achieve.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-05:
     sourceHash: df1f8094eff0ef51d71d482e87415a08a8af7ea4108f3d38a4ae02e915905039
-    state: borrador
+    state: aprobada
     text: A feature only makes sense if it helps a person move from a current situation to a desired outcome. The product foundation establishes the authorised reason for the development. Jobs to Be Done can define progress at a broad level, and the Job Story makes it operational by describing when the need arises, what motivates the person and what outcome they are seeking, without anticipating the solution.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-07:
     sourceHash: 84eaaa31b6ebe70a3fed2ffec9dd7fad87b8f2b0705e2996d0c208ad62f09be8
-    state: borrador
+    state: aprobada
     text: "When work is organised around features or generic profiles, a team can deliver a great deal and resolve very little. A Job Story forces the causality to be spelled out: the circumstance that triggers the need, the tension that drives action, and the better situation that would make progress recognisable. When the product uses another form, that same causality must be preserved to the extent that it applies."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-09:
     sourceHash: f15c82c002db525e11977b227bb0fd94132fcfa56b30f6ea97b966a5292630e1
-    state: borrador
+    state: aprobada
     text: |-
       - Identify the product foundation and the authorised source that establishes the scope before designing a response.
 
@@ -278,13 +392,17 @@ entries:
       - Formulate each Job Story as circumstance, motivation and outcome, without naming a screen, a component or a feature.
 
       - Ground decisions in observed behaviour, the current obstacle or anxiety, and evidence that supports acceptance of the outcome.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-11:
     sourceHash: 4dc689c52f99a3653bf80519499f42071f19df1e466534bb96713928b2df2719
-    state: borrador
+    state: aprobada
     text: |-
       - Can the authorised source that justifies this decision be identified, together with its relationship to the full scope?
 
@@ -293,555 +411,785 @@ entries:
       - Are the motivation and the outcome backed by evidence, or were they assumed by the team?
 
       - Does the formulation admit several possible solutions? If it already prescribes an interface without that being a product decision, it must be revisited.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-1-12:
     sourceHash: 8b4ca300eefcdf821d8992863ee2ae37160048ecaa577382e205800bb1e14ab1
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** “As a student, I want hints so I can solve derivatives” looks like a useful story, but it begins with a role and prescribes a function. It does not explain when the blockage arises, what the person needs to understand, or how to recognise that they have regained momentum."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p02:
     sourceHash: 96c5672433c781644116c282a77499775eade12f1cbb17cd355b80777c156f7b
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 2 · `P02`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-02:
     sourceHash: 21f2b77c67d4a23e5e45879302a158a713d12296f072fae1c1a4b3bfdcfbd4a5
-    state: borrador
+    state: aprobada
     text: "### Experience is also functionality"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-03:
     sourceHash: 05e52489dad1d9828102025c546ef3a6b6534cfe70e49c5dc0c7c16af4c12407
-    state: borrador
+    state: aprobada
     text: If it works but wears you down, it does not yet work well.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-05:
     sourceHash: 165246f816f2e393266c1f3f12f0c6fc6a48e8d727ff0e9ff3672adffe1cfef5
-    state: borrador
+    state: aprobada
     text: A product is not defined solely by the accuracy of its output. How much effort, uncertainty and attention it demands in order to obtain that output also matters. Whether the experience feels fluid or frustrating alters a person's real capacity to complete their work.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-07:
     sourceHash: 75fa16cc10ff66698d3a3f2efd7cd5f3feb4450e5f6020781133e82b2c6a335a
-    state: borrador
+    state: aprobada
     text: Two products can deliver the same result and yield different levels of performance. A burdensome experience causes abandonment, errors, dependence on support and loss of trust. That cost is functional, even though it does not appear in the technical specification.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-09:
     sourceHash: 7185b9b6e0d5d5526a1b3ba2a8056169e2ea145b25c8e9725f52fcc3926d5768
-    state: borrador
+    state: aprobada
     text: |-
       - Include effort, clarity and trust within the acceptance criteria.
 
       - Test the complete flow, not just each screen or endpoint in isolation.
 
       - Consider the emotional and cognitive state that accompanies the situation defined by the product and, where one exists, by the Job Story.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-11:
     sourceHash: 002a91e8c121741c2058d3885d08f3e7056b74c6a92255c601031bf12dc40672
-    state: borrador
+    state: aprobada
     text: |-
       - Can the person concentrate on their objective, or must they manage the tool?
 
       - Which moments provoke doubt, tension or interruption?
 
       - Does a task done correctly leave the user with energy to carry on?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-2-12:
     sourceHash: a1325171c5d7dbc584acaa26205feb56dce634729fc6cc13098d103c1c477445
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** A technically valid form that wipes the data after an error turns correction into punishment. The validation works; the experience does not."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p03:
     sourceHash: 8e9ffc20901ed8bff262a2b94df759999b968327a163c5913cc4c4de4cdbfad4
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 3 · `P03`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-02:
     sourceHash: f49b36c7193f14c8ca6b6ef519df2a74926fb531822bbc381acc5e17f340b53a
-    state: borrador
+    state: aprobada
     text: "### Complexity belongs to the system"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-03:
     sourceHash: d7e8449e065157244cb9a11671af6af72368113adde7b48d0e0e79910b8b1e07
-    state: borrador
+    state: aprobada
     text: Just because it is complex to build does not mean it must be complex to use.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-05:
     sourceHash: 7203c0a96f1895f649dd201ec31ce9671e64cbfa3b44257357c953ccdff38048
-    state: borrador
+    state: aprobada
     text: The domain may require rules, integrations and exceptions. The team must absorb that complexity and present it as understandable decisions. Internal tables, states and services should not dictate the user's language or navigation.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-07:
     sourceHash: 2c59501004726163efb36946979a065daae9cdd1cac26e405a7bc6f1d4b015bf
-    state: borrador
+    state: aprobada
     text: When the interface mirrors the architecture, the person has to learn how the product was built before getting any value from it. That transfer usually seems inevitable only because it is convenient for the team.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-09:
     sourceHash: 3307d7eb0456795d959ff3753c7d99bad6cb26e88fbddbdb5c49643a20cccec6
-    state: borrador
+    state: aprobada
     text: |-
       - Translate internal concepts into the person's language and mental model.
 
       - Resolve dependencies, defaults and sequences where there is sufficient context.
 
       - Expose an exception only to those who genuinely have to decide it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-11:
     sourceHash: 58b3d473f6faa77a79e490b974efb95b9a5232b9653457bcc1471d50eb12caab
-    state: borrador
+    state: aprobada
     text: |-
       - Does this step exist because of a user need or because of the system's structure?
 
       - Are we showing a technical entity that could be translated or inferred?
 
       - Does the person need to understand this rule in order to make a good decision?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-3-12:
     sourceHash: 60d437da4f04bb09b9855d07fbcdf11885f7a821bcc52336e30588280e6c2107
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** Asking the user to first choose an internal record type, where that distinction has no meaning for them, exposes the data schema as though it were a human need."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p04:
     sourceHash: fe331a88aa7bce55b8e58e97e4b683da4b1ea6c69bea4571bb19bc7670a2b799
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 4 · `P04`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-02:
     sourceHash: 22c471699ffd3780d214edd9f440489a656fc2b03adfe41b90fbad6c96c10b29
-    state: borrador
+    state: aprobada
     text: "### Simple to begin with, deep when needed"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-03:
     sourceHash: ebe153af092acf985156dae8241cc854b9497d1fbae58bf5368c0309d726128f
-    state: borrador
+    state: aprobada
     text: Do not remove the power. Remove the obligation to face it before it is needed.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-05:
     sourceHash: e0340e53d0f0d36de411fab4f4fdbd8f65dfa905119a926cc63c1d6eeee69c91
-    state: borrador
+    state: aprobada
     text: Simplicity does not consist of reducing the product's capability. It consists of matching what is visible to the moment, the level of experience and the decision at hand. Depth appears progressively and remains available.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-07:
     sourceHash: cdd5b44b42a62db92538425782a8d2d9b36787175e0a8d92f6ba79f17b39f4bb
-    state: borrador
+    state: aprobada
     text: A minimalist product can feel easy on day one and limiting on day ten. A product that displays all of its power from the outset can be unapproachable. Progressive disclosure avoids both extremes.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-09:
     sourceHash: d825e70a034b3da4912e0918515e49c6ed45c1491a6d99f54273e7c4bbbed5af
-    state: borrador
+    state: aprobada
     text: |-
       - Show the main route first and reveal advanced options when the context makes them relevant.
 
       - Preserve shortcuts and precision for expert users without imposing them on the beginner.
 
       - Use good defaults, always editable where the decision matters.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-11:
     sourceHash: 2cd6123fe100ece793528e622ab2a7e4b268e2257ca714816d0eace294acf130
-    state: borrador
+    state: aprobada
     text: |-
       - What exactly does the person need to see in this state?
 
       - Does the simplification remove noise, or does it remove necessary capability?
 
       - Can an expert user move quickly without the beginner having to carry that depth?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-4-12:
     sourceHash: 4b15354c5c70e2142601e1edac9a1982aee120149f7226429314fd3d3724d7b9
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** Hiding every option can produce a clean first impression and a dead end when a less common case comes up."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p05:
     sourceHash: a883ee3f5e9b8b85015f3758b0c485655e4660075ec96599316f4e6e7f5b5700
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 5 · `P05`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-02:
     sourceHash: 8d4d344dd478fe89dc26fad2aed27153977ad9867859a5ecc959959c3250b736
-    state: borrador
+    state: aprobada
     text: "### The interface must not become another task"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-03:
     sourceHash: 77fa3fff68c166492292475e8f57d669be8b5c474373ada2b4a0e88a4fe43175
-    state: borrador
+    state: aprobada
     text: The person came to do their work, not to learn ours.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-05:
     sourceHash: 54b60739a477c58ddaaf9c6207c079b516d59e9148d0974cde53312024d85160
-    state: borrador
+    state: aprobada
     text: An interface must build on familiar expectations, an understandable hierarchy and immediate feedback. Every custom convention the user has to memorise consumes capacity that should be spent on the real problem.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-07:
     sourceHash: 184cd186d363977ff3bcd8b1ad338e125ac29a8962037bb2370326b9201d172f
-    state: borrador
+    state: aprobada
     text: The learning burden becomes especially damaging in educational, health, financial or infrequently used products. The person is already facing enough complexity in the content or in the decision.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-09:
     sourceHash: 6c6e3e6c1bd6d9607b1b9576e523b2c45851b3ce07285889b22db46d28517460
-    state: borrador
+    state: aprobada
     text: |-
       - Prefer known conventions where they solve the problem well.
 
       - Explain in context, without requiring prior tutorials for basic actions.
 
       - Make the primary action, the current state and the next possible step evident.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-11:
     sourceHash: 692bfdd389d61d0e14a91cb759d7801b008e86557b44f05ab6bc75c461d2bf4b
-    state: borrador
+    state: aprobada
     text: |-
       - Does the person understand what the elements mean without an external legend?
 
       - Do they need to remember something from a previous screen in order to act correctly?
 
       - Does the interface add a layer of learning unrelated to the situation or the outcome they have to resolve?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-5-12:
     sourceHash: b71a03e00d4199e31d32b9473e9d69ecdbd72a4bb8ed7cf8cd5d8e3d622832a3
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** A numbered sequence with no visible meaning forces people to learn the navigation at the same time as the content. The numbers organise things for the team, but they do not orient the user."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p06:
     sourceHash: 8b1c2da6bcbf7911b28a12f7824d7942204fbecd75c8e5a3e085a3ba8d4d4e8c
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 6 · `P06`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-02:
     sourceHash: ee4315ca32176036910ebc4de59eadb3b53fba8d65791917d14fc9ece6733035
-    state: borrador
+    state: aprobada
     text: "### Attention is a product resource"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-03:
     sourceHash: 347b6047aa96f6b43cc62eff471401c555988a61f9ab1ec490ddbb5cf3a69be1
-    state: borrador
+    state: aprobada
     text: Everything we show competes with what the person came to do.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-05:
     sourceHash: e8045a544fd72b5d7b8081cca7f62f85bba09e2316e2db84ba1c8562cd1fa5b3
-    state: borrador
+    state: aprobada
     text: Attention is finite. Menus, alerts, animations, choices and text all demand a share of it. Design must manage that budget with the same discipline as performance or cost.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-07:
     sourceHash: 697f8e8110f9ed7f538fad23327868321fd1508b6211168e6e716291103c76d8
-    state: borrador
+    state: aprobada
     text: An interface can be free of errors and still fail through saturation. Accumulated load degrades understanding, increases accidental decisions and makes simple tasks feel heavy.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-09:
     sourceHash: cd137243625d96195e8c4f461c11f13296d2251486973630de443127585506c4
-    state: borrador
+    state: aprobada
     text: |-
       - Require every visible element and every decision requested to answer to a verifiable circumstance, motivation or outcome.
 
       - Establish hierarchy by relevance to the current state, not by giving every feature equal weight.
 
       - Reduce interruptions and reserve strong signals for matters that genuinely require attention.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-11:
     sourceHash: 01895d24a2d85178ebcbbe0960bcb5e16e010655d64de375bdc8bf51b5fed4f8
-    state: borrador
+    state: aprobada
     text: |-
       - What competes visually or mentally with the primary action?
 
       - Can an element be removed without losing necessary information or control?
 
       - Does the interface distinguish the urgent, the important and the optional?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-6-12:
     sourceHash: 680b7599e2e2970f1ba0c397d849a38ed3e351893dfb1b2083005130c5c509fb
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** Presenting five actions with equal visual weight forces the user to establish a priority that the product should already know from context."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p07:
     sourceHash: b352795cc361844dcf699e8d53db4c43f4b97e9213086347f93e994b166f7dca
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 7 · `P07`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-02:
     sourceHash: b8d5eb5a6ea2a71eedfba34ac732df71b2e5b2934fa6cb0fd5f9fb95310ec5ba
-    state: borrador
+    state: aprobada
     text: "### Trust is designed"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-03:
     sourceHash: ac65f1d9d88d4bc2fe5be6234703c1209678848ca95ef17fbf8d7946ff425c9d
-    state: borrador
+    state: aprobada
     text: A good tool explains enough for the person to act without fear.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-05:
     sourceHash: 3a97b2f4126192dad181e1d032e0aeac6bdebb401769911ae0be0f63e6ff3a0d
-    state: borrador
+    state: aprobada
     text: Trust arises when the product shows its state, anticipates consequences, confirms results and offers recovery. It does not rest on general promises, but on predictable behaviour.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-07:
     sourceHash: 8bdf13fd41c0c35754e378d2056c5508f27eac1a3148d493ebc2d44a5c2c2fa4
-    state: borrador
+    state: aprobada
     text: Uncertainty holds action back. With AI, trust additionally requires distinguishing facts, inferences, proposals and actions already carried out. A fluent response cannot conceal its limits.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-09:
     sourceHash: 2bf2d13fbb699a0b505a42b105fa23feead2bb29351fd0aba10204c7944c7d0d
-    state: borrador
+    state: aprobada
     text: |-
       - Show what is happening, what will change and when an action will be irreversible.
 
       - Allow people to undo, correct or return to a safe state where that is reasonable.
 
       - Clearly differentiate recommendations, automatic decisions and confirmed results.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-11:
     sourceHash: 64d26f5446d76c7a02fb3fbe7423d9c5c3bd3da05d4eb0377685da88c9a7f414
-    state: borrador
+    state: aprobada
     text: |-
       - Does the person know what will happen before confirming?
 
       - Can they verify what the system did and why?
 
       - Is there a way to recover that is proportionate to the risk?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-7-12:
     sourceHash: 9894141c7e196e899150e7745d3ba62bf0f9d4b576f4e98e4bc6a9d0a4ba8578
-    state: borrador
+    state: aprobada
     text: '**Sign of non-compliance.** An agent that reports "done" without showing what changed forces people to trust its tone rather than the evidence.'
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p08:
     sourceHash: c10361bfc710cfabf8b69ffa80a44cf0d69b69a668059cbe8f7b98bb376cc722
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 8 · `P08`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-02:
     sourceHash: bca9dd674b7c13b797ac205eb66385b5a3fb39b43c195addc960987f16277aeb
-    state: borrador
+    state: aprobada
     text: "### Quality lives in the accumulation of details"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-03:
     sourceHash: 196b50c98693589f5941749c9d6f195c2f56a134d91ebb90aa2ce8ca539ba70f
-    state: borrador
+    state: aprobada
     text: Quality rarely depends on one big decision. It is recognised in many small decisions that align with one another.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-05:
     sourceHash: ee66dd6f3aea2bd71216cf9b85729a2723fd1952a1d0c261261ea7d1eaf3fcf8
-    state: borrador
+    state: aprobada
     text: Typography, spacing, wording, focus, empty states, errors, transitions and micro-interactions form a single experience. No detail compensates on its own for a poor solution, but their accumulation can either reinforce or erode trust.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-07:
     sourceHash: 77fdd4790edf55296f4af2f6cb48556b75b32b7fa9c25f2528c0da24ae0168b0
-    state: borrador
+    state: aprobada
     text: Users do not separate interface, engineering and content. They experience a complete product. One small inconsistency may be tolerable; a hundred inconsistencies turn use into constant friction.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-09:
     sourceHash: 80d30e9a1cf740ddfadd3f611b145d771a47517e9ecbbf4c251f90ecd8afc93a
-    state: borrador
+    state: aprobada
     text: |-
       - Design and verify normal, empty, loading, error, success and recovery states.
 
       - Keep language, hierarchy and behaviour consistent throughout the flow.
 
       - Review the product at actual size and with realistic content before approving it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-11:
     sourceHash: 72e0dd527695b2c8c5a78528b6f972e23155f93663f5cfbda76e4769a4004516
-    state: borrador
+    state: aprobada
     text: |-
       - Do the details reinforce the same logic, or do they contradict expectations?
 
       - What happens in the less frequent states?
 
       - Does the product feel deliberately built, or assembled from parts?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-8-12:
     sourceHash: 5f4da174ee4ea0a9a04128d832a65538e5506917ac9d13063ec2c4d4c0b5ea44
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** A button changes its label between steps, an error appears far from its field, and focus is lost after saving. Each defect is minor; together they break continuity."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p09:
     sourceHash: f0c567a03f20a9eb3453bc8007b36c8404029f97a514cb6a6e5fef4a053e43d0
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 9 · `P09`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-02:
     sourceHash: 1d7feadee74c9ed9f0caa95b4d5b06e9007c94df82557fb07e4f27079b8c15ed
-    state: borrador
+    state: aprobada
     text: "### Time and continuity are part of the interface"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-03:
     sourceHash: 18b4d70f6dca56535c460a50e1fd1374e98beabaa49b49b7b20aa6069e69cefd
-    state: borrador
+    state: aprobada
     text: The person experiences the wait before they know anything about our architecture.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-05:
     sourceHash: 7da6e8caf7c4dd422a3820b734e375791f493b99a9ba5df987572e66ce5e4795
-    state: borrador
+    state: aprobada
     text: Latency, availability, synchronisation and preservation of work are properties of the experience. The user does not distinguish between infrastructure and interface when a response is slow, an action is duplicated or progress is lost.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-07:
     sourceHash: 7dada98ca2b48a1a45500f37e280dc55a9d49525928fef840356a801fd83ea20
-    state: borrador
+    state: aprobada
     text: "Slowness changes behaviour: it produces repeated clicks, hesitation, abandonment and errors. Loss of continuity forces people to rebuild context and destroys trust quickly."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-09:
     sourceHash: fac5fc0b3cb87445f6a43c0d1d77658f1630fdc126991d9b4bb2cfaba64c75c3
-    state: borrador
+    state: aprobada
     text: |-
       - Define response budgets for critical interactions.
 
       - Show honest progress and allow work to continue when an operation may take time.
 
       - Save work, context and state at a frequency proportionate to the cost of losing them.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-11:
     sourceHash: e52ccb34802fa685d322eaa33eaf5fe779873243f5fa794962ac1548be92ab51
-    state: borrador
+    state: aprobada
     text: |-
       - Does the interface respond immediately even though the underlying process continues?
 
       - What does the person lose if the connection fails right now?
 
       - Does the product avoid duplicate actions and ambiguous states?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-9-12:
     sourceHash: ee9ff5001e2e1d6be5d646cc8fa7167811bcb76e596d3270341d7d70b28deafe
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** A button with no feedback for three seconds invites a second press. The resulting duplication looks like user error, but it originates in the system."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   p10:
     sourceHash: 6ada26f0e7de696ac21f140b4411ef270d3a565c451b56aeb47b29661e439fe5
-    state: borrador
+    state: aprobada
     text: "## PRINCIPLE 10 · `P10`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-02:
     sourceHash: 15246d01395fdb9040ff4ffc9bd96892696bce8ea5ab604dd2c05fb8264b19a6
-    state: borrador
+    state: aprobada
     text: "### The person retains control and ownership"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-03:
     sourceHash: b9572e505ed1b3606800557fbc5ca19137324943dc4123606b5b35a63e1f01ff
-    state: borrador
+    state: aprobada
     text: Helping does not mean deciding for the person or taking over their work.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
-    state: borrador
+    state: aprobada
     text: "#### What it means"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-05:
     sourceHash: f7f9cbb6f1efe00338292681e3f79ef2c2c4fe37165cfa2f8a3b112b0c5db1ff
-    state: borrador
+    state: aprobada
     text: Software can anticipate, recommend and automate. It must do so without hiding decisions, locking information away or preventing alternatives. In systems with AI, control includes understanding what information was used and what action was carried out.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
-    state: borrador
+    state: aprobada
     text: "#### Why it matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-07:
     sourceHash: 4dc2876456d8753a0a90b27260b1189128340c47ea03a8d22cb1bb7ca1171668
-    state: borrador
+    state: aprobada
     text: Automation without human agency can accelerate the wrong path. Ownership and portability reduce dependence, strengthen trust and allow people to combine tools according to their needs.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
-    state: borrador
+    state: aprobada
     text: "#### Design rules"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-09:
     sourceHash: a3e1c19f780784c2d45c1fd5bdd577516c49538b93aee990f022b6f22cf13d56
-    state: borrador
+    state: aprobada
     text: |-
       - Ask for confirmation in proportion to the impact, not for every gesture nor after an irreversible action.
 
       - Allow reviewing, editing, exporting and reverting where the domain permits it.
 
       - Explain the use of data and separate authorisation, recommendation and execution.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
-    state: borrador
+    state: aprobada
     text: "#### Decision tests"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-11:
     sourceHash: 02df8f5aeac27a611a5e908492b4bcc2ea2bd988e685b816b8dbfc92a5a24c96
-    state: borrador
+    state: aprobada
     text: |-
       - Can the person reject the proposal without losing their progress?
 
       - Do they understand what data was used and for what purpose?
 
       - Can they recover or take their content away in a useful format?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   principio-10-12:
     sourceHash: f1d84896822a2b206cdce9825313b67f19d4e99595faa5d1957bffc1aa526375
-    state: borrador
+    state: aprobada
     text: "**Sign of non-compliance.** An AI that rewrites and publishes without a preview turns assistance into appropriation of the process."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-fund:
     sourceHash: 28dc64c19ec351959bea52b47a71d750b13a1d7801338fe16c674b5e5fcc5f0b
-    state: borrador
+    state: aprobada
     text: "## PRODUCT FOUNDATION AND REFERENCE FORM · `SH-FUND`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-02:
     sourceHash: b7100a84cb226e1f7b6116d5841bd92a4eea2fb8abe4084115b79d918e442a19
-    state: borrador
+    state: aprobada
     text: "### From the product foundation to a verifiable solution"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-03:
     sourceHash: 1f1ce84996b9601d017a598cd44dd2cc79fc89024ef32fa3a5fd281e43ca88a4
-    state: borrador
+    state: aprobada
     text: The product foundation is the authorised content that establishes what must be built, why it must exist, what results it must produce, what conditions it must respect and how compliance can be determined. It is not a new kind of document nor a mandatory template. It may be found in a Job Story, a Jobs to Be Done statement, an epic, a capability, a requirement, a business rule, a journey, an acceptance criterion or a coherent combination of these elements.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-04:
     sourceHash: 50e5a11c166803d56e68b5926e90214d6af0e421910fcb1105f34e38d007b757
-    state: borrador
+    state: aprobada
     text: "#### When the foundation is identifiable"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-05:
     sourceHash: 06871f398db55a7f46dbce3443ecaf9bee13aa0d9f960e36c78c80d4908076e0
-    state: borrador
+    state: aprobada
     text: A product foundation is identifiable when development can establish, without inventing product decisions, the following elements. They may be spread across one or several parts of the definition received, and they need not use these names or this order.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-06:
     sourceHash: dae6347dcd97e3f17f71a69b0db1a1b94a76bdce924fd54a0a04be1719715228
-    state: borrador
+    state: aprobada
     text: |-
       | **Element**              | **Control question**                                       | **Minimum condition**                                        |
       |--------------------------|------------------------------------------------------------|--------------------------------------------------------------|
@@ -850,25 +1198,35 @@ entries:
       | Result                   | What change or progress must it produce?                   | A result recognisable to people or to the product            |
       | Conditions and limits    | What rules, constraints and exclusions must be respected?  | Limits sufficient to prevent silent decisions                |
       | Evidence                 | How will we know it has been met?                          | Criteria, observations or tests proportionate to the risk    |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-07:
     sourceHash: 8e810c1d69150618d75154e4efa918ace04ddbea0a13eff18cca37c6c64565c5
-    state: borrador
+    state: aprobada
     text: The absence of a specific section or field in the PRD is not in itself a defect. The method must understand the structure the product uses. If a definition capable of materially changing the solution is missing, the agent must surface the gap and refer the matter to the corresponding authority; it must not fill it in through a silent inference.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-08:
     sourceHash: a4bbe9c48535bac7e39894360f375fbbe53c6833373ca87f793463181cf68c47
-    state: borrador
+    state: aprobada
     text: "#### Full scope and product authority"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-09:
     sourceHash: 582eb29539eef9434ed38b8b9e02495e6dd1cf2f1d6feb2eeef9c9a702d336f4
-    state: borrador
+    state: aprobada
     text: When an approved product definition contains multiple stories, capabilities, rules or specifications, all of them form part of the scope unless the definition itself or an authorised decision establishes otherwise. The development plan must understand the whole, resolve its relationships and dependencies and ensure its coverage. It may break the work down, order it, group it or run it in parallel; that breakdown does not modify the scope.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-10:
     sourceHash: 3490302753a3ffee83a622a85bcc483ad05c3fbc270373bf8319ab6312e19469
-    state: borrador
+    state: aprobada
     text: The plan organises how the scope is implemented. It does not silently decide which part of the scope deserves to exist.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-11:
     sourceHash: 762e840879ddb06dc81646fdbac333bff87736b2f7f74045d0ca19d3417541a6
-    state: borrador
+    state: aprobada
     text: |-
       - Every omission, modification or deferral must be explicit, traceable and approved by the product authority.
 
@@ -877,37 +1235,53 @@ entries:
       - An incremental, phased or release-based strategy may be used where the project adopts one; it is not an obligation of the core.
 
       - Completeness is determined by reconciling the implementation and the evidence against the complete product definition and its approved exceptions.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-12:
     sourceHash: c2bac53c97da13869667bb5a7be186fc6bac2bc58a38e24dbceff8fcf10be5c4
-    state: borrador
+    state: aprobada
     text: "#### Job Stories as a reference form"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-13:
     sourceHash: 66be5c2c894c7908b947da0131335909e248118f25d99da6b4520069e224a120
-    state: borrador
+    state: aprobada
     text: This manifesto uses Job Stories as a reference form for showing how a product foundation can be carried through to design, implementation and verification. Job Stories make the circumstance, the motivation and the expected outcome explicit, which makes them a particularly useful representation for reasoning about human progress.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-14:
     sourceHash: 1f5338b10b2f25a4c2e7e21448aa07cfa42028fe890d18bdd4328bf22dfb0ea4
-    state: borrador
+    state: aprobada
     text: Their use in the explanations, rules, examples and tests does not require every product definition to be expressed through Job Stories, nor does it authorise automatically transforming a PRD into that structure. Where the definition uses another form, the method must preserve its meaning, its relationships and its authority. A derived Job Story may be proposed as a working view where it adds clarity, but it does not replace the source nor acquire authority by having been generated.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-15:
     sourceHash: c8e6c780f62aea2977b73ad50521fa42db2a02ccab900473180048d448ce6437
-    state: borrador
+    state: aprobada
     text: "#### From Jobs to Be Done to Job Stories"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-16:
     sourceHash: 39fdb10d7f0531b920be96d69f36bb21225442fcbc317845cd4b6fb08b3192b4
-    state: borrador
+    state: aprobada
     text: "Jobs to Be Done and Job Stories serve different functions. Jobs to Be Done maintains the product's direction: the broad progress that leads a person to adopt a solution in their life or work. The Job Story narrows that progress down to a concrete situation that can guide a design decision, an implementation and a test."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-17:
     sourceHash: 40e7db4f113808e7624d1f55e2e6f8f5ed8593d2ed88c33cc104ff03b26acb32
-    state: borrador
+    state: aprobada
     text: When this form is used, each Job Story must retain an explicit relationship to the corresponding higher-level job, purpose or outcome. That relationship prevents an isolated story from losing the product's direction.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-18:
     sourceHash: 8bb295157d42d8e63f097ef6d5e7d09aee62232c312a537f9c04ac2a77ba5e66
-    state: borrador
+    state: aprobada
     text: "#### Relationship between the levels"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-19:
     sourceHash: abbd0b60a00953d5be31a411d9f9ef6915648dd25813f6b854122e71f6d67f22
-    state: borrador
+    state: aprobada
     text: |-
       | **Level**               | **Defines**                                                                          | **Avoids**                                                |
       |-------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -915,37 +1289,53 @@ entries:
       | Job Story               | The circumstance, motivation and outcome that trigger a concrete need                 | Designing from generic roles or literal requests          |
       | Product response        | The system behaviour chosen to address the story                                      | Confusing the problem with the first solution imagined    |
       | Acceptance evidence     | The observation that demonstrates progress in that circumstance                       | Accepting a delivery because it works technically         |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-20:
     sourceHash: b69d58a05cbd1a6cbb8c0401e1b0fdb82d0300148e2c5e1bb87564bc6461916e
-    state: borrador
+    state: aprobada
     text: "#### Canonical form of a Job Story"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-21:
     sourceHash: 967178a07d1c0e94aaa181c16efc19614d3de46e2cbc0f04669550164aff2642
-    state: borrador
+    state: aprobada
     text: When an observable circumstance occurs, I need to make progress without prescribing the solution, so that I can reach a recognisable outcome.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-22:
     sourceHash: 2685adfa446a5edbaaec3c06924ad5c4da64dd349ac0d032a3d7f503427b7800
-    state: borrador
+    state: aprobada
     text: "**When.** Describes the fact, change or tension that triggers the need. It must be observable or recognisable without depending on a fictional persona."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-23:
     sourceHash: 79d2e702e9d92923fd1ea97a07190a434b2bc5e6a3b55a947d94df21b8871011
-    state: borrador
+    state: aprobada
     text: "**I need.** Expresses the motivation, understanding or decision required. It does not name a screen, a button, an agent or a feature."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-24:
     sourceHash: a875e497f923bfa362ac3354473a0d91c605ac1984b74490c012951b17c5c661
-    state: borrador
+    state: aprobada
     text: "**So that I can.** Defines the improved situation the person is seeking to reach, and which will later have to be verified."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-25:
     sourceHash: 1f5cf2cf0eaeb16a7f1ea59684253eec168a9e957180694008dc51055a0fc51d
-    state: borrador
+    state: aprobada
     text: "#### Minimum evidence accompanying the story"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-26:
     sourceHash: 3e8bd582630f368a1bdc600388558dd2dab581f7469247f242be319885a8fe3e
-    state: borrador
+    state: aprobada
     text: The sentence guides the conversation, but it does not replace research. A story ready to guide development must record only the evidence needed to support its decisions.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-27:
     sourceHash: 4633734dfe1ced95bcfe54c42370a4b397d4b481ee35deea60038c9b91a98a3e
-    state: borrador
+    state: aprobada
     text: |-
       | **Element**            | **Question**                                                    | **Minimum content**                                          |
       |------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|
@@ -953,21 +1343,29 @@ entries:
       | Obstacle or anxiety    | What holds progress back or makes it risky?                      | Relevant doubt, cost, fear, effort or dependence             |
       | Causal evidence        | What supports the link between circumstance and motivation?      | Observation, interview, usage data or a declared assumption  |
       | Evidence of success    | What would demonstrate that progress occurred?                   | Observable behaviour or outcome within the circumstance      |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-28:
     sourceHash: 3aa854ab26bacc761a9e97ba2b125d1825672ef4b281c870e2de559aba80202f
-    state: borrador
+    state: aprobada
     text: "#### When role still matters"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-29:
     sourceHash: 3029109989091ed6db868915c6c56a3a0aa1dea7d7caa0e4444e2e9635309e64
-    state: borrador
+    state: aprobada
     text: Job Stories avoid using role as an automatic explanation. They do not eliminate real differences between people. Role, experience, age, permissions or a physical constraint must be incorporated when they causally change the circumstance, the risk or the valid solution. If they do not change the decision, they must not govern the story.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-30:
     sourceHash: 0d0721ddc628a94b5f24eadc57b4ca739df59a622f08dec3e5c20bbb924589b7
-    state: borrador
+    state: aprobada
     text: "#### Quality tests before designing"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-31:
     sourceHash: 36a28f3244b75e8722364116bd6c17102056bedc48a92c16bd8a572425d485c1
-    state: borrador
+    state: aprobada
     text: |-
       - The circumstance describes a concrete trigger and not a category of user.
 
@@ -980,17 +1378,23 @@ entries:
       - The formulation allows several responses to be compared, including the option of not building.
 
       - The scope is sufficient to change a decision, but does not attempt to contain the user's entire work.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-32:
     sourceHash: 4bcb54afaf0c880a1da84626eed84e955aa4345d043a589814acb97ffc746702
-    state: borrador
+    state: aprobada
     text: "#### Chain of traceability"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-33:
     sourceHash: 73ed0ba5b70049eafa7be622a02dc8683cb0d4ebf41a33867122572da1c8909a
-    state: borrador
+    state: aprobada
     text: "Development must be traversable in both directions: from each implemented decision back to the product foundation that justifies it, and from the complete product definition forward to the evidence that demonstrates its coverage. Where the foundation is expressed through Job Stories, traceability must preserve the circumstance, the motivation and the outcome of each applicable story."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   fundamento-de-producto-y-forma-de-referencia-34:
     sourceHash: 176891ffa1eaae59a0f6f0c223b53f4ef2aaf70bc26f5b170b9211faba7eb9d6
-    state: borrador
+    state: aprobada
     text: |-
       | **Origin**                 | **Decision**                                                                        | **Verification**                                                           |
       |----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -999,33 +1403,47 @@ entries:
       | Job Story                  | What concrete circumstance must be addressed where the source uses this form         | The story is validated and does not prescribe an unauthorised solution     |
       | Design and implementation  | What behaviour responds to the foundation                                            | Every element has a traceable reason                                       |
       | Acceptance                 | What evidence authorises declaring the development complete                          | Results, rules and criteria are met under the defined conditions           |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-01:
     sourceHash: 6ec494189300971192b2c0d36750706a8adc8f5217c441ad3f8ed8c3c1d57180
-    state: borrador
+    state: aprobada
     text: "## DOCTRINE FOR DEVELOPMENT WITH AI"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-02:
     sourceHash: 3fe47f4dc19057e2f303e9771bd0d7590358c0b6216666f7236a0a63bc1d0eee
-    state: borrador
+    state: aprobada
     text: "### When building costs less, the decision matters more"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-03:
     sourceHash: 5aef2c6b0f98b4eeda8fb34018d151ffcc56822ae6fea61bbddd260d2a30a690
-    state: borrador
+    state: aprobada
     text: Coding agents reduce the cost of turning instructions into software. That advantage shifts the bottleneck. The problem is no longer only whether a capability can be built, but whether it deserves to exist, whether it solves the right problem and whether it preserves the user's understanding.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-04:
     sourceHash: 051b2e7cacbfc6d1782dd56799007a9bc87266bbbf198150ad13378a300e902e
-    state: borrador
+    state: aprobada
     text: AI must absorb complexity, not produce it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-05:
     sourceHash: 849d990414ea076bba7f0390e97d4b948afe1666a74da24382e793fb94cdd0a1
-    state: borrador
+    state: aprobada
     text: An agent can implement a weak specification at great speed, reproduce conventional patterns that do not fit the context and add plausible options that nobody asked for. This is why AI-assisted development needs an explicit layer of intent, limits and verification.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-06:
     sourceHash: 45f85b0e1fa5bdc616d88610a051938dd0b4e807eba15d360cbc2cbceef3d83b
-    state: borrador
+    state: aprobada
     text: "#### Six directives for teams and agents"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-07:
     sourceHash: 58955d53a04d2b2d3ff2bec23c4d279f6b3f834aafc7e9d348b887e3dfa9cc4b
-    state: borrador
+    state: aprobada
     text: |-
       | **Directive**                                         | **Requirement**                                                                                                                                                                                              | **Limit**                                                                                                  |
       |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -1035,29 +1453,41 @@ entries:
       | `D04` Determinism where it matters                    | Implement critical rules, permissions, calculations, states and validations as verifiable logic.                                                                                                                 | Do not delegate certainty, compliance or security to a model's variable behaviour.                          |
       | `D05` Verification before acceptance                  | Evaluate the flow, the edge states, accessibility, performance and the real outcome.                                                                                                                             | Generated code and passing unit tests do not amount to a finished product.                                  |
       | `D06` AI subordinate to the user                      | Use AI to propose, explain and execute within clear limits, keeping review and reversibility proportionate to the impact.                                                                                        | The fluency of a response never substitutes for evidence or authorisation.                                  |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-08:
     sourceHash: e25d483f0644c0d76b67852aea2b4cbbf398d17677dd37bcd6f61cbe260eb01d
-    state: borrador
+    state: aprobada
     text: "#### The second governing question"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-09:
     sourceHash: 734d21d7bafa562e60fbf164aafcb78a10629581a0d65b1da83da0ce5b9c28f5
-    state: borrador
+    state: aprobada
     text: Now that we can build almost anything more easily, what deserves to be built and what should we deliberately leave out?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-10:
     sourceHash: 03a45914ba87b1ea1c8212cd20e11a2455baea0c52e9e1e288eeabd9673ab342
-    state: borrador
+    state: aprobada
     text: This question introduces an obligation that could previously remain hidden by technical cost. It must be raised during the product definition and when evaluating alternatives, not used during implementation to unilaterally trim an approved scope. Every capability must justify its existence against a simpler alternative, including the alternative of not building it; once authorised, any exclusion requires a traceable product decision.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-11:
     sourceHash: b36ca7adbc0b4fae7784a15b59d1a0e7bb9afa440dce25d6b2c3d9dd8791b831
-    state: borrador
+    state: aprobada
     text: "#### Determinism and generation"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-12:
     sourceHash: 9baf0423aa636a626e68fe0c484c77b002a84c6ca725cc01931a474dea2108c0
-    state: borrador
+    state: aprobada
     text: The choice is not between a deterministic product and a product with AI. A dependable system combines both according to the nature of each decision.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   doctrina-para-desarrollo-con-ia-13:
     sourceHash: e25ff7b936ddb193a34af12928e42d357daaf99600d33fe5df11f675ed2ab803
-    state: borrador
+    state: aprobada
     text: |-
       | **Type of behaviour**                                                  | **Preferred treatment**                        | **Examples**                                                  |
       |------------------------------------------------------------------------|------------------------------------------------|---------------------------------------------------------------|
@@ -1065,21 +1495,29 @@ entries:
       | Can yield several useful answers and requires interpretation           | AI with context, limits and evaluation         | Explaining, summarising, proposing alternatives, classifying text |
       | May affect money, reputation, security or rights                       | AI proposes; a rule or a person authorises     | Publishing, purchasing, deleting, sending, changing access    |
       | Uncertainty is part of the output                                      | AI declares assumptions and confidence level   | Recommendations, estimates, incomplete information            |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-01:
     sourceHash: 9cc6718b376174b98c04dabb04b4faa7f08edfd2f3954ec9fa398d127946c091
-    state: borrador
+    state: aprobada
     text: "## WORKFLOW"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-02:
     sourceHash: 6d626dfdd0f89b9643b2c9cc5963178cf9b5b3ca7ec644068aa634cd4a860082
-    state: borrador
+    state: aprobada
     text: "### From purpose to a verifiable solution"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-03:
     sourceHash: eaacb80789271e6e69fc3bd0d48c80fbc0fa76095ffec0099d47b7e4e8b0ea5c
-    state: borrador
+    state: aprobada
     text: The flow prevents code generation from becoming the first act of design. It does not seek to create a documentation-heavy phase or to impose a structure on the PRD. It aims to understand the foundation received, produce the clarity needed to plan and maintain coverage through to acceptance.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-04:
     sourceHash: 8600ba0c5ec71fb3dfa8d21ff5e373d283d3a2e2e3a71186afc403f04a289f5f
-    state: borrador
+    state: aprobada
     text: |-
       | **Step** | **Decision**                       | **Work**                                                                                                     | **Minimum evidence**                                                              |
       |----------|------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -1091,17 +1529,23 @@ entries:
       | `F06`    | Model rules and risks              | Separate deterministic logic, generative behaviour, permissions and irreversible actions.                      | A map of decisions and limits.                                                    |
       | `F07`    | Explore and prototype              | Compare alternatives and test understanding, hierarchy and recovery before optimising code.                    | The reason for the chosen alternative and evidence from the journey.              |
       | `F08`    | Build, integrate and verify        | Implement the plan, maintain traceability and reconcile results against the full scope.                        | Code, tests and evidence of coverage; outstanding items and exceptions made explicit. |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-05:
     sourceHash: b4450ce74b89e5be7528134017cadaed64814b5d3a5d5faec3104516c36e10e8
-    state: borrador
+    state: aprobada
     text: "#### Artefacts matched to context"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-06:
     sourceHash: 80a83c92ab23750cf86c22eb01fd13dc6b807bcf5f96393683d7d0ddbd4f25b4
-    state: borrador
+    state: aprobada
     text: Each artefact exists to answer a question, not to satisfy a template. It may be a section of the PRD, a derived view, a table, a test or a separate document. If the information already exists, it must be referenced and not duplicated. Depth depends on length, complexity, uncertainty and risk; if an artefact neither changes a decision nor helps verify one, it must be simplified or removed.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-07:
     sourceHash: 2bac946570a18170e8f22285fa9c07bb71d66316a13c417a4bc20f242f848510
-    state: borrador
+    state: aprobada
     text: |-
       | **Artefact**                        | **Question**                                                | **Minimum content**                                                                                      |
       |-------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -1113,17 +1557,23 @@ entries:
       | `A06` Complexity budget             | What burden are we adding?                                  | New concepts; decisions; steps; exceptions; visible options                                               |
       | `A07` Acceptance plan               | What evidence authorises declaring the development complete? | Results; rules; Job Stories where they apply; accessibility; performance; edge states; metrics           |
       | `A08` Decision record               | Why did we choose this alternative?                         | Alternatives; trade-offs; assumptions; decision; date; outstanding evidence                               |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-stop:
     sourceHash: c7dc7b1e7898b9ae55375cdb9529736dde237c5a4cde0c8dcce68bb8bef8550a
-    state: borrador
+    state: aprobada
     text: "#### Stopping rule before generating · `SH-STOP`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-09:
     sourceHash: 01b6078a8d42bfb7099c33675029b7df5165f32d9d0a86e38e07575589d6aaa7
-    state: borrador
+    state: aprobada
     text: "The agent should not begin an implementation if it cannot answer the following questions precisely, at the level required by the risk and the complexity:"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-10:
     sourceHash: de2c829d115613eecff7737e175cfe500e1cdcf1d8e4eb47dc1fa2fd9c46612b
-    state: borrador
+    state: aprobada
     text: |-
       - What is the authorised product definition and what scope does it establish?
 
@@ -1142,117 +1592,173 @@ entries:
       - What falls outside the scope and who established that exclusion?
 
       - What evidence will demonstrate that the development is complete?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   flujo-de-trabajo-11:
     sourceHash: f99a7c7fa15cf988ed2d14bdf68e321d9777f4a5d13c5f5a8b97ba03bbdb0fe7
-    state: borrador
+    state: aprobada
     text: If an answer is missing that could materially change the solution, the scope, a rule or a right, the agent must stop and ask for it. If the uncertainty is minor, reversible and within its authority, it may declare an assumption and proceed without silently reducing the coverage it has committed to.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-01:
     sourceHash: ba40132368df764cccb66afba32a5303c9633477c97b057132a34b4b55104387
-    state: borrador
+    state: aprobada
     text: "## REUSABLE CONTRACT"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-02:
     sourceHash: 867d80d56adcf484b852731eace1af0a2e7ada4951bfc0bb9a01145221467959
-    state: borrador
+    state: aprobada
     text: "### Instructions for a development agent"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-03:
     sourceHash: 796823b9f0b12e6893094c2571ac76b30a18dcf8e30b463ff563cc0ecb84256f
-    state: borrador
+    state: aprobada
     text: The following contract can be incorporated into a repository's instructions, into a PRD or into a coding agent's prompt. It must be accompanied by the product's specific context and does not replace the definition of the problem.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr01:
     sourceHash: 9279043c64d698224b8bdcac316a3961dbe0415ac67a2fa7259e81ea0f621fb4
-    state: borrador
+    state: aprobada
     text: "**`CR01` Purpose.** Build the simplest solution that lets the user achieve the defined outcome, preserving clarity, control and the ability to recover."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr02:
     sourceHash: 82680a309c435d1c8fa26ac51cdd2bbdf49431464bb338eaa1c65432d0b60992
-    state: borrador
+    state: aprobada
     text: "**`CR02` Before programming.** Identify the authorised sources, explain the product foundation and confirm the full scope. Recognise the structure the definition uses; where it contains Job Stories, preserve their circumstance, motivation and outcome. Separate evidence from assumptions and identify any ambiguity that could materially change the solution."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr03:
     sourceHash: 7e3ead93f9ea8176fa06c81ad236e3a56806259a2eb0a5474250f2a8eb1cdeb8
-    state: borrador
+    state: aprobada
     text: "**`CR03` When planning.** Account for every mandatory element and establish their dependencies, blockers, order, integration and tests. Do not select, omit or defer parts of the scope on your own initiative. If constraints prevent covering it, request a decision from the product authority."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr04:
     sourceHash: a7b0b09a1e72ba4b0ed08a4254c6b13ab7739ad7f30074236608a659e80a0736
-    state: borrador
+    state: aprobada
     text: "**`CR04` When proposing.** Present the recommended alternative, a simpler alternative and the option of not building, where the decision still belongs to product. Explain how each one responds to the foundation, what burden it introduces and what trade-offs it demands."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr05:
     sourceHash: e97b99643eec69194f47c25ecc10fc6a3186d1b4d017117376363308ac0ac7c6
-    state: borrador
+    state: aprobada
     text: "**`CR05` When designing.** Do not expose internal structures. Use the user's language, known conventions, a clear hierarchy, progressive depth, editable defaults and immediate feedback."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr06:
     sourceHash: 82ee6e62250a52ec1526b88fc26ba6738c541228d5d7c996153493d9270b116c
-    state: borrador
+    state: aprobada
     text: "**`CR06` When using AI.** Reserve critical rules for verifiable logic. Declare uncertainty. Do not carry out high-impact actions without proportionate authorisation. Maintain traceability, review and reversibility."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr07:
     sourceHash: 36e9974b51e5c844f7f5ecc898f07a3caa1b046b7bdfe2282e290fa24a245518
-    state: borrador
+    state: aprobada
     text: "**`CR07` When implementing.** Respect the agreed scope and preserve traceability to its foundation. Do not add features, modes, configurations or abstractions that were not requested. Cover empty, loading, error, success and recovery states, and integrate the related parts."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   cr08:
     sourceHash: 83f7caeea75ddb6534fd3c4e0d57c5e539a24a13b05cd1a9fe29b8bd592c9c62
-    state: borrador
+    state: aprobada
     text: "**`CR08` Before declaring the work complete.** Reconcile the implementation against the complete product definition. Verify results, rules, criteria and, where they apply, the Job Stories in their circumstances. Also check accessibility, perceived performance, errors, persistence of work and user control. Deliver evidence, outstanding items and approved exceptions."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-12:
     sourceHash: 0104faafa94aababa3f983e8b052b51e940acce234076e3e727b88091c88c07a
-    state: borrador
+    state: aprobada
     text: "#### Expected delivery format from the agent"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o01:
     sourceHash: 9c802a92b15f833f5521adc5fc75a3681cea88cd34751bf19746e7116597bec2
-    state: borrador
+    state: aprobada
     text: 1\. `O01` Authorised sources and product foundation that justify the development.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o02:
     sourceHash: 7ed3cff8957dffa84d458890536aa2d376f3ecbc793aee0f71b6332fefa26927
-    state: borrador
+    state: aprobada
     text: 2\. `O02` Inventory of scope and coverage of the applicable stories, capabilities, rules, states and criteria.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o03:
     sourceHash: 0e4c75c3c9d0fa89ab0c7e63c282d90b07c9e08ced61cd8ee01a8bf8a25cbe0f
-    state: borrador
+    state: aprobada
     text: 3\. `O03` Jobs to Be Done and Job Stories where they form part of the definition or contribute a useful derived view.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o04:
     sourceHash: 434c04ec08c038a0a31ff2c3e674df55f18b9af58a90a4abaa17c864a1c48608
-    state: borrador
+    state: aprobada
     text: 4\. `O04` Available evidence, assumptions and outcome criteria.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o05:
     sourceHash: cbad3be4e4bbd929a4147f751bc6cd23a420fe81aa8ff2ab145eceb04f3535b2
-    state: borrador
+    state: aprobada
     text: 5\. `O05` Chosen alternative and the reason for discarding more complex options.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o06:
     sourceHash: b38af1127077dba73e4277a4efa682ec82a4323fa8afa635e40dd04f59aa7557
-    state: borrador
+    state: aprobada
     text: 6\. `O06` Files or components modified and the limits of the change.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o07:
     sourceHash: 3af5b696e34accd9e0b7568dcef4ff06c5231b95df6acc65c258b2164f79921a
-    state: borrador
+    state: aprobada
     text: 7\. `O07` States and edge cases covered.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o08:
     sourceHash: 075bfdc21d767c322c9759b4ab263c1a328c9b00b7382b382eb53aa878b69e7b
-    state: borrador
+    state: aprobada
     text: 8\. `O08` Tests run and evidence of results.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   o09:
     sourceHash: 52db2be21d4d1da3371ceb3db2cb2d1a106f65ce098105cd0c9ba7fb3458e1ae
-    state: borrador
+    state: aprobada
     text: 9\. `O09` Risks, uncertainties, outstanding items, exceptions and decisions that still require human judgement.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-22:
     sourceHash: 0b3bdfe4649fa1e6988337af6b33ac9a5f54090e496931d1515f1dde3779d96b
-    state: borrador
+    state: aprobada
     text: "#### Short prompt for starting a task"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   contrato-reutilizable-23:
     sourceHash: 455a914cb59c0ca13678232f73a6803cb901b4d65246a8f90cf0e76a37fbcd00
-    state: borrador
+    state: aprobada
     text: Before writing code, identify the authorised product definition, explain its foundation and confirm the full scope. Recognise all applicable stories, capabilities, rules and criteria; where Job Stories exist, preserve their circumstance, motivation and outcome. Distinguish evidence from assumptions. Plan dependencies and coverage without omitting or deferring scope on your own initiative. Implement the simplest solution that meets what was approved, and verify results, integration, errors and recovery.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-01:
     sourceHash: 8753f661592008edb7fac357052ecaed65b8279b11fd6bd5901f45b91620a72b
-    state: borrador
+    state: aprobada
     text: "## VERIFICATION"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-02:
     sourceHash: c4ebb46b239ed3d84aa9c0584a4ce849e1833686213240ed5973932f6087ea1f
-    state: borrador
+    state: aprobada
     text: "### Tests for accepting a solution"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-03:
     sourceHash: de064f7355755f1eacf1f92902aa3b109c4355cc21af6a479f765c159a95237b
-    state: borrador
+    state: aprobada
     text: Acceptance must produce evidence. The impression that a screen looks clean, or that the code compiles, does not demonstrate that the product fulfils its purpose.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-04:
     sourceHash: 6143ba8260990d15952e5aec301eab0dabe1f6b867914646edac33da51421934
-    state: borrador
+    state: aprobada
     text: |-
       | **Dimension**       | **Acceptance evidence**                                                                                                                                          |
       |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1268,17 +1774,23 @@ entries:
       | `V10` Accessibility | The flow works with keyboard, visible focus, understandable labels, contrast and the applicable assistive technologies.                                           |
       | `V11` Performance   | Critical actions meet the response budget or show honest progress.                                                                                                |
       | `V12` AI            | Variable outputs declare uncertainty; critical rules are verifiable; sensitive actions require authorisation.                                                     |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-score:
     sourceHash: 5f6d9ca58183faeb94944952ade4bbe985bc6ce5e82002aabb3f332023b747c4
-    state: borrador
+    state: aprobada
     text: "#### Decision scorecard · `SH-SCORE`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-06:
     sourceHash: 2a9d9431c1fb343636571975397596ec290f9c9dd56c195fe28a45d4bc4343ad
-    state: borrador
+    state: aprobada
     text: Assign 0 where there is no evidence, 1 where compliance is partial or depends on an unvalidated assumption, and 2 where there is sufficient evidence. The score guides the conversation; it does not replace judgement.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-07:
     sourceHash: 3be4be58556fdc26c74ef3e871fe560c7dcd44846e667174288e74a8646c1e5c
-    state: borrador
+    state: aprobada
     text: |-
       | **Criterion**            | **Score** | **Evidence question**                                                                  |
       |--------------------------|-----------|----------------------------------------------------------------------------------------|
@@ -1293,17 +1805,23 @@ entries:
       | Dependability and timing | 0 / 1 / 2 | Performance, persistence and feedback meet expectations                                |
       | Responsible use of AI    | 0 / 1 / 2 | Uncertainty, limits and determinism have been resolved                                 |
       | Cumulative quality       | 0 / 1 / 2 | States, language and micro-interactions are coherent                                   |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-08:
     sourceHash: d06237e03cd0a0f6b06acbc859fa50a03830c1e0fc9c666cc31d26ce06f5f8ad
-    state: borrador
+    state: aprobada
     text: Recommended exit criterion. No critical dimension may score 0. Criteria relating to security, permissions, money, personal data or irreversible actions must score 2 before release. For the rest, the team must define its threshold according to risk and scope.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-09:
     sourceHash: 0cf54551b2185b081e9afd1a31c037f3ad2e9bd0d67ec2d7161c373737ebdc72
-    state: borrador
+    state: aprobada
     text: "#### Questions for a product review"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   verificacion-10:
     sourceHash: 5c925ea6ef9439ef96f6a79ecb252fdcec5b5f0e63a8ca5d19a210ee812c8a2b
-    state: borrador
+    state: aprobada
     text: |-
       - What authorised source and what product foundation justify this decision?
 
@@ -1326,17 +1844,23 @@ entries:
       - Is the AI proposing, deciding or executing? Is that level authorised?
 
       - What would make us reject this implementation even though it technically works?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-ap:
     sourceHash: ea0ec594a1a847801da4d5cccc7e148b5a3ffd96047dde46827ccc749b2ef421
-    state: borrador
+    state: aprobada
     text: "## ANTI-PATTERNS · `SH-AP`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   antipatrones-02:
     sourceHash: 0f197db02f90d1b1b205cfa5885a4bbdf7a3c9d139c632ab006b8b33e52d291a
-    state: borrador
+    state: aprobada
     text: "### Signs that the product is drifting away from the manifesto"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   antipatrones-03:
     sourceHash: bf1d3ccdb739835589dfc14bc8e09b82cd5d5d7f85f02435498cd7df524ece4f
-    state: borrador
+    state: aprobada
     text: |-
       | **Anti-pattern**                              | **How it shows up**                                                                                      | **Response**                                                                             |
       |-----------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -1354,57 +1878,83 @@ entries:
       | Technical speed hides the wait                | The operation takes time with no feedback, or blocks the whole flow.                                       | Respond immediately, show progress and preserve continuity.                               |
       | Aesthetics paper over friction                | The screen looks good, but demands unnecessary decisions.                                                  | Evaluate the complete journey and the real effort.                                        |
       | The agent adds things just in case            | Modes, preferences and abstractions appear that nobody asked for.                                          | Define exclusions and require justification per capability.                               |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   antipatrones-04:
     sourceHash: 42dd2cfcf7bcb086bbf3e38e870b44fa203c7de3cc3dd70ce3d19b1ed7cf96bc
-    state: borrador
+    state: aprobada
     text: "#### A warning about simplicity"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   antipatrones-05:
     sourceHash: 2064e8a1ae3e809d377548116e1d709d83b50e8c119db7ff6165a333a3966ba1
-    state: borrador
+    state: aprobada
     text: Simplicity can become an excuse for hiding information, denying legitimate cases or limiting the expert user. The framework does not reward empty interfaces. It rewards the right relationship between capability, moment and context.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   antipatrones-06:
     sourceHash: 57c9d01614969091544eb774af98b5a1ca52ea71b58f8c22c3a8228cb635116b
-    state: borrador
+    state: aprobada
     text: Valuable simplicity does not remove what is necessary. It avoids demanding it before its time.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-01:
     sourceHash: 7bc057be2146d1e5bc0ea4e689a6ba8057bd1b63b45dc2b80cbebdf0ccaad639
-    state: borrador
+    state: aprobada
     text: "## WORKED EXAMPLE"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-02:
     sourceHash: 8ca2c7b9c2be2d7ab767b5196eb47546d880cbdcdc45749848e3bbce650bda28
-    state: borrador
+    state: aprobada
     text: "### A calculus tutor for someone who does not yet understand"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-03:
     sourceHash: 7e6f679d87faf72d6f38e2e7e01b81f7ce76ca37067728137259ba54f6f85e83
-    state: borrador
+    state: aprobada
     text: Consider an application that explains derivatives, proposes an exercise, offers a hint and finally shows the solution. The flow looks complete. However, if the person gets the exercise wrong after reading the explanation and still does not understand the solution, they reach a dead end. The application delivered content, but it did not produce progress.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-04:
     sourceHash: 429248f0e5c8ac9f4386d829db1133e1187061e08d6096d5ad46bf02de716f73
-    state: borrador
+    state: aprobada
     text: "#### From a feature request to the circumstance"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-05:
     sourceHash: 8cbf02893064e0e8c4ee6540cab3547aea32c66d495d77d992dd842f2d79220f
-    state: borrador
+    state: aprobada
     text: "**Weak formulation.** As a student I want to receive hints so that I can solve derivatives. The role is generic, the hint already prescribes the answer, and the outcome does not distinguish understanding from mechanical progress."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-06:
     sourceHash: 9e2b8bf57c843027d9c87bcc27649a8f668295e4cee1d329bc9d8c9c06c2867c
-    state: borrador
+    state: aprobada
     text: "**Main Job Story.** *When I have read an explanation and I still do not know which rule to apply, I need to identify the prior concept I do not understand, so that I can resume the exercise without depending on being shown the solution.*"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-07:
     sourceHash: 04739109376c8b63b690217eb21547dfedfe46c4a7deba875e6e8e6b00b640d9
-    state: borrador
+    state: aprobada
     text: "**Recovery Job Story.** *When I see the solution and I still do not understand why the next step was chosen, I need to reconstruct a single decision using a different representation, so that I can explain the rule in my own words.*"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-08:
     sourceHash: ba8da8980a239f551e975c201c112bfbaf545fd7d1332cf8024c50d2208abc1d
-    state: borrador
+    state: aprobada
     text: "Both stories belong to the same higher-level Jobs to Be Done: developing enough understanding to solve an equivalent exercise with growing autonomy. They describe different blockages, however, and may call for different responses."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-09:
     sourceHash: 6f2171367bbb93cda1efb0359c2d1b1cf181f5a0509353275769bc02fcc9e232
-    state: borrador
+    state: aprobada
     text: "#### Diagnosis from the manifesto"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-10:
     sourceHash: 1dea637d2f5937af96c2b4806082fb4a00db29ca491c2eeb2f879651f331c03c
-    state: borrador
+    state: aprobada
     text: |-
       | **Principle** | **Problem observed**                                                                    |
       |---------------|-----------------------------------------------------------------------------------------|
@@ -1413,87 +1963,123 @@ entries:
       | Complexity    | The explanation preserves the expert's model instead of rebuilding the concept.          |
       | Interface     | Numbers or stages without meaning add incidental learning.                               |
       | Trust         | The final solution is presented as closure, even though understanding is still absent.   |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-11:
     sourceHash: 743220456f41cf9192dad765c5c753a832c9b7e252d0c6d30a79838cd1b8df47
-    state: borrador
+    state: aprobada
     text: "#### Evidence that completes the Job Story"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-12:
     sourceHash: 18248aaccc3245858104aaa482c51d2a95d050d9e8bb368435d89b076ec5b26d
-    state: borrador
+    state: aprobada
     text: |-
       | **Element**            | **Observation**                                                                                       |
       |------------------------|-------------------------------------------------------------------------------------------------------|
       | Current behaviour      | The person asks for a hint, then the solution, and still cannot decide which rule to apply.            |
       | Obstacle and anxiety   | They do not identify the missing prerequisite and are afraid to move on without understanding.         |
       | Evidence of success    | They can choose and explain the rule in an equivalent exercise with less help.                         |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-13:
     sourceHash: a64a984f0420c242fcc7b3895eff9eb9d536b7501f5aae7afaa82167d2974e53
-    state: borrador
+    state: aprobada
     text: "#### Redesign of the journey"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-14:
     sourceHash: 9b1133b85d9aeab0809e0503be5764857c260ad54c3c174f0c4c6da246b3ea1e
-    state: borrador
+    state: aprobada
     text: "1\\. Detect the type of blockage: concept, notation, prior operation or interpretation of the problem statement."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-15:
     sourceHash: 76acda4a8f4e7899e15fcdac9005d39c6c5eff1819cba1984295d51994dbcc30
-    state: borrador
+    state: aprobada
     text: 2\. Reformulate using a different representation, rather than repeating the same explanation with more words.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-16:
     sourceHash: 8ceedd90db1a9e6df1e0fb3af5c5bcc51f93e9c6fcb9b0eedb3c6ed0ac8e64c5
-    state: borrador
+    state: aprobada
     text: 3\. Check an earlier micro-skill through a brief, diagnostic question.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-17:
     sourceHash: 408fd58a3a717f3ff1b0ed44bccad70445638320c102b7736870ba88b3fcdcab
-    state: borrador
+    state: aprobada
     text: 4\. Offer a worked example step by step, with one decision at a time and in the student's language.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-18:
     sourceHash: 64414523bc003cb7b6140f2eb237b907e931b93213c85cd74107992daf4fe0bd
-    state: borrador
+    state: aprobada
     text: 5\. Ask them to explain the reasoning or complete an equivalent step before moving on.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-19:
     sourceHash: b14a00e1f94a074adbb4ee5f67f93567b672759ed6a72de7e84f692bee227853
-    state: borrador
+    state: aprobada
     text: 6\. Always keep a route to go back, switch explanation or ask for human help.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-20:
     sourceHash: 37a9f3515ee6c17e9f76b0029b44018ac8a2549b853680d1db6a7171e426ff3b
-    state: borrador
+    state: aprobada
     text: "#### What stays deterministic and what may use AI"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-21:
     sourceHash: 2c6df24fb64b52527f6aa550ab0888bbbffbbbebe7203ca4ddb2e4b173421f56
-    state: borrador
+    state: aprobada
     text: |-
       | **Layer**        | **Responsibility**                                                                                                                                          |
       |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
       | Deterministic    | Sequence of states; mathematical validation; mastery of prerequisites; record of attempts; progression rules; prevention of dead ends.                       |
       | AI-assisted      | Reformulating an explanation; generating an analogy; classifying the blockage; adapting the tone; proposing an equivalent exercise within validated limits.   |
       | Human control    | Letting the student or tutor choose another route, review the history and correct a mistaken inference by the system.                                        |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-22:
     sourceHash: 4853c20b9863aee97ea50fda01176e424ebbbc62410b88777779b46b83210410
-    state: borrador
+    state: aprobada
     text: "#### Success criterion"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   ejemplo-aplicado-23:
     sourceHash: d33c3518b4dd1f251ee83d5ff01b1327467ed885fd8888dfae1d3ab799a1a907
-    state: borrador
+    state: aprobada
     text: The goal is not for the student to reach the end of the sequence. It is for them to be able to solve or explain an equivalent exercise with less help. That difference changes the interface, the logic, the measurement and the use of AI.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-gov:
     sourceHash: 047f999c3c93ad72879227c29179bdc83b53ebe01d6c3fb55250a1fc96751418
-    state: borrador
+    state: aprobada
     text: "## GOVERNANCE · `SH-GOV`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-02:
     sourceHash: c397108d8bc59d3ec1dda841f404e55bf3ec1d802b3ed8ced071feef6dc50472
-    state: borrador
+    state: aprobada
     text: "### How to turn the manifesto into everyday practice"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-03:
     sourceHash: 87feb2f1ea1e6917a72527f1730094298ade5fdbb9a93737da024b957d242a14
-    state: borrador
+    state: aprobada
     text: "The manifesto loses value if it is confined to an opening presentation. It must appear at the moments when the team makes decisions: definition, design, generation, review and post-launch learning."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-04:
     sourceHash: 32a94e0b8d27bca7cb221f7c43540348c6f886626df2f82c617201fe0d10aeda
-    state: borrador
+    state: aprobada
     text: "#### Responsibilities"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-05:
     sourceHash: 49cdfd6eed2d59b98c79a9c5c0a4738aa18842d8e068fa805603f0069edd6b5d
-    state: borrador
+    state: aprobada
     text: |-
       | **Responsible**  | **Main obligation**                                                                                                                                                              |
       |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1502,13 +2088,17 @@ entries:
       | Engineering      | Absorbs complexity and guarantees states, performance, accessibility and recovery.                                                                                                |
       | AI agent         | Plans and implements within the foundation and the contract; declares assumptions, maintains coverage and neither reduces nor extends scope on its own initiative.                 |
       | Human review     | Evaluates causality, meaning, risk, the complete experience and the evidence; it is not limited to reviewing code.                                                                |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-06:
     sourceHash: a0bbc460fc8ca6287203ed247c57df87312e6c808abeeab762fc8f71ee2db60b
-    state: borrador
+    state: aprobada
     text: "#### Control points"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-07:
     sourceHash: f9c9fb8519965da72232ad76dfd2151c95af5837e0e45ae70bf1dbdd2473c295
-    state: borrador
+    state: aprobada
     text: |-
       | **Moment**                  | **Decision required**                                                                                                                              |
       |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1518,25 +2108,35 @@ entries:
       | Before integrating          | Every change preserves traceability to its foundation, respects scope, covers states and passes technical tests.                                    |
       | Before release              | The complete implementation demonstrates results, coverage, understanding, control and quality of experience.                                       |
       | After release               | Outcome, friction, abandonment and errors are observed; the foundation, the stories and their assumptions are revisited where appropriate.          |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-08:
     sourceHash: 478ce516c69a14fe61c0b1a15c8d7b9172b8996f72ad7f481bc1371b04e4637a
-    state: borrador
+    state: aprobada
     text: "#### Evolution of the manifesto"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-09:
     sourceHash: e4c0525d1a4d9f65cfe17088f6887078d0e42ca32a11d3a67f70d8602be24653
-    state: borrador
+    state: aprobada
     text: "The principles must be stable; the rules and tests may evolve with new evidence. Every change should record the problem observed, the decision modified and the reason. The framework must not grow by accumulation: a new rule is only incorporated if it resolves a gap the existing ones do not cover."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-10:
     sourceHash: 351cdb95d6e4bc395fe9296b0f47a408ce8917e4cec0661e8422fe36fc3a4e68
-    state: borrador
+    state: aprobada
     text: "#### Change control for versions 2.0 and 2.1"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-11:
     sourceHash: 9900aea4b55dee0e957a014904822163d8360c0637c45d84ea1425e29598cb6e
-    state: borrador
+    state: aprobada
     text: Version 1.0 remains as the founding formulation. Version 2.0 preserves its thesis and its ten principles, but replaces generic operational references to Jobs to Be Done with a more concrete and verifiable chain.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-12:
     sourceHash: c4fa37b2b58856cc01f4a39b7e1644bdc83cf53eee3d8ab70fdb769a176c0ffc
-    state: borrador
+    state: aprobada
     text: |-
       | **Area**                | **Adjustment in version 2.0**                                                       | **Content that remains**                                                  |
       |-------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
@@ -1546,13 +2146,17 @@ entries:
       | Development with AI     | The agent must reformulate and respect the Job Story.                                 | Limits, determinism and human review continue.                            |
       | Acceptance              | The outcome is tested under the circumstance described.                               | Accessibility, performance, states and control remain mandatory.          |
       | Example and governance  | Causal traceability and validation of stories are added.                              | The calculus tutor and the control points keep their purpose.             |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-13:
     sourceHash: fbf3e33e1c49741aed30416932f736891d27744c9fdf49ea72123f2f9229fadc
-    state: borrador
+    state: aprobada
     text: Version 2.1 preserves the thesis, the ten principles, the doctrine for AI, the Job Stories and the worked example. It extends the core to accommodate product definitions of differing form, length and depth, without imposing a structure upstream or assuming an incremental strategy.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-14:
     sourceHash: d5ff5168823ec9b72198160d56c72e361c1b70fbad36e509373d0b4e1ea43ea5
-    state: borrador
+    state: aprobada
     text: |-
       | **Area**               | **Adjustment in version 2.1**                                                                | **Content that remains**                                                          |
       |------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -1562,89 +2166,131 @@ entries:
       | Planning               | Breakdown, sequence and parallelism are separated from any scope decision.                      | Prior clarity, rules, risks and acceptance continue.                              |
       | Delivery strategy      | Incrementality ceases to be an assumption of the core.                                          | Each project may adopt phases or releases where appropriate.                      |
       | SDD implementation     | It is reserved for independent annexes and adapters.                                            | The core keeps principles and guarantees that every implementation must respect.  |
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-done:
     sourceHash: 2a8713d4c86320daa8f228f47a4c4be1e8a17ed4895f39ca86ca6cd04d856a0a
-    state: borrador
+    state: aprobada
     text: "#### Definition of done · `SH-DONE`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-16:
     sourceHash: fd1e0be577415e03722ed6933bcebedde8d7c2c11c77831daeed17ece434202b
-    state: borrador
+    state: aprobada
     text: A development is complete when every mandatory element of the product definition has an implementation and verifiable evidence, or an explicit and approved exception; when people achieve the intended outcomes under the defined conditions; and when the system's behaviour and the quality of the experience have been verified with rigour proportionate to the risk.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   gobernanza-17:
     sourceHash: 9c8aee8f9b8fb51d4573effef52445d02d3131761ca6fa84efc03d494290d453
-    state: borrador
+    state: aprobada
     text: Where the foundation includes Job Stories, verification must demonstrate the outcome in their circumstances. Completeness includes correct code, but it does not end there. It requires coverage of the scope, integration between its parts, dependable critical states, an experience that does not force anyone to learn the product's architecture, AI within explicit limits, and clarity about what must be observed after launch.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   sh-pocket:
     sourceHash: 74db51b1e13798e2db40b33b840edeaa55a4213d8eaebe887f9c943bfd92017f
-    state: borrador
+    state: aprobada
     text: "## POCKET GUIDE · `SH-POCKET`"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-02:
     sourceHash: 8fa141c7c655d369bad8bebc6a6ad06fb93ea6b2cb15b0c6c0fdb506373529ca
-    state: borrador
+    state: aprobada
     text: "### Fourteen questions before accepting a decision"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-03:
     sourceHash: 5b6ee49b5d835116822e94677bacfbbb2ff8230417e052b3718fba5e21a8dc6d
-    state: borrador
+    state: aprobada
     text: 1\. What is the authorised source and what scope does it establish?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-04:
     sourceHash: d20f1f0ee1cd5d58380252ccf0a3f2f3cfdeb0d91e744ff374905fc441431829
-    state: borrador
+    state: aprobada
     text: 2\. Does the plan account for every mandatory element?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-05:
     sourceHash: 317078e508327e225931d93ad2573615ef80bdb79e567c447812f67d9b84dfa9
-    state: borrador
+    state: aprobada
     text: 3\. What concrete circumstance triggers the need?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-06:
     sourceHash: da3c79c7da2937b16cd4928c3902fc35c12dbe7dc9991e4895609185edb4f022
-    state: borrador
+    state: aprobada
     text: 4\. What motivation or tension drives the person to act?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-07:
     sourceHash: 930009caf02ab3bc8f157a3f7c5427733652a06e6f7fe5cddd61e9513f748248
-    state: borrador
+    state: aprobada
     text: 5\. What outcome would make the progress recognisable?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-08:
     sourceHash: 8c3cca0e259cc4cf8f1da54a75d39dcb1236b3c15fed63846f8b927d32c8ad87
-    state: borrador
+    state: aprobada
     text: 6\. What behaviour or evidence demonstrates that the story occurs?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-09:
     sourceHash: 56c3aeeea54a009c2c73ffe09b2046d2df9b717ad27be8f0eb163d562b5db220
-    state: borrador
+    state: aprobada
     text: 7\. Where a Job Story exists, does it describe the problem without prescribing the solution?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-10:
     sourceHash: 9fcff69fedda7d03644648d8e0a21685a7ada37c088ef0ac17d3d2e77c74098e
-    state: borrador
+    state: aprobada
     text: 8\. What complexity does the system absorb, and what does it still pass on?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-11:
     sourceHash: cf7b83d9da0b082d86813321f878ae3109b9c5e3d0063c5156d27d3fb5f9d39c
-    state: borrador
+    state: aprobada
     text: 9\. What must the person see now, and what can wait?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-12:
     sourceHash: 9a8efaa7b179b47d4352ca01fae9279bbe5251f69a13bd884f66c6a3b10350ec
-    state: borrador
+    state: aprobada
     text: 10\. What will happen if they make a mistake, interrupt, or come back later?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-13:
     sourceHash: 1933072a6b4f63e43872be65e1712572dd204ed0fb78aa0e2b886a92e702ce88
-    state: borrador
+    state: aprobada
     text: 11\. Do they retain control over the decision, the data and the outcome?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-14:
     sourceHash: 1b0bfd552c7094e6915a974b618a95d8b74efef4538efd03a395b736e32b5894
-    state: borrador
+    state: aprobada
     text: 12\. Which part needs determinism and which part admits generation?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-15:
     sourceHash: 97161e89f24681a37b14ef1eaadb0871433483ca4af97bd9db5df5acb39aaa04
-    state: borrador
+    state: aprobada
     text: 13\. What is the simplest alternative that meets the product foundation?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-16:
     sourceHash: dc2e591415e0bcec7ece310f96ad646bb5630b276193a7c673c0bc368681c881
-    state: borrador
+    state: aprobada
     text: 14\. What evidence would allow us to say it is done?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-17:
     sourceHash: eb849c4fa5b06ec805ed6a8c3f2d76fd5dbb1f299dda4454f501c27979ae42d1
-    state: borrador
+    state: aprobada
     text: "#### Seven reasons to stop an implementation"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-18:
     sourceHash: 169277b12fd84a1481a4654939d27c5a3a997c7160dd6b0e7b94e975968be358
-    state: borrador
+    state: aprobada
     text: |-
       - `STOP01` There is no identifiable product foundation, or the solution appears to precede the problem.
 
@@ -1659,71 +2305,107 @@ entries:
       - `STOP06` A sensitive action lacks determinism, traceability or recovery.
 
       - `STOP07` The team can only demonstrate that the code works, not that the user makes progress.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-19:
     sourceHash: c6dbef2b17bb47efaad5789e34e3044ef75a3554b87f9672e941a4837c7efbda
-    state: borrador
+    state: aprobada
     text: "#### Three sentences that protect judgement"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-20:
     sourceHash: 8f1d576f83ecfa17e944a78a7ae859946f2d72db459d2ee5e8eea765920b53ff
-    state: borrador
+    state: aprobada
     text: What circumstance triggers this need?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-21:
     sourceHash: 899d4ec8d4bf99a04a863cd3cd9782e24670006dc22a88cf5aa6f624e847ccda
-    state: borrador
+    state: aprobada
     text: What progress does it enable?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   guia-de-bolsillo-22:
     sourceHash: 3dba52a787a3315bbf0d2d3bead8cf80e5ce4b66b9393879025c1cfd85efca9b
-    state: borrador
+    state: aprobada
     text: What evidence demonstrates it?
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-01:
     sourceHash: 3b86b57efae75a6898216df3f1a4f5337195e15b1da3d9c78190f3dc6007438d
-    state: borrador
+    state: aprobada
     text: "## INFLUENCES AND NOTES"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-02:
     sourceHash: fd259e3266f52de59fd136810fdf5faae99680bf291dbc568fb4d0f6bbd4b07b
-    state: borrador
+    state: aprobada
     text: "### Origin of this perspective"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-03:
     sourceHash: 96763d193d39fa45b7fb1c43b452125542340057d6b7b0528ccd25cd94ef817c
-    state: borrador
+    state: aprobada
     text: This framework is an independent elaboration inspired by public ideas from Craft and by the conversations that gave rise to this document. It is not an official Craft manifesto, and it does not attribute the operational rules proposed here to Craft's founder.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-04:
     sourceHash: df196e9970e3bbc62375f4461bfcbb56b17ae6d7c12cb64e8e4944517a7635b5
-    state: borrador
+    state: aprobada
     text: "Four influences are taken from Craft: the union of form and function; the effect a tool has on the energy and capability of whoever uses it; adaptable complexity that appears when it is needed; and the human-first approach, as against systems that force people to accommodate themselves to their structure."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-05:
     sourceHash: 3022784d1acb67d9ae809c1c772feaabd522158283c452e6314d913599982ef3
-    state: borrador
+    state: aprobada
     text: From Jobs to Be Done, progress is retained as the higher-level reference. From Job Stories, a concrete way of carrying that progress into design is adopted, through circumstances, motivations, outcomes, current behaviour, anxieties and causal evidence.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-06:
     sourceHash: 619e485337589c33982f4bc03e55e2c86789f4c0330d53c4dd0554efbc726a6f
-    state: borrador
+    state: aprobada
     text: Version 2.1 integrates these influences within a core capable of respecting heterogeneous product definitions. Job Stories remain a reference form and a worked example; they do not replace other authorised structures, nor do they allow their scope to be trimmed.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-07:
     sourceHash: 877796764a1f03c0640759d642b201c95a72130f6283d1cf5b30f5b4884bab4a
-    state: borrador
+    state: aprobada
     text: "#### Sources consulted"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-08:
     sourceHash: c04131833dca3b06342dbf6f261190a61b0e95ca7d78c2d573963fb98abba2fc
-    state: borrador
+    state: aprobada
     text: Craft. [<u>About Craft</u>](https://www.craft.do/es/about). The founder's history and reflections on form, function, friction, adaptable complexity and attention to detail.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-09:
     sourceHash: 23de990ed35022f79e707310553fe51f3154df8de2803585b565c84cb87fd2e2
-    state: borrador
+    state: aprobada
     text: Balint Orosz. [<u>Introducing Craft 3</u>](https://www.craft.do/blog/welcome-to-craft3), 28 November 2024. Adaptation to context, reduction of cognitive load, performance and offline operation.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-10:
     sourceHash: c0491672ae959358aa9cebd1d9ce292c37c2f4f05217fa90e29f6c56cb780dce
-    state: borrador
+    state: aprobada
     text: Balint Orosz. [<u>Your content is yours and that is more empowering than ever</u>](https://www.craft.do/blog/your-content-is-yours), 27 November 2025. Control over content, portability, AI and the human-first versus systems-first principle.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-11:
     sourceHash: c9a4eb50168ca72c22092c67ce13ec47e7ec7807aad321c1b0e8c04912150c94
-    state: borrador
+    state: aprobada
     text: Alan Klement. [<u>Designing Features Using Job Stories</u>](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), published by Intercom on 23 December 2013. Granular application of Jobs to Be Done to the design of features, interface and experience through context, causality, motivations and anxieties.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-12:
     sourceHash: c8dde8ed8798ffeadafda2f7915fc288c3aa48d05ed0c7d2ca4e1f8ff4455400
-    state: borrador
+    state: aprobada
     text: "#### Closing statement"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28
   influencias-y-notas-13:
     sourceHash: e34b56dda41ce735ca989f4893c570d0da2e8a30d360749ccb67449e1f3f00ca
-    state: borrador
+    state: aprobada
     text: Technology can be extraordinarily sophisticated behind the interface. In front of it, there must remain a person focused on what they set out to achieve.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-28

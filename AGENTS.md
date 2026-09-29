@@ -169,7 +169,7 @@ Aprobadas por el PRD y por la autoridad de producto. Se preservan, no se reabren
 - La versión española usa `tú` y `ustedes`; prohíbe voseo, `vosotros` y localismos nacionales (PRD §21.6).
 - El cambio de idioma navega a una URL equivalente; una URL localizada explícita prevalece sobre la preferencia guardada (`FR-019`, `FR-020`).
 - No se publica una página en un idioma si conserva fragmentos no aprobados de otro (PRD §19.4).
-- **Aprobación lingüística**: la autoridad de producto aprueba el español; inglés y portugués de Brasil, mediante servicio profesional pagado. Sin registro de revisión aprobada, ese idioma no se publica.
+- **Aprobación lingüística**: la autoridad de producto aprueba los tres idiomas. Para inglés y portugués de Brasil, su aprobación reemplaza el servicio profesional pagado (decisión de la autoridad de producto, 2026-09-28): los pasajes del núcleo se aprobaron sobre la traducción revisada por un agente el 2026-09-21 y verificada contra el original (`specs/001-sitio-manifiesto/evidencia/revision-linguistica/`). Sin registro de revisión aprobada, ese idioma no se publica.
 
 ## Herramientas del proyecto
 

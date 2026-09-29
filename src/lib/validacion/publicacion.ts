@@ -38,8 +38,8 @@ export function faltantesParaPublicar(c: Contenido, canon: Canon): string[] {
     if (obsoletas.length) f.push(`${t.locale}: ${obsoletas.length} traducciones potencialmente obsoletas`);
   }
   if (!c.sitio.contact.email) f.push('sitio: falta el alias de correo de contacto (PRD §29.7)');
-  if (!c.revisiones.linguistica.en) f.push('revisiones: falta la revisión lingüística profesional de en');
-  if (!c.revisiones.linguistica['pt-BR']) f.push('revisiones: falta la revisión lingüística profesional de pt-BR');
+  if (!c.revisiones.linguistica.en) f.push('revisiones: falta la revisión lingüística aprobada de en');
+  if (!c.revisiones.linguistica['pt-BR']) f.push('revisiones: falta la revisión lingüística aprobada de pt-BR');
   if (!c.revisiones.neutralidad.es) f.push('revisiones: falta la revisión de neutralidad latinoamericana de es');
   return f;
 }
