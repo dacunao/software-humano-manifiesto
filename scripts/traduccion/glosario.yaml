@@ -1,0 +1,47 @@
+# Capa 1 · Glosario español → inglés → portugués de Brasil (T182, RQ-19).
+# Fuente: el núcleo aprobado por Damián Acuña el 2026-09-28, con sus correcciones de ese día.
+# El español es la referencia. Expresiones regulares sin distinguir mayúsculas.
+# - es: cuándo aplica el término; en / pt: lo que la traducción debe contener.
+# - prohibidos: variantes que no deben aparecer; `salvoSiEs` las permite si el español las justifica.
+terminos:
+  - { id: fundamento, es: 'fundamentos? de producto', en: 'product foundations?', pt: 'fundamentos? de produto' }
+  - { id: alcance, es: '\balcances?\b(?! de)', en: '\bscopes?\b', pt: '\bescopos?\b' }
+  - { id: trazabilidad, es: 'trazab', en: 'traceab', pt: 'rastre[aá][vb]' }
+  - { id: confianza, es: '(?<!nivel de )confianza', en: '\btrust', pt: 'confiança' }
+  - { id: evidencia, es: '\bevidencias?\b', en: '\bevidence\b', pt: 'evidências?' }
+  - { id: circunstancia, es: 'circunstancias?', en: 'circumstances?', pt: 'circunstâncias?' }
+  - { id: motivacion, es: 'motivaci[oó]n', en: 'motivations?', pt: 'motivaç(ão|ões)' }
+  - { id: terminado, es: 'definición de terminado', en: 'definition of done', pt: 'definição de conclusão' }
+  - { id: bolsillo, es: 'guía de bolsillo', en: 'pocket guide', pt: 'guia de bolso' }
+  - { id: antipatrones, es: 'anti ?patr[oó]n', en: 'anti-patterns?', pt: 'antipadr' }
+  - { id: carga-cognitiva, es: 'carga cognitiva', en: 'cognitive load', pt: 'carga cognitiva' }
+  - { id: revelacion, es: 'revelación progresiva', en: 'progressive disclosure', pt: 'revelação progressiva' }
+  - { id: determinismo, es: 'determinis', en: 'determinis', pt: 'determinis' }
+  - { id: job-story, es: 'Job Stor', en: 'Job Stor', pt: 'Job Stor' }
+  - { id: jtbd, es: 'Jobs to Be Done', en: 'Jobs to Be Done', pt: 'Jobs to Be Done' }
+  - { id: autoridad-producto, es: 'autoridad de producto', en: 'product authority', pt: 'autoridade de produto' }
+  - { id: trazabilidad-cadena, es: 'cadena de trazabilidad', en: 'chain of traceability', pt: 'cadeia de rastreabilidade' }
+  # Nombres de los principios, iguales en el núcleo y en el copy.
+  - { id: P01, es: 'progreso del usuario es la unidad de diseño', en: "user's progress is the unit of design", pt: 'progresso da pessoa é a unidade de design' }
+  - { id: P02, es: 'experiencia también es funcionalidad', en: 'experience is also functionality', pt: 'experiência também é funcionalidade' }
+  - { id: P03, es: 'complejidad pertenece al sistema', en: 'complexity belongs to the system', pt: 'complexidade pertence ao sistema' }
+  - { id: P04, es: 'simple al comenzar y profundo al necesitarlo', en: 'simple to begin with, deep when needed', pt: 'simples no começo e profundo quando necessário' }
+  - { id: P05, es: 'interfaz no debe convertirse en otra tarea', en: 'interface must not become another task', pt: 'interface não deve se tornar outra tarefa' }
+  - { id: P06, es: 'atención es un recurso del producto', en: 'attention is a product resource', pt: 'atenção é um recurso do produto' }
+  - { id: P07, es: 'confianza se diseña', en: 'trust is designed', pt: 'confiança é projetada' }
+  - { id: P08, es: 'calidad vive en la acumulación de detalles', en: 'quality lives in the accumulation of details', pt: 'qualidade vive no acúmulo de detalhes' }
+  - { id: P09, es: 'tiempo y la continuidad forman parte de la interfaz', en: 'time and continuity are part of the interface', pt: 'tempo e a continuidade fazem parte da interface' }
+  - { id: P10, es: 'persona conserva control y propiedad', en: 'person retains control and ownership', pt: 'pessoa conserva controle e propriedade' }
+prohibidos:
+  en:
+    - { id: confidence, patron: '\bconfidence\b(?! level)', motivo: '«confianza» es «trust» (corrección del 2026-09-28)', salvoSiEs: 'nivel de confianza|seguridad en s[ií]' }
+    - { id: releases, patron: '\breleases?\b', motivo: '«entregas» es «deliveries»; «releases» es un concepto que el núcleo declara no obligatorio', salvoSiEs: '\breleases?\b|liberar|liberaci' }
+    - { id: prioritise, patron: '\bprioriti[sz]', motivo: '«jerarquizar» no es priorizar; el núcleo excluye la prioridad', salvoSiEs: 'prioridad|priorizar' }
+  pt:
+    - { id: equipa, patron: '\bequipas?\b', motivo: 'forma de Portugal; en Brasil, «time» o «equipe»' }
+    - { id: utilizador, patron: 'utilizador', motivo: 'forma de Portugal; en Brasil, «usuário»' }
+    - { id: ecra, patron: '\becrã', motivo: 'forma de Portugal; en Brasil, «tela»' }
+    - { id: ficheiro, patron: 'ficheiro', motivo: 'forma de Portugal; en Brasil, «arquivo»' }
+    - { id: registo, patron: '\bregistos?\b', motivo: 'forma de Portugal; en Brasil, «registro»' }
+    - { id: estar-a, patron: '\b(est[aáo]\w*|fic\w+) a (fazer|usar|ler|ver|construir|trabalhar|escrever)\b', motivo: 'construcción de Portugal; en Brasil, gerundio' }
+    - { id: pronto, patron: 'definição de pronto', motivo: 'SH-DONE es «definição de conclusão»' }
