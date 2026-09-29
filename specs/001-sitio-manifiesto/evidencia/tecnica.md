@@ -80,3 +80,7 @@ Las divisiones muestran todo su texto; la profundidad está en las páginas de p
 - Lector de pantalla y revisión manual de accesibilidad: T105, humana.
 - Rendimiento con personas reales: CrUX tras el lanzamiento.
 - Idiomas: las páginas `en` y `pt-BR` todavía mezclan español hasta completar T084 y sus revisiones (T098–T102).
+
+## Actualización del 2026-09-29 (T197)
+
+Con el contenido aprobado en los tres idiomas y la nueva Acerca del Manifiesto: construcción con 69 páginas y `RV-01`–`RV-14` en verde; índice de búsqueda con 63 páginas; 64 pruebas unitarias y 759 de extremo a extremo aprobadas, incluidas la de neutralidad del español (T098) y la de Acerca de (T198). Lighthouse sobre las mismas 14 páginas, todos los presupuestos cumplidos: LCP entre 1.65 s y 1.66 s, CLS máximo 0.083, JavaScript máximo 6.7 KB y puntaje de rendimiento entre 97 y 99.
