@@ -73,7 +73,7 @@ const ld = [{
       <h1 id="declaracion-titulo" lang={titulo.lang !== locale ? titulo.lang : undefined}>
         <code>{codigo}</code> <span set:html={renderLinea(limpio)} />
       </h1>
-      <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} />
+      <CitaCanonica nodos={declaracion.nodos} lang={declaracion.lang} rotulo={declaracion.rotulo} nivelBase={2} />
       <Compartir locale={locale} href={ruta({ tipo: 'principio', principio: pid }, locale)} titulo={`${codigo} · ${limpio.replace(/`/g, '')}`} />
     </header>
 

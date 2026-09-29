@@ -269,9 +269,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: función sin JavaScript, accesibilidad, bordes, rendimiento y privacidad (bloque 7).
 
-- [ ] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 66 páginas (PRD v1.2) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 66 páginas (PRD §21.4)
-- [ ] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 66 páginas (PRD v1.2) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
-- [ ] T090 [P] Escribir `tests/e2e/bordes.spec.ts` con los bordes de spec.md:
+- [X] T088 [P] Escribir `tests/e2e/sin-js.spec.ts`: las 66 páginas (PRD v1.2) con JavaScript desactivado muestran texto, navegación primaria y anclas (`FR-015`); además, con los estilos desactivados el orden de lectura es correcto en las 66 páginas (PRD §21.4)
+- [X] T089 [P] Escribir `tests/e2e/accesibilidad.spec.ts`: axe sin violaciones AA en las 66 páginas (PRD v1.2) y las 404; recorridos principales solo con teclado; foco visible y no oculto; objetivos de tamaño adecuado (`AC-07`, parte automática)
+- [X] T090 [P] Escribir `tests/e2e/bordes.spec.ts` con los bordes de spec.md:
   - 404 por idioma;
   - una URL antigua redirige (caso de prueba en `_redirects`);
   - reflow a 320 px y zoom al 200 % sin desplazamiento horizontal;
@@ -279,8 +279,8 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
   - analítica bloqueada no afecta y la lectura no pide datos personales (`FR-018`, `AC-12`);
   - una URL profunda restituye la sección (`FR-014`);
   - no hay cookies y, en almacenamiento local, solo la preferencia de idioma (PRD §24.3)
-- [ ] T091 (La tipografía la cubre T163 con Noto Sans, PRD v1.5; queda de esta tarea fijar los presupuestos en `lighthouserc.json`.) Autoalojar tipografías en subconjuntos con `font-display: swap` en `public/fonts/` (provisionales hasta la dirección visual) y fijar en `lighthouserc.json` los presupuestos de plan.md: JavaScript de cliente ≤ 10 KB comprimido por página, tipografías ≤ 100 KB en woff2 por página y como máximo dos familias, CSS ≤ 50 KB comprimido (PRD §24.1)
-- [ ] T092 Ejecutar `bun run build`, `bun test`, `bunx playwright test` y `bunx lhci autorun`, y registrar resultados, fallos y el informe de visibilidad de RQ-13 en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (`O08`)
+- [X] T091 (La tipografía la cubre T163 con Noto Sans, PRD v1.5; queda de esta tarea fijar los presupuestos en `lighthouserc.json`.) Autoalojar tipografías en subconjuntos con `font-display: swap` en `public/fonts/` (provisionales hasta la dirección visual) y fijar en `lighthouserc.json` los presupuestos de plan.md: JavaScript de cliente ≤ 10 KB comprimido por página, tipografías ≤ 100 KB en woff2 por página y como máximo dos familias, CSS ≤ 50 KB comprimido (PRD §24.1)
+- [X] T092 Ejecutar `bun run build`, `bun test`, `bunx playwright test` y `bunx lhci autorun`, y registrar resultados, fallos y el informe de visibilidad de RQ-13 en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (`O08`)
 
 ---
 
@@ -292,7 +292,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [X] T094 Aplicar la dirección elegida en `src/styles/tokens.css`, retirando la marca PROVISIONAL: jerarquía tipográfica y tratamiento de tarjetas (el mérito de A según el traspaso), sin los clichés del PRD §21.2
 - [X] T095 STOP · Proponer a Damián la relación entre la tabla de contenidos lateral (el mérito de B, que debe llevar también a otras páginas) y la navegación superior; tras su aprobación, aplicarla en `src/components/NavegacionGlobal.astro` y `src/components/IndiceManifiesto.astro`
 - [X] T096 Revisar en todas las vistas de `src/views/` que no compitan títulos con subtítulos redundantes ni aparezcan rótulos que expongan la estructura interna del documento (lecciones del traspaso)
-- [ ] T097 Repetir T092 tras aplicar la dirección y actualizar `specs/001-sitio-manifiesto/evidencia/tecnica.md`
+- [X] T097 Repetir T092 tras aplicar la dirección y actualizar `specs/001-sitio-manifiesto/evidencia/tecnica.md`
 
 ---
 

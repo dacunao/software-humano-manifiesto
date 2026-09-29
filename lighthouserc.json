@@ -4,19 +4,60 @@
     "collect": {
       "staticDistDir": "./dist",
       "url": [
-        "/index.html", "/manifesto.html", "/principles.html", "/principles/p01.html", "/practice.html", "/speckit.html", "/about.html",
-        "/es.html", "/es/manifiesto.html", "/es/principios/p01.html",
-        "/pt-br.html", "/pt-br/manifesto.html", "/pt-br/principios/p01.html"
+        "/index.html",
+        "/manifesto.html",
+        "/manifesto/building-with-ai.html",
+        "/principles.html",
+        "/principles/p06.html",
+        "/speckit.html",
+        "/about.html",
+        "/es.html",
+        "/es/manifiesto.html",
+        "/es/manifiesto/verificar.html",
+        "/es/principios/p01.html",
+        "/pt-br.html",
+        "/pt-br/manifesto.html",
+        "/pt-br/principios/p01.html"
       ]
     },
     "assert": {
       "assertions": {
-        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
-        "total-blocking-time": ["error", { "maxNumericValue": 200 }],
-        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
-        "resource-summary:script:size": ["error", { "maxNumericValue": 10240 }],
-        "resource-summary:font:size": ["error", { "maxNumericValue": 102400 }],
-        "resource-summary:stylesheet:size": ["error", { "maxNumericValue": 51200 }]
+        "largest-contentful-paint": [
+          "error",
+          {
+            "maxNumericValue": 2500
+          }
+        ],
+        "total-blocking-time": [
+          "error",
+          {
+            "maxNumericValue": 200
+          }
+        ],
+        "cumulative-layout-shift": [
+          "error",
+          {
+            "maxNumericValue": 0.1
+          }
+        ],
+        "resource-summary:script:size": [
+          "error",
+          {
+            "maxNumericValue": 10240
+          }
+        ],
+        "resource-summary:font:size": [
+          "error",
+          {
+            "maxNumericValue": 102400
+          }
+        ],
+        "resource-summary:stylesheet:size": [
+          "error",
+          {
+            "maxNumericValue": 51200
+          }
+        ]
       }
     }
   }

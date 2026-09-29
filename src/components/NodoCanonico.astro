@@ -6,13 +6,13 @@ interface Props {
   nodo: NodoCanonico;
   /** Markdown a mostrar: el original en español o su traducción. */
   markdown: string;
-  /** Desplaza los niveles de encabezado para encajar en la página (mínimo h2). */
-  desplazamiento?: number;
+  /** Nivel del encabezado en la página; lo calcula quien cita según el contexto (mínimo h2). */
+  nivel?: number | undefined;
 }
 
-const { nodo, markdown, desplazamiento = 0 } = Astro.props;
+const { nodo, markdown, nivel: nivelEnPagina } = Astro.props;
 const anclasInternas = nodo.anclas.filter((a) => a !== nodo.id);
-const nivel = Math.min(6, Math.max(2, (nodo.nivel ?? 2) + desplazamiento));
+const nivel = Math.min(6, Math.max(2, nivelEnPagina ?? nodo.nivel ?? 2));
 const Encabezado = `h${nivel}` as 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 const textoEncabezado = markdown.replace(/^#{1,6}\s+/, '');
 ---

@@ -13,14 +13,26 @@ interface Props {
   textoFuente?: string | undefined;
   /** Panel Tinta (especificación §7.5): declaraciones y citas breves. Los pasajes largos llevan borde. */
   destacada?: boolean;
+  /** Nivel del primer encabezado citado según dónde queda la cita (bajo un h2, h3). */
+  nivelBase?: number;
 }
 
-const { nodos, rotulo, lang, fuente, textoFuente, destacada = false } = Astro.props;
+const { nodos, rotulo, lang, fuente, textoFuente, destacada = false, nivelBase = 3 } = Astro.props;
+
+// Los niveles del núcleo se trasladan al contexto sin saltar ninguno al descender (PRD §21.4, WCAG 1.3.1).
+const niveles = nodos.filter(({ nodo }) => nodo.kind === 'encabezado').map(({ nodo }) => nodo.nivel ?? 2);
+const minimo = Math.min(...niveles);
+let anterior = nivelBase - 1;
+const nivelDe = new Map(nodos.filter(({ nodo }) => nodo.kind === 'encabezado').map(({ nodo }) => {
+  const nivel = Math.min(6, nivelBase + (nodo.nivel ?? 2) - minimo, anterior + 1);
+  anterior = nivel;
+  return [nodo.id, nivel] as const;
+}));
 ---
 <figure class:list={['cita-canonica', { destacada }]} data-tipo="cita-canonica">
   <figcaption class="rotulo-contenido">{rotulo}</figcaption>
   <blockquote lang={lang} cite={fuente} class="lectura">
-    {nodos.map(({ nodo, markdown }) => <NodoCanonicoC nodo={nodo} markdown={markdown} desplazamiento={1} />)}
+    {nodos.map(({ nodo, markdown }) => <NodoCanonicoC nodo={nodo} markdown={markdown} nivel={nivelDe.get(nodo.id)} />)}
   </blockquote>
   {fuente && <p class="fuente"><a href={fuente}>{textoFuente}</a></p>}
 </figure>
