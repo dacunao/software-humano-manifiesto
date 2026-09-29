@@ -5,11 +5,17 @@ verifiedAt: '2026-09-27'
 published: false
 limitations:
   es:
-    state: borrador
+    state: aprobado
     text: "Se aplica hoy en un único proyecto real, este sitio. Su validación es técnica: todavía no hay evidencia de uso en otros equipos."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: "It is currently applied to a single real project: this site. Its validation is technical; there is no evidence yet of use by other teams."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "Hoje é aplicada em um único projeto real, este site. Sua validação é técnica: ainda não há evidência de uso por outros times."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29

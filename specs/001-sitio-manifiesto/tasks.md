@@ -647,4 +647,4 @@ Fuente: `evidencia/recorrido-con-los-principios-2026-09-29.md` y la decisión de
 - [X] T214 R9 · Los subresultados de la búsqueda no muestran «#» per `P05`
 - [X] T215 R10 · Alinear «Núcleo v2.1» en el menú del teléfono per `P08`
 - [X] T216 R11 · Al cambiar de idioma se conserva la posición: el enlace lleva el ancla del pasaje en pantalla, que es la misma en los tres idiomas. Sin JavaScript abre al inicio, como hoy per `P09`, `FR-019`
-- [ ] T217 Pruebas de extremo a extremo de T206–T216 y aprobación de Damián de los textos de interfaz nuevos o modificados
+- [X] T217 Pruebas de extremo a extremo de T206–T216 y aprobación de Damián de los textos de interfaz nuevos o modificados

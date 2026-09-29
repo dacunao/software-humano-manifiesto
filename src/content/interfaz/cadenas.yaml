@@ -176,9 +176,9 @@ contenido.canonico:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
 contenido.traduccion:
-  es: { state: borrador, text: "Texto canónico · traducción" }
-  en: { state: borrador, text: "Canonical text · translation" }
-  pt-BR: { state: borrador, text: "Texto canônico · tradução" }
+  es: { state: aprobado, text: "Texto canónico · traducción", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  en: { state: aprobado, text: "Canonical text · translation", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  pt-BR: { state: aprobado, text: "Texto canônico · tradução", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
 contenido.explicacion:
   es:
     state: aprobado
@@ -1178,24 +1178,30 @@ social.alt:
 # Aviso que encabeza la descarga de cada traducción del núcleo (T196, PRD §19.4). El español no lo muestra: es la referencia.
 descarga.aviso:
   es:
-    state: borrador
+    state: aprobado
     text: Traducción del núcleo del Manifiesto de Software Humano v{version}. El original en español conserva la autoridad doctrinal; si ambos difieren, rige el texto en español.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Translation of the core of the Software Humano Manifesto v{version}. The Spanish original retains doctrinal authority; where the two diverge, the Spanish text governs.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tradução do núcleo do Manifesto de Software Humano v{version}. O original em espanhol mantém a autoridade doutrinária; havendo divergência entre os dois, prevalece o texto em espanhol.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 # Recorrido contra los principios (fase 32, 2026-09-29). En borrador hasta la aprobación de Damián Acuña.
 contenido.avisoTraduccion:
-  es: { state: borrador, text: "Las citas traducidas del núcleo remiten al original en español, que conserva la autoridad." }
-  en: { state: borrador, text: "Translated quotations from the core refer to the Spanish original, which retains authority." }
-  pt-BR: { state: borrador, text: "As citações traduzidas do núcleo remetem ao original em espanhol, que mantém a autoridade." }
+  es: { state: aprobado, text: "Las citas traducidas del núcleo remiten al original en español, que conserva la autoridad.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  en: { state: aprobado, text: "Translated quotations from the core refer to the Spanish original, which retains authority.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  pt-BR: { state: aprobado, text: "As citações traduzidas do núcleo remetem ao original em espanhol, que mantém a autoridade.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
 contenido.fuenteEn:
-  es: { state: borrador, text: "Leer en {pagina}" }
-  en: { state: borrador, text: "Read in {pagina}" }
-  pt-BR: { state: borrador, text: "Ler em {pagina}" }
+  es: { state: aprobado, text: "Leer en {pagina}", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  en: { state: aprobado, text: "Read in {pagina}", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  pt-BR: { state: aprobado, text: "Ler em {pagina}", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
 recorrido.fin:
-  es: { state: borrador, text: "Llegaste al final del manifiesto. Para seguir:" }
-  en: { state: borrador, text: "You have reached the end of the manifesto. To continue:" }
-  pt-BR: { state: borrador, text: "Você chegou ao fim do manifesto. Para continuar:" }
+  es: { state: aprobado, text: "Llegaste al final del manifiesto. Para seguir:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  en: { state: aprobado, text: "You have reached the end of the manifesto. To continue:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  pt-BR: { state: aprobado, text: "Você chegou ao fim do manifesto. Para continuar:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
