@@ -186,7 +186,7 @@ Es irreversible hacia afuera, porque un enlace publicado se cita, y por eso requ
 ### Preferencia de idioma
 
 ```text
-none ──(elige idioma)──▶ saved(x) ──(restablece)──▶ none
+none ──(elige idioma)──▶ saved(x) ──(elige otro)──▶ saved(y)   (v1.6: sin restablecer; borrar los datos del navegador vuelve a none)
 saved(x) ──(elige otro)──▶ saved(y)
 ```
 

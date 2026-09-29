@@ -49,7 +49,7 @@ Al pasar el cursor sobre un título **no** aparece ningún símbolo; copiar el e
 | Visita a `/` con preferencia guardada, sin JavaScript | Inglés |
 | Cualquier otra URL, con cualquier preferencia | Se respeta la URL (`FR-019`) |
 | Cambio de idioma en `/es/principios/p03` | Navega a `/principles/p03` o `/pt-br/principios/p03`, con la misma ancla si la hay |
-| Restablecer preferencia | Se borra; `/` vuelve a inglés |
+| Elegir otro idioma (v1.6; ya no hay acción para restablecer) | La preferencia pasa a ese idioma; `/` lo sigue |
 
 ## Encabezado de cada página
 

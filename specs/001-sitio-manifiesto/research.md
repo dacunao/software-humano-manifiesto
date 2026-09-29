@@ -29,7 +29,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 
 ## RQ-04 · Preferencia de idioma · **confirmada por la autoridad**
 
-- **Decision**: la elección se guarda en el almacenamiento local del navegador al usar el selector. **Solo orienta la entrada por la raíz `/`**: si hay preferencia `es` o `pt-BR`, un script pequeño lleva de `/` a `/es/` o `/pt-br/`. Cualquier otra URL, incluidas las inglesas sin prefijo, se trata como explícita y nunca se sustituye. Sin JavaScript, `/` muestra inglés. Restablecer borra la preferencia.
+- **Decision**: la elección se guarda en el almacenamiento local del navegador al usar el selector. **Solo orienta la entrada por la raíz `/`**: si hay preferencia `es` o `pt-BR`, un script pequeño lleva de `/` a `/es/` o `/pt-br/`. Cualquier otra URL, incluidas las inglesas sin prefijo, se trata como explícita y nunca se sustituye. Sin JavaScript, `/` muestra inglés. Restablecer borra la preferencia. *(v1.6: la preferencia se modifica eligiendo otro idioma; se retiró la acción de restablecer.)*
 - **Rationale**: `FR-019` («una URL localizada explícita siempre prevalecerá»), `FR-020` («la preferencia guardada podrá orientar la navegación posterior, pero no sobrescribir una URL elegida o compartida»), `AC-14`. Una URL inglesa compartida (`/principles/p03`) tiene que abrir en inglés para quien la recibe, tenga la preferencia que tenga.
 - **Alternatives considered**: que la preferencia redirija cualquier ruta sin prefijo (descartada: rompe enlaces compartidos en inglés); que la preferencia no redirija nunca (más simple, pero entonces «conservar la elección» no tendría efecto más allá de la navegación interna, que ya conserva el idioma sola).
 
