@@ -9,6 +9,7 @@ import { contenido, markdownDe, nodo, rutaDescarga, t, URL_SITIO } from '../lib/
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
+import EnEstaPagina, { type ItemPagina } from '../components/EnEstaPagina.astro';
 import Busqueda from '../components/Busqueda.astro';
 import Marca from '../components/Marca.astro';
 import ControlTema from '../components/ControlTema.astro';
@@ -22,11 +23,15 @@ interface Props {
   ld?: NodoLD[];
   /** Pie: fecha del último cambio de la página (FR-012). */
   actualizado?: string;
-  /** Índice lateral de la superficie actual (T095). */
+  /** Columna izquierda: las páginas de la parte del sitio en que se está (navegación estándar, T201). */
   indice?: GrupoIndice[] | undefined;
+  /** Columna derecha «En esta página»: secciones y subtítulos de la página (T202). */
+  enPagina?: ItemPagina[] | undefined;
   claseIndice?: string | undefined;
 }
-const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, claseIndice } = Astro.props;
+const { locale, pagina, titulo, descripcion, ld = [], actualizado, indice, claseIndice, enPagina = [] } = Astro.props;
+const conArbol = !!indice?.length;
+const conPagina = enPagina.filter((i) => i.nivel === 2).length >= 2;
 const lang = IDIOMAS[locale].hreflang;
 const url = `${URL_SITIO}${ruta(pagina, locale)}`;
 const esInicio = pagina.tipo === 'inicio';
@@ -100,16 +105,18 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
         <ControlTema locale={locale} />
       </header>
     </div>
-    <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
+    <div class:list={['lienzo', { 'con-indice': conArbol, 'sin-arbol': !conArbol, 'con-derecha': conPagina || Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />
       </main>
-      {indice?.length ? (
+      {(conArbol || conPagina) && (
         <details class="indice-plegable" data-indice-plegable>
           <summary><span>{t('indice.contenido', locale)}</span><span class="seccion-actual" data-seccion-actual aria-hidden="true" /></summary>
-          <IndiceLateral grupos={indice} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} />
+          {conArbol && <IndiceLateral grupos={indice!} etiqueta={t('indice.rotulo', locale)} clase={claseIndice} />}
+          {conPagina && <EnEstaPagina items={enPagina} locale={locale} movil />}
         </details>
-      ) : null}
+      )}
+      {conPagina && <EnEstaPagina items={enPagina} locale={locale} />}
       <slot name="derecha" />
     </div>
     <footer class="pie">

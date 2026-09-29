@@ -20,13 +20,7 @@ interface Props {
 }
 const { id, locale } = Astro.props;
 const s = superficie(id);
-const propias = s.sections.length > 1
-  ? s.sections.map((sec) => {
-      const x = texto(sec.title, locale);
-      return { href: `#${sec.id}`, texto: x.texto, lang: x.lang !== locale ? x.lang : undefined };
-    })
-  : [];
-const indice = indiceManifiesto({ tipo: id }, locale, propias);
+const indice = indiceManifiesto({ tipo: id }, locale);
 const url = (l: Locale) => `${URL_SITIO}${ruta({ tipo: id }, l)}`;
 const { version, date } = contenido.sitio.core;
 const ld: NodoLD[] = [];

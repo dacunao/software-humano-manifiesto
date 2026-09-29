@@ -28,12 +28,10 @@ const titulo = markdownDe(nombre, locale);
 const limpio = titulo.markdown.replace(/^#{1,6}\s+/, '');
 const descripcion = markdownDe(frase, locale).markdown.replace(/\*/g, '');
 const codigo = pid.toUpperCase();
-// Índice: esta página y el manifiesto, con los diez principios desplegados (PRD v1.2 §18.2).
-const indice = [
-  { titulo: t('indice.enEstaPagina', locale), items: ['declaracion', 'tension', 'significado', 'consecuencia', 'ejemplo', 'contraejemplo', 'prueba', 'fuente']
-    .map((id) => ({ href: `#${id}`, texto: t(`principio.${id}`, locale) })) },
-  ...indiceManifiesto({ tipo: 'principio', principio: pid }, locale),
-];
+// Izquierda: el manifiesto con los diez principios (T201). Derecha: las secciones de esta página (T202).
+const indice = indiceManifiesto({ tipo: 'principio', principio: pid }, locale);
+const enPagina = ['declaracion', 'tension', 'significado', 'consecuencia', 'ejemplo', 'contraejemplo', 'prueba', 'fuente']
+  .map((id) => ({ href: `#${id}`, texto: t(`principio.${id}`, locale), nivel: 2 as const }));
 const numero = Number(pid.slice(1));
 const cita = (nodos: NodoCanonico[]) => {
   const ns = nodos.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
@@ -66,6 +64,7 @@ const ld = [{
   ld={ld}
   actualizado={fechaActualizacion([`src/content/principios/${pid}.yaml`])}
   indice={indice}
+  enPagina={enPagina}
 >
   <article class="principio" aria-labelledby="declaracion-titulo">
     <header id="declaracion">

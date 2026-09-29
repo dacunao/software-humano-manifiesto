@@ -1,22 +1,49 @@
 import { expect, test } from '@playwright/test';
 
-// Panel «En esta sección» e índice del manifiesto (RQ-06 enmendado, RQ-15, T138).
-test.describe('lectura · índice y panel «En esta sección»', () => {
+// Navegación estándar (decisión del 2026-09-29, T201–T204): izquierda, las páginas; derecha, «En esta página».
+test.describe('lectura · páginas a la izquierda, «En esta página» a la derecha', () => {
   for (const [ruta, seccion, esperado] of [
     ['/es/manifiesto/fundamento-de-producto#sh-fund', 'sh-fund', 'Cuándo el fundamento es identificable'],
     ['/es/manifiesto/gobernanza#evolucion', 'evolucion', 'Control de cambios de las versiones 2.0 y 2.1'],
     ['/es/manifiesto/verificar#sh-ap', 'sh-ap', 'Una advertencia sobre la simplicidad'],
   ] as const) {
-    test(`el panel sigue la lectura en ${ruta.split('#')[0]}`, async ({ page }, info) => {
+    test(`«En esta página» muestra todas las secciones y marca la actual en ${ruta.split('#')[0]}`, async ({ page }, info) => {
       test.skip(info.project.name !== 'js', 'solo escritorio con JavaScript');
       await page.setViewportSize({ width: 1440, height: 900 });
       await page.goto(ruta);
-      const panel = page.locator('.en-esta-seccion');
-      await expect(panel.locator(`[data-seccion="${seccion}"]`)).toBeVisible();
-      await expect(panel).toContainText(esperado);
-      await expect(page.locator(`.indice-lateral a[href="#${seccion}"]`)).toHaveAttribute('aria-current', 'location');
+      const derecha = page.locator('.lienzo > .en-esta-pagina');
+      await expect(derecha).toBeVisible();
+      await expect(derecha).toContainText(esperado);
+      await expect(derecha.locator(`a[href="#${seccion}"]`)).toHaveAttribute('aria-current', 'location');
+      // Todas las secciones de la página, no solo la actual.
+      const secciones = await page.locator('main section.seccion[id]').evaluateAll((s) => s.map((x) => x.id));
+      for (const id of secciones) await expect(derecha.locator(`li.nivel-2 > a[href="#${id}"]`)).toHaveCount(1);
+      // La izquierda no repite las secciones: solo páginas.
+      await expect(page.locator('.indice-lateral a[href^="#"]')).toHaveCount(0);
     });
   }
+
+  test('una sección sin subtítulos también queda marcada', async ({ page }, info) => {
+    test.skip(info.project.name !== 'js', 'solo escritorio con JavaScript');
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto('/es/manifiesto#alcance');
+    await expect(page.locator('.lienzo > .en-esta-pagina a[href="#alcance"]')).toHaveAttribute('aria-current', 'location');
+  });
+
+  test('Acerca de no tiene columna izquierda y sus secciones van a la derecha', async ({ page }, info) => {
+    test.skip(info.project.name !== 'js', 'solo escritorio');
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto('/es/acerca');
+    await expect(page.locator('.indice-lateral')).toHaveCount(0);
+    await expect(page.locator('.lienzo > .en-esta-pagina a[href="#licencias"]')).toBeVisible();
+  });
+
+  test('el menú «Manifiesto» abre el Mapa del manifiesto', async ({ page }) => {
+    await page.goto('/es/acerca');
+    await expect(page.locator('.navegacion-global a', { hasText: 'Manifiesto' })).toHaveAttribute('href', '/es/manifiesto/mapa');
+    await page.goto('/es/manifiesto/mapa');
+    await expect(page.locator('.navegacion-global a', { hasText: 'Manifiesto' })).toHaveAttribute('aria-current', 'page');
+  });
 
   test('el índice agrupa las divisiones por ruta y marca la actual', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
@@ -26,12 +53,20 @@ test.describe('lectura · índice y panel «En esta sección»', () => {
     await expect(indice.locator('a[aria-current="page"]')).toHaveAttribute('href', '/es/manifiesto/verificar');
   });
 
-  test('sin JavaScript el panel no aparece y el índice funciona', async ({ page }, info) => {
+  test('sin JavaScript las dos columnas se leen completas', async ({ page }, info) => {
     test.skip(info.project.name !== 'sin-js', 'solo sin JavaScript');
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/es/manifiesto/fundamento-de-producto');
-    await expect(page.locator('.en-esta-seccion')).toBeHidden();
-    await expect(page.locator('.indice-lateral a[href="#sh-fund"]')).toBeVisible();
+    await expect(page.locator('.lienzo > .en-esta-pagina a[href="#sh-fund"]')).toBeVisible();
+    await expect(page.locator('.indice-lateral a[href="/es/manifiesto/verificar"]')).toBeVisible();
+  });
+
+  test('en móvil, «Contenido» trae las páginas y «En esta página»', async ({ page }, info) => {
+    test.skip(info.project.name !== 'movil', 'solo móvil');
+    await page.goto('/es/manifiesto');
+    await page.locator('.indice-plegable > summary').click();
+    await expect(page.locator('.indice-plegable .indice-lateral a[href="/es/manifiesto/mapa"]')).toBeVisible();
+    await expect(page.locator('.indice-plegable .en-esta-pagina-movil a[href="#alcance"]')).toBeVisible();
   });
 
   test('en móvil el índice va plegado y el título está en la primera pantalla (T138)', async ({ page }, info) => {

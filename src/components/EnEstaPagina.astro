@@ -1,0 +1,32 @@
+---
+/**
+ * «En esta página» (navegación estándar, decisión del 2026-09-29): todas las secciones de la página
+ * (h2) con sus subtítulos del texto canónico (h3, h4). Se lee completo sin JavaScript (FR-015); el
+ * script de seguimiento marca dónde se está. Reemplaza «En esta sección».
+ */
+import type { Locale } from '../lib/contenido/esquemas';
+import { t } from '../lib/sitio';
+
+export interface ItemPagina {
+  href: string;
+  texto: string;
+  nivel: 2 | 3 | 4;
+  lang?: string | undefined;
+}
+interface Props {
+  items: ItemPagina[];
+  locale: Locale;
+  /** Copia para pantallas angostas, dentro de «Contenido». */
+  movil?: boolean;
+}
+const { items, locale, movil = false } = Astro.props;
+const id = movil ? 'en-esta-pagina-movil-titulo' : 'en-esta-pagina-titulo';
+---
+<nav class:list={[movil ? 'en-esta-pagina-movil' : 'en-esta-pagina']} aria-labelledby={id} data-en-pagina>
+  <p id={id} class="rotulo-contenido">{t('indice.enEstaPagina', locale)}</p>
+  <ol>
+    {items.map((i) => (
+      <li class={`nivel-${i.nivel}`}><a href={i.href} lang={i.lang}>{i.texto}</a></li>
+    ))}
+  </ol>
+</nav>

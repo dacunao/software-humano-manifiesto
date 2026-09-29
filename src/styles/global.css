@@ -200,20 +200,33 @@ details.profundidad[open] > summary::before, .indice-plegable[open] > summary::b
 /* En pantallas angostas, además de la barra queda fijo «Contenido»: los saltos a anclas no quedan tapados. */
 @media (max-width: 61.99rem) { html { scroll-padding-top: calc(var(--sh-alto-cabecera) + 3.5rem); } }
 
-/* «En esta sección»: tercera columna solo en pantallas muy anchas y con JavaScript. */
-.en-esta-seccion { display: none; font-size: 0.875rem; }
-.en-esta-seccion ol { list-style: none; padding: 0; margin: 0; }
-.en-esta-seccion li { margin: 0; }
-.en-esta-seccion li.nivel-4 { padding-left: 0.75rem; }
-.en-esta-seccion a { display: block; padding: 0.35rem 0; color: var(--sh-text-muted); text-decoration: none; line-height: 1.35; }
-.en-esta-seccion a:hover { color: var(--sh-text); text-decoration: underline; }
-.en-esta-seccion .titulo-seccion { font-weight: 600; margin: 0 0 0.4rem; color: var(--sh-text); }
+/* «En esta página» (navegación estándar, 2026-09-29): secciones y subtítulos de la página, sin JavaScript.
+   Derecha en pantallas anchas; dentro de «Contenido» en las angostas y, con columna izquierda, hasta 80rem. */
+.en-esta-pagina, .en-esta-pagina-movil { font-size: 0.875rem; }
+.en-esta-pagina ol, .en-esta-pagina-movil ol { list-style: none; padding: 0; margin: 0; }
+.en-esta-pagina li, .en-esta-pagina-movil li { margin: 0; }
+.en-esta-pagina li.nivel-3, .en-esta-pagina-movil li.nivel-3 { padding-left: 0.75rem; }
+.en-esta-pagina li.nivel-4, .en-esta-pagina-movil li.nivel-4 { padding-left: 1.5rem; }
+.en-esta-pagina a, .en-esta-pagina-movil a { display: block; padding: 0.4rem 0 0.4rem 0.75rem; border-left: 2px solid var(--sh-border); color: var(--sh-text-muted); text-decoration: none; line-height: 1.35; }
+.en-esta-pagina li.nivel-2 > a, .en-esta-pagina-movil li.nivel-2 > a { color: var(--sh-text); }
+.en-esta-pagina a:hover, .en-esta-pagina-movil a:hover { color: var(--sh-text); text-decoration: underline; }
+.en-esta-pagina a[aria-current='location'], .en-esta-pagina-movil a[aria-current='location'] { color: var(--sh-interactive); border-left-color: var(--sh-interactive); font-weight: 600; }
+.en-esta-pagina > .rotulo-contenido, .en-esta-pagina-movil > .rotulo-contenido { color: var(--sh-text); margin-bottom: 0.5rem; }
+.en-esta-pagina { display: none; }
+.en-esta-pagina-movil { padding-block: 0 var(--sh-espacio); }
+.indice-lateral + .en-esta-pagina-movil { border-top: 1px solid var(--sh-border); padding-top: var(--sh-espacio); }
+@media (min-width: 62rem) {
+  /* Sin columna izquierda (Inicio, SpecKit, Acerca de): contenido y «En esta página» a la derecha. */
+  .lienzo.sin-arbol.con-derecha { grid-template-columns: minmax(0, 1fr) 14rem; }
+  .lienzo.sin-arbol > .indice-plegable { display: none; }
+  .lienzo.sin-arbol > .en-esta-pagina { display: block; grid-column: 2; grid-row: 1; }
+}
 @media (min-width: 80rem) {
   .lienzo.con-indice.con-derecha { grid-template-columns: 16rem minmax(0, 1fr) 14rem; max-width: 90rem; }
-  .lienzo.con-derecha > .en-esta-seccion:not([hidden]) { display: block; grid-column: 3; grid-row: 1; position: sticky; top: calc(var(--sh-alto-cabecera) + 1rem); align-self: start; max-height: calc(100vh - var(--sh-alto-cabecera) - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
+  .lienzo.con-indice > .en-esta-pagina { display: block; grid-column: 3; grid-row: 1; }
+  .lienzo.con-indice .en-esta-pagina-movil { display: none; }
 }
-.en-esta-seccion.sin-titulos > :not(.rotulo-contenido) { display: none; }
-.en-esta-seccion.sin-titulos { opacity: 0; pointer-events: none; }
+.lienzo > .en-esta-pagina { position: sticky; top: calc(var(--sh-alto-cabecera) + 1rem); align-self: start; max-height: calc(100vh - var(--sh-alto-cabecera) - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
 
 /* ── Anterior y siguiente en el orden del núcleo (FR-002, RQ-15) ── */
 .anterior-siguiente { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--sh-border); }

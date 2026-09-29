@@ -23,7 +23,7 @@ const actual = pagina.tipo === 'principio' || esDivision(pagina.tipo) ? 'manifie
   <ul>
     {destinos.map((d) => (
       <li>
-        <a href={ruta({ tipo: d.tipo }, locale)} aria-current={actual === d.tipo ? (pagina.tipo === d.tipo ? 'page' : 'true') : undefined}>
+        <a href={ruta({ tipo: d.tipo === 'manifiesto' ? 'mapa' : d.tipo }, locale)} aria-current={actual === d.tipo ? (pagina.tipo === (d.tipo === 'manifiesto' ? 'mapa' : d.tipo) ? 'page' : 'true') : undefined}>
           <span class="nombre">{t(d.clave, locale)}</span>
           {d.tipo === 'speckit' && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
         </a>
