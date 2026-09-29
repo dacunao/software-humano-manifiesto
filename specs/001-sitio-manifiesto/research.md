@@ -19,7 +19,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 - **Decision**: las versiones `en` y `pt-BR` del núcleo viven en YAML, **una entrada por nodo canónico**, con el mismo identificador. Cada entrada guarda la huella del nodo original que tradujo, su estado de revisión y quién la aprobó. Si un nodo original cambia de huella, su traducción queda marcada «potencialmente obsoleta».
 - **Rationale**: `FR-021` (contenido en YAML), PRD §19.4 («toda entrada traducible comparte el mismo `id`»), §27.4 (identificar traducciones obsoletas), `AC-13` (paridad verificable nodo a nodo).
 - **Alternatives considered**: un archivo Markdown traducido completo por idioma (descartada: la paridad solo se podría verificar a mano y no hay forma de saber qué nodo quedó obsoleto).
-- **Riesgo visible**: son unas 10.500 palabras por idioma, con revisión profesional pagada (puerta humana). Es el mayor costo externo del proyecto y condiciona la fecha de publicación, no el alcance.
+- **Riesgo visible**: son unas 10.500 palabras por idioma. La revisión profesional pagada se reemplazó por la aprobación de Damián Acuña (decisión de la autoridad de producto, 2026-09-28); los 341 nodos del núcleo se aprobaron sobre la traducción revisada por un agente el 2026-09-21 y verificada contra el original (`evidencia/revision-linguistica/`). Queda a la vista que ningún hablante nativo leyó el texto.
 
 ## RQ-03 · Rutas e idiomas
 

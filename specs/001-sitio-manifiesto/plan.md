@@ -24,7 +24,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 | 6 · Semántica y descubrimiento | Metadatos, `hreflang`, sitemap, robots, JSON-LD | `FR-016`, `FR-019`, `AC-11`, `AC-15`, PRD §25 | 3, 4 | — |
 | 7 · Calidad transversal | Sin JavaScript, movimiento reducido, WCAG 2.2 AA, presupuestos de rendimiento, enlaces, privacidad y medición | `FR-013`, `FR-015`, `FR-018`, `AC-05`, `AC-06`, `AC-07`, `AC-08`, `AC-12`, PRD §21.3–§21.5, §24 | 4 | — |
 | 8 · Dirección visual | Aplicar sobre tokens la dirección elegida, conservando lo que el traspaso manda heredar de A, B y C | PRD §21.2, `P06`, `P08` | 4, 7 | **Elección de dirección** (bloquea este bloque) |
-| 9 · Idiomas y revisión | Traducción del núcleo nodo a nodo, revisión profesional de `en` y `pt-BR`, neutralidad del español | `AC-13`, `AC-14`, `RV-07`, `RV-08` | 5 | **Revisiones lingüísticas** |
+| 9 · Idiomas y revisión | Traducción del núcleo nodo a nodo, aprobación de `en` y `pt-BR` por Damián Acuña en lugar del servicio profesional (decisión de la autoridad de producto, 2026-09-28), neutralidad del español | `AC-13`, `AC-14`, `RV-07`, `RV-08` | 5 | **Revisiones lingüísticas** |
 | 10 · Validación con personas y aceptación | Pruebas moderadas de comprensión, lector de pantalla, recorrido completo, aceptación | `AC-01`, `AC-02`, `AC-07`, PRD §26.4, §32 | 5, 8, 9 | **Aceptación antes de publicar** |
 
 **Al terminar el bloque 5 se hace una primera ronda de comprensión en español con el contenido en borrador**, antes de los bloques 7, 8 y 9 (decisión de Damián Acuña, 2026-09-27; `F07`). Los bloques 2, 3 y 6 pueden avanzar en paralelo con la espera de la dirección visual; el bloque 8 no puede empezar sin ella. `AC-10` (desarrollo gobernado) atraviesa todos los bloques y se verifica con `analyze` y `converge`.
@@ -198,4 +198,4 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 - PRD §29.10 (publicación del preset);
 - aceptación antes de publicar.
 
-**Riesgo principal**: el costo y el plazo de traducir y revisar profesionalmente unas 10.500 palabras del núcleo en dos idiomas, más el contenido editorial. Afecta la fecha, no el alcance.
+**Riesgo principal**: el plazo de traducir y aprobar el contenido editorial y la interfaz en dos idiomas. El núcleo ya está traducido y aprobado por Damián Acuña, que reemplazó el servicio profesional (decisión de la autoridad de producto, 2026-09-28). Riesgo que queda a la vista: la aprobación descansa en una revisión bilingüe hecha por un agente y verificada contra el original, no en la lectura de un hablante nativo. Afecta la fecha y la calidad percibida, no el alcance.

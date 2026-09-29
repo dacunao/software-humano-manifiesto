@@ -301,7 +301,7 @@ Las señales cuantitativas del PRD §26.3 son **hipótesis de calibración**, no
 **Decisiones abiertas y puertas humanas** (`AGENTS.md`):
 
 - **Abierta**: PRD §29.10, publicación futura del preset (repositorio, licencia y soporte). No bloquea especificar, planificar ni implementar; bloquea publicar el preset y emitir su marcado de código fuente.
-- **Puertas humanas, no trabajo pendiente**: elección de la dirección visual (ninguna de A, B ni C del traspaso está aprobada, y la elección bloquea el diseño posterior), revisión profesional de inglés y portugués de Brasil, revisión de neutralidad del español y aceptación humana antes de publicar. Aprobar el fundamento no autoriza publicar (PRD §34).
+- **Puertas humanas, no trabajo pendiente**: elección de la dirección visual (ninguna de A, B ni C del traspaso está aprobada, y la elección bloquea el diseño posterior), aprobación de inglés y portugués de Brasil por Damián Acuña, que reemplaza la revisión profesional (decisión de la autoridad de producto, 2026-09-28), revisión de neutralidad del español y aceptación humana antes de publicar. Aprobar el fundamento no autoriza publicar (PRD §34).
 
 **Insumos sin autoridad**: `docs/pilot/handoff-al-nuevo-proyecto.md` (lecciones y direcciones visuales exploradas) y `docs/design/copy-hero-borrador-2026-09-27.md` (copy del hero, sin aprobar). Se consultan al planificar; no gobiernan.
 
