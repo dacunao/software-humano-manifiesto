@@ -4,7 +4,7 @@ entries:
   portada-01:
     sourceHash: 75534657fadc9900da2952283f39c802be7a56af7648bf867ed225b608748217
     state: borrador
-    text: "**CORE OF THE PRODUCT AND DEVELOPMENT FRAMEWORK**"
+    text: "**PRODUCT AND DEVELOPMENT FRAMEWORK CORE**"
   portada-02:
     sourceHash: ba8409b185935e25ccb30a21a7858cbb5ab92c22a49b3e8880503d3b6313b7b5
     state: borrador
@@ -12,11 +12,11 @@ entries:
   portada-03:
     sourceHash: cda091763e23e6c02db5031d0e4b5c450d1681a14fb547ed78f30cbcfca5c81a
     state: borrador
-    text: Principles, product foundation, Job Stories and decision tests for building products centered on people's situated progress
+    text: Principles, product foundation, Job Stories and decision tests for building products centred on people's situated progress
   portada-04:
     sourceHash: b075f765a5ae0b79d4f521c6cdab9521d4e3efacc6238f2e44b6d2d118dc5be9
     state: borrador
-    text: We build tools to expand people's capabilities, not to show off the capabilities of software.
+    text: We build tools to extend what people are capable of, not to display what software is capable of.
   portada-05:
     sourceHash: 3da70c00838eaf7080d2920605423f1930d34e49bbb70f8e90a2503178c87b2e
     state: borrador
@@ -32,7 +32,7 @@ entries:
   indice-operativo-para-agentes-02:
     sourceHash: 05b5a020d6b10f738d5d1914557cd9a77a4369d0715de427b4173d4b34f47113
     state: borrador
-    text: This navigation layer lets people, agents and adapters cite the core's obligations in a stable way. The identifiers add no doctrine, priority, stages, artifacts or criteria; they only point to content that has already been approved. A reference by identifier never replaces reading the cited passage, nor does it change the authority of the text.
+    text: "This navigation layer lets people, agents and adapters cite core obligations in a stable way. The identifiers add no doctrine, priority, stages, artefacts or criteria: they only point to content that has already been approved. A reference by identifier never replaces reading the passage cited, nor does it modify the authority of the text."
   indice-operativo-para-agentes-03:
     sourceHash: 621ba255f3ab2920f767f1c87bc0448125934fc43685be2c278a64e0caab1c1d
     state: borrador
@@ -42,42 +42,42 @@ entries:
       | Navigation | `SH-INDEX` | Operational index and rule for using identifiers |
       | Principles | `P01`–`P10` | Ten commitments that govern decisions |
       | Foundation | `SH-FUND` | Product definition, authority, scope and reference Job Stories |
-      | Directives for AI | `D01`–`D06` | Doctrine for teams and agents |
+      | AI directives | `D01`–`D06` | Doctrine for teams and agents |
       | Flow | `F01`–`F08` | Eight steps from the foundation to verification |
-      | Artifacts | `A01`–`A08` | Eight documentary answers fitted to the context |
-      | Stopping | `SH-STOP`, `STOP01`–`STOP07` | Conditions that prevent moving forward or accepting |
+      | Artefacts | `A01`–`A08` | Eight documentary answers matched to context |
+      | Stop conditions | `SH-STOP`, `STOP01`–`STOP07` | Conditions that prevent proceeding or accepting |
       | Agent contract | `CR01`–`CR08` | Reusable instructions for development |
-      | Agent delivery | `O01`–`O09` | Expected content of results in natural language |
+      | Agent output | `O01`–`O09` | Expected content of results in natural language |
       | Verification | `V01`–`V12` | Dimensions of evidence for accepting a solution |
-      | Cross-cutting controls | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, done and quick guide |
+      | Cross-cutting controls | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, done and short guide |
   indice-operativo-para-agentes-04:
     sourceHash: 44d6e04f4c3f81e1c7401297481cbd42c56f054c1edccdaae582ac169bcd4b6f
     state: borrador
-    text: Adapters may indicate which identifiers require attention in a specific operation. That selection guides the load; it does not authorize ignoring any other provision of the core that applies because of the context, the risk or a contradiction.
+    text: Adapters may indicate which identifiers require attention in a particular operation. That selection guides what is loaded and does not authorise ignoring any other provision of the core that applies by reason of context, risk or contradiction.
   proposito-del-documento-01:
     sourceHash: 6bab92148942920f1847d4e2365dac28d0a6fea03349ba27611613e103392796
     state: borrador
-    text: "## PURPOSE OF THE DOCUMENT"
+    text: "## PURPOSE OF THIS DOCUMENT"
   proposito-del-documento-02:
     sourceHash: 98d1a37a5b203af175c6267cc8646808a71e0fcad41d76c1c988142389f4f435
     state: borrador
-    text: "### The problem this manifesto seeks to solve"
+    text: "### The problem this manifesto sets out to solve"
   proposito-del-documento-03:
     sourceHash: c4614147aa90889d4c77982c0278c0facb598be13c83c4aad152b2e8b5f7860d
     state: borrador
-    text: How do we build software that amplifies people's ability to achieve what they are after, without transferring the complexity of technology to them?
+    text: How do we build software that amplifies people's capacity to achieve what they seek, without transferring the complexity of the technology to them?
   proposito-del-documento-04:
     sourceHash: b8cb5d718ce987d21badbe63495690b4fc2b2094ae65831a27a77b83d7e70f8d
     state: borrador
-    text: "Software is gaining capability fast. Artificial intelligence speeds that process up even further: today it is cheap to generate screens, options, automations and layers of abstraction. That abundance does not guarantee a better product. It also makes it possible to turn a weak decision into a lot of correct code and an unnecessary idea into a finished feature."
+    text: "Software gains capability quickly. Artificial intelligence accelerates that process further: today it is cheap to generate screens, options, automations and layers of abstraction. That abundance does not guarantee a better product. It also makes it possible to turn a weak decision into a great deal of correct code, and an unnecessary idea into a finished feature."
   proposito-del-documento-05:
     sourceHash: aec9b16cfdc70cb361b965286200abcf61507ee7b2921f319c87a4833e9c18b6
     state: borrador
-    text: This manifesto sets out a doctrine for deciding what deserves to be built, how it should feel to use and what evidence must exist before an implementation is accepted. Its unit of measure is not the number of features delivered. It is the progress a person can make with clarity, trust and control.
+    text: This manifesto establishes a doctrine for deciding what deserves to be built, how it should feel to use, and what evidence must exist before an implementation is accepted. Its unit of measurement is not the number of features delivered. It is the progress a person can achieve with clarity, trust and control.
   proposito-del-documento-06:
     sourceHash: 90484fc6184b9235a873e76a90edb33b8acfa5c698443b4f295386665bd73c10
     state: borrador
-    text: Version 2.1 keeps the concreteness achieved through Jobs to Be Done and Job Stories, and extends the framework's ability to work with product definitions of different length and depth. A Job Story still offers an especially useful way to describe the circumstance that triggers a need, the motivation that drives action and the outcome sought. However, the foundation of a development effort may also be expressed through epics, capabilities, requirements, rules, journeys, criteria or other coherent structures. The form of the input must not force the product's intent to be distorted.
+    text: Version 2.1 preserves the concreteness reached through Jobs to Be Done and Job Stories, and extends the framework's capacity to work with product definitions of differing length and depth. A Job Story remains a particularly useful way to describe the circumstance that triggers a need, the motivation that drives action and the outcome being sought. The foundation of a development effort, however, may also be expressed through epics, capabilities, requirements, rules, journeys, criteria or other coherent structures. The format of the input must not force the product's intent to be distorted.
   proposito-del-documento-07:
     sourceHash: aeab38e8b33bdf9d5a7fd873d96215cf6199019cc242bedd715ad22d07f38a44
     state: borrador
@@ -85,11 +85,11 @@ entries:
   proposito-del-documento-08:
     sourceHash: 447a1bffb732d740b177c91621d15040209dbd0055710ddce5b4e74001add276
     state: borrador
-    text: Function establishes what software makes possible. Experience determines how much of that capability a person can actually use.
+    text: Function establishes what the software makes possible. Experience determines how much of that capability a person can actually put to use.
   proposito-del-documento-09:
     sourceHash: 27ac52e2d651c68cbb541c17c268b3a140c190950cd5f49509919a9fc3342004
     state: borrador
-    text: Experience is not an aesthetic layer added after the functionality has been solved. It is part of it. If a solution produces the correct result but requires the user to decipher the interface, remember unnecessary rules or fear making a mistake, the solution is still incomplete.
+    text: Experience is not an aesthetic layer added once the functionality has been solved. It is part of it. If a solution produces the correct result but requires the user to decipher the interface, remember unnecessary rules or fear making a mistake, the solution is still incomplete.
   proposito-del-documento-10:
     sourceHash: 4435ded4c50c7b6fe4a8b32bdaf3da8ac11a77a6dde5ad5559c4560fb9bdd415
     state: borrador
@@ -97,15 +97,15 @@ entries:
   proposito-del-documento-11:
     sourceHash: 92191be9b407dc6dc1114f8fbffe6906852e56fdb5df9e71cff7405ddd07f215
     state: borrador
-    text: "The framework serves products where the experience of use directly affects the outcome: web and mobile applications, internal tools, learning systems, digital services, products with agents and AI-assisted solutions. It is aimed at product managers, designers, developers and coding agents who take part in product decisions."
+    text: "The framework applies to products where the user experience directly influences the outcome: web and mobile applications, internal tools, learning systems, digital services, agent-enabled products and AI-assisted solutions. It is addressed to product managers, designers, developers and coding agents who take part in product decisions."
   proposito-del-documento-12:
     sourceHash: 89f624aacb21a1c574f506cdfabf79cad4a2a536dba0f5f02b1eb7c4fa94b552
     state: borrador
-    text: It does not prescribe a visual style, a technology, a PRD structure, a delivery strategy or an engineering framework. Nor does it remove the real complexity of the domain. It defines how to prevent the internal structure of the system from becoming, for the team's convenience, extra work for the person who uses it.
+    text: It does not prescribe a visual style, a technology, a PRD structure, a delivery strategy or an engineering framework. Neither does it remove the real complexity of the domain. It defines how to prevent the system's internal structure from becoming, for the team's convenience, additional work for the person using it.
   proposito-del-documento-13:
     sourceHash: 63661449d40a338ea773823815cab21effc6e6c1ac65c4cff5f29796297ddec5
     state: borrador
-    text: This document contains the core of the manifesto. Its translation into specification-driven development methods and into particular frameworks must be done through separate annexes or adapters. No implementation may reduce its principles, alter the scope defined by product or attribute to the agent an authority that the core reserves for people.
+    text: This document contains the core of the manifesto. Translating it into specification-driven development methods and into particular frameworks must be done through separate annexes or adapters. No implementation may reduce its principles, alter the scope defined by product, or attribute to the agent an authority that the core reserves for people.
   proposito-del-documento-14:
     sourceHash: 6a258fb61101e2edd07b18cc3c5eaf77fd9a0e3a9ebb1ad0cbd24eba587c2ca3
     state: borrador
@@ -113,17 +113,17 @@ entries:
   proposito-del-documento-15:
     sourceHash: 65b0dc5c03c85f8b07e3f235b3c858acba4ae9fc63c928c35d3e9e44fdab5e60
     state: borrador
-    text: The document offers two depths of reading. The first makes it possible to understand the stance in a few minutes. The second turns that stance into verifiable decisions during development.
+    text: The document offers two depths of reading. The first makes the stance understandable in a few minutes. The second turns that stance into verifiable decisions during development.
   proposito-del-documento-16:
     sourceHash: 6adbbd4c9722ae1ccc6c83cbe840381699dea65c944624b9332f2045936cf206
     state: borrador
     text: |-
-      | **Path** | **Content** | **Recommended use** |
-      |------------|-----------------------------------------------------------------------------------------|-------------------------------------------------|
-      | Understand | Thesis and canonical text of the manifesto | Align the team before defining a solution |
-      | Decide | Ten principles, product foundation and Job Stories with rules and control questions | Resolve product and UX alternatives |
-      | Build | Specific doctrine for development with AI | Guide coding agents and human reviewers |
-      | Verify | Acceptance tests, scorecard and anti-patterns | Evaluate prototypes, implementations and deliveries |
+      | **Route**   | **Content**                                                                        | **Recommended use**                               |
+      |-------------|------------------------------------------------------------------------------------|---------------------------------------------------|
+      | Understand  | Thesis and canonical text of the manifesto                                          | Align the team before defining a solution         |
+      | Decide      | Ten principles, product foundation and Job Stories with rules and control questions | Decide between product and UX alternatives              |
+      | Build       | Doctrine specific to development with AI                                            | Guide coding agents and human reviewers           |
+      | Verify      | Acceptance tests, scorecard and anti-patterns                                       | Evaluate prototypes, implementations and deliveries |
   proposito-del-documento-17:
     sourceHash: 31020a49bf19f87e006aa13d8daf1a45285cf1a58fd2525977a3e45806e3554d
     state: borrador
@@ -131,22 +131,22 @@ entries:
   proposito-del-documento-18:
     sourceHash: ddeb8cf39801855179dc9086bfc4d295351ccca7ee7fa6dfb458cf6bd4e02d3d
     state: borrador
-    text: Each principle translates into operational levels. No level replaces another. The product foundation keeps the authorized definition of what must be built and why. Jobs to Be Done can orient overall progress, and the Job Story offers this manifesto's reference form for making that progress concrete, situated and verifiable.
+    text: Each principle is expressed at several operational levels. No level replaces another. The product foundation preserves the authorised definition of what must be built and why. Jobs to Be Done can orient progress in general terms, and the Job Story offers this manifesto's reference form for making that progress concrete, situated and verifiable.
   proposito-del-documento-19:
     sourceHash: a22be2460e71b4eb75e97b94d66d076b91d99bbca3aca7a97835074ce1e70faa
     state: borrador
     text: |-
-      | **Level** | **Question it answers** | **Result** |
-      |-------------------------|------------------------------------------------------------|---------------------------------------------------|
-      | Principle | What we believe | A stable criterion to guide decisions |
-      | Product foundation | What must be built, why and under what conditions | An authorized, traceable and verifiable basis |
-      | Reference Job Story | When a need arises and what progress the person seeks | A concrete form for designing and verifying |
-      | Rule | What it requires when designing or implementing | Observable behavior of the product and the team |
-      | Test | How we know whether we comply | Evidence that allows accepting, revising or rejecting |
+      | **Level**               | **Question it answers**                                     | **Result**                                          |
+      |-------------------------|-------------------------------------------------------------|-----------------------------------------------------|
+      | Principle               | What we believe                                              | A stable criterion for orienting decisions          |
+      | Product foundation      | What must be built, why and under what conditions            | An authorised, traceable and verifiable base        |
+      | Reference Job Story     | When a need arises and what progress the person is after     | A concrete form for designing and verifying         |
+      | Rule                    | What it demands when designing or implementing               | An observable behaviour of the product and the team |
+      | Test                    | How we know whether we have met it                           | Evidence that allows accepting, revising or rejecting |
   proposito-del-documento-20:
     sourceHash: 84b864a4736f616a8af387c372722f41e8bb56e713830a3a6ad9e56ea299558e
     state: borrador
-    text: "#### Boundary between core and implementation"
+    text: "#### The boundary between core and implementation"
   proposito-del-documento-21:
     sourceHash: f45ddc8e9fe6fe13af8d7c5486dbd32048118cc92aaf36c3689896c7dedce7b8
     state: borrador
@@ -162,39 +162,39 @@ entries:
   texto-canonico-03:
     sourceHash: 738e225c7bf9e2eb2d8def05b636a29468a050950a1a68417dd8b8fe20bab336
     state: borrador
-    text: The purpose of software is to expand what a person can do.
+    text: The purpose of software is to extend what a person can do.
   texto-canonico-04:
     sourceHash: e7e802c73362f16ebd7b5d0293bd9a4951d974b35663ef6c4e228489ad1fd1bc
     state: borrador
-    text: People do not come to our products to use features. They come because they want to understand, decide, create, learn, communicate, solve or move forward. That progress is our real product.
+    text: People do not come to our products in order to use features. They come because they want to understand, decide, create, learn, communicate, solve problems or move forward. That progress is our real product.
   texto-canonico-05:
     sourceHash: 3f64c90522b83efcd226385e97169f244f56ce76a34404935903e1150530f4e0
     state: borrador
-    text: Progress does not happen in the abstract. It is triggered when a circumstance creates a need, a tension or a decision. Before designing a response, we describe that circumstance, the motivation it produces and the outcome the person is looking for. The solution comes afterwards.
+    text: Progress does not happen in the abstract. It is triggered when a circumstance creates a need, a tension or a decision. Before designing a response we describe that circumstance, the motivation it produces and the outcome the person is seeking. The solution comes afterwards.
   texto-canonico-06:
     sourceHash: 7423bf31e699bc0784adacb621526e0e91fac56fa82bf2181ceae5a676a6f4a5
     state: borrador
-    text: The product definition governs what must be built. It can be expressed as a single story or as an extensive PRD made of stories, capabilities, rules, states, journeys and criteria. Development must understand that structure, preserve its meaning and account for its full scope. Breaking down, ordering or parallelizing the work does not authorize omitting or redefining it.
+    text: The product definition governs what must be built. It may be expressed as a single story or through an extensive PRD made up of stories, capabilities, rules, states, journeys and criteria. Development must understand that structure, preserve its meaning and account for its full scope. Breaking the work down, ordering it or running it in parallel does not authorise omitting or redefining it.
   texto-canonico-07:
     sourceHash: e0f854b8f83d022990d5c2c278a0ad4a52f0092f68b3c280bc14e9aa48e7789b
     state: borrador
-    text: That is why experience is part of function. A system that lets you complete a task but forces you to interpret the interface, remember conventions, go through unnecessary structures or wonder what will happen next transfers to the user a problem the product should solve.
+    text: This is why experience is part of functionality. A system that lets someone complete a task but forces them to interpret the interface, remember conventions, work through unnecessary structures or wonder what will happen next, transfers to the user a problem the product should have solved.
   texto-canonico-08:
     sourceHash: aaaac0e336bee0b98e3d77f08ea821f1e8a69e9cb00735b8c18c286564e96e7c
     state: borrador
-    text: We do not reject complexity. Many important problems are complex. We reject the idea that the complexity of building them must automatically become complexity for whoever uses the tool.
+    text: We do not reject complexity. Many important problems are complex. What we reject is that the complexity of building them should automatically become complexity for whoever uses the tool.
   texto-canonico-09:
     sourceHash: 3ee03fdccbab59a58f9bb54fd13862d810f86c6af7202925344ef083741e4aac
     state: borrador
-    text: We want software that is simple to start with and deep when needed. Software that reveals capabilities in context, explains without interrupting, anticipates without controlling and lets people recover without fear.
+    text: We seek software that is simple to begin with and deep when needed. Software that reveals capabilities in context, explains without interrupting, anticipates without controlling and lets people recover without fear.
   texto-canonico-10:
     sourceHash: 03d785667267259748ca26ced93a8d00d956ff02161f8a9856333b8fb4f07066
     state: borrador
-    text: Every element must justify the attention it consumes. Every interaction must help us understand where we are, what we can do and what will happen next. Every detail must contribute to a coherent, fast and reliable experience.
+    text: Every element must justify the attention it consumes. Every interaction must help us understand where we are, what we can do and what will happen next. Every detail must contribute to an experience that is coherent, fast and dependable.
   texto-canonico-11:
     sourceHash: 753b32ffda43ce959468d9f0125049a9317ff2dcccd93b94c4f6caa1d850b1ff
     state: borrador
-    text: Artificial intelligence must absorb complexity, not multiply it. It can propose, summarize and automate, but it remains subordinate to the person's intent. Critical rules, permissions, commitments and states that require certainty do not depend on a probabilistic interpretation.
+    text: Artificial intelligence must absorb complexity, not multiply it. It may propose, summarise and automate, but it remains subordinate to the person's intent. Critical rules, permissions, commitments and states that require certainty do not depend on a probabilistic interpretation.
   texto-canonico-12:
     sourceHash: 4344d1121dea2b79a10b68bf1017bf30a816aa6fbceb5311990666dcc7fddf95
     state: borrador
@@ -202,11 +202,11 @@ entries:
   texto-canonico-13:
     sourceHash: 39b10c5773e6ad61cd4b4212bb829214bd4e05ddf4f0465f4d45f2050ee8b246
     state: borrador
-    text: Our goal is for sophistication to stay behind the experience and for the person, in front of it, to keep their purpose, their attention and their control.
+    text: Our aim is for sophistication to remain behind the experience, and for the person in front of it to retain their purpose, their attention and their control.
   texto-canonico-14:
     sourceHash: 4ec43bdfecbc77c1a006111d9cfb943b965a338d5b5d94ff8742be4cdc5c006e
     state: borrador
-    text: The best software does not get the user to admire the software. It makes them surprised at what they are now able to do.
+    text: The best software does not make users admire the software. It makes them marvel at what they can now do.
   principios-de-diseno-01:
     sourceHash: 1709fbf88ff80e2c7c937f6e13cfc00427f08352bf2d9ecceb67401fcf0b85ec
     state: borrador
@@ -218,23 +218,23 @@ entries:
   principios-de-diseno-03:
     sourceHash: 9f2cb5d21dc2adfa17e45f97e188748300d91197f8bcd2d8ef87141a733a6d0a
     state: borrador
-    text: The principles do not describe decorative aspirations. Each one must be able to change a decision, stop an implementation or demand additional evidence. If a sentence has no practical consequences, it serves no function within the framework.
+    text: The principles do not describe decorative aspirations. Each one must be capable of changing a decision, stopping an implementation or requiring additional evidence. A sentence with no practical consequences serves no function within the framework.
   principios-de-diseno-04:
     sourceHash: d9356c265d0964113c7470d95574878e867dbb5bf95296991c0f9261d0f7f745
     state: borrador
     text: |-
-      | **N** | **Principle** | **Main consequence** |
+      | **N** | **Principle**                                          | **Main consequence**                                                                                     |
       |-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-      | 1 | User progress is the unit of design | Ties every decision to its product foundation and uses Job Stories when they best express the situation |
-      | 2 | Experience is also functionality | Includes effort, emotion and friction in the definition of quality |
-      | 3 | Complexity belongs to the system | Avoids transferring the internal model to the user |
-      | 4 | Simple to start, deep when needed | Reveals power in context without limiting the expert user |
-      | 5 | The interface must not become another task | Reduces incidental learning and custom conventions |
-      | 6 | Attention is a product resource | Justifies every element and every decision requested |
-      | 7 | Trust is designed | Makes state, consequences, control and recovery visible |
-      | 8 | Quality lives in the accumulation of details | Treats micro-decisions and edge states as part of the product |
-      | 9 | Time and continuity are part of the interface | Integrates performance, availability and preservation of work |
-      | 10 | The person keeps control and ownership | Subordinates assistance and automation to human intent |
+      | 1     | The user's progress is the unit of design              | Ties every decision to its product foundation and uses Job Stories when they express the situation better |
+      | 2     | Experience is also functionality                       | Includes effort, emotion and friction in the definition of quality                                       |
+      | 3     | Complexity belongs to the system                       | Avoids passing the internal model on to the user                                                         |
+      | 4     | Simple to begin with, deep when needed                 | Reveals power in context without limiting the expert user                                                |
+      | 5     | The interface must not become another task             | Reduces incidental learning and custom conventions                                                       |
+      | 6     | Attention is a product resource                        | Justifies every element and every decision requested                                                     |
+      | 7     | Trust is designed                                      | Makes state, consequences, control and recovery visible                                                  |
+      | 8     | Quality lives in the accumulation of details           | Treats micro-decisions and edge states as part of the product                                            |
+      | 9     | Time and continuity are part of the interface          | Integrates performance, availability and preservation of work                                            |
+      | 10    | The person retains control and ownership               | Subordinates assistance and automation to human intent                                                   |
   p01:
     sourceHash: 49945ca8af5f26de61dc59b4b13efc1693814fe17f77aa8bd80d046c9ff4a51b
     state: borrador
@@ -242,7 +242,7 @@ entries:
   principio-1-02:
     sourceHash: 23e0e959c84d28e502804a2d466f4a564e0503c783a4f0a23b14918ffde96d79
     state: borrador
-    text: "### User progress is the unit of design"
+    text: "### The user's progress is the unit of design"
   principio-1-03:
     sourceHash: 823b09af02b13002d3174c3bbe8fca5c5dbff156cd7b0ee4a38ac0d46cf449d6
     state: borrador
@@ -254,7 +254,7 @@ entries:
   principio-1-05:
     sourceHash: df1f8094eff0ef51d71d482e87415a08a8af7ea4108f3d38a4ae02e915905039
     state: borrador
-    text: A feature only makes sense if it helps a person move from a current situation to a desired outcome. The product foundation establishes the authorized reason for the development. Jobs to Be Done can define progress at a broad level, and the Job Story makes it operational by describing when the need arises, what motivates the person and what outcome they seek, without anticipating the solution.
+    text: A feature only makes sense if it helps a person move from a current situation to a desired outcome. The product foundation establishes the authorised reason for the development. Jobs to Be Done can define progress at a broad level, and the Job Story makes it operational by describing when the need arises, what motivates the person and what outcome they are seeking, without anticipating the solution.
   principio-1-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -262,7 +262,7 @@ entries:
   principio-1-07:
     sourceHash: 84eaaa31b6ebe70a3fed2ffec9dd7fad87b8f2b0705e2996d0c208ad62f09be8
     state: borrador
-    text: "When work is organized around features or generic profiles, the team can deliver a lot and solve little. A Job Story forces you to explain causality: the circumstance that triggers the need, the tension that drives action and the better situation that would make progress recognizable. When the product uses another form, that same causality must be preserved to the extent it applies."
+    text: "When work is organised around features or generic profiles, a team can deliver a great deal and resolve very little. A Job Story forces the causality to be spelled out: the circumstance that triggers the need, the tension that drives action, and the better situation that would make progress recognisable. When the product uses another form, that same causality must be preserved to the extent that it applies."
   principio-1-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -271,13 +271,13 @@ entries:
     sourceHash: f15c82c002db525e11977b227bb0fd94132fcfa56b30f6ea97b966a5292630e1
     state: borrador
     text: |-
-      - Identify the product foundation and the authorized source that establishes the scope before designing a response.
+      - Identify the product foundation and the authorised source that establishes the scope before designing a response.
 
-      - When the foundation is expressed through Job Stories, place them within the corresponding higher-level progress or purpose.
+      - Where the foundation is expressed through Job Stories, place them within the higher-level progress or purpose to which they belong.
 
-      - Write each Job Story as circumstance, motivation and outcome, without naming a screen, a component or a feature.
+      - Formulate each Job Story as circumstance, motivation and outcome, without naming a screen, a component or a feature.
 
-      - Back decisions with observed behavior, current obstacle or anxiety, and evidence that allows the outcome to be accepted.
+      - Ground decisions in observed behaviour, the current obstacle or anxiety, and evidence that supports acceptance of the outcome.
   principio-1-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -286,17 +286,17 @@ entries:
     sourceHash: 4dc689c52f99a3653bf80519499f42071f19df1e466534bb96713928b2df2719
     state: borrador
     text: |-
-      - Can the authorized source that justifies this decision be identified, along with its relationship to the full scope?
+      - Can the authorised source that justifies this decision be identified, together with its relationship to the full scope?
 
-      - When there is a Job Story, is the circumstance specific and observable, or does it only describe a role?
+      - Where a Job Story exists, is the circumstance specific and observable, or does it merely describe a role?
 
       - Are the motivation and the outcome backed by evidence, or were they assumed by the team?
 
-      - Does the wording allow several possible solutions? If it already prescribes an interface without that being a product decision, it must be revised.
+      - Does the formulation admit several possible solutions? If it already prescribes an interface without that being a product decision, it must be revisited.
   principio-1-12:
     sourceHash: 8b4ca300eefcdf821d8992863ee2ae37160048ecaa577382e205800bb1e14ab1
     state: borrador
-    text: '**Sign of non-compliance.** "As a student I want to get hints to solve derivatives" looks like a useful story, but it starts from a role and prescribes a function. It does not explain when the block arises, what the person needs to understand or how to recognize that they have regained their progress.'
+    text: "**Sign of non-compliance.** “As a student, I want hints so I can solve derivatives” looks like a useful story, but it begins with a role and prescribes a function. It does not explain when the blockage arises, what the person needs to understand, or how to recognise that they have regained momentum."
   p02:
     sourceHash: 96c5672433c781644116c282a77499775eade12f1cbb17cd355b80777c156f7b
     state: borrador
@@ -308,7 +308,7 @@ entries:
   principio-2-03:
     sourceHash: 05e52489dad1d9828102025c546ef3a6b6534cfe70e49c5dc0c7c16af4c12407
     state: borrador
-    text: If it works but wears people out, it does not work well yet.
+    text: If it works but wears you down, it does not yet work well.
   principio-2-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: borrador
@@ -316,7 +316,7 @@ entries:
   principio-2-05:
     sourceHash: 165246f816f2e393266c1f3f12f0c6fc6a48e8d727ff0e9ff3672adffe1cfef5
     state: borrador
-    text: A product is not defined only by the accuracy of its output. How much effort, uncertainty and attention it demands to get there also matters. The feeling of flow or frustration changes a person's real ability to complete their work.
+    text: A product is not defined solely by the accuracy of its output. How much effort, uncertainty and attention it demands in order to obtain that output also matters. Whether the experience feels fluid or frustrating alters a person's real capacity to complete their work.
   principio-2-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -324,7 +324,7 @@ entries:
   principio-2-07:
     sourceHash: 75fa16cc10ff66698d3a3f2efd7cd5f3feb4450e5f6020781133e82b2c6a335a
     state: borrador
-    text: Two products can deliver the same result and produce different performance. A heavy experience leads to abandonment, errors, dependence on support and loss of trust. That cost is functional, even if it does not appear in the technical specification.
+    text: Two products can deliver the same result and yield different levels of performance. A burdensome experience causes abandonment, errors, dependence on support and loss of trust. That cost is functional, even though it does not appear in the technical specification.
   principio-2-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -333,11 +333,11 @@ entries:
     sourceHash: 7185b9b6e0d5d5526a1b3ba2a8056169e2ea145b25c8e9725f52fcc3926d5768
     state: borrador
     text: |-
-      - Include effort, clarity and trust in the acceptance criteria.
+      - Include effort, clarity and trust within the acceptance criteria.
 
-      - Test the complete flow, not only each screen or endpoint in isolation.
+      - Test the complete flow, not just each screen or endpoint in isolation.
 
-      - Consider the emotional and cognitive state that accompanies the situation defined by the product and, when there is one, by the Job Story.
+      - Consider the emotional and cognitive state that accompanies the situation defined by the product and, where one exists, by the Job Story.
   principio-2-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -346,15 +346,15 @@ entries:
     sourceHash: 002a91e8c121741c2058d3885d08f3e7056b74c6a92255c601031bf12dc40672
     state: borrador
     text: |-
-      - Can the person concentrate on their goal, or do they have to manage the tool?
+      - Can the person concentrate on their objective, or must they manage the tool?
 
-      - Which moments cause doubt, tension or interruption?
+      - Which moments provoke doubt, tension or interruption?
 
-      - Does a correctly completed task leave the user with energy to continue?
+      - Does a task done correctly leave the user with energy to carry on?
   principio-2-12:
     sourceHash: a1325171c5d7dbc584acaa26205feb56dce634729fc6cc13098d103c1c477445
     state: borrador
-    text: "**Sign of non-compliance.** A technically valid form that erases data after an error turns correction into punishment. The validation works; the experience does not."
+    text: "**Sign of non-compliance.** A technically valid form that wipes the data after an error turns correction into punishment. The validation works; the experience does not."
   p03:
     sourceHash: 8e9ffc20901ed8bff262a2b94df759999b968327a163c5913cc4c4de4cdbfad4
     state: borrador
@@ -366,7 +366,7 @@ entries:
   principio-3-03:
     sourceHash: d7e8449e065157244cb9a11671af6af72368113adde7b48d0e0e79910b8b1e07
     state: borrador
-    text: Being complex to build does not mean it has to be complex to use.
+    text: Just because it is complex to build does not mean it must be complex to use.
   principio-3-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: borrador
@@ -374,7 +374,7 @@ entries:
   principio-3-05:
     sourceHash: 7203c0a96f1895f649dd201ec31ce9671e64cbfa3b44257357c953ccdff38048
     state: borrador
-    text: The domain may demand rules, integrations and exceptions. The team must absorb that complexity and present it as understandable decisions. Internal tables, states and services should not dictate the user's language or navigation.
+    text: The domain may require rules, integrations and exceptions. The team must absorb that complexity and present it as understandable decisions. Internal tables, states and services should not dictate the user's language or navigation.
   principio-3-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -382,7 +382,7 @@ entries:
   principio-3-07:
     sourceHash: 2c59501004726163efb36946979a065daae9cdd1cac26e405a7bc6f1d4b015bf
     state: borrador
-    text: When the interface replicates the architecture, the person has to learn how the product was built before getting value from it. That transfer usually seems inevitable only because it is convenient for the team.
+    text: When the interface mirrors the architecture, the person has to learn how the product was built before getting any value from it. That transfer usually seems inevitable only because it is convenient for the team.
   principio-3-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -393,9 +393,9 @@ entries:
     text: |-
       - Translate internal concepts into the person's language and mental model.
 
-      - Resolve dependencies, defaults and sequences when there is enough context.
+      - Resolve dependencies, defaults and sequences where there is sufficient context.
 
-      - Expose an exception only to those who really need to decide on it.
+      - Expose an exception only to those who genuinely have to decide it.
   principio-3-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -408,11 +408,11 @@ entries:
 
       - Are we showing a technical entity that could be translated or inferred?
 
-      - Does the person need to understand this rule to make a good decision?
+      - Does the person need to understand this rule in order to make a good decision?
   principio-3-12:
     sourceHash: 60d437da4f04bb09b9855d07fbcdf11885f7a821bcc52336e30588280e6c2107
     state: borrador
-    text: "**Sign of non-compliance.** Asking the user to first choose an internal record type, when that distinction means nothing to them, exposes the data schema as if it were a human need."
+    text: "**Sign of non-compliance.** Asking the user to first choose an internal record type, where that distinction has no meaning for them, exposes the data schema as though it were a human need."
   p04:
     sourceHash: fe331a88aa7bce55b8e58e97e4b683da4b1ea6c69bea4571bb19bc7670a2b799
     state: borrador
@@ -420,7 +420,7 @@ entries:
   principio-4-02:
     sourceHash: 22c471699ffd3780d214edd9f440489a656fc2b03adfe41b90fbad6c96c10b29
     state: borrador
-    text: "### Simple to start, deep when needed"
+    text: "### Simple to begin with, deep when needed"
   principio-4-03:
     sourceHash: ebe153af092acf985156dae8241cc854b9497d1fbae58bf5368c0309d726128f
     state: borrador
@@ -432,7 +432,7 @@ entries:
   principio-4-05:
     sourceHash: e0340e53d0f0d36de411fab4f4fdbd8f65dfa905119a926cc63c1d6eeee69c91
     state: borrador
-    text: Simplicity is not about reducing the product's capability. It is about adapting what is visible to the moment, the level of experience and the current decision. Depth appears progressively and remains available.
+    text: Simplicity does not consist of reducing the product's capability. It consists of matching what is visible to the moment, the level of experience and the decision at hand. Depth appears progressively and remains available.
   principio-4-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -440,7 +440,7 @@ entries:
   principio-4-07:
     sourceHash: cdd5b44b42a62db92538425782a8d2d9b36787175e0a8d92f6ba79f17b39f4bb
     state: borrador
-    text: A minimalist product can feel easy on the first day and limiting on the tenth. A product that shows all its power from the start can be unapproachable. Progressive disclosure avoids both extremes.
+    text: A minimalist product can feel easy on day one and limiting on day ten. A product that displays all of its power from the outset can be unapproachable. Progressive disclosure avoids both extremes.
   principio-4-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -449,11 +449,11 @@ entries:
     sourceHash: d825e70a034b3da4912e0918515e49c6ed45c1491a6d99f54273e7c4bbbed5af
     state: borrador
     text: |-
-      - Show the main path first and reveal advanced options when the context makes them relevant.
+      - Show the main route first and reveal advanced options when the context makes them relevant.
 
-      - Keep shortcuts and precision for expert users without imposing them on beginners.
+      - Preserve shortcuts and precision for expert users without imposing them on the beginner.
 
-      - Use good defaults, always editable when the decision matters.
+      - Use good defaults, always editable where the decision matters.
   principio-4-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -464,13 +464,13 @@ entries:
     text: |-
       - What exactly does the person need to see in this state?
 
-      - Does the simplification remove noise or remove necessary capability?
+      - Does the simplification remove noise, or does it remove necessary capability?
 
       - Can an expert user move quickly without the beginner having to carry that depth?
   principio-4-12:
     sourceHash: 4b15354c5c70e2142601e1edac9a1982aee120149f7226429314fd3d3724d7b9
     state: borrador
-    text: "**Sign of non-compliance.** Hiding all the options can produce a clean first impression and a dead end when a less common case appears."
+    text: "**Sign of non-compliance.** Hiding every option can produce a clean first impression and a dead end when a less common case comes up."
   p05:
     sourceHash: a883ee3f5e9b8b85015f3758b0c485655e4660075ec96599316f4e6e7f5b5700
     state: borrador
@@ -490,7 +490,7 @@ entries:
   principio-5-05:
     sourceHash: 54b60739a477c58ddaaf9c6207c079b516d59e9148d0974cde53312024d85160
     state: borrador
-    text: An interface must rely on familiar expectations, understandable hierarchy and immediate feedback. Every custom convention the user must memorize consumes capacity they should be spending on the real problem.
+    text: An interface must build on familiar expectations, an understandable hierarchy and immediate feedback. Every custom convention the user has to memorise consumes capacity that should be spent on the real problem.
   principio-5-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -498,7 +498,7 @@ entries:
   principio-5-07:
     sourceHash: 184cd186d363977ff3bcd8b1ad338e125ac29a8962037bb2370326b9201d172f
     state: borrador
-    text: The learning burden becomes especially harmful in educational, health or financial products, or in products used infrequently. The person already faces enough complexity in the content or in the decision.
+    text: The learning burden becomes especially damaging in educational, health, financial or infrequently used products. The person is already facing enough complexity in the content or in the decision.
   principio-5-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -507,11 +507,11 @@ entries:
     sourceHash: 6c6e3e6c1bd6d9607b1b9576e523b2c45851b3ce07285889b22db46d28517460
     state: borrador
     text: |-
-      - Prefer familiar conventions when they solve the problem well.
+      - Prefer known conventions where they solve the problem well.
 
-      - Explain in context without requiring prior tutorials for basic actions.
+      - Explain in context, without requiring prior tutorials for basic actions.
 
-      - Make the main action, the current state and the next possible step evident.
+      - Make the primary action, the current state and the next possible step evident.
   principio-5-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -522,13 +522,13 @@ entries:
     text: |-
       - Does the person understand what the elements mean without an external legend?
 
-      - Do they need to remember something from a previous screen to act correctly?
+      - Do they need to remember something from a previous screen in order to act correctly?
 
-      - Does the interface add a learning layer unrelated to the situation or the outcome it has to resolve?
+      - Does the interface add a layer of learning unrelated to the situation or the outcome they have to resolve?
   principio-5-12:
     sourceHash: b71a03e00d4199e31d32b9473e9d69ecdbd72a4bb8ed7cf8cd5d8e3d622832a3
     state: borrador
-    text: "**Sign of non-compliance.** A numbered sequence with no visible meaning forces people to learn the navigation at the same time as the content. The numbers organize things for the team, but they do not orient the user."
+    text: "**Sign of non-compliance.** A numbered sequence with no visible meaning forces people to learn the navigation at the same time as the content. The numbers organise things for the team, but they do not orient the user."
   p06:
     sourceHash: 8b1c2da6bcbf7911b28a12f7824d7942204fbecd75c8e5a3e085a3ba8d4d4e8c
     state: borrador
@@ -548,7 +548,7 @@ entries:
   principio-6-05:
     sourceHash: e8045a544fd72b5d7b8081cca7f62f85bba09e2316e2db84ba1c8562cd1fa5b3
     state: borrador
-    text: Attention is finite. Menus, alerts, animations, choices and texts each claim part of it. Design must manage that budget with the same discipline as performance or cost.
+    text: Attention is finite. Menus, alerts, animations, choices and text all demand a share of it. Design must manage that budget with the same discipline as performance or cost.
   principio-6-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -556,7 +556,7 @@ entries:
   principio-6-07:
     sourceHash: 697f8e8110f9ed7f538fad23327868321fd1508b6211168e6e716291103c76d8
     state: borrador
-    text: An interface can be free of errors and still fail through saturation. The accumulated load erodes understanding, increases accidental decisions and makes simple tasks feel heavy.
+    text: An interface can be free of errors and still fail through saturation. Accumulated load degrades understanding, increases accidental decisions and makes simple tasks feel heavy.
   principio-6-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -565,11 +565,11 @@ entries:
     sourceHash: cd137243625d96195e8c4f461c11f13296d2251486973630de443127585506c4
     state: borrador
     text: |-
-      - Require every visible element and every decision requested to respond to a verifiable circumstance, motivation or outcome.
+      - Require every visible element and every decision requested to answer to a verifiable circumstance, motivation or outcome.
 
-      - Rank by relevance to the current state, not by equality among features.
+      - Establish hierarchy by relevance to the current state, not by giving every feature equal weight.
 
-      - Reduce interruptions and reserve strong signals for matters that really require attention.
+      - Reduce interruptions and reserve strong signals for matters that genuinely require attention.
   principio-6-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -578,15 +578,15 @@ entries:
     sourceHash: 01895d24a2d85178ebcbbe0960bcb5e16e010655d64de375bdc8bf51b5fed4f8
     state: borrador
     text: |-
-      - What competes visually or mentally with the main action?
+      - What competes visually or mentally with the primary action?
 
       - Can an element be removed without losing necessary information or control?
 
-      - Does the interface distinguish what is urgent, what is important and what is optional?
+      - Does the interface distinguish the urgent, the important and the optional?
   principio-6-12:
     sourceHash: 680b7599e2e2970f1ba0c397d849a38ed3e351893dfb1b2083005130c5c509fb
     state: borrador
-    text: "**Sign of non-compliance.** Presenting five actions with equal visual weight forces the user to set a priority that the product should already know from context."
+    text: "**Sign of non-compliance.** Presenting five actions with equal visual weight forces the user to establish a priority that the product should already know from context."
   p07:
     sourceHash: b352795cc361844dcf699e8d53db4c43f4b97e9213086347f93e994b166f7dca
     state: borrador
@@ -606,7 +606,7 @@ entries:
   principio-7-05:
     sourceHash: 3a97b2f4126192dad181e1d032e0aeac6bdebb401769911ae0be0f63e6ff3a0d
     state: borrador
-    text: Trust emerges when the product shows its state, anticipates consequences, confirms results and offers recovery. It does not depend on general promises but on predictable behavior.
+    text: Trust arises when the product shows its state, anticipates consequences, confirms results and offers recovery. It does not rest on general promises, but on predictable behaviour.
   principio-7-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -614,7 +614,7 @@ entries:
   principio-7-07:
     sourceHash: 8bdf13fd41c0c35754e378d2056c5508f27eac1a3148d493ebc2d44a5c2c2fa4
     state: borrador
-    text: Uncertainty holds back action. With AI, trust also requires distinguishing facts, inferences, proposals and executed actions. A fluent answer must not hide its limits.
+    text: Uncertainty holds action back. With AI, trust additionally requires distinguishing facts, inferences, proposals and actions already carried out. A fluent response cannot conceal its limits.
   principio-7-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -625,9 +625,9 @@ entries:
     text: |-
       - Show what is happening, what will change and when an action will be irreversible.
 
-      - Allow undoing, correcting or returning to a safe state when reasonable.
+      - Allow people to undo, correct or return to a safe state where that is reasonable.
 
-      - Clearly distinguish recommendations, automatic decisions and confirmed results.
+      - Clearly differentiate recommendations, automatic decisions and confirmed results.
   principio-7-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -640,11 +640,11 @@ entries:
 
       - Can they verify what the system did and why?
 
-      - Is there a recovery path proportional to the risk?
+      - Is there a way to recover that is proportionate to the risk?
   principio-7-12:
     sourceHash: 9894141c7e196e899150e7745d3ba62bf0f9d4b576f4e98e4bc6a9d0a4ba8578
     state: borrador
-    text: '**Sign of non-compliance.** An agent that reports "done" without showing what changed forces people to trust its tone, not evidence.'
+    text: '**Sign of non-compliance.** An agent that reports "done" without showing what changed forces people to trust its tone rather than the evidence.'
   p08:
     sourceHash: c10361bfc710cfabf8b69ffa80a44cf0d69b69a668059cbe8f7b98bb376cc722
     state: borrador
@@ -656,7 +656,7 @@ entries:
   principio-8-03:
     sourceHash: 196b50c98693589f5941749c9d6f195c2f56a134d91ebb90aa2ce8ca539ba70f
     state: borrador
-    text: Quality rarely depends on one big decision. It shows in many small decisions that agree with each other.
+    text: Quality rarely depends on one big decision. It is recognised in many small decisions that align with one another.
   principio-8-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: borrador
@@ -664,7 +664,7 @@ entries:
   principio-8-05:
     sourceHash: ee66dd6f3aea2bd71216cf9b85729a2723fd1952a1d0c261261ea7d1eaf3fcf8
     state: borrador
-    text: Typography, spacing, copy, focus, empty states, errors, transitions and micro-interactions form a single experience. No detail makes up for a bad solution on its own, but their accumulation can reinforce or erode trust.
+    text: Typography, spacing, wording, focus, empty states, errors, transitions and micro-interactions form a single experience. No detail compensates on its own for a poor solution, but their accumulation can either reinforce or erode trust.
   principio-8-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -683,9 +683,9 @@ entries:
     text: |-
       - Design and verify normal, empty, loading, error, success and recovery states.
 
-      - Keep language, hierarchy and behavior consistent throughout the flow.
+      - Keep language, hierarchy and behaviour consistent throughout the flow.
 
-      - Review the product at real scale and with realistic content before approving it.
+      - Review the product at actual size and with realistic content before approving it.
   principio-8-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -694,15 +694,15 @@ entries:
     sourceHash: 72e0dd527695b2c8c5a78528b6f972e23155f93663f5cfbda76e4769a4004516
     state: borrador
     text: |-
-      - Do the details reinforce the same logic or contradict expectations?
+      - Do the details reinforce the same logic, or do they contradict expectations?
 
       - What happens in the less frequent states?
 
-      - Does the product feel deliberately built or assembled from parts?
+      - Does the product feel deliberately built, or assembled from parts?
   principio-8-12:
     sourceHash: 5f4da174ee4ea0a9a04128d832a65538e5506917ac9d13063ec2c4d4c0b5ea44
     state: borrador
-    text: "**Sign of non-compliance.** A button changes its name between steps, an error appears far from the field and focus is lost after saving. Each defect is minor; together they break continuity."
+    text: "**Sign of non-compliance.** A button changes its label between steps, an error appears far from its field, and focus is lost after saving. Each defect is minor; together they break continuity."
   p09:
     sourceHash: f0c567a03f20a9eb3453bc8007b36c8404029f97a514cb6a6e5fef4a053e43d0
     state: borrador
@@ -714,7 +714,7 @@ entries:
   principio-9-03:
     sourceHash: 18b4d70f6dca56535c460a50e1fd1374e98beabaa49b49b7b20aa6069e69cefd
     state: borrador
-    text: People experience the wait before they ever learn about our architecture.
+    text: The person experiences the wait before they know anything about our architecture.
   principio-9-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: borrador
@@ -722,7 +722,7 @@ entries:
   principio-9-05:
     sourceHash: 7da6e8caf7c4dd422a3820b734e375791f493b99a9ba5df987572e66ce5e4795
     state: borrador
-    text: Latency, availability, synchronization and preservation of work are properties of the experience. The user does not distinguish between infrastructure and interface when a response is slow, an action is duplicated or progress is lost.
+    text: Latency, availability, synchronisation and preservation of work are properties of the experience. The user does not distinguish between infrastructure and interface when a response is slow, an action is duplicated or progress is lost.
   principio-9-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -730,7 +730,7 @@ entries:
   principio-9-07:
     sourceHash: 7dada98ca2b48a1a45500f37e280dc55a9d49525928fef840356a801fd83ea20
     state: borrador
-    text: "Slowness changes behavior: it causes repeated clicks, doubt, abandonment and errors. Losing continuity forces people to rebuild context and destroys trust quickly."
+    text: "Slowness changes behaviour: it produces repeated clicks, hesitation, abandonment and errors. Loss of continuity forces people to rebuild context and destroys trust quickly."
   principio-9-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -741,9 +741,9 @@ entries:
     text: |-
       - Define response budgets for critical interactions.
 
-      - Show honest progress and allow people to continue when an operation may take a while.
+      - Show honest progress and allow work to continue when an operation may take time.
 
-      - Save work, context and state at a frequency proportional to the cost of losing them.
+      - Save work, context and state at a frequency proportionate to the cost of losing them.
   principio-9-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -752,15 +752,15 @@ entries:
     sourceHash: e52ccb34802fa685d322eaa33eaf5fe779873243f5fa794962ac1548be92ab51
     state: borrador
     text: |-
-      - Does the interface respond immediately even if the final process continues?
+      - Does the interface respond immediately even though the underlying process continues?
 
       - What does the person lose if the connection fails right now?
 
-      - Does the product prevent duplicate actions and ambiguous states?
+      - Does the product avoid duplicate actions and ambiguous states?
   principio-9-12:
     sourceHash: ee9ff5001e2e1d6be5d646cc8fa7167811bcb76e596d3270341d7d70b28deafe
     state: borrador
-    text: "**Sign of non-compliance.** A button with no feedback for three seconds invites people to press it again. The resulting duplication looks like user error, but it comes from the system."
+    text: "**Sign of non-compliance.** A button with no feedback for three seconds invites a second press. The resulting duplication looks like user error, but it originates in the system."
   p10:
     sourceHash: 6ada26f0e7de696ac21f140b4411ef270d3a565c451b56aeb47b29661e439fe5
     state: borrador
@@ -768,11 +768,11 @@ entries:
   principio-10-02:
     sourceHash: 15246d01395fdb9040ff4ffc9bd96892696bce8ea5ab604dd2c05fb8264b19a6
     state: borrador
-    text: "### The person keeps control and ownership"
+    text: "### The person retains control and ownership"
   principio-10-03:
     sourceHash: b9572e505ed1b3606800557fbc5ca19137324943dc4123606b5b35a63e1f01ff
     state: borrador
-    text: Helping does not mean deciding for the person or taking ownership of their work.
+    text: Helping does not mean deciding for the person or taking over their work.
   principio-10-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: borrador
@@ -780,7 +780,7 @@ entries:
   principio-10-05:
     sourceHash: f7f9cbb6f1efe00338292681e3f79ef2c2c4fe37165cfa2f8a3b112b0c5db1ff
     state: borrador
-    text: Software can anticipate, recommend and automate. It must do so without hiding decisions, locking in information or preventing alternatives. In AI systems, control includes understanding what information was used and what action was executed.
+    text: Software can anticipate, recommend and automate. It must do so without hiding decisions, locking information away or preventing alternatives. In systems with AI, control includes understanding what information was used and what action was carried out.
   principio-10-06:
     sourceHash: 960ee0f1264b957fce29c836b5da2809cd772a47ae1b19f446679f0b5243a0a9
     state: borrador
@@ -788,7 +788,7 @@ entries:
   principio-10-07:
     sourceHash: 4dc2876456d8753a0a90b27260b1189128340c47ea03a8d22cb1bb7ca1171668
     state: borrador
-    text: Automation without human agency can speed down the wrong path. Ownership and portability reduce dependence, strengthen trust and let people combine tools according to their needs.
+    text: Automation without human agency can accelerate the wrong path. Ownership and portability reduce dependence, strengthen trust and allow people to combine tools according to their needs.
   principio-10-08:
     sourceHash: e4a3e0cc5b8c9923642b50fb1f1d6a5c2e80a19659b1bcdd79d306548e902e6e
     state: borrador
@@ -799,9 +799,9 @@ entries:
     text: |-
       - Ask for confirmation in proportion to the impact, not for every gesture nor after an irreversible action.
 
-      - Allow reviewing, editing, exporting and reverting when the domain allows it.
+      - Allow reviewing, editing, exporting and reverting where the domain permits it.
 
-      - Explain the use of data and separate authorization, recommendation and execution.
+      - Explain the use of data and separate authorisation, recommendation and execution.
   principio-10-10:
     sourceHash: 9e61f16fa39fd4463add6fb444476b806b2fe65f31bb40542f7453c32a3ba297
     state: borrador
@@ -814,11 +814,11 @@ entries:
 
       - Do they understand what data was used and for what purpose?
 
-      - Can they recover or take their content with them in a useful format?
+      - Can they recover or take their content away in a useful format?
   principio-10-12:
     sourceHash: f1d84896822a2b206cdce9825313b67f19d4e99595faa5d1957bffc1aa526375
     state: borrador
-    text: "**Sign of non-compliance.** An AI that rewrites and publishes without a preview turns assistance into taking over the process."
+    text: "**Sign of non-compliance.** An AI that rewrites and publishes without a preview turns assistance into appropriation of the process."
   sh-fund:
     sourceHash: 28dc64c19ec351959bea52b47a71d750b13a1d7801338fe16c674b5e5fcc5f0b
     state: borrador
@@ -830,7 +830,7 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-03:
     sourceHash: 1f1ce84996b9601d017a598cd44dd2cc79fc89024ef32fa3a5fd281e43ca88a4
     state: borrador
-    text: The product foundation is the authorized content that establishes what must be built, why it must exist, what results it must produce, what conditions it must respect and how compliance can be determined. It is not a new type of document or a mandatory template. It can be found in a Job Story, a Jobs to Be Done, an epic, a capability, a requirement, a business rule, a journey, an acceptance criterion or a coherent combination of these elements.
+    text: The product foundation is the authorised content that establishes what must be built, why it must exist, what results it must produce, what conditions it must respect and how compliance can be determined. It is not a new kind of document nor a mandatory template. It may be found in a Job Story, a Jobs to Be Done statement, an epic, a capability, a requirement, a business rule, a journey, an acceptance criterion or a coherent combination of these elements.
   fundamento-de-producto-y-forma-de-referencia-04:
     sourceHash: 50e5a11c166803d56e68b5926e90214d6af0e421910fcb1105f34e38d007b757
     state: borrador
@@ -838,22 +838,22 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-05:
     sourceHash: 06871f398db55a7f46dbce3443ecaf9bee13aa0d9f960e36c78c80d4908076e0
     state: borrador
-    text: A product foundation is identifiable when development can establish the following elements without inventing product decisions. They may be spread across one or several parts of the definition received and do not need to use these names or this order.
+    text: A product foundation is identifiable when development can establish, without inventing product decisions, the following elements. They may be spread across one or several parts of the definition received, and they need not use these names or this order.
   fundamento-de-producto-y-forma-de-referencia-06:
     sourceHash: dae6347dcd97e3f17f71a69b0db1a1b94a76bdce924fd54a0a04be1719715228
     state: borrador
     text: |-
-      | **Element** | **Control question** | **Minimum condition** |
-      |-----------------------|------------------------------------------------------------|-------------------------------------------------------------|
-      | Source and authority | Where does it come from and who can change it? | Traceable origin and recognized authority |
-      | Reason | What situation, need, problem or opportunity does it address? | Justification understandable without depending on the solution |
-      | Outcome | What change or progress must it produce? | An outcome recognizable to people or to the product |
-      | Conditions and limits | What rules, restrictions and exclusions must be respected? | Limits sufficient to avoid silent decisions |
-      | Evidence | How will we know it was met? | Criteria, observations or tests proportional to the risk |
+      | **Element**              | **Control question**                                       | **Minimum condition**                                        |
+      |--------------------------|------------------------------------------------------------|--------------------------------------------------------------|
+      | Source and authority     | Where does it come from and who may modify it?             | Traceable origin and recognised authority                    |
+      | Reason                   | What situation, need, problem or opportunity does it address? | Justification that is understandable without the solution    |
+      | Result                   | What change or progress must it produce?                   | A result recognisable to people or to the product            |
+      | Conditions and limits    | What rules, constraints and exclusions must be respected?  | Limits sufficient to prevent silent decisions                |
+      | Evidence                 | How will we know it has been met?                          | Criteria, observations or tests proportionate to the risk    |
   fundamento-de-producto-y-forma-de-referencia-07:
     sourceHash: 8e810c1d69150618d75154e4efa918ace04ddbea0a13eff18cca37c6c64565c5
     state: borrador
-    text: The absence of a specific section or field in the PRD is not a defect in itself. The method must understand the structure the product uses. If a definition capable of materially changing the solution is missing, the agent must expose the gap and turn to the corresponding authority; it must not fill it through silent inference.
+    text: The absence of a specific section or field in the PRD is not in itself a defect. The method must understand the structure the product uses. If a definition capable of materially changing the solution is missing, the agent must surface the gap and refer the matter to the corresponding authority; it must not fill it in through a silent inference.
   fundamento-de-producto-y-forma-de-referencia-08:
     sourceHash: a4bbe9c48535bac7e39894360f375fbbe53c6833373ca87f793463181cf68c47
     state: borrador
@@ -861,34 +861,34 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-09:
     sourceHash: 582eb29539eef9434ed38b8b9e02495e6dd1cf2f1d6feb2eeef9c9a702d336f4
     state: borrador
-    text: When an approved product definition contains multiple stories, capabilities, rules or specifications, all of them are part of the scope unless the definition itself or an authorized decision establishes otherwise. The development plan must understand the whole, resolve its relationships and dependencies and ensure its coverage. It may break down, order, group or parallelize the work; that breakdown does not change the scope.
+    text: When an approved product definition contains multiple stories, capabilities, rules or specifications, all of them form part of the scope unless the definition itself or an authorised decision establishes otherwise. The development plan must understand the whole, resolve its relationships and dependencies and ensure its coverage. It may break the work down, order it, group it or run it in parallel; that breakdown does not modify the scope.
   fundamento-de-producto-y-forma-de-referencia-10:
     sourceHash: 3490302753a3ffee83a622a85bcc483ad05c3fbc270373bf8319ab6312e19469
     state: borrador
-    text: The plan organizes how the scope is implemented. It does not silently decide which part of the scope deserves to exist.
+    text: The plan organises how the scope is implemented. It does not silently decide which part of the scope deserves to exist.
   fundamento-de-producto-y-forma-de-referencia-11:
     sourceHash: 762e840879ddb06dc81646fdbac333bff87736b2f7f74045d0ca19d3417541a6
     state: borrador
     text: |-
-      - Every omission, modification or postponement must be explicit, traceable and approved by the product authority.
+      - Every omission, modification or deferral must be explicit, traceable and approved by the product authority.
 
-      - If time, resource or technology constraints prevent covering the scope, the plan must make the incompatibility visible and request a decision.
+      - If constraints of time, resources or technology prevent covering the scope, the plan must make the incompatibility visible and request a decision.
 
-      - An incremental, phased or release-based strategy may be used when the project adopts it; it is not an obligation of the core.
+      - An incremental, phased or release-based strategy may be used where the project adopts one; it is not an obligation of the core.
 
       - Completeness is determined by reconciling the implementation and the evidence against the complete product definition and its approved exceptions.
   fundamento-de-producto-y-forma-de-referencia-12:
     sourceHash: c2bac53c97da13869667bb5a7be186fc6bac2bc58a38e24dbceff8fcf10be5c4
     state: borrador
-    text: "#### Job Stories as the reference form"
+    text: "#### Job Stories as a reference form"
   fundamento-de-producto-y-forma-de-referencia-13:
     sourceHash: 66be5c2c894c7908b947da0131335909e248118f25d99da6b4520069e224a120
     state: borrador
-    text: This manifesto uses Job Stories as its reference form to show how a product foundation can be carried into design, implementation and verification. Job Stories make the circumstance, the motivation and the expected outcome explicit, so they offer an especially useful representation for reasoning about human progress.
+    text: This manifesto uses Job Stories as a reference form for showing how a product foundation can be carried through to design, implementation and verification. Job Stories make the circumstance, the motivation and the expected outcome explicit, which makes them a particularly useful representation for reasoning about human progress.
   fundamento-de-producto-y-forma-de-referencia-14:
     sourceHash: 1f5338b10b2f25a4c2e7e21448aa07cfa42028fe890d18bdd4328bf22dfb0ea4
     state: borrador
-    text: Using them in explanations, rules, examples and tests does not require every product definition to be expressed as Job Stories, nor does it authorize automatically transforming a PRD into that structure. When the definition uses another form, the method must preserve its meaning, its relationships and its authority. A derived Job Story may be proposed as a working view when it adds clarity, but it does not replace the source or gain authority by having been generated.
+    text: Their use in the explanations, rules, examples and tests does not require every product definition to be expressed through Job Stories, nor does it authorise automatically transforming a PRD into that structure. Where the definition uses another form, the method must preserve its meaning, its relationships and its authority. A derived Job Story may be proposed as a working view where it adds clarity, but it does not replace the source nor acquire authority by having been generated.
   fundamento-de-producto-y-forma-de-referencia-15:
     sourceHash: c8e6c780f62aea2977b73ad50521fa42db2a02ccab900473180048d448ce6437
     state: borrador
@@ -896,11 +896,11 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-16:
     sourceHash: 39fdb10d7f0531b920be96d69f36bb21225442fcbc317845cd4b6fb08b3192b4
     state: borrador
-    text: "Jobs to Be Done and Job Stories serve different functions. Jobs to Be Done keeps the product's direction: the overall progress for which a person brings a solution into their life or work. The Job Story comes down to a concrete situation that can guide a design decision, an implementation and a test."
+    text: "Jobs to Be Done and Job Stories serve different functions. Jobs to Be Done maintains the product's direction: the broad progress that leads a person to adopt a solution in their life or work. The Job Story narrows that progress down to a concrete situation that can guide a design decision, an implementation and a test."
   fundamento-de-producto-y-forma-de-referencia-17:
     sourceHash: 40e7db4f113808e7624d1f55e2e6f8f5ed8593d2ed88c33cc104ff03b26acb32
     state: borrador
-    text: When this form is used, each Job Story must keep an explicit relationship with the corresponding higher-level job, purpose or outcome. That relationship prevents an isolated story from losing the product's direction.
+    text: When this form is used, each Job Story must retain an explicit relationship to the corresponding higher-level job, purpose or outcome. That relationship prevents an isolated story from losing the product's direction.
   fundamento-de-producto-y-forma-de-referencia-18:
     sourceHash: 8bb295157d42d8e63f097ef6d5e7d09aee62232c312a537f9c04ac2a77ba5e66
     state: borrador
@@ -909,12 +909,12 @@ entries:
     sourceHash: abbd0b60a00953d5be31a411d9f9ef6915648dd25813f6b854122e71f6d67f22
     state: borrador
     text: |-
-      | **Level** | **Defines** | **Avoids** |
-      |-------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
-      | Jobs to Be Done | The broad progress the person seeks to achieve | Organizing the product around features |
-      | Job Story | The circumstance, motivation and outcome that trigger a concrete need | Designing from generic roles or literal requests |
-      | Product response | The system behavior chosen to resolve the story | Confusing the problem with the first solution imagined |
-      | Acceptance evidence | The observation that demonstrates progress in that circumstance | Accepting a delivery because it works technically |
+      | **Level**               | **Defines**                                                                          | **Avoids**                                                |
+      |-------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------|
+      | Jobs to Be Done         | The broad progress the person is seeking to achieve                                   | Organising the product around features                    |
+      | Job Story               | The circumstance, motivation and outcome that trigger a concrete need                 | Designing from generic roles or literal requests          |
+      | Product response        | The system behaviour chosen to address the story                                      | Confusing the problem with the first solution imagined    |
+      | Acceptance evidence     | The observation that demonstrates progress in that circumstance                       | Accepting a delivery because it works technically         |
   fundamento-de-producto-y-forma-de-referencia-20:
     sourceHash: b69d58a05cbd1a6cbb8c0401e1b0fdb82d0300148e2c5e1bb87564bc6461916e
     state: borrador
@@ -922,11 +922,11 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-21:
     sourceHash: 967178a07d1c0e94aaa181c16efc19614d3de46e2cbc0f04669550164aff2642
     state: borrador
-    text: When an observable circumstance occurs, I need to make progress without prescribing the solution, so I can reach a recognizable outcome.
+    text: When an observable circumstance occurs, I need to make progress without prescribing the solution, so that I can reach a recognisable outcome.
   fundamento-de-producto-y-forma-de-referencia-22:
     sourceHash: 2685adfa446a5edbaaec3c06924ad5c4da64dd349ac0d032a3d7f503427b7800
     state: borrador
-    text: "**When.** Describes the fact, change or tension that triggers the need. It must be observable or recognizable without depending on a fictional persona."
+    text: "**When.** Describes the fact, change or tension that triggers the need. It must be observable or recognisable without depending on a fictional persona."
   fundamento-de-producto-y-forma-de-referencia-23:
     sourceHash: 79d2e702e9d92923fd1ea97a07190a434b2bc5e6a3b55a947d94df21b8871011
     state: borrador
@@ -934,11 +934,11 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-24:
     sourceHash: a875e497f923bfa362ac3354473a0d91c605ac1984b74490c012951b17c5c661
     state: borrador
-    text: "**So I can.** Defines the better situation the person seeks to reach, which will later need to be verified."
+    text: "**So that I can.** Defines the improved situation the person is seeking to reach, and which will later have to be verified."
   fundamento-de-producto-y-forma-de-referencia-25:
     sourceHash: 1f5cf2cf0eaeb16a7f1ea59684253eec168a9e957180694008dc51055a0fc51d
     state: borrador
-    text: "#### Minimum evidence that accompanies the story"
+    text: "#### Minimum evidence accompanying the story"
   fundamento-de-producto-y-forma-de-referencia-26:
     sourceHash: 3e8bd582630f368a1bdc600388558dd2dab581f7469247f242be319885a8fe3e
     state: borrador
@@ -947,20 +947,20 @@ entries:
     sourceHash: 4633734dfe1ced95bcfe54c42370a4b397d4b481ee35deea60038c9b91a98a3e
     state: borrador
     text: |-
-      | **Element** | **Question** | **Minimum content** |
-      |----------------------|-------------------------------------------------------------|------------------------------------------------------------|
-      | Current behavior | What does the person do today? | Observed steps, alternative or abandonment |
-      | Obstacle or anxiety | What holds back or makes progress risky? | Relevant doubt, cost, fear, effort or dependency |
-      | Causal evidence | What supports the relationship between circumstance and motivation? | Observation, interview, usage data or declared assumption |
-      | Evidence of success | What would demonstrate that there was progress? | Observable behavior or outcome within the circumstance |
+      | **Element**            | **Question**                                                    | **Minimum content**                                          |
+      |------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|
+      | Current behaviour      | What does the person do today?                                   | Observed steps, workaround or abandonment                    |
+      | Obstacle or anxiety    | What holds progress back or makes it risky?                      | Relevant doubt, cost, fear, effort or dependence             |
+      | Causal evidence        | What supports the link between circumstance and motivation?      | Observation, interview, usage data or a declared assumption  |
+      | Evidence of success    | What would demonstrate that progress occurred?                   | Observable behaviour or outcome within the circumstance      |
   fundamento-de-producto-y-forma-de-referencia-28:
     sourceHash: 3aa854ab26bacc761a9e97ba2b125d1825672ef4b281c870e2de559aba80202f
     state: borrador
-    text: "#### When the role still matters"
+    text: "#### When role still matters"
   fundamento-de-producto-y-forma-de-referencia-29:
     sourceHash: 3029109989091ed6db868915c6c56a3a0aa1dea7d7caa0e4444e2e9635309e64
     state: borrador
-    text: Job Stories avoid using the role as an automatic explanation. They do not erase real differences between people. The role, experience, age, permissions or a physical restriction must be included when they causally change the circumstance, the risk or the valid solution. If they do not change the decision, they must not govern the story.
+    text: Job Stories avoid using role as an automatic explanation. They do not eliminate real differences between people. Role, experience, age, permissions or a physical constraint must be incorporated when they causally change the circumstance, the risk or the valid solution. If they do not change the decision, they must not govern the story.
   fundamento-de-producto-y-forma-de-referencia-30:
     sourceHash: 0d0721ddc628a94b5f24eadc57b4ca739df59a622f08dec3e5c20bbb924589b7
     state: borrador
@@ -969,17 +969,17 @@ entries:
     sourceHash: 36a28f3244b75e8722364116bd6c17102056bedc48a92c16bd8a572425d485c1
     state: borrador
     text: |-
-      - The circumstance describes a concrete trigger, not a user category.
+      - The circumstance describes a concrete trigger and not a category of user.
 
-      - The motivation expresses progress or understanding, not a requested feature.
+      - The motivation expresses progress or understanding and not a requested feature.
 
-      - The outcome can be recognized without confusing it with completing the product's flow.
+      - The outcome can be recognised without confusing it with completing the product's flow.
 
-      - The story is backed by evidence or clearly identifies the pending assumption.
+      - The story is backed by evidence, or it clearly identifies the outstanding assumption.
 
-      - The wording allows comparing several responses, including the option of not building.
+      - The formulation allows several responses to be compared, including the option of not building.
 
-      - The scope is enough to change a decision, but it does not try to contain the user's entire job.
+      - The scope is sufficient to change a decision, but does not attempt to contain the user's entire work.
   fundamento-de-producto-y-forma-de-referencia-32:
     sourceHash: 4bcb54afaf0c880a1da84626eed84e955aa4345d043a589814acb97ffc746702
     state: borrador
@@ -987,18 +987,18 @@ entries:
   fundamento-de-producto-y-forma-de-referencia-33:
     sourceHash: 73ed0ba5b70049eafa7be622a02dc8683cb0d4ebf41a33867122572da1c8909a
     state: borrador
-    text: "Development must be traceable in both directions: from each implemented decision to the product foundation that justifies it, and from the complete product definition to the evidence that demonstrates its coverage. When the foundation is expressed through Job Stories, traceability must preserve the circumstance, the motivation and the outcome of each applicable story."
+    text: "Development must be traversable in both directions: from each implemented decision back to the product foundation that justifies it, and from the complete product definition forward to the evidence that demonstrates its coverage. Where the foundation is expressed through Job Stories, traceability must preserve the circumstance, the motivation and the outcome of each applicable story."
   fundamento-de-producto-y-forma-de-referencia-34:
     sourceHash: 176891ffa1eaae59a0f6f0c223b53f4ef2aaf70bc26f5b170b9211faba7eb9d6
     state: borrador
     text: |-
-      | **Origin** | **Decision** | **Verification** |
-      |-------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-      | Product definition | What must be built and under what conditions | Every mandatory element has coverage or an approved exception |
-      | Jobs to Be Done | What overall progress deserves attention when this form applies | The outcome remains relevant to the person |
-      | Job Story | What concrete circumstance must be addressed when the source uses this form | The story is validated and does not prescribe an unauthorized solution |
-      | Design and implementation | What behavior responds to the foundation | Every element has a traceable reason |
-      | Acceptance | What evidence authorizes declaring the development complete | Outcomes, rules and criteria are met under the defined conditions |
+      | **Origin**                 | **Decision**                                                                        | **Verification**                                                           |
+      |----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+      | Product definition         | What must be built and under what conditions                                         | Every mandatory element has coverage or an approved exception              |
+      | Jobs to Be Done            | What general progress deserves attention where this form applies                     | The outcome remains relevant to the person                                 |
+      | Job Story                  | What concrete circumstance must be addressed where the source uses this form         | The story is validated and does not prescribe an unauthorised solution     |
+      | Design and implementation  | What behaviour responds to the foundation                                            | Every element has a traceable reason                                       |
+      | Acceptance                 | What evidence authorises declaring the development complete                          | Results, rules and criteria are met under the defined conditions           |
   doctrina-para-desarrollo-con-ia-01:
     sourceHash: 6ec494189300971192b2c0d36750706a8adc8f5217c441ad3f8ed8c3c1d57180
     state: borrador
@@ -1010,7 +1010,7 @@ entries:
   doctrina-para-desarrollo-con-ia-03:
     sourceHash: 5aef2c6b0f98b4eeda8fb34018d151ffcc56822ae6fea61bbddd260d2a30a690
     state: borrador
-    text: Coding agents reduce the cost of turning instructions into software. That advantage shifts the bottleneck. The question is no longer only whether a capability can be built, but whether it deserves to exist, whether it solves the right problem and whether it preserves the user's understanding.
+    text: Coding agents reduce the cost of turning instructions into software. That advantage shifts the bottleneck. The problem is no longer only whether a capability can be built, but whether it deserves to exist, whether it solves the right problem and whether it preserves the user's understanding.
   doctrina-para-desarrollo-con-ia-04:
     sourceHash: 051b2e7cacbfc6d1782dd56799007a9bc87266bbbf198150ad13378a300e902e
     state: borrador
@@ -1018,7 +1018,7 @@ entries:
   doctrina-para-desarrollo-con-ia-05:
     sourceHash: 849d990414ea076bba7f0390e97d4b948afe1666a74da24382e793fb94cdd0a1
     state: borrador
-    text: An agent can implement a weak specification at great speed, reproduce conventional patterns that do not fit the context and add plausible options no one asked for. That is why AI-assisted development needs an explicit layer of intent, limits and verification.
+    text: An agent can implement a weak specification at great speed, reproduce conventional patterns that do not fit the context and add plausible options that nobody asked for. This is why AI-assisted development needs an explicit layer of intent, limits and verification.
   doctrina-para-desarrollo-con-ia-06:
     sourceHash: 45f85b0e1fa5bdc616d88610a051938dd0b4e807eba15d360cbc2cbceef3d83b
     state: borrador
@@ -1027,26 +1027,26 @@ entries:
     sourceHash: 58955d53a04d2b2d3ff2bec23c4d279f6b3f834aafc7e9d348b887e3dfa9cc4b
     state: borrador
     text: |-
-      | **Directive** | **Requirement** | **Limit** |
-      |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-      | `D01` Foundation before implementation | Understand the product definition, its authority, its scope and the evidence that supports it before proposing components or code. When there are Job Stories, preserve their circumstance, motivation and outcome. | Do not start building if a material ambiguity could alter the solution, the scope or a rule. |
-      | `D02` Sufficient specification before generation | Define states, decisions, constraints and acceptance criteria at the level the risk requires. | Do not turn a vague prompt into an extensive implementation and then use the code to discover the problem. |
-      | `D03` Deliberate simplicity | Prefer the solution that demands fewer concepts, decisions and memory from the user when both achieve the same outcome. | Less code is not the measure; less unnecessary burden is. |
-      | `D04` Determinism where it matters | Implement critical rules, permissions, calculations, states and validations as verifiable logic. | Do not delegate certainty, compliance or security to the variable behavior of a model. |
-      | `D05` Verification before acceptance | Evaluate the flow, edge states, accessibility, performance and real outcome. | Generated code and passing unit tests are not the same as a finished product. |
-      | `D06` AI subordinate to the user | Use AI to propose, explain and execute within clear limits, keeping review and reversibility proportional to the impact. | The fluency of an answer never replaces evidence or authorization. |
+      | **Directive**                                         | **Requirement**                                                                                                                                                                                              | **Limit**                                                                                                  |
+      |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+      | `D01` Foundation before implementation                | Understand the product definition, its authority, its scope and the evidence behind it before proposing components or code. Where Job Stories exist, preserve their circumstance, motivation and outcome.        | Do not start building if a material ambiguity may alter the solution, the scope or a rule.                  |
+      | `D02` Sufficient specification before generation      | Define states, decisions, constraints and acceptance criteria at the level the risk requires.                                                                                                                    | Do not turn a vague prompt into an extensive implementation and then use the code to discover the problem.  |
+      | `D03` Deliberate simplicity                           | Prefer the solution that demands fewer concepts, decisions and memory from the user where both achieve the same result.                                                                                          | Less code is not the measure; less unnecessary burden is.                                                   |
+      | `D04` Determinism where it matters                    | Implement critical rules, permissions, calculations, states and validations as verifiable logic.                                                                                                                 | Do not delegate certainty, compliance or security to a model's variable behaviour.                          |
+      | `D05` Verification before acceptance                  | Evaluate the flow, the edge states, accessibility, performance and the real outcome.                                                                                                                             | Generated code and passing unit tests do not amount to a finished product.                                  |
+      | `D06` AI subordinate to the user                      | Use AI to propose, explain and execute within clear limits, keeping review and reversibility proportionate to the impact.                                                                                        | The fluency of a response never substitutes for evidence or authorisation.                                  |
   doctrina-para-desarrollo-con-ia-08:
     sourceHash: e25d483f0644c0d76b67852aea2b4cbbf398d17677dd37bcd6f61cbe260eb01d
     state: borrador
-    text: "#### The second guiding question"
+    text: "#### The second governing question"
   doctrina-para-desarrollo-con-ia-09:
     sourceHash: 734d21d7bafa562e60fbf164aafcb78a10629581a0d65b1da83da0ce5b9c28f5
     state: borrador
-    text: Now that we can build almost anything more easily, what deserves to be built, and what should we deliberately leave out?
+    text: Now that we can build almost anything more easily, what deserves to be built and what should we deliberately leave out?
   doctrina-para-desarrollo-con-ia-10:
     sourceHash: 03a45914ba87b1ea1c8212cd20e11a2455baea0c52e9e1e288eeabd9673ab342
     state: borrador
-    text: This question introduces an obligation that used to be hidden by technical cost. It must be raised during product definition and when evaluating alternatives, not used during implementation to unilaterally cut an approved scope. Every capability must justify its existence against a simpler alternative, including the alternative of not building it; once authorized, any exclusion requires a traceable product decision.
+    text: This question introduces an obligation that could previously remain hidden by technical cost. It must be raised during the product definition and when evaluating alternatives, not used during implementation to unilaterally trim an approved scope. Every capability must justify its existence against a simpler alternative, including the alternative of not building it; once authorised, any exclusion requires a traceable product decision.
   doctrina-para-desarrollo-con-ia-11:
     sourceHash: b36ca7adbc0b4fae7784a15b59d1a0e7bb9afa440dce25d6b2c3d9dd8791b831
     state: borrador
@@ -1054,17 +1054,17 @@ entries:
   doctrina-para-desarrollo-con-ia-12:
     sourceHash: 9baf0423aa636a626e68fe0c484c77b002a84c6ca725cc01931a474dea2108c0
     state: borrador
-    text: The choice is not between a deterministic product and a product with AI. A reliable system combines both according to the nature of each decision.
+    text: The choice is not between a deterministic product and a product with AI. A dependable system combines both according to the nature of each decision.
   doctrina-para-desarrollo-con-ia-13:
     sourceHash: e25ff7b936ddb193a34af12928e42d357daaf99600d33fe5df11f675ed2ab803
     state: borrador
     text: |-
-      | **Type of behavior** | **Preferred treatment** | **Examples** |
-      |----------------------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------|
-      | Must always produce the same result under the same conditions | Deterministic rule and automated test | Permissions, prices, limits, calculations, state transitions |
-      | Allows several useful answers and requires interpretation | AI with context, limits and evaluation | Explaining, summarizing, proposing alternatives, classifying text |
-      | Can affect money, reputation, security or rights | AI proposes; a rule or a person authorizes | Publishing, buying, deleting, sending, changing access |
-      | Uncertainty is part of the output | AI declares assumptions and confidence level | Recommendations, estimates, incomplete information |
+      | **Type of behaviour**                                                  | **Preferred treatment**                        | **Examples**                                                  |
+      |------------------------------------------------------------------------|------------------------------------------------|---------------------------------------------------------------|
+      | Must always produce the same result under the same conditions          | Deterministic rule and automated test          | Permissions, prices, limits, calculations, state transitions  |
+      | Can yield several useful answers and requires interpretation           | AI with context, limits and evaluation         | Explaining, summarising, proposing alternatives, classifying text |
+      | May affect money, reputation, security or rights                       | AI proposes; a rule or a person authorises     | Publishing, purchasing, deleting, sending, changing access    |
+      | Uncertainty is part of the output                                      | AI declares assumptions and confidence level   | Recommendations, estimates, incomplete information            |
   flujo-de-trabajo-01:
     sourceHash: 9cc6718b376174b98c04dabb04b4faa7f08edfd2f3954ec9fa398d127946c091
     state: borrador
@@ -1076,76 +1076,76 @@ entries:
   flujo-de-trabajo-03:
     sourceHash: eaacb80789271e6e69fc3bd0d48c80fbc0fa76095ffec0099d47b7e4e8b0ea5c
     state: borrador
-    text: The flow prevents code generation from becoming the first act of design. It does not aim to create a heavy documentation phase or impose a structure on the PRD. It seeks to understand the foundation received, produce the clarity needed to plan and maintain coverage until acceptance.
+    text: The flow prevents code generation from becoming the first act of design. It does not seek to create a documentation-heavy phase or to impose a structure on the PRD. It aims to understand the foundation received, produce the clarity needed to plan and maintain coverage through to acceptance.
   flujo-de-trabajo-04:
     sourceHash: 8600ba0c5ec71fb3dfa8d21ff5e373d283d3a2e2e3a71186afc403f04a289f5f
     state: borrador
     text: |-
-      | **Step** | **Decision** | **Work** | **Minimum evidence** |
-      |----------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-      | `F01` | Understand the foundation | Recognize the sources, the authority, the scope, the structure used and the expected outcomes. | A faithful map of the product definition, without rewording it for technical convenience. |
-      | `F02` | Establish coverage | Inventory the applicable stories, capabilities, rules, states, journeys, criteria and relationships. | Complete coverage, with gaps or contradictions made visible. |
-      | `F03` | Plan the implementation | Resolve dependencies, blockers, order, parallelism, integration and tests without changing the scope. | A coherent plan that accounts for the entire approved definition. |
-      | `F04` | Make progress concrete | Use the existing Job Stories or write a derived view when it adds clarity and is identified as such. | Circumstances, motivations and outcomes preserved where applicable. |
-      | `F05` | Establish the experience contract | Describe what the person must understand, decide and feel at critical moments. | Main path, states and interaction promise. |
-      | `F06` | Model rules and risks | Separate deterministic logic, generative behavior, permissions and irreversible actions. | A map of decisions and limits. |
-      | `F07` | Explore and prototype | Compare alternatives and test understanding, hierarchy and recovery before optimizing code. | Reason for the chosen alternative and evidence from the journey. |
-      | `F08` | Build, integrate and verify | Implement the plan, maintain traceability and reconcile results against the full scope. | Code, tests and coverage evidence; explicit pending items and exceptions. |
+      | **Step** | **Decision**                       | **Work**                                                                                                     | **Minimum evidence**                                                              |
+      |----------|------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+      | `F01`    | Understand the foundation          | Recognise the sources, the authority, the scope, the structure used and the expected results.                  | A faithful map of the product definition, without reformulating it for technical convenience. |
+      | `F02`    | Establish coverage                 | Inventory the applicable stories, capabilities, rules, states, journeys, criteria and relationships.           | Complete coverage, with gaps or contradictions made visible.                      |
+      | `F03`    | Plan the implementation            | Resolve dependencies, blockers, order, parallelism, integration and testing without modifying the scope.       | A coherent plan that accounts for the whole approved definition.                  |
+      | `F04`    | Make progress concrete             | Use the existing Job Stories, or formulate a derived view where it adds clarity and is identified as such.     | Circumstances, motivations and outcomes preserved where applicable.               |
+      | `F05`    | Establish the experience contract  | Describe what the person must understand, decide and feel at the critical moments.                             | Main route, states and interaction promise.                                       |
+      | `F06`    | Model rules and risks              | Separate deterministic logic, generative behaviour, permissions and irreversible actions.                      | A map of decisions and limits.                                                    |
+      | `F07`    | Explore and prototype              | Compare alternatives and test understanding, hierarchy and recovery before optimising code.                    | The reason for the chosen alternative and evidence from the journey.              |
+      | `F08`    | Build, integrate and verify        | Implement the plan, maintain traceability and reconcile results against the full scope.                        | Code, tests and evidence of coverage; outstanding items and exceptions made explicit. |
   flujo-de-trabajo-05:
     sourceHash: b4450ce74b89e5be7528134017cadaed64814b5d3a5d5faec3104516c36e10e8
     state: borrador
-    text: "#### Artifacts fitted to the context"
+    text: "#### Artefacts matched to context"
   flujo-de-trabajo-06:
     sourceHash: 80a83c92ab23750cf86c22eb01fd13dc6b807bcf5f96393683d7d0ddbd4f25b4
     state: borrador
-    text: Each artifact exists to answer a question, not to satisfy a template. It can be a section of the PRD, a derived view, a table, a test or a separate document. If the information already exists, it must be referenced, not duplicated. Depth depends on length, complexity, uncertainty and risk; if an artifact does not change a decision or help verify it, it must be simplified or removed.
+    text: Each artefact exists to answer a question, not to satisfy a template. It may be a section of the PRD, a derived view, a table, a test or a separate document. If the information already exists, it must be referenced and not duplicated. Depth depends on length, complexity, uncertainty and risk; if an artefact neither changes a decision nor helps verify one, it must be simplified or removed.
   flujo-de-trabajo-07:
     sourceHash: 2bac946570a18170e8f22285fa9c07bb71d66316a13c417a4bc20f242f848510
     state: borrador
     text: |-
-      | **Artifact** | **Question** | **Minimum content** |
-      |-----------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-      | `A01` Foundation map | What must be built, why and with what authority? | Sources; scope; outcomes; rules; limits; evidence; non-goals |
-      | `A02` Coverage map | How will the entire scope be accounted for? | Mandatory elements; relationships; dependencies; implementation; tests; status; exceptions |
-      | `A03` Job Story card, when applicable | When does the need arise and what change does the person seek? | Circumstance; motivation; outcome; current behavior; anxiety; evidence; assumptions |
-      | `A04` Experience contract | What must the person understand and be able to do? | Main path; language; decisions; feedback; control; recovery |
-      | `A05` State model | What can happen and which transitions are valid? | States; events; rules; errors; permissions; persistence |
-      | `A06` Complexity budget | What burden are we adding? | New concepts; decisions; steps; exceptions; visible options |
-      | `A07` Acceptance plan | What evidence authorizes declaring the development complete? | Outcomes; rules; Job Stories when applicable; accessibility; performance; edge states; metrics |
-      | `A08` Decision log | Why did we choose this alternative? | Alternatives; tradeoffs; assumptions; decision; date; pending evidence |
+      | **Artefact**                        | **Question**                                                | **Minimum content**                                                                                      |
+      |-------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+      | `A01` Map of the foundation         | What must be built, why and with what authority?            | Sources; scope; results; rules; limits; evidence; non-goals                                               |
+      | `A02` Coverage map                  | How will the full scope be accounted for?                   | Mandatory elements; relationships; dependencies; implementation; tests; status; exceptions                |
+      | `A03` Job Story sheet where applicable | When does the need arise and what change is the person after? | Circumstance; motivation; outcome; current behaviour; anxiety; evidence; assumptions                   |
+      | `A04` Experience contract           | What must the person understand and be able to do?          | Main route; language; decisions; feedback; control; recovery                                              |
+      | `A05` State model                   | What can happen and which transitions are valid?            | States; events; rules; errors; permissions; persistence                                                   |
+      | `A06` Complexity budget             | What burden are we adding?                                  | New concepts; decisions; steps; exceptions; visible options                                               |
+      | `A07` Acceptance plan               | What evidence authorises declaring the development complete? | Results; rules; Job Stories where they apply; accessibility; performance; edge states; metrics           |
+      | `A08` Decision record               | Why did we choose this alternative?                         | Alternatives; trade-offs; assumptions; decision; date; outstanding evidence                               |
   sh-stop:
     sourceHash: c7dc7b1e7898b9ae55375cdb9529736dde237c5a4cde0c8dcce68bb8bef8550a
     state: borrador
-    text: "#### Rule for stopping before generating · `SH-STOP`"
+    text: "#### Stopping rule before generating · `SH-STOP`"
   flujo-de-trabajo-09:
     sourceHash: 01b6078a8d42bfb7099c33675029b7df5165f32d9d0a86e38e07575589d6aaa7
     state: borrador
-    text: "The agent should not start an implementation if it cannot answer the following questions precisely, at the level required by the risk and complexity:"
+    text: "The agent should not begin an implementation if it cannot answer the following questions precisely, at the level required by the risk and the complexity:"
   flujo-de-trabajo-10:
     sourceHash: de2c829d115613eecff7737e175cfe500e1cdcf1d8e4eb47dc1fa2fd9c46612b
     state: borrador
     text: |-
-      - What is the authorized product definition and what scope does it establish?
+      - What is the authorised product definition and what scope does it establish?
 
-      - Which elements of the foundation justify the development, and what evidence supports them?
+      - Which elements of the foundation justify the development and what evidence supports them?
 
-      - Does the plan account for all the mandatory stories, capabilities, rules, states and criteria?
+      - Does the plan account for all mandatory stories, capabilities, rules, states and criteria?
 
-      - When there are Job Stories, are the circumstance, the motivation and the outcome separated from the solution?
+      - Where Job Stories exist, are the circumstance, the motivation and the outcome separated from the solution?
 
-      - What is the main path, and which alternative states matter?
+      - What is the main route and which alternative states matter?
 
-      - Which decisions must the user make, and which can the system resolve?
+      - Which decisions must the user make and which can the system resolve?
 
-      - Which behavior needs deterministic certainty?
+      - Which behaviour requires deterministic certainty?
 
-      - What is not part of the scope, and who established that exclusion?
+      - What falls outside the scope and who established that exclusion?
 
       - What evidence will demonstrate that the development is complete?
   flujo-de-trabajo-11:
     sourceHash: f99a7c7fa15cf988ed2d14bdf68e321d9777f4a5d13c5f5a8b97ba03bbdb0fe7
     state: borrador
-    text: If an answer is missing that could materially change the solution, the scope, a rule or a right, the agent must stop and request it. If the uncertainty is minor, reversible and within its authority, it may declare an assumption and move forward without silently reducing the committed coverage.
+    text: If an answer is missing that could materially change the solution, the scope, a rule or a right, the agent must stop and ask for it. If the uncertainty is minor, reversible and within its authority, it may declare an assumption and proceed without silently reducing the coverage it has committed to.
   contrato-reutilizable-01:
     sourceHash: ba40132368df764cccb66afba32a5303c9633477c97b057132a34b4b55104387
     state: borrador
@@ -1157,7 +1157,7 @@ entries:
   contrato-reutilizable-03:
     sourceHash: 796823b9f0b12e6893094c2571ac76b30a18dcf8e30b463ff563cc0ecb84256f
     state: borrador
-    text: The following contract can be included in a repository's instructions, in a PRD or in a coding agent's prompt. It must be accompanied by the product's specific context and does not replace the definition of the problem.
+    text: The following contract can be incorporated into a repository's instructions, into a PRD or into a coding agent's prompt. It must be accompanied by the product's specific context and does not replace the definition of the problem.
   cr01:
     sourceHash: 9279043c64d698224b8bdcac316a3961dbe0415ac67a2fa7259e81ea0f621fb4
     state: borrador
@@ -1165,31 +1165,31 @@ entries:
   cr02:
     sourceHash: 82680a309c435d1c8fa26ac51cdd2bbdf49431464bb338eaa1c65432d0b60992
     state: borrador
-    text: "**`CR02` Before programming.** Identify the authorized sources, explain the product foundation and confirm the full scope. Recognize the structure the definition uses; when it contains Job Stories, preserve their circumstance, motivation and outcome. Separate evidence from assumptions and identify any ambiguity that could materially change the solution."
+    text: "**`CR02` Before programming.** Identify the authorised sources, explain the product foundation and confirm the full scope. Recognise the structure the definition uses; where it contains Job Stories, preserve their circumstance, motivation and outcome. Separate evidence from assumptions and identify any ambiguity that could materially change the solution."
   cr03:
     sourceHash: 7e3ead93f9ea8176fa06c81ad236e3a56806259a2eb0a5474250f2a8eb1cdeb8
     state: borrador
-    text: "**`CR03` When planning.** Account for all mandatory elements and establish their dependencies, blockers, order, integration and tests. Do not select, omit or postpone parts of the scope on your own initiative. If constraints prevent covering it, request a decision from the product authority."
+    text: "**`CR03` When planning.** Account for every mandatory element and establish their dependencies, blockers, order, integration and tests. Do not select, omit or defer parts of the scope on your own initiative. If constraints prevent covering it, request a decision from the product authority."
   cr04:
     sourceHash: a7b0b09a1e72ba4b0ed08a4254c6b13ab7739ad7f30074236608a659e80a0736
     state: borrador
-    text: "**`CR04` When proposing.** Present the recommended alternative, a simpler alternative and the option of not building when the decision still belongs to product. Explain how each one responds to the foundation, what burden it introduces and what tradeoffs it requires."
+    text: "**`CR04` When proposing.** Present the recommended alternative, a simpler alternative and the option of not building, where the decision still belongs to product. Explain how each one responds to the foundation, what burden it introduces and what trade-offs it demands."
   cr05:
     sourceHash: e97b99643eec69194f47c25ecc10fc6a3186d1b4d017117376363308ac0ac7c6
     state: borrador
-    text: "**`CR05` When designing.** Do not expose internal structures. Use the user's language, familiar conventions, clear hierarchy, progressive depth, editable defaults and immediate feedback."
+    text: "**`CR05` When designing.** Do not expose internal structures. Use the user's language, known conventions, a clear hierarchy, progressive depth, editable defaults and immediate feedback."
   cr06:
     sourceHash: 82ee6e62250a52ec1526b88fc26ba6738c541228d5d7c996153493d9270b116c
     state: borrador
-    text: "**`CR06` When using AI.** Reserve critical rules for verifiable logic. Declare uncertainty. Do not execute high-impact actions without proportional authorization. Maintain traceability, review and reversibility."
+    text: "**`CR06` When using AI.** Reserve critical rules for verifiable logic. Declare uncertainty. Do not carry out high-impact actions without proportionate authorisation. Maintain traceability, review and reversibility."
   cr07:
     sourceHash: 36e9974b51e5c844f7f5ecc898f07a3caa1b046b7bdfe2282e290fa24a245518
     state: borrador
-    text: "**`CR07` When implementing.** Respect the agreed scope and preserve traceability to its foundation. Do not add features, modes, settings or abstractions that were not requested. Cover empty, loading, error, success and recovery states, and integrate the related parts."
+    text: "**`CR07` When implementing.** Respect the agreed scope and preserve traceability to its foundation. Do not add features, modes, configurations or abstractions that were not requested. Cover empty, loading, error, success and recovery states, and integrate the related parts."
   cr08:
     sourceHash: 83f7caeea75ddb6534fd3c4e0d57c5e539a24a13b05cd1a9fe29b8bd592c9c62
     state: borrador
-    text: "**`CR08` Before declaring done.** Reconcile the implementation against the complete product definition. Verify outcomes, rules, criteria and, where applicable, the Job Stories in their circumstances. Also check accessibility, perceived performance, errors, persistence of work and user control. Deliver evidence, pending items and approved exceptions."
+    text: "**`CR08` Before declaring the work complete.** Reconcile the implementation against the complete product definition. Verify results, rules, criteria and, where they apply, the Job Stories in their circumstances. Also check accessibility, perceived performance, errors, persistence of work and user control. Deliver evidence, outstanding items and approved exceptions."
   contrato-reutilizable-12:
     sourceHash: 0104faafa94aababa3f983e8b052b51e940acce234076e3e727b88091c88c07a
     state: borrador
@@ -1197,7 +1197,7 @@ entries:
   o01:
     sourceHash: 9c802a92b15f833f5521adc5fc75a3681cea88cd34751bf19746e7116597bec2
     state: borrador
-    text: 1\. `O01` Authorized sources and product foundation that justify the development.
+    text: 1\. `O01` Authorised sources and product foundation that justify the development.
   o02:
     sourceHash: 7ed3cff8957dffa84d458890536aa2d376f3ecbc793aee0f71b6332fefa26927
     state: borrador
@@ -1205,7 +1205,7 @@ entries:
   o03:
     sourceHash: 0e4c75c3c9d0fa89ab0c7e63c282d90b07c9e08ced61cd8ee01a8bf8a25cbe0f
     state: borrador
-    text: 3\. `O03` Jobs to Be Done and Job Stories when they are part of the definition or provide a useful derived view.
+    text: 3\. `O03` Jobs to Be Done and Job Stories where they form part of the definition or contribute a useful derived view.
   o04:
     sourceHash: 434c04ec08c038a0a31ff2c3e674df55f18b9af58a90a4abaa17c864a1c48608
     state: borrador
@@ -1229,15 +1229,15 @@ entries:
   o09:
     sourceHash: 52db2be21d4d1da3371ceb3db2cb2d1a106f65ce098105cd0c9ba7fb3458e1ae
     state: borrador
-    text: 9\. `O09` Risks, uncertainties, pending items, exceptions and decisions that still require human judgment.
+    text: 9\. `O09` Risks, uncertainties, outstanding items, exceptions and decisions that still require human judgement.
   contrato-reutilizable-22:
     sourceHash: 0b3bdfe4649fa1e6988337af6b33ac9a5f54090e496931d1515f1dde3779d96b
     state: borrador
-    text: "#### Short prompt to start a task"
+    text: "#### Short prompt for starting a task"
   contrato-reutilizable-23:
     sourceHash: 455a914cb59c0ca13678232f73a6803cb901b4d65246a8f90cf0e76a37fbcd00
     state: borrador
-    text: Before writing code, identify the authorized product definition, explain its foundation and confirm the full scope. Recognize all the applicable stories, capabilities, rules and criteria; when there are Job Stories, preserve their circumstance, motivation and outcome. Distinguish evidence from assumptions. Plan dependencies and coverage without omitting or postponing scope on your own initiative. Implement the simplest solution that meets what was approved and verify outcomes, integration, errors and recovery.
+    text: Before writing code, identify the authorised product definition, explain its foundation and confirm the full scope. Recognise all applicable stories, capabilities, rules and criteria; where Job Stories exist, preserve their circumstance, motivation and outcome. Distinguish evidence from assumptions. Plan dependencies and coverage without omitting or deferring scope on your own initiative. Implement the simplest solution that meets what was approved, and verify results, integration, errors and recovery.
   verificacion-01:
     sourceHash: 8753f661592008edb7fac357052ecaed65b8279b11fd6bd5901f45b91620a72b
     state: borrador
@@ -1249,25 +1249,25 @@ entries:
   verificacion-03:
     sourceHash: de064f7355755f1eacf1f92902aa3b109c4355cc21af6a479f765c159a95237b
     state: borrador
-    text: Acceptance must produce evidence. The impression that a screen looks clean or that the code compiles does not show that the product fulfills its purpose.
+    text: Acceptance must produce evidence. The impression that a screen looks clean, or that the code compiles, does not demonstrate that the product fulfils its purpose.
   verificacion-04:
     sourceHash: 6143ba8260990d15952e5aec301eab0dabe1f6b867914646edac33da51421934
     state: borrador
     text: |-
-      | **Dimension** | **Acceptance evidence** |
-      |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      | `V01` Coverage | Every mandatory element of the product definition has an implementation and evidence, or an explicit and approved exception. |
-      | `V02` Progress | People reach the defined outcomes and can recognize them; when there are Job Stories, this is checked in their circumstances. |
-      | `V03` Causality | The evidence connects the situation, the need and the outcome without depending on a feature request; where applicable, it preserves circumstance and motivation. |
-      | `V04` Understanding | The person can explain where they are, what they can do and what will happen next without outside help. |
-      | `V05` Load | The person does not face decisions, concepts or data that the system could resolve safely. |
-      | `V06` Depth | The beginner finds a clear path and the advanced user keeps sufficient capability. |
-      | `V07` Trust | The system anticipates consequences, confirms results and offers proportional recovery. |
-      | `V08` Control | The person can review, correct, reject or revert according to the impact of the action. |
-      | `V09` States | Loading, empty, error, success, interruption and return keep context and orientation. |
-      | `V10` Accessibility | The flow works with a keyboard, visible focus, understandable labels, contrast and applicable assistive technologies. |
-      | `V11` Performance | Critical actions meet the response budget or show honest progress. |
-      | `V12` AI | Variable outputs declare uncertainty; critical rules are verifiable; sensitive actions require authorization. |
+      | **Dimension**       | **Acceptance evidence**                                                                                                                                          |
+      |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | `V01` Coverage      | Every mandatory element of the product definition has an implementation and evidence, or an explicit and approved exception.                                      |
+      | `V02` Progress      | People achieve the defined outcomes and can recognise them; where Job Stories exist, this is verified in their circumstances.                                     |
+      | `V03` Causality     | The evidence relates the situation, the need and the outcome without depending on a feature request; where it applies, it preserves circumstance and motivation.  |
+      | `V04` Understanding | They can explain where they are, what they can do and what will happen next, without outside help.                                                                |
+      | `V05` Burden        | They do not face decisions, concepts or data that the system could resolve safely.                                                                                |
+      | `V06` Depth         | The beginner finds a clear route and the advanced user retains sufficient capability.                                                                             |
+      | `V07` Trust         | The system anticipates consequences, confirms results and offers proportionate recovery.                                                                          |
+      | `V08` Control       | The person can review, correct, reject or revert according to the impact of the action.                                                                           |
+      | `V09` States        | Loading, empty, error, success, interruption and return all preserve context and orientation.                                                                     |
+      | `V10` Accessibility | The flow works with keyboard, visible focus, understandable labels, contrast and the applicable assistive technologies.                                           |
+      | `V11` Performance   | Critical actions meet the response budget or show honest progress.                                                                                                |
+      | `V12` AI            | Variable outputs declare uncertainty; critical rules are verifiable; sensitive actions require authorisation.                                                     |
   sh-score:
     sourceHash: 5f6d9ca58183faeb94944952ade4bbe985bc6ce5e82002aabb3f332023b747c4
     state: borrador
@@ -1275,28 +1275,28 @@ entries:
   verificacion-06:
     sourceHash: 2a9d9431c1fb343636571975397596ec290f9c9dd56c195fe28a45d4bc4343ad
     state: borrador
-    text: Assign 0 when there is no evidence, 1 when compliance is partial or depends on an unvalidated assumption, and 2 when there is sufficient evidence. The score guides the conversation; it does not replace judgment.
+    text: Assign 0 where there is no evidence, 1 where compliance is partial or depends on an unvalidated assumption, and 2 where there is sufficient evidence. The score guides the conversation; it does not replace judgement.
   verificacion-07:
     sourceHash: 3be4be58556fdc26c74ef3e871fe560c7dcd44846e667174288e74a8646c1e5c
     state: borrador
     text: |-
-      | **Criterion** | **Score** | **Evidence question** |
-      |------------------------|-------------|--------------------------------------------------------------------------------------|
-      | Traceable foundation | 0 / 1 / 2 | Sources, authority, scope, outcomes and conditions are identifiable |
-      | Product coverage | 0 / 1 / 2 | Every mandatory element has an implementation, a test or an approved exception |
-      | Applicable Job Stories | 0 / 1 / 2 | When they exist, circumstance, motivation and outcome keep sufficient evidence |
-      | User progress | 0 / 1 / 2 | The implementation produces the outcomes defined by the product |
-      | Cognitive load | 0 / 1 / 2 | It reduces or justifies concepts, decisions and steps |
-      | Interface clarity | 0 / 1 / 2 | State, action and consequence are understood |
-      | Control and recovery | 0 / 1 / 2 | There is proportional review, correction or reversibility |
-      | Progressive depth | 0 / 1 / 2 | Capability appears when it is relevant |
-      | Reliability and time | 0 / 1 / 2 | Performance, persistence and feedback meet expectations |
-      | Responsible use of AI | 0 / 1 / 2 | Uncertainty, limits and determinism are resolved |
-      | Cumulative quality | 0 / 1 / 2 | States, language and micro-interactions are coherent |
+      | **Criterion**            | **Score** | **Evidence question**                                                                  |
+      |--------------------------|-----------|----------------------------------------------------------------------------------------|
+      | Traceable foundation     | 0 / 1 / 2 | Sources, authority, scope, results and conditions are identifiable                     |
+      | Product coverage         | 0 / 1 / 2 | Every mandatory element has implementation, a test or an approved exception            |
+      | Applicable Job Stories   | 0 / 1 / 2 | Where they exist, circumstance, motivation and outcome retain sufficient evidence      |
+      | User progress            | 0 / 1 / 2 | The implementation produces the outcomes defined by the product                        |
+      | Cognitive load           | 0 / 1 / 2 | It reduces or justifies concepts, decisions and steps                                  |
+      | Interface clarity        | 0 / 1 / 2 | State, action and consequence are understood                                           |
+      | Control and recovery     | 0 / 1 / 2 | Proportionate review, correction or reversibility exists                               |
+      | Progressive depth        | 0 / 1 / 2 | Capability appears when it is appropriate                                              |
+      | Dependability and timing | 0 / 1 / 2 | Performance, persistence and feedback meet expectations                                |
+      | Responsible use of AI    | 0 / 1 / 2 | Uncertainty, limits and determinism have been resolved                                 |
+      | Cumulative quality       | 0 / 1 / 2 | States, language and micro-interactions are coherent                                   |
   verificacion-08:
     sourceHash: d06237e03cd0a0f6b06acbc859fa50a03830c1e0fc9c666cc31d26ce06f5f8ad
     state: borrador
-    text: Recommended exit criterion. No critical dimension may score 0. Criteria related to security, permissions, money, personal data or irreversible actions must score 2 before release. For the rest, the team must define its threshold according to risk and scope.
+    text: Recommended exit criterion. No critical dimension may score 0. Criteria relating to security, permissions, money, personal data or irreversible actions must score 2 before release. For the rest, the team must define its threshold according to risk and scope.
   verificacion-09:
     sourceHash: 0cf54551b2185b081e9afd1a31c037f3ad2e9bd0d67ec2d7161c373737ebdc72
     state: borrador
@@ -1305,15 +1305,15 @@ entries:
     sourceHash: 5c925ea6ef9439ef96f6a79ecb252fdcec5b5f0e63a8ca5d19a210ee812c8a2b
     state: borrador
     text: |-
-      - Which authorized source and which product foundation justify this decision?
+      - What authorised source and what product foundation justify this decision?
 
       - Do the implementation and its tests account for the full scope?
 
-      - When there are Jobs to Be Done or Job Stories, how does this decision relate to them?
+      - Where Jobs to Be Done or Job Stories exist, how does this decision relate to them?
 
-      - Does the wording describe a need, or is it a feature written with a different formula?
+      - Does the formulation describe a need, or is it a feature request recast in another form?
 
-      - What cognitive load does it introduce, and what load does it remove?
+      - What cognitive load does it introduce and what does it remove?
 
       - Are we exposing internal complexity?
 
@@ -1323,9 +1323,9 @@ entries:
 
       - Can they recover easily if they make a mistake or if the system fails?
 
-      - Is the AI proposing, deciding or executing? Is that level authorized?
+      - Is the AI proposing, deciding or executing? Is that level authorised?
 
-      - What would make us reject this implementation even if it works technically?
+      - What would make us reject this implementation even though it technically works?
   sh-ap:
     sourceHash: ea0ec594a1a847801da4d5cccc7e148b5a3ffd96047dde46827ccc749b2ef421
     state: borrador
@@ -1338,22 +1338,22 @@ entries:
     sourceHash: bf1d3ccdb739835589dfc14bc8e09b82cd5d5d7f85f02435498cd7df524ece4f
     state: borrador
     text: |-
-      | **Anti-pattern** | **How it shows up** | **Response** |
-      |---------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-      | The Job Story is a feature in disguise | The motivation says to use a dashboard, receive alerts or press a button. | Reword the progress the person needs without anticipating the response. |
-      | The circumstance was invented | The team writes a plausible story without observing real behavior, tension or context. | Mark it as a hypothesis and obtain evidence before expanding the implementation. |
-      | The interface replicates the database | The user must choose internal types, states or relationships. | Translate the structure into human goals and decisions. |
-      | More options are mistaken for more value | Every exception becomes a visible control. | Resolve by context and reveal exceptions when they arise. |
-      | AI fills conceptual gaps | An ambiguous prompt produces a large implementation. | Stop, clarify material assumptions and preserve the authorized scope. |
-      | The plan selects the scope | Some stories or rules are implemented and the rest are postponed without a product decision. | Restore full coverage or record an explicit, approved modification. |
-      | Breakdown looks like exclusion | A technical phase is presented as if it redefined what the PRD requires. | Separate execution order, progress status and committed scope. |
-      | The tutorial compensates for an obscure interface | The basic task requires prior explanation. | Review language, hierarchy, conventions and feedback. |
-      | Confirmation replaces reversibility | People are asked several times, but there is no undo. | Design recovery and use confirmations only according to risk. |
-      | The happy path defines the product | Errors, empty states and interruptions are left for later. | Model states before implementing and accept them explicitly. |
-      | The fluent answer looks true | The user cannot tell fact, inference and proposal apart. | Show source, uncertainty, limits and a path to verification. |
-      | Technical speed hides the wait | The operation takes time without feedback or blocks the whole flow. | Respond immediately, show progress and preserve continuity. |
-      | Aesthetics mask friction | The screen looks good but demands unnecessary decisions. | Evaluate the full journey and the real effort. |
-      | The agent adds things just in case | Unrequested modes, preferences and abstractions appear. | Define exclusions and require justification for each capability. |
+      | **Anti-pattern**                              | **How it shows up**                                                                                      | **Response**                                                                             |
+      |-----------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+      | The Job Story is a feature in disguise        | The motivation says to use a dashboard, receive alerts or press a button.                                  | Reformulate the progress the person needs without anticipating the answer.                |
+      | The circumstance was invented                 | The team writes a plausible story without observing behaviour, tension or real context.                    | Mark it as a hypothesis and obtain evidence before extending the implementation.          |
+      | The interface mirrors the database            | The user has to choose internal types, states or relationships.                                            | Translate the structure into human goals and decisions.                                   |
+      | More options are mistaken for more value      | Every exception turns into a visible control.                                                              | Resolve by context and reveal exceptions when they arise.                                 |
+      | AI fills conceptual gaps                      | An ambiguous prompt produces a large implementation.                                                       | Stop, clarify the material assumptions and preserve the authorised scope.                 |
+      | The plan selects scope                        | Some stories or rules are implemented and the rest deferred without a product decision.                    | Restore full coverage, or record an explicit and approved modification.                   |
+      | Decomposition is mistaken for exclusion       | A technical phase is presented as though it redefined what the PRD requires.                               | Separate execution order, progress status and committed scope.                            |
+      | The tutorial compensates for an opaque interface | The basic task requires prior explanation.                                                              | Review language, hierarchy, conventions and feedback.                                     |
+      | Confirmation substitutes for reversibility    | The system asks several times, but there is no undo.                                                       | Design recovery and use confirmations only according to risk.                             |
+      | The happy path defines the product            | Errors, empty states and interruptions are left for later.                                                 | Model states before implementing and accept them explicitly.                              |
+      | A fluent answer looks true                    | The user does not distinguish fact, inference and proposal.                                                  | Show source, uncertainty, limits and a route to verification.                             |
+      | Technical speed hides the wait                | The operation takes time with no feedback, or blocks the whole flow.                                       | Respond immediately, show progress and preserve continuity.                               |
+      | Aesthetics paper over friction                | The screen looks good, but demands unnecessary decisions.                                                  | Evaluate the complete journey and the real effort.                                        |
+      | The agent adds things just in case            | Modes, preferences and abstractions appear that nobody asked for.                                          | Define exclusions and require justification per capability.                               |
   antipatrones-04:
     sourceHash: 42dd2cfcf7bcb086bbf3e38e870b44fa203c7de3cc3dd70ce3d19b1ed7cf96bc
     state: borrador
@@ -1365,19 +1365,19 @@ entries:
   antipatrones-06:
     sourceHash: 57c9d01614969091544eb774af98b5a1ca52ea71b58f8c22c3a8228cb635116b
     state: borrador
-    text: Valuable simplicity does not remove what is needed. It avoids demanding it too early.
+    text: Valuable simplicity does not remove what is necessary. It avoids demanding it before its time.
   ejemplo-aplicado-01:
     sourceHash: 7bc057be2146d1e5bc0ea4e689a6ba8057bd1b63b45dc2b80cbebdf0ccaad639
     state: borrador
-    text: "## APPLIED EXAMPLE"
+    text: "## WORKED EXAMPLE"
   ejemplo-aplicado-02:
     sourceHash: 8ca2c7b9c2be2d7ab767b5196eb47546d880cbdcdc45749848e3bbce650bda28
     state: borrador
-    text: "### A calculus tutor for someone who does not understand yet"
+    text: "### A calculus tutor for someone who does not yet understand"
   ejemplo-aplicado-03:
     sourceHash: 7e6f679d87faf72d6f38e2e7e01b81f7ce76ca37067728137259ba54f6f85e83
     state: borrador
-    text: Consider an application that explains derivatives, proposes an exercise, offers a hint and finally shows the solution. The flow looks complete. However, if the person fails after reading the explanation and does not understand the solution either, they reach a dead end. The application delivered content, but it did not produce progress.
+    text: Consider an application that explains derivatives, proposes an exercise, offers a hint and finally shows the solution. The flow looks complete. However, if the person gets the exercise wrong after reading the explanation and still does not understand the solution, they reach a dead end. The application delivered content, but it did not produce progress.
   ejemplo-aplicado-04:
     sourceHash: 429248f0e5c8ac9f4386d829db1133e1187061e08d6096d5ad46bf02de716f73
     state: borrador
@@ -1385,19 +1385,19 @@ entries:
   ejemplo-aplicado-05:
     sourceHash: 8cbf02893064e0e8c4ee6540cab3547aea32c66d495d77d992dd842f2d79220f
     state: borrador
-    text: "**Weak wording.** As a student I want to get hints so I can solve derivatives. The role is generic, the hint already prescribes the answer and the outcome does not distinguish understanding from mechanical progress."
+    text: "**Weak formulation.** As a student I want to receive hints so that I can solve derivatives. The role is generic, the hint already prescribes the answer, and the outcome does not distinguish understanding from mechanical progress."
   ejemplo-aplicado-06:
     sourceHash: 9e2b8bf57c843027d9c87bcc27649a8f668295e4cee1d329bc9d8c9c06c2867c
     state: borrador
-    text: "**Main Job Story.** *When I have read an explanation and still do not know which rule to apply, I need to identify the prior concept I do not understand, so I can go back to the exercise without depending on being shown the solution.*"
+    text: "**Main Job Story.** *When I have read an explanation and I still do not know which rule to apply, I need to identify the prior concept I do not understand, so that I can resume the exercise without depending on being shown the solution.*"
   ejemplo-aplicado-07:
     sourceHash: 04739109376c8b63b690217eb21547dfedfe46c4a7deba875e6e8e6b00b640d9
     state: borrador
-    text: "**Recovery Job Story.** *When I see the solution and still do not understand why the next step was chosen, I need to rebuild a single decision with a different representation, so I can explain the rule in my own words.*"
+    text: "**Recovery Job Story.** *When I see the solution and I still do not understand why the next step was chosen, I need to reconstruct a single decision using a different representation, so that I can explain the rule in my own words.*"
   ejemplo-aplicado-08:
     sourceHash: ba8da8980a239f551e975c201c112bfbaf545fd7d1332cf8024c50d2208abc1d
     state: borrador
-    text: "Both stories belong to the same higher-level Jobs to Be Done: developing enough understanding to solve an equivalent exercise with growing autonomy. However, they describe different blocks and may require different responses."
+    text: "Both stories belong to the same higher-level Jobs to Be Done: developing enough understanding to solve an equivalent exercise with growing autonomy. They describe different blockages, however, and may call for different responses."
   ejemplo-aplicado-09:
     sourceHash: 6f2171367bbb93cda1efb0359c2d1b1cf181f5a0509353275769bc02fcc9e232
     state: borrador
@@ -1406,13 +1406,13 @@ entries:
     sourceHash: 1dea637d2f5937af96c2b4806082fb4a00db29ca491c2eeb2f879651f331c03c
     state: borrador
     text: |-
-      | **Principle** | **Observed problem** |
-      |---------------|----------------------------------------------------------------------------------|
-      | Progress | The system measures steps consumed, not understanding achieved. |
-      | Experience | The person ends up frustrated and without a path to recovery. |
-      | Complexity | The explanation keeps the expert's model instead of rebuilding the concept. |
-      | Interface | Numbers or stages without meaning add incidental learning. |
-      | Trust | The final solution is presented as closure, even though understanding is still missing. |
+      | **Principle** | **Problem observed**                                                                    |
+      |---------------|-----------------------------------------------------------------------------------------|
+      | Progress      | The system measures steps consumed, not understanding achieved.                         |
+      | Experience    | The person ends up frustrated and with no route to recovery.                             |
+      | Complexity    | The explanation preserves the expert's model instead of rebuilding the concept.          |
+      | Interface     | Numbers or stages without meaning add incidental learning.                               |
+      | Trust         | The final solution is presented as closure, even though understanding is still absent.   |
   ejemplo-aplicado-11:
     sourceHash: 743220456f41cf9192dad765c5c753a832c9b7e252d0c6d30a79838cd1b8df47
     state: borrador
@@ -1421,27 +1421,27 @@ entries:
     sourceHash: 18248aaccc3245858104aaa482c51d2a95d050d9e8bb368435d89b076ec5b26d
     state: borrador
     text: |-
-      | **Element** | **Observation** |
-      |----------------------|------------------------------------------------------------------------------------------------|
-      | Current behavior | The person asks for a hint, then the solution, and still cannot decide which rule to apply. |
-      | Obstacle and anxiety | They cannot identify the missing prerequisite and fear moving on without understanding. |
-      | Evidence of success | They can choose and explain the rule in an equivalent exercise with less help. |
+      | **Element**            | **Observation**                                                                                       |
+      |------------------------|-------------------------------------------------------------------------------------------------------|
+      | Current behaviour      | The person asks for a hint, then the solution, and still cannot decide which rule to apply.            |
+      | Obstacle and anxiety   | They do not identify the missing prerequisite and are afraid to move on without understanding.         |
+      | Evidence of success    | They can choose and explain the rule in an equivalent exercise with less help.                         |
   ejemplo-aplicado-13:
     sourceHash: a64a984f0420c242fcc7b3895eff9eb9d536b7501f5aae7afaa82167d2974e53
     state: borrador
-    text: "#### Redesigning the journey"
+    text: "#### Redesign of the journey"
   ejemplo-aplicado-14:
     sourceHash: 9b1133b85d9aeab0809e0503be5764857c260ad54c3c174f0c4c6da246b3ea1e
     state: borrador
-    text: "1\\. Detect the type of block: concept, notation, prior operation or interpretation of the problem statement."
+    text: "1\\. Detect the type of blockage: concept, notation, prior operation or interpretation of the problem statement."
   ejemplo-aplicado-15:
     sourceHash: 76acda4a8f4e7899e15fcdac9005d39c6c5eff1819cba1984295d51994dbcc30
     state: borrador
-    text: 2\. Reword with a different representation; do not repeat the same explanation with more words.
+    text: 2\. Reformulate using a different representation, rather than repeating the same explanation with more words.
   ejemplo-aplicado-16:
     sourceHash: 8ceedd90db1a9e6df1e0fb3af5c5bcc51f93e9c6fcb9b0eedb3c6ed0ac8e64c5
     state: borrador
-    text: 3\. Check a prior micro-skill with a short diagnostic question.
+    text: 3\. Check an earlier micro-skill through a brief, diagnostic question.
   ejemplo-aplicado-17:
     sourceHash: 408fd58a3a717f3ff1b0ed44bccad70445638320c102b7736870ba88b3fcdcab
     state: borrador
@@ -1453,20 +1453,20 @@ entries:
   ejemplo-aplicado-19:
     sourceHash: b14a00e1f94a074adbb4ee5f67f93567b672759ed6a72de7e84f692bee227853
     state: borrador
-    text: 6\. Always keep a path to go back, switch explanation or ask for human help.
+    text: 6\. Always keep a route to go back, switch explanation or ask for human help.
   ejemplo-aplicado-20:
     sourceHash: 37a9f3515ee6c17e9f76b0029b44018ac8a2549b853680d1db6a7171e426ff3b
     state: borrador
-    text: "#### What remains deterministic and what can use AI"
+    text: "#### What stays deterministic and what may use AI"
   ejemplo-aplicado-21:
     sourceHash: 2c6df24fb64b52527f6aa550ab0888bbbffbbbebe7203ca4ddb2e4b173421f56
     state: borrador
     text: |-
-      | **Layer** | **Responsibility** |
-      |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-      | Deterministic | Sequence of states; mathematical validation; mastery of prerequisites; record of attempts; progression rules; prevention of dead ends. |
-      | AI-assisted | Rewording an explanation; generating an analogy; classifying the block; adapting the tone; proposing an equivalent exercise within validated limits. |
-      | Human control | Letting the student or tutor choose another path, review the history and correct a wrong inference made by the system. |
+      | **Layer**        | **Responsibility**                                                                                                                                          |
+      |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Deterministic    | Sequence of states; mathematical validation; mastery of prerequisites; record of attempts; progression rules; prevention of dead ends.                       |
+      | AI-assisted      | Reformulating an explanation; generating an analogy; classifying the blockage; adapting the tone; proposing an equivalent exercise within validated limits.   |
+      | Human control    | Letting the student or tutor choose another route, review the history and correct a mistaken inference by the system.                                        |
   ejemplo-aplicado-22:
     sourceHash: 4853c20b9863aee97ea50fda01176e424ebbbc62410b88777779b46b83210410
     state: borrador
@@ -1474,7 +1474,7 @@ entries:
   ejemplo-aplicado-23:
     sourceHash: d33c3518b4dd1f251ee83d5ff01b1327467ed885fd8888dfae1d3ab799a1a907
     state: borrador
-    text: The goal is not for the student to reach the end of the sequence. It is for them to solve or explain an equivalent exercise with less help. That difference changes the interface, the logic, the measurement and the use of AI.
+    text: The goal is not for the student to reach the end of the sequence. It is for them to be able to solve or explain an equivalent exercise with less help. That difference changes the interface, the logic, the measurement and the use of AI.
   sh-gov:
     sourceHash: 047f999c3c93ad72879227c29179bdc83b53ebe01d6c3fb55250a1fc96751418
     state: borrador
@@ -1482,11 +1482,11 @@ entries:
   gobernanza-02:
     sourceHash: c397108d8bc59d3ec1dda841f404e55bf3ec1d802b3ed8ced071feef6dc50472
     state: borrador
-    text: "### How to turn the manifesto into a habitual practice"
+    text: "### How to turn the manifesto into everyday practice"
   gobernanza-03:
     sourceHash: 87feb2f1ea1e6917a72527f1730094298ade5fdbb9a93737da024b957d242a14
     state: borrador
-    text: "The manifesto loses value if it is limited to an initial presentation. It must appear at the moments when the team makes decisions: definition, design, generation, review and learning after launch."
+    text: "The manifesto loses value if it is confined to an opening presentation. It must appear at the moments when the team makes decisions: definition, design, generation, review and post-launch learning."
   gobernanza-04:
     sourceHash: 32a94e0b8d27bca7cb221f7c43540348c6f886626df2f82c617201fe0d10aeda
     state: borrador
@@ -1495,29 +1495,29 @@ entries:
     sourceHash: 49cdfd6eed2d59b98c79a9c5c0a4738aa18842d8e068fa805603f0069edd6b5d
     state: borrador
     text: |-
-      | **Responsible** | **Main obligation** |
-      |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      | Product | Establishes the authorized definition, the scope, the outcomes, the rules, the non-goals and the evidence of success; validates Jobs to Be Done and Job Stories when they are used. |
-      | Design | Translates the product foundation into journeys consistent with the person's mental model and protects their attention; uses Job Stories when they help make the situation concrete. |
-      | Engineering | Absorbs complexity and guarantees states, performance, accessibility and recovery. |
-      | AI agent | Plans and implements within the foundation and the contract; declares assumptions, maintains coverage and does not reduce or expand scope on its own initiative. |
-      | Human review | Evaluates causality, meaning, risk, the complete experience and evidence; it is not limited to reviewing code. |
+      | **Responsible**  | **Main obligation**                                                                                                                                                              |
+      |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Product          | Establishes the authorised definition, the scope, the results, the rules, the non-goals and the evidence of success; validates Jobs to Be Done and Job Stories where they are used. |
+      | Design           | Translates the product foundation into journeys coherent with the person's mental model and protects their attention; uses Job Stories where they help make the situation concrete. |
+      | Engineering      | Absorbs complexity and guarantees states, performance, accessibility and recovery.                                                                                                |
+      | AI agent         | Plans and implements within the foundation and the contract; declares assumptions, maintains coverage and neither reduces nor extends scope on its own initiative.                 |
+      | Human review     | Evaluates causality, meaning, risk, the complete experience and the evidence; it is not limited to reviewing code.                                                                |
   gobernanza-06:
     sourceHash: a0bbc460fc8ca6287203ed247c57df87312e6c808abeeab762fc8f71ee2db60b
     state: borrador
-    text: "#### Checkpoints"
+    text: "#### Control points"
   gobernanza-07:
     sourceHash: f9c9fb8519965da72232ad76dfd2151c95af5837e0e45ae70bf1dbdd2473c295
     state: borrador
     text: |-
-      | **Moment** | **Decision required** |
-      |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-      | Before designing | Sources, authority, scope, outcomes, evidence, assumptions and non-goals are clear; the Job Stories are understood when they exist. |
-      | Before generating code | The plan covers the complete definition and establishes dependencies, the chosen response, paths, states, critical rules, risks and acceptance. |
-      | During construction | The breakdown organizes the work without altering the scope; blockers, pending items and exceptions remain visible. |
-      | Before integrating | Every change keeps traceability to its foundation, respects the scope, covers states and passes technical tests. |
-      | Before releasing | The complete implementation demonstrates outcomes, coverage, understanding, control and quality of experience. |
-      | After releasing | Outcome, friction, abandonment and errors are observed; the foundation, the stories and their assumptions are reviewed when appropriate. |
+      | **Moment**                  | **Decision required**                                                                                                                              |
+      |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Before designing            | Sources, authority, scope, results, evidence, assumptions and non-goals are clear; the Job Stories are understood where they exist.                 |
+      | Before generating code      | The plan covers the complete definition and establishes dependencies, chosen response, routes, states, critical rules, risks and acceptance.        |
+      | During construction         | The breakdown organises the work without altering the scope; blockers, outstanding items and exceptions remain visible.                             |
+      | Before integrating          | Every change preserves traceability to its foundation, respects scope, covers states and passes technical tests.                                    |
+      | Before release              | The complete implementation demonstrates results, coverage, understanding, control and quality of experience.                                       |
+      | After release               | Outcome, friction, abandonment and errors are observed; the foundation, the stories and their assumptions are revisited where appropriate.          |
   gobernanza-08:
     sourceHash: 478ce516c69a14fe61c0b1a15c8d7b9172b8996f72ad7f481bc1371b04e4637a
     state: borrador
@@ -1525,43 +1525,43 @@ entries:
   gobernanza-09:
     sourceHash: e4c0525d1a4d9f65cfe17088f6887078d0e42ca32a11d3a67f70d8602be24653
     state: borrador
-    text: "Principles must be stable; rules and tests may evolve with new evidence. Every change should record the problem observed, the decision modified and the reason. The framework must not grow by accumulation: a new rule is only added if it fills a gap that the existing ones do not cover."
+    text: "The principles must be stable; the rules and tests may evolve with new evidence. Every change should record the problem observed, the decision modified and the reason. The framework must not grow by accumulation: a new rule is only incorporated if it resolves a gap the existing ones do not cover."
   gobernanza-10:
     sourceHash: 351cdb95d6e4bc395fe9296b0f47a408ce8917e4cec0661e8422fe36fc3a4e68
     state: borrador
-    text: "#### Change log for versions 2.0 and 2.1"
+    text: "#### Change control for versions 2.0 and 2.1"
   gobernanza-11:
     sourceHash: 9900aea4b55dee0e957a014904822163d8360c0637c45d84ea1425e29598cb6e
     state: borrador
-    text: Version 1.0 remains the founding formulation. Version 2.0 keeps its thesis and its ten principles, but replaces generic operational references to Jobs to Be Done with a more concrete and verifiable chain.
+    text: Version 1.0 remains as the founding formulation. Version 2.0 preserves its thesis and its ten principles, but replaces generic operational references to Jobs to Be Done with a more concrete and verifiable chain.
   gobernanza-12:
     sourceHash: c4fa37b2b58856cc01f4a39b7e1644bdc83cf53eee3d8ab70fdb769a176c0ffc
     state: borrador
     text: |-
-      | **Area** | **Change in version 2.0** | **What remains** |
-      |----------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
-      | Unit of design | The Job Story makes progress concrete within a Jobs to Be Done. | User progress remains the main measure. |
-      | Architecture | A level is added between principle and rule. | Principles, rules and tests keep their function. |
-      | Flow and artifacts | Circumstance, motivation, outcome and evidence are required before designing. | Minimal documentation that changes decisions is kept. |
-      | Development with AI | The agent must reword and respect the Job Story. | Limits, determinism and human review continue. |
-      | Acceptance | The outcome is tested under the described circumstance. | Accessibility, performance, states and control remain mandatory. |
-      | Example and governance | Causal traceability and story validation are added. | The calculus tutor and the checkpoints keep their purpose. |
+      | **Area**                | **Adjustment in version 2.0**                                                       | **Content that remains**                                                  |
+      |-------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+      | Unit of design          | The Job Story makes progress concrete within a job defined through Jobs to Be Done.            | The user's progress remains the principal measure.                        |
+      | Architecture            | A level is added between principle and rule.                                          | Principles, rules and tests keep their function.                          |
+      | Flow and artefacts      | Circumstance, motivation, outcome and evidence are required before designing.         | The minimum documentation that changes decisions is retained.             |
+      | Development with AI     | The agent must reformulate and respect the Job Story.                                 | Limits, determinism and human review continue.                            |
+      | Acceptance              | The outcome is tested under the circumstance described.                               | Accessibility, performance, states and control remain mandatory.          |
+      | Example and governance  | Causal traceability and validation of stories are added.                              | The calculus tutor and the control points keep their purpose.             |
   gobernanza-13:
     sourceHash: fbf3e33e1c49741aed30416932f736891d27744c9fdf49ea72123f2f9229fadc
     state: borrador
-    text: Version 2.1 preserves the thesis, the ten principles, the doctrine for AI, the Job Stories and the applied example. It extends the core to accept product definitions of different form, length and depth without imposing an upstream structure or assuming an incremental strategy.
+    text: Version 2.1 preserves the thesis, the ten principles, the doctrine for AI, the Job Stories and the worked example. It extends the core to accommodate product definitions of differing form, length and depth, without imposing a structure upstream or assuming an incremental strategy.
   gobernanza-14:
     sourceHash: d5ff5168823ec9b72198160d56c72e361c1b70fbad36e509373d0b4e1ea43ea5
     state: borrador
     text: |-
-      | **Area** | **Change in version 2.1** | **What remains** |
-      |-----------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-      | Foundation | An authorized, traceable and verifiable basis is defined that can take different forms. | Human progress remains the main measure. |
-      | Job Stories | They are declared the reference form, not a mandatory universal structure. | Their canonical form, evidence, tests and examples are kept. |
-      | Scope | Full coverage is required and unauthorized omissions or postponements are prohibited. | Product still defines scope and non-goals. |
-      | Planning | Breakdown, sequence and parallelism are separated from any scope decision. | Prior clarity, rules, risks and acceptance continue. |
-      | Delivery strategy | Incrementality is no longer an assumption of the core. | Each project may adopt phases or releases when appropriate. |
-      | SDD implementation | It is reserved for independent annexes and adapters. | The core keeps the principles and guarantees every implementation must respect. |
+      | **Area**               | **Adjustment in version 2.1**                                                                | **Content that remains**                                                          |
+      |------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+      | Foundation             | An authorised, traceable and verifiable base is defined, which may take different forms.        | Human progress continues as the principal measure.                                |
+      | Job Stories            | They are declared a reference form, not a universally mandatory structure.                      | Their canonical form, evidence, tests and examples are preserved.                 |
+      | Scope                  | Full coverage is required and unauthorised omissions or deferrals are prohibited.               | Product continues to define scope and non-goals.                                  |
+      | Planning               | Breakdown, sequence and parallelism are separated from any scope decision.                      | Prior clarity, rules, risks and acceptance continue.                              |
+      | Delivery strategy      | Incrementality ceases to be an assumption of the core.                                          | Each project may adopt phases or releases where appropriate.                      |
+      | SDD implementation     | It is reserved for independent annexes and adapters.                                            | The core keeps principles and guarantees that every implementation must respect.  |
   sh-done:
     sourceHash: 2a8713d4c86320daa8f228f47a4c4be1e8a17ed4895f39ca86ca6cd04d856a0a
     state: borrador
@@ -1569,11 +1569,11 @@ entries:
   gobernanza-16:
     sourceHash: fd1e0be577415e03722ed6933bcebedde8d7c2c11c77831daeed17ece434202b
     state: borrador
-    text: A development effort is complete when all mandatory elements of the product definition have an implementation and verifiable evidence, or an explicit and approved exception; people reach the expected outcomes under the defined conditions; and the system's behavior and the quality of the experience have been verified with rigor proportional to the risk.
+    text: A development is complete when every mandatory element of the product definition has an implementation and verifiable evidence, or an explicit and approved exception; when people achieve the intended outcomes under the defined conditions; and when the system's behaviour and the quality of the experience have been verified with rigour proportionate to the risk.
   gobernanza-17:
     sourceHash: 9c8aee8f9b8fb51d4573effef52445d02d3131761ca6fa84efc03d494290d453
     state: borrador
-    text: When the foundation includes Job Stories, verification must demonstrate the outcome in their circumstances. Completeness includes correct code, but it does not end there. It requires coverage of the scope, integration between its parts, reliable critical states, an experience that does not require learning the product's architecture, AI within explicit limits and clarity about what must be observed after launch.
+    text: Where the foundation includes Job Stories, verification must demonstrate the outcome in their circumstances. Completeness includes correct code, but it does not end there. It requires coverage of the scope, integration between its parts, dependable critical states, an experience that does not force anyone to learn the product's architecture, AI within explicit limits, and clarity about what must be observed after launch.
   sh-pocket:
     sourceHash: 74db51b1e13798e2db40b33b840edeaa55a4213d8eaebe887f9c943bfd92017f
     state: borrador
@@ -1585,11 +1585,11 @@ entries:
   guia-de-bolsillo-03:
     sourceHash: 5b6ee49b5d835116822e94677bacfbbb2ff8230417e052b3718fba5e21a8dc6d
     state: borrador
-    text: 1\. What is the authorized source and what scope does it establish?
+    text: 1\. What is the authorised source and what scope does it establish?
   guia-de-bolsillo-04:
     sourceHash: d20f1f0ee1cd5d58380252ccf0a3f2f3cfdeb0d91e744ff374905fc441431829
     state: borrador
-    text: 2\. Does the plan account for all the mandatory elements?
+    text: 2\. Does the plan account for every mandatory element?
   guia-de-bolsillo-05:
     sourceHash: 317078e508327e225931d93ad2573615ef80bdb79e567c447812f67d9b84dfa9
     state: borrador
@@ -1601,35 +1601,35 @@ entries:
   guia-de-bolsillo-07:
     sourceHash: 930009caf02ab3bc8f157a3f7c5427733652a06e6f7fe5cddd61e9513f748248
     state: borrador
-    text: 5\. What outcome would make progress recognizable?
+    text: 5\. What outcome would make the progress recognisable?
   guia-de-bolsillo-08:
     sourceHash: 8c3cca0e259cc4cf8f1da54a75d39dcb1236b3c15fed63846f8b927d32c8ad87
     state: borrador
-    text: 6\. What behavior or evidence shows that the story actually happens?
+    text: 6\. What behaviour or evidence demonstrates that the story occurs?
   guia-de-bolsillo-09:
     sourceHash: 56c3aeeea54a009c2c73ffe09b2046d2df9b717ad27be8f0eb163d562b5db220
     state: borrador
-    text: 7\. When there is a Job Story, does it describe the problem without prescribing the solution?
+    text: 7\. Where a Job Story exists, does it describe the problem without prescribing the solution?
   guia-de-bolsillo-10:
     sourceHash: 9fcff69fedda7d03644648d8e0a21685a7ada37c088ef0ac17d3d2e77c74098e
     state: borrador
-    text: 8\. What complexity does the system absorb, and what does it still transfer?
+    text: 8\. What complexity does the system absorb, and what does it still pass on?
   guia-de-bolsillo-11:
     sourceHash: cf7b83d9da0b082d86813321f878ae3109b9c5e3d0063c5156d27d3fb5f9d39c
     state: borrador
-    text: 9\. What must the person see now, and what can they expect?
+    text: 9\. What must the person see now, and what can wait?
   guia-de-bolsillo-12:
     sourceHash: 9a8efaa7b179b47d4352ca01fae9279bbe5251f69a13bd884f66c6a3b10350ec
     state: borrador
-    text: 10\. What will happen if they make a mistake, get interrupted or come back later?
+    text: 10\. What will happen if they make a mistake, interrupt, or come back later?
   guia-de-bolsillo-13:
     sourceHash: 1933072a6b4f63e43872be65e1712572dd204ed0fb78aa0e2b886a92e702ce88
     state: borrador
-    text: 11\. Do they keep control over the decision, the data and the outcome?
+    text: 11\. Do they retain control over the decision, the data and the outcome?
   guia-de-bolsillo-14:
     sourceHash: 1b0bfd552c7094e6915a974b618a95d8b74efef4538efd03a395b736e32b5894
     state: borrador
-    text: 12\. Which part needs determinism, and which part allows generation?
+    text: 12\. Which part needs determinism and which part admits generation?
   guia-de-bolsillo-15:
     sourceHash: 97161e89f24681a37b14ef1eaadb0871433483ca4af97bd9db5df5acb39aaa04
     state: borrador
@@ -1646,23 +1646,23 @@ entries:
     sourceHash: 169277b12fd84a1481a4654939d27c5a3a997c7160dd6b0e7b94e975968be358
     state: borrador
     text: |-
-      - `STOP01` There is no identifiable product foundation, or the solution seems to come before the problem.
+      - `STOP01` There is no identifiable product foundation, or the solution appears to precede the problem.
 
-      - `STOP02` The plan does not account for all the mandatory scope defined by product.
+      - `STOP02` The plan does not account for the whole mandatory scope defined by product.
 
-      - `STOP03` Someone intends to omit, modify or postpone a part without an authorized decision.
+      - `STOP03` There is an intention to omit, modify or defer a part without an authorised decision.
 
-      - `STOP04` A material ambiguity is being resolved by the agent without authorization.
+      - `STOP04` A material ambiguity is being resolved by the agent without authorisation.
 
       - `STOP05` The interface exposes internal complexity that the system could absorb.
 
       - `STOP06` A sensitive action lacks determinism, traceability or recovery.
 
-      - `STOP07` The team can only show that the code works, not that the user makes progress.
+      - `STOP07` The team can only demonstrate that the code works, not that the user makes progress.
   guia-de-bolsillo-19:
     sourceHash: c6dbef2b17bb47efaad5789e34e3044ef75a3554b87f9672e941a4837c7efbda
     state: borrador
-    text: "#### Three questions that protect judgment"
+    text: "#### Three sentences that protect judgement"
   guia-de-bolsillo-20:
     sourceHash: 8f1d576f83ecfa17e944a78a7ae859946f2d72db459d2ee5e8eea765920b53ff
     state: borrador
@@ -1674,7 +1674,7 @@ entries:
   guia-de-bolsillo-22:
     sourceHash: 3dba52a787a3315bbf0d2d3bead8cf80e5ce4b66b9393879025c1cfd85efca9b
     state: borrador
-    text: What evidence shows it?
+    text: What evidence demonstrates it?
   influencias-y-notas-01:
     sourceHash: 3b86b57efae75a6898216df3f1a4f5337195e15b1da3d9c78190f3dc6007438d
     state: borrador
@@ -1682,23 +1682,23 @@ entries:
   influencias-y-notas-02:
     sourceHash: fd259e3266f52de59fd136810fdf5faae99680bf291dbc568fb4d0f6bbd4b07b
     state: borrador
-    text: "### Origin of the perspective"
+    text: "### Origin of this perspective"
   influencias-y-notas-03:
     sourceHash: 96763d193d39fa45b7fb1c43b452125542340057d6b7b0528ccd25cd94ef817c
     state: borrador
-    text: This framework is an independent work inspired by public ideas from Craft and by the conversations that gave rise to this document. It is not an official Craft manifesto, nor does it attribute to Craft's founder the operational rules proposed here.
+    text: This framework is an independent elaboration inspired by public ideas from Craft and by the conversations that gave rise to this document. It is not an official Craft manifesto, and it does not attribute the operational rules proposed here to Craft's founder.
   influencias-y-notas-04:
     sourceHash: df196e9970e3bbc62375f4461bfcbb56b17ae6d7c12cb64e8e4944517a7635b5
     state: borrador
-    text: "Four influences are taken from Craft: the union of form and function; the effect a tool has on the energy and ability of whoever uses it; adaptable complexity that appears when it is needed; and the human-first approach, as opposed to systems that force people to adapt to their structure."
+    text: "Four influences are taken from Craft: the union of form and function; the effect a tool has on the energy and capability of whoever uses it; adaptable complexity that appears when it is needed; and the human-first approach, as against systems that force people to accommodate themselves to their structure."
   influencias-y-notas-05:
     sourceHash: 3022784d1acb67d9ae809c1c772feaabd522158283c452e6314d913599982ef3
     state: borrador
-    text: From Jobs to Be Done, progress is kept as the higher-level reference. From Job Stories, a concrete way of carrying that progress into design is adopted, through circumstances, motivations, outcomes, current behavior, anxieties and causal evidence.
+    text: From Jobs to Be Done, progress is retained as the higher-level reference. From Job Stories, a concrete way of carrying that progress into design is adopted, through circumstances, motivations, outcomes, current behaviour, anxieties and causal evidence.
   influencias-y-notas-06:
     sourceHash: 619e485337589c33982f4bc03e55e2c86789f4c0330d53c4dd0554efbc726a6f
     state: borrador
-    text: Version 2.1 integrates these influences into a core able to respect heterogeneous product definitions. Job Stories remain the reference form and the applied example; they do not replace other authorized structures or allow their scope to be cut.
+    text: Version 2.1 integrates these influences within a core capable of respecting heterogeneous product definitions. Job Stories remain a reference form and a worked example; they do not replace other authorised structures, nor do they allow their scope to be trimmed.
   influencias-y-notas-07:
     sourceHash: 877796764a1f03c0640759d642b201c95a72130f6283d1cf5b30f5b4884bab4a
     state: borrador
@@ -1706,24 +1706,24 @@ entries:
   influencias-y-notas-08:
     sourceHash: c04131833dca3b06342dbf6f261190a61b0e95ca7d78c2d573963fb98abba2fc
     state: borrador
-    text: Craft. [<u>About Craft</u>](https://www.craft.do/es/about). The founder's story and reflections on form, function, friction, adaptable complexity and attention to detail.
+    text: Craft. [<u>About Craft</u>](https://www.craft.do/es/about). The founder's history and reflections on form, function, friction, adaptable complexity and attention to detail.
   influencias-y-notas-09:
     sourceHash: 23de990ed35022f79e707310553fe51f3154df8de2803585b565c84cb87fd2e2
     state: borrador
-    text: Balint Orosz. [<u>Introducing Craft 3</u>](https://www.craft.do/blog/welcome-to-craft3), November 28, 2024. Adapting to context, reducing cognitive load, performance and offline operation.
+    text: Balint Orosz. [<u>Introducing Craft 3</u>](https://www.craft.do/blog/welcome-to-craft3), 28 November 2024. Adaptation to context, reduction of cognitive load, performance and offline operation.
   influencias-y-notas-10:
     sourceHash: c0491672ae959358aa9cebd1d9ce292c37c2f4f05217fa90e29f6c56cb780dce
     state: borrador
-    text: Balint Orosz. [<u>Your content is yours and that is more empowering than ever</u>](https://www.craft.do/blog/your-content-is-yours), November 27, 2025. Control over content, portability, AI and the human-first versus systems-first principle.
+    text: Balint Orosz. [<u>Your content is yours and that is more empowering than ever</u>](https://www.craft.do/blog/your-content-is-yours), 27 November 2025. Control over content, portability, AI and the human-first versus systems-first principle.
   influencias-y-notas-11:
     sourceHash: c9a4eb50168ca72c22092c67ce13ec47e7ec7807aad321c1b0e8c04912150c94
     state: borrador
-    text: Alan Klement. [<u>Designing Features Using Job Stories</u>](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), published by Intercom on December 23, 2013. Granular application of Jobs to Be Done to the design of features, interface and experience through context, causality, motivations and anxieties.
+    text: Alan Klement. [<u>Designing Features Using Job Stories</u>](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), published by Intercom on 23 December 2013. Granular application of Jobs to Be Done to the design of features, interface and experience through context, causality, motivations and anxieties.
   influencias-y-notas-12:
     sourceHash: c8dde8ed8798ffeadafda2f7915fc288c3aa48d05ed0c7d2ca4e1f8ff4455400
     state: borrador
-    text: "#### Final statement"
+    text: "#### Closing statement"
   influencias-y-notas-13:
     sourceHash: e34b56dda41ce735ca989f4893c570d0da2e8a30d360749ccb67449e1f3f00ca
     state: borrador
-    text: Technology can be extraordinarily sophisticated behind the interface. In front of it there must remain a person focused on what they wanted to achieve.
+    text: Technology can be extraordinarily sophisticated behind the interface. In front of it, there must remain a person focused on what they set out to achieve.
