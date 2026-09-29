@@ -20,81 +20,117 @@ entries:
     derivedFrom: principio-7-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: La incertidumbre frena la acción. Con IA, además, una respuesta fluida puede ocultar sus límites y hacer difícil distinguir un hecho de una inferencia.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Uncertainty slows action. With AI, moreover, a fluent response may hide its limits and make it difficult to distinguish a fact from an inference.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: A incerteza desacelera a ação. Com IA, além disso, uma resposta fluida pode ocultar seus limites e dificultar a distinção entre um fato e uma inferência.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p07-significado
     type: explanation
     derivedFrom: principio-7-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "La confianza no se promete: surge de una conducta predecible. El producto muestra su estado, anticipa consecuencias, confirma resultados y ofrece una forma de recuperarse."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "Trust is not promised: it emerges from predictable behavior. The product shows its state, anticipates consequences, confirms outcomes, and offers a way to recover."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "A confiança não é prometida: ela surge de um comportamento previsível. O produto mostra seu estado, antecipa consequências, confirma resultados e oferece uma forma de recuperação."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p07-consecuencia
     type: explanation
     derivedFrom: principio-7-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Se distinguen con claridad recomendaciones, decisiones automáticas y resultados confirmados. Antes de una acción irreversible la persona sabe qué va a cambiar y, cuando es razonable, puede deshacer o volver a un estado seguro.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Recommendations, automated decisions, and confirmed outcomes are clearly distinguished. Before an irreversible action, the person knows what is going to change and, when reasonable, may undo it or return to a safe state.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Recomendações, decisões automáticas e resultados confirmados são claramente diferenciados. Antes de uma ação irreversível, a pessoa sabe o que vai mudar e, quando é razoável, pode desfazê-la ou voltar a um estado seguro.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p07-ejemplo
     type: example
     derivedFrom: p07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Este sitio rotula cada bloque según lo que es —texto canónico, explicación, ejemplo o estado técnico— para que quien lee sepa qué está citando.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: This site labels each block according to what it is—canonical text, explanation, example, or technical status—so that the person reading knows what they are citing.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Este site rotula cada bloco de acordo com o que ele é —texto canônico, explicação, exemplo ou estado técnico— para que a pessoa que lê saiba o que está citando.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p07-contraejemplo
     type: counterexample
     derivedFrom: principio-7-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Presentar una adaptación independiente como oficial, publicada o respaldada por una empresa que no la respalda.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Presenting an independent adaptation as official, published, or endorsed by a company that does not endorse it.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Apresentar uma adaptação independente como oficial, publicada ou respaldada por uma empresa que não a respalda.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p07-prueba
     type: decision-test
     derivedFrom: principio-7-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas comprueban si la confianza descansa en evidencia o en el tono.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions check whether trust rests on evidence or tone.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas verificam se a confiança se apoia em evidência ou no tom.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

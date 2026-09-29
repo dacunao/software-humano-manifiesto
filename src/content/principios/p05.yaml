@@ -17,81 +17,117 @@ entries:
     derivedFrom: principio-5-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Cada convención propia que hay que memorizar consume la capacidad que la persona necesitaba para su problema real. En productos de uso infrecuente, o con contenido difícil, esa carga es especialmente dañina.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Every custom convention that must be memorized consumes the capacity the person needed for their actual problem. In products used infrequently, or with difficult content, that load is especially harmful.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Cada convenção própria que precisa ser memorizada consome a capacidade de que a pessoa precisava para seu problema real. Em produtos de uso infrequente, ou com conteúdo difícil, essa carga é especialmente prejudicial.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p05-significado
     type: explanation
     derivedFrom: principio-5-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: La interfaz se apoya en expectativas conocidas, jerarquía comprensible y respuesta inmediata. Quien llega viene a hacer su trabajo, no a aprender el del equipo.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: The interface relies on familiar expectations, understandable hierarchy, and immediate response. The person who arrives is there to do their work, not to learn the team's work.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: A interface se apoia em expectativas conhecidas, hierarquia compreensível e resposta imediata. Quem chega vem fazer seu trabalho, não aprender o trabalho do time.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p05-consecuencia
     type: explanation
     derivedFrom: principio-5-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Se prefieren patrones conocidos cuando resuelven bien el problema. La acción principal, el estado actual y el siguiente paso posible tienen que ser evidentes sin un tutorial previo.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Familiar patterns are preferred when they solve the problem well. The primary action, the current state, and the possible next step must be evident without a prior tutorial.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Padrões conhecidos são preferidos quando resolvem bem o problema. A ação principal, o estado atual e o próximo passo possível têm que ser evidentes sem um tutorial prévio.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p05-ejemplo
     type: example
     derivedFrom: p05
     text:
       es:
-        state: borrador
-        text: Una navegación que nombra cada destino por lo que contiene («Manifiesto», «Principios», «Aplicación») permite elegir sin haber recorrido nada antes.
+        state: aprobado
+        text: Una navegación que nombra cada destino por lo que contiene («Manifiesto», «Principios») permite elegir sin haber recorrido nada antes.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
-        text: Navigation that names each destination by what it contains (“Manifiesto,” “Principles,” “Application”) lets people choose without having gone through anything beforehand.
+        state: aprobado
+        text: Navigation that names each destination by what it contains (“Manifesto” and “Principles”) lets people choose without having gone through anything beforehand.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
-        text: Uma navegação que nomeia cada destino pelo que contém (“Manifiesto”, “Princípios”, “Aplicação”) permite escolher sem ter percorrido nada antes.
+        state: aprobado
+        text: Uma navegação que nomeia cada destino pelo que contém (“Manifiesto” e “Princípios”) permite escolher sem ter percorrido nada antes.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p05-contraejemplo
     type: counterexample
     derivedFrom: principio-5-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Obligar a descubrir cómo avanzar, o a interpretar gestos ocultos, antes de poder leer.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Forcing people to figure out how to proceed, or to interpret hidden gestures, before they can read.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Obrigar as pessoas a descobrir como avançar ou a interpretar gestos ocultos antes de poderem ler.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p05-prueba
     type: decision-test
     derivedFrom: principio-5-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas detectan el aprendizaje que la interfaz agrega sin que el problema lo pida.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions detect the learning that the interface adds without the problem requiring it.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas detectam o aprendizado que a interface acrescenta sem que o problema o exija.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

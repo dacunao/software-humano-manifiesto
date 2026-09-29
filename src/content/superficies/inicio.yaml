@@ -2,45 +2,69 @@
 id: inicio
 title:
   es:
-    state: borrador
+    state: aprobado
     text: Manifiesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Manifiesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Manifiesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: Por qué más capacidad para construir software no garantiza más progreso para las personas, y qué hacer al respecto.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Why greater capacity to build software does not guarantee greater progress for people, and what to do about it.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Por que uma capacidade maior de construir software não garante mais progresso para as pessoas e o que fazer a respeito.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 hero:
   title:
     es:
-      state: borrador
+      state: aprobado
       text: Antes, construir era caro. Eso obligaba a elegir.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     en:
-      state: borrador
+      state: aprobado
       text: Building used to be expensive. That forced us to choose.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     pt-BR:
-      state: borrador
+      state: aprobado
       text: Antes, construir era caro. Isso obrigava a escolher.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
   text:
     es:
-      state: borrador
+      state: aprobado
       text: Hoy agregar una opción más cuesta minutos, y la pregunta de si vale la pena es cada vez más fácil de saltar. El Manifiesto de Software Humano repone esa pregunta y le da un lugar en el proceso donde no se puede saltar.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     en:
-      state: borrador
+      state: aprobado
       text: Today, adding one more option takes minutes, and the question of whether it is worthwhile is increasingly easy to skip. Software Humano's Manifiesto restores that question and gives it a place in the process where it cannot be skipped.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     pt-BR:
-      state: borrador
+      state: aprobado
       text: Hoje, acrescentar mais uma opção leva minutos, e a pergunta sobre se vale a pena é cada vez mais fácil de ignorar. O Manifiesto da Software Humano recupera essa pergunta e lhe dá um lugar no processo em que não pode ser ignorada.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
 fr:
   - FR-001
   - FR-002
@@ -48,24 +72,36 @@ sections:
   - id: acto-1
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Construir software es cada vez más fácil
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Building software is becoming easier
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Construir software está cada vez mais fácil
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     question:
       es:
-        state: borrador
+        state: aprobado
         text: Si construir dejó de ser el principal límite, ¿qué pasa a limitar la calidad?
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: If building is no longer the main constraint, what starts to limit quality?
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Se construir deixou de ser o principal limite, o que passa a limitar a qualidade?
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -74,23 +110,29 @@ sections:
           derivedFrom: proposito-del-documento-04
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 La inteligencia artificial redujo el costo de generar código, pantallas, textos y automatizaciones. Equipos pequeños construyen hoy productos que antes exigían organizaciones enteras, y una buena decisión puede llegar a manos de las personas en días.
 
                 Esa velocidad es una oportunidad real. También mueve el límite: cuando construir deja de ser lo difícil, lo difícil pasa a ser decidir qué merece existir y cómo debe sentirse al usarlo.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 Artificial intelligence has reduced the cost of generating code, screens, copy, and automations. Today, small teams build products that once required entire organizations, and a good decision can reach people in days.
 
                 That speed is a real opportunity. It also shifts the boundary: when building is no longer the hard part, the hard part becomes deciding what deserves to exist and what using it should feel like.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 A inteligência artificial reduziu o custo de gerar código, telas, textos e automações. Hoje, times pequenos constroem produtos que antes exigiam organizações inteiras, e uma boa decisão pode chegar às mãos das pessoas em dias.
 
                 Essa velocidade é uma oportunidade real. Ela também desloca o limite: quando construir deixa de ser a parte difícil, a dificuldade passa a ser decidir o que merece existir e qual deve ser a sensação ao usá-lo.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - proposito-del-documento-03
@@ -99,14 +141,20 @@ sections:
   - id: acto-2
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Poder construir no significa deber construir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Being able to build does not mean we should build
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Poder construir não significa dever construir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -115,23 +163,29 @@ sections:
           derivedFrom: doctrina-para-desarrollo-con-ia-05
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 Construir software se abarató. El costo no desapareció: pasó a quien lo usa. Se paga en atención, en aprendizaje y en decisiones que nadie vino a tomar.
 
                 Cuando construir es barato, una idea débil se convierte rápido en una implementación extensa, y una ambigüedad de producto en un comportamiento que parece terminado. El código puede ser correcto y aun así dejar en manos de la persona la complejidad que el equipo no resolvió.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 Building software has become less expensive. The cost did not disappear: it shifted to the person using it. It is paid in attention, learning, and decisions no one came to make.
 
                 When building is inexpensive, a weak idea quickly becomes an extensive implementation, and product ambiguity becomes behavior that appears finished. The code may be correct and still leave the person to handle the complexity the team did not resolve.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 Construir software ficou mais barato. O custo não desapareceu: passou para a pessoa que o utiliza. Ele é pago em atenção, aprendizado e decisões que ninguém veio tomar.
 
                 Quando construir é barato, uma ideia fraca se transforma rapidamente em uma implementação extensa, e uma ambiguidade de produto, em um comportamento que parece concluído. O código pode estar correto e, ainda assim, deixar nas mãos da pessoa a complexidade que o time não resolveu.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: comparacion
         sistema:
           id: inicio-acto-2-sistema
@@ -139,28 +193,40 @@ sections:
           derivedFrom: p03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**System-centered response.** When a form is submitted with missing information, the page reloads, erases what was entered, and displays “Validation error” at the top. The system fulfilled its role: it rejected incomplete information. The person using it has to guess what was missing and enter everything again."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Resposta centrada no sistema.** Ao enviar um formulário com um dado faltando, a página recarrega, apaga o que foi escrito e mostra “Erro de validação” na parte superior. O sistema cumpriu seu papel: rejeitou um dado incompleto. A pessoa que o utiliza tem que adivinhar o que faltou e escrever tudo novamente."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
         persona:
           id: inicio-acto-2-persona
           type: example
           derivedFrom: p02
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**Person-centered response.** The form retains what was entered, indicates next to the field what is missing, and explains what is expected. The validation rule is the same; what changes is how much work falls on the person using it."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Resposta centrada na pessoa.** O formulário preserva o que foi escrito, indica ao lado do campo o que está faltando e explica o que se espera. A regra de validação é a mesma; o que muda é quanto trabalho recai sobre a pessoa que o utiliza."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - doctrina-para-desarrollo-con-ia-04
@@ -169,14 +235,20 @@ sections:
   - id: acto-3
     title:
       es:
-        state: borrador
+        state: aprobado
         text: El progreso humano es el producto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Human progress is the product
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O progresso humano é o produto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -185,23 +257,29 @@ sections:
           derivedFrom: texto-canonico-07
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 La tesis cabe en una idea: el producto no es el software, sino el progreso que una persona consigue con él. Por eso la experiencia no es un acabado que se agrega al final; forma parte de la función.
 
                 Un sistema que entrega el resultado correcto, pero obliga a interpretar la interfaz, recordar convenciones o temer equivocarse, todavía no resolvió el problema. Solo lo trasladó.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 The thesis fits into one idea: the product is not the software, but the progress a person achieves with it. That is why experience is not a finishing touch added at the end; it is part of the function.
 
                 A system that delivers the correct outcome but forces people to interpret the interface, remember conventions, or fear making a mistake has still not solved the problem. It has only transferred it.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 A tese cabe em uma ideia: o produto não é o software, mas o progresso que uma pessoa alcança com ele. Por isso, a experiência não é um acabamento acrescentado ao final; ela faz parte da função.
 
                 Um sistema que entrega o resultado correto, mas obriga as pessoas a interpretar a interface, lembrar convenções ou temer errar, ainda não resolveu o problema. Apenas o transferiu.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - texto-canonico-03
@@ -211,14 +289,20 @@ sections:
   - id: acto-4
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Diez principios para decidir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Ten principles for making decisions
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Dez princípios para decidir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -227,27 +311,39 @@ sections:
           derivedFrom: principios-de-diseno-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Los principios no son aspiraciones. Cada uno tiene que poder cambiar una decisión, detener una implementación o exigir más evidencia; si una frase no tiene consecuencias prácticas, no cumple una función. Cada principio tiene su propia página, con su tensión, su significado, un ejemplo, un contraejemplo y las preguntas para usarlo en una revisión real.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: The principles are not aspirations. Each one must be able to change a decision, stop an implementation, or require more evidence; if a statement has no practical consequences, it serves no function. Each principle has its own page, with its tension, meaning, an example, a counterexample, and the questions for using it in an actual review.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Os princípios não são aspirações. Cada um tem que poder mudar uma decisão, interromper uma implementação ou exigir mais evidência; se uma frase não tem consequências práticas, ela não cumpre uma função. Cada princípio tem sua própria página, com sua tensão, seu significado, um exemplo, um contraexemplo e as perguntas para usá-lo em uma revisão real.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: principios
     depth: []
   - id: acto-5
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Del principio a la decisión
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: From principle to decision
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Do princípio à decisão
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -256,14 +352,20 @@ sections:
           derivedFrom: principios-de-diseno-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Un principio sirve cuando cambia lo que se hace. Hay tres formas en que puede actuar sobre una decisión concreta.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: A principle is useful when it changes what is done. There are three ways it can act on a specific decision.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Um princípio é útil quando muda o que é feito. Há três maneiras pelas quais ele pode atuar sobre uma decisão concreta.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: entrada
         entrada:
           id: inicio-acto-5-cambia
@@ -271,14 +373,20 @@ sections:
           derivedFrom: p06
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Cambia una decisión.** Una pantalla de inicio presenta cinco acciones con el mismo peso. Con `P06` en la mesa, la pregunta es qué necesita la persona en ese momento: queda una acción principal y el resto aparece donde el contexto lo vuelve relevante."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**It changes a decision.** A home screen presents five actions with the same weight. With `P06` on the table, the question is what the person needs at that moment: one primary action remains, and the rest appear where the context makes them relevant."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Muda uma decisão.** Uma tela inicial apresenta cinco ações com o mesmo peso. Com `P06` em discussão, a questão é o que a pessoa precisa naquele momento: resta uma ação principal, e as demais aparecem onde o contexto as torna relevantes."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: entrada
         entrada:
           id: inicio-acto-5-evidencia
@@ -286,14 +394,20 @@ sections:
           derivedFrom: p01
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**It requires evidence.** A story says, “As a student, I want to receive hints for solving derivatives.” With `P01`, the question is when the blockage appears and how progress would be recognized. Until there is an observation to support it, the story is a hypothesis to be tested, not a requirement."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Exige evidência.** Uma história diz: “Como estudante, quero receber dicas para resolver derivadas”. Com `P01`, a pergunta é quando o bloqueio aparece e como o avanço seria reconhecido. Enquanto não houver uma observação que a respalde, a história é uma hipótese a ser testada, não um requisito."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: entrada
         entrada:
           id: inicio-acto-5-detiene
@@ -301,14 +415,20 @@ sections:
           derivedFrom: p10
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Detiene una implementación.** Un asistente reescribe textos y los publica sin vista previa. Con `P10`, la implementación se detiene hasta que la persona pueda revisar, aceptar o rechazar el cambio antes de que se publique."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**It stops an implementation.** An assistant rewrites copy and publishes it without a preview. With `P10`, the implementation stops until the person can review, accept, or reject the change before it is published."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Interrompe uma implementação.** Um assistente reescreve textos e os publica sem pré-visualização. Com `P10`, a implementação é interrompida até que a pessoa possa revisar, aceitar ou rejeitar a alteração antes que ela seja publicada."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: comparacion
         sistema:
           id: inicio-acto-5-sin-principio
@@ -316,28 +436,40 @@ sections:
           derivedFrom: p07
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Sin el principio.** Un agente de código termina una tarea y responde «listo». Para saber qué cambió, hay que revisar todo y confiar en su tono."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**Without the principle.** A coding agent finishes a task and replies “done.” To know what changed, you have to review everything and trust its tone."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Sem o princípio.** Um agente de código termina uma tarefa e responde “pronto”. Para saber o que mudou, é preciso revisar tudo e confiar no tom dele."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
         persona:
           id: inicio-acto-5-con-principio
           type: example
           derivedFrom: p07
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "**Con el principio.** El agente muestra qué archivos cambió, qué decidió por su cuenta y cómo deshacerlo. La confianza descansa en evidencia, no en el tono."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "**With the principle.** The agent shows which files it changed, what it decided on its own, and how to undo it. Trust rests on evidence, not tone."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "**Com o princípio.** O agente mostra quais arquivos alterou, o que decidiu por conta própria e como desfazer as alterações. A confiança se apoia em evidências, não no tom."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - guia-de-bolsillo-20
@@ -348,14 +480,20 @@ sections:
   - id: acto-6
     title:
       es:
-        state: borrador
+        state: aprobado
         text: De la doctrina al desarrollo
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: From doctrine to development
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Da doutrina ao desenvolvimento
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -364,35 +502,47 @@ sections:
           derivedFrom: sh-fund
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 Los principios se vuelven práctica en un método: un fundamento de producto con autoridad, las Job Stories como forma de referencia, un flujo de ocho pasos, artefactos que existen solo si responden una pregunta, un contrato para agentes de código, razones explícitas para detenerse y una definición de terminado que no se conforma con código correcto.
 
                 [Ver cómo se construye con IA](/es/manifiesto/construir-con-ia).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 The principles become practice through a method: an authoritative product foundation, Job Stories as the reference form, an eight-step workflow, artifacts that exist only if they answer a question, a contract for coding agents, explicit reasons to stop, and a definition of done that is not satisfied with correct code.
 
                 [See how to build with AI](/manifesto/building-with-ai).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 Os princípios se tornam prática em um método: um fundamento de produto com autoridade, as Job Stories como forma de referência, um fluxo de oito passos, artefatos que existem apenas se respondem a uma pergunta, um contrato para agentes de código, razões explícitas para parar e uma definição de conclusão que não se contenta com código correto.
 
                 [Veja como construir com IA](/pt-br/manifesto/construir-com-ia).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
     depth: []
   - id: acto-7
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Una implementación mediante SpecKit
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: An implementation using SpecKit
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma implementação por meio do SpecKit
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -401,14 +551,20 @@ sections:
           derivedFrom: proposito-del-documento-21
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "The manifesto may be applied with any method. A reference implementation brings it to SpecKit: the core governs an operational constitution, that constitution constrains the coding agent, and SpecKit, adapted without modifying its code, organizes the specification, plan, tasks, analysis, and implementation. [How the adaptation works](/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "O manifesto pode ser aplicado com qualquer método. Uma implementação de referência o leva ao SpecKit: o núcleo governa uma constituição operacional, essa constituição condiciona o agente de código, e o SpecKit, adaptado sem modificar seu código, organiza a especificação, o plano, as tarefas, a análise e a implementação. [Como funciona a adaptação](/pt-br/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: estado-adaptacion
       - kind: entrada
         entrada:
@@ -416,11 +572,17 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Para seguir: [leer el manifiesto completo](/es/manifiesto), [recorrer los principios](/es/principios), [ver cómo se construye con IA](/es/manifiesto/construir-con-ia) o [conocer el estado de la adaptación](/es/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "To continue: [read the complete manifesto](/manifesto), [explore the principles](/principles), [see how to build with AI](/manifesto/building-with-ai), or [learn the status of the adaptation](/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Para continuar: [leia o manifesto completo](/pt-br/manifesto), [percorra os princípios](/pt-br/principios), [veja como construir com IA](/pt-br/manifesto/construir-com-ia) ou [conheça o estado da adaptação](/pt-br/speckit)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29

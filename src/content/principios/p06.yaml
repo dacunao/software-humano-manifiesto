@@ -16,81 +16,117 @@ entries:
     derivedFrom: principio-6-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Menús, alertas, animaciones, elecciones y textos compiten por la misma atención, que es finita. Una interfaz puede no tener errores y aun así fracasar por saturación.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Menus, alerts, animations, choices, and copy compete for the same attention, which is finite. An interface may have no errors and still fail because of saturation.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Menus, alertas, animações, escolhas e textos competem pela mesma atenção, que é finita. Uma interface pode não ter erros e, ainda assim, fracassar por saturação.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p06-significado
     type: explanation
     derivedFrom: principio-6-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "La atención se administra con la misma disciplina que el rendimiento o el costo: cada elemento visible y cada decisión solicitada tienen que justificar lo que consumen."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "Attention is managed with the same discipline as performance or cost: every visible element and every requested decision must justify what they consume."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "A atenção é administrada com a mesma disciplina que o desempenho ou o custo: cada elemento visível e cada decisão solicitada têm que justificar o que consomem."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p06-consecuencia
     type: explanation
     derivedFrom: principio-6-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Se jerarquiza por relevancia para el momento actual, no por igualdad entre funcionalidades. Las señales intensas se reservan para lo que de verdad requiere atención.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Hierarchy is established based on relevance to the current moment, not on equality among features. High-intensity signals are reserved for what truly requires attention.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Hierarquiza-se pela relevância para o momento atual, não pela igualdade entre funcionalidades. Os sinais intensos são reservados para o que realmente exige atenção.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p06-ejemplo
     type: example
     derivedFrom: p06
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Una página con una idea dominante por sección y una sola acción principal deja claro qué hacer después, sin pedir que la persona ordene opciones que el producto podía ordenar.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A page with one dominant idea per section and a single primary action makes it clear what to do next, without asking the person to organize options that the product could have organized.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma página com uma ideia dominante por seção e uma única ação principal deixa claro o que fazer em seguida, sem pedir que a pessoa organize opções que o produto poderia ter organizado.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p06-contraejemplo
     type: counterexample
     derivedFrom: principio-6-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Animaciones continuas, llamados simultáneos con el mismo peso o fondos que reducen la legibilidad del texto.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Continuous animations, simultaneous calls to action with the same weight, or backgrounds that reduce text readability.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Animações contínuas, chamadas simultâneas com o mesmo peso ou fundos que reduzem a legibilidade do texto.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p06-prueba
     type: decision-test
     derivedFrom: principio-6-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas ayudan a decidir qué puede quitarse sin perder información ni control.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions help determine what may be removed without losing information or control.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas ajudam a decidir o que pode ser removido sem perder informação nem controle.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

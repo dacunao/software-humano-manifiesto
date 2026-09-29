@@ -16,81 +16,117 @@ entries:
     derivedFrom: principio-8-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Nadie separa la interfaz, la ingeniería y el contenido: se experimenta un producto completo. Una inconsistencia pequeña se tolera; cien convierten el uso en fricción constante."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "No one separates the interface, engineering, and content: people experience a complete product. One small inconsistency is tolerated; a hundred turn its use into constant friction."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Ninguém separa a interface, a engenharia e o conteúdo: a experiência é a de um produto completo. Uma pequena inconsistência é tolerada; cem transformam o uso em atrito constante."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p08-significado
     type: explanation
     derivedFrom: principio-8-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Tipografía, textos, foco, estados vacíos, errores y transiciones forman una sola experiencia. Ningún detalle compensa por sí solo una mala solución, pero su acumulación refuerza o erosiona la confianza.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Typography, copy, focus, empty states, errors, and transitions form a single experience. No detail can compensate for a poor solution on its own, but their accumulation strengthens or erodes trust.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Tipografia, textos, foco, estados vazios, erros e transições formam uma única experiência. Nenhum detalhe compensa sozinho uma solução ruim, mas seu acúmulo fortalece ou corrói a confiança.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p08-consecuencia
     type: explanation
     derivedFrom: principio-8-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Se diseñan y se verifican también los estados menos frecuentes: vacío, carga, error, éxito y recuperación. Lenguaje, jerarquía y comportamiento se mantienen en todo el recorrido, y se revisa con contenido real antes de aprobar."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "Less frequent states are also designed and verified: empty, loading, error, success, and recovery. Language, hierarchy, and behavior are maintained throughout the journey, and the experience is reviewed with real content before approval."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Os estados menos frequentes também são projetados e verificados: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento são mantidos ao longo de todo o percurso, e a experiência é revisada com conteúdo real antes da aprovação."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p08-ejemplo
     type: example
     derivedFrom: p08
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Un enlace compartido abre exactamente la sección citada y en el idioma elegido. Nadie lo nota cuando funciona; todos lo notan cuando falla.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A shared link opens exactly the cited section and in the selected language. No one notices when it works; everyone notices when it fails.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Um link compartilhado abre exatamente a seção citada e no idioma escolhido. Ninguém percebe quando funciona; todos percebem quando falha.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p08-contraejemplo
     type: counterexample
     derivedFrom: principio-8-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Tratar los errores, la carga, las pantallas pequeñas o el teclado como terminaciones que se resuelven después.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Treating errors, loading, small screens, or keyboard use as finishing touches to be addressed later.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Tratar os erros, o carregamento, as telas pequenas ou o teclado como acabamentos a serem resolvidos depois.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p08-prueba
     type: decision-test
     derivedFrom: principio-8-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas buscan los detalles que contradicen la lógica del resto.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions look for details that contradict the logic of the rest.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas buscam os detalhes que contradizem a lógica do restante.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

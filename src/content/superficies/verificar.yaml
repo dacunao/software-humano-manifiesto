@@ -2,38 +2,56 @@
 id: verificar
 title:
   es:
-    state: borrador
+    state: aprobado
     text: "Verificar"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Verify
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Verificar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: "Doce dimensiones para aceptar una solución, un puntaje de decisión y las señales de que el producto se aleja del manifiesto."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Twelve dimensions for accepting a solution, a decision scorecard, and the signs that the product is moving away from the manifesto.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Doze dimensões para aceitar uma solução, uma pontuação de decisão e os sinais de que o produto está se afastando do manifesto.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-022
 sections:
   - id: dimensiones
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Doce dimensiones para aceptar una solución
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Twelve dimensions for accepting a solution
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Doze dimensões para aceitar uma solução
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -43,28 +61,40 @@ sections:
           derivedFrom: verificacion-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Aceptar exige evidencia. Que una pantalla se vea limpia o que el código compile no demuestra que el producto cumpla su propósito: la cobertura, el progreso, la comprensión, la carga, la confianza, el control y los estados también se verifican."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Acceptance requires evidence. A screen looking clean or the code compiling does not prove that the product fulfills its purpose: coverage, progress, understanding, load, trust, control, and states must also be verified."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Aceitar exige evidência. Uma tela parecer limpa ou o código compilar não demonstra que o produto cumpre seu propósito: a cobertura, o progresso, a compreensão, a carga, a confiança, o controle e os estados também são verificados."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: verificacion-03
         hasta: verificacion-04
   - id: sh-score
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Un puntaje para orientar la conversación
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A score to guide the conversation
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma pontuação para orientar a conversa
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -74,28 +104,40 @@ sections:
           derivedFrom: verificacion-06
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Once criterios se puntúan de 0 a 2. El puntaje no reemplaza el juicio: ordena la conversación y marca lo que no puede quedar en cero."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Eleven criteria are scored from 0 to 2. The score does not replace judgment: it structures the conversation and flags what cannot remain at zero."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o discernimento: ela organiza a conversa e sinaliza o que não pode permanecer em zero."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: verificacion-06
         hasta: verificacion-08
   - id: revision
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Preguntas para una revisión de producto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Questions for a product review
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Perguntas para uma revisão de produto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -105,28 +147,40 @@ sections:
           derivedFrom: verificacion-10
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Once preguntas para revisar una decisión de producto, incluida la más difícil: qué haría rechazar una implementación aunque funcione técnicamente."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Eleven questions for reviewing a product decision, including the hardest one: what would cause an implementation to be rejected even if it works technically."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Onze perguntas para revisar uma decisão de produto, incluindo a mais difícil: o que faria uma implementação ser rejeitada mesmo que funcione tecnicamente."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - verificacion-10
   - id: sh-ap
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Señales de que el producto se aleja
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Signs that the product is moving away
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Sinais de que o produto está se afastando
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -136,14 +190,20 @@ sections:
           derivedFrom: antipatrones-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Catorce antipatrones, cada uno con la forma en que aparece y su respuesta, y una advertencia: la simplicidad también puede ser una excusa para ocultar lo necesario."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Fourteen anti-patterns, each with the form it takes and its response, and a warning: simplicity may also be an excuse to hide what is necessary."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Catorze antipadrões, cada um com a forma como aparece e sua resposta, e uma advertência: a simplicidade também pode ser uma desculpa para ocultar o necessário."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: antipatrones-03
         hasta: antipatrones-06

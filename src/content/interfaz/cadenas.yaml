@@ -1,785 +1,1217 @@
 # Cadenas de interfaz (T026). Redactadas por el agente: todas en borrador hasta la aprobación de Damián Acuña.
 nav.saltar:
   es:
-    state: borrador
+    state: aprobado
     text: Ir al contenido
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Skip to content
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Ir para o conteúdo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.principal:
   es:
-    state: borrador
+    state: aprobado
     text: Navegación principal
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Main navigation
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Navegação principal
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.inicio:
   es:
-    state: borrador
+    state: aprobado
     text: Inicio
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Home
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Início
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.manifiesto:
   es:
-    state: borrador
+    state: aprobado
     text: Manifiesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Manifesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Manifiesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.principios:
   es:
-    state: borrador
+    state: aprobado
     text: Principios
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Principles
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Princípios
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.speckit:
   es:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.acerca:
   es:
-    state: borrador
+    state: aprobado
     text: Acerca de
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: About
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Sobre
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.estadoSpeckit:
   es:
-    state: borrador
+    state: aprobado
     text: no publicada
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: unpublished
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: não publicada
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.version:
   es:
-    state: borrador
+    state: aprobado
     text: Núcleo v{version}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Core v{version}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Núcleo v{version}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 idioma.rotulo:
   es:
-    state: borrador
+    state: aprobado
     text: Idioma
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Language
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Idioma
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.canonico:
   es:
-    state: borrador
+    state: aprobado
     text: Texto canónico
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Canonical text
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Texto canônico
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.traduccion:
   es:
-    state: borrador
+    state: aprobado
     text: Traducción del texto canónico. El original en español conserva la autoridad.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Translation of the canonical text. The Spanish original retains authority.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tradução do texto canônico. O original em espanhol conserva a autoridade.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.explicacion:
   es:
-    state: borrador
+    state: aprobado
     text: Explicación
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Explanation
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Explicação
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.ejemplo:
   es:
-    state: borrador
+    state: aprobado
     text: Ejemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Example
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Exemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.contraejemplo:
   es:
-    state: borrador
+    state: aprobado
     text: Contraejemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Counterexample
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Contraexemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.prueba:
   es:
-    state: borrador
+    state: aprobado
     text: Prueba de decisión
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Decision test
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Teste de decisão
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.inferencia:
   es:
-    state: borrador
+    state: aprobado
     text: Inferencia o propuesta
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Inference or proposal
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Inferência ou proposta
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.estadoTecnico:
   es:
-    state: borrador
+    state: aprobado
     text: Estado técnico confirmado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Confirmed technical status
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Estado técnico confirmado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.origen:
   es:
-    state: borrador
+    state: aprobado
     text: Se basa en
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Based on
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Baseia-se em
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.fuente:
   es:
-    state: borrador
+    state: aprobado
     text: Leer el pasaje completo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Read the complete passage
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Leia a passagem completa
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.profundizar:
   es:
-    state: borrador
+    state: aprobado
     text: Profundizar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Go deeper
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Aprofundar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 compartir.copiar:
   es:
-    state: borrador
+    state: aprobado
     text: Copiar enlace
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Copy link
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Copiar link
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 compartir.copiado:
   es:
-    state: borrador
+    state: aprobado
     text: Enlace copiado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Link copied
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Link copiado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 compartir.enlace:
   es:
-    state: borrador
+    state: aprobado
     text: Enlace a esta sección
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Link to this section
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Link para esta seção
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 compartir.error:
   es:
-    state: borrador
+    state: aprobado
     text: No se pudo copiar. El enlace está visible junto al título.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Could not copy. The link is visible next to the title.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Não foi possível copiar. O link está visível ao lado do título.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.licencia:
-  es: { state: borrador, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias." }
+  es: { state: aprobado, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not covered by those licenses.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.procedencia:
   es:
-    state: borrador
+    state: aprobado
     text: Procedencia
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Provenance
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Procedência
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.actualizado:
   es:
-    state: borrador
+    state: aprobado
     text: Actualizado el {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Updated on {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Atualizado em {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.estadoPreset:
   es:
-    state: borrador
+    state: aprobado
     text: "Adaptación SpecKit {version}: no publicada"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: "SpecKit adaptation {version}: unpublished"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "Adaptação para o SpecKit {version}: não publicada"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.declaracion:
   es:
-    state: borrador
+    state: aprobado
     text: Declaración
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Statement
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Declaração
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.tension:
   es:
-    state: borrador
+    state: aprobado
     text: Tensión
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Tension
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tensão
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.significado:
   es:
-    state: borrador
+    state: aprobado
     text: Significado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Meaning
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Significado
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.consecuencia:
   es:
-    state: borrador
+    state: aprobado
     text: Consecuencia
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Consequence
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Consequência
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.ejemplo:
   es:
-    state: borrador
+    state: aprobado
     text: Ejemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Example
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Exemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.contraejemplo:
   es:
-    state: borrador
+    state: aprobado
     text: Contraejemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Counterexample
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Contraexemplo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.prueba:
   es:
-    state: borrador
+    state: aprobado
     text: Prueba de decisión
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Decision test
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Teste de decisão
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 principio.fuente:
   es:
-    state: borrador
+    state: aprobado
     text: Fuente
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Source
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Fonte
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 manifiesto.version:
   es:
-    state: borrador
+    state: aprobado
     text: Versión {version} · {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Version {version} · {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Versão {version} · {fecha}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 error404.titulo:
   es:
-    state: borrador
+    state: aprobado
     text: No encontramos esta página
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: We could not find this page
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Não encontramos esta página
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 error404.texto:
   es:
-    state: borrador
+    state: aprobado
     text: "La dirección no existe o cambió. Estos son los puntos de partida del sitio:"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: "The address does not exist or has changed. These are the site's starting points:"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "O endereço não existe ou mudou. Estes são os pontos de partida do site:"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 acerca.contacto:
   es:
-    state: borrador
+    state: aprobado
     text: Contacto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Contact
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Contato
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.independiente:
-  es: { state: borrador, text: "Es una adaptación independiente." }
+  es: { state: aprobado, text: "Es una adaptación independiente.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: It is an independent adaptation.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: É uma adaptação independente.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.presets:
-  es: { state: borrador, text: "Usa los mecanismos nativos de personalización de SpecKit (presets)." }
+  es: { state: aprobado, text: "Usa los mecanismos nativos de personalización de SpecKit (presets).", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: It uses SpecKit's native customization mechanisms (presets).
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Usa os mecanismos nativos de personalização do SpecKit (presets).
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.core:
-  es: { state: borrador, text: "No modifica el código de SpecKit." }
+  es: { state: aprobado, text: "No modifica el código de SpecKit.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: It does not modify SpecKit's code.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Não modifica o código do SpecKit.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.validada:
-  es: { state: borrador, text: 'Validada técnicamente en la versión {version}, el {fecha}.' }
+  es: { state: aprobado, text: 'Validada técnicamente en la versión {version}, el {fecha}.', approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Technically validated in version {version}, on {fecha}.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Validada tecnicamente na versão {version}, em {fecha}.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.noPublicada:
-  es: { state: borrador, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones." }
+  es: { state: aprobado, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: It has not been published yet. When it is, the link and instructions will appear here.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Ainda não foi publicada. Quando for, o link e as instruções aparecerão aqui.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 estado.noOficial:
-  es: { state: borrador, text: "No es una integración oficial ni cuenta con respaldo de GitHub." }
+  es: { state: aprobado, text: "No es una integración oficial ni cuenta con respaldo de GitHub.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: It is not an official integration and is not endorsed by GitHub.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Não é uma integração oficial nem conta com o respaldo do GitHub.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 inicio.comenzar:
-  es: { state: borrador, text: "Comenzar por el problema" }
+  es: { state: aprobado, text: "Comenzar por el problema", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Start with the problem
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Começar pelo problema
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 inicio.principios:
-  es: { state: borrador, text: "Ir directo a los principios" }
+  es: { state: aprobado, text: "Ir directo a los principios", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Go directly to the principles
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Ir direto aos princípios
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 inicio.entrada:
-  es: { state: borrador, text: "Se puede leer el recorrido completo o entrar en cualquier punto; nada exige haber leído lo anterior." }
+  es: { state: aprobado, text: "Se puede leer el recorrido completo o entrar en cualquier punto; nada exige haber leído lo anterior.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: You can read it all the way through or enter at any point; nothing requires having read what came before.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Você pode ler o percurso completo ou entrar em qualquer ponto; nada exige ter lido o que veio antes.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 indice.enEstaPagina:
-  es: { state: borrador, text: "En esta página" }
+  es: { state: aprobado, text: "En esta página", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: On this page
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Nesta página
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 indice.rotulo:
-  es: { state: borrador, text: "Índice de la sección" }
+  es: { state: aprobado, text: "Índice de la sección", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Section index
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Índice da seção
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.manifiesto:
-  es: { state: borrador, text: "Comprender" }
+  es: { state: aprobado, text: "Comprender", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Understand
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Compreender
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.principios:
-  es: { state: borrador, text: "Decidir" }
+  es: { state: aprobado, text: "Decidir", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Decide
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Decidir
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.aplicacion:
-  es: { state: borrador, text: "Construir" }
+  es: { state: aprobado, text: "Construir", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Build
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Construir
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.verificacion:
-  es: { state: borrador, text: "Verificar" }
+  es: { state: aprobado, text: "Verificar", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Verify
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Verificar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.rotulo:
-  es: { state: borrador, text: "Ruta de lectura" }
+  es: { state: aprobado, text: "Ruta de lectura", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Reading path
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Rota de leitura
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 integro.descargas:
-  es: { state: borrador, text: "Descargar el núcleo" }
+  es: { state: aprobado, text: "Descargar el núcleo", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Download the core
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Baixar o núcleo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 integro.original:
-  es: { state: borrador, text: "Original en español (Markdown)" }
+  es: { state: aprobado, text: "Original en español (Markdown)", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Spanish original (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Original em espanhol (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 integro.traduccionEn:
-  es: { state: borrador, text: "Traducción al inglés (Markdown)" }
+  es: { state: aprobado, text: "Traducción al inglés (Markdown)", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: English translation (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tradução para o inglês (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 integro.traduccionPt:
-  es: { state: borrador, text: "Traducción al portugués de Brasil (Markdown)" }
+  es: { state: aprobado, text: "Traducción al portugués de Brasil (Markdown)", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Brazilian Portuguese translation (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tradução para o português do Brasil (Markdown)
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 indice.enEstaSeccion:
-  es: { state: borrador, text: "En esta sección" }
+  es: { state: aprobado, text: "En esta sección", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: In this section
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Nesta seção
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 ruta.practica:
-  es: { state: borrador, text: "Llevarlo a la práctica" }
+  es: { state: aprobado, text: "Llevarlo a la práctica", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Put it into practice
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Levá-lo à prática
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.anterior:
-  es: { state: borrador, text: "Anterior" }
+  es: { state: aprobado, text: "Anterior", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Previous
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Anterior
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.siguiente:
-  es: { state: borrador, text: "Siguiente" }
+  es: { state: aprobado, text: "Siguiente", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Next
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Próximo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.lectura:
-  es: { state: borrador, text: "Recorrido del núcleo" }
+  es: { state: aprobado, text: "Recorrido del núcleo", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Journey through the core
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Percurso do núcleo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 mapa.recorrido:
-  es: { state: borrador, text: "Las nueve divisiones" }
+  es: { state: aprobado, text: "Las nueve divisiones", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: The nine divisions
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: As nove divisões
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 verificar.relacionados:
-  es: { state: borrador, text: "También para verificar" }
+  es: { state: aprobado, text: "También para verificar", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Also for verification
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Também para verificar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 verificar.terminado:
-  es: { state: borrador, text: "Definición de terminado, en Gobernanza" }
+  es: { state: aprobado, text: "Definición de terminado, en Gobernanza", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Definition of done, in Governance
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Definição de conclusão, em Governança
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 contenido.fuenteNucleo:
-  es: { state: borrador, text: "Núcleo del manifiesto v{version}, sección {codigo}." }
+  es: { state: aprobado, text: "Núcleo del manifiesto v{version}, sección {codigo}.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Manifesto core v{version}, section {codigo}.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Núcleo do manifesto v{version}, seção {codigo}.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.traduccion:
-  es: { state: borrador, text: "Es una traducción; el original en español conserva la autoridad." }
+  es: { state: aprobado, text: "Es una traducción; el original en español conserva la autoridad.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: This is a translation; the Spanish original retains authority.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Esta é uma tradução; o original em espanhol conserva a autoridade.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.mapa:
-  es: { state: borrador, text: "Mapa del manifiesto" }
+  es: { state: aprobado, text: "Mapa del manifiesto", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Manifesto map
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Mapa do manifesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.abrir:
-  es: { state: borrador, text: "Buscar" }
+  es: { state: aprobado, text: "Buscar", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Search
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Buscar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.titulo:
-  es: { state: borrador, text: "Buscar en el sitio" }
+  es: { state: aprobado, text: "Buscar en el sitio", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Search the site
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Buscar no site
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.etiqueta:
-  es: { state: borrador, text: "Palabras o identificador, como CR03" }
+  es: { state: aprobado, text: "Palabras o identificador, como CR03", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Words or identifier, such as CR03
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Palavras ou identificador, como CR03
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.cargando:
-  es: { state: borrador, text: "Cargando el índice de búsqueda…" }
+  es: { state: aprobado, text: "Cargando el índice de búsqueda…", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Loading the search index…
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Carregando o índice de busca…
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.sinResultados:
-  es: { state: borrador, text: "Nada coincide con «{q}». Prueba con otras palabras o con menos palabras." }
+  es: { state: aprobado, text: "Nada coincide con «{q}». Prueba con otras palabras o con menos palabras.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Nothing matches “{q}”. Try different words or fewer words.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Nada corresponde a “{q}”. Tente usar outras palavras ou menos palavras.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.error:
-  es: { state: borrador, text: "No se pudo cargar el índice de búsqueda. La navegación del sitio sigue disponible." }
+  es: { state: aprobado, text: "No se pudo cargar el índice de búsqueda. La navegación del sitio sigue disponible.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: The search index could not be loaded. Site navigation remains available.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Não foi possível carregar o índice de busca. A navegação do site continua disponível.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.resultados:
-  es: { state: borrador, text: "Resultados: {n}" }
+  es: { state: aprobado, text: "Resultados: {n}", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: "Results: {n}"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "Resultados: {n}"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 busqueda.cerrar:
-  es: { state: borrador, text: "Cerrar" }
+  es: { state: aprobado, text: "Cerrar", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Close
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Fechar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.licenciasDetalle:
-  es: { state: borrador, text: "Qué puedes reutilizar" }
+  es: { state: aprobado, text: "Qué puedes reutilizar", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: What you may reuse
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: O que você pode reutilizar
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.editor:
-  es: { state: borrador, text: "Publicado por {editor}" }
+  es: { state: aprobado, text: "Publicado por {editor}", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Published by {editor}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Publicado por {editor}
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 pie.conocer:
-  es: { state: borrador, text: "Conoce la empresa" }
+  es: { state: aprobado, text: "Conoce la empresa", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Learn about the company
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Conheça a empresa
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 tema.oscuro:
-  es: { state: borrador, text: "Tema oscuro" }
+  es: { state: aprobado, text: "Tema oscuro", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Dark theme
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Tema escuro
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 tema.sistema:
-  es: { state: borrador, text: "Usar el del sistema" }
+  es: { state: aprobado, text: "Usar el del sistema", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Use the system theme
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Usar o tema do sistema
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 indice.contenido:
-  es: { state: borrador, text: "Contenido" }
+  es: { state: aprobado, text: "Contenido", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Contents
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Conteúdo
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 nav.menu:
-  es: { state: borrador, text: "Menú" }
+  es: { state: aprobado, text: "Menú", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: Menu
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Menu
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 social.alt:
-  es: { state: borrador, text: "Manifiesto, de Software Humano: «{frase}»" }
+  es: { state: aprobado, text: "Manifiesto, de Software Humano: «{frase}»", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
-    state: borrador
+    state: aprobado
     text: "Manifiesto, by Software Humano: “{frase}”"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "Manifiesto, da Software Humano: “{frase}”"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29

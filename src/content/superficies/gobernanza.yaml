@@ -2,24 +2,36 @@
 id: gobernanza
 title:
   es:
-    state: borrador
+    state: aprobado
     text: "Gobernanza"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Governance
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Governança
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: "Cómo convertir el manifiesto en una práctica habitual: responsabilidades, puntos de control, evolución y definición de terminado."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: "How to turn the manifesto into a regular practice: responsibilities, checkpoints, evolution, and definition of done."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: "Como transformar o manifesto em uma prática habitual: responsabilidades, pontos de controle, evolução e definição de conclusão."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-007
   - FR-022
@@ -27,14 +39,20 @@ sections:
   - id: sh-gov
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Una práctica habitual
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A regular practice
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma prática habitual
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -44,28 +62,40 @@ sections:
           derivedFrom: gobernanza-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "El manifiesto pierde valor si queda en una presentación inicial. Tiene que aparecer donde el equipo decide: cada rol tiene una obligación principal, y cada momento del desarrollo —antes de diseñar, de generar código, de integrar, de liberar y después— tiene una decisión que no se puede saltar."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "The manifesto loses value if it never goes beyond a kickoff presentation. It must appear wherever the team makes decisions: each role has one primary obligation, and each stage of development—before designing, generating code, integrating, releasing, and afterward—has a decision that cannot be skipped."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "O manifesto perde valor se ficar em uma apresentação inicial. Ele tem que aparecer onde o time decide: cada função tem uma obrigação principal, e cada momento do desenvolvimento —antes de projetar, de gerar código, de integrar, de liberar e depois— tem uma decisão que não pode ser ignorada."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: gobernanza-03
         hasta: gobernanza-07
   - id: evolucion
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Cómo cambia el manifiesto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: How the manifesto changes
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Como o manifesto muda
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -75,28 +105,40 @@ sections:
           derivedFrom: gobernanza-09
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Los principios son estables; las reglas y las pruebas pueden cambiar con evidencia nueva. Cada versión registra qué problema resolvió y qué conserva de la anterior.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: The principles are stable; the rules and tests may change with new evidence. Each version records what problem it solved and what it retains from the previous version.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Os princípios são estáveis; as regras e os testes podem mudar com nova evidência. Cada versão registra qual problema resolveu e o que conserva da anterior.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: gobernanza-09
         hasta: gobernanza-14
   - id: sh-done
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Qué significa terminado
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: What it means to be done
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O que significa estar concluído
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -106,14 +148,20 @@ sections:
           derivedFrom: sh-done
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Un desarrollo está terminado cuando cada elemento obligatorio tiene implementación y evidencia, o una excepción aprobada, y las personas alcanzan los resultados previstos. El código correcto forma parte de esa completitud; no la agota.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: Development is done when every required element has an implementation and evidence, or an approved exception, and people achieve the intended outcomes. Correct code is part of that completeness; it does not exhaust it.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Um desenvolvimento está concluído quando cada elemento obrigatório tem implementação e evidência, ou uma exceção aprovada, e as pessoas alcançam os resultados previstos. O código correto faz parte dessa completude; não a esgota.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - gobernanza-16

@@ -2,24 +2,36 @@
 id: principios
 title:
   es:
-    state: borrador
+    state: aprobado
     text: Principios
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Principles
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Princípios
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: Los diez principios del manifiesto, en su orden canónico.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: The manifesto's ten principles, in their canonical order.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Os dez princípios do manifesto, em sua ordem canônica.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-004
   - FR-007
@@ -27,14 +39,20 @@ sections:
   - id: coleccion
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Diez principios para decidir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Ten principles for making decisions
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Dez princípios para decidir
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: canon
         nodos:

@@ -18,81 +18,117 @@ entries:
     derivedFrom: principio-2-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Dos productos pueden entregar el mismo resultado y dejar a sus usuarios en estados muy distintos: uno con energía para seguir, otro con dudas, errores y ganas de abandonar. Ese desgaste rara vez aparece en una especificación técnica."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "Two products may deliver the same outcome and leave their users in very different states: one with the energy to continue, the other with doubts, errors, and the desire to give up. That toll rarely appears in a technical specification."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Dois produtos podem entregar o mesmo resultado e deixar seus usuários em estados muito diferentes: um com energia para continuar, outro com dúvidas, erros e vontade de desistir. Esse desgaste raramente aparece em uma especificação técnica."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p02-significado
     type: explanation
     derivedFrom: principio-2-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: El resultado de un producto incluye cuánto esfuerzo, incertidumbre y atención exige obtenerlo. Si algo funciona pero desgasta, todavía no funciona bien.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A product's outcome includes how much effort, uncertainty, and attention it takes to obtain it. If something works but wears people down, it still does not work well.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O resultado de um produto inclui quanto esforço, incerteza e atenção são necessários para obtê-lo. Se algo funciona, mas causa desgaste, ainda não funciona bem.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p02-consecuencia
     type: explanation
     derivedFrom: principio-2-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Esfuerzo, claridad y confianza entran en los criterios de aceptación, igual que la exactitud. Se prueba el recorrido completo, no cada pantalla por separado.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Effort, clarity, and trust are part of the acceptance criteria, just as accuracy is. The complete journey is tested, not each screen separately.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Esforço, clareza e confiança entram nos critérios de aceitação, assim como a exatidão. O percurso completo é testado, não cada tela separadamente.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p02-ejemplo
     type: example
     derivedFrom: p02
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Dos buscadores devuelven los mismos resultados. Uno muestra enseguida por qué coincide cada resultado; el otro obliga a abrirlos uno por uno para saberlo. Los dos son exactos; solo uno ahorra el trabajo de verificar.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Two search engines return the same results. One immediately shows why each result matches; the other forces people to open them one by one to find out. Both are accurate; only one saves the work of verifying.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Dois mecanismos de busca retornam os mesmos resultados. Um mostra imediatamente por que cada resultado corresponde à busca; o outro obriga a abri-los um a um para descobrir. Os dois são exatos; apenas um poupa o trabalho de verificar.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p02-contraejemplo
     type: counterexample
     derivedFrom: principio-2-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Dar por cumplido un requisito porque todo el texto está técnicamente disponible, aunque llegar a él exija luchar con la navegación, la tipografía o el movimiento.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Considering a requirement fulfilled because all the text is technically available, even though reaching it requires struggling with navigation, typography, or motion.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Considerar um requisito cumprido porque todo o texto está tecnicamente disponível, mesmo que chegar até ele exija lutar contra a navegação, a tipografia ou o movimento.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p02-prueba
     type: decision-test
     derivedFrom: principio-2-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Estas preguntas miden lo que una prueba técnica no ve: el costo de usar el producto."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "These questions measure what a technical test does not see: the cost of using the product."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Estas perguntas medem o que um teste técnico não vê: o custo de usar o produto."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

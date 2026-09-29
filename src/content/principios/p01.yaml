@@ -17,81 +17,117 @@ entries:
     derivedFrom: principio-1-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Un equipo puede entregar muchas funcionalidades y resolver poco. Cuando el trabajo se organiza por features o por perfiles genéricos, nadie tiene que explicar qué cambia para la persona después de usar el producto.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A team may deliver many features and solve very little. When work is organized around features or generic profiles, no one has to explain what changes for the person after using the product.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Um time pode entregar muitas funcionalidades e resolver pouco. Quando o trabalho é organizado por features ou por perfis genéricos, ninguém tem que explicar o que muda para a pessoa depois de usar o produto.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p01-significado
     type: explanation
     derivedFrom: principio-1-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Una capacidad importa solo cuando produce un cambio reconocible para alguien: pasar de una situación actual a un resultado buscado. Antes de diseñar una respuesta se describe cuándo surge la necesidad, qué la motiva y qué resultado permitiría reconocer el avance."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "A capability matters only when it produces a recognizable change for someone: moving from a current situation to a desired outcome. Before designing a response, describe when the need arises, what motivates it, and what outcome would make the progress recognizable."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Uma capacidade importa apenas quando produz uma mudança reconhecível para alguém: passar de uma situação atual a um resultado desejado. Antes de projetar uma resposta, descreve-se quando surge a necessidade, o que a motiva e qual resultado permitiria reconhecer o avanço."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p01-consecuencia
     type: explanation
     derivedFrom: principio-1-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Cada decisión tiene que poder rastrearse hasta el fundamento de producto que la justifica. Un pedido de funcionalidad se reformula como circunstancia, motivación y resultado antes de discutir soluciones, y esa formulación admite más de una respuesta, incluida la de no construir.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Every decision must be traceable to the product foundation that justifies it. A feature request is reframed as circumstance, motivation, and outcome before solutions are discussed, and that framing allows for more than one response, including not building anything.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Toda decisão tem que ser rastreável até o fundamento de produto que a justifica. Uma solicitação de funcionalidade é reformulada como circunstância, motivação e resultado antes que as soluções sejam discutidas, e essa formulação admite mais de uma resposta, incluindo a de não construir.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p01-ejemplo
     type: example
     derivedFrom: p01
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "Un pedido llega como «agregar un botón de exportar». Reformulado, dice: cuando alguien tiene que presentar sus datos a otra persona, necesita llevarlos fuera de la herramienta sin rehacer el trabajo. Esa formulación admite un botón, un enlace para compartir o un informe automático, y permite elegir la respuesta que menos carga agrega."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "A request arrives as “add an export button.” Reframed, it says: when someone has to present their data to another person, they need to take it out of the tool without redoing the work. This framing allows for a button, a sharing link, or an automated report, and makes it possible to choose the response that adds the least load."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "Uma solicitação chega como “adicionar um botão de exportação”. Reformulada, diz: quando alguém tem que apresentar seus dados a outra pessoa, precisa levá-los para fora da ferramenta sem refazer o trabalho. Essa formulação admite um botão, um link para compartilhar ou um relatório automático, e permite escolher a resposta que acrescenta menos carga."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p01-contraejemplo
     type: counterexample
     derivedFrom: principio-1-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Describir un sitio como una colección de páginas o de efectos. La lista de lo que contiene no dice qué comprensión o capacidad obtiene quien lo recorre.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Describing a site as a collection of pages or effects. The list of what it contains does not reveal what understanding or capability someone gains by going through it.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Descrever um site como uma coleção de páginas ou efeitos. A lista do que ele contém não diz que compreensão ou capacidade obtém a pessoa que o percorre.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p01-prueba
     type: decision-test
     derivedFrom: principio-1-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Una decisión está lista cuando estas preguntas tienen respuesta con evidencia, no con intuición.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A decision is ready when these questions have answers supported by evidence, not intuition.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma decisão está pronta quando estas perguntas têm respostas respaldadas por evidência, não por intuição.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

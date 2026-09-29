@@ -16,81 +16,117 @@ entries:
     derivedFrom: principio-4-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Un producto mínimo puede ser fácil el primer día y limitante el décimo. Uno que muestra toda su potencia desde el inicio puede resultar inabordable. Los dos extremos fallan, por razones opuestas.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A minimal product may be easy on the first day and limiting on the tenth. One that shows its full power from the outset may be overwhelming. Both extremes fail, for opposite reasons.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Um produto mínimo pode ser fácil no primeiro dia e limitante no décimo. Um produto que mostra toda a sua potência desde o início pode ser difícil de abordar. Os dois extremos falham, por razões opostas.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p04-significado
     type: explanation
     derivedFrom: principio-4-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: "La simplicidad no reduce la capacidad: decide cuándo aparece. Lo visible se adapta al momento, a la experiencia y a la decisión actual, y la profundidad queda disponible sin imponerse."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: "Simplicity does not reduce capability: it determines when it appears. What is visible adapts to the moment, the person's level of experience, and the current decision, while depth remains available without being imposed."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: "A simplicidade não reduz a capacidade: ela decide quando aparece. O que está visível se adapta ao momento, à experiência e à decisão atual, e a profundidade fica disponível sem ser imposta."
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p04-consecuencia
     type: explanation
     derivedFrom: principio-4-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Primero se muestra la ruta principal; las opciones avanzadas aparecen cuando el contexto las vuelve relevantes. Los valores predeterminados se eligen con cuidado y pueden cambiarse cuando la decisión importa.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: The primary path is shown first; advanced options appear when the context makes them relevant. Defaults are chosen carefully and may be changed when the decision matters.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Primeiro, mostra-se a rota principal; as opções avançadas aparecem quando o contexto as torna relevantes. Os valores padrão são escolhidos com cuidado e podem ser alterados quando a decisão importa.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p04-ejemplo
     type: example
     derivedFrom: p04
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Cada principio de este sitio se entiende en su página sin abrir nada; quien quiere el texto completo, las reglas o las pruebas los encuentra a un paso, en el mismo lugar.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Each principle on this site can be understood on its page without opening anything; anyone who wants the complete text, the rules, or the tests finds them one step away, in the same place.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Cada princípio deste site pode ser entendido em sua página sem abrir nada; quem quiser o texto completo, as regras ou os testes os encontra a um passo, no mesmo lugar.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p04-contraejemplo
     type: counterexample
     derivedFrom: principio-4-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Una portada mínima que oculta el contenido, o una página inicial que lo muestra todo a la vez.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A minimal landing page that hides the content, or a home page that shows everything at once.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma página de entrada mínima que oculta o conteúdo ou uma página inicial que mostra tudo de uma vez.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p04-prueba
     type: decision-test
     derivedFrom: principio-4-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas distinguen la simplificación que quita ruido de la que quita capacidad.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions distinguish simplification that removes noise from simplification that removes capability.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas distinguem a simplificação que remove ruído daquela que remove capacidade.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

@@ -2,24 +2,36 @@
 id: speckit
 title:
   es:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: SpecKit
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: Una implementación de referencia independiente del manifiesto sobre SpecKit, su estado real y sus límites.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: An independent reference implementation of the manifesto built on SpecKit, its actual status, and its limits.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Uma implementação de referência independente do manifesto sobre o SpecKit, seu estado real e seus limites.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-008
   - FR-009
@@ -28,14 +40,20 @@ sections:
   - id: que-es
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Qué es y qué no es
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: What it is and what it is not
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O que é e o que não é
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -44,25 +62,37 @@ sections:
           derivedFrom: proposito-del-documento-13
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "SpecKit es una herramienta de desarrollo guiado por especificaciones: ordena el trabajo en especificar, aclarar, planificar, dividir en tareas, analizar, implementar y converger. No define el manifiesto ni el producto. La adaptación Software Humano lo usa para que la doctrina esté presente mientras un agente de código trabaja. Es una forma de aplicar el manifiesto, no el manifiesto."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "SpecKit is a specification-driven development tool: it organizes work into specifying, clarifying, planning, breaking down into tasks, analyzing, implementing, and converging. It does not define the manifesto or the product. The Software Humano adaptation uses it to keep the doctrine present while a coding agent works. It is a way to apply the manifesto, not the manifesto itself."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "O SpecKit é uma ferramenta de desenvolvimento guiado por especificações: organiza o trabalho em especificar, esclarecer, planejar, dividir em tarefas, analisar, implementar e convergir. Ele não define o manifesto nem o produto. A adaptação da Software Humano o utiliza para que a doutrina esteja presente enquanto um agente de código trabalha. É uma forma de aplicar o manifesto, não o próprio manifesto."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: capas
     title:
       es:
-        state: borrador
-        text: Cuatro capas, cada una con su autoridad
+        state: aprobado
+        text: Cinco capas, cada una con su autoridad
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
-        text: Four layers, each with its own authority
+        state: aprobado
+        text: Five layers, each with its own authority
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
-        text: Quatro camadas, cada uma com sua autoridade
+        state: aprobado
+        text: Cinco camadas, cada uma com sua autoridade
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -71,40 +101,52 @@ sections:
           derivedFrom: proposito-del-documento-21
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 - **El núcleo del manifiesto** gobierna los principios, el flujo, los artefactos y los criterios de aceptación.
                 - **La constitución operativa** es el núcleo completo, instalado donde el agente lo lee antes de cada operación. Condiciona su actuación.
                 - **El anexo de aplicación** define cómo se corresponde cada obligación del núcleo con una operación de SpecKit.
                 - **El preset, la extensión y el workflow Software Humano** materializan esa correspondencia. El preset agrega a cada operación lo que el manifiesto exige en ella; la extensión comprueba que los artefactos lo tengan; el workflow pone las compuertas que el manifiesto nombra.
                 - **SpecKit nativo** conserva su comportamiento en todo lo que la adaptación no toca.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 - **The manifesto core** governs the principles, workflow, artifacts, and acceptance criteria.
                 - **The operational constitution** is the complete core, installed where the agent reads it before every operation. It constrains the agent's actions.
                 - **The application annex** defines how each core obligation maps to a SpecKit operation.
                 - **The Software Humano preset, extension, and workflow** implement that mapping. The preset adds to each operation what the manifesto requires there; the extension checks that the artifacts contain it; the workflow puts in place the gates named by the manifesto.
                 - **Native SpecKit** retains its behavior in everything the adaptation does not touch.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 - **O núcleo do manifesto** governa os princípios, o fluxo, os artefatos e os critérios de aceitação.
                 - **A constituição operacional** é o núcleo completo, instalado onde o agente o lê antes de cada operação. Ela condiciona sua atuação.
                 - **O anexo de aplicação** define como cada obrigação do núcleo corresponde a uma operação do SpecKit.
                 - **O preset, a extensão e o workflow da Software Humano** materializam essa correspondência. O preset acrescenta a cada operação o que o manifesto exige nela; a extensão verifica se os artefatos contêm isso; o workflow estabelece os pontos de controle que o manifesto nomeia.
                 - **O SpecKit nativo** conserva seu comportamento em tudo o que a adaptação não modifica.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: conserva
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Qué conserva y qué cambia
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: What it retains and what it changes
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O que conserva e o que muda
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -113,24 +155,36 @@ sections:
           derivedFrom: proposito-del-documento-21
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Los comandos nativos conservan su descripción, su encadenamiento y sus scripts, y la lista de verificación nativa queda intacta. Lo que cambia es el contenido de las plantillas: cada operación incorpora, citado textualmente del núcleo, lo que el manifiesto exige en ese momento, y los artefactos del núcleo aparecen donde corresponden. Nada de esto requiere modificar el código de SpecKit."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "The native commands retain their descriptions, chaining, and scripts, and the native checklist remains intact. What changes is the content of the templates: each operation incorporates what the manifesto requires at that point, quoted verbatim from the core, and the core artifacts appear where they belong. None of this requires modifying SpecKit's code."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Os comandos nativos conservam sua descrição, seu encadeamento e seus scripts, e a lista de verificação nativa permanece intacta. O que muda é o conteúdo dos modelos: cada operação incorpora, citado textualmente do núcleo, o que o manifesto exige naquele momento, e os artefatos do núcleo aparecem onde correspondem. Nada disso exige modificar o código do SpecKit."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: estado
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Estado actual
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Current status
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estado atual
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: estado-adaptacion

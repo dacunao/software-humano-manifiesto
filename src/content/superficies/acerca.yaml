@@ -2,38 +2,56 @@
 id: acerca
 title:
   es:
-    state: borrador
+    state: aprobado
     text: Acerca de
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: About
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Sobre
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: Origen, autoría, versiones, procedencia y licencias del sitio.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: The site's origin, authorship, versions, provenance, and licenses.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Origem, autoria, versões, procedência e licenças do site.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-012
 sections:
   - id: origen
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Origen
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Origin
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Origem
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -53,14 +71,20 @@ sections:
   - id: influencias
     title:
       es:
-        state: borrador
+        state: aprobado
         text: "Influencias y fuentes"
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Influences and sources
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Influências e fontes
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -70,25 +94,37 @@ sections:
           derivedFrom: influencias-y-notas-04
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "El manifiesto recoge cuatro ideas de Craft: que forma y función van juntas; que una herramienta se mide por la energía y la capacidad que deja en quien la usa; que la complejidad debe aparecer cuando se necesita; y el enfoque *human first*, frente a sistemas que obligan a las personas a acomodarse a su estructura. De Jobs to Be Done conserva el progreso como referencia superior, y de las Job Stories, la forma de llevarlo al diseño: circunstancia, motivación, resultado y evidencia. Fuentes: [Acerca de Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) y [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "The manifesto draws four ideas from Craft: that form and function go together; that a tool is measured by the energy and capability it leaves its user with; that complexity must appear when it is needed; and the *human first* approach, as opposed to systems that force people to adapt to their structure. From Jobs to Be Done, it retains progress as the highest-order reference, and from Job Stories, the form for bringing it into design: circumstance, motivation, outcome, and evidence. Sources: [About Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) and [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "O manifesto reúne quatro ideias do Craft: que forma e função caminham juntas; que uma ferramenta é medida pela energia e pela capacidade que deixa em quem a utiliza; que a complexidade deve aparecer quando é necessária; e a abordagem *human first*, em oposição a sistemas que obrigam as pessoas a se adaptar à sua estrutura. De Jobs to Be Done, conserva o progresso como referência superior e, das Job Stories, a forma de levá-lo ao design: circunstância, motivação, resultado e evidência. Fontes: [Sobre o Craft](https://www.craft.do/es/about); Balint Orosz, [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3) (2024) e [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours) (2025); Alan Klement, [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/) (Intercom, 2013)."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: autoria
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Autoría y versiones
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Authorship and versions
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Autoria e versões
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -96,34 +132,46 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 El manifiesto y este sitio son obra de Damián Acuña. El texto publicado corresponde al núcleo del manifiesto, versión 2.1, de septiembre de 2026.
 
                 Una versión nueva no reemplaza en silencio a la anterior: se registra qué cambió y se revisan las páginas que dependen de ella.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 The manifesto and this site are the work of Damián Acuña. The published text corresponds to version 2.1 of the manifesto core, from September 2026.
 
                 A new version does not silently replace the previous one: what changed is recorded, and the pages that depend on it are reviewed.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 O manifesto e este site são obra de Damián Acuña. O texto publicado corresponde ao núcleo do manifesto, versão 2.1, de setembro de 2026.
 
                 Uma nova versão não substitui silenciosamente a anterior: registra-se o que mudou e revisam-se as páginas que dependem dela.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: software-humano
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Software Humano y el Manifiesto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Software Humano and Manifiesto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Software Humano e Manifiesto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -131,26 +179,38 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "El Manifiesto es obra de Damián Acuña. Lo publica y lo cuida **Software Humano**, la agencia que crea productos digitales bajo esta doctrina y acepta ser evaluada con ella. Cada sitio tiene su trabajo: este explica, fundamenta y gobierna; a Software Humano le corresponde presentar su propuesta y sus productos, en su propio sitio. Por eso aquí no hay oferta comercial, y los pasajes del núcleo se leen completos solo en este sitio."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Manifiesto is the work of Damián Acuña. It is published and maintained by **Software Humano**, the agency that creates digital products under this doctrine and accepts being evaluated by it. Each site has its role: this one explains, provides the rationale, and governs; Software Humano is responsible for presenting its offering and its products on its own site. That is why there is no commercial offering here, and the core passages can be read in full only on this site."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Manifiesto é obra de Damián Acuña. Ele é publicado e mantido pela **Software Humano**, a agência que cria produtos digitais sob esta doutrina e aceita ser avaliada por ela. Cada site tem sua função: este explica, fundamenta e governa; cabe à Software Humano apresentar sua proposta e seus produtos em seu próprio site. Por isso, não há oferta comercial aqui, e as passagens do núcleo só podem ser lidas na íntegra neste site."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: editor
   - id: procedencia
     title:
       es:
-        state: borrador
+        state: aprobado
         text: De dónde viene cada texto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Where each text comes from
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: De onde vem cada texto
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -158,34 +218,46 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 El sitio distingue y rotula cada clase de contenido. El **texto canónico** se muestra tal como está en el manifiesto. Las **explicaciones**, los **ejemplos** y las **pruebas** se redactan para el sitio a partir de un pasaje identificado, que siempre se puede abrir. Las **traducciones** conservan la referencia al original en español, que es el que tiene autoridad. El **estado técnico** de la adaptación a SpecKit se muestra como un dato verificado, con su versión y su fecha.
 
                 Todo el contenido vive en archivos versionados: cada cambio queda registrado con quién lo aprobó y qué idiomas afecta.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 The site distinguishes and labels each class of content. The **canonical text** is shown as it appears in the manifesto. The **explanations**, **examples**, and **tests** are written for the site based on an identified passage, which can always be opened. The **translations** retain the reference to the Spanish original, which is authoritative. The **technical status** of the adaptation to SpecKit is shown as verified data, with its version and date.
 
                 All content lives in versioned files: every change is recorded along with who approved it and which languages it affects.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 O site distingue e rotula cada classe de conteúdo. O **texto canônico** é mostrado como está no manifesto. As **explicações**, os **exemplos** e os **testes** são redigidos para o site a partir de uma passagem identificada, que sempre pode ser aberta. As **traduções** conservam a referência ao original em espanhol, que conserva a autoridade. O **estado técnico** da adaptação ao SpecKit é mostrado como um dado verificado, com sua versão e sua data.
 
                 Todo o conteúdo vive em arquivos versionados: cada alteração fica registrada com quem a aprovou e quais idiomas afeta.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: independencia
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Una iniciativa independiente
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: An independent initiative
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Uma iniciativa independente
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -193,25 +265,37 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Software Humano no tiene afiliación con las empresas, herramientas ni autores que lo influyeron. La adaptación a SpecKit es una implementación de referencia independiente, sin respaldo de GitHub.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: Software Humano is not affiliated with the companies, tools, or authors that influenced it. The adaptation to SpecKit is an independent reference implementation, without GitHub's endorsement.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: A Software Humano não tem afiliação com as empresas, ferramentas nem autores que a influenciaram. A adaptação ao SpecKit é uma implementação de referência independente, sem o respaldo do GitHub.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: licencias
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Licencias
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Licenses
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Licenças
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -219,7 +303,7 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | Licencia | Qué puedes hacer |
                 |---|---|---|
@@ -228,8 +312,10 @@ sections:
                 | Código del sitio | [MIT](https://opensource.org/license/mit) | Usarlo, modificarlo y distribuirlo conservando el aviso de copyright y la licencia |
                 | Método para SpecKit (preset y herramientas), cuando se publique | [MIT](https://opensource.org/license/mit) | Lo mismo |
                 | Los nombres «Software Humano» y «Manifiesto», y el logotipo | Reservados | No forman parte de esas licencias. Una adaptación no debe presentarse como oficial, certificada ni respaldada por Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | License | What you may do |
                 |---|---|---|
@@ -238,8 +324,10 @@ sections:
                 | Site code | [MIT](https://opensource.org/license/mit) | Use, modify, and distribute it while retaining the copyright notice and license |
                 | Method for SpecKit (preset and tools), when published | [MIT](https://opensource.org/license/mit) | The same |
                 | The names “Software Humano” and “Manifiesto,” and the logo | Reserved | They are not covered by those licenses. An adaptation must not be presented as official, certified, or endorsed by Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | Licença | O que você pode fazer |
                 |---|---|---|
@@ -248,3 +336,5 @@ sections:
                 | Código do site | [MIT](https://opensource.org/license/mit) | Usá-lo, modificá-lo e distribuí-lo, mantendo o aviso de direitos autorais e a licença |
                 | Método para SpecKit (preset e ferramentas), quando publicado | [MIT](https://opensource.org/license/mit) | O mesmo |
                 | Os nomes “Software Humano” e “Manifiesto”, e o logotipo | Reservados | Não fazem parte dessas licenças. Uma adaptação não deve ser apresentada como oficial, certificada nem respaldada pela Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29

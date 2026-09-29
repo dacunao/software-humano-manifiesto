@@ -17,81 +17,117 @@ entries:
     derivedFrom: principio-3-07
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Cuando la interfaz replica la arquitectura, la persona tiene que aprender cómo se construyó el producto antes de obtener algo de él. Esa transferencia parece inevitable solo porque le resulta cómoda al equipo.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: When the interface mirrors the architecture, the person has to learn how the product was built before getting anything from it. That transfer seems inevitable only because it is convenient for the team.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Quando a interface replica a arquitetura, a pessoa tem que aprender como o produto foi construído antes de obter algo dele. Essa transferência parece inevitável apenas porque é conveniente para o time.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   significado:
     id: p03-significado
     type: explanation
     derivedFrom: principio-3-05
     text:
       es:
-        state: borrador
+        state: aprobado
         text: El dominio puede exigir reglas, integraciones y excepciones. El equipo absorbe esa complejidad y la presenta como decisiones comprensibles; las tablas y los estados internos no dictan el lenguaje ni la navegación.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: The domain may require rules, integrations, and exceptions. The team absorbs that complexity and presents it as understandable decisions; internal tables and states do not dictate the language or navigation.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O domínio pode exigir regras, integrações e exceções. O time absorve essa complexidade e a apresenta como decisões compreensíveis; as tabelas e os estados internos não ditam a linguagem nem a navegação.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   consecuencia:
     id: p03-consecuencia
     type: explanation
     derivedFrom: principio-3-09
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Los conceptos internos se traducen al modelo mental de quien usa el producto. El sistema resuelve lo que puede resolver con el contexto disponible, y una excepción solo se muestra a quien realmente debe decidirla.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Internal concepts are translated into the mental model of the person using the product. The system resolves what it can with the available context, and an exception is shown only to the person who actually must decide it.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Os conceitos internos são traduzidos para o modelo mental da pessoa que usa o produto. O sistema resolve o que pode com o contexto disponível, e uma exceção só é mostrada à pessoa que realmente deve decidi-la.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   ejemplo:
     id: p03-ejemplo
     type: example
     derivedFrom: p03
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Un servicio de envíos necesita saber si un paquete es nacional o internacional. En lugar de preguntarlo, lo deduce de la dirección de destino y solo pide los datos de aduana cuando corresponden.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A shipping service needs to know whether a package is domestic or international. Instead of asking, it infers this from the destination address and requests customs information only when applicable.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Um serviço de entregas precisa saber se um pacote é nacional ou internacional. Em vez de perguntar, ele deduz isso pelo endereço de destino e só solicita os dados aduaneiros quando são necessários.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   contraejemplo:
     id: p03-contraejemplo
     type: counterexample
     derivedFrom: principio-3-12
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Abrir una explicación con rutas de archivos, configuraciones o comandos antes de que la persona entienda para qué sirven.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Opening an explanation with file paths, configurations, or commands before the person understands what they are for.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Começar uma explicação com caminhos de arquivos, configurações ou comandos antes que a pessoa entenda para que servem.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
   prueba:
     id: p03-prueba
     type: decision-test
     derivedFrom: principio-3-11
     text:
       es:
-        state: borrador
+        state: aprobado
         text: Estas preguntas separan los pasos que existen por la persona de los que existen por el sistema.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: These questions separate the steps that exist for the person from those that exist for the system.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Estas perguntas separam os passos que existem para a pessoa daqueles que existem para o sistema.
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29

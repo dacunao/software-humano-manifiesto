@@ -2,38 +2,56 @@
 id: construir
 title:
   es:
-    state: borrador
+    state: aprobado
     text: "Construir con IA"
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Building with AI
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Construir com IA
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
-    state: borrador
+    state: aprobado
     text: "Doctrina para desarrollar con IA, el flujo de trabajo, cuándo detenerse y el contrato del agente."
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   en:
-    state: borrador
+    state: aprobado
     text: Doctrine for developing with AI, the workflow, when to stop, and the agent contract.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: borrador
+    state: aprobado
     text: Doutrina para desenvolver com IA, o fluxo de trabalho, quando parar e o contrato do agente.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-007
 sections:
   - id: doctrina
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Cuando construir cuesta menos
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: When building costs less
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Quando construir custa menos
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -43,28 +61,40 @@ sections:
           derivedFrom: doctrina-para-desarrollo-con-ia-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "La IA abarata construir y, con eso, mueve el cuello de botella: la pregunta deja de ser si algo puede hacerse y pasa a ser si merece existir. Seis directivas ponen límites al trabajo de equipos y agentes, y una tabla separa lo que debe ser determinista de lo que admite generación."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "AI lowers the cost of building and, in doing so, shifts the bottleneck: the question is no longer whether something can be built, but whether it deserves to exist. Six directives set boundaries for the work of teams and agents, and a table separates what must be deterministic from what allows generation."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "A IA reduz o custo de construir e, com isso, desloca o gargalo: a questão deixa de ser se algo pode ser feito e passa a ser se merece existir. Seis diretrizes estabelecem limites para o trabalho de times e agentes, e uma tabela separa o que deve ser determinístico do que admite geração."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: doctrina-para-desarrollo-con-ia-03
         hasta: doctrina-para-desarrollo-con-ia-13
   - id: flujo
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Un flujo del fundamento a la verificación
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: A workflow from foundation to verification
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Um fluxo do fundamento à verificação
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -74,28 +104,40 @@ sections:
           derivedFrom: flujo-de-trabajo-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "El flujo evita que generar código sea el primer acto de diseño. Ocho pasos llevan del fundamento a una solución verificable: comprender, establecer cobertura, planificar, concretar el progreso, definir la experiencia, modelar reglas y riesgos, explorar, y construir verificando. Descomponer el trabajo no autoriza a omitir parte del alcance."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "The workflow prevents code generation from becoming the first act of design. Eight steps lead from the foundation to a verifiable solution: understand, establish coverage, plan, make progress concrete, define the experience, model rules and risks, explore, and build while verifying. Breaking down the work does not authorize omitting any part of the scope."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "O fluxo evita que gerar código seja o primeiro ato de design. Oito passos levam do fundamento a uma solução verificável: compreender, estabelecer a cobertura, planejar, concretizar o progresso, definir a experiência, modelar regras e riscos, explorar e construir verificando. Decompor o trabalho não autoriza omitir parte do escopo."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: flujo-de-trabajo-03
         hasta: flujo-de-trabajo-04
   - id: artefactos
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Artefactos que responden preguntas
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: Artifacts that answer questions
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Artefatos que respondem a perguntas
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -105,28 +147,40 @@ sections:
           derivedFrom: flujo-de-trabajo-06
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Cada artefacto existe para responder una pregunta, no para llenar una plantilla. Si la información ya existe, se referencia. Si un artefacto no cambia una decisión ni ayuda a verificarla, sobra.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: Every artifact exists to answer a question, not to fill out a template. If the information already exists, it is referenced. If an artifact does not change a decision or help verify it, it is unnecessary.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Cada artefato existe para responder a uma pergunta, não para preencher um modelo. Se a informação já existe, ela é referenciada. Se um artefato não muda uma decisão nem ajuda a verificá-la, ele é desnecessário.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: flujo-de-trabajo-06
         hasta: flujo-de-trabajo-07
   - id: sh-stop
     title:
       es:
-        state: borrador
+        state: aprobado
         text: Cuándo detenerse
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: When to stop
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: Quando parar
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -136,28 +190,40 @@ sections:
           derivedFrom: sh-stop
           text:
             es:
-              state: borrador
+              state: aprobado
               text: Un agente no debería empezar a construir si no puede decir cuál es el fundamento, qué alcance establece, qué evidencia lo respalda y qué tiene que decidir la persona. Las siete razones para detener una implementación que ya está en marcha están en la [Guía de bolsillo](/es/manifiesto/guia-de-bolsillo#sh-pocket).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: An agent should not start building if it cannot state what the foundation is, what scope it establishes, what evidence supports it, and what the person must decide. The seven reasons to stop an implementation already underway are in the [Pocket guide](/manifesto/pocket-guide#sh-pocket).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: Um agente não deveria começar a construir se não consegue dizer qual é o fundamento, que escopo ele estabelece, que evidência o respalda e o que a pessoa deve decidir. As sete razões para interromper uma implementação que já está em andamento estão no [Guia de bolso](/pt-br/manifesto/guia-de-bolso#sh-pocket).
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: flujo-de-trabajo-09
         hasta: flujo-de-trabajo-11
   - id: contrato
     title:
       es:
-        state: borrador
+        state: aprobado
         text: El contrato del agente
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       en:
-        state: borrador
+        state: aprobado
         text: The agent contract
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: borrador
+        state: aprobado
         text: O contrato do agente
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     depth: []
     blocks:
       - kind: entrada
@@ -167,14 +233,20 @@ sections:
           derivedFrom: contrato-reutilizable-03
           text:
             es:
-              state: borrador
+              state: aprobado
               text: "Ocho instrucciones que pueden incorporarse a un repositorio o al pedido que recibe un agente de código: construir lo más simple que cumpla, comprender antes de programar, dar cuenta de todo el alcance, proponer con alternativas, no exponer estructuras internas, usar la IA con límites, no agregar lo que nadie pidió y reconciliar antes de declarar terminado."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             en:
-              state: borrador
+              state: aprobado
               text: "Eight instructions that may be incorporated into a repository or into the request a coding agent receives: build the simplest thing that fulfills the requirements, understand before coding, account for the entire scope, propose alternatives, do not expose internal structures, use AI within limits, do not add what no one asked for, and reconcile before declaring the work done."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: borrador
+              state: aprobado
               text: "Oito instruções que podem ser incorporadas a um repositório ou à solicitação recebida por um agente de código: construir a solução mais simples que cumpra os requisitos, compreender antes de programar, dar conta de todo o escopo, propor com alternativas, não expor estruturas internas, usar a IA com limites, não acrescentar o que ninguém pediu e reconciliar antes de declarar o trabalho concluído."
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         desde: contrato-reutilizable-03
         hasta: contrato-reutilizable-23
