@@ -1,7 +1,9 @@
 # Registros de revisión exigidos por la comprobación previa a la publicación (T023).
-# Solo una persona los completa: revisor o autoridad, con fecha. El agente no los escribe.
+# Solo una persona los firma: revisor o autoridad, con fecha. El agente los registra por instrucción expresa.
+# 2026-09-29: Damián Acuña firmó en la conversación las tres revisiones (inglés, portugués de Brasil y
+# neutralidad del español), tras la verificación en cuatro capas (RQ-19) y la prueba de voseo (T098).
 linguistica:
-  en: null
-  pt-BR: null
+  en: { by: Damián Acuña, at: '2026-09-29' }
+  pt-BR: { by: Damián Acuña, at: '2026-09-29' }
 neutralidad:
-  es: null
+  es: { by: Damián Acuña, at: '2026-09-29' }

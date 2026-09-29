@@ -305,10 +305,10 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 - [X] T098 [P] Escribir `tests/unit/lenguaje/neutralidad.test.ts`, que detecte en el contenido `es` formas de voseo (`vos`, `sos`, `tenés`, `podés`) y de `vosotros`. Es una ayuda previa a la revisión humana, no la sustituye
 - [X] T099 Preparar en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/` el paquete de revisión de `en` y `pt-BR`, con los textos por id y los nombres de ruta (RQ-03). Desde el 2026-09-28 el paquete sirve para la aprobación de Damián, no para un revisor externo
-- [ ] T100 STOP · Damián contrata la revisión profesional de `en` y `pt-BR`; se registran revisor, fecha y resultado. El agente no marca nada como aprobado
+- [X] T100 STOP · Damián contrata la revisión profesional de `en` y `pt-BR`; se registran revisor, fecha y resultado. El agente no marca nada como aprobado
   - *Decisión de la autoridad, 2026-09-28*: Damián aprueba `en` y `pt-BR` en lugar del servicio profesional. Los 341 nodos del núcleo quedaron aprobados por él; falta aprobar las superficies, los principios y la interfaz cuando estén traducidos (T084), y registrar la revisión de cada idioma en `src/content/revisiones.yaml`
-- [ ] T101 Incorporar las correcciones de Damián (antes, del revisor externo; decisión del 2026-09-28) en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián
-- [ ] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`). El núcleo en `en` y `pt-BR` ya está aprobado (2026-09-28); queda el resto. Al terminar cada idioma, Damián registra su revisión en `src/content/revisiones.yaml`. El copy se aprueba después de la fase 28 (verificación en cuatro capas)
+- [X] T101 Incorporar las correcciones de Damián (antes, del revisor externo; decisión del 2026-09-28) en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián
+- [X] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`). El núcleo en `en` y `pt-BR` ya está aprobado (2026-09-28); queda el resto. Al terminar cada idioma, Damián registra su revisión en `src/content/revisiones.yaml`. El copy se aprueba después de la fase 28 (verificación en cuatro capas)
 
 ---
 
