@@ -553,3 +553,19 @@ Fuente: PRD v1.6 (`FR-020`, `AC-14`), decisiones de Damián Acuña del 2026-09-2
 Fuente: decisión de Damián Acuña (2026-09-28), con fundamento en PRD §18.2 (la navegación global, incluidos idioma y búsqueda, disponible desde cualquier superficie), `V04` y la especificación visual §7.1.
 
 - [X] T180 Cabecera siempre visible al desplazarse: una barra de ancho completo, fija arriba, con el fondo del lienzo y su borde inferior, sin sombras; el índice lateral, «En esta sección», el «Contenido» de teléfono y los saltos a anclas se ubican debajo de ella sin quedar tapados; el menú de teléfono sigue desplegándose bajo la barra; prueba e2e en escritorio y teléfono per PRD §18.2, `V04`, especificación visual §7.1 (missing)
+
+---
+
+## Phase 28: Verificación de las traducciones en cuatro capas
+
+Fuente: decisión de Damián Acuña (2026-09-29), RQ-19; `AC-13`, PRD §19.4 y §27.4. Alcance: el núcleo (341 nodos) y el copy (superficies, principios e interfaz) en `en` y `pt-BR`. El español es la referencia. Las herramientas se ejecutan en desarrollo; nada de esto llega al sitio publicado.
+
+- [ ] T181 Asignar a cada nodo del núcleo y a cada texto del copy su nivel de relevancia (1, 2 o 3) con la regla determinista de RQ-19, en `scripts/traduccion/relevancia.ts`, con una prueba que verifique que ningún texto queda sin nivel per RQ-19, `AC-13`
+- [ ] T182 Capa 1 · Construir `scripts/traduccion/glosario.yaml` (español → inglés → portugués) a partir del núcleo aprobado, incluidas las correcciones del 2026-09-28 (`trust`, `deliveries`, `done`, «Jobs to Be Done de nível superior»), y escribir `tests/unit/lenguaje/terminologia.test.ts`, que falle cuando una traducción use una variante prohibida o no use el término fijado. Aplica a todo per RQ-19, `AC-13`
+- [ ] T183 Capa 2 · Instalar LanguageTool localmente (autorización de Damián para la instalación) y escribir `scripts/traduccion/gramatica.ts`, que revise todos los textos `en` (en-GB) y `pt-BR` y guarde el informe en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/capas/`, separando hallazgos de falsos positivos per RQ-19
+- [ ] T184 STOP · Damián crea las cuentas y claves de la capa 3 (un modelo de otra familia en su capa gratuita, por ejemplo Gemini Flash) y de la capa 4 (DeepL Developer), y las deja como variables de entorno locales fuera del repositorio. El agente no crea cuentas ni ingresa credenciales
+- [ ] T185 Capa 3 · Escribir `scripts/traduccion/mqm.ts`: anotación de errores estilo MQM (omisión, adición, cambio de sentido, terminología, fluidez; gravedad menor, mayor o crítica) sobre cada par español–traducción, en lotes, empezando por el nivel 1, con una indicación fija y registrada. Informe en `evidencia/revision-linguistica/capas/` per RQ-19
+- [ ] T186 Capa 4 · Escribir `scripts/traduccion/contraste.ts`: traducción independiente con DeepL del nivel 1 completo y de lo marcado por las capas 1 a 3 en los niveles 2 y 3; registrar los caracteres consumidos y comparar el significado con nuestra traducción. Informe en `evidencia/revision-linguistica/capas/` per RQ-19
+- [ ] T187 Consolidar en `evidencia/revision-linguistica/verificacion-cuatro-capas.md` la lista priorizada por nivel, gravedad y coincidencia entre capas, con el español, la traducción, lo que señala cada capa y una propuesta de corrección. Separar los defectos del español: los del núcleo, como propuesta separada; los del copy, para T102 per RQ-19
+- [ ] T188 STOP · Damián decide qué correcciones se aplican
+- [ ] T189 Aplicar las correcciones aprobadas: un nodo del núcleo corregido vuelve a `borrador` hasta su nueva aprobación. Volver a ejecutar las capas 1 y 2 sobre lo corregido y actualizar la evidencia per RQ-19, `AC-13`

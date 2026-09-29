@@ -216,3 +216,38 @@ Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el c
 - **Rationale**: `FR-023` ya exige búsqueda estática, sin terceros, sin registrar lo que se busca, cargada al abrir, con el sitio completo sin JavaScript y cada pasaje una vez; Pagefind lo cumple con nuestros registros. Aporta raíces en tres idiomas (`P05`: encontrar sin adivinar la forma exacta de la palabra), subresultados (`P06`) y búsqueda futura entre los dos sitios de la marca.
 - **Costo medido** sobre el sitio (2026-09-28): la primera búsqueda descarga unos 97 KB comprimidos (motor, trabajador y WebAssembly del idioma) más los fragmentos del índice. El motor propio descargaba unos 33 KB. En los dos casos, solo al abrir la búsqueda.
 - **Alternatives considered**: mejorar el motor propio con raíces y jerarquía (sin resaltado, filtros ni búsqueda entre sitios); Pagefind rastreando el HTML con su interfaz (no sigue la especificación visual y la unicidad dependería de marcar a mano qué ignorar). Corrección de un análisis anterior: la API de Node permite conservar la unicidad, algo que no se consideró al descartar Pagefind.
+
+---
+
+## RQ-19 · Verificación de las traducciones en cuatro capas (2026-09-29)
+
+- **Decision** (Damián Acuña, 2026-09-29): el núcleo (341 nodos) y el copy del sitio (superficies, principios e interfaz) en `en` y `pt-BR` pasan por cuatro capas antes de darse por buenos. **El español es siempre la referencia**; las traducciones se desarrollan sobre él y nunca al revés.
+  1. **Terminología**: un glosario español → inglés → portugués tomado del núcleo aprobado, comprobado por una prueba determinista.
+  2. **Ortografía y gramática**: LanguageTool, de código abierto, instalado localmente, con inglés británico (la ortografía del núcleo aprobado) y portugués de Brasil.
+  3. **Segunda opinión sobre el significado**: anotación de errores al estilo MQM (omisión, adición, cambio de sentido, terminología, con gravedad) por un modelo de otra familia que la que tradujo, en su capa gratuita.
+  4. **Traducción de contraste**: una traducción independiente con DeepL (plan Developer, un millón de caracteres en total); las diferencias de significado con la nuestra se revisan.
+- **Uso costo-efectivo**: la atención se reparte por **relevancia**, que se asigna de forma determinista:
+  - **Nivel 1**, lo que obliga, define o se ve primero:
+    - el texto canónico y la tesis;
+    - de cada principio (`P01`–`P10`), la declaración, las reglas y las pruebas;
+    - `SH-FUND`, `D01`–`D06`, `F01`–`F08`, `SH-STOP`, `CR01`–`CR08`, `O01`–`O09`, `V01`–`V12`, `SH-SCORE`, `SH-DONE`, `SH-POCKET` y `STOP01`–`STOP07`;
+    - la portada, los títulos, el menú y la interfaz.
+  - **Nivel 2**: las explicaciones del núcleo, las tablas de relación, los antipatrones y el copy editorial de divisiones y principios.
+  - **Nivel 3**: ejemplos, fuentes, notas, influencias y control de cambios.
+
+  Las capas 1 y 2 son gratuitas y locales, y recorren todo. La capa 3 recorre todo en lotes, empezando por el nivel 1. La capa 4 cubre el nivel 1 completo y, de los niveles 2 y 3, solo lo que marquen las capas 1 a 3; así se conserva la mayor parte del cupo de DeepL para cambios futuros.
+
+  La lista final se ordena por nivel, gravedad y cantidad de capas que coinciden, para que la lectura humana se concentre en pocos pasajes.
+- **Reglas**:
+  - **Defectos del español.** Si una capa revela un defecto o una ambigüedad del español, no se corrige la traducción para compensarlo. Si está en el núcleo, que es una fuente protegida, se registra como propuesta separada. Si está en el copy, se detiene y se presenta a la autoridad (T102).
+  - **Traducciones aprobadas.** Una corrección a un nodo aprobado lo devuelve a `borrador` hasta que Damián lo apruebe de nuevo.
+  - **Claves.** Las claves de las cuentas externas las crea Damián y quedan fuera del repositorio (`.env*` está ignorado).
+- **Rationale**: `AC-13` y PRD §27.4 exigen una revisión lingüística y doctrinal. Sin un hablante nativo, estas capas no certifican el texto, pero encuentran lo sospechoso y dirigen la atención humana. La investigación del 2026-09-29 descartó dos opciones:
+  - xCOMET y CometKiwi, porque su licencia no permite el uso comercial;
+  - la retrotraducción sola, porque su fiabilidad es discutida.
+
+  La revisión humana nativa (Weblate o Crowdin comunitarios) queda disponible, pero no forma parte de esta decisión.
+- **Alternatives considered**:
+  - aprobar sin más verificación, lo que deja el riesgo sin atender;
+  - pasar las cuatro capas sobre todo el texto por igual, lo que gasta el cupo de DeepL y la atención humana en ejemplos y notas;
+  - MetricX-24 como puntaje de riesgo, opcional: necesita GPU y no fue evaluado con portugués.
