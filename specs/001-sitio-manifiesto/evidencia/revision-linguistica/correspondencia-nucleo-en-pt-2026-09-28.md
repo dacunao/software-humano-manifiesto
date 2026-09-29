@@ -44,7 +44,7 @@ Esta es una verificación del agente. **No es la revisión profesional de T100 n
 
 Por decisión de Damián Acuña (2026-09-28), estas traducciones son la base de los 341 nodos canónicos en `src/content/traducciones-canon/`, en estado `borrador`. La alineación de bloques a nodos fue exacta en los dos idiomas. Se aplicaron 19 correcciones: las observaciones anteriores, salvo tres que se dejaron como estaban:
 
-- la pregunta 9 (bloque 384), a la espera de que el autor aclare su sentido;
+- la pregunta 9 (bloque 384): el autor confirmó el 2026-09-28 que significa «qué puede quedar para después» (P04), como la traducen «what can wait?» y «o que pode esperar?»;
 - el sujeto del bloque 129, porque el español admite las dos lecturas;
 - «jornada» y «percurso» en portugués, porque unificarlos obliga a cambiar la concordancia de género y ambos son usuales en Brasil.
 
