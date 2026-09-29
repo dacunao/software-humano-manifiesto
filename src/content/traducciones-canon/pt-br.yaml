@@ -434,9 +434,9 @@ entries:
   principio-2-03:
     sourceHash: 05e52489dad1d9828102025c546ef3a6b6534cfe70e49c5dc0c7c16af4c12407
     state: aprobada
-    text: Se funciona mas desgasta, ainda não funciona bem.
+    text: Se funciona, mas desgasta, ainda não funciona bem.
     approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
+    approvedAt: 2026-09-29
   principio-2-04:
     sourceHash: 60a6117a450f0ae64201ccf9f61b9ebeacefb65cc00f1e21cab5b5e0390c010b
     state: aprobada
