@@ -1,6 +1,7 @@
 /**
  * Copiar o compartir con confirmación clara (FR-011, PRD §17 P10). Mejora progresiva: sin este
- * script el enlace sigue visible y copiable. No envía datos a ningún servicio.
+ * script el enlace a la sección sigue visible y copiable; con él, solo queda «Copiar enlace». No envía
+ * datos a ningún servicio.
  */
 function mejorar(caja: HTMLElement): void {
   const boton = caja.querySelector<HTMLButtonElement>('[data-copiar]');
@@ -9,6 +10,9 @@ function mejorar(caja: HTMLElement): void {
   const titulo = caja.dataset['titulo'] ?? document.title;
   if (!boton || !estado) return;
   boton.hidden = false;
+  // Con el botón disponible, el enlace a la misma sección sobra (T218, P05): queda solo sin JavaScript.
+  const enlace = caja.querySelector<HTMLAnchorElement>('a.enlace-seccion');
+  if (enlace) enlace.hidden = true;
   boton.addEventListener('click', async () => {
     estado.textContent = '';
     try {

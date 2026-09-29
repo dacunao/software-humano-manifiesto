@@ -23,11 +23,20 @@ test.describe('JS-08 · Compartir una idea precisa', () => {
     expect(browserName).toBe('chromium');
   });
 
-  test('escenario 3 · sin JavaScript el enlace de la sección está visible y es estable', async ({ page }) => {
+  test('escenario 3 · sin JavaScript el enlace de la sección está visible y es estable', async ({ page, javaScriptEnabled }) => {
+    test.skip(javaScriptEnabled, 'con JavaScript el respaldo se oculta (T218)');
     await page.goto('/es/manifiesto/construir-con-ia');
     const enlace = page.locator('.compartir').first().getByRole('link', { name: 'Enlace a esta sección' });
     await expect(enlace).toBeVisible();
     await expect(enlace).toHaveAttribute('href', /^\/es\/[a-z/-]+(#[a-z0-9-]+)?$/);
+  });
+
+  test('con JavaScript, cada sección muestra solo «Copiar enlace» (T218)', async ({ page, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'solo con JavaScript');
+    await page.goto('/es/manifiesto/mapa');
+    const caja = page.locator('section#portada .compartir');
+    await expect(caja.getByRole('button', { name: 'Copiar enlace' })).toBeVisible();
+    await expect(caja.locator('a.enlace-seccion')).toBeHidden();
   });
 
   test('escenario 4 · cada sección de una división tiene su enlace, sin símbolos al pasar el cursor (T139)', async ({ page }) => {
