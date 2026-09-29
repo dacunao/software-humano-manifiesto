@@ -52,3 +52,17 @@ Distinción obligatoria (`AGENTS.md`, regla 5): **hecho** es lo medido en el sit
 - **11–12 · Control y determinismo:** sí.
 - **13 · Alternativa más simple:** algunas redundancias (H4, H5, H7).
 - **14 · Evidencia de terminado:** falta la de personas (H1) y la de calidad en todo el sitio (H2).
+
+## 4. Evaluación de la autoridad (2026-09-28)
+
+**Corrección de un hecho.** Damián Acuña declara que los comentarios que entregó en la conversación provienen de personas que usan el sitio durante la revisión previa a su publicación. Por tanto, **H1 y H9 partían de una premisa falsa**: sí hubo evidencia de personas, pero llegó por medio de la autoridad y sin registrar su origen, así que el agente no pudo verla como tal. Lo que falta no es la evidencia, sino su registro con circunstancia y resultado (`V03`). Queda constancia en `pruebas-comprension.md` y en el registro del piloto (C5).
+
+Con esa corrección, los criterios «Job Stories aplicables» y «Progreso del usuario» pasan de **0** a **1**: hay evidencia de uso real, pero no está vinculada a la circunstancia de cada historia.
+
+| # | Decisión | Consecuencia |
+|---|---|---|
+| H1 | Premisa corregida | No se congela nada; la ronda (T086) sigue siendo una puerta de Damián |
+| H2 | **Aceptado** | Se ejecutan T088–T092, ya registradas |
+| H3, H4, H7 | No seleccionados | No se registran tareas |
+| H5, H6, H8 | Observar | Se cambian solo si las personas que revisan muestran que confunden |
+| H9 | No se adopta la regla | Premisa corregida: los cambios respondían a quienes revisan |

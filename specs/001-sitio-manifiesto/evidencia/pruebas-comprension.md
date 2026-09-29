@@ -80,3 +80,18 @@ Observaciones de quien modera (P02: ¿terminó con energía o con desgaste?):
 ## Notas de las sesiones
 
 _Vacío hasta que empiecen las sesiones de la ronda temprana._
+
+### Revisión previa a la publicación (constancia de origen, 2026-09-28)
+
+Damián Acuña declara que los comentarios que entregó durante el desarrollo provienen de personas que usan el sitio en su revisión previa a la publicación. No hay notas por sesión con la plantilla anterior; estas son las observaciones que llegaron por ese medio y lo que cambiaron:
+
+| Observación | Cambio |
+|---|---|
+| El texto único del núcleo es una muralla y tiene contenidos duplicados | División del núcleo en nueve divisiones sin duplicados (PRD v1.2, RQ-15) |
+| Falta una búsqueda como la de los sitios de documentación | Búsqueda por idioma (FR-023, RQ-16) |
+| La cabecera cambia de altura según el idioma | Altura única en los tres idiomas |
+| El aviso de versión preliminar y «Olvidar mi elección» no aportan | Se retiraron |
+| El menú superior debería estar siempre presente | Cabecera fija (T180) |
+| Aspecto visual | Sistema visual v1.0, aprobado (T171) |
+
+Estas observaciones no reemplazan la ronda de T086, que sigue siendo una puerta de Damián.
