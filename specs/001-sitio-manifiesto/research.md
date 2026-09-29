@@ -223,7 +223,7 @@ Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el c
 
 - **Decision** (Damián Acuña, 2026-09-29): el núcleo (341 nodos) y el copy del sitio (superficies, principios e interfaz) en `en` y `pt-BR` pasan por cuatro capas antes de darse por buenos. **El español es siempre la referencia**; las traducciones se desarrollan sobre él y nunca al revés.
   1. **Terminología**: un glosario español → inglés → portugués tomado del núcleo aprobado, comprobado por una prueba determinista.
-  2. **Ortografía y gramática**: LanguageTool, de código abierto, instalado localmente, con inglés británico (la ortografía del núcleo aprobado) y portugués de Brasil.
+  2. **Ortografía y gramática**: LanguageTool, de código abierto, instalado localmente, con inglés estadounidense y portugués de Brasil. *Enmienda del 2026-09-29*: Damián fijó el inglés estadounidense; el núcleo aprobado, que usaba ortografía británica, se convierte (T190).
   3. **Segunda opinión sobre el significado**: anotación de errores al estilo MQM (omisión, adición, cambio de sentido, terminología, con gravedad) por un modelo de otra familia que la que tradujo, en su capa gratuita.
   4. **Traducción de contraste**: una traducción independiente con DeepL (plan Developer, un millón de caracteres en total); las diferencias de significado con la nuestra se revisan.
 - **Uso costo-efectivo**: la atención se reparte por **relevancia**, que se asigna de forma determinista:

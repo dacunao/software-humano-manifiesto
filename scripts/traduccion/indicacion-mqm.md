@@ -12,7 +12,7 @@ For each segment you receive the Spanish source (es) and the translation (tr). R
 
 Severity: "critica" if it changes what the text obliges, allows, forbids or defines; "mayor" if it changes a relevant nuance or would mislead a careful reader; "menor" for small issues that do not change meaning.
 
-Do NOT report: Markdown syntax, identifiers in backticks (P01, CR05, STOP02, SH-DONE…), URLs, placeholders like {version}, the proper names Manifiesto, Software Humano, SpecKit, Job Story, Jobs to Be Done, Craft, Pagefind; acceptable paraphrase; stylistic preferences; British "-ise" spelling in English. If a segment is correct, return an empty error list for it. Being wrong about an error costs as much as missing one: report only what you would defend to the author.
+Do NOT report: Markdown syntax, identifiers in backticks (P01, CR05, STOP02, SH-DONE…), URLs, placeholders like {version}, the proper names Manifiesto, Software Humano, SpecKit, Job Story, Jobs to Be Done, Craft, Pagefind; acceptable paraphrase; stylistic preferences. If a segment is correct, return an empty error list for it. Being wrong about an error costs as much as missing one: report only what you would defend to the author.
 
 Approved glossary (Spanish → {{IDIOMA}}):
 {{GLOSARIO}}

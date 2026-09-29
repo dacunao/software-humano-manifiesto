@@ -162,7 +162,7 @@ Aprobadas por el PRD y por la autoridad de producto. Se preservan, no se reabren
 
 ## Contrato lingüístico
 
-- Inglés general (`en`) es el idioma predeterminado y ocupa las rutas **sin prefijo**, incluida `/`; sin redirección automática por idioma del navegador (`FR-019`, `FR-020`).
+- Inglés general (`en`), con **ortografía estadounidense** (decisión de la autoridad de producto, 2026-09-29), es el idioma predeterminado y ocupa las rutas **sin prefijo**, incluida `/`; sin redirección automática por idioma del navegador (`FR-019`, `FR-020`).
 - Español neutro latinoamericano (`es`) en `/es/`; portugués de Brasil en `/pt-br/`, conservando `pt-BR` en metadatos (`FR-019`).
 - Las tres versiones cubren el alcance público completo; no son resúmenes (PRD §19.4).
 - El manifiesto original en español conserva la autoridad doctrinal; el canónico traducido se distingue del original y lo referencia (PRD §19.4).

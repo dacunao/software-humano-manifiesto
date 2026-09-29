@@ -1,0 +1,54 @@
+[
+ {
+  "clave": "canon::proposito-del-documento-05",
+  "idioma": "en",
+  "errores": [
+   {
+    "tipo": "cambio-de-sentido",
+    "gravedad": "menor",
+    "fragmento_es": "cómo debe sentirse al usarlo",
+    "fragmento_tr": "how it should feel to use",
+    "explicacion": "«debe» se rebaja a «should», mientras en la misma oración el segundo «debe» sí se traduce «must» («what evidence must exist»). La doctrina establece cómo debe sentirse el producto; conviene conservar la misma fuerza normativa en ambos casos."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::principio-1-12",
+  "idioma": "en",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "prescribe una función",
+    "fragmento_tr": "prescribes a function",
+    "explicacion": "Aquí «función» significa funcionalidad (las pistas). En un ejemplo sobre derivadas, «function» invita a leerlo como función matemática; el propio texto traduce «pedido de función» como «feature request» (ejemplo-aplicado-04). Debería ser «prescribes a feature»."
+   },
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "Como estudiante quiero recibir pistas para resolver derivadas",
+    "fragmento_tr": "“As a student, I want hints so I can solve derivatives”",
+    "explicacion": "La misma historia débil se traduce de otro modo en ejemplo-aplicado-05 («As a student I want to receive hints so that I can solve derivatives»); aquí además se omite «recibir». El mismo ejemplo citado debería tener una sola versión."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-05",
+  "idioma": "en",
+  "errores": [
+   {
+    "tipo": "terminologia",
+    "gravedad": "menor",
+    "fragmento_es": "la pista ya prescribe la respuesta",
+    "fragmento_tr": "the hint already prescribes the answer",
+    "explicacion": "«Respuesta» es aquí la respuesta del producto (la solución), que el texto traduce como «response» (tabla de niveles: «Product response»). En un ejercicio de cálculo, «answer» se lee como el resultado del ejercicio y sugiere que la pista revela la solución matemática. Debería ser «response»."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ }
+]

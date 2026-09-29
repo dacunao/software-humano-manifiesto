@@ -11,7 +11,7 @@ import { textos, type Texto } from './relevancia';
 
 const DIR = join(homedir(), '.local/share/languagetool-software-humano');
 const PUERTO = 8765;
-const IDIOMA = { en: 'en-GB', pt: 'pt-BR' } as const; // británico, como el núcleo aprobado
+const IDIOMA = { en: 'en-US', pt: 'pt-BR' } as const; // inglés estadounidense (decisión del 2026-09-29)
 
 /** Nombres propios e identificadores que no son errores de ortografía. */
 const PROPIOS = ['Manifiesto', 'SpecKit', 'Pagefind', 'Craft', 'Damián', 'Acuña', 'Orosz', 'Balint', 'Klement', 'Intercom', 'GitHub', 'Markdown', 'YAML', 'MQM', 'PRD', 'UX', 'SDD', 'preset', 'presets', 'workflow', 'hreflang', 'Humano'];
@@ -47,7 +47,7 @@ export function anotar(md: string): { text?: string; markup?: string; interpretA
 }
 
 async function revisar(texto: string, idioma: 'en' | 'pt') {
-  const cuerpo = new URLSearchParams({ language: IDIOMA[idioma], data: JSON.stringify({ annotation: anotar(texto) }), level: 'default', disabledRules: 'OXFORD_SPELLING_Z_NOT_S' });
+  const cuerpo = new URLSearchParams({ language: IDIOMA[idioma], data: JSON.stringify({ annotation: anotar(texto) }), level: 'default' });
   const r = await fetch(`http://localhost:${PUERTO}/v2/check`, { method: 'POST', body: cuerpo });
   if (!r.ok) throw new Error(`LanguageTool respondió ${r.status}`);
   return (await r.json()) as { matches: { message: string; offset: number; length: number; replacements: { value: string }[]; rule: { id: string; category: { id: string } }; context: { text: string; offset: number; length: number } }[] };

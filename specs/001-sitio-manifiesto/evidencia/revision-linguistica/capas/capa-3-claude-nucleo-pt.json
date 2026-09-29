@@ -1,0 +1,77 @@
+[
+ {
+  "clave": "canon::principio-5-11",
+  "idioma": "pt",
+  "errores": [
+   {
+    "tipo": "adicion",
+    "gravedad": "menor",
+    "fragmento_es": "ajena a la situación o al resultado que debe resolver",
+    "fragmento_tr": "alheia à situação que ela enfrenta ou ao resultado que precisa alcançar",
+    "explicacion": "Se agrega «que ela enfrenta», que el español no dice, y «debe resolver» pasa a «precisa alcançar». La traducción fija una lectura (lo que enfrenta y alcanza la persona) que el original deja abierta; además «ela» puede leerse como referida a la interfaz."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::verificacion-04",
+  "idioma": "pt",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "el usuario avanzado conserva capacidad suficiente",
+    "fragmento_tr": "quem é avançado conserva capacidade suficiente",
+    "explicacion": "«quem é avançado» suena poco natural en portugués de Brasil; lo idiomático sería «quem tem mais experiência» o «a pessoa experiente», coherente con cómo se tradujo «usuario experto» en P04."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "idioma": "pt",
+  "errores": [
+   {
+    "tipo": "cambio-de-sentido",
+    "gravedad": "menor",
+    "fragmento_es": "el alcance obligatorio definido por producto",
+    "fragmento_tr": "o escopo obrigatório definido pelo produto",
+    "explicacion": "En español «por producto», sin artículo, designa la función o autoridad de producto. «pelo produto», con artículo, se lee como «por el producto» (el artefacto). Cambia quién define el alcance y no concuerda con otros pasajes que conservan el sentido sin artículo («pertencer a produto», «Produto segue definindo escopo»)."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::proposito-del-documento-13",
+  "idioma": "pt",
+  "errores": [
+   {
+    "tipo": "cambio-de-sentido",
+    "gravedad": "menor",
+    "fragmento_es": "alterar el alcance definido por producto",
+    "fragmento_tr": "alterar o escopo definido pelo produto",
+    "explicacion": "Mismo caso que en STOP02: «por producto» nombra a la autoridad o función de producto; «pelo produto» se lee como el producto en sí y oscurece quién define el alcance."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ },
+ {
+  "clave": "canon::proposito-del-documento-17",
+  "idioma": "pt",
+  "errores": [
+   {
+    "tipo": "fluidez",
+    "gravedad": "menor",
+    "fragmento_es": "La arquitectura del marco",
+    "fragmento_tr": "A arquitetura da estrutura",
+    "explicacion": "Traducir «marco» como «estrutura» choca aquí y en otros pasajes con «estrutura» usada para «estructura» (del PRD, del sistema). «A arquitetura da estrutura» resulta redundante y confuso; «marco» o «framework» evitaría la colisión."
+   }
+  ],
+  "origen": "modelo",
+  "modelo": "claude-opus-5-5"
+ }
+]

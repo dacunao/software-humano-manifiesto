@@ -4,14 +4,14 @@ Pega este texto completo en ChatGPT y, a continuación, el contenido de **una** 
 
 ---
 
-You are a professional translator. Translate the Spanish website copy in the JSON below into **British English** and **Brazilian Portuguese**. The site publishes a doctrinal manifesto for human software development with AI. **The Spanish is the authoritative reference**: translate faithfully, with no added or omitted ideas and the same normative strength (debe = must / deve; puede = may / pode; keep every negation and "solo" = only / apenas), but write natural prose, not a word-for-word calque.
+You are a professional translator. Translate the Spanish website copy in the JSON below into **American English** and **Brazilian Portuguese**. The site publishes a doctrinal manifesto for human software development with AI. **The Spanish is the authoritative reference**: translate faithfully, with no added or omitted ideas and the same normative strength (debe = must / deve; puede = may / pode; keep every negation and "solo" = only / apenas), but write natural prose, not a word-for-word calque.
 
 **Output**: a single JSON object with exactly the same keys as the input, each value `{"en": "...", "pt": "..."}`. Return only the JSON, with no comments.
 
 **Rules**
 1. Keep all Markdown exactly: bold, italics, tables (same rows and columns), lists, line breaks and text between backticks (for example `P03`, `CR05`, `STOP02`). Keep placeholders such as `{version}`, `{fecha}`, `{codigo}`, `{q}`, `{n}`, `{editor}` and `{frase}` unchanged.
 2. Address the reader as "you" in English and "você" in Portuguese; the Spanish uses "tú".
-3. English: British spelling with "-ise" (organise, recognise, behaviour, centred). Portuguese: Brazil only; never forms from Portugal (equipa, utilizador, ecrã, ficheiro, registo, "estar a + infinitivo").
+3. English: American spelling (organize, recognize, behavior, centered, color). Portuguese: Brazil only; never forms from Portugal (equipa, utilizador, ecrã, ficheiro, registo, "estar a + infinitivo").
 4. Do not translate: "Manifiesto" (the site's name), "Software Humano", "SpecKit", "Job Story/Job Stories", "Jobs to Be Done", "GitHub", "Craft", "Pagefind", "Damián Acuña". Language names in the language selector stay as they are (Español, English, Português), as do the codes EN, ES and PT.
 5. Internal links: translate the link text and change the route exactly as follows.
 
@@ -44,7 +44,7 @@ External links stay identical, except `https://creativecommons.org/licenses/by/4
 | revelación progresiva | progressive disclosure | revelação progressiva |
 | autoridad de producto | product authority | autoridade de produto |
 | entregas | deliveries (never "releases", unless the Spanish says "liberar") | entregas |
-| jerarquizar | establish hierarchy (never "prioritise") | hierarquizar |
+| jerarquizar | establish hierarchy (never "prioritize") | hierarquizar |
 | equipo | team | time |
 
 The names of the ten principles must be exactly:

@@ -25,7 +25,7 @@ function clave(nombre: string): string {
 }
 
 export const IDIOMAS = {
-  en: { nombre: 'British English', variedad: 'British English (the approved core uses -ise spellings)', deepl: 'EN-GB' },
+  en: { nombre: 'American English', variedad: 'American English (US spelling: organize, behavior, center)', deepl: 'EN-US' },
   pt: { nombre: 'Brazilian Portuguese', variedad: 'Brazilian Portuguese (not European Portuguese)', deepl: 'PT-BR' },
 } as const;
 
@@ -144,7 +144,7 @@ export async function revisor<T>(sistema: string, usuario: string, esquema: obje
 }
 
 /** Traducción de contraste. Las claves del plan gratuito terminan en «:fx» y usan su propio servidor. */
-export async function deepl(textos: string[], destino: 'EN-GB' | 'PT-BR'): Promise<string[]> {
+export async function deepl(textos: string[], destino: 'EN-US' | 'PT-BR'): Promise<string[]> {
   const k = clave('DEEPL_API_KEY');
   const host = k.endsWith(':fx') ? 'https://api-free.deepl.com' : 'https://api.deepl.com';
   const r = await fetch(`${host}/v2/translate`, {
