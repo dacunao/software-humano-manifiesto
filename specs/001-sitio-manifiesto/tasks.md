@@ -252,7 +252,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [X] T082 [US9] Implementar `src/cliente/preferencia-idioma.ts`: guarda la elección (protegido ante almacenamiento no disponible), permite restablecerla y redirige **solo** desde `/` (RQ-04); nunca actúa en otras rutas
 - [X] T083 [US9] Completar en `src/content/traducciones-canon/en.yaml` y `src/content/traducciones-canon/pt-br.yaml` (creados en T017) un borrador de traducción **nodo a nodo** para todos los nodos, con `sourceHash` y `state: borrador` (RQ-02)
 - [X] T084 [US9] **Se ejecuta después de la fase 12** (ajuste de orden del 2026-09-27: la ronda temprana en español puede cambiar el contenido y traducirlo antes obligaría a retraducir; el alcance no cambia). Traducir a `en` y `pt-BR`, en borrador, todas las superficies, principios e interfaz. El inglés se escribe como texto propio, no como calco (traspaso); sin mezclar idiomas (PRD §21.7)
-  - *Avance, 2026-09-28*: parte canónica hecha. Los 341 nodos del núcleo en `en` y `pt-BR` vienen de la traducción revisada del 2026-09-21, verificada contra el original, y están aprobados por Damián (`evidencia/revision-linguistica/`). Faltan las superficies, los principios y la interfaz. La fase 12 quedó cerrada, así que el orden se cumple
+  - *Avance, 2026-09-28*: parte canónica hecha. Los 341 nodos del núcleo en `en` y `pt-BR` vienen de la traducción revisada del 2026-09-21, verificada contra el original, y están aprobados por Damián (`evidencia/revision-linguistica/`). Las superficies, los principios y la interfaz se tradujeron después (2026-09-29), en borrador; la fase 12 ya estaba cerrada, así que el orden se cumple
 
 ---
 
@@ -308,7 +308,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [ ] T100 STOP · Damián contrata la revisión profesional de `en` y `pt-BR`; se registran revisor, fecha y resultado. El agente no marca nada como aprobado
   - *Decisión de la autoridad, 2026-09-28*: Damián aprueba `en` y `pt-BR` en lugar del servicio profesional. Los 341 nodos del núcleo quedaron aprobados por él; falta aprobar las superficies, los principios y la interfaz cuando estén traducidos (T084), y registrar la revisión de cada idioma en `src/content/revisiones.yaml`
 - [ ] T101 Incorporar las correcciones de Damián (antes, del revisor externo; decisión del 2026-09-28) en los YAML, manteniendo `state: borrador` hasta la aprobación de Damián
-- [ ] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`). El núcleo en `en` y `pt-BR` ya está aprobado (2026-09-28); queda el resto. Al terminar cada idioma, Damián registra su revisión en `src/content/revisiones.yaml`
+- [ ] T102 STOP · Damián revisa la neutralidad latinoamericana del español y aprueba el contenido `es`, `en` y `pt-BR` en los YAML (`approvedBy`). El núcleo en `en` y `pt-BR` ya está aprobado (2026-09-28); queda el resto. Al terminar cada idioma, Damián registra su revisión en `src/content/revisiones.yaml`. El copy se aprueba después de la fase 28 (verificación en cuatro capas)
 
 ---
 
@@ -339,6 +339,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 - **Setup (1)** → **Foundational (2)** → fases de historia **3 a 11** → **Primera ronda de comprensión (12)** → **Calidad transversal (13)** → **Dirección visual (14)** → **Idiomas (15)** → **Validación y aceptación (16)**.
 - **Fases 17 a 20 (PRD v1.1 y v1.2)** van antes de la 12: la ronda temprana observa la estructura vigente, con las divisiones del núcleo, la búsqueda y las mejoras de móvil (hallazgo O1 del `analyze` del 2026-09-28).
+- **La fase 28** (verificación en cuatro capas, RQ-19) va antes de que Damián apruebe el copy en T102. Un nodo del núcleo que se corrija en T189 vuelve a `borrador` y se aprueba de nuevo.
 - Las fases 3 a 11 dependen de la 2. Entre ellas, 4 y 6 amplían `Inicio.astro` después de la 3; 8 y 9 agregan los actos 6 y 7 a la misma vista; 10 usa las vistas de 5 y 7.
 - La fase 12 depende de 3 a 11 **y de la conducción humana de las sesiones**. La traducción definitiva y la aprobación de los idiomas (fase 15) usan el contenido `es` ya corregido por la ronda temprana.
 - La fase 14 depende de 13 y **de la elección humana** de la dirección visual. La 15 depende de 12. La 16 depende de 14 y 15.
@@ -428,6 +429,7 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | `FR-020` | `JS-09` | T025 | T081, T082 | T079 | Planificado | Preferencia solo en `/` (RQ-04) |
 | `FR-021` | `JS-09` | T014 | T019, T017, T022, T023 | T018 | Planificado | Canónico leído, no copiado (decisión 2026-09-27) |
 | PRD §16–§19, §21, §24, §25, §27 | `AC-05`–`AC-08`, `AC-11`, `AC-15` | Fases 2 y 13 | T005–T008, T021, T027–T033, T091, T094–T096, T110 | T088–T090, T092 | Planificado | — |
+| RQ-19 · verificación de traducciones | `AC-13` | Fase 28 | T181–T187, T189 | T181, T182 | Planificado | Español como referencia |
 | Puertas humanas | `AC-01`, `AC-02`, `AC-07`, `AC-13` | Fases 12, 14, 15 y 16 | T086, T093, T095, T100, T102, T104, T105, T111 | — | Pendiente de persona | — |
 
 ### Plan de aceptación
@@ -565,7 +567,7 @@ Fuente: decisión de Damián Acuña (2026-09-29), RQ-19; `AC-13`, PRD §19.4 y �
 - [ ] T183 Capa 2 · Instalar LanguageTool localmente (autorización de Damián para la instalación) y escribir `scripts/traduccion/gramatica.ts`, que revise todos los textos `en` (en-GB) y `pt-BR` y guarde el informe en `specs/001-sitio-manifiesto/evidencia/revision-linguistica/capas/`, separando hallazgos de falsos positivos per RQ-19
 - [ ] T184 STOP · Damián crea las cuentas y claves de la capa 3 (un modelo de otra familia en su capa gratuita, por ejemplo Gemini Flash) y de la capa 4 (DeepL Developer), y las deja como variables de entorno locales fuera del repositorio. El agente no crea cuentas ni ingresa credenciales
 - [ ] T185 Capa 3 · Escribir `scripts/traduccion/mqm.ts`: anotación de errores estilo MQM (omisión, adición, cambio de sentido, terminología, fluidez; gravedad menor, mayor o crítica) sobre cada par español–traducción, en lotes, empezando por el nivel 1, con una indicación fija y registrada. Informe en `evidencia/revision-linguistica/capas/` per RQ-19
-- [ ] T186 Capa 4 · Escribir `scripts/traduccion/contraste.ts`: traducción independiente con DeepL del nivel 1 completo y de lo marcado por las capas 1 a 3 en los niveles 2 y 3; registrar los caracteres consumidos y comparar el significado con nuestra traducción. Informe en `evidencia/revision-linguistica/capas/` per RQ-19
-- [ ] T187 Consolidar en `evidencia/revision-linguistica/verificacion-cuatro-capas.md` la lista priorizada por nivel, gravedad y coincidencia entre capas, con el español, la traducción, lo que señala cada capa y una propuesta de corrección. Separar los defectos del español: los del núcleo, como propuesta separada; los del copy, para T102 per RQ-19
+- [ ] T186 Capa 4 · Escribir `scripts/traduccion/contraste.ts`: traducción independiente con DeepL del nivel 1 completo y de lo marcado por las capas 1 a 3 en los niveles 2 y 3; registrar los caracteres consumidos. La comparación de significado la hace el modelo de la capa 3 con una indicación fija y registrada, que clasifica cada diferencia (equivalente, matiz o cambio de sentido); el agente la revisa. Es salida de modelo (ver T187). Informe en `evidencia/revision-linguistica/capas/` per RQ-19
+- [ ] T187 Consolidar en `evidencia/revision-linguistica/verificacion-cuatro-capas.md` la lista priorizada por nivel, gravedad y coincidencia entre capas, con el español, la traducción, lo que señala cada capa y una propuesta de corrección. Cada hallazgo declara su origen: determinista (capas 1 y 2) o de modelo (capas 3 y 4). Los de modelo son observaciones por confirmar, no veredictos (`V12`). Separar los defectos del español: los del núcleo, como propuesta separada; los del copy, para T102 per RQ-19
 - [ ] T188 STOP · Damián decide qué correcciones se aplican
 - [ ] T189 Aplicar las correcciones aprobadas: un nodo del núcleo corregido vuelve a `borrador` hasta su nueva aprobación. Volver a ejecutar las capas 1 y 2 sobre lo corregido y actualizar la evidencia per RQ-19, `AC-13`

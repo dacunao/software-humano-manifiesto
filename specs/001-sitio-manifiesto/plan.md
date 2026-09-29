@@ -39,6 +39,8 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 
 **Testing**: `bun test` (unitarias), Playwright con axe (extremo a extremo y accesibilidad automática), Lighthouse CI (rendimiento de laboratorio) y comprobación de enlaces sobre la salida construida.
 
+**Herramientas de desarrollo que no llegan al sitio** (RQ-19): LanguageTool (necesita Java 17), un modelo de otra familia en su capa gratuita (capa 3) y DeepL Developer (capa 4). Las claves las crea Damián y quedan en variables de entorno locales.
+
 **Target Platform**: Cloudflare Pages, sitio estático; navegadores modernos con soporte vigente (PRD §24.4).
 
 **Project Type**: sitio web estático, contenido como software.
