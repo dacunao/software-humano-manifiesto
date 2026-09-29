@@ -25,6 +25,9 @@ const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = f
 const s = superficie(id);
 const titulo = texto(s.title, locale);
 const descripcion = texto(s.description, locale);
+// Con titular propio (Acerca del Manifiesto, copy v1.1), el título de la página queda como antetítulo.
+const titular = s.hero ? texto(s.hero.title, locale) : undefined;
+const bajada = s.hero ? texto(s.hero.text, locale) : descripcion;
 const actualizado = fechaActualizacion([`src/content/superficies/${id}.yaml`, ...archivos]);
 const propio: GrupoIndice[] = s.sections.length > 1
   ? [{ titulo: t('indice.enEstaPagina', locale), items: s.sections.map((sec) => {
@@ -49,8 +52,9 @@ const gruposDerecha: GrupoSeccion[] = seguimiento
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} claseIndice={claseIndice}>
   <header class="encabezado-superficie">
     {rutaLectura && <p class="rotulo-seccion">{t('ruta.rotulo', locale)} · {t(rutaLectura, locale)}</p>}
-    <h1 lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</h1>
-    <p class="entradilla" lang={descripcion.lang !== locale ? descripcion.lang : undefined}>{descripcion.texto}</p>
+    {titular && <p class="rotulo-seccion" lang={titulo.lang !== locale ? titulo.lang : undefined}>{titulo.texto}</p>}
+    <h1 lang={(titular ?? titulo).lang !== locale ? (titular ?? titulo).lang : undefined}>{(titular ?? titulo).texto}</h1>
+    <p class="entradilla" lang={bajada.lang !== locale ? bajada.lang : undefined}>{bajada.texto}</p>
   </header>
   <slot name="antes" />
   <Secciones secciones={s.sections} locale={locale} superficie={id} />
