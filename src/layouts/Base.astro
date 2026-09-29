@@ -33,7 +33,7 @@ const esInicio = pagina.tipo === 'inicio';
 const tituloCompleto = esInicio ? titulo : `${titulo} · ${contenido.sitio.name}`;
 const nodosLD: NodoLD[] = [
   ...(esInicio ? [sitioWeb(contenido.sitio, url, lang)] : []),
-  paginaWeb(titulo, url, lang, descripcion),
+  paginaWeb(titulo, url, lang, descripcion, { sitio: contenido.sitio, modificada: actualizado || undefined }),
   ...(pagina.tipo === '404' ? [] : ld),
 ];
 const token = contenido.sitio.analytics.cloudflareToken;

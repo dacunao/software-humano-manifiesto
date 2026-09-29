@@ -9,17 +9,24 @@ export function persona(sitio: Sitio): NodoLD {
   return p;
 }
 
-/** Editor del sitio (PRD v1.3 §25.2): la organización Software Humano. */
+/** Editor del sitio (PRD v1.3 §25.2): la organización Software Humano, con su símbolo como logotipo (T161). */
 export function editor(sitio: Sitio): NodoLD {
-  return { '@type': 'Organization', name: sitio.publisher.name, url: sitio.publisher.url };
+  return { '@type': 'Organization', name: sitio.publisher.name, url: sitio.publisher.url, logo: `https://${sitio.domain}/apple-touch-icon.png` };
 }
 
 export function sitioWeb(sitio: Sitio, url: string, idioma: string): NodoLD {
   return { '@type': 'WebSite', name: sitio.name, url, inLanguage: idioma, author: persona(sitio), publisher: editor(sitio) };
 }
 
-export function paginaWeb(nombre: string, url: string, idioma: string, descripcion: string): NodoLD {
-  return { '@type': 'WebPage', name: nombre, url, inLanguage: idioma, description: descripcion };
+/** WebPage con su fecha de actualización (FR-012), autor y editor, que el pie muestra en cada página (T161). */
+export function paginaWeb(nombre: string, url: string, idioma: string, descripcion: string, o?: { sitio: Sitio; modificada?: string | undefined }): NodoLD {
+  const n: NodoLD = { '@type': 'WebPage', name: nombre, url, inLanguage: idioma, description: descripcion };
+  if (o) {
+    if (o.modificada) n['dateModified'] = o.modificada;
+    n['author'] = persona(o.sitio);
+    n['publisher'] = editor(o.sitio);
+  }
+  return n;
 }
 
 export function grafo(nodos: NodoLD[]): string {
