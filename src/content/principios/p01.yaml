@@ -21,7 +21,7 @@ entries:
         text: Un equipo puede entregar muchas funcionalidades y resolver poco. Cuando el trabajo se organiza por features o por perfiles genéricos, nadie tiene que explicar qué cambia para la persona después de usar el producto.
       en:
         state: borrador
-        text: A team can deliver a great many features and resolve very little. When work is organised around features or generic profiles, nobody has to explain what changes for the person after using the product.
+        text: A team can deliver a great many features and resolve very little. When work is organized around features or generic profiles, nobody has to explain what changes for the person after using the product.
       pt-BR:
         state: borrador
         text: Um time pode entregar muitas funcionalidades e resolver pouco. Quando o trabalho se organiza por features ou por perfis genéricos, ninguém precisa explicar o que muda para a pessoa depois de usar o produto.
@@ -35,7 +35,7 @@ entries:
         text: "Una capacidad importa solo cuando produce un cambio reconocible para alguien: pasar de una situación actual a un resultado buscado. Antes de diseñar una respuesta se describe cuándo surge la necesidad, qué la motiva y qué resultado permitiría reconocer el avance."
       en:
         state: borrador
-        text: "A capability matters only when it produces a recognisable change for someone: moving from a current situation to a desired outcome. Before designing a response, we describe when the need arises, what motivates it and what outcome would make progress recognisable."
+        text: "A capability matters only when it produces a recognizable change for someone: moving from a current situation to a desired outcome. Before designing a response, we describe when the need arises, what motivates it and what outcome would make progress recognizable."
       pt-BR:
         state: borrador
         text: "Uma capacidade só importa quando produz uma mudança reconhecível para alguém: passar de uma situação atual para um resultado buscado. Antes de projetar uma resposta, descreve-se quando surge a necessidade, o que a motiva e que resultado permitiria reconhecer o avanço."

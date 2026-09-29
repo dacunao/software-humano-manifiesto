@@ -122,7 +122,7 @@ sections:
         text: Cómo se ordena el marco
       en:
         state: borrador
-        text: How the framework is organised
+        text: How the framework is organized
       pt-BR:
         state: borrador
         text: Como a estrutura se organiza

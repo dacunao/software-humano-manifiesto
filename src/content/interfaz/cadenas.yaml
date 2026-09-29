@@ -253,7 +253,7 @@ pie.licencia:
   es: { state: borrador, text: "Texto del núcleo y contenido bajo CC BY 4.0; código bajo MIT. Los nombres «Software Humano» y «Manifiesto» y el logotipo no forman parte de esas licencias." }
   en:
     state: borrador
-    text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not part of those licences.
+    text: Core text and content under CC BY 4.0; code under MIT. The names “Software Humano” and “Manifiesto” and the logo are not part of those licenses.
   pt-BR:
     state: borrador
     text: Texto do núcleo e conteúdo sob CC BY 4.0; código sob MIT. Os nomes “Software Humano” e “Manifiesto” e o logotipo não fazem parte dessas licenças.
@@ -419,7 +419,7 @@ estado.presets:
   es: { state: borrador, text: "Usa los mecanismos nativos de personalización de SpecKit (presets)." }
   en:
     state: borrador
-    text: It uses SpecKit's native customisation mechanisms (presets).
+    text: It uses SpecKit's native customization mechanisms (presets).
   pt-BR:
     state: borrador
     text: Usa os mecanismos nativos de personalização do SpecKit (presets).

@@ -51,7 +51,7 @@ entries:
         text: La confirmación se pide en proporción al impacto. Se puede revisar, editar, exportar y revertir cuando el dominio lo permite, y se separan autorización, recomendación y ejecución.
       en:
         state: borrador
-        text: Confirmation is requested in proportion to the impact. You can review, edit, export and revert where the domain permits it, and authorisation, recommendation and execution are kept separate.
+        text: Confirmation is requested in proportion to the impact. You can review, edit, export and revert where the domain permits it, and authorization, recommendation and execution are kept separate.
       pt-BR:
         state: borrador
         text: A confirmação é pedida na proporção do impacto. É possível revisar, editar, exportar e reverter quando o domínio permite, e autorização, recomendação e execução são separadas.

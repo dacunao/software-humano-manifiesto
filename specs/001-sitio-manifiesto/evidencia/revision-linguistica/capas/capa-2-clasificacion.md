@@ -31,3 +31,5 @@ El resultado es **determinista**: la misma entrada da la misma salida. La clasif
 | «por que» y «por quê» | `POR_QUE_PORQUE` | Preguntas indirectas y «por quê» elíptico, bien escritos |
 | Otros | `ALERTAS_BR`, `ATD_VERBS_TO_COLLOCATION`, `ADMIT_ENJOY_VB`, `IT_IS_JJ_TO_VBG`, `DOUBLE_NEGATIVE` («what nobody asked for»), `UPPERCASE_SENTENCE_START` (rótulos de interfaz) | Construcciones correctas |
 | Estilo, redundancia, registro | Categorías `STYLE`, `REDUNDANCY`, `FORMAL`, `ACADEMIC`, `SHORTEN_IT`, `CLARITY`, `REPETITIONS_STYLE` | Son sugerencias de redacción, no errores. Aplicarlas alejaría la traducción del español, que es la referencia |
+
+**Nueva ejecución (2026-09-29, `en-US`)**: tras pasar el inglés a ortografía estadounidense (T190), `capa-2-gramatica.json` tiene 118 hallazgos y ninguno de ortografía en inglés. El error real del portugués sigue pendiente de T189.

@@ -16,7 +16,7 @@ description:
     text: Origen, autoría, versiones, procedencia y licencias del sitio.
   en:
     state: borrador
-    text: Origin, authorship, versions, provenance and licences of the site.
+    text: Origin, authorship, versions, provenance and licenses of the site.
   pt-BR:
     state: borrador
     text: Origem, autoria, versões, procedência e licenças do site.
@@ -208,7 +208,7 @@ sections:
         text: Licencias
       en:
         state: borrador
-        text: Licences
+        text: Licenses
       pt-BR:
         state: borrador
         text: Licenças
@@ -231,13 +231,13 @@ sections:
             en:
               state: borrador
               text: |-
-                | Material | Licence | What you can do |
+                | Material | License | What you can do |
                 |---|---|---|
-                | Text of the core of the manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, translate, adapt and share it, including for commercial purposes, crediting Damián Acuña as the author, linking to the licence and indicating whether you made changes |
+                | Text of the core of the manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, translate, adapt and share it, including for commercial purposes, crediting Damián Acuña as the author, linking to the license and indicating whether you made changes |
                 | Editorial content of the site: explanations, examples and page texts | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | The same, with the same attribution |
-                | Site code | [MIT](https://opensource.org/license/mit) | Use, modify and distribute it, keeping the copyright notice and the licence |
+                | Site code | [MIT](https://opensource.org/license/mit) | Use, modify and distribute it, keeping the copyright notice and the license |
                 | Method for SpecKit (preset and tools), once published | [MIT](https://opensource.org/license/mit) | The same |
-                | The names “Software Humano” and “Manifiesto”, and the logo | Reserved | They are not part of those licences. An adaptation must not present itself as official, certified or endorsed by Software Humano |
+                | The names “Software Humano” and “Manifiesto”, and the logo | Reserved | They are not part of those licenses. An adaptation must not present itself as official, certified or endorsed by Software Humano |
             pt-BR:
               state: borrador
               text: |-

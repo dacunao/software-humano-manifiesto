@@ -148,10 +148,8 @@ entries:
     approvedAt: 2026-09-28
   proposito-del-documento-13:
     sourceHash: 63661449d40a338ea773823815cab21effc6e6c1ac65c4cff5f29796297ddec5
-    state: aprobada
-    text: Este documento contém o núcleo do manifesto. Sua tradução para métodos de desenvolvimento baseados em especificações e para frameworks específicos deve ser feita por meio de anexos ou adaptadores separados. Nenhuma implementação pode reduzir seus princípios, alterar o escopo definido pelo produto nem atribuir ao agente uma autoridade que o núcleo reserva às pessoas.
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
+    state: borrador
+    text: Este documento contém o núcleo do manifesto. Sua tradução para métodos de desenvolvimento baseados em especificações e para frameworks específicos deve ser feita por meio de anexos ou adaptadores separados. Nenhuma implementação pode reduzir seus princípios, alterar o escopo definido por produto nem atribuir ao agente uma autoridade que o núcleo reserva às pessoas.
   proposito-del-documento-14:
     sourceHash: 6a258fb61101e2edd07b18cc3c5eaf77fd9a0e3a9ebb1ad0cbd24eba587c2ca3
     state: aprobada
@@ -732,15 +730,13 @@ entries:
     approvedAt: 2026-09-28
   principio-5-11:
     sourceHash: 692bfdd389d61d0e14a91cb759d7801b008e86557b44f05ab6bc75c461d2bf4b
-    state: aprobada
+    state: borrador
     text: |-
       - A pessoa entende o que os elementos significam sem uma legenda externa?
 
       - Ela precisa se lembrar de algo de uma tela anterior para agir corretamente?
 
-      - A interface acrescenta uma camada de aprendizado alheia à situação que ela enfrenta ou ao resultado que precisa alcançar?
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
+      - A interface acrescenta uma camada de aprendizado alheia à situação ou ao resultado que deve resolver?
   principio-5-12:
     sourceHash: b71a03e00d4199e31d32b9473e9d69ecdbd72a4bb8ed7cf8cd5d8e3d622832a3
     state: aprobada
@@ -1758,7 +1754,7 @@ entries:
     approvedAt: 2026-09-28
   verificacion-04:
     sourceHash: 6143ba8260990d15952e5aec301eab0dabe1f6b867914646edac33da51421934
-    state: aprobada
+    state: borrador
     text: |-
       | **Dimensão**          | **Evidência de aceitação**                                                                                                                                        |
       |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1767,15 +1763,13 @@ entries:
       | `V03` Causalidade     | A evidência relaciona a situação, a necessidade e o resultado sem depender de um pedido de funcionalidade; quando se aplica, conserva circunstância e motivação.     |
       | `V04` Compreensão     | A pessoa consegue explicar onde está, o que pode fazer e o que acontecerá em seguida, sem ajuda externa.                                                             |
       | `V05` Carga           | Ela não enfrenta decisões, conceitos ou dados que o sistema poderia resolver com segurança.                                                                          |
-      | `V06` Profundidade    | Quem está começando encontra um caminho claro e quem é avançado conserva capacidade suficiente.                                                                      |
+      | `V06` Profundidade    | Quem está começando encontra um caminho claro e a pessoa experiente conserva capacidade suficiente.                                                                      |
       | `V07` Confiança       | O sistema antecipa consequências, confirma resultados e oferece recuperação proporcional.                                                                            |
       | `V08` Controle        | A pessoa pode revisar, corrigir, recusar ou reverter conforme o impacto da ação.                                                                                     |
       | `V09` Estados         | Carregamento, vazio, erro, sucesso, interrupção e retorno mantêm contexto e orientação.                                                                              |
       | `V10` Acessibilidade  | O fluxo funciona com teclado, foco visível, rótulos compreensíveis, contraste e tecnologias assistivas aplicáveis.                                                   |
       | `V11` Desempenho      | As ações críticas cumprem o orçamento de resposta ou mostram progresso honesto.                                                                                      |
       | `V12` IA              | As saídas variáveis declaram incerteza; as regras críticas são verificáveis; as ações sensíveis exigem autorização.                                                  |
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
   sh-score:
     sourceHash: 5f6d9ca58183faeb94944952ade4bbe985bc6ce5e82002aabb3f332023b747c4
     state: aprobada
@@ -2290,11 +2284,11 @@ entries:
     approvedAt: 2026-09-28
   guia-de-bolsillo-18:
     sourceHash: 169277b12fd84a1481a4654939d27c5a3a997c7160dd6b0e7b94e975968be358
-    state: aprobada
+    state: borrador
     text: |-
       - `STOP01` Não existe um fundamento de produto identificável ou a solução parece preceder o problema.
 
-      - `STOP02` O plano não contempla todo o escopo obrigatório definido pelo produto.
+      - `STOP02` O plano não contempla todo o escopo obrigatório definido por produto.
 
       - `STOP03` Pretende-se omitir, modificar ou adiar uma parte sem uma decisão autorizada.
 
@@ -2305,8 +2299,6 @@ entries:
       - `STOP06` Uma ação sensível carece de determinismo, rastreabilidade ou recuperação.
 
       - `STOP07` O time só consegue demonstrar que o código funciona, não que a pessoa progride.
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
   guia-de-bolsillo-19:
     sourceHash: c6dbef2b17bb47efaad5789e34e3044ef75a3554b87f9672e941a4837c7efbda
     state: aprobada

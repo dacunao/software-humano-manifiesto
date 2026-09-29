@@ -48,7 +48,7 @@ entries:
         text: "Se diseñan y se verifican también los estados menos frecuentes: vacío, carga, error, éxito y recuperación. Lenguaje, jerarquía y comportamiento se mantienen en todo el recorrido, y se revisa con contenido real antes de aprobar."
       en:
         state: borrador
-        text: "The less frequent states are designed and verified too: empty, loading, error, success and recovery. Language, hierarchy and behaviour stay consistent throughout the journey, and the product is reviewed with real content before it is approved."
+        text: "The less frequent states are designed and verified too: empty, loading, error, success and recovery. Language, hierarchy and behavior stay consistent throughout the journey, and the product is reviewed with real content before it is approved."
       pt-BR:
         state: borrador
         text: "Também são projetados e verificados os estados menos frequentes: vazio, carregamento, erro, sucesso e recuperação. Linguagem, hierarquia e comportamento se mantêm em todo o percurso, e revisa-se com conteúdo real antes de aprovar."

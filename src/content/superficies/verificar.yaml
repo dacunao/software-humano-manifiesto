@@ -47,7 +47,7 @@ sections:
               text: "Aceptar exige evidencia. Que una pantalla se vea limpia o que el código compile no demuestra que el producto cumpla su propósito: la cobertura, el progreso, la comprensión, la carga, la confianza, el control y los estados también se verifican."
             en:
               state: borrador
-              text: "Acceptance requires evidence. A screen that looks clean, or code that compiles, does not demonstrate that the product fulfils its purpose: coverage, progress, understanding, burden, trust, control and states are verified too."
+              text: "Acceptance requires evidence. A screen that looks clean, or code that compiles, does not demonstrate that the product fulfills its purpose: coverage, progress, understanding, burden, trust, control and states are verified too."
             pt-BR:
               state: borrador
               text: "Aceitar exige evidência. Uma tela parecer limpa ou o código compilar não demonstra que o produto cumpre seu propósito: a cobertura, o progresso, a compreensão, a carga, a confiança, o controle e os estados também são verificados."
@@ -78,7 +78,7 @@ sections:
               text: "Once criterios se puntúan de 0 a 2. El puntaje no reemplaza el juicio: ordena la conversación y marca lo que no puede quedar en cero."
             en:
               state: borrador
-              text: "Eleven criteria are scored from 0 to 2. The score does not replace judgement: it gives the conversation an order and flags what cannot be left at zero."
+              text: "Eleven criteria are scored from 0 to 2. The score does not replace judgment: it gives the conversation an order and flags what cannot be left at zero."
             pt-BR:
               state: borrador
               text: "Onze critérios recebem uma pontuação de 0 a 2. A pontuação não substitui o julgamento: organiza a conversa e marca o que não pode ficar em zero."

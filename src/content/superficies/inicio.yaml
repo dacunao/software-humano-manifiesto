@@ -82,7 +82,7 @@ sections:
             en:
               state: borrador
               text: |-
-                Artificial intelligence has reduced the cost of generating code, screens, text and automations. Small teams now build products that once required entire organisations, and a good decision can reach people in days.
+                Artificial intelligence has reduced the cost of generating code, screens, text and automations. Small teams now build products that once required entire organizations, and a good decision can reach people in days.
 
                 That speed is a real opportunity. It also moves the limit: when building stops being the hard part, the hard part becomes deciding what deserves to exist and how it should feel to use.
             pt-BR:
@@ -125,7 +125,7 @@ sections:
               text: |-
                 Building software has become cheaper. The cost did not disappear: it passed to whoever uses it. It is paid in attention, in learning and in decisions nobody came to make.
 
-                When building is cheap, a weak idea quickly becomes an extensive implementation, and a product ambiguity becomes behaviour that looks done. The code can be correct and still leave the person with the complexity the team did not resolve.
+                When building is cheap, a weak idea quickly becomes an extensive implementation, and a product ambiguity becomes behavior that looks done. The code can be correct and still leave the person with the complexity the team did not resolve.
             pt-BR:
               state: borrador
               text: |-
@@ -143,7 +143,7 @@ sections:
               text: "**Respuesta centrada en el sistema.** Al enviar un formulario con un dato faltante, la página se recarga, borra lo escrito y muestra arriba «Error de validación». El sistema cumplió: rechazó un dato incompleto. Quien lo usa tiene que adivinar qué faltó y volver a escribir todo."
             en:
               state: borrador
-              text: "**System-centred response.** When a form is submitted with a missing field, the page reloads, wipes what was typed and shows “Validation error” at the top. The system did its job: it rejected incomplete data. The person using it has to guess what was missing and type everything again."
+              text: "**System-centered response.** When a form is submitted with a missing field, the page reloads, wipes what was typed and shows “Validation error” at the top. The system did its job: it rejected incomplete data. The person using it has to guess what was missing and type everything again."
             pt-BR:
               state: borrador
               text: "**Resposta centrada no sistema.** Ao enviar um formulário com um dado faltando, a página recarrega, apaga o que foi digitado e mostra no topo “Erro de validação”. O sistema cumpriu sua função: rejeitou um dado incompleto. Quem o usa tem de adivinhar o que faltou e digitar tudo de novo."
@@ -157,7 +157,7 @@ sections:
               text: "**Respuesta centrada en la persona.** El formulario conserva lo escrito, señala junto al campo qué falta y explica qué se espera. La regla de validación es la misma; lo que cambia es cuánto trabajo recae en quien lo usa."
             en:
               state: borrador
-              text: "**Person-centred response.** The form keeps what was typed, points out next to the field what is missing and explains what is expected. The validation rule is the same; what changes is how much work falls on the person using it."
+              text: "**Person-centered response.** The form keeps what was typed, points out next to the field what is missing and explains what is expected. The validation rule is the same; what changes is how much work falls on the person using it."
             pt-BR:
               state: borrador
               text: "**Resposta centrada na pessoa.** O formulário conserva o que foi digitado, indica ao lado do campo o que falta e explica o que se espera. A regra de validação é a mesma; o que muda é quanto trabalho recai sobre quem o usa."
@@ -290,7 +290,7 @@ sections:
               text: "**Exige evidencia.** Una historia dice «como estudiante quiero recibir pistas para resolver derivadas». Con `P01`, la pregunta es cuándo aparece el bloqueo y cómo se reconocería el avance. Mientras no haya una observación que lo respalde, la historia es una hipótesis por comprobar, no un requisito."
             en:
               state: borrador
-              text: "**It requires evidence.** A story says “As a student I want to receive hints so that I can solve derivatives”. With `P01`, the question is when the blockage arises and how progress would be recognised. Until an observation backs it up, the story is a hypothesis to be tested, not a requirement."
+              text: "**It requires evidence.** A story says “As a student I want to receive hints so that I can solve derivatives”. With `P01`, the question is when the blockage arises and how progress would be recognized. Until an observation backs it up, the story is a hypothesis to be tested, not a requirement."
             pt-BR:
               state: borrador
               text: "**Exige evidência.** Uma história diz “como estudante, quero receber dicas para resolver derivadas”. Com `P01`, a pergunta é quando surge o bloqueio e como o avanço seria reconhecido. Enquanto não houver uma observação que a sustente, a história é uma hipótese a ser comprovada, não um requisito."
@@ -372,7 +372,7 @@ sections:
             en:
               state: borrador
               text: |-
-                The principles become practice through a method: a product foundation with authority, Job Stories as a reference form, an eight-step flow, artefacts that exist only if they answer a question, a contract for coding agents, explicit reasons to stop and a definition of done that is not satisfied by correct code alone.
+                The principles become practice through a method: a product foundation with authority, Job Stories as a reference form, an eight-step flow, artifacts that exist only if they answer a question, a contract for coding agents, explicit reasons to stop and a definition of done that is not satisfied by correct code alone.
 
                 [See how to build with AI](/manifesto/building-with-ai).
             pt-BR:
@@ -405,7 +405,7 @@ sections:
               text: "El manifiesto puede aplicarse con cualquier método. Una implementación de referencia lo lleva a SpecKit: el núcleo gobierna una constitución operativa, esa constitución condiciona al agente de código, y SpecKit, adaptado sin modificar su código, organiza la especificación, el plan, las tareas, el análisis y la implementación. [Cómo funciona la adaptación](/es/speckit)."
             en:
               state: borrador
-              text: "The manifesto can be applied with any method. A reference implementation brings it to SpecKit: the core governs an operational constitution, that constitution conditions the coding agent, and SpecKit, adapted without modifying its code, organises the specification, the plan, the tasks, the analysis and the implementation. [How the adaptation works](/speckit)."
+              text: "The manifesto can be applied with any method. A reference implementation brings it to SpecKit: the core governs an operational constitution, that constitution conditions the coding agent, and SpecKit, adapted without modifying its code, organizes the specification, the plan, the tasks, the analysis and the implementation. [How the adaptation works](/speckit)."
             pt-BR:
               state: borrador
               text: "O manifesto pode ser aplicado com qualquer método. Uma implementação de referência o leva ao SpecKit: o núcleo governa uma constituição operacional, essa constituição condiciona o agente de código, e o SpecKit, adaptado sem modificar seu código, organiza a especificação, o plano, as tarefas, a análise e a implementação. [Como a adaptação funciona](/pt-br/speckit)."

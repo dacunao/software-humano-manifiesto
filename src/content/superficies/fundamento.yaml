@@ -47,7 +47,7 @@ sections:
               text: "Todo empieza por saber qué debe construirse y con qué autoridad. El fundamento de producto es el contenido autorizado que dice qué construir, por qué, qué resultados debe producir, qué condiciones respetar y cómo se sabrá que se cumplió. No es un documento nuevo: puede estar en un PRD, en historias, en reglas o en criterios de aceptación."
             en:
               state: borrador
-              text: "Everything starts with knowing what must be built and with what authority. The product foundation is the authorised content that says what to build, why, what results it must produce, what conditions it must respect and how you will know it has been met. It is not a new document: it can be found in a PRD, in stories, in rules or in acceptance criteria."
+              text: "Everything starts with knowing what must be built and with what authority. The product foundation is the authorized content that says what to build, why, what results it must produce, what conditions it must respect and how you will know it has been met. It is not a new document: it can be found in a PRD, in stories, in rules or in acceptance criteria."
             pt-BR:
               state: borrador
               text: "Tudo começa por saber o que deve ser construído e com que autoridade. O fundamento de produto é o conteúdo autorizado que diz o que construir, por quê, que resultados deve produzir, que condições respeitar e como se saberá que foi cumprido. Não é um documento novo: pode estar em um PRD, em histórias, em regras ou em critérios de aceitação."

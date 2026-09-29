@@ -124,6 +124,18 @@
   ]
  },
  {
+  "clave": "canon::texto-canonico-05",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "AFTERWARDS_US",
+  "categoria": "BRITISH_ENGLISH",
+  "mensaje": "In American English, ‘afterward’ is the preferred variant. ‘Afterwards’ is more commonly used in British English and other dialects.",
+  "fragmento": "...e person is seeking. The solution comes afterwards.",
+  "sugerencias": [
+   "afterward"
+  ]
+ },
+ {
   "clave": "canon::texto-canonico-06",
   "nivel": 1,
   "idioma": "pt",
@@ -862,7 +874,7 @@
   "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
   "categoria": "STYLE",
   "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
-  "fragmento": "...o obrigatório definido pelo produto.  - `STOP03` Pretende-se omitir, modificar ou adiar ...",
+  "fragmento": "...po obrigatório definido por produto.  - `STOP03` Pretende-se omitir, modificar ou adiar ...",
   "sugerencias": []
  },
  {
@@ -1066,6 +1078,18 @@
    "Posição",
    "Situação",
    "Condição"
+  ]
+ },
+ {
+  "clave": "superficies/gobernanza.yaml::sections/0/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "AFTERWARDS_US",
+  "categoria": "BRITISH_ENGLISH",
+  "mensaje": "In American English, ‘afterward’ is the preferred variant. ‘Afterwards’ is more commonly used in British English and other dialects.",
+  "fragmento": "... before integrating, before release and afterwards—has a decision that cannot be skipped.",
+  "sugerencias": [
+   "afterward"
   ]
  },
  {

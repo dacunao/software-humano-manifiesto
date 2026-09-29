@@ -78,7 +78,7 @@ sections:
               text: "El flujo evita que generar código sea el primer acto de diseño. Ocho pasos llevan del fundamento a una solución verificable: comprender, establecer cobertura, planificar, concretar el progreso, definir la experiencia, modelar reglas y riesgos, explorar, y construir verificando. Descomponer el trabajo no autoriza a omitir parte del alcance."
             en:
               state: borrador
-              text: "The flow prevents code generation from becoming the first act of design. Eight steps lead from the foundation to a verifiable solution: understand, establish coverage, plan, make progress concrete, define the experience, model rules and risks, explore, and build while verifying. Breaking the work down does not authorise omitting part of the scope."
+              text: "The flow prevents code generation from becoming the first act of design. Eight steps lead from the foundation to a verifiable solution: understand, establish coverage, plan, make progress concrete, define the experience, model rules and risks, explore, and build while verifying. Breaking the work down does not authorize omitting part of the scope."
             pt-BR:
               state: borrador
               text: "O fluxo evita que gerar código seja o primeiro ato de design. Oito passos levam do fundamento a uma solução verificável: compreender, estabelecer cobertura, planejar, concretizar o progresso, definir a experiência, modelar regras e riscos, explorar e construir verificando. Decompor o trabalho não autoriza omitir parte do escopo."
@@ -92,7 +92,7 @@ sections:
         text: Artefactos que responden preguntas
       en:
         state: borrador
-        text: Artefacts that answer questions
+        text: Artifacts that answer questions
       pt-BR:
         state: borrador
         text: Artefatos que respondem a perguntas
@@ -109,7 +109,7 @@ sections:
               text: Cada artefacto existe para responder una pregunta, no para llenar una plantilla. Si la información ya existe, se referencia. Si un artefacto no cambia una decisión ni ayuda a verificarla, sobra.
             en:
               state: borrador
-              text: Each artefact exists to answer a question, not to fill in a template. If the information already exists, it is referenced. If an artefact neither changes a decision nor helps verify one, it is superfluous.
+              text: Each artifact exists to answer a question, not to fill in a template. If the information already exists, it is referenced. If an artifact neither changes a decision nor helps verify one, it is superfluous.
             pt-BR:
               state: borrador
               text: Cada artefato existe para responder a uma pergunta, não para preencher um modelo. Se a informação já existe, ela é referenciada. Se um artefato não muda uma decisão nem ajuda a verificá-la, ele é supérfluo.
