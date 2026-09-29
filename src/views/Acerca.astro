@@ -3,6 +3,7 @@ import type { Locale } from '../lib/contenido/esquemas';
 import Superficie from './Superficie.astro';
 import { canon, contenido, markdownDe, rutaCasa, t } from '../lib/sitio';
 import CitaCanonica from '../components/CitaCanonica.astro';
+import { textoDestino } from '../lib/manifiesto';
 
 /** Origen, autoría, versiones, procedencia y licencias. El contacto aparece solo cuando existe (T107). */
 interface Props {
@@ -16,7 +17,7 @@ const frase = { nodo: portada, ...markdownDe(portada, locale) };
 const langFrase = frase.lang === locale ? locale : 'es';
 ---
 <Superficie id="acerca" locale={locale}>
-  <CitaCanonica slot="antes" nodos={[frase]} lang={langFrase} rotulo={t(langFrase === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale)} fuente={rutaCasa('portada-04', locale)} textoFuente={t('contenido.fuente', locale)} destacada />
+  <CitaCanonica slot="antes" nodos={[frase]} lang={langFrase} rotulo={t(langFrase === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale)} fuente={rutaCasa('portada-04', locale)} textoFuente={textoDestino('portada-04', locale)} destacada />
   {(email || issues) && (
     <section id="contacto" class="seccion">
       <h2>{t('acerca.contacto', locale)}</h2>

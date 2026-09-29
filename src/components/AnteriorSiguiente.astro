@@ -2,7 +2,7 @@
 import type { Locale } from '../lib/contenido/esquemas';
 import { ruta, vecinas, type Pagina } from '../lib/i18n/rutas';
 import { tituloDe } from '../lib/manifiesto';
-import { t } from '../lib/sitio';
+import { rutaDescarga, t } from '../lib/sitio';
 
 /** Anterior y siguiente en el orden del núcleo (FR-002, RQ-15): recorrerlos reproduce el núcleo. */
 interface Props {
@@ -20,4 +20,15 @@ const s = siguiente && enlace(siguiente);
     {a && <a rel="prev" href={a.href}><span class="rotulo-contenido">{t('nav.anterior', locale)}</span> <span lang={a.lang}>{a.codigo && <code>{a.codigo}</code>} {a.texto}</span></a>}
     {s && <a rel="next" href={s.href}><span class="rotulo-contenido">{t('nav.siguiente', locale)}</span> <span lang={s.lang}>{s.codigo && <code>{s.codigo}</code>} {s.texto}</span></a>}
   </nav>
+)}
+{a && !s && (
+  // Fin del recorrido (R2, P07): quien terminó de leer tiene por dónde seguir.
+  <aside class="fin-recorrido" aria-label={t('nav.lectura', locale)}>
+    <p>{t('recorrido.fin', locale)}</p>
+    <ul>
+      <li><a href={ruta({ tipo: 'mapa' }, locale)}>{tituloDe({ tipo: 'mapa' }, locale).texto}</a></li>
+      <li><a href={rutaDescarga(locale)} download>{t('integro.descargas', locale)}</a></li>
+      <li><a href={ruta({ tipo: 'speckit' }, locale)}>{t('nav.speckit', locale)}</a></li>
+    </ul>
+  </aside>
 )}

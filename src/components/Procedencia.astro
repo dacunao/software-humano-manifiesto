@@ -16,3 +16,4 @@ const { locale, actualizado } = Astro.props;
   {actualizado && <> · {t('pie.actualizado', locale, { fecha: actualizado })}</>}
   · <a href={`${ruta({ tipo: 'acerca' }, locale)}#procedencia`}>{t('pie.procedencia', locale)}</a>
 </p>
+{locale !== 'es' && <p class="procedencia">{t('contenido.avisoTraduccion', locale)}</p>}

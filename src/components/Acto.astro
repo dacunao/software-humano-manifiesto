@@ -8,7 +8,7 @@ import Comparacion from './Comparacion.astro';
 import ListaPrincipios from './ListaPrincipios.astro';
 import EstadoAdaptacion from './EstadoAdaptacion.astro';
 import Compartir from './Compartir.astro';
-import { esDivision } from '../lib/manifiesto';
+import { esDivision, textoDestino } from '../lib/manifiesto';
 import { ruta } from '../lib/i18n/rutas';
 
 /**
@@ -38,7 +38,7 @@ const cita = (b: Extract<Bloque, { kind: 'canon' }>) => {
     rotulo: t(lang === 'es' ? 'contenido.canonico' : 'contenido.traduccion', locale),
     // En su casa el pasaje no remite a otra parte; fuera de ella (cita breve), a su casa (§18.3 v1.2).
     fuente: enCasa(primero.id) ? undefined : rutaCasa(primero.id, locale),
-    textoFuente: t('contenido.fuente', locale),
+    textoFuente: textoDestino(primero.id, locale),
   };
 };
 const grupos = [sec.blocks, sec.depth] as const;

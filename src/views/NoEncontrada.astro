@@ -19,6 +19,6 @@ const salidas = [
   <h1>{t('error404.titulo', locale)}</h1>
   <p>{t('error404.texto', locale)}</p>
   <ul>
-    {salidas.map((s) => <li><a href={ruta({ tipo: s.tipo }, locale)}>{t(s.clave, locale)}</a></li>)}
+    {salidas.map((s) => <li><a href={ruta({ tipo: s.tipo === 'manifiesto' ? 'mapa' : s.tipo }, locale)}>{t(s.clave, locale)}</a></li>)}
   </ul>
 </Base>

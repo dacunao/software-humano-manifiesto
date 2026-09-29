@@ -2,7 +2,8 @@ import type { IdSuperficie, Locale } from './contenido/esquemas';
 import type { GrupoIndice, ItemIndice } from './indice';
 import type { IdDivision } from './casas';
 import { PRINCIPIOS, ruta, type Pagina } from './i18n/rutas';
-import { canonicoDePrincipio, markdownDe, superficie, t, texto } from './sitio';
+import { canon, canonicoDePrincipio, markdownDe, nodo, superficie, t, texto } from './sitio';
+import { casas } from './casas';
 
 /**
  * Índice del manifiesto (PRD v1.2 §18.2, RQ-15): las divisiones en el orden del núcleo, agrupadas
@@ -54,4 +55,16 @@ export function indiceManifiesto(actual: Pagina, locale: Locale, propias: ItemIn
       return [item, ...hijos];
     }),
   }));
+}
+
+/** Texto del enlace a la casa de un pasaje (R5, WCAG 2.4.4): nombra el destino, no solo la acción. */
+export function textoDestino(id: string, locale: Locale): string {
+  const casa = casas(canon).get(id);
+  if (casa === 'principio') {
+    const n = nodo(id);
+    const pid = canon.nodos.find((x) => x.section === n.section && /^p(0[1-9]|10)$/.test(x.id))?.id;
+    if (pid) return t('contenido.fuenteEn', locale, { pagina: pid.toUpperCase() });
+  }
+  if (!casa || casa === 'descarga' || casa === 'principio') return t('integro.descargas', locale);
+  return t('contenido.fuenteEn', locale, { pagina: tituloDe({ tipo: casa }, locale).texto });
 }

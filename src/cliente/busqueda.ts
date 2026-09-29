@@ -95,7 +95,7 @@ async function mostrar(q: string): Promise<void> {
     const propia = d.sub_results.find((s) => !s.anchor);
     // La página como primer resultado; debajo, las secciones que coinciden.
     ol.append(enlace(propia?.url ?? d.url, titulo, (propia ?? d).excerpt, true));
-    for (const s of subs) ol.append(enlace(s.url, `# ${s.title}`, s.excerpt, false));
+    for (const s of subs) ol.append(enlace(s.url, s.title, s.excerpt, false));
     seccion.append(ol);
     lista.append(seccion);
   }

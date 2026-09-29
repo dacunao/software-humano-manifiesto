@@ -636,15 +636,15 @@ Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`, con
 
 Fuente: `evidencia/recorrido-con-los-principios-2026-09-29.md` y la decisión de Damián Acuña del 2026-09-29 de aplicar los once hallazgos. Los textos de interfaz nuevos o modificados quedan en `borrador` hasta su aprobación.
 
-- [ ] T206 R1 · La línea de fuente de cada principio usa el título de la sección en el idioma de la página («section PRINCIPLE 6», no «PRINCIPIO 6») per `P05`, PRD §19.4
-- [ ] T207 R2 · Al final del recorrido (Guía de bolsillo), un cierre con los pasos siguientes: volver al Mapa, descargar el núcleo y ver SpecKit per `P07`, `P08`
-- [ ] T208 R3 · En el Mapa, «Las nueve divisiones» va justo después de la portada, antes del índice de identificadores, en la página y en «En esta página» per `P03`, `STOP05`
-- [ ] T209 R4 · Rótulo breve en cada cita traducida y el aviso de autoridad del original una sola vez por página per `P06`, `FR-017`
-- [ ] T210 R5 · Los enlaces «Leer el pasaje completo» nombran su destino («Leer en El manifiesto») per `P05`, WCAG 2.4.4
-- [ ] T211 R6 · El estado de la adaptación dice una sola vez que es independiente y sin respaldo de GitHub per `P06`
-- [ ] T212 R7 · «Núcleo v2.1» en la cabecera es un dato, sin enlace, y la página de error enlaza el manifiesto al Mapa per `P05`, `P06`
-- [ ] T213 R8 · En el teléfono, «Contenido» nombra la sección solo cuando se llega a ella per `P07`
-- [ ] T214 R9 · Los subresultados de la búsqueda no muestran «#» per `P05`
-- [ ] T215 R10 · Alinear «Núcleo v2.1» en el menú del teléfono per `P08`
-- [ ] T216 R11 · Al cambiar de idioma se conserva la posición: el enlace lleva el ancla del pasaje en pantalla, que es la misma en los tres idiomas. Sin JavaScript abre al inicio, como hoy per `P09`, `FR-019`
+- [X] T206 R1 · La línea de fuente de cada principio usa el título de la sección en el idioma de la página («section PRINCIPLE 6», no «PRINCIPIO 6») per `P05`, PRD §19.4
+- [X] T207 R2 · Al final del recorrido (Guía de bolsillo), un cierre con los pasos siguientes: volver al Mapa, descargar el núcleo y ver SpecKit per `P07`, `P08`
+- [X] T208 R3 · En el Mapa, «Las nueve divisiones» va justo después de la portada, antes del índice de identificadores, en la página y en «En esta página» per `P03`, `STOP05`
+- [X] T209 R4 · Rótulo breve en cada cita traducida y el aviso de autoridad del original una sola vez por página per `P06`, `FR-017`
+- [X] T210 R5 · Los enlaces «Leer el pasaje completo» nombran su destino («Leer en El manifiesto») per `P05`, WCAG 2.4.4
+- [X] T211 R6 · El estado de la adaptación dice una sola vez que es independiente y sin respaldo de GitHub per `P06`
+- [X] T212 R7 · «Núcleo v2.1» en la cabecera es un dato, sin enlace, y la página de error enlaza el manifiesto al Mapa per `P05`, `P06`
+- [X] T213 R8 · En el teléfono, «Contenido» nombra la sección solo cuando se llega a ella per `P07`
+- [X] T214 R9 · Los subresultados de la búsqueda no muestran «#» per `P05`
+- [X] T215 R10 · Alinear «Núcleo v2.1» en el menú del teléfono per `P08`
+- [X] T216 R11 · Al cambiar de idioma se conserva la posición: el enlace lleva el ancla del pasaje en pantalla, que es la misma en los tres idiomas. Sin JavaScript abre al inicio, como hoy per `P09`, `FR-019`
 - [ ] T217 Pruebas de extremo a extremo de T206–T216 y aprobación de Damián de los textos de interfaz nuevos o modificados

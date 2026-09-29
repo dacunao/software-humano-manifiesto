@@ -34,6 +34,7 @@ const actual = pagina.tipo === 'principio' || esDivision(pagina.tipo) ? 'manifie
       <li><a href={contenido.estado.url} rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
     )}
   </ul>
-  <p class="version"><a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.version', locale, { version: contenido.sitio.core.version })}</a></p>
+  {/* Dato de versión, sin enlace: el menú «Manifiesto» ya lleva al Mapa (R7). */}
+  <p class="version">{t('nav.version', locale, { version: contenido.sitio.core.version })}</p>
   <SelectorIdioma locale={locale} pagina={pagina} />
 </nav>

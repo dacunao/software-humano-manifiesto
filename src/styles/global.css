@@ -81,9 +81,7 @@ html { scroll-padding-top: calc(var(--sh-alto-cabecera) + 1rem); }
 .navegacion-global > ul a:hover { background: var(--sh-subtle); }
 .navegacion-global > ul a[aria-current] { font-weight: 600; text-decoration: underline; text-decoration-color: var(--sh-interactive); text-decoration-thickness: 2px; text-underline-offset: 0.45em; }
 .navegacion-global .estado { font-weight: 400; font-size: 0.8rem; color: var(--sh-text-muted); }
-.navegacion-global .version { margin: 0; }
-.navegacion-global .version a { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--sh-interactive); text-decoration: none; }
-.navegacion-global .version a:hover { text-decoration: underline; }
+.navegacion-global .version { margin: 0; display: inline-flex; align-items: center; min-height: 44px; padding-inline: 0.6rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; color: var(--sh-text-muted); }
 
 /* Selector de idioma (§7.1, PRD v1.4 §21.7): EN · ES · PT, objetivos de 44 × 44 px, radio de 8 px. */
 .selector-idioma { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
@@ -306,3 +304,9 @@ mark.pagefind-highlight { background: var(--sh-indigo-soft); color: inherit; out
   .selector-idioma { margin-left: 0; }
   .aviso-borrador { font-size: 0.875rem; }
 }
+
+/* Fin del recorrido (R2): los pasos siguientes tras la Declaración final. */
+.fin-recorrido { margin-top: 1.5rem; padding: 1rem 1.25rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); }
+.fin-recorrido p { margin: 0 0 0.5rem; font-weight: 600; }
+.fin-recorrido ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; list-style: none; padding: 0; margin: 0; }
+.fin-recorrido a { display: inline-flex; align-items: center; min-height: 44px; }

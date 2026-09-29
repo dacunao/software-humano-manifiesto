@@ -58,7 +58,7 @@ const recorrido = id === 'mapa'
     {(id === 'mapa' || id === 'manifiesto') && <p class="version-nucleo">{t('manifiesto.version', locale, { version, fecha: date })}</p>}
   </Fragment>
   {id === 'mapa' && (
-    <section id="recorrido" class="seccion" aria-labelledby="recorrido-titulo">
+    <section slot="trasPrimera" id="recorrido" class="seccion" aria-labelledby="recorrido-titulo">
       <h2 id="recorrido-titulo">{t('mapa.recorrido', locale)}</h2>
       {recorrido.map((r) => (
         <div class="grupo-recorrido">

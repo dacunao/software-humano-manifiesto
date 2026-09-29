@@ -27,7 +27,7 @@ function ajustarPlegable(): void {
 
 function actualizar(): void {
   const limite = window.innerHeight * 0.3;
-  let seccion = marcas.find((m) => m.n === 2)?.id;
+  let seccion: string | undefined;
   let sub: string | undefined;
   for (const m of marcas) {
     if (m.el.getBoundingClientRect().top > limite) break;

@@ -1,4 +1,5 @@
 ---
+import { textoDestino } from '../lib/manifiesto';
 import type { Entrada, Locale } from '../lib/contenido/esquemas';
 import { renderMarkdown } from '../lib/canon/render';
 import { rutaCasa, texto, t } from '../lib/sitio';
@@ -31,7 +32,7 @@ const publico = /^(p(0[1-9]|10)|d0[1-6]|f0[1-8]|a0[1-8]|stop0[1-7]|cr0[1-8]|o0[1
     {clave && !sinRotulo && <p class="rotulo-contenido">{t(clave, locale)}</p>}
     <div class="lectura" set:html={renderMarkdown(tx.texto)} />
     {origen && !sinOrigen && entrada.type !== 'surface-text' && (
-      <p class="origen"><a href={origen}>{publico ? <>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></> : t('contenido.fuente', locale)}</a></p>
+      <p class="origen"><a href={origen}>{publico ? <>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></> : textoDestino(entrada.derivedFrom!, locale)}</a></p>
     )}
   </div>
 )}

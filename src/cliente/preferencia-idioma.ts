@@ -21,6 +21,18 @@ function guardar(v: string | null): void {
   }
 }
 
+/** El último elemento con id del contenido que ya pasó por el tercio superior de la pantalla. */
+function pasajeEnPantalla(): string | undefined {
+  if (window.scrollY < 80) return undefined;
+  const limite = window.innerHeight * 0.3;
+  let id: string | undefined;
+  for (const e of document.querySelectorAll<HTMLElement>('main [id]')) {
+    if (e.getBoundingClientRect().top > limite) break;
+    if (!e.id.endsWith('-titulo')) id = e.id;
+  }
+  return id;
+}
+
 const preferencia = leer();
 const desdeFuera = !document.referrer || new URL(document.referrer).origin !== location.origin;
 const destino = preferencia ? RUTA[preferencia] : undefined;
@@ -28,6 +40,11 @@ if (location.pathname === '/' && destino && desdeFuera) location.replace(destino
 
 document.querySelectorAll<HTMLElement>('[data-selector-idioma]').forEach((selector) => {
   selector.querySelectorAll<HTMLAnchorElement>('a[data-idioma]').forEach((a) => {
-    a.addEventListener('click', () => guardar(a.dataset['idioma'] ?? null));
+    a.addEventListener('click', () => {
+      guardar(a.dataset['idioma'] ?? null);
+      // Conserva la posición (R11, P09): el pasaje en pantalla tiene el mismo id en los tres idiomas.
+      const ancla = pasajeEnPantalla();
+      if (ancla) a.href = `${a.href.split('#')[0]}#${encodeURIComponent(ancla)}`;
+    });
   });
 });

@@ -20,7 +20,7 @@ interface Props {
   claseIndice?: string | undefined;
   /** Incluye en «En esta página» los subtítulos del texto canónico de cada sección (T202). */
   seguimiento?: boolean;
-  /** Secciones que agrega la vista después de las del contenido, para «En esta página» (Mapa: «Las nueve divisiones»). */
+  /** Secciones que agrega la vista tras la primera del contenido (ranura `trasPrimera`), para «En esta página» (Mapa: «Las nueve divisiones», R3). */
   extraPagina?: ItemPagina[];
 }
 const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = false, extraPagina = [] } = Astro.props;
@@ -52,7 +52,10 @@ const enPagina: ItemPagina[] = s.sections.flatMap((sec) => {
       })
     : [];
   return [{ href: `#${sec.id}`, texto: x.texto, nivel: 2 as const, lang: x.lang !== locale ? x.lang : undefined }, ...propios];
-}).concat(extraPagina);
+});
+// Las secciones de la vista van tras la primera sección del contenido, en el mismo orden que en la página.
+const finPrimera = enPagina.findIndex((it, i) => i > 0 && it.nivel === 2);
+if (extraPagina.length) enPagina.splice(finPrimera < 0 ? enPagina.length : finPrimera, 0, ...extraPagina);
 ---
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} claseIndice={claseIndice} enPagina={enPagina}>
   <header class="encabezado-superficie">
@@ -62,7 +65,13 @@ const enPagina: ItemPagina[] = s.sections.flatMap((sec) => {
     <p class="entradilla" lang={bajada.lang !== locale ? bajada.lang : undefined}>{bajada.texto}</p>
   </header>
   <slot name="antes" />
-  <Secciones secciones={s.sections} locale={locale} superficie={id} />
+  {Astro.slots.has('trasPrimera') ? (
+    <>
+      <Secciones secciones={s.sections.slice(0, 1)} locale={locale} superficie={id} />
+      <slot name="trasPrimera" />
+      <Secciones secciones={s.sections.slice(1)} locale={locale} superficie={id} />
+    </>
+  ) : <Secciones secciones={s.sections} locale={locale} superficie={id} />}
   <slot />
   {Astro.slots.has('derecha') && <Fragment slot="derecha"><slot name="derecha" /></Fragment>}
 </Base>

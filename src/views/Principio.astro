@@ -9,7 +9,7 @@ import AnteriorSiguiente from '../components/AnteriorSiguiente.astro';
 import { indiceManifiesto } from '../lib/manifiesto';
 import { renderLinea } from '../lib/canon/render';
 import { ruta } from '../lib/i18n/rutas';
-import { canonicoDePrincipio, contenido, fechaActualizacion, markdownDe, partesCanonicas, principio, rutaDescarga, t, URL_SITIO } from '../lib/sitio';
+import { canonicoDePrincipio, contenido, fechaActualizacion, markdownDe, partesCanonicas, principio, rutaDescarga, t, URL_SITIO, nodo } from '../lib/sitio';
 
 /**
  * Página de un principio con el contrato del PRD §17, en su orden: declaración, tensión,
@@ -32,7 +32,6 @@ const codigo = pid.toUpperCase();
 const indice = indiceManifiesto({ tipo: 'principio', principio: pid }, locale);
 const enPagina = ['declaracion', 'tension', 'significado', 'consecuencia', 'ejemplo', 'contraejemplo', 'prueba', 'fuente']
   .map((id) => ({ href: `#${id}`, texto: t(`principio.${id}`, locale), nivel: 2 as const }));
-const numero = Number(pid.slice(1));
 const cita = (nodos: NodoCanonico[]) => {
   const ns = nodos.map((n) => ({ nodo: n, ...markdownDe(n, locale) }));
   const lang = ns.every((x) => x.lang === locale) ? locale : 'es';
@@ -96,7 +95,7 @@ const ld = [{
 
     <section id="fuente" aria-labelledby="fuente-titulo" class="seccion">
       <h2 id="fuente-titulo">{t('principio.fuente', locale)}</h2>
-      <p>{t('contenido.fuenteNucleo', locale, { version: contenido.sitio.core.version, codigo: `PRINCIPIO ${numero} · ${codigo}` })} <a href={rutaDescarga(locale)} download>{t('integro.descargas', locale)}</a></p>
+      <p>{t('contenido.fuenteNucleo', locale, { version: contenido.sitio.core.version, codigo: markdownDe(nodo(pid), locale).markdown.replace(/^#{1,6}\s+/, '').replace(/`/g, '') })} <a href={rutaDescarga(locale)} download>{t('integro.descargas', locale)}</a></p>
     </section>
 
     <AnteriorSiguiente pagina={{ tipo: 'principio', principio: pid }} locale={locale} />
