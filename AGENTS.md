@@ -214,6 +214,11 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 
 **Cabecera y tema** (decisiones de la autoridad de producto, 2026-09-28; PRD v1.4): logotipo como SVG, con ícono y «Manifiesto» en pantallas anchas y solo el ícono en teléfonos; el resto del sitio sigue con fuentes del sistema. Entrada «GitHub» en el menú, visible solo cuando el repositorio de la adaptación sea público. Idiomas como EN · ES · PT, con el nombre completo accesible. Tema claro u oscuro: por defecto, el del sistema. Reemplaza en parte RQ-05 (sin panel de ajustes): el control de tema es la segunda preferencia real, no un panel.
 
+**Navegación estándar en todo el sitio** (decisión de la autoridad de producto, 2026-09-29; reemplaza la decisión del 2026-09-27 sobre «En esta sección»):
+- la columna izquierda muestra solo las páginas de la parte del sitio en que se está, sin desplegar secciones; las páginas sin subpáginas (Inicio, SpecKit y Acerca de) no la tienen;
+- la columna derecha, «En esta página», está siempre visible y muestra todas las secciones de la página con sus subtítulos, y marca dónde se está;
+- el menú «Manifiesto» abre el Mapa del manifiesto, la primera página del recorrido.
+
 **Búsqueda** (decisión de la autoridad de producto, 2026-09-28; RQ-16 enmendado): motor Pagefind autoalojado, con el índice generado desde nuestro contenido y la interfaz propia. Damián aprueba agregar `'wasm-unsafe-eval'` a la política de seguridad.
 
 **Cabecera sin avisos ni restablecimiento** (decisiones de la autoridad de producto, 2026-09-28): se quita el aviso «Versión preliminar», porque la comprobación previa ya impide publicar borradores y no hay visitantes a quienes advertir; se elimina «Olvidar mi elección de idioma» (PRD v1.6).

@@ -617,3 +617,14 @@ Se conservan `FR-012` (procedencia visible), PRD §18.4 (sección sobre Software
   - lo que funcionó: la revisión por otra familia y la alineación a nodos
 
   per `AGENTS.md` «Registro del piloto», PRD §23.4 (missing)
+
+---
+
+## Phase 31: Navegación estándar
+
+Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`, con fundamento en PRD §18.2, `P05` y `P06`. Corrige tres problemas observados: el título de la sección aparecía en las dos columnas, la columna derecha desaparecía en las secciones sin subtítulos y el Mapa del manifiesto parecía parte de otra página.
+
+- [ ] T201 Columna izquierda: solo las páginas de la parte del sitio en que se está, que en el manifiesto son las divisiones por ruta de lectura y los principios. Deja de desplegar las secciones de la página actual. Sin columna izquierda en Inicio, SpecKit y Acerca de per PRD §18.2, `P06`
+- [ ] T202 Columna derecha «En esta página» en todas las páginas con dos o más secciones: todas las secciones (h2) con sus subtítulos del texto canónico (h3 y h4), visible sin JavaScript (`FR-015`); con JavaScript, marca la sección en pantalla. Reemplaza «En esta sección». En móvil va dentro de «Contenido» per PRD §18.2, especificación visual §7.2
+- [ ] T203 El menú «Manifiesto» abre el Mapa del manifiesto y sigue marcado en todas las divisiones y en los principios per PRD §18.2, `P05`
+- [ ] T204 Actualizar las pruebas de extremo a extremo que dependen del índice y de «En esta sección», y agregar una que verifique las tres reglas en escritorio, en móvil y sin JavaScript
