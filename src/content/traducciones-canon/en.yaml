@@ -738,9 +738,9 @@ entries:
 
       - Do they need to remember something from a previous screen in order to act correctly?
 
-      - Does the interface add a layer of learning unrelated to the situation or the outcome they have to resolve?
+      - Does the interface add a layer of learning unrelated to the situation or the outcome to be resolved?
     approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
+    approvedAt: 2026-09-29
   principio-5-12:
     sourceHash: b71a03e00d4199e31d32b9473e9d69ecdbd72a4bb8ed7cf8cd5d8e3d622832a3
     state: aprobada

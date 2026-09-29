@@ -252,9 +252,9 @@ entries:
   texto-canonico-07:
     sourceHash: e0f854b8f83d022990d5c2c278a0ad4a52f0092f68b3c280bc14e9aa48e7789b
     state: aprobada
-    text: Por isso a experiência faz parte da funcionalidade. Um sistema que permite concluir uma tarefa, mas obriga a interpretar a interface, memorizar convenções, atravessar estruturas desnecessárias ou perguntar-se o que acontecerá em seguida, transfere à pessoa um problema que o produto deveria ter resolvido.
+    text: Por isso a experiência faz parte da funcionalidade. Um sistema que permite concluir uma tarefa, mas obriga a interpretar a interface, memorizar convenções, atravessar estruturas desnecessárias ou perguntar-se o que acontecerá em seguida, transfere à pessoa um problema que o produto deveria resolver.
     approvedBy: Damián Acuña
-    approvedAt: 2026-09-28
+    approvedAt: 2026-09-29
   texto-canonico-08:
     sourceHash: aaaac0e336bee0b98e3d77f08ea821f1e8a69e9cb00735b8c18c286564e96e7c
     state: aprobada
