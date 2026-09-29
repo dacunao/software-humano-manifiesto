@@ -127,8 +127,8 @@ Si un campo está sin completar, el agente debe detenerse y solicitarlo. No lo i
 
 ## Fundamento de producto autorizado
 
-- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.5.md` (SHA-256 `538a567c75eb8547c75679e3ed953e1b73bc013c032ff196703ef8936cbe277c`)
-- **Versión**: 1.5, fecha 2026-09-28, vigente. Adopta el sistema visual compartido de Software Humano (`docs/design/Software_Humano_Especificacion_Visual_v1.0.md`): Noto Sans como única familia, paleta oficial, escala oscura y reglas de componentes (ver «Cambios de la versión 1.5»). Las versiones 1.4 (`8ad88bdd…`), 1.3 (`ba39d39d…`), 1.2 (`a353a214…`), 1.1 (`bf964e19…`) y 1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
+- **Ruta**: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.6.md` (SHA-256 `74c03b933defe6c2d3cf9ba830991372e62f0eaf0788866856f7ffb30dce1f2e`)
+- **Versión**: 1.6, fecha 2026-09-28, vigente. La preferencia de idioma se modifica eligiendo otro idioma, sin acción para restablecerla (ver «Cambios de la versión 1.6»). Las versiones 1.5 (`538a567c…`), 1.4 (`8ad88bdd…`), 1.3 (`ba39d39d…`), 1.2 (`a353a214…`), 1.1 (`bf964e19…`) y 1.0 (`e3ca0ac8…`) se conservan sin cambios como registro histórico y **no gobiernan**.
 - **Autoridad de producto**: Damián Acuña
 
 Solo esa autoridad puede aprobar cambios de alcance, resultados, exclusiones o estado de publicación. El agente puede proponer alternativas y señalar contradicciones; no puede aprobarlas.
@@ -215,6 +215,8 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 **Cabecera y tema** (decisiones de la autoridad de producto, 2026-09-28; PRD v1.4): logotipo como SVG, con ícono y «Manifiesto» en pantallas anchas y solo el ícono en teléfonos; el resto del sitio sigue con fuentes del sistema. Entrada «GitHub» en el menú, visible solo cuando el repositorio de la adaptación sea público. Idiomas como EN · ES · PT, con el nombre completo accesible. Tema claro u oscuro: por defecto, el del sistema. Reemplaza en parte RQ-05 (sin panel de ajustes): el control de tema es la segunda preferencia real, no un panel.
 
 **Búsqueda** (decisión de la autoridad de producto, 2026-09-28; RQ-16 enmendado): motor Pagefind autoalojado, con el índice generado desde nuestro contenido y la interfaz propia. Damián aprueba agregar `'wasm-unsafe-eval'` a la política de seguridad.
+
+**Cabecera sin avisos ni restablecimiento** (decisiones de la autoridad de producto, 2026-09-28): se quita el aviso «Versión preliminar», porque la comprobación previa ya impide publicar borradores y no hay visitantes a quienes advertir; se elimina «Olvidar mi elección de idioma» (PRD v1.6).
 
 **Nombres del menú** (decisión de la autoridad de producto, 2026-09-27; ajustada por la v1.2): las superficies y divisiones se nombran con sustantivos conocidos y la ruta de lectura del núcleo aparece como guía, no como nombre (`P05`). Desde la v1.2, el menú principal es Inicio, Manifiesto, SpecKit y Acerca de, y las rutas agrupan el índice del manifiesto.
 

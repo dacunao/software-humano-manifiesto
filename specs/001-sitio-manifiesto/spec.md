@@ -6,7 +6,7 @@
 
 **Status**: Draft
 
-**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.5.md` (v1.5, SHA-256 `538a567c…`) y la especificación visual `docs/design/Software_Humano_Especificacion_Visual_v1.0.md`, más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27 y el 2026-09-28.
+**Input**: Fundamento de producto completo: `docs/product/PRD_Sitio_Manifiesto_Software_Humano_v1.6.md` (v1.6, SHA-256 `74c03b93…`) y la especificación visual `docs/design/Software_Humano_Especificacion_Visual_v1.0.md`, más las decisiones de la autoridad de producto registradas en `AGENTS.md` el 2026-09-27 y el 2026-09-28.
 
 **Actualización v1.1** (2026-09-27): la arquitectura de información sigue las cuatro rutas de lectura del núcleo (PRD §18.1), cada pasaje tiene una sola casa (PRD §18.3), el texto íntegro es una página de consulta con descarga (`FR-003`), el fundamento pasa a Principios (`FR-007`) y se agrega Verificación (`FR-022`). Las secciones afectadas están marcadas «v1.1».
 
@@ -163,7 +163,7 @@ La redacción de cada historia es textual del PRD. Los escenarios de aceptación
 1. **Given** una primera visita a `/` con un navegador en portugués, **When** la página carga, **Then** se muestra en inglés, sin redirección automática.
 2. **Given** una persona en un principio en inglés, **When** elige «Español», **Then** llega al mismo principio en `/es/` y el idioma activo es perceptible, también para tecnologías de asistencia.
 3. **Given** una preferencia guardada en español, **When** la persona abre una URL compartida de `/pt-br/`, **Then** ve portugués: la URL explícita prevalece.
-4. **Given** una preferencia guardada, **When** la persona la restablece, **Then** las rutas sin prefijo vuelven a mostrarse en inglés, sin cuenta ni registro.
+4. **Given** una preferencia guardada, **When** la persona elige otro idioma (v1.6), **Then** la preferencia cambia a ese idioma, sin cuenta ni registro.
 
 ---
 
@@ -213,7 +213,7 @@ Identificadores y contenido del PRD §20, sin renumerar. Texto completo en la se
 - **FR-017** Transparencia de contenido derivado: el sistema MUST distinguir visual y semánticamente cita canónica, explicación, ejemplo, inferencia o propuesta y estado técnico confirmado.
 - **FR-018** Privacidad: la lectura MUST NOT requerir cuenta, registro ni datos personales; la medición minimiza datos, documenta su propósito y no bloquea contenido por falta de consentimiento.
 - **FR-019** Experiencia multilingüe: todo el alcance público MUST estar en `en`, `es` y `pt-BR`, con URL propia, `lang`, metadatos localizados, `hreflang` recíprocos y correspondencia conceptual. Rutas sin prefijo en inglés; `/es/` y `/pt-br/`; una URL localizada explícita prevalece sobre cualquier preferencia.
-- **FR-020** Ajustes de idioma y experiencia: el visitante MUST poder cambiar de idioma desde cualquier superficie sin perder la sección equivalente; la elección se guarda localmente, se modifica o restablece y no exige cuenta; sin redirección por idioma del navegador en la primera visita. Los ajustes agrupan solo preferencias reales: idioma y, cuando corresponda, movimiento. Desde la v1.4, el tema claro u oscuro es la segunda preferencia real: por defecto sigue al sistema, se guarda localmente, es reversible y sin JavaScript sigue al sistema; los dos temas cumplen WCAG 2.2 AA.
+- **FR-020** Ajustes de idioma y experiencia: el visitante MUST poder cambiar de idioma desde cualquier superficie sin perder la sección equivalente; la elección se guarda localmente, se modifica o restablece y no exige cuenta; sin redirección por idioma del navegador en la primera visita. Los ajustes agrupan solo preferencias reales: idioma y, cuando corresponda, movimiento. Desde la v1.4, el tema claro u oscuro es la segunda preferencia real: por defecto sigue al sistema, se guarda localmente, es reversible y sin JavaScript sigue al sistema; los dos temas cumplen WCAG 2.2 AA. Desde la v1.6, la preferencia se modifica eligiendo otro idioma; no hay una acción para restablecerla.
 - **FR-021** Contenido como software: el contenido MUST originarse en YAML versionado en GitHub y validarse en integración y construcción, de modo que cada cambio muestre qué cambió, quién lo aprobó, qué idiomas afecta y qué páginas o datos estructurados genera. **Excepción decidida**: el texto canónico en español se lee de su archivo fuente y no se copia al YAML (PRD §19.1; decisión del 2026-09-27).
 - **FR-022** Verificación (v1.2): el sistema MUST presentar, en la división Verificar, las dimensiones de verificación, el scorecard, las preguntas de revisión y los antipatrones, para evaluar un prototipo, una implementación o una entrega; Verificar enlaza a la definición de terminado (Gobernanza) y a la Guía de bolsillo.
 - **FR-023** Búsqueda (v1.2): el sistema MUST ofrecer una búsqueda por idioma en el contenido del sitio, cuyos resultados lleven a la sección exacta; sin servidor ni terceros, sin registrar lo buscado (`FR-018`), cargada solo al abrirse (§24.1), con el sitio completo sin JavaScript (`FR-015`) y cada pasaje una sola vez en los resultados (§18.3).

@@ -495,7 +495,7 @@ Registradas antes de implementar, a partir del `analyze` del 2026-09-28 (hallazg
 
 ## Phase 22: Convergence
 
-- [ ] T152 STOP · Damián entrega el ícono de Software Humano en SVG (desde la v1.5, «Manifiesto» es texto en Noto Sans y no hace falta dibujarlo) per PRD v1.4 §21.2 (missing)
+- [X] T152 STOP · Damián entrega el ícono de Software Humano en SVG (entregado el 2026-09-28: `Software-Humano-Icon-Kit-v1.0`) (desde la v1.5, «Manifiesto» es texto en Noto Sans y no hace falta dibujarlo) per PRD v1.4 §21.2 (missing)
 - [ ] T153 Depende de T152. Cabecera con el ícono SVG en línea y `currentColor`, junto a «Manifiesto» en Noto Sans 500 (PRD v1.5), en `src/layouts/Base.astro`: ícono y nombre desde 48rem, solo el ícono en pantallas más angostas, nombre accesible «Manifiesto», enlace al inicio; prueba e2e en escritorio y móvil per PRD v1.4 §21.2, RQ-17 (missing)
 - [X] T154 (Reemplazada por T164, que aplica la escala oscura de la especificación visual; la paleta provisional se retira.) Tokens del tema oscuro en `src/styles/tokens.css`, dentro de la dirección visual, con `prefers-color-scheme` y `[data-tema]`; axe sin violaciones de contraste AA en los dos temas per PRD v1.4 §21.7, `AC-07`, RQ-17 (missing)
 - [X] T155 Control de día y noche: `public/tema.js` síncrono (menos de 1 KB) que aplica la elección guardada antes de pintar; botón con `aria-pressed` y opción de volver al sistema; preferencia local, reversible y prescindible; sin JavaScript sigue al sistema; pruebas e2e (cambia, persiste al recargar, vuelve al sistema, sin destello) per PRD v1.4 §21.7, `FR-020`, RQ-17 (missing)
@@ -535,3 +535,11 @@ Fuente: RQ-16 enmendado (decisión de Damián Acuña, 2026-09-28), `FR-023`, `FR
 - [X] T174 Resaltado en destino: al abrir un resultado, cargar `pagefind-highlight.js` solo si la dirección lo pide y marcar el término con los tokens del sistema visual per RQ-16 enmendado (missing)
 - [X] T175 Agregar `'wasm-unsafe-eval'` a `script-src` en `public/_headers` y actualizar `tests/unit/validacion/csp.test.ts` para admitir `/pagefind/` per RQ-16 enmendado, PRD §24.3 (contradicts)
 - [X] T176 Actualizar `tests/e2e/fr023-busqueda.spec.ts`: `CR03` lleva a su casa; un resultado con subresultados por sección; raíces (una forma de la palabra encuentra otra); idioma vigente; resaltado en destino; sin JavaScript no hay botón; sin recursos de terceros; axe en el diálogo per `FR-023`, `AC-07` (partial)
+
+## Phase 26: Convergence · cabecera, ícono y preferencia de idioma
+
+Fuente: PRD v1.6 (`FR-020`, `AC-14`), decisiones de Damián Acuña del 2026-09-28 y el kit del ícono entregado (`Software-Humano-Icon-Kit-v1.0`), que cierra T152.
+
+- [ ] T177 Quitar el aviso «Versión preliminar» de `src/layouts/Base.astro` y sus cadenas; la comprobación previa a la publicación sigue impidiendo publicar borradores per decisión de la autoridad (2026-09-28) (unrequested)
+- [ ] T178 Eliminar «Olvidar mi elección de idioma» de `src/components/SelectorIdioma.astro`, de `src/cliente/preferencia-idioma.ts` y de sus cadenas; la preferencia se modifica eligiendo otro idioma; actualizar el escenario 4 de `tests/e2e/js09-idioma.spec.ts` per PRD v1.6 `FR-020`, `AC-14` (contradicts)
+- [ ] T179 Prueba de que la cabecera mide lo mismo en los tres idiomas, con y sin una preferencia guardada per especificación visual §7.1, `P08` (missing)
