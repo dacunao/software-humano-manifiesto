@@ -1,5 +1,7 @@
 # Paquete de revisión de en y pt-BR (T099)
 
+> **Reemplazado el 2026-09-29.** Este paquete muestra la traducción del copy hecha por Claude. Por decisión de Damián Acuña, la base pasó a ser la traducción de OpenAI (`copy-para-openai/`), revisada por Claude en las cuatro capas. La evidencia vigente está en `verificacion-cuatro-capas.md` y `capas/`. Se conserva como registro histórico.
+
 **Fecha:** 2026-09-28 · **Para:** la aprobación de Damián Acuña (decisión del 2026-09-28, que reemplaza al revisor externo).
 **Estado:** todo en `borrador`. El núcleo (341 pasajes) ya está aprobado y no se repite aquí; ver `correspondencia-nucleo-en-pt-2026-09-28.md`.
 

@@ -1215,3 +1215,14 @@ social.alt:
     text: "Manifiesto, da Software Humano: “{frase}”"
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
+# Aviso que encabeza la descarga de cada traducción del núcleo (T196, PRD §19.4). El español no lo muestra: es la referencia.
+descarga.aviso:
+  es:
+    state: borrador
+    text: Traducción del núcleo del Manifiesto de Software Humano v{version}. El original en español conserva la autoridad doctrinal; si ambos difieren, rige el texto en español.
+  en:
+    state: borrador
+    text: Translation of the core of the Software Humano Manifesto v{version}. The Spanish original retains doctrinal authority; where the two diverge, the Spanish text governs.
+  pt-BR:
+    state: borrador
+    text: Tradução do núcleo do Manifesto de Software Humano v{version}. O original em espanhol mantém a autoridade doutrinária; havendo divergência entre os dois, prevalece o texto em espanhol.
