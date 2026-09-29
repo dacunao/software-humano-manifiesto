@@ -87,16 +87,19 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
   </head>
   <body>
     <a class="saltar" href="#contenido">{t('nav.saltar', locale)}</a>
-    <header class="cabecera">
-      <Marca locale={locale} />
-      {/* En teléfonos, el menú y los idiomas se despliegan desde «Menú» (especificación §7.1: cabecera de 56 px). */}
-      <details class="menu-movil" data-menu-movil>
-        <summary>{t('nav.menu', locale)}</summary>
-        <NavegacionGlobal locale={locale} pagina={pagina} />
-      </details>
-      <Busqueda locale={locale} />
-      <ControlTema locale={locale} />
-    </header>
+    {/* T180: barra de ancho completo, siempre visible (PRD §18.2). */}
+    <div class="barra-superior">
+      <header class="cabecera">
+        <Marca locale={locale} />
+        {/* En teléfonos, el menú y los idiomas se despliegan desde «Menú» (especificación §7.1: cabecera de 56 px). */}
+        <details class="menu-movil" data-menu-movil>
+          <summary>{t('nav.menu', locale)}</summary>
+          <NavegacionGlobal locale={locale} pagina={pagina} />
+        </details>
+        <Busqueda locale={locale} />
+        <ControlTema locale={locale} />
+      </header>
+    </div>
     <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />

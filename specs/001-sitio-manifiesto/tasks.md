@@ -548,4 +548,4 @@ Fuente: PRD v1.6 (`FR-020`, `AC-14`), decisiones de Damián Acuña del 2026-09-2
 
 Fuente: decisión de Damián Acuña (2026-09-28), con fundamento en PRD §18.2 (la navegación global, incluidos idioma y búsqueda, disponible desde cualquier superficie), `V04` y la especificación visual §7.1.
 
-- [ ] T180 Cabecera siempre visible al desplazarse: una barra de ancho completo, fija arriba, con el fondo del lienzo y su borde inferior, sin sombras; el índice lateral, «En esta sección», el «Contenido» de teléfono y los saltos a anclas se ubican debajo de ella sin quedar tapados; el menú de teléfono sigue desplegándose bajo la barra; prueba e2e en escritorio y teléfono per PRD §18.2, `V04`, especificación visual §7.1 (missing)
+- [X] T180 Cabecera siempre visible al desplazarse: una barra de ancho completo, fija arriba, con el fondo del lienzo y su borde inferior, sin sombras; el índice lateral, «En esta sección», el «Contenido» de teléfono y los saltos a anclas se ubican debajo de ella sin quedar tapados; el menú de teléfono sigue desplegándose bajo la barra; prueba e2e en escritorio y teléfono per PRD §18.2, `V04`, especificación visual §7.1 (missing)

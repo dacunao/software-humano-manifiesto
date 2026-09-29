@@ -66,7 +66,11 @@ main .cita-canonica table, main .comparacion, main .lista-principios, main table
 .pie p { margin-bottom: 0.4rem; }
 
 /* ── Cabecera (§7.1): fondo del lienzo, borde de 1 px, sin sombras; controles de 44 × 44 px. ── */
-.cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; min-height: 64px; padding-block: 0.5rem; border-bottom: 1px solid var(--sh-border); }
+/* Barra fija (T180): siempre visible al desplazarse; fondo del lienzo y borde, sin sombras (§7.1). */
+:root { --sh-alto-cabecera: 65px; }
+html { scroll-padding-top: calc(var(--sh-alto-cabecera) + 1rem); }
+.barra-superior { position: sticky; top: 0; z-index: 20; background: var(--sh-canvas); border-bottom: 1px solid var(--sh-border); }
+.cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; min-height: 64px; padding-block: 0.5rem; }
 .marca { margin: 0; font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; }
 .marca a { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; color: var(--sh-text); text-decoration: none; }
 .marca-icono { width: 30px; height: 30px; flex: none; }
@@ -181,7 +185,7 @@ details.profundidad[open] > summary::before, .indice-plegable[open] > summary::b
 .indice-lateral code { font-size: 0.75rem; color: inherit; min-width: 2.4rem; }
 /* En teléfonos, «Contenido» despliega el índice (§7.2, PRD v1.5 §21.7). */
 .indice-plegable { order: -1; border-bottom: 1px solid var(--sh-border); margin-bottom: var(--sh-espacio); }
-.indice-plegable:not([open]) { position: sticky; top: 0; z-index: 2; background: var(--sh-canvas); }
+.indice-plegable:not([open]) { position: sticky; top: var(--sh-alto-cabecera); z-index: 2; background: var(--sh-canvas); }
 .indice-plegable > summary { display: flex; align-items: center; gap: 0.6rem; min-height: 48px; cursor: pointer; font-size: 0.9375rem; font-weight: 600; list-style: none; }
 .indice-plegable > summary::-webkit-details-marker { display: none; }
 .indice-plegable .seccion-actual { font-weight: 400; color: var(--sh-text-muted); }
@@ -189,11 +193,12 @@ details.profundidad[open] > summary::before, .indice-plegable[open] > summary::b
 @media (min-width: 62rem) {
   .lienzo.con-indice { grid-template-columns: 16rem minmax(0, 1fr); }
   .lienzo.con-indice > main { grid-column: 2; grid-row: 1; }
-  .lienzo.con-indice > .indice-plegable { grid-column: 1; grid-row: 1; order: 0; border: 0; margin: 0; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; }
+  .lienzo.con-indice > .indice-plegable { grid-column: 1; grid-row: 1; order: 0; border: 0; margin: 0; position: sticky; top: calc(var(--sh-alto-cabecera) + 1rem); align-self: start; max-height: calc(100vh - var(--sh-alto-cabecera) - 2rem); overflow-y: auto; }
   .indice-plegable > summary { display: none; }
   .indice-plegable::details-content { content-visibility: visible; display: contents; }
 }
-@media (max-width: 61.99rem) { main [id] { scroll-margin-top: 3.75rem; } }
+/* En pantallas angostas, además de la barra queda fijo «Contenido»: los saltos a anclas no quedan tapados. */
+@media (max-width: 61.99rem) { html { scroll-padding-top: calc(var(--sh-alto-cabecera) + 3.5rem); } }
 
 /* «En esta sección»: tercera columna solo en pantallas muy anchas y con JavaScript. */
 .en-esta-seccion { display: none; font-size: 0.875rem; }
@@ -205,7 +210,7 @@ details.profundidad[open] > summary::before, .indice-plegable[open] > summary::b
 .en-esta-seccion .titulo-seccion { font-weight: 600; margin: 0 0 0.4rem; color: var(--sh-text); }
 @media (min-width: 80rem) {
   .lienzo.con-indice.con-derecha { grid-template-columns: 16rem minmax(0, 1fr) 14rem; max-width: 90rem; }
-  .lienzo.con-derecha > .en-esta-seccion:not([hidden]) { display: block; grid-column: 3; grid-row: 1; position: sticky; top: 1rem; align-self: start; max-height: calc(100vh - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
+  .lienzo.con-derecha > .en-esta-seccion:not([hidden]) { display: block; grid-column: 3; grid-row: 1; position: sticky; top: calc(var(--sh-alto-cabecera) + 1rem); align-self: start; max-height: calc(100vh - var(--sh-alto-cabecera) - 2rem); overflow-y: auto; padding-block: var(--sh-espacio); }
 }
 .en-esta-seccion.sin-titulos > :not(.rotulo-contenido) { display: none; }
 .en-esta-seccion.sin-titulos { opacity: 0; pointer-events: none; }
@@ -265,6 +270,7 @@ mark.pagefind-highlight { background: var(--sh-indigo-soft); color: inherit; out
 
 /* ── Teléfonos (§7.1: cabecera de 56 px; P06) ── */
 @media (max-width: 48rem) {
+  :root { --sh-alto-cabecera: 60px; }
   .cabecera { display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 0.5rem; min-height: 56px; padding-block: 0.375rem; padding-inline: 1rem; }
   .cabecera .marca { grid-column: 1; grid-row: 1; }
   /* Teléfonos: solo el ícono; «Manifiesto» sigue siendo el nombre accesible (PRD v1.5 §21.2). */

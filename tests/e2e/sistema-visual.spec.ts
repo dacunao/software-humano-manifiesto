@@ -136,3 +136,25 @@ test.describe('cabecera, marca e íconos (fase 26)', () => {
     await expect(page.locator('meta[name="theme-color"]')).toHaveCount(2);
   });
 });
+
+test.describe('cabecera fija (T180)', () => {
+  test('al desplazarse, la barra sigue arriba y nada fijo queda debajo de ella', async ({ page }, info) => {
+    await page.goto('/es/manifiesto/construir-con-ia');
+    await page.evaluate(() => window.scrollTo(0, 2500));
+    await page.waitForTimeout(200);
+    const barra = await page.locator('.barra-superior').evaluate((e) => { const r = e.getBoundingClientRect(); return { top: r.top, bottom: r.bottom, ancho: r.width }; });
+    expect(barra.top).toBe(0);
+    expect(barra.ancho).toBe(page.viewportSize()!.width);
+    const indice = await page.locator('.indice-plegable').evaluate((e) => e.getBoundingClientRect().top);
+    expect(indice).toBeGreaterThanOrEqual(barra.bottom - 1);
+    if (info.project.name === 'movil') await expect(page.locator('.menu-movil > summary')).toBeInViewport();
+    else await expect(page.locator('[data-selector-idioma] ul a').first()).toBeInViewport();
+  });
+
+  test('un salto a un ancla no queda tapado por la barra', async ({ page }) => {
+    await page.goto('/es/manifiesto/construir-con-ia#cr03');
+    const barra = await page.locator('.barra-superior').evaluate((e) => e.getBoundingClientRect().bottom);
+    const destino = await page.locator('#cr03').evaluate((e) => e.getBoundingClientRect().top);
+    expect(destino).toBeGreaterThanOrEqual(barra);
+  });
+});
