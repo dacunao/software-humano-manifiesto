@@ -38,50 +38,109 @@ export function indicacion(archivo: string, idioma: 'en' | 'pt'): string {
 }
 
 const GEMINI = 'https://generativelanguage.googleapis.com/v1beta';
-let modelo: string | undefined;
+let modelos: string[] | undefined;
+let actual = 0;
 
-/** El Flash estable más reciente de la lista oficial, o el que fije GEMINI_MODELO. */
-export async function modeloGemini(): Promise<string> {
-  if (modelo) return modelo;
-  if (process.env['GEMINI_MODELO']) return (modelo = process.env['GEMINI_MODELO']);
+/** Los Flash estables de la lista oficial, del más reciente al más antiguo, o el que fije GEMINI_MODELO. */
+async function candidatos(): Promise<string[]> {
+  if (modelos) return modelos;
+  if (process.env['GEMINI_MODELO']) return (modelos = [process.env['GEMINI_MODELO']]);
   const r = await fetch(`${GEMINI}/models?pageSize=200`, { headers: { 'x-goog-api-key': clave('GEMINI_API_KEY') } });
   if (!r.ok) throw new Error(`Gemini (modelos) respondió ${r.status}: ${await r.text()}`);
   const { models } = (await r.json()) as { models: { name: string; supportedGenerationMethods?: string[] }[] };
-  const flash = models
+  const v = (id: string) => id.match(/[\d.]+/)![0].split('.').map(Number);
+  modelos = models
     .map((m) => ({ id: m.name.replace('models/', ''), metodos: m.supportedGenerationMethods ?? [] }))
     .filter((m) => /^gemini-[\d.]+-flash$/.test(m.id) && m.metodos.includes('generateContent'))
     .map((m) => m.id)
-    .sort((a, b) => {
-      const v = (id: string) => id.match(/[\d.]+/)![0].split('.').map(Number);
-      const [x, y] = [v(a), v(b)];
-      return (y[0]! - x[0]!) || ((y[1] ?? 0) - (x[1] ?? 0));
-    });
-  if (!flash[0]) throw new Error('No hay un modelo Flash estable disponible');
-  return (modelo = flash[0]);
+    .sort((a, b) => (v(b)[0]! - v(a)[0]!) || ((v(b)[1] ?? 0) - (v(a)[1] ?? 0)));
+  if (!modelos.length) throw new Error('No hay un modelo Flash estable disponible');
+  return modelos;
 }
 
-/** Llamada con salida JSON según un esquema, temperatura 0 y reintentos ante límites de uso. */
-export async function gemini<T>(sistema: string, usuario: string, esquema: object): Promise<T> {
-  const m = await modeloGemini();
+/**
+ * Llamada con salida JSON según un esquema y temperatura 0. Si un modelo está saturado (503) o
+ * limitado (429), se reintenta y luego se pasa al siguiente de la lista; el resultado dice qué
+ * modelo lo produjo.
+ */
+export async function gemini<T>(sistema: string, usuario: string, esquema: object): Promise<{ datos: T; modelo: string }> {
+  const lista = await candidatos();
   const cuerpo = {
     systemInstruction: { parts: [{ text: sistema }] },
     contents: [{ role: 'user', parts: [{ text: usuario }] }],
     generationConfig: { temperature: 0, responseMimeType: 'application/json', responseSchema: esquema },
   };
-  for (let intento = 0; intento < 6; intento++) {
-    const r = await fetch(`${GEMINI}/models/${m}:generateContent`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-goog-api-key': clave('GEMINI_API_KEY') },
-      body: JSON.stringify(cuerpo),
-    });
-    if (r.status === 429 || r.status >= 500) { await Bun.sleep(15_000 * (intento + 1)); continue; }
-    if (!r.ok) throw new Error(`Gemini respondió ${r.status}: ${await r.text()}`);
-    const j = (await r.json()) as { candidates?: { content?: { parts?: { text?: string }[] } }[] };
-    const texto = j.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!texto) throw new Error(`Gemini no devolvió texto: ${JSON.stringify(j).slice(0, 300)}`);
-    return JSON.parse(texto) as T;
+  // Si todos los modelos están saturados, se espera cada vez más (hasta 5 minutos) durante un máximo de 3 horas.
+  const limite = Date.now() + 3 * 60 * 60 * 1000;
+  for (let vuelta = 0; Date.now() < limite; vuelta++) {
+    for (; actual < lista.length; actual++) {
+      const m = lista[actual]!;
+      let r: Response;
+      try {
+        r = await fetch(`${GEMINI}/models/${m}:generateContent`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-goog-api-key': clave('GEMINI_API_KEY') },
+          body: JSON.stringify(cuerpo),
+          signal: AbortSignal.timeout(180_000),
+        });
+      } catch { continue; } // sin respuesta en 3 minutos: se prueba el siguiente
+      if (r.status === 429 || r.status >= 500) { await Bun.sleep(3_000); continue; }
+      // Un modelo retirado para cuentas nuevas se descarta.
+      if (r.status === 404) { lista.splice(actual, 1); actual--; continue; }
+      if (!r.ok) throw new Error(`Gemini (${m}) respondió ${r.status}: ${await r.text()}`);
+      const j = (await r.json()) as { candidates?: { content?: { parts?: { text?: string }[] } }[] };
+      const texto = j.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('');
+      if (!texto) throw new Error(`Gemini (${m}) no devolvió texto: ${JSON.stringify(j).slice(0, 300)}`);
+      return { datos: JSON.parse(texto) as T, modelo: m };
+    }
+    actual = 0;
+    const espera = Math.min(60_000 * 2 ** vuelta, 300_000);
+    console.error(`\n${new Date().toLocaleTimeString('es-CL')} · todos los modelos saturados; nuevo intento en ${espera / 60_000} min`);
+    await Bun.sleep(espera);
   }
-  throw new Error('Gemini: límite de uso agotado tras varios reintentos; vuelve a ejecutar más tarde (la caché conserva lo hecho)');
+  throw new Error('Gemini: todos los modelos saturados o limitados; vuelve a ejecutar más tarde (la caché conserva lo hecho)');
+}
+
+/** El esquema de Gemini (tipos en mayúsculas) como JSON Schema estándar. */
+function aJsonSchema(e: unknown): unknown {
+  if (Array.isArray(e)) return e.map(aJsonSchema);
+  if (e && typeof e === 'object')
+    return Object.fromEntries(Object.entries(e).map(([k, v]) => [k, k === 'type' && typeof v === 'string' ? v.toLowerCase() : aJsonSchema(v)]));
+  return e;
+}
+
+const MISTRAL = 'https://api.mistral.ai/v1/chat/completions';
+const MODELO_MISTRAL = process.env['MISTRAL_MODELO'] ?? 'mistral-medium-latest'; // Large no está en el modo gratuito
+let sinCupoMistral = false;
+
+/** Mistral Large en su plan gratuito (Experiment). La respuesta se envuelve en un objeto, como exige su modo JSON. */
+async function mistral<T>(sistema: string, usuario: string, esquema: object): Promise<{ datos: T; modelo: string } | undefined> {
+  const k = process.env['MISTRAL_API_KEY'];
+  if (!k || sinCupoMistral) return undefined;
+  const cuerpo = {
+    model: MODELO_MISTRAL,
+    temperature: 0,
+    messages: [{ role: 'system', content: sistema }, { role: 'user', content: usuario }],
+    response_format: { type: 'json_schema', json_schema: { name: 'resultado', schema: { type: 'object', properties: { items: aJsonSchema(esquema) }, required: ['items'] } } },
+  };
+  for (let intento = 0; intento < 6; intento++) {
+    let r: Response;
+    try {
+      r = await fetch(MISTRAL, { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${k}` }, body: JSON.stringify(cuerpo), signal: AbortSignal.timeout(180_000) });
+    } catch { continue; }
+    // Sin cupo asignado (modo gratuito con límite cero): se deja de intentar en esta ejecución.
+    if (r.status === 429 && r.headers.get('x-ratelimit-limit-req-minute') === '0') { sinCupoMistral = true; return undefined; }
+    if (r.status === 429 || r.status >= 500) { await Bun.sleep(5_000 * (intento + 1)); continue; }
+    if (!r.ok) throw new Error(`Mistral respondió ${r.status}: ${await r.text()}`);
+    const j = (await r.json()) as { model?: string; choices: { message: { content: string } }[] };
+    return { datos: (JSON.parse(j.choices[0]!.message.content) as { items: T }).items, modelo: j.model ?? MODELO_MISTRAL };
+  }
+  return undefined; // saturado: se usa el respaldo
+}
+
+/** Revisor de otra familia (RQ-19): Mistral Large si hay clave; Gemini como respaldo. */
+export async function revisor<T>(sistema: string, usuario: string, esquema: object): Promise<{ datos: T; modelo: string }> {
+  return (await mistral<T>(sistema, usuario, esquema)) ?? gemini<T>(sistema, usuario, esquema);
 }
 
 /** Traducción de contraste. Las claves del plan gratuito terminan en «:fx» y usan su propio servidor. */

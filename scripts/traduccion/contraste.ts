@@ -6,7 +6,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { textos } from './relevancia';
-import { CAPAS, Cache, IDIOMAS, deepl, gemini, indicacion, lotes } from './servicios';
+import { CAPAS, Cache, IDIOMAS, deepl, indicacion, lotes, revisor } from './servicios';
 
 interface Comparacion { clave: string; clase: 'equivalente' | 'matiz' | 'cambio-de-sentido'; explicacion: string }
 const ESQUEMA = {
@@ -35,7 +35,7 @@ function marcadas(idioma: 'en' | 'pt'): Set<string> {
 
 if (import.meta.main) {
   const seco = process.argv.includes('--seco');
-  const salida: (Comparacion & { idioma: 'en' | 'pt'; nivel: number; contraste: string; origen: 'modelo' })[] = [];
+  const salida: (Comparacion & { idioma: 'en' | 'pt'; nivel: number; contraste: string; origen: 'modelo'; modelo: string })[] = [];
   let caracteres = 0;
   for (const idioma of ['en', 'pt'] as const) {
     const m = marcadas(idioma);
@@ -49,19 +49,20 @@ if (import.meta.main) {
       const tr = await deepl(g.map((x) => x.es), IDIOMAS[idioma].deepl);
       g.forEach((x, i) => cacheT.set(x.clave, tr[i]!));
     }
-    const cacheC = new Cache<Comparacion[]>(`${CAPAS}/capa-4-cache-comparacion-${idioma}.json`);
+    const cacheC = new Cache<{ modelo: string; resultados: Comparacion[] }>(`${CAPAS}/capa-4-cache-comparacion-${idioma}.json`);
     const sistema = indicacion('./indicacion-contraste.md', idioma);
     for (const g of lotes(sel, (x) => x.es.length * 3, 9000)) {
       const id = g.map((x) => x.clave).join('|');
-      let r = cacheC.get(id);
-      if (!r) {
-        r = await gemini<Comparacion[]>(sistema, JSON.stringify(g.map((x) => ({ clave: x.clave, es: x.es, nuestra: x[idioma], contraste: cacheT.get(x.clave) }))), ESQUEMA);
-        cacheC.set(id, r);
+      let lote = cacheC.get(id);
+      if (!lote) {
+        const r = await revisor<Comparacion[]>(sistema, JSON.stringify(g.map((x) => ({ clave: x.clave, es: x.es, nuestra: x[idioma], contraste: cacheT.get(x.clave) }))), ESQUEMA);
+        lote = { modelo: r.modelo, resultados: r.datos };
+        cacheC.set(id, lote);
         await Bun.sleep(7000);
       }
-      for (const c of r) {
+      for (const c of lote.resultados) {
         const t = g.find((y) => y.clave === c.clave);
-        if (t && c.clase !== 'equivalente') salida.push({ ...c, idioma, nivel: t.nivel, contraste: cacheT.get(c.clave)!, origen: 'modelo' });
+        if (t && c.clase !== 'equivalente') salida.push({ ...c, idioma, nivel: t.nivel, contraste: cacheT.get(c.clave)!, origen: 'modelo', modelo: lote.modelo });
       }
     }
   }

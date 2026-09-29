@@ -1,0 +1,246 @@
+{
+ "canon::portada-01": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::portada-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::portada-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::portada-04": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::portada-05": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::portada-06": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::indice-operativo-para-agentes-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-01": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-04": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-05": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-06": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-07": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-11": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-12": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-13": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::texto-canonico-14": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principios-de-diseno-01": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principios-de-diseno-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principios-de-diseno-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principios-de-diseno-04": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::p01": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-1-11": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::p02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-2-11": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::p03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-3-11": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::p04": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-4-11": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::p05": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-5-02": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-5-03": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-5-08": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-5-09": {
+  "modelo": "gemini-3.5-flash",
+  "errores": []
+ },
+ "canon::principio-5-10": {
+  "modelo": "gemini-3.5-flash",
+  "errores": [
+   {
+    "tipo": "omision",
+    "gravedad": "mayor",
+    "fragmento_es": "#### Pruebas de decisión",
+    "fragmento_tr": "",
+    "explicacion": "The translation for this heading is completely missing."
+   }
+  ]
+ }
+}
