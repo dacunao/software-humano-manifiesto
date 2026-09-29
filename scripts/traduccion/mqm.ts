@@ -50,7 +50,9 @@ if (import.meta.main) {
   const seco = process.argv.includes('--seco');
   const idiomas = (opcion('idiomas') ?? ['en', 'pt']) as ('en' | 'pt')[];
   const niveles = (opcion('niveles') ?? ['1', '2', '3']).map(Number);
-  const todos = textos().filter((x) => niveles.includes(x.nivel)).sort((a, b) => a.nivel - b.nivel);
+  // El núcleo lo tradujo OpenAI y lo revisa Claude; este script revisa el copy (RQ-19).
+  const origenes = opcion('origen') ?? ['copy'];
+  const todos = textos().filter((x) => niveles.includes(x.nivel) && origenes.includes(x.origen)).sort((a, b) => a.nivel - b.nivel);
   const salida: (Resultado & { idioma: 'en' | 'pt'; nivel: Texto['nivel']; origen: 'modelo'; modelo: string })[] = [];
   for (const idioma of idiomas) {
     const cache = new Cache<{ modelo: string; errores: Error[] }>(`${CAPAS}/capa-3-cache-${idioma}.json`);

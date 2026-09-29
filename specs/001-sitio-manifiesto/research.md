@@ -242,6 +242,11 @@ Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el c
   - **Defectos del español.** Si una capa revela un defecto o una ambigüedad del español, no se corrige la traducción para compensarlo. Si está en el núcleo, que es una fuente protegida, se registra como propuesta separada. Si está en el copy, se detiene y se presenta a la autoridad (T102).
   - **Traducciones aprobadas.** Una corrección a un nodo aprobado lo devuelve a `borrador` hasta que Damián lo apruebe de nuevo.
   - **Claves.** Las claves de las cuentas externas las crea Damián y quedan fuera del repositorio (`.env*` está ignorado).
+  - **Revisor de la capa 3 según quién tradujo** (Damián Acuña, 2026-09-29). La capa exige un revisor de otra familia que la que tradujo. Por eso:
+    - el **núcleo**, traducido con OpenAI, lo revisa **Claude**;
+    - el **copy**, traducido por agentes Claude, lo revisa **Gemini** (Mistral solo si la cuenta tiene cupo; su modo gratuito tiene límite cero).
+
+    Ambos usan la misma indicación fija (`scripts/traduccion/indicacion-mqm.md`), y cada resultado registra el modelo que lo produjo.
   - **Datos enviados.** Las capas 3 y 4 envían el texto a servicios externos, y la capa gratuita de Gemini puede usar lo que recibe para mejorar sus productos. Se acepta porque el contenido es público (CC BY 4.0) y no contiene datos personales.
 - **Rationale**: `AC-13` y PRD §27.4 exigen una revisión lingüística y doctrinal. Sin un hablante nativo, estas capas no certifican el texto, pero encuentran lo sospechoso y dirigen la atención humana. La investigación del 2026-09-29 descartó dos opciones:
   - xCOMET y CometKiwi, porque su licencia no permite el uso comercial;
