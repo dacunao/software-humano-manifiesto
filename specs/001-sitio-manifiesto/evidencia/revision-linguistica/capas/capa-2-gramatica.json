@@ -1,0 +1,1435 @@
+[
+ {
+  "clave": "canon::indice-operativo-para-agentes-03",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "EN_COMPOUNDS_ANTI_PATTERNS",
+  "categoria": "MISC",
+  "mensaje": "This word is normally spelled as one.",
+  "fragmento": "...OV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, done and short guide |",
+  "sugerencias": [
+   "antipatterns"
+  ]
+ },
+ {
+  "clave": "canon::indice-operativo-para-agentes-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...GOV`, `SH-DONE`, `SH-POCKET` | Decisão, antipadrões, governança, conclusão e guia breve |",
+  "sugerencias": [
+   "anti padrões"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-06",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...o de extensão e profundidade distintas. Uma Job Story continua oferecendo uma forma esp...",
+  "sugerencias": [
+   "Um Job",
+   "Uma, Job",
+   "Uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-09",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "DEPOIS_DE_APÓS",
+  "categoria": "FORMAL",
+  "mensaje": "Substitua por “após”.",
+  "fragmento": "... não é uma camada estética acrescentada depois de resolver a funcionalidade. Faz parte de...",
+  "sugerencias": [
+   "após"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-09",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_AINDA_ESTÁ",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“ainda está” é uma expressão prolixa. É preferível dizer “continua”.",
+  "fragmento": "...desnecessárias ou tema errar, a solução ainda está incompleta.",
+  "sugerencias": [
+   "continua"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-16",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "ATD_VERBS_TO_COLLOCATION",
+  "categoria": "COLLOCATIONS",
+  "mensaje": "Probably a preposition is missing after ‘Guide’.",
+  "fragmento": "...                                      | Guide coding agents and human reviewers           | ...",
+  "sugerencias": [
+   "Guide to coding"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-16",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "EN_COMPOUNDS_ANTI_PATTERNS",
+  "categoria": "MISC",
+  "mensaje": "This word is normally spelled as one.",
+  "fragmento": "...      | Acceptance tests, scorecard and anti-patterns                                       |...",
+  "sugerencias": [
+   "antipatterns"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-16",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "... | | Verificar   | Testes de aceitação, scorecard e antipadrões                          ...",
+  "sugerencias": [
+   "corecaru",
+   "Store Card"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-16",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...ar   | Testes de aceitação, scorecard e antipadrões                                        ...",
+  "sugerencias": [
+   "anti padrões"
+  ]
+ },
+ {
+  "clave": "canon::proposito-del-documento-19",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “por quê” expressar uma explicação, considere escrever “porque”. Se puder substituir por “por qual razão”, utilize “por que”.",
+  "fragmento": "...produto    | O que deve ser construído, por quê e sob que condições             | Uma b...",
+  "sugerencias": [
+   "porque",
+   "por que"
+  ]
+ },
+ {
+  "clave": "canon::texto-canonico-06",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...o em paralelo não autoriza omiti-lo nem redefini-lo.",
+  "sugerencias": [
+   "o redefinir",
+   "o redefinis"
+  ]
+ },
+ {
+  "clave": "canon::texto-canonico-10",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "REPETITIONS_STYLE",
+  "mensaje": "Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym.",
+  "fragmento": "...at we can do and what will happen next. Every detail must contribute to an experience...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::texto-canonico-10",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...os fazer e o que acontecerá em seguida. Cada detalhe deve contribuir para uma experi...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::texto-canonico-11",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...ificial deve absorver complexidade, não multiplicá-la. Pode propor, resumir e automatizar, ma...",
+  "sugerencias": [
+   "a multiplicar"
+  ]
+ },
+ {
+  "clave": "canon::principios-de-diseno-04",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "... ao seu fundamento de produto e usa Job Stories quando expressam melhor a situação     ...",
+  "sugerencias": [
+   "Stories,"
+  ]
+ },
+ {
+  "clave": "canon::principio-1-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...e pode entregar muito e resolver pouco. Uma Job Story obriga a explicitar a causalidade...",
+  "sugerencias": [
+   "Um Job",
+   "Uma, Job",
+   "Uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::principio-1-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_NA_MEDIDA_EM_QUE",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“na medida em que” é uma expressão prolixa. É preferível dizer “enquanto”.",
+  "fragmento": "...a mesma causalidade deve ser preservada na medida em que for aplicável.",
+  "sugerencias": [
+   "enquanto"
+  ]
+ },
+ {
+  "clave": "canon::principio-1-11",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...com o escopo completo?  - Quando existe uma Job Story, a circunstância é específica e o...",
+  "sugerencias": [
+   "um Job",
+   "uma, Job",
+   "uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::principio-2-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta conjunção deve ser separada por vírgulas e só deve ser utilizada no início duma frase para efeitos de estilo.",
+  "fragmento": "Se funciona mas desgasta, ainda não funciona bem.",
+  "sugerencias": [
+   "funciona, mas"
+  ]
+ },
+ {
+  "clave": "canon::principio-4-09",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...e precisão para pessoas experientes sem impô-los a quem está começando.  - Usar bons val...",
+  "sugerencias": [
+   "os impor",
+   "os impôs"
+  ]
+ },
+ {
+  "clave": "canon::principio-4-12",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "GENERAL_VERB_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância verbal.",
+  "fragmento": "...inal de descumprimento.** Ocultar todas as opções pode produzir uma primeira impressão limpa e...",
+  "sugerencias": [
+   "as opções podem",
+   "as opções, pode"
+  ]
+ },
+ {
+  "clave": "canon::principio-4-12",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_REDUNDANCY_REPLACE_BECO_SEM_SAÍDA",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“beco sem saída” é um pleonasmo. É preferível dizer “beco”",
+  "fragmento": "...duzir uma primeira impressão limpa e um beco sem saída quando aparece um caso menos comum.",
+  "sugerencias": [
+   "beco"
+  ]
+ },
+ {
+  "clave": "canon::principio-6-05",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "ALERTAS_BR",
+  "categoria": "MISC",
+  "mensaje": "Alerta é invariável para indicar número ou gênero com exceção de quando está acompanhado de um artigo (Ex: os).\n        Substitua “alertas” por “alerta”.",
+  "fragmento": "A atenção é finita. Menus, alertas, animações, escolhas e textos demandam ...",
+  "sugerencias": [
+   "alerta"
+  ]
+ },
+ {
+  "clave": "canon::principio-8-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCAÇÃO_ADVÉRBIO",
+  "categoria": "CLARITY",
+  "mensaje": "Para conferir mais clareza ao seu texto, prefira mover o advérbio.",
+  "fragmento": "A qualidade raramente depende de uma grande decisão. Ela se reconhece em...",
+  "sugerencias": [
+   "depende raramente de"
+  ]
+ },
+ {
+  "clave": "canon::principio-8-05",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...co, estados vazios, erros, transições e microinterações formam uma única experiência. Nenhum de...",
+  "sugerencias": [
+   "micro interações"
+  ]
+ },
+ {
+  "clave": "canon::principio-8-12",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "DEPOIS_DE_APÓS",
+  "categoria": "FORMAL",
+  "mensaje": "Substitua por “após”.",
+  "fragmento": "...parece longe do campo e o foco se perde depois de salvar. Cada defeito é menor; juntos, q...",
+  "sugerencias": [
+   "após"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “por que” expressar uma explicação, considere escrever “porque”.",
+  "fragmento": "...e estabelece o que deve ser construído, por que deve existir, que resultados deve produ...",
+  "sugerencias": [
+   "porque"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “por que” expressar uma interrogação, considere utilizar “?”.",
+  "fragmento": "...o seu cumprimento poderá ser determinado. Não é um novo tipo de documento nem um ...",
+  "sugerencias": [
+   "?"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...em um modelo obrigatório. Pode estar em uma Job Story, em uma formulação de Jobs to Be ...",
+  "sugerencias": [
+   "um Job",
+   "uma, Job",
+   "uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-06",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "COMMA_COMPOUND_SENTENCE_2",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short).",
+  "fragmento": "... authority     | Where does it come from and who may modify it?             | Tracea...",
+  "sugerencias": [
+   ", and"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-11",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...stratégia incremental, por fases ou por releases pode ser utilizada quando o projeto a a...",
+  "sugerencias": [
+   "relesses",
+   "rele ases"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-14",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...ficado, suas relações e sua autoridade. Uma Job Story derivada pode ser proposta como v...",
+  "sugerencias": [
+   "Um Job",
+   "Uma, Job",
+   "Uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-14",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PARA-POR_TER_PARTICIPIO-PASSADO",
+  "categoria": "ACADEMIC",
+  "mensaje": "Para conferir mais clareza ao seu texto, busque usar uma linguagem mais concisa.",
+  "fragmento": "...itui a fonte nem adquire autoridade por ter sido gerada.",
+  "sugerencias": [
+   "ser"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-20",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "#### Forma canônica de uma Job Story",
+  "sugerencias": [
+   "um Job",
+   "uma, Job",
+   "uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-31",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "... - O resultado pode ser reconhecido sem confundi-lo com concluir o fluxo do produto.  - A h...",
+  "sugerencias": [
+   "o confundis",
+   "o confundir"
+  ]
+ },
+ {
+  "clave": "canon::doctrina-para-desarrollo-con-ia-04",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "A IA deve absorver complexidade, não produzi-la.",
+  "sugerencias": [
+   "a produzis",
+   "a produzir"
+  ]
+ },
+ {
+  "clave": "canon::doctrina-para-desarrollo-con-ia-10",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...simples, inclusive a alternativa de não construí-la; uma vez autorizada, qualquer exclusão ...",
+  "sugerencias": [
+   "a construir",
+   "a construís"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-04",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "... Mapa fiel da definição de produto, sem reformulá-la por conveniência técnica.     | | `F02`...",
+  "sugerencias": [
+   "a reformular"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-04",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...             | | `F07`     | Explorar e prototipar                  | Comparar alternativa...",
+  "sugerencias": [
+   "protótipo",
+   "protótipos",
+   "fototipar"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “por quê” expressar uma explicação, considere escrever “porque”. Se puder substituir por “por qual razão”, utilize “por que”.",
+  "fragmento": "...           | O que deve ser construído, por quê e com que autoridade?         | Fontes;...",
+  "sugerencias": [
+   "porque",
+   "por que"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "...                 | | `A03` Ficha de Job Story quando couber | Quando surge a necessid...",
+  "sugerencias": [
+   "Story,"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "...oncluído?     | Resultados; regras; Job Stories quando se aplicam; acessibilidade; dese...",
+  "sugerencias": [
+   "Stories,"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...                  | Alternativas; trade-offs; suposições; decisão; data; evidência p...",
+  "sugerencias": [
+   "UFFS",
+   "ofas",
+   "ofás"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-10",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "COMMA_COMPOUND_SENTENCE_2",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short).",
+  "fragmento": "...r?  - Which decisions must the user make and which can the system resolve?  - Which ...",
+  "sugerencias": [
+   ", and"
+  ]
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-10",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "COMMA_COMPOUND_SENTENCE_2",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short).",
+  "fragmento": "...rtainty?  - What falls outside the scope and who established that exclusion?  - What...",
+  "sugerencias": [
+   ", and"
+  ]
+ },
+ {
+  "clave": "canon::cr04",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...damento, que carga introduz e que trade-offs exige.",
+  "sugerencias": [
+   "UFFS",
+   "ofas",
+   "ofás"
+  ]
+ },
+ {
+  "clave": "canon::o03",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "3\\. `O03` Jobs to Be Done e Job Stories quando fazem parte da definição ou acre...",
+  "sugerencias": [
+   "Stories,"
+  ]
+ },
+ {
+  "clave": "canon::sh-score",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "#### Scorecard de decisão · `SH-SCORE`",
+  "sugerencias": [
+   "Corecaru",
+   "Store Card"
+  ]
+ },
+ {
+  "clave": "canon::verificacion-07",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "... | 0 / 1 / 2     | Estados, linguagem e microinterações são coerentes                          ...",
+  "sugerencias": [
+   "micro interações"
+  ]
+ },
+ {
+  "clave": "canon::sh-ap",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "## ANTIPADRÕES · `SH-AP`",
+  "sugerencias": [
+   "ANAIPADÕES"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "EN_COMPOUNDS_ANTI_PATTERN",
+  "categoria": "MISC",
+  "mensaje": "This word is normally spelled as one.",
+  "fragmento": "| **Anti-pattern**                              | **How ...",
+  "sugerencias": [
+   "Antipattern"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "COMMA_COMPOUND_SENTENCE_2",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short).",
+  "fragmento": "... | Some stories or rules are implemented and the rest deferred without a product dec...",
+  "sugerencias": [
+   ", and"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "| **Antipadrão**                                  | **...",
+  "sugerencias": [
+   "Anti padrão"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "ALERTAS_BR",
+  "categoria": "MISC",
+  "mensaje": "Alerta é invariável para indicar número ou gênero com exceção de quando está acompanhado de um artigo (Ex: os).\n        Substitua “alertas” por “alerta”.",
+  "fragmento": "...A motivação diz usar um painel, receber alertas ou apertar um botão.                   ...",
+  "sugerencias": [
+   "alerta"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "... o risco.                         | | O happy path define o produto                  ...",
+  "sugerencias": [
+   "Rappi"
+  ]
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...co.                         | | O happy path define o produto                   | Er...",
+  "sugerencias": [
+   "pato",
+   "pata",
+   "pat"
+  ]
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-03",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "DEPOIS_DE_APÓS",
+  "categoria": "FORMAL",
+  "mensaje": "Substitua por “após”.",
+  "fragmento": "... completo. No entanto, se a pessoa erra depois de ler a explicação e tampouco compreende ...",
+  "sugerencias": [
+   "após"
+  ]
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-03",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_REDUNDANCY_REPLACE_BECO_SEM_SAÍDA",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“beco sem saída” é um pleonasmo. É preferível dizer “beco”",
+  "fragmento": "...co compreende a solução, ela chega a um beco sem saída. O aplicativo entregou conteúdo, mas nã...",
+  "sugerencias": [
+   "beco"
+  ]
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-08",
+  "nivel": 3,
+  "idioma": "en",
+  "regla": "ADMIT_ENJOY_VB",
+  "categoria": "GRAMMAR",
+  "mensaje": "The verb ‘understanding’ is used with the gerund form.",
+  "fragmento": "...evel Jobs to Be Done: developing enough understanding to solve an equivalent exercise with growing aut...",
+  "sugerencias": [
+   "understanding solving"
+  ]
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-21",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_REDUNDANCY_REPLACE_BECOS_SEM_SAÍDA",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“becos sem saída” é um pleonasmo. É preferível dizer “becos”",
+  "fragmento": "...tativas; regras de avanço; prevenção de becos sem saída.                 | | Assistida por IA  ...",
+  "sugerencias": [
+   "becos"
+  ]
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-23",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_CHEGUE_AO_FIM",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“chegue ao fim” é uma expressão prolixa. É preferível dizer “acabe”.",
+  "fragmento": "O objetivo não é que o estudante chegue ao fim da sequência. É que ele consiga resolve...",
+  "sugerencias": [
+   "acabe"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-05",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "IT_IS_JJ_TO_VBG",
+  "categoria": "GRAMMAR",
+  "mensaje": "Did you mean “review”?",
+  "fragmento": "... and the evidence; it is not limited to reviewing code.                                  ...",
+  "sugerencias": [
+   "review"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-05",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "...e sucesso; valida Jobs to Be Done e Job Stories quando são utilizados.            | | D...",
+  "sugerencias": [
+   "Stories,"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-05",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta locução deve ser separada por vírgulas.",
+  "fragmento": "...a pessoa e protege sua atenção; usa Job Stories quando permitem concretizar a situação....",
+  "sugerencias": [
+   "Stories,"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-07",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "DEPOIS_DE_APÓS",
+  "categoria": "FORMAL",
+  "mensaje": "Substitua por “após”.",
+  "fragmento": "...                                    | | Depois de liberar          | Observam-se resultad...",
+  "sugerencias": [
+   "Após"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-14",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "REFLEXIVE_VERB_SE_AGREEMENT",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância verbal.",
+  "fragmento": "...         | | Job Stories              | Declaram-se forma de referência, e não estrutura universa...",
+  "sugerencias": [
+   "Declara-se forma"
+  ]
+ },
+ {
+  "clave": "canon::gobernanza-14",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...    | Cada projeto pode adotar fases ou releases quando couber.                         ...",
+  "sugerencias": [
+   "relesses",
+   "rele ases"
+  ]
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-09",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "7\\. Quando existe uma Job Story, ela descreve o problema sem pres...",
+  "sugerencias": [
+   "um Job",
+   "uma, Job",
+   "uma – Job"
+  ]
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "REPETITIONS_STYLE",
+  "mensaje": "Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym.",
+  "fragmento": "... mandatory scope defined by product.  - `STOP03` There is an intention to omit, modify o...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...o obrigatório definido pelo produto.  - `STOP03` Pretende-se omitir, modificar ou adiar ...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...ma parte sem uma decisão autorizada.  - `STOP04` Uma ambiguidade material está sendo res...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...solvida pelo agente sem autorização.  - `STOP05` A interface expõe uma complexidade inte...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...erna que o sistema poderia absorver.  - `STOP06` Uma ação sensível carece de determinism...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...smo, rastreabilidade ou recuperação.  - `STOP07` O time só consegue demonstrar que o cód...",
+  "sugerencias": []
+ },
+ {
+  "clave": "canon::influencias-y-notas-06",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_DENTRO_DE_UM",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“dentro de um” é uma expressão prolixa. É preferível dizer “num” ou “em um”.",
+  "fragmento": "A versão 2.1 integra essas influências dentro de um núcleo capaz de respeitar definições de...",
+  "sugerencias": [
+   "num",
+   "em um"
+  ]
+ },
+ {
+  "clave": "superficies/construir.yaml::sections/4/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "DOUBLE_NEGATIVE",
+  "categoria": "GRAMMAR",
+  "mensaje": "This phrase contains a double negative. Try using ‘anybody’ instead.",
+  "fragmento": "..., use AI within limits, do not add what nobody asked for, and reconcile before declari...",
+  "sugerencias": [
+   "anybody"
+  ]
+ },
+ {
+  "clave": "superficies/fundamento.yaml::sections/1/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "NON_IMPERSONAL_VERBS",
+  "categoria": "GRAMMAR",
+  "mensaje": "O verbo “chegar” não é impessoal e, portanto, exige concordância entre o sujeito e o verbo auxiliar.",
+  "fragmento": "...festo, não uma obrigação. Um fundamento pode chegar como épicos, requisitos ou jorna...",
+  "sugerencias": [
+   "podem"
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/3/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PARONYM_PUBLICA_535",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Quando escrita sem acento, esta palavra é um verbo. Se pretende referir-se a um substantivo ou adjetivo, deve utilizar a forma acentuada.",
+  "fragmento": "...Manifiesto é obra de Damián Acuña. Quem o publica e cuida dele é a **Software Humano**, a...",
+  "sugerencias": [
+   "o pública"
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/4/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "QUE_VERBO_SER_A_AS_O_OS_A_AS_O_OS",
+  "categoria": "SHORTEN_IT",
+  "mensaje": "Para conferir mais clareza ao seu texto, busque usar uma linguagem mais concisa.",
+  "fragmento": "...êm a referência ao original em espanhol, que é o que tem autoridade. O **status técnico*...",
+  "sugerencias": [
+   " o",
+   ", o",
+   " sendo o"
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/4/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "...panhol, que é o que tem autoridade. O **status técnico** da adaptação ao SpecKit é mos...",
+  "sugerencias": [
+   "posição",
+   "situação",
+   "condição"
+  ]
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/0/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...es completas do documento original, sem dividi-las nem repeti-las. Com “Próximo”, ele é pe...",
+  "sugerencias": [
+   "as dividir",
+   "as dividis"
+  ]
+ },
+ {
+  "clave": "superficies/mapa.yaml::sections/0/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "... documento original, sem dividi-las nem repeti-las. Com “Próximo”, ele é percorrido por in...",
+  "sugerencias": [
+   "as repetir",
+   "as repetis"
+  ]
+ },
+ {
+  "clave": "superficies/speckit.yaml::description",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "...dente do manifesto sobre o SpecKit, seu status real e seus limites.",
+  "sugerencias": [
+   "posição",
+   "situação",
+   "condição"
+  ]
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/1/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "...no** materializam essa correspondência. O preset acrescenta a cada operação o que...",
+  "sugerencias": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/1/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "STYLE",
+  "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
+  "fragmento": "... os portões que o manifesto nomeia. - **O SpecKit nativo** conserva seu comportam...",
+  "sugerencias": []
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/2/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_SCRIPTS",
+  "categoria": "STYLE",
+  "mensaje": "“scripts” é um estrangeirismo. É preferível dizer “roteiros”.",
+  "fragmento": "... sua descrição, seu encadeamento e seus scripts, e a lista de verificação nativa perman...",
+  "sugerencias": [
+   "roteiros"
+  ]
+ },
+ {
+  "clave": "superficies/speckit.yaml::sections/3/title",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“Status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "Status atual",
+  "sugerencias": [
+   "Posição",
+   "Situação",
+   "Condição"
+  ]
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/2/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "EN_COMPOUNDS_ANTI_PATTERNS",
+  "categoria": "MISC",
+  "mensaje": "This word is normally spelled as one.",
+  "fragmento": "...ith-ai); **verify**, the [tests and the anti-patterns](/manifesto/verify). Read in order, the...",
+  "sugerencias": [
+   "antipatterns"
+  ]
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/2/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...com-ia); **verificar**, os [testes e os antipadrões](/pt-br/manifesto/verificar). Percorrid...",
+  "sugerencias": [
+   "anti padrões"
+  ]
+ },
+ {
+  "clave": "superficies/manifiesto.yaml::sections/5/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_REDUNDANCY_REPLACE_TODO_O_RESTO",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“Todo o resto” é um pleonasmo. É preferível dizer “o resto”",
+  "fragmento": "...esto cabe em poucos minutos de leitura. Todo o resto — os princípios, o método, a verificaçã...",
+  "sugerencias": [
+   "O resto"
+  ]
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/3/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "EN_COMPOUNDS_ANTI_PATTERNS",
+  "categoria": "MISC",
+  "mensaje": "This word is normally spelled as one.",
+  "fragmento": "Fourteen anti-patterns, each with how it shows up and its resp...",
+  "sugerencias": [
+   "antipatterns"
+  ]
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/3/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "Catorze antipadrões, cada um com a forma como aparece e sua...",
+  "sugerencias": [
+   "anti padrões"
+  ]
+ },
+ {
+  "clave": "superficies/verificar.yaml::sections/3/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_A_FORMA_COMO",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“a forma como” é uma expressão prolixa. É preferível dizer “como”.",
+  "fragmento": "Catorze antipadrões, cada um com a forma como aparece e sua resposta, e uma advertênc...",
+  "sugerencias": [
+   "como"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::description",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “Por que” expressar uma explicação, considere escrever “porque”.",
+  "fragmento": "Por que mais capacidade de construir software n...",
+  "sugerencias": [
+   "Porque"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::description",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "POR_QUE_PORQUE",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Se “Por que” expressar uma interrogação, considere utilizar “?”.",
+  "fragmento": "...ara as pessoas, e o que fazer a respeito.",
+  "sugerencias": [
+   "?"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::hero/text",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "WHETHER",
+  "categoria": "REDUNDANCY",
+  "mensaje": "Wordiness: Consider shortening this phrase.",
+  "fragmento": "...ding one more option takes minutes, and the question of whether it is worth it gets easier and easier t...",
+  "sugerencias": [
+   "whether",
+   "the question whether"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::hero/text",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "REDUNDANCY_3_ACRESCENTAR",
+  "categoria": "CLARITY",
+  "mensaje": "Para conferir mais clareza ao seu texto, evite pleonasmos.",
+  "fragmento": "Hoje, acrescentar mais uma opção custa minutos, e a pergunta s...",
+  "sugerencias": [
+   "acrescentar"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/4/blocks/3/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PARONYM_PUBLICA_535",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Quando escrita sem acento, esta palavra é um verbo. Se pretende referir-se a um substantivo ou adjetivo, deve utilizar a forma acentuada.",
+  "fragmento": "...ção.** Um assistente reescreve textos e os publica sem visualização prévia. Com `P10`, a i...",
+  "sugerencias": [
+   "os pública"
+  ]
+ },
+ {
+  "clave": "superficies/inicio.yaml::sections/6/blocks/2/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "...ifesto/construir-com-ia) ou [conhecer o status da adaptação](/pt-br/speckit).",
+  "sugerencias": [
+   "posição",
+   "situação",
+   "condição"
+  ]
+ },
+ {
+  "clave": "principios/p01.yaml::entries/tension/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "MORFOLOGIK_RULE_PT_BR",
+  "categoria": "TYPOS",
+  "mensaje": "Encontrado possível erro de ortografia.",
+  "fragmento": "...ouco. Quando o trabalho se organiza por features ou por perfis genéricos, ninguém precis...",
+  "sugerencias": [
+   "fatures",
+   "fratures"
+  ]
+ },
+ {
+  "clave": "principios/p01.yaml::entries/tension/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "DEPOIS_DE_APÓS",
+  "categoria": "FORMAL",
+  "mensaje": "Substitua por “após”.",
+  "fragmento": "...ecisa explicar o que muda para a pessoa depois de usar o produto.",
+  "sugerencias": [
+   "após"
+  ]
+ },
+ {
+  "clave": "principios/p06.yaml::entries/tension/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "ALERTAS_BR",
+  "categoria": "MISC",
+  "mensaje": "Alerta é invariável para indicar número ou gênero com exceção de quando está acompanhado de um artigo (Ex: os).\n        Substitua “alertas” por “alerta”.",
+  "fragmento": "Menus, alertas, animações, escolhas e textos competem ...",
+  "sugerencias": [
+   "alerta"
+  ]
+ },
+ {
+  "clave": "principios/p07.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_DE_ACORDO_COM_O",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“de acordo com o” é uma expressão prolixa. É preferível dizer “conforme o”, “segundo o” ou “consoante o”.",
+  "fragmento": "Este site rotula cada bloco de acordo com o que ele é — texto canônico, explicação,...",
+  "sugerencias": [
+   "conforme o",
+   "segundo o",
+   "consoante o"
+  ]
+ },
+ {
+  "clave": "principios/p07.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "... texto canônico, explicação, exemplo ou status técnico — para que quem lê saiba o que ...",
+  "sugerencias": [
+   "posição",
+   "situação",
+   "condição"
+  ]
+ },
+ {
+  "clave": "principios/p08.yaml::entries/tension/text",
+  "nivel": 2,
+  "idioma": "en",
+  "regla": "PCT_SINGULAR_NOUN_PLURAL_VERB_AGREEMENT",
+  "categoria": "GRAMMAR",
+  "mensaje": "“Turn” is a singular noun. It appears that the verb form is incorrect.",
+  "fragmento": "...onsistency is tolerated; a hundred turn use into constant friction.",
+  "sugerencias": [
+   "uses"
+  ]
+ },
+ {
+  "clave": "principios/p09.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_SCRIPT",
+  "categoria": "STYLE",
+  "mensaje": "“script” é um estrangeirismo. É preferível dizer “roteiro”.",
+  "fragmento": "...ite chega como texto antes que qualquer script seja executado; se um script falhar, a ...",
+  "sugerencias": [
+   "roteiro"
+  ]
+ },
+ {
+  "clave": "principios/p09.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_SCRIPT",
+  "categoria": "STYLE",
+  "mensaje": "“script” é um estrangeirismo. É preferível dizer “roteiro”.",
+  "fragmento": "...e qualquer script seja executado; se um script falhar, a leitura continua.",
+  "sugerencias": [
+   "roteiro"
+  ]
+ },
+ {
+  "clave": "principios/p09.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "LP_PARONYMS",
+  "categoria": "CONFUSED_WORDS",
+  "mensaje": "Quando escrita sem acento, esta palavra é um verbo. Se pretende referir-se a um substantivo ou adjetivo, deve utilizar a forma acentuada.",
+  "fragmento": "...ecutado; se um script falhar, a leitura continua.",
+  "sugerencias": [
+   "contínua"
+  ]
+ },
+ {
+  "clave": "principios/p02.yaml::entries/significado/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "VERB_COMMA_CONJUNCTION",
+  "categoria": "PUNCTUATION",
+  "mensaje": "Esta conjunção deve ser separada por vírgulas e só deve ser utilizada no início duma frase para efeitos de estilo.",
+  "fragmento": "...nção ele exige para ser obtido. Se algo funciona mas desgasta, ainda não funciona bem.",
+  "sugerencias": [
+   "funciona, mas"
+  ]
+ },
+ {
+  "clave": "principios/p02.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...scadores retornam os mesmos resultados. Um mostra imediatamente por que cada resultado co...",
+  "sugerencias": [
+   "uma mostra",
+   "Um, mostra",
+   "Um Mostra"
+  ]
+ },
+ {
+  "clave": "principios/p02.yaml::entries/ejemplo/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
+  "categoria": "GRAMMAR",
+  "mensaje": "Possível erro de concordância.",
+  "fragmento": "...r um para saber. Os dois são exatos; só um poupa o trabalho de verificar.",
+  "sugerencias": [
+   "uma poupa",
+   "um, poupa",
+   "um Poupa"
+  ]
+ },
+ {
+  "clave": "principios/p03.yaml::entries/prueba/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_POR_CAUSA_DA",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“por causa da” é uma expressão prolixa. É preferível dizer “devido à” ou “pela”.",
+  "fragmento": "...perguntas separam os passos que existem por causa da pessoa dos que existem por causa do sis...",
+  "sugerencias": [
+   "devido à",
+   "pela"
+  ]
+ },
+ {
+  "clave": "principios/p03.yaml::entries/prueba/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "PT_WORDINESS_REPLACE_POR_CAUSA_DO",
+  "categoria": "REDUNDANCY",
+  "mensaje": "“por causa do” é uma expressão prolixa. É preferível dizer “devido ao” ou “pelo”.",
+  "fragmento": "...tem por causa da pessoa dos que existem por causa do sistema.",
+  "sugerencias": [
+   "devido ao",
+   "pelo"
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.estadoSpeckit",
+  "nivel": 1,
+  "idioma": "en",
+  "regla": "UPPERCASE_SENTENCE_START",
+  "categoria": "CASING",
+  "mensaje": "This sentence does not start with an uppercase letter.",
+  "fragmento": "not published",
+  "sugerencias": [
+   "Not"
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::nav.estadoSpeckit",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "UPPERCASE_SENTENCE_START",
+  "categoria": "CASING",
+  "mensaje": "Esta frase não inicia com um letra maiúscula",
+  "fragmento": "não publicada",
+  "sugerencias": [
+   "Não"
+  ]
+ },
+ {
+  "clave": "interfaz/cadenas.yaml::contenido.estadoTecnico",
+  "nivel": 1,
+  "idioma": "pt",
+  "regla": "PT_BARBARISMS_REPLACE_STATUS",
+  "categoria": "STYLE",
+  "mensaje": "“Status” é um estrangeirismo. É preferível dizer “posição”, “situação”, “condição” ou “classificação”.",
+  "fragmento": "Status técnico confirmado",
+  "sugerencias": [
+   "Posição",
+   "Situação",
+   "Condição"
+  ]
+ }
+]
