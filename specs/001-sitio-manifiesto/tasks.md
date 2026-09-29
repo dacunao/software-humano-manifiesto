@@ -600,7 +600,7 @@ Se conservan `FR-012` (procedencia visible), PRD §18.4 (sección sobre Software
 
 ## Phase 30: Convergence
 
-- [ ] T195 Escribir `specs/001-sitio-manifiesto/evidencia/revision-linguistica/verificacion-cuatro-capas.md`, que consolide:
+- [X] T195 Escribir `specs/001-sitio-manifiesto/evidencia/revision-linguistica/verificacion-cuatro-capas.md`, que consolide:
   - los resultados de cada capa, para el núcleo y el copy;
   - las decisiones: el copy base es la traducción de OpenAI y el revisor es de otra familia que el traductor;
   - las correcciones aplicadas, las aprobaciones y los modelos usados;
