@@ -27,9 +27,18 @@ const { locale } = Astro.props;
     <button type="button" class="cerrar-busqueda" data-cerrar-busqueda>{t('busqueda.cerrar', locale)}</button>
   </div>
   <label for="busqueda-consulta">{t('busqueda.etiqueta', locale)}</label>
-  <input id="busqueda-consulta" type="search" autocomplete="off" spellcheck="false" data-consulta />
+  <div class="busqueda-caja">
+    <input id="busqueda-consulta" type="search" autocomplete="off" spellcheck="false" data-consulta />
+    <button type="button" class="limpiar-busqueda" data-limpiar-busqueda hidden>{t('busqueda.limpiar', locale)}</button>
+  </div>
   <p class="busqueda-estado" role="status" aria-live="polite" data-estado></p>
   <div class="busqueda-resultados" data-resultados-lista></div>
+  {/* Indicaciones de teclado (T219): solo con puntero fino; en pantallas táctiles no aplican. */}
+  <p class="busqueda-teclas" aria-hidden="true">
+    <span><kbd>Esc</kbd> {t('busqueda.teclaCerrar', locale)}</span>
+    <span><kbd>↑</kbd><kbd>↓</kbd> {t('busqueda.teclaNavegar', locale)}</span>
+    <span><kbd>Enter</kbd> {t('busqueda.teclaAbrir', locale)}</span>
+  </p>
 </dialog>
 <script>
   import '../cliente/busqueda';

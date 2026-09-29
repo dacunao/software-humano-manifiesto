@@ -78,8 +78,11 @@ async function mostrar(q: string): Promise<void> {
   if (!lista || !estado || !dialogo || !motor) return;
   if (!q.trim()) { lista.replaceChildren(); estado.textContent = ''; return; }
   const busqueda = await motor.debouncedSearch(q, {}, 150);
+  // Una respuesta que llega tarde, para un texto que ya cambió o se limpió, se descarta.
+  if (consulta && consulta.value !== q) return;
   if (!busqueda) return; // la reemplazó una búsqueda más reciente
   const datos = await Promise.all(busqueda.results.slice(0, 8).map((r) => r.data()));
+  if (consulta && consulta.value !== q) return;
   lista.replaceChildren();
   if (!datos.length) {
     estado.textContent = (dialogo.dataset['sinResultados'] ?? '').replace('{q}', q.trim());
@@ -108,10 +111,33 @@ if (boton && dialogo && consulta) {
     consulta.focus();
     void cargar().then(() => mostrar(consulta.value));
   });
-  consulta.addEventListener('input', () => { void cargar().then(() => mostrar(consulta.value)); });
+  const limpiar = dialogo.querySelector<HTMLButtonElement>('[data-limpiar-busqueda]');
+  const alEscribir = () => {
+    if (limpiar) limpiar.hidden = !consulta.value;
+    void cargar().then(() => mostrar(consulta.value));
+  };
+  consulta.addEventListener('input', alEscribir);
+  // «Limpiar» (T219): borra la búsqueda y deja el foco en la caja para escribir otra.
+  limpiar?.addEventListener('click', () => {
+    consulta.value = '';
+    limpiar.hidden = true;
+    lista?.replaceChildren();
+    if (estado) estado.textContent = '';
+    consulta.focus();
+  });
   // Escape cierra de una vez, también cuando el campo tiene texto (el navegador solo lo borraría).
-  consulta.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { e.preventDefault(); dialogo.close(); }
+  // ↓ y ↑ recorren los resultados desde la caja; Enter abre el elegido (T219).
+  const resultados = () => [...dialogo.querySelectorAll<HTMLAnchorElement>('[data-resultados-lista] a')];
+  dialogo.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { e.preventDefault(); dialogo.close(); return; }
+    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+    const lista = resultados();
+    if (!lista.length) return;
+    const i = lista.indexOf(document.activeElement as HTMLAnchorElement);
+    e.preventDefault();
+    if (e.key === 'ArrowDown') lista[Math.min(i + 1, lista.length - 1)]!.focus();
+    else if (i <= 0) consulta.focus();
+    else lista[i - 1]!.focus();
   });
   dialogo.querySelector('[data-cerrar-busqueda]')?.addEventListener('click', () => dialogo.close());
   dialogo.addEventListener('close', () => boton.focus());

@@ -247,7 +247,8 @@ dialog.busqueda::backdrop { background: rgb(16 24 32 / 45%); }
 .busqueda-cabecera h2 { margin: 0; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em; }
 .cerrar-busqueda { font: inherit; font-size: 0.9375rem; min-height: 44px; border: 1px solid var(--sh-border); background: transparent; color: var(--sh-text); border-radius: var(--radius-sm); padding: 0 0.85rem; cursor: pointer; }
 dialog.busqueda label { display: block; margin-top: 1rem; font-size: 0.9375rem; color: var(--sh-text-muted); }
-dialog.busqueda input { width: 100%; min-height: 48px; font: inherit; font-size: 1.0625rem; padding: 0 0.85rem; margin-top: 0.3rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); background: var(--sh-canvas); color: var(--sh-text); }
+.busqueda-caja { position: relative; margin-top: 0.3rem; }
+dialog.busqueda input { width: 100%; min-height: 48px; font: inherit; font-size: 1.0625rem; padding: 0 6rem 0 0.85rem; border: 1px solid var(--sh-border); border-radius: var(--radius-sm); background: var(--sh-canvas); color: var(--sh-text); }
 .busqueda-estado { font-size: 0.9375rem; color: var(--sh-text-muted); min-height: 1.4em; margin: 0.6rem 0; }
 .busqueda-resultados h3 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sh-text-muted); margin: 1rem 0 0.3rem; }
 .busqueda-resultados ol { list-style: none; padding: 0; margin: 0; }
@@ -310,3 +311,12 @@ mark.pagefind-highlight { background: var(--sh-indigo-soft); color: inherit; out
 .fin-recorrido p { margin: 0 0 0.5rem; font-weight: 600; }
 .fin-recorrido ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; list-style: none; padding: 0; margin: 0; }
 .fin-recorrido a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Búsqueda (T219): «Limpiar» dentro de la caja, en lugar del del navegador, e indicaciones de teclado al pie. */
+dialog.busqueda input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.limpiar-busqueda { position: absolute; right: 0.25rem; top: 50%; transform: translateY(-50%); min-height: 44px; padding: 0 0.75rem; border: 0; background: transparent; color: var(--sh-text-muted); font: inherit; font-size: 0.9375rem; cursor: pointer; border-radius: var(--radius-sm); }
+.limpiar-busqueda:hover { color: var(--sh-text); background: var(--sh-subtle); }
+.limpiar-busqueda[hidden] { display: none; }
+.busqueda-teclas { display: none; gap: 1.25rem; margin: 0.75rem calc(-1 * var(--sh-espacio)) calc(-1 * var(--sh-espacio)); padding: 0.75rem var(--sh-espacio); position: sticky; bottom: calc(-1 * var(--sh-espacio)); background: var(--sh-surface); border-top: 1px solid var(--sh-border); font-size: 0.875rem; color: var(--sh-text-muted); }
+.busqueda-teclas kbd { display: inline-block; min-width: 1.6em; margin-right: 0.15rem; padding: 0.05rem 0.4rem; border: 1px solid var(--sh-border); border-radius: 4px; background: var(--sh-canvas); font: inherit; font-size: 0.8125rem; text-align: center; color: var(--sh-text); }
+@media (hover: hover) and (pointer: fine) { .busqueda-teclas { display: flex; flex-wrap: wrap; } }

@@ -78,3 +78,34 @@ test('sin JavaScript no hay botón de búsqueda; nada se pide a terceros', async
   if (!javaScriptEnabled) await expect(page.locator('[data-abrir-busqueda]')).toBeHidden();
   expect(externas).toEqual([]);
 });
+
+test.describe('FR-023 · búsqueda con teclado y «Limpiar» (T219)', () => {
+  test('↓ recorre los resultados, ↑ vuelve a la caja y «Limpiar» vacía todo', async ({ page, javaScriptEnabled }, info) => {
+    test.skip(!javaScriptEnabled || info.project.name === 'movil', 'escritorio con JavaScript');
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto('/es');
+    await page.locator('[data-abrir-busqueda]').click();
+    const caja = page.locator('dialog.busqueda input');
+    await caja.fill('atención');
+    const primero = page.locator('dialog.busqueda .busqueda-resultados a').first();
+    await expect(primero).toBeVisible();
+    await expect(page.locator('dialog.busqueda .busqueda-teclas')).toBeVisible();
+    await page.keyboard.press('ArrowDown');
+    await expect(primero).toBeFocused();
+    await page.keyboard.press('ArrowUp');
+    await expect(caja).toBeFocused();
+    await page.locator('[data-limpiar-busqueda]').click();
+    await expect(caja).toHaveValue('');
+    await expect(caja).toBeFocused();
+    await page.waitForTimeout(400);
+    await expect(page.locator('dialog.busqueda .busqueda-resultados a')).toHaveCount(0);
+    await expect(page.locator('[data-limpiar-busqueda]')).toBeHidden();
+  });
+
+  test('en el teléfono no se muestran las indicaciones de teclado', async ({ page, javaScriptEnabled }, info) => {
+    test.skip(!javaScriptEnabled || info.project.name !== 'movil', 'solo teléfono');
+    await page.goto('/es');
+    await page.locator('[data-abrir-busqueda]').click();
+    await expect(page.locator('dialog.busqueda .busqueda-teclas')).toBeHidden();
+  });
+});

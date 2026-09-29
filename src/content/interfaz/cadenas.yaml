@@ -1205,3 +1205,19 @@ recorrido.fin:
   es: { state: aprobado, text: "Llegaste al final del manifiesto. Para seguir:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en: { state: aprobado, text: "You have reached the end of the manifesto. To continue:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   pt-BR: { state: aprobado, text: "Você chegou ao fim do manifesto. Para continuar:", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+busqueda.limpiar:
+  es: { state: borrador, text: "Limpiar" }
+  en: { state: borrador, text: "Clear" }
+  pt-BR: { state: borrador, text: "Limpar" }
+busqueda.teclaCerrar:
+  es: { state: borrador, text: "cerrar" }
+  en: { state: borrador, text: "close" }
+  pt-BR: { state: borrador, text: "fechar" }
+busqueda.teclaNavegar:
+  es: { state: borrador, text: "navegar" }
+  en: { state: borrador, text: "navigate" }
+  pt-BR: { state: borrador, text: "navegar" }
+busqueda.teclaAbrir:
+  es: { state: borrador, text: "abrir" }
+  en: { state: borrador, text: "open" }
+  pt-BR: { state: borrador, text: "abrir" }
