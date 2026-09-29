@@ -1,0 +1,1332 @@
+[
+ {
+  "clave": "canon::portada-01",
+  "nivel": 1,
+  "es": "**NÚCLEO DEL MARCO DE PRODUCTO Y DESARROLLO**",
+  "nuestra": "**PRODUCT AND DEVELOPMENT FRAMEWORK CORE**",
+  "contraste": "**CORE OF THE PRODUCT AND DEVELOPMENT FRAMEWORK**"
+ },
+ {
+  "clave": "canon::portada-02",
+  "nivel": 1,
+  "es": "# Núcleo del manifiesto para el desarrollo de software humano con inteligencia artificial",
+  "nuestra": "# Core of the manifesto for human software development with artificial intelligence",
+  "contraste": "# Core Principles of the Manifesto for Human-Centered Software Development with Artificial Intelligence"
+ },
+ {
+  "clave": "canon::portada-03",
+  "nivel": 1,
+  "es": "Principios, fundamento de producto, Job Stories y pruebas de decisión para construir productos centrados en el progreso situado de las personas",
+  "nuestra": "Principles, product foundation, Job Stories and decision tests for building products centered on people's situated progress",
+  "contraste": "Principles, product foundations, Job Stories, and decision tests for building products centered on people’s situated progress"
+ },
+ {
+  "clave": "canon::portada-04",
+  "nivel": 1,
+  "es": "Construimos herramientas para ampliar las capacidades de las personas, no para exhibir las capacidades del software.",
+  "nuestra": "We build tools to extend what people are capable of, not to display what software is capable of.",
+  "contraste": "We build tools to expand people's capabilities, not to showcase the capabilities of the software."
+ },
+ {
+  "clave": "canon::portada-05",
+  "nivel": 1,
+  "es": "**Versión 2.1**",
+  "nuestra": "**Version 2.1**",
+  "contraste": "**Version 2.1**"
+ },
+ {
+  "clave": "canon::portada-06",
+  "nivel": 1,
+  "es": "Septiembre de 2026",
+  "nuestra": "September 2026",
+  "contraste": "September 2026"
+ },
+ {
+  "clave": "canon::indice-operativo-para-agentes-03",
+  "nivel": 1,
+  "es": "| **Familia** | **Identificadores** | **Contenido** |\n|---|---|---|\n| Navegación | `SH-INDEX` | Índice operativo y regla de uso de identificadores |\n| Principios | `P01`–`P10` | Diez compromisos que gobiernan las decisiones |\n| Fundamento | `SH-FUND` | Definición de producto, autoridad, alcance y Job Stories de referencia |\n| Directivas para IA | `D01`–`D06` | Doctrina para equipos y agentes |\n| Flujo | `F01`–`F08` | Ocho pasos desde el fundamento hasta la verificación |\n| Artefactos | `A01`–`A08` | Ocho respuestas documentales ajustadas al contexto |\n| Detención | `SH-STOP`, `STOP01`–`STOP07` | Condiciones que impiden avanzar o aceptar |\n| Contrato del agente | `CR01`–`CR08` | Instrucciones reutilizables para desarrollar |\n| Entrega del agente | `O01`–`O09` | Contenido esperado de los resultados en lenguaje natural |\n| Verificación | `V01`–`V12` | Dimensiones de evidencia para aceptar una solución |\n| Controles transversales | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decisión, anti patrones, gobernanza, terminado y guía breve |",
+  "nuestra": "| **Family** | **Identifiers** | **Content** |\n|---|---|---|\n| Navigation | `SH-INDEX` | Operational index and rule for using identifiers |\n| Principles | `P01`–`P10` | Ten commitments that govern decisions |\n| Foundation | `SH-FUND` | Product definition, authority, scope and reference Job Stories |\n| AI directives | `D01`–`D06` | Doctrine for teams and agents |\n| Flow | `F01`–`F08` | Eight steps from the foundation to verification |\n| Artifacts | `A01`–`A08` | Eight documentary answers matched to context |\n| Stop conditions | `SH-STOP`, `STOP01`–`STOP07` | Conditions that prevent proceeding or accepting |\n| Agent contract | `CR01`–`CR08` | Reusable instructions for development |\n| Agent output | `O01`–`O09` | Expected content of results in natural language |\n| Verification | `V01`–`V12` | Dimensions of evidence for accepting a solution |\n| Cross-cutting controls | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, done and short guide |",
+  "contraste": "| **Family** | **Identifiers** | **Content** |\n|---|---|---|\n| Navigation | `SH-INDEX` | Operational index and rules for using identifiers |\n| Principles | `P01`–`P10` | Ten commitments that govern decisions |\n| Foundation | `SH-FUND` | Definition of the product, authority, scope, and reference Job Stories |\n| AI Guidelines | `D01`–`D06` | Guidelines for teams and agents |\n| Flow | `F01`–`F08` | Eight steps from foundation to verification |\n| Artifacts | `A01`–`A08` | Eight context-specific documented responses |\n| Halt | `SH-STOP`, `STOP01`–`STOP07` | Conditions that prevent progress or acceptance |\n| Agent Contract | `CR01`–`CR08` | Reusable instructions for development |\n| Agent Delivery | `O01`–`O09` | Expected content of the results in natural language |\n| Verification | `V01`–`V12` | Dimensions of evidence for accepting a solution |\n| Cross-cutting controls | `SH-SCORE`, `SH-AP`, `SH-GOV`, `SH-DONE`, `SH-POCKET` | Decision, anti-patterns, governance, completion, and brief guide |"
+ },
+ {
+  "clave": "canon::proposito-del-documento-05",
+  "nivel": 2,
+  "es": "Este manifiesto establece una doctrina para decidir qué merece ser construido, cómo debe sentirse al usarlo y qué evidencia debe existir antes de aceptar una implementación. Su unidad de medida no es la cantidad de funcionalidades entregadas. Es el progreso que una persona puede lograr con claridad, confianza y control.",
+  "nuestra": "This manifesto establishes a doctrine for deciding what deserves to be built, how it must feel to use, and what evidence must exist before an implementation is accepted. Its unit of measurement is not the number of features delivered. It is the progress a person can achieve with clarity, trust and control.",
+  "contraste": "This manifesto establishes a set of principles for deciding what deserves to be built, how it should feel to use it, and what evidence must exist before accepting an implementation. Its unit of measurement is not the number of features delivered. It is the progress a person can make with clarity, confidence, and control."
+ },
+ {
+  "clave": "canon::proposito-del-documento-16",
+  "nivel": 2,
+  "es": "| **Ruta**   | **Contenido**                                                                           | **Uso recomendado**                             |\n|------------|-----------------------------------------------------------------------------------------|-------------------------------------------------|\n| Comprender | Tesis y texto canónico del manifiesto                                                   | Alinear al equipo antes de definir una solución |\n| Decidir    | Diez principios, fundamento de producto y Job Stories con reglas y preguntas de control | Resolver alternativas de producto y UX          |\n| Construir  | Doctrina específica para desarrollo con IA                                              | Guiar a agentes de código y revisores humanos   |\n| Verificar  | Pruebas de aceptación, scorecard y anti patrones                                        | Evaluar prototipos, implementaciones y entregas |",
+  "nuestra": "| **Route**   | **Content**                                                                        | **Recommended use**                               |\n|-------------|------------------------------------------------------------------------------------|---------------------------------------------------|\n| Understand  | Thesis and canonical text of the manifesto                                          | Align the team before defining a solution         |\n| Decide      | Ten principles, product foundation and Job Stories with rules and control questions | Decide between product and UX alternatives              |\n| Build       | Doctrine specific to development with AI                                            | Guide coding agents and human reviewers           |\n| Verify      | Acceptance tests, scorecard and anti-patterns                                       | Evaluate prototypes, implementations and deliveries |",
+  "contraste": "| **Path**   | **Content** | **Recommended Use** |\n|------------|-----------------------------------------------------------------------------------------|-------------------------------------------------|\n| Understand | Thesis and canonical text of the manifesto | Align the team before defining a solution |\n| Decide    | Ten principles, product foundation, and Job Stories with rules and control questions | Resolve product and UX alternatives |\n| Build  | Specific guidelines for AI-driven development | Guide developers and human reviewers   |\n| Verify  | Acceptance tests, scorecards, and anti-patterns | Evaluate prototypes, implementations, and deliverables |"
+ },
+ {
+  "clave": "canon::texto-canonico-01",
+  "nivel": 1,
+  "es": "## TEXTO CANÓNICO",
+  "nuestra": "## CANONICAL TEXT",
+  "contraste": "## CANONICAL TEXT"
+ },
+ {
+  "clave": "canon::texto-canonico-02",
+  "nivel": 1,
+  "es": "### Manifiesto para el desarrollo de software humano",
+  "nuestra": "### Manifesto for human software development",
+  "contraste": "### Manifesto for Human-Centered Software Development"
+ },
+ {
+  "clave": "canon::texto-canonico-03",
+  "nivel": 1,
+  "es": "El propósito del software es ampliar lo que una persona puede hacer.",
+  "nuestra": "The purpose of software is to extend what a person can do.",
+  "contraste": "The purpose of the software is to expand what a person can do."
+ },
+ {
+  "clave": "canon::texto-canonico-04",
+  "nivel": 1,
+  "es": "Las personas no llegan a nuestros productos para utilizar funcionalidades. Llegan porque quieren comprender, decidir, crear, aprender, comunicarse, resolver o avanzar. Ese progreso es nuestro verdadero producto.",
+  "nuestra": "People do not come to our products in order to use features. They come because they want to understand, decide, create, learn, communicate, solve problems or move forward. That progress is our real product.",
+  "contraste": "People don't come to our products to use features. They come because they want to understand, decide, create, learn, communicate, solve problems, or move forward. That progress is our true product."
+ },
+ {
+  "clave": "canon::texto-canonico-05",
+  "nivel": 1,
+  "es": "El progreso no ocurre en abstracto. Se activa cuando una circunstancia crea una necesidad, una tensión o una decisión. Antes de diseñar una respuesta describimos esa circunstancia, la motivación que produce y el resultado que la persona busca. La solución viene después.",
+  "nuestra": "Progress does not happen in the abstract. It is triggered when a circumstance creates a need, a tension or a decision. Before designing a response we describe that circumstance, the motivation it produces and the outcome the person is seeking. The solution comes afterwards.",
+  "contraste": "Progress doesn't happen in the abstract. It is triggered when a circumstance creates a need, a tension, or a decision. Before designing a response, we describe that circumstance, the motivation it generates, and the outcome the person is seeking. The solution comes later."
+ },
+ {
+  "clave": "canon::texto-canonico-06",
+  "nivel": 1,
+  "es": "La definición de producto gobierna qué debe construirse. Puede expresarse con una sola historia o mediante un PRD extenso compuesto por historias, capacidades, reglas, estados, recorridos y criterios. El desarrollo debe comprender esa estructura, conservar su significado y dar cuenta de su alcance completo. Descomponer, ordenar o ejecutar en paralelo el trabajo no autoriza a omitirlo ni a redefinirlo.",
+  "nuestra": "The product definition governs what must be built. It may be expressed as a single story or through an extensive PRD made up of stories, capabilities, rules, states, journeys and criteria. Development must understand that structure, preserve its meaning and account for its full scope. Breaking the work down, ordering it or running it in parallel does not authorize omitting or redefining it.",
+  "contraste": "The product definition governs what is to be built. It can be expressed as a single user story or through a comprehensive PRD consisting of user stories, capabilities, rules, states, flows, and criteria. Development must reflect this structure, preserve its meaning, and account for its full scope. Breaking down, organizing, or executing the work in parallel does not authorize omitting or redefining it."
+ },
+ {
+  "clave": "canon::texto-canonico-07",
+  "nivel": 1,
+  "es": "Por eso la experiencia forma parte de la función. Un sistema que permite completar una tarea, pero obliga a interpretar la interfaz, recordar convenciones, atravesar estructuras innecesarias o preguntarse qué ocurrirá después, transfiere al usuario un problema que el producto debería resolver.",
+  "nuestra": "This is why experience is part of functionality. A system that lets someone complete a task but forces them to interpret the interface, remember conventions, work through unnecessary structures or wonder what will happen next, transfers to the user a problem the product should have solved.",
+  "contraste": "That is why experience is part of the function. A system that allows a task to be completed but forces the user to interpret the interface, remember conventions, navigate through unnecessary structures, or wonder what will happen next shifts onto the user a problem that the product should solve."
+ },
+ {
+  "clave": "canon::texto-canonico-08",
+  "nivel": 1,
+  "es": "No rechazamos la complejidad. Muchos problemas importantes son complejos. Rechazamos que la complejidad de construirlos tenga que convertirse automáticamente en complejidad para quien usa la herramienta.",
+  "nuestra": "We do not reject complexity. Many important problems are complex. What we reject is that the complexity of building them should automatically become complexity for whoever uses the tool.",
+  "contraste": "We do not reject complexity. Many important problems are complex. We reject the idea that the complexity of building these tools must automatically translate into complexity for the user."
+ },
+ {
+  "clave": "canon::texto-canonico-09",
+  "nivel": 1,
+  "es": "Buscamos software sencillo al comenzar y profundo cuando se necesita. Software que revele capacidades en contexto, explique sin interrumpir, anticipe sin controlar y permita recuperarse sin miedo.",
+  "nuestra": "We seek software that is simple to begin with and deep when needed. Software that reveals capabilities in context, explains without interrupting, anticipates without controlling and lets people recover without fear.",
+  "contraste": "We're looking for software that's simple to start with but powerful when needed. Software that reveals capabilities in context, explains without interrupting, anticipates without controlling, and allows for recovery without fear."
+ },
+ {
+  "clave": "canon::texto-canonico-10",
+  "nivel": 1,
+  "es": "Cada elemento debe justificar la atención que consume. Cada interacción debe ayudar a comprender dónde estamos, qué podemos hacer y qué ocurrirá después. Cada detalle debe contribuir a una experiencia coherente, rápida y confiable.",
+  "nuestra": "Every element must justify the attention it consumes. Every interaction must help us understand where we are, what we can do and what will happen next. Every detail must contribute to an experience that is coherent, fast and dependable.",
+  "contraste": "Every element must justify the attention it demands. Every interaction must help users understand where they are, what they can do, and what will happen next. Every detail must contribute to a coherent, fast, and reliable experience."
+ },
+ {
+  "clave": "canon::texto-canonico-11",
+  "nivel": 1,
+  "es": "La inteligencia artificial debe absorber complejidad, no multiplicarla. Puede proponer, resumir y automatizar, pero permanece subordinada a la intención de la persona. Las reglas críticas, los permisos, los compromisos y los estados que requieren certeza no dependen de una interpretación probabilística.",
+  "nuestra": "Artificial intelligence must absorb complexity, not multiply it. It may propose, summarize and automate, but it remains subordinate to the person's intent. Critical rules, permissions, commitments and states that require certainty do not depend on a probabilistic interpretation.",
+  "contraste": "Artificial intelligence should absorb complexity, not multiply it. It can make suggestions, summarize, and automate, but it remains subordinate to human intent. Critical rules, permissions, commitments, and states that require certainty do not depend on probabilistic interpretation."
+ },
+ {
+  "clave": "canon::texto-canonico-12",
+  "nivel": 1,
+  "es": "Ahora que construir es más fácil, nuestra responsabilidad aumenta. Antes de agregar una capacidad preguntamos qué progreso habilita, qué carga introduce, qué riesgo crea y si merece existir.",
+  "nuestra": "Now that building is easier, our responsibility grows. Before adding a capability we ask what progress it enables, what burden it introduces, what risk it creates and whether it deserves to exist.",
+  "contraste": "Now that building is easier, our responsibility grows. Before adding a feature, we ask what progress it enables, what burden it introduces, what risk it creates, and whether it’s worth having."
+ },
+ {
+  "clave": "canon::texto-canonico-13",
+  "nivel": 1,
+  "es": "Nuestro objetivo es que la sofisticación permanezca detrás de la experiencia y que, delante de ella, la persona conserve su propósito, su atención y su control.",
+  "nuestra": "Our aim is for sophistication to remain behind the experience, and for the person in front of it to retain their purpose, their attention and their control.",
+  "contraste": "Our goal is for sophistication to remain in the background of the experience, so that the individual can maintain their purpose, focus, and control at the forefront."
+ },
+ {
+  "clave": "canon::texto-canonico-14",
+  "nivel": 1,
+  "es": "El mejor software no consigue que el usuario admire el software. Consigue que se sorprenda de lo que ahora es capaz de hacer.",
+  "nuestra": "The best software does not make users admire the software. It makes them marvel at what they can now do.",
+  "contraste": "Even the best software doesn't make users admire the software. It makes them marvel at what they are now capable of doing."
+ },
+ {
+  "clave": "canon::principios-de-diseno-01",
+  "nivel": 1,
+  "es": "## PRINCIPIOS DE DISEÑO",
+  "nuestra": "## DESIGN PRINCIPLES",
+  "contraste": "## DESIGN PRINCIPLES"
+ },
+ {
+  "clave": "canon::principios-de-diseno-02",
+  "nivel": 1,
+  "es": "### Diez compromisos que gobiernan las decisiones",
+  "nuestra": "### Ten commitments that govern decisions",
+  "contraste": "### Ten Commitments That Guide Decision-Making"
+ },
+ {
+  "clave": "canon::principios-de-diseno-03",
+  "nivel": 1,
+  "es": "Los principios no describen aspiraciones decorativas. Cada uno debe ser capaz de cambiar una decisión, detener una implementación o exigir evidencia adicional. Si una frase no tiene consecuencias prácticas, no cumple una función dentro del marco.",
+  "nuestra": "The principles do not describe decorative aspirations. Each one must be capable of changing a decision, stopping an implementation or requiring additional evidence. A sentence with no practical consequences serves no function within the framework.",
+  "contraste": "Principles are not merely decorative aspirations. Everyone must be able to change a decision, halt an implementation, or demand additional evidence. If a statement has no practical consequences, it does not serve a purpose within the framework."
+ },
+ {
+  "clave": "canon::principios-de-diseno-04",
+  "nivel": 1,
+  "es": "| **N** | **Principio**                                          | **Consecuencia principal**                                                                               |\n|-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|\n| 1     | El progreso del usuario es la unidad de diseño         | Vincula cada decisión con su fundamento de producto y usa Job Stories cuando expresan mejor la situación |\n| 2     | La experiencia también es funcionalidad                | Incluye esfuerzo, emoción y fricción en la definición de calidad                                         |\n| 3     | La complejidad pertenece al sistema                    | Evita trasladar el modelo interno al usuario                                                             |\n| 4     | Simple al comenzar y profundo al necesitarlo           | Revela poder en contexto sin limitar al usuario experto                                                  |\n| 5     | La interfaz no debe convertirse en otra tarea          | Reduce aprendizaje incidental y convenciones propias                                                     |\n| 6     | La atención es un recurso del producto                 | Justifica cada elemento y cada decisión solicitada                                                       |\n| 7     | La confianza se diseña                                 | Hace visibles estado, consecuencias, control y recuperación                                              |\n| 8     | La calidad vive en la acumulación de detalles          | Trata microdecisiones y estados extremos como parte del producto                                         |\n| 9     | El tiempo y la continuidad forman parte de la interfaz | Integra rendimiento, disponibilidad y preservación del trabajo                                           |\n| 10    | La persona conserva control y propiedad                | Subordina asistencia y automatización a la intención humana                                              |",
+  "nuestra": "| **N** | **Principle**                                          | **Main consequence**                                                                                     |\n|-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|\n| 1     | The user's progress is the unit of design              | Ties every decision to its product foundation and uses Job Stories when they express the situation better |\n| 2     | Experience is also functionality                       | Includes effort, emotion and friction in the definition of quality                                       |\n| 3     | Complexity belongs to the system                       | Avoids passing the internal model on to the user                                                         |\n| 4     | Simple to begin with, deep when needed                 | Reveals power in context without limiting the expert user                                                |\n| 5     | The interface must not become another task             | Reduces incidental learning and custom conventions                                                       |\n| 6     | Attention is a product resource                        | Justifies every element and every decision requested                                                     |\n| 7     | Trust is designed                                      | Makes state, consequences, control and recovery visible                                                  |\n| 8     | Quality lives in the accumulation of details           | Treats micro-decisions and edge states as part of the product                                            |\n| 9     | Time and continuity are part of the interface          | Integrates performance, availability and preservation of work                                            |\n| 10    | The person retains control and ownership               | Subordinates assistance and automation to human intent                                                   |",
+  "contraste": "| **N** | **Principle** | **Main consequence** |\n|-------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|\n| 1     | User progress is the unit of design | Link each decision to its product rationale and use Job Stories when they best express the situation |\n| 2     | Experience is also functionality | Include effort, emotion, and friction in the definition of quality |\n| 3     | Complexity belongs to the system | Avoid transferring the internal model to the user |\n| 4     | Simple at the start and deep when needed | Reveal power in context without limiting the expert user |\n| 5     | The interface should not become yet another task | Reduce incidental learning and proprietary conventions |\n| 6     | Attention is a product resource | Justify every element and every requested decision |\n| 7     | Trust is designed | Make status, consequences, control, and recovery visible |\n| 8     | Quality lies in the accumulation of details | Treat microdecisions and extreme states as part of the product |\n| 9     | Time and continuity are part of the interface | Integrate performance, availability, and work preservation |\n| 10    | The user retains control and ownership | Subordinate assistance and automation to human intent |"
+ },
+ {
+  "clave": "canon::p01",
+  "nivel": 1,
+  "es": "## PRINCIPIO 1 · `P01`",
+  "nuestra": "## PRINCIPLE 1 · `P01`",
+  "contraste": "## PRINCIPLE 1 · `P01`"
+ },
+ {
+  "clave": "canon::principio-1-02",
+  "nivel": 1,
+  "es": "### El progreso del usuario es la unidad de diseño",
+  "nuestra": "### The user's progress is the unit of design",
+  "contraste": "### User progress is the unit of design"
+ },
+ {
+  "clave": "canon::principio-1-03",
+  "nivel": 1,
+  "es": "No diseñes lo que el usuario puede hacer. Diseña el progreso que necesita conseguir.",
+  "nuestra": "Do not design what the user can do. Design the progress they need to achieve.",
+  "contraste": "Don't design what the user can do. Design the progress they need to make."
+ },
+ {
+  "clave": "canon::principio-1-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-1-09",
+  "nivel": 1,
+  "es": "- Identificar el fundamento de producto y la fuente autorizada que establece el alcance antes de diseñar una respuesta.\n\n- Cuando el fundamento se exprese mediante Job Stories, ubicarlas dentro del progreso o propósito de nivel superior que corresponda.\n\n- Formular cada Job Story como circunstancia, motivación y resultado, sin nombrar una pantalla, un componente ni una funcionalidad.\n\n- Respaldar las decisiones con conducta observada, obstáculo o ansiedad actual y evidencia que permita aceptar el resultado.",
+  "nuestra": "- Identify the product foundation and the authorized source that establishes the scope before designing a response.\n\n- Where the foundation is expressed through Job Stories, place them within the higher-level progress or purpose to which they belong.\n\n- Formulate each Job Story as circumstance, motivation and outcome, without naming a screen, a component or a feature.\n\n- Ground decisions in observed behavior, the current obstacle or anxiety, and evidence that supports acceptance of the outcome.",
+  "contraste": "- Identify the product rationale and the authoritative source that defines the scope before designing a solution.\n\n- When the rationale is expressed through Job Stories, place them within the corresponding higher-level progress or purpose.\n\n- Formulate each Job Story as a circumstance, motivation, and outcome, without naming a screen, component, or feature.\n\n- Support decisions with observed behavior, current obstacles or concerns, and evidence that validates the outcome."
+ },
+ {
+  "clave": "canon::principio-1-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-1-11",
+  "nivel": 1,
+  "es": "- ¿Puede señalarse la fuente autorizada que justifica esta decisión y su relación con el alcance completo?\n\n- Cuando existe una Job Story, ¿la circunstancia es específica y observable o solo describe un rol?\n\n- ¿La motivación y el resultado están respaldados por evidencia o fueron supuestos por el equipo?\n\n- ¿La formulación admite varias soluciones posibles? Si ya prescribe una interfaz sin que ello sea una decisión de producto, debe revisarse.",
+  "nuestra": "- Can the authorized source that justifies this decision be identified, together with its relationship to the full scope?\n\n- Where a Job Story exists, is the circumstance specific and observable, or does it merely describe a role?\n\n- Are the motivation and the outcome backed by evidence, or were they assumed by the team?\n\n- Does the formulation admit several possible solutions? If it already prescribes an interface without that being a product decision, it must be revisited.",
+  "contraste": "- Can you cite the authoritative source that justifies this decision and its relationship to the full scope?\n\n- When there is a Job Story, is the situation specific and observable, or does it merely describe a role?\n\n- Are the rationale and the outcome supported by evidence, or were they merely assumptions made by the team?\n\n- Does the formulation allow for multiple possible solutions? If it already prescribes an interface without this being a product decision, it should be reviewed."
+ },
+ {
+  "clave": "canon::principio-1-12",
+  "nivel": 3,
+  "es": "**Señal de incumplimiento.** Como estudiante quiero recibir pistas para resolver derivadas parece una historia útil, pero comienza por un rol y prescribe una función. No explica cuándo surge el bloqueo, qué necesita comprender la persona ni cómo reconocer que recuperó el avance.",
+  "nuestra": "**Sign of non-compliance.** “As a student I want to receive hints to solve derivatives” looks like a useful story, but it begins with a role and prescribes a feature. It does not explain when the blockage arises, what the person needs to understand, or how to recognize that they have regained momentum.",
+  "contraste": "**Sign of noncompliance.** As a student, I want to receive tips for solving derivatives—it seems like a useful guide, but it starts with a role and prescribes a function. It doesn't explain when the mental block arises, what the person needs to understand, or how to recognize that they've regained progress."
+ },
+ {
+  "clave": "canon::p02",
+  "nivel": 1,
+  "es": "## PRINCIPIO 2 · `P02`",
+  "nuestra": "## PRINCIPLE 2 · `P02`",
+  "contraste": "## PRINCIPLE 2 · `P02`"
+ },
+ {
+  "clave": "canon::principio-2-02",
+  "nivel": 1,
+  "es": "### La experiencia también es funcionalidad",
+  "nuestra": "### Experience is also functionality",
+  "contraste": "### Experience Is Also Functionality"
+ },
+ {
+  "clave": "canon::principio-2-03",
+  "nivel": 1,
+  "es": "Si funciona pero desgasta, todavía no funciona bien.",
+  "nuestra": "If it works but wears you down, it does not yet work well.",
+  "contraste": "If it works but causes wear and tear, it still doesn't work well."
+ },
+ {
+  "clave": "canon::principio-2-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-2-09",
+  "nivel": 1,
+  "es": "- Incluir esfuerzo, claridad y confianza dentro de los criterios de aceptación.\n\n- Probar el flujo completo, no solo cada pantalla o endpoint de forma aislada.\n\n- Considerar el estado emocional y cognitivo que acompaña la situación definida por el producto y, cuando exista, por la Job Story.",
+  "nuestra": "- Include effort, clarity and trust within the acceptance criteria.\n\n- Test the complete flow, not just each screen or endpoint in isolation.\n\n- Consider the emotional and cognitive state that accompanies the situation defined by the product and, where one exists, by the Job Story.",
+  "contraste": "- Include effort, clarity, and confidence among the acceptance criteria.\n\n- Test the entire flow, not just each screen or endpoint in isolation.\n\n- Consider the emotional and cognitive state associated with the situation defined by the product and, where applicable, by the Job Story."
+ },
+ {
+  "clave": "canon::principio-2-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-2-11",
+  "nivel": 1,
+  "es": "- ¿La persona puede concentrarse en su objetivo o debe administrar la herramienta?\n\n- ¿Qué momentos provocan duda, tensión o interrupción?\n\n- ¿Una tarea correcta deja al usuario con energía para continuar?",
+  "nuestra": "- Can the person concentrate on their objective, or must they manage the tool?\n\n- Which moments provoke doubt, tension or interruption?\n\n- Does a task done correctly leave the user with energy to carry on?",
+  "contraste": "- Can the person focus on their goal, or do they have to manage the tool?\n\n- What moments cause doubt, stress, or interruption?\n\n- Does successfully completing a task leave the user with the energy to continue?"
+ },
+ {
+  "clave": "canon::p03",
+  "nivel": 1,
+  "es": "## PRINCIPIO 3 · `P03`",
+  "nuestra": "## PRINCIPLE 3 · `P03`",
+  "contraste": "## PRINCIPLE 3 · `P03`"
+ },
+ {
+  "clave": "canon::principio-3-02",
+  "nivel": 1,
+  "es": "### La complejidad pertenece al sistema",
+  "nuestra": "### Complexity belongs to the system",
+  "contraste": "### Complexity is inherent in the system"
+ },
+ {
+  "clave": "canon::principio-3-03",
+  "nivel": 1,
+  "es": "Que sea complejo construirlo no significa que deba ser complejo usarlo.",
+  "nuestra": "Just because it is complex to build does not mean it must be complex to use.",
+  "contraste": "Just because it's complicated to build doesn't mean it has to be complicated to use."
+ },
+ {
+  "clave": "canon::principio-3-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-3-09",
+  "nivel": 1,
+  "es": "- Traducir conceptos internos al lenguaje y al modelo mental de la persona.\n\n- Resolver dependencias, valores predeterminados y secuencias cuando exista suficiente contexto.\n\n- Exponer una excepción solo a quienes realmente deben decidirla.",
+  "nuestra": "- Translate internal concepts into the person's language and mental model.\n\n- Resolve dependencies, defaults and sequences where there is sufficient context.\n\n- Expose an exception only to those who genuinely have to decide it.",
+  "contraste": "- Translate internal concepts into the person's language and mental model.\n\n- Resolve dependencies, default values, and sequences when there is sufficient context.\n\n- Raise an exception only to those who actually need to make a decision about it."
+ },
+ {
+  "clave": "canon::principio-3-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-3-11",
+  "nivel": 1,
+  "es": "- ¿Este paso existe por una necesidad del usuario o por la estructura del sistema?\n\n- ¿Estamos mostrando una entidad técnica que podría traducirse o inferirse?\n\n- ¿La persona necesita comprender esta regla para tomar una buena decisión?",
+  "nuestra": "- Does this step exist because of a user need or because of the system's structure?\n\n- Are we showing a technical entity that could be translated or inferred?\n\n- Does the person need to understand this rule in order to make a good decision?",
+  "contraste": "- Is this step necessary because of a user need or because of the system's structure?\n\n- Are we presenting a technical concept that could be translated or inferred?\n\n- Does the user need to understand this rule to make a good decision?"
+ },
+ {
+  "clave": "canon::p04",
+  "nivel": 1,
+  "es": "## PRINCIPIO 4 · `P04`",
+  "nuestra": "## PRINCIPLE 4 · `P04`",
+  "contraste": "## PRINCIPLE 4 · `P04`"
+ },
+ {
+  "clave": "canon::principio-4-02",
+  "nivel": 1,
+  "es": "### Simple al comenzar y profundo al necesitarlo",
+  "nuestra": "### Simple to begin with, deep when needed",
+  "contraste": "### Simple at first, yet deep when needed"
+ },
+ {
+  "clave": "canon::principio-4-03",
+  "nivel": 1,
+  "es": "No elimines el poder. Elimina la obligación de enfrentarse a él antes de necesitarlo.",
+  "nuestra": "Do not remove the power. Remove the obligation to face it before it is needed.",
+  "contraste": "Don't eliminate the power. Eliminate the need to face it before you need it."
+ },
+ {
+  "clave": "canon::principio-4-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-4-09",
+  "nivel": 1,
+  "es": "- Mostrar primero la ruta principal y revelar opciones avanzadas cuando el contexto las vuelva relevantes.\n\n- Conservar atajos y precisión para usuarios expertos sin imponerlos al principiante.\n\n- Usar buenos valores predeterminados, siempre editables cuando la decisión importa.",
+  "nuestra": "- Show the main route first and reveal advanced options when the context makes them relevant.\n\n- Preserve shortcuts and precision for expert users without imposing them on the beginner.\n\n- Use good defaults, always editable where the decision matters.",
+  "contraste": "- Show the main path first and reveal advanced options when the context makes them relevant.\n\n- Preserve shortcuts and precision for expert users without imposing them on beginners.\n\n- Use good default values, which can always be edited when the decision matters."
+ },
+ {
+  "clave": "canon::principio-4-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-4-11",
+  "nivel": 1,
+  "es": "- ¿Qué necesita ver la persona exactamente en este estado?\n\n- ¿La simplificación elimina ruido o elimina capacidad necesaria?\n\n- ¿Un usuario experto puede avanzar con rapidez sin que el principiante cargue con esa profundidad?",
+  "nuestra": "- What exactly does the person need to see in this state?\n\n- Does the simplification remove noise, or does it remove necessary capability?\n\n- Can an expert user move quickly without the beginner having to carry that depth?",
+  "contraste": "- What exactly does the user need to see at this stage?\n\n- Does simplification eliminate noise or remove necessary functionality?\n\n- Can an expert user move quickly through the process without burdening the beginner with that level of detail?"
+ },
+ {
+  "clave": "canon::p05",
+  "nivel": 1,
+  "es": "## PRINCIPIO 5 · `P05`",
+  "nuestra": "## PRINCIPLE 5 · `P05`",
+  "contraste": "## PRINCIPLE 5 · `P05`"
+ },
+ {
+  "clave": "canon::principio-5-02",
+  "nivel": 1,
+  "es": "### La interfaz no debe convertirse en otra tarea",
+  "nuestra": "### The interface must not become another task",
+  "contraste": "### The interface shouldn't become just another task"
+ },
+ {
+  "clave": "canon::principio-5-03",
+  "nivel": 1,
+  "es": "La persona vino a hacer su trabajo, no a aprender el nuestro.",
+  "nuestra": "The person came to do their work, not to learn ours.",
+  "contraste": "That person came to do their job, not to learn ours."
+ },
+ {
+  "clave": "canon::principio-5-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-5-09",
+  "nivel": 1,
+  "es": "- Preferir convenciones conocidas cuando resuelvan bien el problema.\n\n- Explicar en contexto sin exigir tutoriales previos para acciones básicas.\n\n- Hacer evidente la acción principal, el estado actual y el siguiente paso posible.",
+  "nuestra": "- Prefer known conventions where they solve the problem well.\n\n- Explain in context, without requiring prior tutorials for basic actions.\n\n- Make the primary action, the current state and the next possible step evident.",
+  "contraste": "- Give preference to well-known conventions when they effectively solve the problem.\n\n- Explain actions in context without requiring users to have completed tutorials beforehand for basic tasks.\n\n- Make the main action, the current state, and the next possible step clear."
+ },
+ {
+  "clave": "canon::principio-5-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-5-11",
+  "nivel": 1,
+  "es": "- ¿La persona entiende qué significan los elementos sin una leyenda externa?\n\n- ¿Necesita recordar algo de una pantalla anterior para actuar correctamente?\n\n- ¿La interfaz agrega una capa de aprendizaje ajena a la situación o al resultado que debe resolver?",
+  "nuestra": "- Does the person understand what the elements mean without an external legend?\n\n- Do they need to remember something from a previous screen in order to act correctly?\n\n- Does the interface add a layer of learning unrelated to the situation or the outcome they have to resolve?",
+  "contraste": "- Does the user understand what the elements mean without an external legend?\n\n- Does the user need to remember something from a previous screen to perform the task correctly?\n\n- Does the interface add a learning curve that is unrelated to the situation or the task at hand?"
+ },
+ {
+  "clave": "canon::p06",
+  "nivel": 1,
+  "es": "## PRINCIPIO 6 · `P06`",
+  "nuestra": "## PRINCIPLE 6 · `P06`",
+  "contraste": "## PRINCIPLE 6 · `P06`"
+ },
+ {
+  "clave": "canon::principio-6-02",
+  "nivel": 1,
+  "es": "### La atención es un recurso del producto",
+  "nuestra": "### Attention is a product resource",
+  "contraste": "### Attention is a product feature"
+ },
+ {
+  "clave": "canon::principio-6-03",
+  "nivel": 1,
+  "es": "Cada cosa que mostramos compite con aquello que la persona vino a hacer.",
+  "nuestra": "Everything we show competes with what the person came to do.",
+  "contraste": "Everything we show competes with what the person came here to do."
+ },
+ {
+  "clave": "canon::principio-6-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-6-09",
+  "nivel": 1,
+  "es": "- Exigir que cada elemento visible y cada decisión solicitada respondan a una circunstancia, motivación o resultado verificable.\n\n- Jerarquizar por relevancia para el estado actual, no por igualdad entre features.\n\n- Reducir interrupciones y reservar señales intensas para asuntos que realmente requieren atención.",
+  "nuestra": "- Require every visible element and every decision requested to answer to a verifiable circumstance, motivation or outcome.\n\n- Establish hierarchy by relevance to the current state, not by giving every feature equal weight.\n\n- Reduce interruptions and reserve strong signals for matters that genuinely require attention.",
+  "contraste": "- Require that every visible element and every decision requested be based on a verifiable circumstance, motivation, or outcome.\n\n- Prioritize based on relevance to the current state, not on equality among features.\n\n- Reduce interruptions and reserve strong cues for matters that truly require attention."
+ },
+ {
+  "clave": "canon::principio-6-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-6-11",
+  "nivel": 1,
+  "es": "- ¿Qué compite visual o mentalmente con la acción principal?\n\n- ¿Puede eliminarse un elemento sin perder información necesaria o control?\n\n- ¿La interfaz diferencia lo urgente, lo importante y lo opcional?",
+  "nuestra": "- What competes visually or mentally with the primary action?\n\n- Can an element be removed without losing necessary information or control?\n\n- Does the interface distinguish the urgent, the important and the optional?",
+  "contraste": "- What visually or mentally competes with the main action?\n\n- Can an element be removed without losing necessary information or control?\n\n- Does the interface distinguish between what is urgent, important, and optional?"
+ },
+ {
+  "clave": "canon::p07",
+  "nivel": 1,
+  "es": "## PRINCIPIO 7 · `P07`",
+  "nuestra": "## PRINCIPLE 7 · `P07`",
+  "contraste": "## PRINCIPLE 7 · `P07`"
+ },
+ {
+  "clave": "canon::principio-7-02",
+  "nivel": 1,
+  "es": "### La confianza se diseña",
+  "nuestra": "### Trust is designed",
+  "contraste": "### Trust Is Designed"
+ },
+ {
+  "clave": "canon::principio-7-03",
+  "nivel": 1,
+  "es": "Una buena herramienta explica lo suficiente para que la persona actúe sin miedo.",
+  "nuestra": "A good tool explains enough for the person to act without fear.",
+  "contraste": "A good tool provides enough information for a person to act without fear."
+ },
+ {
+  "clave": "canon::principio-7-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-7-09",
+  "nivel": 1,
+  "es": "- Mostrar qué está ocurriendo, qué cambiará y cuándo una acción será irreversible.\n\n- Permitir deshacer, corregir o volver a un estado seguro cuando sea razonable.\n\n- Diferenciar con claridad recomendaciones, decisiones automáticas y resultados confirmados.",
+  "nuestra": "- Show what is happening, what will change and when an action will be irreversible.\n\n- Allow people to undo, correct or return to a safe state where that is reasonable.\n\n- Clearly differentiate recommendations, automatic decisions and confirmed results.",
+  "contraste": "- Show what is happening, what will change, and when an action will become irreversible.\n\n- Allow users to undo, correct, or revert to a safe state whenever reasonable.\n\n- Clearly distinguish between recommendations, automated decisions, and confirmed results."
+ },
+ {
+  "clave": "canon::principio-7-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-7-11",
+  "nivel": 1,
+  "es": "- ¿La persona sabe qué ocurrirá antes de confirmar?\n\n- ¿Puede verificar qué hizo el sistema y por qué?\n\n- ¿Existe una ruta de recuperación proporcional al riesgo?",
+  "nuestra": "- Does the person know what will happen before confirming?\n\n- Can they verify what the system did and why?\n\n- Is there a way to recover that is proportionate to the risk?",
+  "contraste": "- Does the person know what will happen before confirming?\n\n- Can they verify what the system did and why?\n\n- Is there a recovery path that is proportional to the risk?"
+ },
+ {
+  "clave": "canon::p08",
+  "nivel": 1,
+  "es": "## PRINCIPIO 8 · `P08`",
+  "nuestra": "## PRINCIPLE 8 · `P08`",
+  "contraste": "## PRINCIPLE 8 · `P08`"
+ },
+ {
+  "clave": "canon::principio-8-02",
+  "nivel": 1,
+  "es": "### La calidad vive en la acumulación de detalles",
+  "nuestra": "### Quality lives in the accumulation of details",
+  "contraste": "### Quality lies in the accumulation of details"
+ },
+ {
+  "clave": "canon::principio-8-03",
+  "nivel": 1,
+  "es": "La calidad rara vez depende de una gran decisión. Se reconoce en muchas decisiones pequeñas que coinciden.",
+  "nuestra": "Quality rarely depends on one big decision. It is recognized in many small decisions that align with one another.",
+  "contraste": "Quality rarely depends on a single major decision. It is the result of many small decisions that all come together."
+ },
+ {
+  "clave": "canon::principio-8-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-8-09",
+  "nivel": 1,
+  "es": "- Diseñar y verificar estados normales, vacíos, de carga, error, éxito y recuperación.\n\n- Mantener lenguaje, jerarquía y comportamiento consistentes en todo el flujo.\n\n- Revisar el producto a escala real y con contenido realista antes de aprobarlo.",
+  "nuestra": "- Design and verify normal, empty, loading, error, success and recovery states.\n\n- Keep language, hierarchy and behavior consistent throughout the flow.\n\n- Review the product at actual size and with realistic content before approving it.",
+  "contraste": "- Design and verify normal, empty, loading, error, success, and recovery states.\n\n- Maintain consistent language, hierarchy, and behavior throughout the flow.\n\n- Review the product at full scale and with realistic content before approving it."
+ },
+ {
+  "clave": "canon::principio-8-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-8-11",
+  "nivel": 1,
+  "es": "- ¿Los detalles refuerzan la misma lógica o contradicen expectativas?\n\n- ¿Qué ocurre en los estados menos frecuentes?\n\n- ¿El producto se siente deliberadamente construido o ensamblado por partes?",
+  "nuestra": "- Do the details reinforce the same logic, or do they contradict expectations?\n\n- What happens in the less frequent states?\n\n- Does the product feel deliberately built, or assembled from parts?",
+  "contraste": "- Do the details reinforce the same logic or contradict expectations?\n\n- What happens in less frequent scenarios?\n\n- Does the product feel deliberately crafted or pieced together?"
+ },
+ {
+  "clave": "canon::p09",
+  "nivel": 1,
+  "es": "## PRINCIPIO 9 · `P09`",
+  "nuestra": "## PRINCIPLE 9 · `P09`",
+  "contraste": "## PRINCIPLE 9 · `P09`"
+ },
+ {
+  "clave": "canon::principio-9-02",
+  "nivel": 1,
+  "es": "### El tiempo y la continuidad forman parte de la interfaz",
+  "nuestra": "### Time and continuity are part of the interface",
+  "contraste": "### Time and continuity are part of the interface"
+ },
+ {
+  "clave": "canon::principio-9-03",
+  "nivel": 1,
+  "es": "La persona experimenta la espera antes de conocer nuestra arquitectura.",
+  "nuestra": "The person experiences the wait before they know anything about our architecture.",
+  "contraste": "People experience the anticipation before seeing our architecture."
+ },
+ {
+  "clave": "canon::principio-9-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-9-09",
+  "nivel": 1,
+  "es": "- Definir presupuestos de respuesta para las interacciones críticas.\n\n- Mostrar progreso honesto y permitir continuar cuando una operación pueda demorarse.\n\n- Guardar trabajo, contexto y estado con una frecuencia proporcional al costo de perderlos.",
+  "nuestra": "- Define response budgets for critical interactions.\n\n- Show honest progress and allow work to continue when an operation may take time.\n\n- Save work, context and state at a frequency proportionate to the cost of losing them.",
+  "contraste": "- Define response time limits for critical interactions.\n\n- Provide honest progress updates and allow users to continue when an operation may take some time.\n\n- Save work, context, and state at a frequency proportional to the cost of losing them."
+ },
+ {
+  "clave": "canon::principio-9-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-9-11",
+  "nivel": 1,
+  "es": "- ¿La interfaz responde de inmediato aunque el proceso final continúe?\n\n- ¿Qué pierde la persona si la conexión falla ahora?\n\n- ¿El producto evita acciones duplicadas y estados ambiguos?",
+  "nuestra": "- Does the interface respond immediately even though the underlying process continues?\n\n- What does the person lose if the connection fails right now?\n\n- Does the product avoid duplicate actions and ambiguous states?",
+  "contraste": "- Does the interface respond immediately even if the final process is still ongoing?\n\n- What does the user lose if the connection fails now?\n\n- Does the product prevent duplicate actions and ambiguous states?"
+ },
+ {
+  "clave": "canon::p10",
+  "nivel": 1,
+  "es": "## PRINCIPIO 10 · `P10`",
+  "nuestra": "## PRINCIPLE 10 · `P10`",
+  "contraste": "## PRINCIPLE 10 · `P10`"
+ },
+ {
+  "clave": "canon::principio-10-02",
+  "nivel": 1,
+  "es": "### La persona conserva control y propiedad",
+  "nuestra": "### The person retains control and ownership",
+  "contraste": "### The individual retains control and ownership"
+ },
+ {
+  "clave": "canon::principio-10-03",
+  "nivel": 1,
+  "es": "Ayudar no significa decidir por la persona ni apropiarse de su trabajo.",
+  "nuestra": "Helping does not mean deciding for the person or taking over their work.",
+  "contraste": "Helping doesn't mean making decisions for someone or taking over their work."
+ },
+ {
+  "clave": "canon::principio-10-08",
+  "nivel": 1,
+  "es": "#### Reglas de diseño",
+  "nuestra": "#### Design rules",
+  "contraste": "#### Design Guidelines"
+ },
+ {
+  "clave": "canon::principio-10-09",
+  "nivel": 1,
+  "es": "- Pedir confirmación proporcional al impacto, no para cada gesto ni después de una acción irreversible.\n\n- Permitir revisar, editar, exportar y revertir cuando el dominio lo permita.\n\n- Explicar el uso de datos y separar autorización, recomendación y ejecución.",
+  "nuestra": "- Ask for confirmation in proportion to the impact, not for every gesture nor after an irreversible action.\n\n- Allow reviewing, editing, exporting and reverting where the domain permits it.\n\n- Explain the use of data and separate authorization, recommendation and execution.",
+  "contraste": "- Request confirmation proportional to the impact, not for every action or after an irreversible action.\n\n- Allow users to review, edit, export, and undo actions when the platform permits it.\n\n- Explain how data is used and distinguish between authorization, recommendation, and execution."
+ },
+ {
+  "clave": "canon::principio-10-10",
+  "nivel": 1,
+  "es": "#### Pruebas de decisión",
+  "nuestra": "#### Decision tests",
+  "contraste": "#### Decision Tests"
+ },
+ {
+  "clave": "canon::principio-10-11",
+  "nivel": 1,
+  "es": "- ¿La persona puede rechazar la propuesta sin perder su avance?\n\n- ¿Entiende qué datos se utilizaron y con qué propósito?\n\n- ¿Puede recuperar o llevarse su contenido en un formato útil?",
+  "nuestra": "- Can the person reject the proposal without losing their progress?\n\n- Do they understand what data was used and for what purpose?\n\n- Can they recover or take their content away in a useful format?",
+  "contraste": "- Can the person decline the offer without losing their progress?\n\n- Do they understand what data was used and for what purpose?\n\n- Can they retrieve or export their content in a usable format?"
+ },
+ {
+  "clave": "canon::sh-fund",
+  "nivel": 1,
+  "es": "## FUNDAMENTO DE PRODUCTO Y FORMA DE REFERENCIA · `SH-FUND`",
+  "nuestra": "## PRODUCT FOUNDATION AND REFERENCE FORM · `SH-FUND`",
+  "contraste": "## PRODUCT BASIS AND REFERENCE FORM · `SH-FUND`"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-02",
+  "nivel": 1,
+  "es": "### Del fundamento de producto a una solución verificable",
+  "nuestra": "### From the product foundation to a verifiable solution",
+  "contraste": "### From Product Concept to a Verifiable Solution"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-03",
+  "nivel": 1,
+  "es": "El fundamento de producto es el contenido autorizado que establece qué debe construirse, por qué debe existir, qué resultados debe producir, qué condiciones debe respetar y cómo podrá determinarse su cumplimiento. No es un nuevo tipo de documento ni una plantilla obligatoria. Puede encontrarse en una Job Story, un Jobs to Be Done, una épica, una capacidad, un requisito, una regla de negocio, un recorrido, un criterio de aceptación o una combinación coherente de estos elementos.",
+  "nuestra": "The product foundation is the authorized content that establishes what must be built, why it must exist, what results it must produce, what conditions it must respect and how compliance can be determined. It is not a new kind of document nor a mandatory template. It may be found in a Job Story, a Jobs to Be Done statement, an epic, a capability, a requirement, a business rule, a journey, an acceptance criterion or a coherent combination of these elements.",
+  "contraste": "The product foundation is the approved content that defines what should be built, why it should exist, what results it should produce, what conditions it must meet, and how compliance can be determined. It is not a new type of document or a mandatory template. It can be found in a Job Story, a Jobs to Be Done, an epic, a capability, a requirement, a business rule, a journey, an acceptance criterion, or a coherent combination of these elements."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-04",
+  "nivel": 1,
+  "es": "#### Cuándo el fundamento es identificable",
+  "nuestra": "#### When the foundation is identifiable",
+  "contraste": "#### When the basis is identifiable"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-05",
+  "nivel": 1,
+  "es": "Un fundamento de producto es identificable cuando el desarrollo puede establecer, sin inventar decisiones de producto, los siguientes elementos. Pueden estar distribuidos en una o varias partes de la definición recibida y no necesitan utilizar estos nombres ni este orden.",
+  "nuestra": "A product foundation is identifiable when development can establish, without inventing product decisions, the following elements. They may be spread across one or several parts of the definition received, and they need not use these names or this order.",
+  "contraste": "A product foundation is identifiable when the development team can establish the following elements without inventing product decisions. These elements may be distributed across one or more parts of the received definition and do not need to use these names or this order."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-06",
+  "nivel": 1,
+  "es": "| **Elemento**          | **Pregunta de control**                                    | **Condición mínima**                                        |\n|-----------------------|------------------------------------------------------------|-------------------------------------------------------------|\n| Fuente y autoridad    | ¿De dónde proviene y quién puede modificarlo?              | Origen trazable y autoridad reconocida                      |\n| Razón                 | ¿Qué situación, necesidad, problema u oportunidad aborda?  | Justificación comprensible sin depender de la solución      |\n| Resultado             | ¿Qué cambio o progreso debe producir?                      | Resultado reconocible para las personas o para el producto  |\n| Condiciones y límites | ¿Qué reglas, restricciones y exclusiones deben respetarse? | Límites suficientes para evitar decisiones silenciosas      |\n| Evidencia             | ¿Cómo sabremos que se cumplió?                             | Criterios, observaciones o pruebas proporcionales al riesgo |",
+  "nuestra": "| **Element**              | **Control question**                                       | **Minimum condition**                                        |\n|--------------------------|------------------------------------------------------------|--------------------------------------------------------------|\n| Source and authority     | Where does it come from and who may modify it?             | Traceable origin and recognized authority                    |\n| Reason                   | What situation, need, problem or opportunity does it address? | Justification that is understandable without the solution    |\n| Result                   | What change or progress must it produce?                   | A result recognizable to people or to the product            |\n| Conditions and limits    | What rules, constraints and exclusions must be respected?  | Limits sufficient to prevent silent decisions                |\n| Evidence                 | How will we know it has been met?                          | Criteria, observations or tests proportionate to the risk    |",
+  "contraste": "| **Element** | **Verification Question** | **Minimum Condition** |\n|-----------------------|------------------------------------------------------------|-------------------------------------------------------------|\n| Source and Authority    | Where does it come from, and who can modify it? | Traceable origin and recognized authority |\n| Rationale | What situation, need, problem, or opportunity does it address?  | Justification that is understandable without relying on the solution |\n| Outcome | What change or progress should it produce? | An outcome recognizable to people or for the product  |\n| Conditions and Limits | What rules, restrictions, and exclusions must be followed? | Sufficient limits to prevent silent decisions |\n| Evidence | How will we know it was fulfilled? | Criteria, observations, or evidence proportional to the risk |"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-07",
+  "nivel": 1,
+  "es": "La ausencia de una sección o campo específico en el PRD no constituye por sí misma un defecto. El método debe comprender la estructura que el producto utiliza. Si falta una definición capaz de cambiar materialmente la solución, el agente debe exponer el vacío y acudir a la autoridad correspondiente; no debe completarlo mediante una inferencia silenciosa.",
+  "nuestra": "The absence of a specific section or field in the PRD is not in itself a defect. The method must understand the structure the product uses. If a definition capable of materially changing the solution is missing, the agent must surface the gap and refer the matter to the corresponding authority; it must not fill it in through a silent inference.",
+  "contraste": "The absence of a specific section or field in the PRD does not in itself constitute a defect. The method must encompass the structure used by the product. If a definition is missing that could materially alter the solution, the agent must point out the omission and refer the matter to the appropriate authority; the agent must not fill in the gap through an unstated inference."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-08",
+  "nivel": 1,
+  "es": "#### Alcance completo y autoridad de producto",
+  "nuestra": "#### Full scope and product authority",
+  "contraste": "#### Full Scope and Product Authority"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-09",
+  "nivel": 1,
+  "es": "Cuando una definición de producto aprobada contiene múltiples historias, capacidades, reglas o especificaciones, todas forman parte del alcance salvo que la propia definición o una decisión autorizada establezca lo contrario. El plan de desarrollo debe comprender el conjunto, resolver sus relaciones y dependencias y asegurar su cobertura. Puede descomponer, ordenar, agrupar o ejecutar en paralelo el trabajo; esa descomposición no modifica el alcance.",
+  "nuestra": "When an approved product definition contains multiple stories, capabilities, rules or specifications, all of them form part of the scope unless the definition itself or an authorized decision establishes otherwise. The development plan must understand the whole, resolve its relationships and dependencies and ensure its coverage. It may break the work down, order it, group it or run it in parallel; that breakdown does not modify the scope.",
+  "contraste": "When an approved product definition contains multiple stories, capabilities, rules, or specifications, they are all part of the scope unless the definition itself or an authorized decision states otherwise. The development plan must encompass the whole, resolve its relationships and dependencies, and ensure its coverage. It may decompose, sequence, group, or execute the work in parallel; such decomposition does not alter the scope."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-10",
+  "nivel": 1,
+  "es": "El plan organiza cómo se implementa el alcance. No decide silenciosamente qué parte del alcance merece existir.",
+  "nuestra": "The plan organizes how the scope is implemented. It does not silently decide which part of the scope deserves to exist.",
+  "contraste": "The plan outlines how the scope is implemented. It does not quietly decide which part of the scope deserves to exist."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-11",
+  "nivel": 1,
+  "es": "- Toda omisión, modificación o postergación debe ser explícita, trazable y aprobada por la autoridad de producto.\n\n- Si las restricciones de tiempo, recursos o tecnología impiden cubrir el alcance, el plan debe hacer visible la incompatibilidad y solicitar una decisión.\n\n- Una estrategia incremental, por fases o por releases puede utilizarse cuando el proyecto la adopta; no es una obligación del núcleo.\n\n- La completitud se determina reconciliando la implementación y la evidencia contra la definición de producto completa y sus excepciones aprobadas.",
+  "nuestra": "- Every omission, modification or deferral must be explicit, traceable and approved by the product authority.\n\n- If constraints of time, resources or technology prevent covering the scope, the plan must make the incompatibility visible and request a decision.\n\n- An incremental, phased or release-based strategy may be used where the project adopts one; it is not an obligation of the core.\n\n- Completeness is determined by reconciling the implementation and the evidence against the complete product definition and its approved exceptions.",
+  "contraste": "- Any omission, modification, or postponement must be explicit, traceable, and approved by the product owner.\n\n- If time, resource, or technology constraints prevent the scope from being covered, the plan must highlight the incompatibility and request a decision.\n\n- An incremental, phased, or release-based strategy may be used when the project adopts it; it is not a core requirement.\n\n- Completeness is determined by reconciling the implementation and evidence against the complete product definition and its approved exceptions."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-12",
+  "nivel": 1,
+  "es": "#### Job Stories como forma de referencia",
+  "nuestra": "#### Job Stories as a reference form",
+  "contraste": "#### Job Stories as a Reference Tool"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-13",
+  "nivel": 1,
+  "es": "Este manifiesto utiliza Job Stories como forma de referencia para mostrar cómo un fundamento de producto puede trasladarse al diseño, la implementación y la verificación. Las Job Stories hacen explícitas la circunstancia, la motivación y el resultado esperado, por lo que ofrecen una representación especialmente útil para razonar sobre el progreso humano.",
+  "nuestra": "This manifesto uses Job Stories as a reference form for showing how a product foundation can be carried through to design, implementation and verification. Job Stories make the circumstance, the motivation and the expected outcome explicit, which makes them a particularly useful representation for reasoning about human progress.",
+  "contraste": "This manifesto uses job stories as a reference to illustrate how a product foundation can be translated into design, implementation, and verification. Job stories explicitly describe the context, motivation, and expected outcome, making them a particularly useful way to think about human progress."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-14",
+  "nivel": 1,
+  "es": "Su utilización en las explicaciones, reglas, ejemplos y pruebas no obliga a que toda definición de producto venga expresada mediante Job Stories ni autoriza a transformar automáticamente un PRD a esa estructura. Cuando la definición utilice otra forma, el método debe preservar su significado, sus relaciones y su autoridad. Una Job Story derivada puede proponerse como vista de trabajo cuando agrega claridad, pero no reemplaza la fuente ni adquiere autoridad por haber sido generada.",
+  "nuestra": "Their use in the explanations, rules, examples and tests does not require every product definition to be expressed through Job Stories, nor does it authorize automatically transforming a PRD into that structure. Where the definition uses another form, the method must preserve its meaning, its relationships and its authority. A derived Job Story may be proposed as a working view where it adds clarity, but it does not replace the source nor acquire authority by having been generated.",
+  "contraste": "Its use in explanations, rules, examples, and tests does not require that every product definition be expressed through Job Stories, nor does it authorize the automatic conversion of a PRD to that structure. When the definition takes another form, the method must preserve its meaning, relationships, and authority. A derived Job Story may be proposed as a working view when it adds clarity, but it does not replace the source nor does it acquire authority simply by having been generated."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-15",
+  "nivel": 1,
+  "es": "#### De Jobs to Be Done a Job Stories",
+  "nuestra": "#### From Jobs to Be Done to Job Stories",
+  "contraste": "#### From \"Jobs to Be Done\" to \"Job Stories\""
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-16",
+  "nivel": 1,
+  "es": "Jobs to Be Done y Job Stories cumplen funciones distintas. Jobs to Be Done mantiene la dirección del producto: el progreso general por el cual una persona incorpora una solución a su vida o a su trabajo. La Job Story desciende a una situación concreta que puede orientar una decisión de diseño, una implementación y una prueba.",
+  "nuestra": "Jobs to Be Done and Job Stories serve different functions. Jobs to Be Done maintains the product's direction: the broad progress that leads a person to adopt a solution in their life or work. The Job Story narrows that progress down to a concrete situation that can guide a design decision, an implementation and a test.",
+  "contraste": "\"Jobs to Be Done\" and \"Job Stories\" serve different purposes. \"Jobs to Be Done\" provides the overall direction for the product: the general process through which a person integrates a solution into their life or work. A \"Job Story\" focuses on a specific situation that can guide a design decision, implementation, and testing."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-17",
+  "nivel": 1,
+  "es": "Cuando se utiliza esta forma, cada Job Story debe conservar una relación explícita con el trabajo, propósito o resultado de nivel superior que corresponda. Esa relación impide que una historia aislada pierda la dirección del producto.",
+  "nuestra": "When this form is used, each Job Story must retain an explicit relationship to the corresponding higher-level job, purpose or outcome. That relationship prevents an isolated story from losing the product's direction.",
+  "contraste": "When using this approach, each Job Story must maintain an explicit connection to the corresponding higher-level work, purpose, or outcome. That connection prevents an isolated story from losing sight of the product's direction."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-18",
+  "nivel": 1,
+  "es": "#### Relación entre los niveles",
+  "nuestra": "#### Relationship between the levels",
+  "contraste": "#### Relationship Between Levels"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-19",
+  "nivel": 1,
+  "es": "| **Nivel**               | **Define**                                                                        | **Evita**                                               |\n|-------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|\n| Jobs to Be Done         | El progreso amplio que la persona busca conseguir                                 | Organizar el producto alrededor de funcionalidades      |\n| Job Story               | La circunstancia, la motivación y el resultado que activan una necesidad concreta | Diseñar desde roles genéricos o pedidos literales       |\n| Respuesta del producto  | El comportamiento del sistema elegido para resolver la historia                   | Confundir el problema con la primera solución imaginada |\n| Evidencia de aceptación | La observación que demuestra progreso en esa circunstancia                        | Aceptar una entrega porque funciona técnicamente        |",
+  "nuestra": "| **Level**               | **Defines**                                                                          | **Avoids**                                                |\n|-------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------|\n| Jobs to Be Done         | The broad progress the person is seeking to achieve                                   | Organizing the product around features                    |\n| Job Story               | The circumstance, motivation and outcome that trigger a concrete need                 | Designing from generic roles or literal requests          |\n| Product response        | The system behavior chosen to address the story                                      | Confusing the problem with the first solution imagined    |\n| Acceptance evidence     | The observation that demonstrates progress in that circumstance                       | Accepting a delivery because it works technically         |",
+  "contraste": "| **Level** | **Define** | **Avoid** |\n|-------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|\n| Jobs to Be Done | The broad progress the person seeks to achieve | Organize the product around features |\n| Job Story | The circumstance, motivation, and outcome that trigger a specific need | Design based on generic roles or literal requests |\n| Product Response | The system’s behavior chosen to resolve the story | Confusing the problem with the first solution imagined |\n| Acceptance Evidence | The observation demonstrating progress in that circumstance | Accepting a deliverable because it works technically |"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-20",
+  "nivel": 1,
+  "es": "#### Forma canónica de una Job Story",
+  "nuestra": "#### Canonical form of a Job Story",
+  "contraste": "#### Standard Format for a Job Story"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-21",
+  "nivel": 1,
+  "es": "Cuando ocurre una circunstancia observable, necesito conseguir un avance sin prescribir la solución, para poder alcanzar un resultado reconocible.",
+  "nuestra": "When an observable circumstance occurs, I need to make progress without prescribing the solution, so that I can reach a recognizable outcome.",
+  "contraste": "When an observable situation arises, I need to make progress without prescribing the solution, in order to achieve a recognizable result."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-22",
+  "nivel": 1,
+  "es": "**Cuando.** Describe el hecho, cambio o tensión que activa la necesidad. Debe poder observarse o reconocerse sin depender de una persona ficticia.",
+  "nuestra": "**When.** Describes the fact, change or tension that triggers the need. It must be observable or recognizable without depending on a fictional persona.",
+  "contraste": "**When.** Describes the event, change, or conflict that triggers the need. It must be something that can be observed or recognized without relying on a fictional character."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-23",
+  "nivel": 1,
+  "es": "**Necesito.** Expresa la motivación, comprensión o decisión requerida. No nombra una pantalla, un botón, un agente ni una funcionalidad.",
+  "nuestra": "**I need.** Expresses the motivation, understanding or decision required. It does not name a screen, a button, an agent or a feature.",
+  "contraste": "**I need.** Expresses the motivation, understanding, or decision required. It does not refer to a screen, a button, an agent, or a feature."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-24",
+  "nivel": 1,
+  "es": "**Para poder.** Define la situación mejor que la persona busca alcanzar y que luego deberá verificarse.",
+  "nuestra": "**So that I can.** Defines the improved situation the person is seeking to reach, and which will later have to be verified.",
+  "contraste": "**To be able to.** Defines the ideal situation the person is striving to achieve, which must then be verified."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-25",
+  "nivel": 1,
+  "es": "#### Evidencia mínima que acompaña la historia",
+  "nuestra": "#### Minimum evidence accompanying the story",
+  "contraste": "#### Minimal evidence supporting the story"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-26",
+  "nivel": 1,
+  "es": "La frase orienta la conversación, pero no reemplaza la investigación. Una historia lista para guiar desarrollo debe registrar solo la evidencia necesaria para sostener sus decisiones.",
+  "nuestra": "The sentence guides the conversation, but it does not replace research. A story ready to guide development must record only the evidence needed to support its decisions.",
+  "contraste": "The statement guides the conversation, but it does not replace research. A story designed to guide development should document only the evidence necessary to support its decisions."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-27",
+  "nivel": 1,
+  "es": "| **Elemento**         | **Pregunta**                                                | **Contenido mínimo**                                       |\n|----------------------|-------------------------------------------------------------|------------------------------------------------------------|\n| Conducta actual      | ¿Qué hace hoy la persona?                                   | Pasos, alternativa o abandono observados                   |\n| Obstáculo o ansiedad | ¿Qué frena o vuelve riesgoso el avance?                     | Duda, costo, temor, esfuerzo o dependencia relevante       |\n| Evidencia causal     | ¿Qué respalda la relación entre circunstancia y motivación? | Observación, entrevista, dato de uso o supuesto declarado  |\n| Evidencia de éxito   | ¿Qué demostraría que hubo progreso?                         | Conducta o resultado observable dentro de la circunstancia |",
+  "nuestra": "| **Element**            | **Question**                                                    | **Minimum content**                                          |\n|------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|\n| Current behavior      | What does the person do today?                                   | Observed steps, workaround or abandonment                    |\n| Obstacle or anxiety    | What holds progress back or makes it risky?                      | Relevant doubt, cost, fear, effort or dependence             |\n| Causal evidence        | What supports the link between circumstance and motivation?      | Observation, interview, usage data or a declared assumption  |\n| Evidence of success    | What would demonstrate that progress occurred?                   | Observable behavior or outcome within the circumstance      |",
+  "contraste": "| **Element** | **Question** | **Minimum Content** |\n|----------------------|-------------------------------------------------------------|------------------------------------------------------------|\n| Current Behavior | What is the person doing today? | Observed steps, alternatives, or abandonment |\n| Obstacle or Anxiety | What is holding them back or making progress risky? | Doubt, cost, fear, effort, or relevant dependency |\n| Causal evidence     | What supports the relationship between circumstance and motivation? | Observation, interview, usage data, or stated assumption  |\n| Evidence of success   | What would demonstrate that progress was made? | Observable behavior or outcome within the circumstance |"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-28",
+  "nivel": 1,
+  "es": "#### Cuándo el rol sigue importando",
+  "nuestra": "#### When role still matters",
+  "contraste": "#### When the Role Still Matters"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-29",
+  "nivel": 1,
+  "es": "Job Stories evita usar el rol como explicación automática. No elimina diferencias reales entre personas. El rol, la experiencia, la edad, los permisos o una restricción física deben incorporarse cuando cambian causalmente la circunstancia, el riesgo o la solución válida. Si no cambian la decisión, no deben gobernar la historia.",
+  "nuestra": "Job Stories avoid using role as an automatic explanation. They do not eliminate real differences between people. Role, experience, age, permissions or a physical constraint must be incorporated when they causally change the circumstance, the risk or the valid solution. If they do not change the decision, they must not govern the story.",
+  "contraste": "Job Stories avoids using role as an automatic explanation. It does not eliminate real differences between people. Role, experience, age, permissions, or a physical limitation should be included only when they causally change the circumstances, the risk, or the valid solution. If they do not change the decision, they should not dictate the story."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-30",
+  "nivel": 1,
+  "es": "#### Pruebas de calidad antes de diseñar",
+  "nuestra": "#### Quality tests before designing",
+  "contraste": "#### Quality Testing Before Design"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-31",
+  "nivel": 1,
+  "es": "- La circunstancia describe un desencadenante concreto y no una categoría de usuario.\n\n- La motivación expresa progreso o comprensión y no una funcionalidad solicitada.\n\n- El resultado puede reconocerse sin confundirlo con completar el flujo del producto.\n\n- La historia está respaldada por evidencia o identifica con claridad el supuesto pendiente.\n\n- La formulación permite comparar varias respuestas, incluida la opción de no construir.\n\n- El alcance es suficiente para cambiar una decisión, pero no intenta contener el trabajo completo del usuario.",
+  "nuestra": "- The circumstance describes a concrete trigger and not a category of user.\n\n- The motivation expresses progress or understanding and not a requested feature.\n\n- The outcome can be recognized without confusing it with completing the product's flow.\n\n- The story is backed by evidence, or it clearly identifies the outstanding assumption.\n\n- The formulation allows several responses to be compared, including the option of not building.\n\n- The scope is sufficient to change a decision, but does not attempt to contain the user's entire work.",
+  "contraste": "- The circumstance describes a specific trigger, not a user category.\n\n- The motivation expresses progress or understanding, not a requested feature.\n\n- The outcome can be recognized without confusing it with completing the product flow.\n\n- The story is supported by evidence or clearly identifies the outstanding assumption.\n\n- The wording allows for comparing various responses, including the option not to build.\n\n- The scope is sufficient to change a decision but does not attempt to encompass the user’s entire workflow."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-32",
+  "nivel": 1,
+  "es": "#### Cadena de trazabilidad",
+  "nuestra": "#### Chain of traceability",
+  "contraste": "#### Traceability Chain"
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-33",
+  "nivel": 1,
+  "es": "El desarrollo debe poder recorrerse en ambas direcciones: desde cada decisión implementada hasta el fundamento de producto que la justifica, y desde la definición completa del producto hasta la evidencia que demuestra su cobertura. Cuando el fundamento se expresa mediante Job Stories, la trazabilidad debe conservar la circunstancia, la motivación y el resultado de cada historia aplicable.",
+  "nuestra": "Development must be traversable in both directions: from each implemented decision back to the product foundation that justifies it, and from the complete product definition forward to the evidence that demonstrates its coverage. Where the foundation is expressed through Job Stories, traceability must preserve the circumstance, the motivation and the outcome of each applicable story.",
+  "contraste": "The development process must be traceable in both directions: from each implemented decision back to the product rationale that justifies it, and from the complete product definition back to the evidence demonstrating its coverage. When the rationale is expressed through Job Stories, traceability must preserve the context, motivation, and outcome of each applicable story."
+ },
+ {
+  "clave": "canon::fundamento-de-producto-y-forma-de-referencia-34",
+  "nivel": 1,
+  "es": "| **Origen**              | **Decisión**                                                                  | **Verificación**                                                         |\n|-------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|\n| Definición de producto  | Qué debe construirse y bajo qué condiciones                                   | Todo elemento obligatorio tiene cobertura o una excepción aprobada       |\n| Jobs to Be Done         | Qué progreso general merece atención cuando esta forma resulta aplicable      | El resultado sigue siendo relevante para la persona                      |\n| Job Story               | Qué circunstancia concreta debe atenderse cuando la fuente utiliza esta forma | La historia está validada y no prescribe una solución no autorizada      |\n| Diseño e implementación | Qué comportamiento responde al fundamento                                     | Cada elemento tiene una razón trazable                                   |\n| Aceptación              | Qué evidencia autoriza declarar completo el desarrollo                        | Resultados, reglas y criterios se cumplen bajo las condiciones definidas |",
+  "nuestra": "| **Origin**                 | **Decision**                                                                        | **Verification**                                                           |\n|----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------|\n| Product definition         | What must be built and under what conditions                                         | Every mandatory element has coverage or an approved exception              |\n| Jobs to Be Done            | What general progress deserves attention where this form applies                     | The outcome remains relevant to the person                                 |\n| Job Story                  | What concrete circumstance must be addressed where the source uses this form         | The story is validated and does not prescribe an unauthorized solution     |\n| Design and implementation  | What behavior responds to the foundation                                            | Every element has a traceable reason                                       |\n| Acceptance                 | What evidence authorizes declaring the development complete                          | Results, rules and criteria are met under the defined conditions           |",
+  "contraste": "| **Source** | **Decision** | **Verification** |\n|-------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------|\n| Product Definition  | What must be built and under what conditions | Every required element has coverage or an approved exception |\n| Jobs to Be Done | What overall progress warrants attention when this form is applicable | The result remains relevant to the person |\n| Job Story | What specific circumstance must be addressed when the source uses this form | The story is validated and does not prescribe an unauthorized solution |\n| Design and Implementation | What behavior fulfills the requirement | Each element has a traceable rationale |\n| Acceptance | What evidence authorizes declaring the development complete | Results, rules, and criteria are met under the defined conditions |"
+ },
+ {
+  "clave": "canon::doctrina-para-desarrollo-con-ia-07",
+  "nivel": 1,
+  "es": "| **Directiva**                                  | **Exigencia**                                                                                                                                                                                                         | **Límite**                                                                                                   |\n|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|\n| `D01` Fundamento antes que implementación            | Comprender la definición de producto, su autoridad, su alcance y la evidencia que la respalda antes de proponer componentes o código. Cuando existan Job Stories, conservar su circunstancia, motivación y resultado. | No comenzar a construir si una ambigüedad material puede alterar la solución, el alcance o una regla.        |\n| `D02` Especificación suficiente antes que generación | Definir estados, decisiones, restricciones y criterios de aceptación con el nivel necesario para el riesgo.                                                                                                           | No convertir un prompt vago en una implementación extensa y luego usar el código para descubrir el problema. |\n| `D03` Simplicidad deliberada                         | Preferir la solución que exige menos conceptos, decisiones y memoria al usuario cuando ambas logran el mismo resultado.                                                                                               | Menos código no es la medida; menos carga innecesaria sí.                                                    |\n| `D04` Determinismo donde importa                     | Implementar reglas críticas, permisos, cálculos, estados y validaciones como lógica verificable.                                                                                                                      | No delegar certeza, cumplimiento o seguridad al comportamiento variable de un modelo.                        |\n| `D05` Verificación antes que aceptación              | Evaluar el flujo, los estados extremos, accesibilidad, rendimiento y resultado real.                                                                                                                                  | Código generado y pruebas unitarias aprobadas no equivalen a producto terminado.                             |\n| `D06` IA subordinada al usuario                      | Usar IA para proponer, explicar y ejecutar bajo límites claros, manteniendo revisión y reversibilidad proporcionales al impacto.                                                                                      | La fluidez de una respuesta nunca sustituye evidencia ni autorización.                                       |",
+  "nuestra": "| **Directive**                                         | **Requirement**                                                                                                                                                                                              | **Limit**                                                                                                  |\n|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|\n| `D01` Foundation before implementation                | Understand the product definition, its authority, its scope and the evidence behind it before proposing components or code. Where Job Stories exist, preserve their circumstance, motivation and outcome.        | Do not start building if a material ambiguity may alter the solution, the scope or a rule.                  |\n| `D02` Sufficient specification before generation      | Define states, decisions, constraints and acceptance criteria at the level the risk requires.                                                                                                                    | Do not turn a vague prompt into an extensive implementation and then use the code to discover the problem.  |\n| `D03` Deliberate simplicity                           | Prefer the solution that demands fewer concepts, decisions and memory from the user where both achieve the same result.                                                                                          | Less code is not the measure; less unnecessary burden is.                                                   |\n| `D04` Determinism where it matters                    | Implement critical rules, permissions, calculations, states and validations as verifiable logic.                                                                                                                 | Do not delegate certainty, compliance or security to a model's variable behavior.                          |\n| `D05` Verification before acceptance                  | Evaluate the flow, the edge states, accessibility, performance and the real outcome.                                                                                                                             | Generated code and passing unit tests do not amount to a finished product.                                  |\n| `D06` AI subordinate to the user                      | Use AI to propose, explain and execute within clear limits, keeping review and reversibility proportionate to the impact.                                                                                        | The fluency of a response never substitutes for evidence or authorization.                                  |",
+  "contraste": "| **Directive** | **Requirement** | **Limit** |\n|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|\n| `D01` Principles Before Implementation | Understand the product definition, its authority, its scope, and the evidence supporting it before proposing components or code. When Job Stories exist, preserve their context, motivation, and outcome. | Do not begin building if a material ambiguity could alter the solution, scope, or a rule. |\n| `D02` Sufficient Specification Before Implementation | Define states, decisions, constraints, and acceptance criteria to the level necessary for the risk. | Do not turn a vague prompt into an extensive implementation and then use the code to discover the problem. |\n| `D03` Deliberate Simplicity | Prefer the solution that requires fewer concepts, decisions, and memory from the user when both achieve the same result. | Less code is not the goal; less unnecessary burden is. |\n| `D04` Determinism where it matters | Implement critical rules, permissions, calculations, states, and validations as verifiable logic. | Do not delegate certainty, compliance, or security to the variable behavior of a model. |\n| `D05` Verification Before Acceptance | Evaluate the flow, edge cases, accessibility, performance, and actual outcome. | Generated code and passed unit tests do not equate to a finished product. |\n| `D06` AI subordinate to the user | Use AI to propose, explain, and execute within clear limits, maintaining oversight and reversibility proportional to the impact. | The fluidity of a response never substitutes for evidence or authorization. |"
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-04",
+  "nivel": 1,
+  "es": "| **Paso** | **Decisión**                          | **Trabajo**                                                                                                        | **Evidencia mínima**                                                               |\n|----------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|\n| `F01`    | Comprender el fundamento              | Reconocer las fuentes, la autoridad, el alcance, la estructura utilizada y los resultados esperados.               | Mapa fiel de la definición de producto, sin reformularla por conveniencia técnica. |\n| `F02`    | Establecer cobertura                  | Inventariar historias, capacidades, reglas, estados, recorridos, criterios y relaciones aplicables.                | Cobertura completa y vacíos o contradicciones visibles.                            |\n| `F03`    | Planificar la implementación          | Resolver dependencias, bloqueantes, orden, paralelismo, integración y pruebas sin modificar el alcance.            | Plan coherente que da cuenta de toda la definición aprobada.                       |\n| `F04`    | Concretar el progreso                 | Usar las Job Stories existentes o formular una vista derivada cuando aporte claridad y esté identificada como tal. | Circunstancias, motivaciones y resultados preservados cuando corresponda.          |\n| `F05`    | Establecer el contrato de experiencia | Describir qué debe comprender, decidir y sentir la persona en los momentos críticos.                               | Ruta principal, estados y promesa de interacción.                                  |\n| `F06`    | Modelar reglas y riesgos              | Separar lógica determinista, comportamiento generativo, permisos y acciones irreversibles.                         | Mapa de decisiones y límites.                                                      |\n| `F07`    | Explorar y prototipar                 | Comparar alternativas y probar comprensión, jerarquía y recuperación antes de optimizar código.                    | Razón de la alternativa elegida y evidencia del recorrido.                         |\n| `F08`    | Construir, integrar y verificar       | Implementar el plan, mantener trazabilidad y reconciliar resultados contra el alcance completo.                    | Código, pruebas y evidencia de cobertura; pendientes y excepciones explícitos.     |",
+  "nuestra": "| **Step** | **Decision**                       | **Work**                                                                                                     | **Minimum evidence**                                                              |\n|----------|------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|\n| `F01`    | Understand the foundation          | Recognize the sources, the authority, the scope, the structure used and the expected results.                  | A faithful map of the product definition, without reformulating it for technical convenience. |\n| `F02`    | Establish coverage                 | Inventory the applicable stories, capabilities, rules, states, journeys, criteria and relationships.           | Complete coverage, with gaps or contradictions made visible.                      |\n| `F03`    | Plan the implementation            | Resolve dependencies, blockers, order, parallelism, integration and testing without modifying the scope.       | A coherent plan that accounts for the whole approved definition.                  |\n| `F04`    | Make progress concrete             | Use the existing Job Stories, or formulate a derived view where it adds clarity and is identified as such.     | Circumstances, motivations and outcomes preserved where applicable.               |\n| `F05`    | Establish the experience contract  | Describe what the person must understand, decide and feel at the critical moments.                             | Main route, states and interaction promise.                                       |\n| `F06`    | Model rules and risks              | Separate deterministic logic, generative behavior, permissions and irreversible actions.                      | A map of decisions and limits.                                                    |\n| `F07`    | Explore and prototype              | Compare alternatives and test understanding, hierarchy and recovery before optimizing code.                    | The reason for the chosen alternative and evidence from the journey.              |\n| `F08`    | Build, integrate and verify        | Implement the plan, maintain traceability and reconcile results against the full scope.                        | Code, tests and evidence of coverage; outstanding items and exceptions made explicit. |",
+  "contraste": "| **Step** | **Decision** | **Task** | **Minimum evidence** |\n|----------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|\n| `F01`    | Understand the foundation | Identify the sources, authority, scope, structure used, and expected results. | Accurate representation of the product definition, without reformulating it for technical convenience. |\n| `F02`    | Establish coverage | Inventory applicable stories, capabilities, rules, states, flows, criteria, and relationships. | Complete coverage with visible gaps or contradictions. |\n| `F03`    | Plan the implementation | Resolve dependencies, blockers, sequencing, parallelism, integration, and testing without modifying the scope. | A coherent plan that accounts for the entire approved definition. |\n| `F04`    | Solidify progress | Use existing job stories or formulate a derived view when it provides clarity and is identified as such. | Circumstances, motivations, and outcomes preserved where applicable. |\n| `F05`    | Establish the experience contract | Describe what the person should understand, decide, and feel at critical moments. | Main path, states, and interaction promise. |\n| `F06`    | Model rules and risks | Separate deterministic logic, generative behavior, permissions, and irreversible actions. | Decision map and boundaries. |\n| `F07`    | Explore and prototype | Compare alternatives and test understanding, hierarchy, and recovery before optimizing code. | Rationale for the chosen alternative and evidence of the exploration process. |\n| `F08`    | Build, integrate, and verify | Implement the plan, maintain traceability, and reconcile results against the full scope. | Code, tests, and coverage evidence; explicit pending items and exceptions.     |"
+ },
+ {
+  "clave": "canon::sh-stop",
+  "nivel": 1,
+  "es": "#### Regla de detención antes de generar · `SH-STOP`",
+  "nuestra": "#### Stopping rule before generating · `SH-STOP`",
+  "contraste": "#### Stop rule before generation · `SH-STOP`"
+ },
+ {
+  "clave": "canon::flujo-de-trabajo-10",
+  "nivel": 2,
+  "es": "- ¿Cuál es la definición de producto autorizada y qué alcance establece?\n\n- ¿Qué elementos del fundamento justifican el desarrollo y qué evidencia los respalda?\n\n- ¿La planificación da cuenta de todas las historias, capacidades, reglas, estados y criterios obligatorios?\n\n- Cuando existen Job Stories, ¿la circunstancia, la motivación y el resultado están separados de la solución?\n\n- ¿Cuál es la ruta principal y qué estados alternativos importan?\n\n- ¿Qué decisiones debe tomar el usuario y cuáles puede resolver el sistema?\n\n- ¿Qué comportamiento necesita certeza determinista?\n\n- ¿Qué no forma parte del alcance y quién estableció esa exclusión?\n\n- ¿Qué evidencia demostrará que el desarrollo está completo?",
+  "nuestra": "- What is the authorized product definition and what scope does it establish?\n\n- Which elements of the foundation justify the development and what evidence supports them?\n\n- Does the plan account for all mandatory stories, capabilities, rules, states and criteria?\n\n- Where Job Stories exist, are the circumstance, the motivation and the outcome separated from the solution?\n\n- What is the main route and which alternative states matter?\n\n- Which decisions must the user make and which can the system resolve?\n\n- Which behavior requires deterministic certainty?\n\n- What falls outside the scope and who established that exclusion?\n\n- What evidence will demonstrate that the development is complete?",
+  "contraste": "- What is the authorized product definition, and what scope does it establish?\n\n- What elements of the rationale justify the development, and what evidence supports them?\n\n- Does the planning account for all required stories, capabilities, rules, states, and criteria?\n\n- When job stories exist, are the context, motivation, and outcome separated from the solution?\n\n- What is the main path, and which alternative states are important?\n\n- Which decisions must the user make, and which can the system resolve?\n\n- Which behaviors require deterministic certainty?\n\n- What is not part of the scope, and who established that exclusion?\n\n- What evidence will demonstrate that development is complete?"
+ },
+ {
+  "clave": "canon::cr01",
+  "nivel": 1,
+  "es": "**`CR01` Propósito.** Construye la solución más simple que permita al usuario lograr el resultado definido, conservando claridad, control y capacidad de recuperación.",
+  "nuestra": "**`CR01` Purpose.** Build the simplest solution that lets the user achieve the defined outcome, preserving clarity, control and the ability to recover.",
+  "contraste": "**`CR01` Purpose.** Build the simplest solution that allows the user to achieve the defined result, while maintaining clarity, control, and recoverability."
+ },
+ {
+  "clave": "canon::cr02",
+  "nivel": 1,
+  "es": "**`CR02` Antes de programar.** Identifica las fuentes autorizadas, explica el fundamento de producto y confirma el alcance completo. Reconoce la estructura utilizada por la definición; cuando contenga Job Stories, conserva su circunstancia, motivación y resultado. Separa evidencia de supuestos e identifica cualquier ambigüedad que pueda cambiar materialmente la solución.",
+  "nuestra": "**`CR02` Before programming.** Identify the authorized sources, explain the product foundation and confirm the full scope. Recognize the structure the definition uses; where it contains Job Stories, preserve their circumstance, motivation and outcome. Separate evidence from assumptions and identify any ambiguity that could materially change the solution.",
+  "contraste": "**`CR02` Before planning.** Identify authorized sources, explain the product rationale, and confirm the full scope. Recognize the structure used in the definition; when it contains user stories, preserve their context, motivation, and outcome. Separate evidence from assumptions and identify any ambiguities that could materially change the solution."
+ },
+ {
+  "clave": "canon::cr03",
+  "nivel": 1,
+  "es": "**`CR03` Al planificar.** Da cuenta de todos los elementos obligatorios y establece sus dependencias, bloqueantes, orden, integración y pruebas. No selecciones, omitas ni postergues partes del alcance por iniciativa propia. Si las restricciones impiden cubrirlo, solicita una decisión a la autoridad de producto.",
+  "nuestra": "**`CR03` When planning.** Account for every mandatory element and establish their dependencies, blockers, order, integration and tests. Do not select, omit or defer parts of the scope on your own initiative. If constraints prevent covering it, request a decision from the product authority.",
+  "contraste": "**`CR03` When planning.** Document all required elements and define their dependencies, blockers, order, integration, and testing. Do not select, omit, or defer parts of the scope on your own initiative. If constraints prevent you from covering the scope, request a decision from the product owner."
+ },
+ {
+  "clave": "canon::cr04",
+  "nivel": 1,
+  "es": "**`CR04` Al proponer.** Presenta la alternativa recomendada, una alternativa más simple y la opción de no construir cuando la decisión aún pertenezca a producto. Explica cómo responde cada una al fundamento, qué carga introduce y qué tradeoffs exige.",
+  "nuestra": "**`CR04` When proposing.** Present the recommended alternative, a simpler alternative and the option of not building, where the decision still belongs to product. Explain how each one responds to the foundation, what burden it introduces and what trade-offs it demands.",
+  "contraste": "**`CR04` When making a proposal.** Present the recommended alternative, a simpler alternative, and the option not to build when the decision still rests with the product team. Explain how each one addresses the rationale, what burden it introduces, and what trade-offs it requires."
+ },
+ {
+  "clave": "canon::cr05",
+  "nivel": 1,
+  "es": "**`CR05` Al diseñar.** No expongas estructuras internas. Usa lenguaje del usuario, convenciones conocidas, jerarquía clara, profundidad progresiva, valores predeterminados editables y feedback inmediato.",
+  "nuestra": "**`CR05` When designing.** Do not expose internal structures. Use the user's language, known conventions, a clear hierarchy, progressive depth, editable defaults and immediate feedback.",
+  "contraste": "**`CR05` When designing.** Do not expose internal structures. Use user-friendly language, familiar conventions, a clear hierarchy, progressive depth, editable defaults, and immediate feedback."
+ },
+ {
+  "clave": "canon::cr06",
+  "nivel": 1,
+  "es": "**`CR06` Al usar IA.** Reserva las reglas críticas para lógica verificable. Declara incertidumbre. No ejecutes acciones de alto impacto sin autorización proporcional. Mantén trazabilidad, revisión y reversibilidad.",
+  "nuestra": "**`CR06` When using AI.** Reserve critical rules for verifiable logic. Declare uncertainty. Do not carry out high-impact actions without proportionate authorization. Maintain traceability, review and reversibility.",
+  "contraste": "**`CR06` When using AI.** Reserve critical rules for verifiable logic. Declare uncertainty. Do not perform high-impact actions without proportional authorization. Maintain traceability, review, and reversibility."
+ },
+ {
+  "clave": "canon::cr07",
+  "nivel": 1,
+  "es": "**`CR07` Al implementar.** Respeta el alcance acordado y conserva trazabilidad con su fundamento. No agregues features, modos, configuraciones ni abstracciones no solicitadas. Cubre estados vacíos, carga, error, éxito y recuperación e integra las partes relacionadas.",
+  "nuestra": "**`CR07` When implementing.** Respect the agreed scope and preserve traceability to its foundation. Do not add features, modes, configurations or abstractions that were not requested. Cover empty, loading, error, success and recovery states, and integrate the related parts.",
+  "contraste": "**`CR07` During implementation.** Adhere to the agreed-upon scope and maintain traceability to its rationale. Do not add unsolicited features, modes, configurations, or abstractions. Handle empty, load, error, success, and recovery states, and integrate the related components."
+ },
+ {
+  "clave": "canon::cr08",
+  "nivel": 1,
+  "es": "**`CR08` Antes de declarar terminado.** Reconcilia la implementación contra la definición completa de producto. Verifica resultados, reglas, criterios y, cuando correspondan, las Job Stories en sus circunstancias. Comprueba también accesibilidad, rendimiento percibido, errores, persistencia del trabajo y control del usuario. Entrega evidencia, pendientes y excepciones aprobadas.",
+  "nuestra": "**`CR08` Before declaring the work complete.** Reconcile the implementation against the complete product definition. Verify results, rules, criteria and, where they apply, the Job Stories in their circumstances. Also check accessibility, perceived performance, errors, persistence of work and user control. Deliver evidence, outstanding items and approved exceptions.",
+  "contraste": "**`CR08` Before declaring the work complete.** Reconcile the implementation against the complete product definition. Verify results, rules, criteria, and, where applicable, the Job Stories in their specific context. Also check accessibility, perceived performance, errors, work persistence, and user control. Provide evidence, pending items, and approved exceptions."
+ },
+ {
+  "clave": "canon::o01",
+  "nivel": 1,
+  "es": "1\\. `O01` Fuentes autorizadas y fundamento de producto que justifican el desarrollo.",
+  "nuestra": "1\\. `O01` Authorized sources and product foundation that justify the development.",
+  "contraste": "1\\. `O01` Authorized sources and product rationale justifying the development."
+ },
+ {
+  "clave": "canon::o02",
+  "nivel": 1,
+  "es": "2\\. `O02` Inventario de alcance y cobertura de historias, capacidades, reglas, estados y criterios aplicables.",
+  "nuestra": "2\\. `O02` Inventory of scope and coverage of the applicable stories, capabilities, rules, states and criteria.",
+  "contraste": "2\\. `O02` Inventory of the scope and coverage of histories, capabilities, rules, statuses, and applicable criteria."
+ },
+ {
+  "clave": "canon::o03",
+  "nivel": 1,
+  "es": "3\\. `O03` Jobs to Be Done y Job Stories cuando formen parte de la definición o aporten una vista derivada útil.",
+  "nuestra": "3\\. `O03` Jobs to Be Done and Job Stories where they form part of the definition or contribute a useful derived view.",
+  "contraste": "3\\. `O03` Jobs to Be Done and Job Stories when they are part of the definition or provide a useful derived perspective."
+ },
+ {
+  "clave": "canon::o04",
+  "nivel": 1,
+  "es": "4\\. `O04` Evidencia disponible, supuestos y criterios de resultado.",
+  "nuestra": "4\\. `O04` Available evidence, assumptions and outcome criteria.",
+  "contraste": "4\\. `O04` Available evidence, assumptions, and outcome criteria."
+ },
+ {
+  "clave": "canon::o05",
+  "nivel": 1,
+  "es": "5\\. `O05` Alternativa elegida y razón de descarte de opciones más complejas.",
+  "nuestra": "5\\. `O05` Chosen alternative and the reason for discarding more complex options.",
+  "contraste": "5\\. `O05` Chosen alternative and reason for ruling out more complex options."
+ },
+ {
+  "clave": "canon::o06",
+  "nivel": 1,
+  "es": "6\\. `O06` Archivos o componentes modificados y límites del cambio.",
+  "nuestra": "6\\. `O06` Files or components modified and the limits of the change.",
+  "contraste": "6\\. `O06` Modified files or components and limits on changes."
+ },
+ {
+  "clave": "canon::o07",
+  "nivel": 1,
+  "es": "7\\. `O07` Estados y casos extremos cubiertos.",
+  "nuestra": "7\\. `O07` States and edge cases covered.",
+  "contraste": "7\\. `O07` Conditions and extreme cases covered."
+ },
+ {
+  "clave": "canon::o08",
+  "nivel": 1,
+  "es": "8\\. `O08` Pruebas ejecutadas y evidencia de resultado.",
+  "nuestra": "8\\. `O08` Tests run and evidence of results.",
+  "contraste": "8\\. `O08` Tests performed and evidence of results."
+ },
+ {
+  "clave": "canon::o09",
+  "nivel": 1,
+  "es": "9\\. `O09` Riesgos, incertidumbres, pendientes, excepciones y decisiones que aún requieren juicio humano.",
+  "nuestra": "9\\. `O09` Risks, uncertainties, outstanding items, exceptions and decisions that still require human judgment.",
+  "contraste": "9\\. `O09` Risks, uncertainties, pending issues, exceptions, and decisions that still require human judgment."
+ },
+ {
+  "clave": "canon::verificacion-01",
+  "nivel": 1,
+  "es": "## VERIFICACIÓN",
+  "nuestra": "## VERIFICATION",
+  "contraste": "## VERIFICATION"
+ },
+ {
+  "clave": "canon::verificacion-02",
+  "nivel": 1,
+  "es": "### Pruebas para aceptar una solución",
+  "nuestra": "### Tests for accepting a solution",
+  "contraste": "### Tests to Validate a Solution"
+ },
+ {
+  "clave": "canon::verificacion-03",
+  "nivel": 1,
+  "es": "La aceptación debe producir evidencia. La impresión de que una pantalla se ve limpia o que el código compila no demuestra que el producto cumpla su propósito.",
+  "nuestra": "Acceptance must produce evidence. The impression that a screen looks clean, or that the code compiles, does not demonstrate that the product fulfills its purpose.",
+  "contraste": "Acceptance must be backed by evidence. The fact that a screen looks clean or that the code compiles does not prove that the product serves its purpose."
+ },
+ {
+  "clave": "canon::verificacion-04",
+  "nivel": 1,
+  "es": "| **Dimensión** | **Evidencia de aceptación**                                                                                                                                      |\n|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| `V01` Cobertura     | Todos los elementos obligatorios de la definición de producto tienen implementación y evidencia o una excepción explícita y aprobada.                            |\n| `V02` Progreso      | Las personas alcanzan los resultados definidos y pueden reconocerlos; cuando existen Job Stories, esto se comprueba en sus circunstancias.                       |\n| `V03` Causalidad    | La evidencia relaciona la situación, la necesidad y el resultado sin depender de un pedido de funcionalidad; cuando aplica, conserva circunstancia y motivación. |\n| `V04` Comprensión   | Puede explicar dónde está, qué puede hacer y qué ocurrirá después sin ayuda externa.                                                                             |\n| `V05` Carga         | No enfrenta decisiones, conceptos o datos que el sistema pueda resolver de forma segura.                                                                         |\n| `V06` Profundidad   | El principiante encuentra una ruta clara y el usuario avanzado conserva capacidad suficiente.                                                                    |\n| `V07` Confianza     | El sistema anticipa consecuencias, confirma resultados y ofrece recuperación proporcional.                                                                       |\n| `V08` Control       | La persona puede revisar, corregir, rechazar o revertir según el impacto de la acción.                                                                           |\n| `V09` Estados       | Carga, vacío, error, éxito, interrupción y retorno mantienen contexto y orientación.                                                                             |\n| `V10` Accesibilidad | El flujo funciona con teclado, foco visible, etiquetas comprensibles, contraste y tecnologías de asistencia aplicables.                                          |\n| `V11` Rendimiento   | Las acciones críticas cumplen el presupuesto de respuesta o muestran progreso honesto.                                                                           |\n| `V12` IA            | Las salidas variables declaran incertidumbre; las reglas críticas son verificables; las acciones sensibles requieren autorización.                               |",
+  "nuestra": "| **Dimension**       | **Acceptance evidence**                                                                                                                                          |\n|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| `V01` Coverage      | Every mandatory element of the product definition has an implementation and evidence, or an explicit and approved exception.                                      |\n| `V02` Progress      | People achieve the defined outcomes and can recognize them; where Job Stories exist, this is verified in their circumstances.                                     |\n| `V03` Causality     | The evidence relates the situation, the need and the outcome without depending on a feature request; where it applies, it preserves circumstance and motivation.  |\n| `V04` Understanding | They can explain where they are, what they can do and what will happen next, without outside help.                                                                |\n| `V05` Burden        | They do not face decisions, concepts or data that the system could resolve safely.                                                                                |\n| `V06` Depth         | The beginner finds a clear route and the advanced user retains sufficient capability.                                                                             |\n| `V07` Trust         | The system anticipates consequences, confirms results and offers proportionate recovery.                                                                          |\n| `V08` Control       | The person can review, correct, reject or revert according to the impact of the action.                                                                           |\n| `V09` States        | Loading, empty, error, success, interruption and return all preserve context and orientation.                                                                     |\n| `V10` Accessibility | The flow works with keyboard, visible focus, understandable labels, contrast and the applicable assistive technologies.                                           |\n| `V11` Performance   | Critical actions meet the response budget or show honest progress.                                                                                                |\n| `V12` AI            | Variable outputs declare uncertainty; critical rules are verifiable; sensitive actions require authorization.                                                     |",
+  "contraste": "| **Dimension** | **Evidence of acceptance** |\n|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| `V01` Coverage     | All required elements of the product definition have an implementation and evidence, or an explicit and approved exception. |\n| `V02` Progress | People achieve the defined results and can recognize them; when Job Stories exist, this is verified in their context. |\n| `V03` Causality    | The evidence relates the situation, the need, and the result without relying on a feature request; where applicable, it preserves context and motivation. |\n| `V04` Understanding   | The user can explain where they are, what they can do, and what will happen next without outside help. |\n| `V05` Workload | The user does not face decisions, concepts, or data that the system can safely resolve. |\n| `V06` Depth   | The beginner finds a clear path, and the advanced user retains sufficient capability. |\n| `V07` Trust     | The system anticipates consequences, confirms results, and offers proportionate recovery. |\n| `V08` Control | The user can review, correct, reject, or undo actions based on their impact. |\n| `V09` States | Loading, empty, error, success, interruption, and return states maintain context and orientation. |\n| `V10` Accessibility | The workflow functions with a keyboard, visible focus, understandable labels, contrast, and applicable assistive technologies. |\n| `V11` Performance   | Critical actions meet response time targets or display honest progress. |\n| `V12` AI | Variable outputs declare uncertainty; critical rules are verifiable; sensitive actions require authorization. |"
+ },
+ {
+  "clave": "canon::sh-score",
+  "nivel": 1,
+  "es": "#### Scorecard de decisión · `SH-SCORE`",
+  "nuestra": "#### Decision scorecard · `SH-SCORE`",
+  "contraste": "#### Decision Scorecard · `SH-SCORE`"
+ },
+ {
+  "clave": "canon::verificacion-06",
+  "nivel": 1,
+  "es": "Asigne 0 cuando no existe evidencia, 1 cuando el cumplimiento es parcial o depende de un supuesto no validado, y 2 cuando existe evidencia suficiente. El puntaje orienta la conversación; no reemplaza el juicio.",
+  "nuestra": "Assign 0 where there is no evidence, 1 where compliance is partial or depends on an unvalidated assumption, and 2 where there is sufficient evidence. The score guides the conversation; it does not replace judgment.",
+  "contraste": "Assign a score of 0 when there is no evidence, 1 when compliance is partial or depends on an unvalidated assumption, and 2 when there is sufficient evidence. The score guides the conversation; it does not replace judgment."
+ },
+ {
+  "clave": "canon::verificacion-07",
+  "nivel": 1,
+  "es": "| **Criterio**           | **Puntaje** | **Pregunta de evidencia**                                                            |\n|------------------------|-------------|--------------------------------------------------------------------------------------|\n| Fundamento trazable    | 0 / 1 / 2   | Fuentes, autoridad, alcance, resultados y condiciones son identificables             |\n| Cobertura del producto | 0 / 1 / 2   | Todo elemento obligatorio tiene implementación, prueba o excepción aprobada          |\n| Job Stories aplicables | 0 / 1 / 2   | Cuando existen, circunstancia, motivación y resultado conservan evidencia suficiente |\n| Progreso del usuario   | 0 / 1 / 2   | La implementación produce los resultados definidos por el producto                   |\n| Carga cognitiva        | 0 / 1 / 2   | Reduce o justifica conceptos, decisiones y pasos                                     |\n| Claridad de interfaz   | 0 / 1 / 2   | Estado, acción y consecuencia se comprenden                                          |\n| Control y recuperación | 0 / 1 / 2   | Existe revisión, corrección o reversibilidad proporcional                            |\n| Profundidad progresiva | 0 / 1 / 2   | La capacidad aparece cuando corresponde                                              |\n| Confiabilidad y tiempo | 0 / 1 / 2   | Rendimiento, persistencia y feedback cumplen lo esperado                             |\n| Uso responsable de IA  | 0 / 1 / 2   | Incertidumbre, límites y determinismo están resueltos                                |\n| Calidad acumulativa    | 0 / 1 / 2   | Estados, lenguaje y microinteracciones son coherentes                                |",
+  "nuestra": "| **Criterion**            | **Score** | **Evidence question**                                                                  |\n|--------------------------|-----------|----------------------------------------------------------------------------------------|\n| Traceable foundation     | 0 / 1 / 2 | Sources, authority, scope, results and conditions are identifiable                     |\n| Product coverage         | 0 / 1 / 2 | Every mandatory element has implementation, a test or an approved exception            |\n| Applicable Job Stories   | 0 / 1 / 2 | Where they exist, circumstance, motivation and outcome retain sufficient evidence      |\n| User progress            | 0 / 1 / 2 | The implementation produces the outcomes defined by the product                        |\n| Cognitive load           | 0 / 1 / 2 | It reduces or justifies concepts, decisions and steps                                  |\n| Interface clarity        | 0 / 1 / 2 | State, action and consequence are understood                                           |\n| Control and recovery     | 0 / 1 / 2 | Proportionate review, correction or reversibility exists                               |\n| Progressive depth        | 0 / 1 / 2 | Capability appears when it is appropriate                                              |\n| Dependability and timing | 0 / 1 / 2 | Performance, persistence and feedback meet expectations                                |\n| Responsible use of AI    | 0 / 1 / 2 | Uncertainty, limits and determinism have been resolved                                 |\n| Cumulative quality       | 0 / 1 / 2 | States, language and micro-interactions are coherent                                   |",
+  "contraste": "| **Criterion** | **Score** | **Evidence Question** |\n|------------------------|-------------|--------------------------------------------------------------------------------------|\n| Traceable rationale    | 0 / 1 / 2   | Sources, authority, scope, results, and conditions are identifiable |\n| Product coverage | 0 / 1 / 2   | Every required element has an implementation, test, or approved exception |\n| Applicable job stories | 0 / 1 / 2   | When present, the context, rationale, and outcome retain sufficient evidence |\n| User Progress   | 0 / 1 / 2   | The implementation produces the results defined by the product |\n| Cognitive Load | 0 / 1 / 2   | Reduces or justifies concepts, decisions, and steps |\n| Interface Clarity   | 0 / 1 / 2   | State, action, and consequence are understood |\n| Control and Recovery | 0 / 1 / 2   | Proportional review, correction, or reversibility exists |\n| Progressive depth | 0 / 1 / 2   | Capabilities appear when appropriate |\n| Reliability and timing | 0 / 1 / 2   | Performance, persistence, and feedback meet expectations |\n| Responsible use of AI  | 0 / 1 / 2   | Uncertainty, limits, and determinism are addressed |\n| Cumulative quality    | 0 / 1 / 2   | States, language, and microinteractions are consistent |"
+ },
+ {
+  "clave": "canon::verificacion-08",
+  "nivel": 1,
+  "es": "Criterio de salida recomendado. Ninguna dimensión crítica puede puntuar 0. Los criterios relacionados con seguridad, permisos, dinero, datos personales o acciones irreversibles deben puntuar 2 antes de liberar. Para el resto, el equipo debe definir su umbral según el riesgo y el alcance.",
+  "nuestra": "Recommended exit criterion. No critical dimension may score 0. Criteria relating to security, permissions, money, personal data or irreversible actions must score 2 before release. For the rest, the team must define its threshold according to risk and scope.",
+  "contraste": "Recommended release criteria. No critical dimension may receive a score of 0. Criteria related to security, permissions, money, personal data, or irreversible actions must receive a score of 2 before release. For all other criteria, the team must define its threshold based on risk and scope."
+ },
+ {
+  "clave": "canon::verificacion-09",
+  "nivel": 1,
+  "es": "#### Preguntas para una revisión de producto",
+  "nuestra": "#### Questions for a product review",
+  "contraste": "#### Questions for a Product Review"
+ },
+ {
+  "clave": "canon::verificacion-10",
+  "nivel": 1,
+  "es": "- ¿Qué fuente autorizada y qué fundamento de producto justifican esta decisión?\n\n- ¿La implementación y sus pruebas dan cuenta del alcance completo?\n\n- Cuando existen Jobs to Be Done o Job Stories, ¿cómo se relaciona esta decisión con ellos?\n\n- ¿La formulación describe una necesidad o es una funcionalidad redactada con otra fórmula?\n\n- ¿Qué carga cognitiva introduce y cuál elimina?\n\n- ¿Estamos exponiendo una complejidad interna?\n\n- ¿Puede eliminarse algún elemento sin reducir capacidad ni control?\n\n- ¿La persona sabe qué ocurrirá antes de actuar?\n\n- ¿Puede recuperarse con facilidad si se equivoca o si el sistema falla?\n\n- ¿La IA está proponiendo, decidiendo o ejecutando? ¿Ese nivel está autorizado?\n\n- ¿Qué haría que rechazáramos esta implementación aunque técnicamente funcione?",
+  "nuestra": "- What authorized source and what product foundation justify this decision?\n\n- Do the implementation and its tests account for the full scope?\n\n- Where Jobs to Be Done or Job Stories exist, how does this decision relate to them?\n\n- Does the formulation describe a need, or is it a feature request recast in another form?\n\n- What cognitive load does it introduce and what does it remove?\n\n- Are we exposing internal complexity?\n\n- Can any element be removed without reducing capability or control?\n\n- Does the person know what will happen before acting?\n\n- Can they recover easily if they make a mistake or if the system fails?\n\n- Is the AI proposing, deciding or executing? Is that level authorized?\n\n- What would make us reject this implementation even though it technically works?",
+  "contraste": "- What authoritative source and what product rationale justify this decision?\n\n- Do the implementation and testing cover the full scope?\n\n- When there are Jobs to Be Done or Job Stories, how does this decision relate to them?\n\n- Does the formulation describe a need, or is it a feature phrased differently?\n\n- What cognitive load does it introduce, and what does it eliminate?\n\n- Are we exposing an internal complexity?\n\n- Can any element be removed without reducing capacity or control?\n\n- Does the user know what will happen before taking action?\n\n- Can they easily recover if they make a mistake or if the system fails?\n\n- Is the AI proposing, deciding, or executing? Is that level authorized?\n\n- What would cause us to reject this implementation even if it works technically?"
+ },
+ {
+  "clave": "canon::antipatrones-03",
+  "nivel": 2,
+  "es": "| **Antipatrón**                              | **Cómo se manifiesta**                                                                         | **Respuesta**                                                                        |\n|---------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|\n| La Job Story es una feature disfrazada      | La motivación dice usar un dashboard, recibir alertas o pulsar un botón.                       | Reformular el avance que necesita la persona sin anticipar la respuesta.             |\n| La circunstancia fue inventada              | El equipo redacta una historia plausible sin observar conducta, tensión o contexto real.       | Marcarla como hipótesis y obtener evidencia antes de ampliar la implementación.      |\n| La interfaz replica la base de datos        | El usuario debe elegir tipos, estados o relaciones internas.                                   | Traducir la estructura a objetivos y decisiones humanas.                             |\n| Más opciones se confunden con más valor     | Cada excepción se convierte en un control visible.                                             | Resolver por contexto y revelar excepciones cuando aparezcan.                        |\n| La IA llena vacíos conceptuales             | Un prompt ambiguo produce una implementación grande.                                           | Detener, aclarar supuestos materiales y preservar el alcance autorizado.             |\n| El plan selecciona alcance                  | Se implementan algunas historias o reglas y se posterga el resto sin una decisión de producto. | Restablecer la cobertura completa o registrar una modificación explícita y aprobada. |\n| La descomposición parece exclusión          | Una fase técnica se presenta como si redefiniera lo que el PRD exige.                          | Separar orden de ejecución, estado de avance y alcance comprometido.                 |\n| El tutorial compensa una interfaz oscura    | La tarea básica requiere explicación previa.                                                   | Revisar lenguaje, jerarquía, convenciones y feedback.                                |\n| La confirmación sustituye la reversibilidad | Se pregunta varias veces, pero no existe deshacer.                                             | Diseñar recuperación y usar confirmaciones solo según riesgo.                        |\n| El happy path define el producto            | Errores, vacíos e interrupciones quedan para después.                                          | Modelar estados antes de implementar y aceptarlos explícitamente.                    |\n| La respuesta fluida parece verdadera        | El usuario no distingue hecho, inferencia y propuesta.                                         | Mostrar fuente, incertidumbre, límites y ruta de verificación.                       |\n| La velocidad técnica oculta la espera       | La operación tarda sin feedback o bloquea todo el flujo.                                       | Responder de inmediato, mostrar progreso y preservar continuidad.                    |\n| La estética maquilla la fricción            | La pantalla luce bien, pero exige decisiones innecesarias.                                     | Evaluar el recorrido completo y el esfuerzo real.                                    |\n| El agente agrega por si acaso               | Aparecen modos, preferencias y abstracciones no pedidas.                                       | Definir exclusiones y exigir justificación por capacidad.                            |",
+  "nuestra": "| **Anti-pattern**                              | **How it shows up**                                                                                      | **Response**                                                                             |\n|-----------------------------------------------|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|\n| The Job Story is a feature in disguise        | The motivation says to use a dashboard, receive alerts or press a button.                                  | Reformulate the progress the person needs without anticipating the answer.                |\n| The circumstance was invented                 | The team writes a plausible story without observing behavior, tension or real context.                    | Mark it as a hypothesis and obtain evidence before extending the implementation.          |\n| The interface mirrors the database            | The user has to choose internal types, states or relationships.                                            | Translate the structure into human goals and decisions.                                   |\n| More options are mistaken for more value      | Every exception turns into a visible control.                                                              | Resolve by context and reveal exceptions when they arise.                                 |\n| AI fills conceptual gaps                      | An ambiguous prompt produces a large implementation.                                                       | Stop, clarify the material assumptions and preserve the authorized scope.                 |\n| The plan selects scope                        | Some stories or rules are implemented and the rest deferred without a product decision.                    | Restore full coverage, or record an explicit and approved modification.                   |\n| Decomposition is mistaken for exclusion       | A technical phase is presented as though it redefined what the PRD requires.                               | Separate execution order, progress status and committed scope.                            |\n| The tutorial compensates for an opaque interface | The basic task requires prior explanation.                                                              | Review language, hierarchy, conventions and feedback.                                     |\n| Confirmation substitutes for reversibility    | The system asks several times, but there is no undo.                                                       | Design recovery and use confirmations only according to risk.                             |\n| The happy path defines the product            | Errors, empty states and interruptions are left for later.                                                 | Model states before implementing and accept them explicitly.                              |\n| A fluent answer looks true                    | The user does not distinguish fact, inference and proposal.                                                  | Show source, uncertainty, limits and a route to verification.                             |\n| Technical speed hides the wait                | The operation takes time with no feedback, or blocks the whole flow.                                       | Respond immediately, show progress and preserve continuity.                               |\n| Aesthetics paper over friction                | The screen looks good, but demands unnecessary decisions.                                                  | Evaluate the complete journey and the real effort.                                        |\n| The agent adds things just in case            | Modes, preferences and abstractions appear that nobody asked for.                                          | Define exclusions and require justification per capability.                               |",
+  "contraste": "| **Anti-pattern** | **How it manifests** | **Solution** |\n|---------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|\n| The Job Story is a feature in disguise | The motivation states using a dashboard, receiving alerts, or pressing a button. | Reframe the progress the person needs without anticipating the response. |\n| The scenario was made up | The team writes a plausible story without observing actual behavior, tension, or context. | Label it as a hypothesis and gather evidence before expanding the implementation. |\n| The interface replicates the database | The user must choose types, states, or internal relationships. | Translate the structure into human goals and decisions. |\n| More options are mistaken for more value     | Every exception becomes a visible control. | Resolve based on context and reveal exceptions as they arise. |\n| AI fills conceptual gaps | An ambiguous prompt produces a large-scale implementation. | Pause, clarify key assumptions, and preserve the authorized scope. |\n| The plan defines the scope | Some stories or rules are implemented, while the rest are deferred without a product decision. | Restore full coverage or log an explicit, approved modification. |\n| Decomposition appears as exclusion | A technical phase is presented as if it redefines what the PRD requires. | Separate execution order, progress status, and committed scope. |\n| The tutorial compensates for an obscure interface    | The basic task requires prior explanation. | Review language, hierarchy, conventions, and feedback. |\n| Confirmation replaces reversibility | Users are prompted multiple times, but there is no undo option. | Design recovery mechanisms and use confirmations only based on risk. |\n| The happy path defines the product | Errors, gaps, and interruptions are left for later. | Model states before implementing them and explicitly accept them. |\n| A fluid response seems genuine | The user cannot distinguish between fact, inference, and suggestion. | Show the source, uncertainty, limits, and verification path. |\n| Technical speed hides the wait | The operation takes time without feedback or blocks the entire flow. | Respond immediately, show progress, and preserve continuity. |\n| Aesthetics mask the friction | The screen looks good, but it requires unnecessary decisions. | Evaluate the entire journey and the actual effort involved. |\n| The agent adds features just in case | Unsolicited modes, preferences, and abstractions appear. | Define exclusions and require justification based on capability. |"
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-05",
+  "nivel": 3,
+  "es": "**Formulación débil.** Como estudiante quiero recibir pistas para poder resolver derivadas. El rol es genérico, la pista ya prescribe la respuesta y el resultado no distingue comprensión de avance mecánico.",
+  "nuestra": "**Weak formulation.** As a student I want to receive hints so that I can solve derivatives. The role is generic, the hint already prescribes the response, and the outcome does not distinguish understanding from mechanical progress.",
+  "contraste": "**Vague wording.** As a student, I want to be given hints so I can solve derivatives. The prompt is too general; the hint already gives away the answer, and the result doesn't distinguish between true understanding and mechanical application."
+ },
+ {
+  "clave": "canon::ejemplo-aplicado-08",
+  "nivel": 3,
+  "es": "Ambas historias pertenecen al mismo Jobs to Be Done de nivel superior: desarrollar comprensión suficiente para resolver un ejercicio equivalente con autonomía creciente. Sin embargo, describen bloqueos distintos y pueden exigir respuestas diferentes.",
+  "nuestra": "Both stories belong to the same higher-level Jobs to Be Done: developing enough understanding to solve an equivalent exercise with growing autonomy. They describe different blockages, however, and may call for different responses.",
+  "contraste": "Both stories belong to the same top-level \"Jobs to Be Done\": developing sufficient understanding to solve an equivalent exercise with increasing autonomy. However, they describe different obstacles and may require different responses."
+ },
+ {
+  "clave": "canon::gobernanza-05",
+  "nivel": 2,
+  "es": "| **Responsable** | **Obligación principal**                                                                                                                                                        |\n|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Producto        | Establece la definición autorizada, el alcance, los resultados, las reglas, los no objetivos y la evidencia de éxito; valida Jobs to Be Done y Job Stories cuando se utilizan.  |\n| Diseño          | Traduce el fundamento de producto a recorridos coherentes con el modelo mental de la persona y protege su atención; utiliza Job Stories cuando permiten concretar la situación. |\n| Ingeniería      | Absorbe complejidad, garantiza estados, rendimiento, accesibilidad y recuperación.                                                                                              |\n| Agente de IA    | Planifica e implementa dentro del fundamento y del contrato; declara supuestos, mantiene cobertura y no reduce ni amplía alcance por iniciativa propia.                         |\n| Revisión humana | Evalúa causalidad, sentido, riesgo, experiencia completa y evidencia; no se limita a revisar código.                                                                            |",
+  "nuestra": "| **Responsible**  | **Main obligation**                                                                                                                                                              |\n|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Product          | Establishes the authorized definition, the scope, the results, the rules, the non-goals and the evidence of success; validates Jobs to Be Done and Job Stories where they are used. |\n| Design           | Translates the product foundation into journeys coherent with the person's mental model and protects their attention; uses Job Stories where they help make the situation concrete. |\n| Engineering      | Absorbs complexity and guarantees states, performance, accessibility and recovery.                                                                                                |\n| AI agent         | Plans and implements within the foundation and the contract; declares assumptions, maintains coverage and neither reduces nor extends scope on its own initiative.                 |\n| Human review     | Evaluates causality, meaning, risk, the complete experience and the evidence; it is not limited to reviewing code.                                                                |",
+  "contraste": "| **Responsible Party** | **Primary Obligation** |\n|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Product | Establishes the authoritative definition, scope, outcomes, rules, non-objectives, and evidence of success; validates Jobs to Be Done and Job Stories when used.  |\n| Design | Translates the product foundation into journeys consistent with the user’s mental model and safeguards their attention; uses Job Stories when they help clarify the situation. |\n| Engineering | Absorbs complexity; ensures states, performance, accessibility, and recoverability. |\n| AI Agent    | Plans and implements within the product foundation and contract; states assumptions, maintains coverage, and does not reduce or expand scope on its own initiative. |\n| Human Review | Evaluates causality, meaning, risk, the overall experience, and evidence; is not limited to reviewing code. |"
+ },
+ {
+  "clave": "canon::sh-done",
+  "nivel": 1,
+  "es": "#### Definición de terminado · `SH-DONE`",
+  "nuestra": "#### Definition of done · `SH-DONE`",
+  "contraste": "#### Definition of \"Done\" · `SH-DONE`"
+ },
+ {
+  "clave": "canon::sh-pocket",
+  "nivel": 1,
+  "es": "## GUÍA DE BOLSILLO · `SH-POCKET`",
+  "nuestra": "## POCKET GUIDE · `SH-POCKET`",
+  "contraste": "## POCKET GUIDE · `SH-POCKET`"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-02",
+  "nivel": 1,
+  "es": "### Catorce preguntas antes de aceptar una decisión",
+  "nuestra": "### Fourteen questions before accepting a decision",
+  "contraste": "### Fourteen Questions to Ask Before Accepting a Decision"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-03",
+  "nivel": 1,
+  "es": "1\\. ¿Cuál es la fuente autorizada y qué alcance establece?",
+  "nuestra": "1\\. What is the authorized source and what scope does it establish?",
+  "contraste": "1\\. What is the authoritative source, and what scope does it establish?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-04",
+  "nivel": 1,
+  "es": "2\\. ¿La planificación da cuenta de todos los elementos obligatorios?",
+  "nuestra": "2\\. Does the plan account for every mandatory element?",
+  "contraste": "2. Does the plan include all the required elements?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-05",
+  "nivel": 1,
+  "es": "3\\. ¿Qué circunstancia concreta activa la necesidad?",
+  "nuestra": "3\\. What concrete circumstance triggers the need?",
+  "contraste": "3. What specific circumstance triggers the need?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-06",
+  "nivel": 1,
+  "es": "4\\. ¿Qué motivación o tensión impulsa a la persona a actuar?",
+  "nuestra": "4\\. What motivation or tension drives the person to act?",
+  "contraste": "4. What motivation or conflict drives a person to act?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-07",
+  "nivel": 1,
+  "es": "5\\. ¿Qué resultado permitiría reconocer el progreso?",
+  "nuestra": "5\\. What outcome would make the progress recognizable?",
+  "contraste": "5. What outcome would indicate progress?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-08",
+  "nivel": 1,
+  "es": "6\\. ¿Qué conducta o evidencia demuestra que la historia ocurre?",
+  "nuestra": "6\\. What behavior or evidence demonstrates that the story occurs?",
+  "contraste": "6. What behavior or evidence shows that the story is taking place?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-09",
+  "nivel": 1,
+  "es": "7\\. Cuando existe una Job Story, ¿describe el problema sin prescribir la solución?",
+  "nuestra": "7\\. Where a Job Story exists, does it describe the problem without prescribing the solution?",
+  "contraste": "7. When there is a Job Story, does it describe the problem without prescribing a solution?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-10",
+  "nivel": 1,
+  "es": "8\\. ¿Qué complejidad absorbe el sistema y cuál todavía traslada?",
+  "nuestra": "8\\. What complexity does the system absorb, and what does it still pass on?",
+  "contraste": "8. What complexity does the system absorb, and what complexity does it still pass on?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-11",
+  "nivel": 1,
+  "es": "9\\. ¿Qué debe ver la persona ahora y qué puede esperar?",
+  "nuestra": "9\\. What must the person see now, and what can wait?",
+  "contraste": "9. What should the person see now, and what can they expect?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-12",
+  "nivel": 1,
+  "es": "10\\. ¿Qué ocurrirá si se equivoca, interrumpe o regresa después?",
+  "nuestra": "10\\. What will happen if they make a mistake, interrupt, or come back later?",
+  "contraste": "10. What will happen if you make a mistake, stop, or come back later?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-13",
+  "nivel": 1,
+  "es": "11\\. ¿Conserva control sobre la decisión, los datos y el resultado?",
+  "nuestra": "11\\. Do they retain control over the decision, the data and the outcome?",
+  "contraste": "11. Do you retain control over the decision, the data, and the outcome?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-14",
+  "nivel": 1,
+  "es": "12\\. ¿Qué parte necesita determinismo y qué parte admite generación?",
+  "nuestra": "12\\. Which part needs determinism and which part admits generation?",
+  "contraste": "12. Which part requires determinism, and which part allows for generation?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-15",
+  "nivel": 1,
+  "es": "13\\. ¿Cuál es la alternativa más simple que cumple el fundamento de producto?",
+  "nuestra": "13\\. What is the simplest alternative that meets the product foundation?",
+  "contraste": "13\\. What is the simplest alternative that satisfies the product test?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-16",
+  "nivel": 1,
+  "es": "14\\. ¿Qué evidencia nos permitiría decir que está terminado?",
+  "nuestra": "14\\. What evidence would allow us to say it is done?",
+  "contraste": "14. What evidence would allow us to say that it is finished?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-17",
+  "nivel": 1,
+  "es": "#### Siete razones para detener una implementación",
+  "nuestra": "#### Seven reasons to stop an implementation",
+  "contraste": "#### Seven Reasons to Halt an Implementation"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-18",
+  "nivel": 1,
+  "es": "- `STOP01` No existe un fundamento de producto identificable o la solución parece preceder al problema.\n\n- `STOP02` El plan no da cuenta de todo el alcance obligatorio definido por producto.\n\n- `STOP03` Se pretende omitir, modificar o postergar una parte sin una decisión autorizada.\n\n- `STOP04` Una ambigüedad material está siendo resuelta por el agente sin autorización.\n\n- `STOP05` La interfaz expone una complejidad interna que el sistema podría absorber.\n\n- `STOP06` Una acción sensible carece de determinismo, trazabilidad o recuperación.\n\n- `STOP07` El equipo solo puede demostrar que el código funciona, no que el usuario progresa.",
+  "nuestra": "- `STOP01` There is no identifiable product foundation, or the solution appears to precede the problem.\n\n- `STOP02` The plan does not account for the whole mandatory scope defined by product.\n\n- `STOP03` There is an intention to omit, modify or defer a part without an authorized decision.\n\n- `STOP04` A material ambiguity is being resolved by the agent without authorization.\n\n- `STOP05` The interface exposes internal complexity that the system could absorb.\n\n- `STOP06` A sensitive action lacks determinism, traceability or recovery.\n\n- `STOP07` The team can only demonstrate that the code works, not that the user makes progress.",
+  "contraste": "- `STOP01` There is no identifiable product basis, or the solution appears to precede the problem.\n\n- `STOP02` The plan does not account for the entire mandatory scope defined for the product.\n\n- `STOP03` An attempt is being made to omit, modify, or defer a part without an authorized decision.\n\n- `STOP04` A material ambiguity is being resolved by the agent without authorization.\n\n- `STOP05` The interface exposes internal complexity that the system could handle.\n\n- `STOP06` A critical action lacks determinism, traceability, or recoverability.\n\n- `STOP07` The team can only demonstrate that the code works, not that the user is making progress."
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-19",
+  "nivel": 1,
+  "es": "#### Tres frases que protegen el criterio",
+  "nuestra": "#### Three sentences that protect judgment",
+  "contraste": "#### Three Phrases That Help You Stick to Your Judgment"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-20",
+  "nivel": 1,
+  "es": "¿Qué circunstancia activa esta necesidad?",
+  "nuestra": "What circumstance triggers this need?",
+  "contraste": "What circumstance triggers this need?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-21",
+  "nivel": 1,
+  "es": "¿Qué progreso habilita?",
+  "nuestra": "What progress does it enable?",
+  "contraste": "What kind of progress does it enable?"
+ },
+ {
+  "clave": "canon::guia-de-bolsillo-22",
+  "nivel": 1,
+  "es": "¿Qué evidencia lo demuestra?",
+  "nuestra": "What evidence demonstrates it?",
+  "contraste": "What evidence supports this?"
+ }
+]
