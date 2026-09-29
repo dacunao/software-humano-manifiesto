@@ -44,7 +44,7 @@ test.describe('JS-09 · Idioma', () => {
     await expect(page).toHaveURL(/\/principles\/p05$/);
   });
 
-  test('escenario 4 · la preferencia orienta la raíz y se puede olvidar sin cuenta', async ({ page }, info) => {
+  test('escenario 4 · la preferencia orienta la raíz y se modifica eligiendo otro idioma, sin cuenta (v1.6)', async ({ page }, info) => {
     test.skip(info.project.name === 'sin-js', 'la preferencia requiere JavaScript');
     await page.goto('/es');
     await page.evaluate(() => localStorage.setItem('sh-idioma', 'es'));
@@ -52,12 +52,14 @@ test.describe('JS-09 · Idioma', () => {
     await page.goto('/');
     await expect(page).toHaveURL(/\/es$/);
     await abrirMenu(page);
-    const selector = page.locator('[data-selector-idioma]');
-    await selector.getByRole('button', { name: 'Olvidar mi elección de idioma' }).click();
-    await expect(selector.getByRole('status')).toContainText('inglés');
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'English' }).click();
+    await expect(page).toHaveURL(/\/$/);
+    expect(await page.evaluate(() => localStorage.getItem('sh-idioma'))).toBe('en');
     await page.goto('about:blank');
     await page.goto('/');
     await expect(page).toHaveURL(/\/$/);
+    // Ya no existe una acción para olvidar la preferencia (PRD v1.6).
+    await expect(page.getByRole('button', { name: /olvidar|forget|esquecer/i })).toHaveCount(0);
   });
 
   test('sin JavaScript la raíz muestra inglés aunque haya preferencia', async ({ page }, info) => {

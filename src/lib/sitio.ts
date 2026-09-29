@@ -82,33 +82,6 @@ export function partesCanonicas(pid: string): Record<'significa' | 'importa' | '
   return { significa: tras('Qué significa'), importa: tras('Por qué importa'), reglas: tras('Reglas de diseño'), pruebas: tras('Pruebas de decisión'), senal };
 }
 
-/** Todos los textos localizados del contenido, para saber si queda algo sin aprobar. */
-function todosLosLocalizados(): Localizado[] {
-  const r: Localizado[] = [...Object.values(contenido.cadenas), contenido.estado.limitations];
-  for (const s of contenido.superficies) {
-    r.push(s.title, s.description);
-    if (s.hero) r.push(s.hero.title, s.hero.text);
-    for (const sec of s.sections) {
-      r.push(sec.title);
-      if (sec.question) r.push(sec.question);
-      for (const b of [...sec.blocks, ...sec.depth]) {
-        if (b.kind === 'entrada') r.push(b.entrada.text);
-        if (b.kind === 'comparacion') r.push(b.sistema.text, b.persona.text);
-      }
-    }
-  }
-  for (const p of contenido.principios) for (const e of Object.values(p.entries)) r.push(e.text);
-  return r;
-}
-
-/** Hay contenido de ese idioma sin aprobar: el sitio lo declara (P07). */
-export function hayBorrador(locale: Locale): boolean {
-  if (todosLosLocalizados().some((l) => l[locale]?.state !== 'aprobado')) return true;
-  if (locale === 'es') return false;
-  const tr = contenido.traducciones.find((x) => x.locale === locale);
-  return !tr || Object.values(tr.entries).some((e) => e.state !== 'aprobada');
-}
-
 const cacheFechas = new Map<string, string>();
 /** FR-012 · fecha del último cambio de los archivos que forman la página, según git (U1). */
 export function fechaActualizacion(archivos: string[]): string {

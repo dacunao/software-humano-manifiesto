@@ -68,7 +68,8 @@ main .cita-canonica table, main .comparacion, main .lista-principios, main table
 /* ── Cabecera (§7.1): fondo del lienzo, borde de 1 px, sin sombras; controles de 44 × 44 px. ── */
 .cabecera { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; min-height: 64px; padding-block: 0.5rem; border-bottom: 1px solid var(--sh-border); }
 .marca { margin: 0; font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; }
-.marca a { display: inline-flex; align-items: center; min-height: 44px; color: var(--sh-text); text-decoration: none; }
+.marca a { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; color: var(--sh-text); text-decoration: none; }
+.marca-icono { width: 30px; height: 30px; flex: none; }
 .navegacion-global { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem; flex: 1; }
 .navegacion-global > ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0 0.25rem; }
 .navegacion-global > ul li { margin: 0; }
@@ -266,6 +267,10 @@ mark.pagefind-highlight { background: var(--sh-indigo-soft); color: inherit; out
 @media (max-width: 48rem) {
   .cabecera { display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 0.5rem; min-height: 56px; padding-block: 0.375rem; padding-inline: 1rem; }
   .cabecera .marca { grid-column: 1; grid-row: 1; }
+  /* Teléfonos: solo el ícono; «Manifiesto» sigue siendo el nombre accesible (PRD v1.5 §21.2). */
+  .marca-nombre { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .marca a { min-width: 44px; justify-content: center; }
+  .marca-icono { width: 32px; height: 32px; }
   .cabecera .abrir-busqueda { grid-column: 2; grid-row: 1; }
   .cabecera .control-tema { grid-column: 3; grid-row: 1; }
   .menu-movil { display: block; grid-column: 4; grid-row: 1; margin: 0; }

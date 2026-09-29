@@ -15,7 +15,7 @@ interface Props {
 }
 const { locale, pagina } = Astro.props;
 ---
-<div class="selector-idioma" data-selector-idioma data-restablecido={t('idioma.restablecido', locale)}>
+<div class="selector-idioma" data-selector-idioma>
   <p id="rotulo-idioma" class="rotulo solo-lectores">{t('idioma.rotulo', locale)}</p>
   <ul aria-labelledby="rotulo-idioma">
     {ORDEN_IDIOMAS.map((l) => (
@@ -32,8 +32,6 @@ const { locale, pagina } = Astro.props;
       </li>
     ))}
   </ul>
-  <button type="button" data-olvidar hidden>{t('idioma.restablecer', locale)}</button>
-  <span class="estado-idioma" role="status" aria-live="polite" data-estado-idioma></span>
 </div>
 <script>
   import '../cliente/preferencia-idioma';

@@ -4,11 +4,12 @@ import type { Locale } from '../lib/contenido/esquemas';
 import { IDIOMAS } from '../lib/i18n/idiomas';
 import { alternas, ruta, type Pagina } from '../lib/i18n/rutas';
 import { grafo, paginaWeb, persona, sitioWeb, type NodoLD } from '../lib/semantica/jsonld';
-import { contenido, hayBorrador, rutaDescarga, t, URL_SITIO } from '../lib/sitio';
+import { contenido, rutaDescarga, t, URL_SITIO } from '../lib/sitio';
 import NavegacionGlobal from '../components/NavegacionGlobal.astro';
 import Procedencia from '../components/Procedencia.astro';
 import IndiceLateral, { type GrupoIndice } from '../components/IndiceLateral.astro';
 import Busqueda from '../components/Busqueda.astro';
+import Marca from '../components/Marca.astro';
 import ControlTema from '../components/ControlTema.astro';
 
 interface Props {
@@ -44,6 +45,12 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script is:inline src="/tema.js"></script>
+    {/* Íconos del sitio (T160), del kit del ícono v1.0; sin manifiesto de aplicación (no es instalable). */}
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)" />
     <title>{tituloCompleto}</title>
     <meta name="description" content={descripcion} />
     {pagina.tipo !== '404' && <link rel="canonical" href={url} />}
@@ -61,7 +68,7 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
   <body>
     <a class="saltar" href="#contenido">{t('nav.saltar', locale)}</a>
     <header class="cabecera">
-      <p class="marca"><a href={ruta({ tipo: 'inicio' }, locale)}>{contenido.sitio.name}</a></p>
+      <Marca locale={locale} />
       {/* En teléfonos, el menú y los idiomas se despliegan desde «Menú» (especificación §7.1: cabecera de 56 px). */}
       <details class="menu-movil" data-menu-movil>
         <summary>{t('nav.menu', locale)}</summary>
@@ -70,13 +77,6 @@ const DESCARGA: Record<Locale, string> = { es: 'integro.original', en: 'integro.
       <Busqueda locale={locale} />
       <ControlTema locale={locale} />
     </header>
-    {/* Aviso (especificación §7.8): ícono y título, no solo color. */}
-    {hayBorrador(locale) && (
-      <p class="aviso-borrador" role="note">
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z" /><path d="M12 10v4M12 17h.01" /></svg>
-        <span><strong>{t('aviso.titulo', locale)}</strong> {t('aviso.borrador', locale)}</span>
-      </p>
-    )}
     <div class:list={['lienzo', { 'con-indice': !!indice?.length, 'con-derecha': Astro.slots.has('derecha') }]}>
       <main id="contenido" tabindex="-1">
         <slot />

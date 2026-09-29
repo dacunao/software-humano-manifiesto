@@ -99,36 +99,6 @@ idioma.rotulo:
   pt-BR:
     state: borrador
     text: Idioma
-idioma.restablecer:
-  es:
-    state: borrador
-    text: Olvidar mi elección de idioma
-  en:
-    state: borrador
-    text: Forget my language choice
-  pt-BR:
-    state: borrador
-    text: Esquecer minha escolha de idioma
-idioma.restablecido:
-  es:
-    state: borrador
-    text: Se olvidó tu elección de idioma. La portada volverá a mostrarse en inglés.
-  en:
-    state: borrador
-    text: Your language choice was forgotten. The home page will show in English again.
-  pt-BR:
-    state: borrador
-    text: Sua escolha de idioma foi esquecida. A página inicial voltará a aparecer em inglês.
-aviso.borrador:
-  es:
-    state: borrador
-    text: "Parte de este contenido está en borrador y aún no fue aprobado."
-  en:
-    state: borrador
-    text: "Some of this content is a draft and has not been approved yet."
-  pt-BR:
-    state: borrador
-    text: "Parte deste conteúdo é um rascunho e ainda não foi aprovada."
 contenido.canonico:
   es:
     state: borrador
@@ -609,10 +579,6 @@ tema.sistema:
   es: { state: borrador, text: "Usar el del sistema" }
   en: { state: borrador, text: "Use system setting" }
   pt-BR: { state: borrador, text: "Usar o do sistema" }
-aviso.titulo:
-  es: { state: borrador, text: "Versión preliminar." }
-  en: { state: borrador, text: "Preliminary version." }
-  pt-BR: { state: borrador, text: "Versão preliminar." }
 indice.contenido:
   es: { state: borrador, text: "Contenido" }
   en: { state: borrador, text: "Contents" }

@@ -100,3 +100,39 @@ test.describe('cabecera (especificación §7.1)', () => {
     await expect(page.locator('[data-selector-idioma] ul a').first()).toBeVisible();
   });
 });
+
+test.describe('cabecera, marca e íconos (fase 26)', () => {
+  test('la cabecera mide lo mismo en los tres idiomas, con y sin preferencia guardada (T179)', async ({ page }) => {
+    const alturas: number[] = [];
+    for (const conPreferencia of [false, true])
+      for (const r of ['/principles/p03', '/es/principios/p03', '/pt-br/principios/p03']) {
+        await page.goto(r);
+        if (conPreferencia) { await page.evaluate(() => { try { localStorage.setItem('sh-idioma', 'es'); } catch {} }); await page.reload(); }
+        alturas.push(Math.round(await page.locator('.cabecera').evaluate((e) => e.getBoundingClientRect().height)));
+      }
+    expect(new Set(alturas).size).toBe(1);
+  });
+
+  test('sin aviso de versión preliminar (T177)', async ({ page }) => {
+    await page.goto('/es');
+    await expect(page.getByText(/versión preliminar|preliminary version|versão preliminar/i)).toHaveCount(0);
+  });
+
+  test('marca: ícono y «Manifiesto»; en teléfono solo el ícono, con el mismo nombre accesible (T153)', async ({ page }, info) => {
+    await page.goto('/es/manifiesto');
+    const marca = page.locator('.marca a');
+    await expect(marca).toHaveAccessibleName('Manifiesto');
+    await expect(marca.locator('svg.marca-icono')).toBeVisible();
+    const nombreVisible = await marca.locator('.marca-nombre').evaluate((e) => e.getBoundingClientRect().width > 2);
+    expect(nombreVisible).toBe(info.project.name !== 'movil');
+  });
+
+  test('íconos del sitio declarados y presentes (T160)', async ({ page, request }) => {
+    await page.goto('/');
+    for (const href of ['/favicon.ico', '/favicon.svg', '/apple-touch-icon.png']) {
+      await expect(page.locator(`link[href="${href}"]`)).toHaveCount(1);
+      expect((await request.get(href)).ok()).toBe(true);
+    }
+    await expect(page.locator('meta[name="theme-color"]')).toHaveCount(2);
+  });
+});
