@@ -7,9 +7,15 @@ title:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
   en:
-    state: pendiente
+    state: aprobado
+    text: About the Manifesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: pendiente
+    state: aprobado
+    text: Sobre o Manifesto
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 description:
   es:
     state: aprobado
@@ -17,9 +23,15 @@ description:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
   en:
-    state: pendiente
+    state: aprobado
+    text: Origins, purpose, and influences of the Manifesto for human software development with artificial intelligence.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
   pt-BR:
-    state: pendiente
+    state: aprobado
+    text: Origem, propósito e influências do Manifesto para o desenvolvimento de software humano com inteligência artificial.
+    approvedBy: Damián Acuña
+    approvedAt: 2026-09-29
 fr:
   - FR-012
 sections:
@@ -31,9 +43,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: Why it exists
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: Por que existe
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -52,9 +70,25 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: |-
+                Building software has become faster. Artificial intelligence can turn instructions into screens, automations, and code with unprecedented ease. But that abundance does not guarantee better products: it can also turn a weak decision into a perfectly finished feature.
+
+                I wrote this manifesto in response to that change. Its central question is not only whether something can be built, but whether it deserves to exist, what progress it enables, and what burden it adds to the life of the person using it.
+
+                That is why its unit of measure is not the number of features delivered. It is the progress a person can achieve with clarity, trust, and control.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: |-
+                Desenvolver software ficou mais rápido. A inteligência artificial permite transformar instruções em telas, automações e código com uma facilidade sem precedentes. Mas essa abundância não garante produtos melhores: também pode transformar uma decisão fraca em uma funcionalidade perfeitamente concluída.
+
+                Escrevi este manifesto diante dessa mudança. Sua pergunta central não é apenas se algo pode ser construído, mas se merece existir, que progresso possibilita e que carga introduz na vida de quem o usa.
+
+                Por isso, sua unidade de medida não é a quantidade de funcionalidades entregues. É o progresso que uma pessoa pode alcançar com clareza, confiança e controle.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: entender
     title:
       es:
@@ -63,9 +97,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: A way of understanding software
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: Uma forma de entender o software
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -84,9 +124,25 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: |-
+                People do not come to a product to use features. They come because they want to understand, decide, create, learn, communicate, solve, or move forward. That progress is the real product.
+
+                From this perspective, experience is part of function. A solution remains incomplete if it achieves the technical outcome but forces the person to decipher the interface, remember unnecessary conventions, or act without understanding what will happen next.
+
+                The manifesto does not reject the complexity of problems. It holds that the complexity of building a solution must not automatically be transferred to the person using it. Technology—and artificial intelligence in particular—must absorb complexity, not multiply it. It may propose, explain, and automate, but it remains subordinate to the person's intent.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: |-
+                As pessoas não chegam a um produto para usar funcionalidades. Chegam porque querem compreender, decidir, criar, aprender, comunicar-se, resolver ou avançar. Esse progresso é o verdadeiro produto.
+
+                Nessa perspectiva, a experiência faz parte da função. Uma solução continua incompleta se alcança o resultado técnico, mas obriga a pessoa a decifrar a interface, lembrar convenções desnecessárias ou agir sem compreender o que acontecerá depois.
+
+                O manifesto não rejeita a complexidade dos problemas. Sustenta que a complexidade de construir uma solução não deve ser transferida automaticamente para quem a usa. A tecnologia — e, em particular, a inteligência artificial — deve absorver complexidade, não multiplicá-la. Pode propor, explicar e automatizar, mas permanece subordinada à intenção da pessoa.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: influencias
     title:
       es:
@@ -95,9 +151,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: Origins and influences
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: Origem e influências
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: canon
         nodos:
@@ -118,9 +180,21 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: |-
+                From Craft, it draws on the union of form and function; the effect a tool has on the energy and capacity of the person using it; adaptable complexity, which appears when needed; and a *human first* approach, as opposed to systems that force people to adapt to their structure.
+
+                From Jobs to Be Done, it retains progress as the higher-level reference. From Job Stories, it adopts a concrete way to bring that progress into design through circumstance, motivation, and the desired outcome. Job Stories are a useful reference, not a mandatory structure: the framework can respect product definitions expressed in other ways without distorting them or reducing their scope.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: |-
+                Da Craft, incorpora a união entre forma e função; o efeito que uma ferramenta produz na energia e na capacidade de quem a usa; a complexidade adaptável, que aparece quando necessária; e uma abordagem *human first*, em oposição a sistemas que obrigam as pessoas a se adaptar à sua estrutura.
+
+                De Jobs to Be Done, conserva o progresso como referência de nível superior. De Job Stories, adota uma forma concreta de levar esse progresso ao design por meio da circunstância, da motivação e do resultado buscado. As Job Stories são uma referência útil, não uma estrutura obrigatória: o marco pode respeitar definições de produto expressas de outras formas sem distorcê-las nem reduzir seu escopo.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: sintesis
     title:
       es:
@@ -129,9 +203,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: A synthesis of its own
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: Uma síntese própria
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -150,9 +230,25 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: |-
+                What I sought was not to bring these influences together, but to turn them into a verifiable decision system.
+
+                Its ten principles connect human progress with experience, attention, trust, continuity, and control. The product foundation establishes what must be built and why. The doctrine for artificial intelligence distinguishes what may be generated from what requires certainty. Acceptance tests require evidence that the person was able to move forward, not only correct software or a finished interface.
+
+                Thus, the manifesto brings a humanistic perspective together with a concrete practice: understand before building, justify every capability, and verify the progress it produces.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: |-
+                O que busquei não foi reunir essas influências, mas transformá-las em um sistema de decisão verificável.
+
+                Seus dez princípios conectam o progresso humano à experiência, à atenção, à confiança, à continuidade e ao controle. O fundamento de produto estabelece o que deve ser construído e por quê. A doutrina para a inteligência artificial distingue aquilo que admite geração daquilo que exige certeza. Os testes de aceitação exigem evidência de que a pessoa conseguiu avançar, não apenas software correto ou uma interface concluída.
+
+                Assim, o manifesto une uma perspectiva humanista a uma prática concreta: compreender antes de construir, justificar cada capacidade e verificar o progresso que produz.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: no-prescribe
     title:
       es:
@@ -161,9 +257,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: What the manifesto does not prescribe
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: O que o manifesto não prescreve
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -177,9 +279,15 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: The framework does not impose a visual style, a technology, a single PRD structure, a delivery strategy, or an engineering framework. It defines principles and boundaries that may be translated into different methods and tools without turning the system's internal structure into additional work for the person.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: O marco não impõe um estilo visual, uma tecnologia, uma estrutura única de PRD, uma estratégia de entrega nem um framework de engenharia. Define princípios e limites que podem ser traduzidos em diferentes métodos e ferramentas sem transformar a estrutura interna do sistema em trabalho adicional para a pessoa.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
       - kind: canon
         nodos:
           - influencias-y-notas-13
@@ -195,9 +303,15 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: "[Read the Manifesto](/manifesto) · [Explore the ten principles](/principles)"
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: "[Ler o Manifesto](/pt-br/manifesto) · [Explorar os dez princípios](/pt-br/principios)"
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: fuentes
     title:
       es:
@@ -206,9 +320,15 @@ sections:
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
       en:
-        state: pendiente
+        state: aprobado
+        text: Documented sources and influences
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
       pt-BR:
-        state: pendiente
+        state: aprobado
+        text: Fontes e influências documentadas
+        approvedBy: Damián Acuña
+        approvedAt: 2026-09-29
     blocks:
       - kind: entrada
         entrada:
@@ -226,9 +346,23 @@ sections:
               approvedBy: Damián Acuña
               approvedAt: 2026-09-29
             en:
-              state: pendiente
+              state: aprobado
+              text: |-
+                - [About Craft](https://www.craft.do/es/about), Craft.
+                - [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3), Balint Orosz, November 28, 2024.
+                - [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours), Balint Orosz, November 27, 2025.
+                - [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), Alan Klement, published by Intercom on December 23, 2013.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
             pt-BR:
-              state: pendiente
+              state: aprobado
+              text: |-
+                - [Sobre a Craft](https://www.craft.do/es/about), Craft.
+                - [Introducing Craft 3](https://www.craft.do/blog/welcome-to-craft3), Balint Orosz, 28 de novembro de 2024.
+                - [Your content is yours and that is more empowering than ever](https://www.craft.do/blog/your-content-is-yours), Balint Orosz, 27 de novembro de 2025.
+                - [Designing Features Using Job Stories](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/), Alan Klement, publicado pela Intercom em 23 de dezembro de 2013.
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-29
   - id: autoria
     title:
       es:
@@ -467,9 +601,15 @@ hero:
       approvedBy: Damián Acuña
       approvedAt: 2026-09-29
     en:
-      state: pendiente
+      state: aprobado
+      text: A doctrine for deciding what is worth building.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     pt-BR:
-      state: pendiente
+      state: aprobado
+      text: Uma doutrina para decidir o que merece ser construído.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
   text:
     es:
       state: aprobado
@@ -477,6 +617,12 @@ hero:
       approvedBy: Damián Acuña
       approvedAt: 2026-09-29
     en:
-      state: pendiente
+      state: aprobado
+      text: The Manifesto for human software development with artificial intelligence proposes thinking about and evaluating products based on people's progress, preserving their clarity, trust, and control.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29
     pt-BR:
-      state: pendiente
+      state: aprobado
+      text: O Manifesto para o desenvolvimento de software humano com inteligência artificial propõe pensar e avaliar os produtos a partir do progresso das pessoas, preservando sua clareza, confiança e controle.
+      approvedBy: Damián Acuña
+      approvedAt: 2026-09-29

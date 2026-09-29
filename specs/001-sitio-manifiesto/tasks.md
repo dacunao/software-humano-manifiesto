@@ -594,4 +594,4 @@ Se conservan `FR-012` (procedencia visible), PRD §18.4 (sección sobre Software
   El menú conserva «Acerca de».
 - [X] T192 STOP · Damián aprueba el español de Acerca de
 - [X] T193 Implementar la página: permitir en `src/views/Superficie.astro` un título de página distinto del título visible (antetítulo, título y bajada), actualizar `src/content/superficies/acerca.yaml` y las pruebas que dependen de sus secciones; verificar `RV-13` (citas con enlace, sin duplicar) y `FR-012`
-- [ ] T194 Traducir a `en` (estadounidense) y `pt-BR` con el mismo flujo del copy: OpenAI traduce y Claude revisa en las capas 1 a 3; Damián aprueba
+- [X] T194 Traducir a `en` (estadounidense) y `pt-BR` con el mismo flujo del copy: OpenAI traduce y Claude revisa en las capas 1 a 3; Damián aprueba

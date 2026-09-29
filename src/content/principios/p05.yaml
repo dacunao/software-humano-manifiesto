@@ -88,7 +88,7 @@ entries:
         approvedAt: 2026-09-29
       pt-BR:
         state: aprobado
-        text: Uma navegação que nomeia cada destino pelo que contém (“Manifiesto” e “Princípios”) permite escolher sem ter percorrido nada antes.
+        text: Uma navegação que nomeia cada destino pelo que contém (“Manifesto” e “Princípios”) permite escolher sem ter percorrido nada antes.
         approvedBy: Damián Acuña
         approvedAt: 2026-09-29
   contraejemplo:

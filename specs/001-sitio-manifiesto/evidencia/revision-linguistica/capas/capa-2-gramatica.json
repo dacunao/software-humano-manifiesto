@@ -233,18 +233,6 @@
   ]
  },
  {
-  "clave": "canon::principio-2-03",
-  "nivel": 1,
-  "idioma": "pt",
-  "regla": "VERB_COMMA_CONJUNCTION",
-  "categoria": "PUNCTUATION",
-  "mensaje": "Esta conjunção deve ser separada por vírgulas e só deve ser utilizada no início duma frase para efeitos de estilo.",
-  "fragmento": "Se funciona mas desgasta, ainda não funciona bem.",
-  "sugerencias": [
-   "funciona, mas"
-  ]
- },
- {
   "clave": "canon::principio-4-09",
   "nivel": 1,
   "idioma": "pt",
@@ -955,7 +943,41 @@
   ]
  },
  {
-  "clave": "superficies/acerca.yaml::sections/3/blocks/0/entrada/text",
+  "clave": "superficies/acerca.yaml::sections/1/blocks/0/entrada/text",
+  "nivel": 2,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "...icial — deve absorver complexidade, não multiplicá-la. Pode propor, explicar e automatizar, m...",
+  "sugerencias": [
+   "a multiplicar"
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/2/blocks/1/entrada/text",
+  "nivel": 3,
+  "idioma": "en",
+  "regla": "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
+  "categoria": "REPETITIONS_STYLE",
+  "mensaje": "Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym.",
+  "fragmento": "...progress as the higher-level reference. From Job Stories, it adopts a concrete way t...",
+  "sugerencias": []
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/2/blocks/1/entrada/text",
+  "nivel": 3,
+  "idioma": "pt",
+  "regla": "COLOCACAO_PRONOMINAL_COM_ATRATOR_SIMPLES",
+  "categoria": "GRAMMAR",
+  "mensaje": "Deve-se usar a próclise quando o verbo for precedido imediatamente por palavras de negação e determinados pronomes, conjunções e advérbios.",
+  "fragmento": "... produto expressas de outras formas sem distorcê-las nem reduzir seu escopo.",
+  "sugerencias": [
+   "as distorcer"
+  ]
+ },
+ {
+  "clave": "superficies/acerca.yaml::sections/7/blocks/0/entrada/text",
   "nivel": 2,
   "idioma": "pt",
   "regla": "GENERAL_GENDER_AGREEMENT_ERRORS",
@@ -1011,7 +1033,7 @@
   "regla": "PORTUGUESE_WORD_REPEAT_BEGINNING_RULE",
   "categoria": "STYLE",
   "mensaje": "Três frases seguidas começam com a mesma palavra. Considere reformular a frase ou use um dicionário para encontrar um sinônimo.",
-  "fragmento": "...s barreiras que o manifesto nomeia. - **O SpecKit nativo** conserva seu comportam...",
+  "fragmento": "...de controle que o manifesto nomeia. - **O SpecKit nativo** conserva seu comportam...",
   "sugerencias": []
  },
  {
