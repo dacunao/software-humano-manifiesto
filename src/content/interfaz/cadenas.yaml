@@ -587,3 +587,7 @@ nav.menu:
   es: { state: borrador, text: "Menú" }
   en: { state: borrador, text: "Menu" }
   pt-BR: { state: borrador, text: "Menu" }
+social.alt:
+  es: { state: borrador, text: "Manifiesto, de Software Humano: «{frase}»" }
+  en: { state: borrador, text: "Manifiesto, by Software Humano: “{frase}”" }
+  pt-BR: { state: borrador, text: "Manifiesto, da Software Humano: “{frase}”" }
