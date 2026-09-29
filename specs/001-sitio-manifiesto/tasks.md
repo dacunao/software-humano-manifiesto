@@ -572,3 +572,26 @@ Fuente: decisión de Damián Acuña (2026-09-29), RQ-19; `AC-13`, PRD §19.4 y �
 - [X] T188 STOP · Damián decide qué correcciones se aplican
 - [X] T189 Aplicar las correcciones aprobadas: un nodo del núcleo corregido vuelve a `borrador` hasta su nueva aprobación. Volver a ejecutar las capas 1 y 2 sobre lo corregido y actualizar la evidencia per RQ-19, `AC-13`
 - [X] T190 Convertir el inglés a ortografía estadounidense (decisión de Damián Acuña, 2026-09-29) en los 341 nodos del núcleo y en el copy, con una lista cerrada de equivalencias (`-ise` → `-ize`, `-our` → `-or`, `-re` → `-er`, `judgement` → `judgment`, `licence` → `license` y las demás que detecte LanguageTool `en-US`). Solo cambia la ortografía, no el sentido; aun así, los nodos aprobados del núcleo vuelven a `borrador` hasta que Damián los apruebe de nuevo. Después, volver a ejecutar las capas 1 y 2 per RQ-19, `AC-13`
+
+---
+
+## Phase 29: Página Acerca del Manifiesto
+
+Fuente: copy de Damián Acuña `Copy_Pagina_Acerca_del_Manifiesto_ES_v1.1.md` (2026-09-29) y sus decisiones del mismo día:
+- la nota de origen, en primera persona equilibrada;
+- licencias, autoría y edición al final;
+- el núcleo, citado con enlace y nunca duplicado;
+- la aclaración sobre Craft, textual.
+
+Se conservan `FR-012` (procedencia visible), PRD §18.4 (sección sobre Software Humano con enlace a la agencia) y la tabla de licencias de PRD §29.
+
+- [ ] T191 Redactar el español de Acerca de según el copy v1.1:
+  - antetítulo «Acerca del Manifiesto», título y bajada; la frase destacada como cita de `portada-04` con enlace a su lugar;
+  - «Por qué existe» como nota de origen en primera persona equilibrada;
+  - «Origen e influencias» con la cita textual de `influencias-y-notas-03`;
+  - el cierre como cita de la Declaración final, con enlace, y las acciones «Leer el Manifiesto» y «Explorar los diez principios»;
+  - al final, en un bloque discreto: fuentes, autoría y edición, procedencia, independencia y licencias.
+  El menú conserva «Acerca de».
+- [ ] T192 STOP · Damián aprueba el español de Acerca de
+- [ ] T193 Implementar la página: permitir en `src/views/Superficie.astro` un título de página distinto del título visible (antetítulo, título y bajada), actualizar `src/content/superficies/acerca.yaml` y las pruebas que dependen de sus secciones; verificar `RV-13` (citas con enlace, sin duplicar) y `FR-012`
+- [ ] T194 Traducir a `en` (estadounidense) y `pt-BR` con el mismo flujo del copy: OpenAI traduce y Claude revisa en las capas 1 a 3; Damián aprueba

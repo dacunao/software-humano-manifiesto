@@ -203,7 +203,7 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 | 1 · Nombre y dominio | Sitio: «Manifiesto», valor único en los tres idiomas · `manifiesto.softwarehumano.com` (resolución del 2026-09-28, PRD v1.3). «Software Humano» es la marca de la agencia, en `softwarehumano.com` |
 | 2 · Autoría visible | Autor: Damián Acuña, persona. Editor: Software Humano, organización (PRD v1.3 §18.4) |
 | 3 · Identidad visual | **Sistema visual compartido de Software Humano v1.0**, definido por la autoridad (PRD v1.5 §21.2). Reemplaza los tokens de la síntesis A + B; se conservan la arquitectura editorial, el índice lateral, la profundidad progresiva y la calma de los márgenes |
-| 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona |
+| 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona. *2026-09-29*: la nota de origen es la sección «Por qué existe» de Acerca de, adaptada del copy de Damián (`Copy_Pagina_Acerca_del_Manifiesto_ES_v1.1`) con una primera persona equilibrada, sin énfasis en el autor |
 | 5 · Licencia | Texto del núcleo y contenido editorial: CC BY 4.0 · código y método: MIT · nombres «Software Humano» y «Manifiesto» y logotipo excluidos de ambas · tabla por tipo de material en Acerca de (PRD v1.3 §29) |
 | 6 · Acción pública sin preset publicado | **Solo estado, sin captura.** El estado de la adaptación se modela como dato; se declara disponibilidad futura, sin botón, formulario ni enlace sin destino |
 | 7 · Contacto | Alias de correo como `mailto:`, más Issues del repositorio para lo técnico. La dirección concreta no está definida |
