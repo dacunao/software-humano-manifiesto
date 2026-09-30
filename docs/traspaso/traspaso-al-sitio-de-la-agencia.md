@@ -44,7 +44,7 @@ Decididas por Damián Acuña (2026-09-30). Van al fundamento de producto o a «D
 |---|---|---|
 | A1 | **La marca es la especificación visual compartida v1.0.** El documento declara en su cabecera que su ámbito son los dos sitios y que es fuente de verdad para el agente que implementa ambos. **El `AGENTS.md` del proyecto nuevo debe nombrarla entre sus fuentes rectoras:** si no, el agente la lee como contexto y puede apartarse sin incumplir nada. Son obligatorias tal como están escritas:<br>• sus ocho reglas no negociables (§2)<br>• la sección del sitio comercial (§9)<br>• el flywheel del ciclo (§7.9)<br>• Prisma en índigo y Catalizador en coral<br>• el único llamado principal, «Leer el Manifiesto», en índigo | `REPO/docs/design/Software_Humano_Especificacion_Visual_v1.0.md` (SHA-256 `721a409e8ef6fc60226d46729152274e4ad8e60ca6a914b5888ec7af684a0cad`), autoridad Damián Acuña |
 | A2 | **Relación entre los dos sitios:**<br>• la agencia cita el núcleo del manifiesto en frases breves con enlace a su pasaje en `manifiesto.softwarehumano.com`<br>• nunca lo duplica | `REPO/AGENTS.md`, «Relación con Software Humano» |
-| A3 | **Nombres y derechos:**<br>• «Software Humano» no se traduce; en portugués es femenino: «a Software Humano»<br>• el nombre, el logotipo y **el contenido del sitio de la agencia son de autor, con todos los derechos reservados**: no se licencian como el Manifiesto, cuyo contenido es CC BY 4.0 | Decisión de Damián Acuña (2026-09-30); PRD del Manifiesto v1.6 §29.5 para la exclusión de los nombres y el logotipo |
+| A3 | **Nombres y derechos:**<br>• «Software Humano» no se traduce; en portugués es femenino: «a Software Humano»<br>• el nombre, el logotipo y **el contenido del sitio de la agencia son de autor, con todos los derechos reservados**: no se licencian como el Manifiesto, cuyo contenido es CC BY 4.0<br>• **el código del sitio de la agencia es privado, para siempre**: su repositorio no se publica y no lleva licencia abierta (decisión de Damián Acuña, 2026-09-30) | Decisión de Damián Acuña (2026-09-30); PRD del Manifiesto v1.6 §29.5 para la exclusión de los nombres y el logotipo |
 | A4 | **Verificación en cuatro capas, obligatoria siempre:** ningún idioma se publica sin pasarla, para **todo** el contenido del sitio y no solo para lo que cite el manifiesto. Detalles en B3 | `REPO/specs/001-sitio-manifiesto/research.md` (RQ-19) |
 | A5 | **Publicación en Cloudflare con el mismo flujo que el Manifiesto:**<br>• Workers con archivos estáticos, por subida directa, en la misma cuenta y la zona `softwarehumano.com`, que ya existen<br>• construir, pasar las pruebas y la comprobación previa<br>• subir una vista previa<br>• Damián la revisa y acepta<br>• recién entonces se publica, con vuelta atrás disponible | `REPO/specs/001-sitio-manifiesto/evidencia/tecnica.md`; `REPO/wrangler.jsonc` |
 
@@ -54,7 +54,6 @@ Decididas por Damián Acuña (2026-09-30). Van al fundamento de producto o a «D
 
 **Decisiones abiertas del proyecto nuevo:**
 - **Nombrar «Software Humano» en la cabecera:** se decide al definir la de `softwarehumano.com`, para los dos sitios a la vez.
-- **La licencia del código** del sitio de la agencia, si el repositorio llega a ser público. A3 cubre el nombre, el logotipo y el contenido; no el código.
 - **Enviar correo como el dominio:** requiere un servicio de correo propio (ver B4).
 
 ---
