@@ -84,3 +84,7 @@ Las divisiones muestran todo su texto; la profundidad está en las páginas de p
 ## Actualización del 2026-09-29 (T197)
 
 Con el contenido aprobado en los tres idiomas y la nueva Acerca del Manifiesto: construcción con 69 páginas y `RV-01`–`RV-14` en verde; índice de búsqueda con 63 páginas; 64 pruebas unitarias y 759 de extremo a extremo aprobadas, incluidas la de neutralidad del español (T098) y la de Acerca de (T198). Lighthouse sobre las mismas 14 páginas, todos los presupuestos cumplidos: LCP entre 1.65 s y 1.66 s, CLS máximo 0.083, JavaScript máximo 6.7 KB y puntaje de rendimiento entre 97 y 99.
+
+## Actualización del 2026-09-29 (T224)
+
+Después de la navegación estándar (fase 31), el recorrido contra los principios (fase 32) y el cambio de la ruta inglesa a `/manifesto/worked-example` (T220): construcción con 69 páginas y `RV-01`–`RV-14` en verde; índice de búsqueda con 63 páginas; 65 pruebas unitarias y 797 de extremo a extremo aprobadas (959 omitidas a propósito por proyecto: teléfono, sin JavaScript o movimiento reducido). Lighthouse sobre las mismas 14 páginas, tres corridas cada una, con todos los presupuestos cumplidos: LCP entre 1.50 s y 1.66 s, CLS máximo 0.084, JavaScript máximo 7.2 KB y rendimiento entre 97 y 100. Las páginas `en` y `pt-BR` ya no mezclan español: el contenido está aprobado en los tres idiomas.

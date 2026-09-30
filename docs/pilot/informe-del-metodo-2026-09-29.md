@@ -93,3 +93,14 @@ Hechos:
 - Tiempos, horas y costo por comando: no los medí.
 - Cuántas veces se invocó `implement` como comando en las sesiones compactadas: no consta en los artefactos.
 - El efecto del método en las personas que usan el sitio: la ronda final con personas (T103–T104) no se ha hecho.
+
+## Posdata · el mismo día, después del informe
+
+La suposición del §5 se comprobó. Primero se propagaron a mano las decisiones del día a `spec.md`, `plan.md` y `research.md`. Después `analyze` encontró cinco desajustes (K1–K5), sin ninguno crítico ni alto, y `converge` los llevó a la fase 33 (T220–T224):
+- RQ-06 no avisaba que RQ-20 lo reemplaza;
+- un parámetro sin uso;
+- el mapa de cobertura no tenía filas para `FR-023` ni para las fases 29, 31 y 32;
+- las cifras de la evidencia técnica eran viejas;
+- la ruta inglesa `applied-example`, que Damián cambió a `worked-example`.
+
+Ninguno afectaba a la experiencia.

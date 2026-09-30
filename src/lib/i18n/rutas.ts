@@ -18,7 +18,7 @@ const SLUGS: Record<Exclude<TipoPagina, 'principio'>, Record<Locale, string>> = 
   fundamento: { en: 'manifesto/product-foundation', es: 'manifiesto/fundamento-de-producto', 'pt-BR': 'manifesto/fundamento-de-produto' },
   construir: { en: 'manifesto/building-with-ai', es: 'manifiesto/construir-con-ia', 'pt-BR': 'manifesto/construir-com-ia' },
   verificar: { en: 'manifesto/verify', es: 'manifiesto/verificar', 'pt-BR': 'manifesto/verificar' },
-  ejemplo: { en: 'manifesto/applied-example', es: 'manifiesto/ejemplo-aplicado', 'pt-BR': 'manifesto/exemplo-aplicado' },
+  ejemplo: { en: 'manifesto/worked-example', es: 'manifiesto/ejemplo-aplicado', 'pt-BR': 'manifesto/exemplo-aplicado' },
   gobernanza: { en: 'manifesto/governance', es: 'manifiesto/gobernanza', 'pt-BR': 'manifesto/governanca' },
   bolsillo: { en: 'manifesto/pocket-guide', es: 'manifiesto/guia-de-bolsillo', 'pt-BR': 'manifesto/guia-de-bolso' },
   speckit: { en: 'speckit', es: 'speckit', 'pt-BR': 'speckit' },

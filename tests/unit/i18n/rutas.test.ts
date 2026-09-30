@@ -12,7 +12,7 @@ describe('contrato de rutas', () => {
       [{ tipo: 'fundamento' }, '/manifesto/product-foundation', '/es/manifiesto/fundamento-de-producto', '/pt-br/manifesto/fundamento-de-produto'],
       [{ tipo: 'construir' }, '/manifesto/building-with-ai', '/es/manifiesto/construir-con-ia', '/pt-br/manifesto/construir-com-ia'],
       [{ tipo: 'verificar' }, '/manifesto/verify', '/es/manifiesto/verificar', '/pt-br/manifesto/verificar'],
-      [{ tipo: 'ejemplo' }, '/manifesto/applied-example', '/es/manifiesto/ejemplo-aplicado', '/pt-br/manifesto/exemplo-aplicado'],
+      [{ tipo: 'ejemplo' }, '/manifesto/worked-example', '/es/manifiesto/ejemplo-aplicado', '/pt-br/manifesto/exemplo-aplicado'],
       [{ tipo: 'gobernanza' }, '/manifesto/governance', '/es/manifiesto/gobernanza', '/pt-br/manifesto/governanca'],
       [{ tipo: 'bolsillo' }, '/manifesto/pocket-guide', '/es/manifiesto/guia-de-bolsillo', '/pt-br/manifesto/guia-de-bolso'],
       [{ tipo: 'speckit' }, '/speckit', '/es/speckit', '/pt-br/speckit'],

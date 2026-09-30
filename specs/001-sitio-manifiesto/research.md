@@ -130,6 +130,8 @@ Decisiones técnicas reversibles tomadas al implementar la fase 2, dentro de PRD
 
 ## RQ-06 enmendado · tercer script: seguimiento de lectura (2026-09-27, ampliado el 2026-09-28)
 
+> **Reemplazado en parte por RQ-20 (2026-09-29).** Lo que aquí se dice del panel «En esta sección» y del índice lateral que despliega las secciones ya no rige; vale RQ-20.
+
 - **Decision**: el texto íntegro usa tres columnas. A la izquierda, el título y las 24 secciones del núcleo (h1 y h2). En el centro, el texto. A la derecha, «En esta sección»: los h3 y h4 de la sección en pantalla. Un tercer script de cliente (`src/cliente/seguimiento.ts`, menos de 1 KB) muestra el grupo de la sección actual y la marca en el índice izquierdo. Sin JavaScript, el panel derecho no aparece; en pantallas angostas tampoco.
 - **Ampliación (2026-09-28)**: el mismo esquema se aplica a Principios, Aplicación y Verificación, las superficies largas de las rutas Decidir, Construir y Verificar. El panel derecho sale de un componente reutilizable (`src/components/EnEstaSeccion.astro`) y muestra los h3 y h4 canónicos de la sección en pantalla; el índice izquierdo es el índice lateral de cada superficie. Es el mismo script, no uno nuevo.
 - **Rationale**: decisiones de Damián Acuña (2026-09-27 para el texto íntegro; 2026-09-28 para las otras tres superficies). El núcleo tiene 24 h2, 23 h3 (casi siempre un subtítulo único) y 80 h4, que son la navegación fina. Con los h3 y h4 de la sección actual, el panel derecho no repite el izquierdo (`P06`) y el texto sigue siendo una sola página (`FR-003` v1.1: lectura de corrido, búsqueda y una sola dirección).

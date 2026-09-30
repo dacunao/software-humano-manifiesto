@@ -16,7 +16,7 @@ Misma topología en los tres idiomas; los nombres de ruta están localizados. `p
 | 3 · Fundamento de producto | `/manifesto/product-foundation` | `/es/manifiesto/fundamento-de-producto` | `/pt-br/manifesto/fundamento-de-produto` |
 | 4 · Construir con IA | `/manifesto/building-with-ai` | `/es/manifiesto/construir-con-ia` | `/pt-br/manifesto/construir-com-ia` |
 | 5 · Verificar | `/manifesto/verify` | `/es/manifiesto/verificar` | `/pt-br/manifesto/verificar` |
-| 6 · Ejemplo aplicado | `/manifesto/applied-example` | `/es/manifiesto/ejemplo-aplicado` | `/pt-br/manifesto/exemplo-aplicado` |
+| 6 · Ejemplo aplicado | `/manifesto/worked-example` | `/es/manifiesto/ejemplo-aplicado` | `/pt-br/manifesto/exemplo-aplicado` |
 | 7 · Gobernanza | `/manifesto/governance` | `/es/manifiesto/gobernanza` | `/pt-br/manifesto/governanca` |
 | 8 · Guía de bolsillo | `/manifesto/pocket-guide` | `/es/manifiesto/guia-de-bolsillo` | `/pt-br/manifesto/guia-de-bolso` |
 | SpecKit | `/speckit` | `/es/speckit` | `/pt-br/speckit` |

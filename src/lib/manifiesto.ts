@@ -35,10 +35,10 @@ export function tituloDe(p: Pagina, locale: Locale): { texto: string; codigo?: s
 }
 
 /**
- * Grupos del índice lateral para una página del manifiesto. La división actual se despliega con
- * sus secciones; los diez principios se muestran dentro de Principios cuando se está en ellos.
+ * Grupos del índice lateral para una página del manifiesto (RQ-20): las divisiones por ruta de lectura;
+ * los diez principios se muestran dentro de Principios cuando se está en ellos.
  */
-export function indiceManifiesto(actual: Pagina, locale: Locale, propias: ItemIndice[] = []): GrupoIndice[] {
+export function indiceManifiesto(actual: Pagina, locale: Locale): GrupoIndice[] {
   const enPrincipios = actual.tipo === 'principios' || actual.tipo === 'principio';
   return RUTAS_DE_LECTURA.map((r) => ({
     titulo: t(r.clave, locale),
@@ -46,7 +46,6 @@ export function indiceManifiesto(actual: Pagina, locale: Locale, propias: ItemIn
       const titulo = tituloDe({ tipo: d }, locale);
       const item: ItemIndice = { href: ruta({ tipo: d }, locale), texto: titulo.texto, lang: titulo.lang, actual: actual.tipo === d };
       const hijos: ItemIndice[] = [];
-      if (actual.tipo === d) hijos.push(...propias.map((x) => ({ ...x, sub: true })));
       if (d === 'principios' && enPrincipios)
         hijos.push(...PRINCIPIOS.map((pid) => {
           const x = tituloDe({ tipo: 'principio', principio: pid }, locale);

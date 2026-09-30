@@ -430,6 +430,10 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | `FR-021` | `JS-09` | T014 | T019, T017, T022, T023 | T018 | Planificado | Canónico leído, no copiado (decisión 2026-09-27) |
 | PRD §16–§19, §21, §24, §25, §27 | `AC-05`–`AC-08`, `AC-11`, `AC-15` | Fases 2 y 13 | T005–T008, T021, T027–T033, T091, T094–T096, T110 | T088–T090, T092 | Planificado | — |
 | RQ-19 · verificación de traducciones | `AC-13` | Fase 28 | T181–T187, T189 | T181, T182 | Planificado | Español como referencia |
+| `FR-023` (v1.2) · búsqueda | `JS-05`, `JS-08` | RQ-16 | T136, T137, T172–T175, T219 | T142, T176 | Implementado | Pagefind autoalojado (decisión 2026-09-28) |
+| RQ-20 · navegación estándar | PRD §18.2, `P05`, `P06` | Fase 31 | T201–T205 | T204, T205 | Implementado | — |
+| Acerca del Manifiesto | `FR-012`, PRD §18.4, §29 | Fase 29 | T191–T194 | T198 | Implementado | Nota de origen en primera persona (decisión 2026-09-29) |
+| Recorrido contra los principios | `P03`, `P05`–`P09`, `FR-017`, `FR-023` | Fase 32 | T206–T216, T218, T219 | T217 | Implementado | — |
 | Puertas humanas | `AC-01`, `AC-02`, `AC-07`, `AC-13` | Fases 12, 14, 15 y 16 | T086, T093, T095, T100, T102, T104, T105, T111 | — | Pendiente de persona | — |
 
 ### Plan de aceptación
@@ -650,3 +654,15 @@ Fuente: `evidencia/recorrido-con-los-principios-2026-09-29.md` y la decisión de
 - [X] T217 Pruebas de extremo a extremo de T206–T216 y aprobación de Damián de los textos de interfaz nuevos o modificados
 - [X] T218 Con JavaScript, cada sección muestra solo «Copiar enlace»; «Enlace a esta sección», que lleva a la misma sección, queda solo como respaldo sin JavaScript. La revisión del 2026-09-29 comprobó que los 108 enlaces «Enlace a esta sección» se enlazan a sí mismos y que las demás referencias cruzadas están bien per `FR-011`, `P05`, decisión de Damián Acuña del 2026-09-29 (retoma H7)
 - [X] T219 Búsqueda: botón «Limpiar» dentro de la caja, visible cuando hay texto, en lugar del del navegador; flechas ↓ y ↑ para recorrer los resultados desde la caja y Enter para abrir; indicaciones al pie (Esc cerrar · ↑↓ navegar · Enter abrir), solo con puntero fino, no en pantallas táctiles. Textos nuevos en borrador per `FR-023`, `P05`, `P07`, observación de Damián Acuña del 2026-09-29
+
+---
+
+## Phase 33: Convergence
+
+Fuente: `analyze` del 2026-09-29 sobre las fases 29, 31 y 32 (hallazgos K1–K5). K5, decisión de Damián Acuña (2026-09-29): la ruta inglesa cambia ahora, sin redirección, porque el sitio no está publicado.
+
+- [X] T220 Cambiar la ruta inglesa del Ejemplo aplicado de `/manifesto/applied-example` a `/manifesto/worked-example` en `src/lib/i18n/rutas.ts`, `specs/001-sitio-manifiesto/contracts/rutas.md` y `tests/unit/i18n/rutas.test.ts`; la evidencia reemplazada no se toca per `P05`, decisión 2026-09-29 (contradicts)
+- [X] T221 Agregar al mapa de cobertura las filas de `FR-023` (búsqueda), RQ-20 (navegación estándar, fase 31, T201–T205), la página Acerca del Manifiesto (fase 29, T191–T194, T198) y el recorrido contra los principios (fase 32, T206–T219) per `A02`, `O02` (partial)
+- [X] T222 Anotar en «RQ-06 enmendado» de `research.md` que RQ-20 lo reemplaza en lo que se contradigan per RQ-20 (partial)
+- [X] T223 Quitar de `indiceManifiesto` en `src/lib/manifiesto.ts` el parámetro `propias`, que ya no se usa, y su comentario per RQ-20, `CR07` (unrequested)
+- [X] T224 Repetir construcción y pruebas y actualizar las cifras de `specs/001-sitio-manifiesto/evidencia/tecnica.md` per `O08` (partial)
