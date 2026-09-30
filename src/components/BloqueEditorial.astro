@@ -2,7 +2,7 @@
 import { textoDestino } from '../lib/manifiesto';
 import type { Entrada, Locale } from '../lib/contenido/esquemas';
 import { renderMarkdown } from '../lib/canon/render';
-import { rutaCasa, texto, t } from '../lib/sitio';
+import { contenido, rutaCasa, texto, t } from '../lib/sitio';
 
 interface Props {
   entrada: Entrada;
@@ -25,12 +25,18 @@ const clave = ROTULO[entrada.type];
 const tx = texto(entrada.text, locale);
 const origen = entrada.derivedFrom ? rutaCasa(entrada.derivedFrom, locale) : undefined;
 // Solo los identificadores públicos del núcleo se muestran como código; los internos no (P03).
+// T260: en «Autoría», el nombre del autor enlaza a su página, la misma del JSON-LD; el texto aprobado no cambia.
+const { name: autor, url: urlAutor } = contenido.sitio.author;
+const html = (() => {
+  const h = renderMarkdown(tx.texto);
+  return entrada.id === 'acerca-autoria' && urlAutor ? h.replace(autor, `<a href="${urlAutor}" rel="author noopener">${autor}</a>`) : h;
+})();
 const publico = /^(p(0[1-9]|10)|d0[1-6]|f0[1-8]|a0[1-8]|stop0[1-7]|cr0[1-8]|o0[1-9]|v(0[1-9]|1[0-2])|sh-[a-z]+)$/.test(entrada.derivedFrom ?? '');
 ---
 {tx.texto && (
   <div class="bloque-editorial" data-tipo={entrada.type} data-id={entrada.id} lang={tx.lang !== locale ? tx.lang : undefined}>
     {clave && !sinRotulo && <p class="rotulo-contenido">{t(clave, locale)}</p>}
-    <div class="lectura" set:html={renderMarkdown(tx.texto)} />
+    <div class="lectura" set:html={html} />
     {origen && !sinOrigen && entrada.type !== 'surface-text' && (
       <p class="origen"><a href={origen}>{publico ? <>{t('contenido.origen', locale)} <code>{entrada.derivedFrom?.toUpperCase()}</code></> : textoDestino(entrada.derivedFrom!, locale)}</a></p>
     )}

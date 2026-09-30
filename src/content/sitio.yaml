@@ -4,7 +4,7 @@ domain: manifiesto.softwarehumano.com
 author:
   type: Person
   name: Damián Acuña
-  url: null # Pendiente: solo si Damián la aprueba (T107)
+  url: https://www.linkedin.com/in/dacunao/ # Página de autor, dada por Damián Acuña (2026-09-30, T107)
 publisher: # Editor del sitio (PRD v1.3 §18.4)
   type: Organization
   name: Software Humano

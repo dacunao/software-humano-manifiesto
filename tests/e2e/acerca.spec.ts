@@ -39,3 +39,11 @@ test('T259 · Contacto ofrece los Issues del repositorio del sitio', async ({ pa
   await page.goto('/es/acerca');
   await expect(page.locator('#contacto a[href="https://github.com/dacunao/software-humano-manifiesto/issues"]')).toContainText('Errores del sitio');
 });
+
+for (const ruta of ['/about', '/es/acerca', '/pt-br/sobre'])
+  test(`T260 · el nombre del autor enlaza a su página, igual que el JSON-LD · ${ruta}`, async ({ page }) => {
+    await page.goto(ruta);
+    await expect(page.locator('#autoria a[rel~="author"]')).toHaveAttribute('href', 'https://www.linkedin.com/in/dacunao/');
+    const ld = (await page.locator('script[type="application/ld+json"]').allTextContents()).join('');
+    expect(ld).toContain('"url":"https://www.linkedin.com/in/dacunao/"');
+  });
