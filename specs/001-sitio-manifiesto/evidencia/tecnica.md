@@ -113,3 +113,18 @@ bunx wrangler@4.144.0 deployments list
 ```
 
 **Vuelta atrás probada** mientras el proyecto no tenía ruta pública: se desplegó la versión `81fcc623` al 100 % y se volvió a `6e6ea055` con `rollback`; `deployments list` confirma la versión activa. Cada operación tarda menos de un segundo.
+
+## Datos estructurados (T106, 2026-09-30)
+
+Validador de Schema.org (`validator.schema.org`) sobre la vista previa, 12 páginas representativas de los tres idiomas: **0 errores y 0 advertencias** en todas.
+
+| Página | Tipos detectados |
+|---|---|
+| `/`, `/es`, `/pt-br` | `WebSite`, `WebPage` |
+| `/manifesto`, `/es/manifiesto` | `CreativeWork`, `WebPage` |
+| `/es/principios` | `DefinedTermSet`, `WebPage` |
+| `/principles/p06`, `/pt-br/principios/p10` | `DefinedTerm`, `WebPage` |
+| `/speckit`, `/es/speckit` | `SoftwareSourceCode`, `WebPage` |
+| `/es/acerca`, `/es/manifiesto/mapa` | `WebPage` |
+
+La prueba de resultados enriquecidos de Google no pudo rastrear la vista previa («La URL no está disponible para Google»). Se repite sobre el dominio definitivo después de publicar. Ninguno de estos tipos genera un resultado enriquecido en Google; la prueba solo confirmará que Google lee el marcado.
