@@ -2,7 +2,11 @@
  * T231 · Verificación en cuatro capas del README del repositorio (RQ-19), con el español como
  * referencia. Tradujo Claude: la capa 3 y la comparación de la capa 4 las hace un revisor de otra
  * familia (`revisor`). Las salidas de modelo son observaciones por confirmar, no veredictos (V12).
- * Uso: bun run scripts/traduccion/readme.ts
+ * Uso, desde la raíz de este repositorio (Bun lee las claves de `.env.local`):
+ *   bun run scripts/traduccion/readme.ts
+ *   bun run scripts/traduccion/readme.ts --es=<ruta> --en=<ruta> --pt=<ruta> --salida=<archivo.json>
+ * Sin opciones revisa el README de este sitio. Los tres archivos deben tener los mismos bloques, en el
+ * mismo orden (la barra de idioma de la primera línea se omite).
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import type { Texto } from './relevancia';
@@ -26,9 +30,11 @@ function bloques(ruta: string): string[] {
   return out.slice(1);
 }
 
-const es = bloques('.github/README.es.md');
-const en = bloques('.github/README.md');
-const pt = bloques('.github/README.pt-BR.md');
+const opcion = (n: string, porDefecto: string) => process.argv.find((a) => a.startsWith(`--${n}=`))?.slice(n.length + 3) ?? porDefecto;
+const es = bloques(opcion('es', '.github/README.es.md'));
+const en = bloques(opcion('en', '.github/README.md'));
+const pt = bloques(opcion('pt', '.github/README.pt-BR.md'));
+const salida = opcion('salida', `${CAPAS}/readme-cuatro-capas.json`);
 if (en.length !== es.length || pt.length !== es.length) throw new Error(`Bloques desalineados: es ${es.length}, en ${en.length}, pt ${pt.length}`);
 const lista: Texto[] = es.map((x, i) => ({ clave: `readme::${i + 1}`, origen: 'copy', nivel: 1, es: x, en: en[i], pt: pt[i] }));
 
@@ -70,7 +76,8 @@ for (const idioma of ['en', 'pt'] as const) {
   await Bun.sleep(7000);
 }
 
-writeFileSync(`${CAPAS}/readme-cuatro-capas.json`, JSON.stringify(informe, null, 1) + '\n');
+writeFileSync(salida, JSON.stringify(informe, null, 1) + '\n');
+console.log(`Informe en ${salida}`);
 console.log(`${lista.length} segmentos · capa 1: ${(informe['capa1'] as unknown[]).length} · capa 2: ${(informe['capa2'] as unknown[]).length}`);
 for (const k of ['capa3-en', 'capa3-pt', 'capa4-en', 'capa4-pt']) {
   const v = informe[k] as { modelo: string; resultados: unknown[] };
