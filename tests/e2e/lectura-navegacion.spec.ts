@@ -82,3 +82,17 @@ test.describe('lectura · páginas a la izquierda, «En esta página» a la dere
     expect(desbordan).toBe(0);
   });
 });
+
+test('T243 · al final de la página, «En esta página» marca la última sección', async ({ page, javaScriptEnabled }, info) => {
+  test.skip(!javaScriptEnabled || info.project.name !== 'js', 'escritorio con JavaScript');
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('/es/acerca');
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await expect(page.locator('nav.en-esta-pagina a[href="#contacto"]')).toHaveAttribute('aria-current', 'location');
+  await expect(page.locator('nav.en-esta-pagina a[aria-current="location"]')).toHaveCount(1);
+});
+
+test('T242 · el pie separa la fecha y Procedencia con espacios', async ({ page }) => {
+  await page.goto('/es/acerca');
+  await expect(page.locator('footer .procedencia').first()).toContainText(/\d · Procedencia/);
+});

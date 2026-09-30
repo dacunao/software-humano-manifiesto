@@ -710,3 +710,13 @@ Fuente: decisión de Damián Acuña (2026-09-30), registrada en `AGENTS.md`; PRD
 - [X] T238 JSON-LD `SoftwareSourceCode` en la página SpecKit: nombre, repositorio, versión, licencia MIT, autor y editor, desde el mismo dato visible per PRD §25.2, §25.3
 - [X] T239 Revisar el contraejemplo de `P07` «Presentar una adaptación independiente como oficial, publicada o respaldada…», que queda impreciso ahora que la adaptación está publicada; proponer a Damián quitar «publicada» per `P07`, PRD §19.4. *Revisado (2026-09-30)*: no se cambia. El contraejemplo es general (presentar como publicada una adaptación que no lo está) y no describe esta adaptación, así que sigue siendo cierto
 - [X] T240 Pruebas (unitarias de RV-10 y de extremo a extremo de T233–T238), construcción, `check:publish` y aprobación de Damián de los textos en los tres idiomas per `O08`
+
+---
+
+## Phase 38: Revisión del pie y de «En esta página» (2026-09-30)
+
+Fuente: observación de Damián Acuña sobre Acerca de (2026-09-30).
+
+- [X] T241 El botón del pie «Usar el del sistema» no dice qué usa: en español, «Usar el tema del sistema», como ya dicen el inglés y el portugués; queda en `borrador` hasta que Damián lo apruebe per `P05`
+- [X] T242 Falta un espacio antes del «·» que sigue a la fecha («Actualizado el 2026-09-30· Procedencia») en `src/components/Procedencia.astro` per `P08`
+- [X] T243 Al llegar al final de la página, «En esta página» marca la última sección («Contacto»), que nunca alcanza la línea de seguimiento; hoy queda marcada la anterior («Licencias») per `P07`, RQ-20

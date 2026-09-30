@@ -33,6 +33,10 @@ function actualizar(): void {
     if (m.el.getBoundingClientRect().top > limite) break;
     if (m.n === 2) { seccion = m.id; sub = undefined; } else sub = m.id;
   }
+  // Al final de la página, la última sección no llega a la línea de seguimiento: se marca igual (T243).
+  const alFinal = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  const ultima = [...marcas].reverse().find((m) => m.n === 2);
+  if (alFinal && ultima && ultima.el.getBoundingClientRect().top < window.innerHeight) { seccion = ultima.id; sub = undefined; }
   let titulo = '';
   for (const a of enlaces) {
     const id = destino(a);

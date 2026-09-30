@@ -1144,7 +1144,7 @@ tema.oscuro:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
 tema.sistema:
-  es: { state: aprobado, text: "Usar el del sistema", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
+  es: { state: borrador, text: "Usar el tema del sistema" }
   en:
     state: aprobado
     text: Use the system theme
