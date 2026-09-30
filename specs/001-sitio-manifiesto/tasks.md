@@ -666,3 +666,13 @@ Fuente: `analyze` del 2026-09-29 sobre las fases 29, 31 y 32 (hallazgos K1–K5)
 - [X] T222 Anotar en «RQ-06 enmendado» de `research.md` que RQ-20 lo reemplaza en lo que se contradigan per RQ-20 (partial)
 - [X] T223 Quitar de `indiceManifiesto` en `src/lib/manifiesto.ts` el parámetro `propias`, que ya no se usa, y su comentario per RQ-20, `CR07` (unrequested)
 - [X] T224 Repetir construcción y pruebas y actualizar las cifras de `specs/001-sitio-manifiesto/evidencia/tecnica.md` per `O08` (partial)
+
+---
+
+## Phase 34: Huella de construcción
+
+Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD §4, §12 (objetivo 8) y `FR-012`.
+
+- [X] T225 Una línea en el pie de todas las páginas: «Hecho con el Manifiesto (núcleo v{núcleo}) y Software Humano para SpecKit {preset}, sin publicar, sobre SpecKit {speckit}», con la adaptación enlazada a SpecKit. Reemplaza en `src/components/Procedencia.astro` la versión del núcleo y el estado del preset, que ya no se repiten; quedan el Mapa, la fecha y la procedencia. Al publicarse el preset, el texto se actualiza con su enlace (`FR-010`) per `FR-012`, PRD §4
+- [X] T226 La versión de SpecKit se lee de `.specify/init-options.json`, y el build se detiene si no coincide con la fijada en `tools/speckit/specify` per `FR-012`, `D04`
+- [ ] T227 Pruebas: la línea aparece en el pie de las tres versiones con las versiones de los datos, y el pie no repite la versión del núcleo ni el estado del preset; aprobación de Damián de los textos en los tres idiomas per `FR-012`, `O08`

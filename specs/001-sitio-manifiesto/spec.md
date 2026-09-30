@@ -20,6 +20,7 @@
 - **Acerca del Manifiesto.** La página sigue el copy v1.1 de Damián: la nota de origen en primera persona equilibrada; las citas del núcleo con enlace a su casa; al final, las fuentes, la autoría y edición, la procedencia (`FR-012`), la independencia y las licencias.
 - **Navegación estándar en todo el sitio** (RQ-20).
 - **Hallazgos del recorrido contra los principios.** Se aplicaron R1–R11 (`evidencia/recorrido-con-los-principios-2026-09-29.md`).
+- **Huella de construcción en el pie.** Todas las páginas dicen con qué versiones del Manifiesto, de la adaptación y de SpecKit se hizo el sitio (`FR-012`, PRD §4).
 
 **Actualización v1.4** (2026-09-28): logotipo SVG de Software Humano con «Manifiesto» (ícono y nombre en pantallas anchas, solo el ícono en teléfonos); entrada «GitHub» del menú, solo cuando el repositorio de la adaptación sea público; selector de idioma compacto EN · ES · PT con nombres completos accesibles; tema claro u oscuro, que por defecto sigue al sistema (PRD §21.2, §18.2, §21.7, `FR-020`). Las secciones afectadas están marcadas «v1.4».
 
@@ -216,7 +217,7 @@ Identificadores y contenido del PRD §20, sin renumerar. Texto completo en la se
 - **FR-009** Estado verificable de SpecKit: la superficie MUST indicar que la adaptación es independiente, usa presets nativos, no modifica el core, fue validada técnicamente en la versión que corresponda, no está publicada todavía y no es una integración oficial ni un respaldo de GitHub. **Versión publicada**: la realmente instalada y verificada, no la «1.0.0» literal del PRD (decisión de la autoridad de producto, 2026-09-27, registrada en `AGENTS.md`).
 - **FR-010** Acciones según estado de publicación: mientras el preset no esté publicado, MUST NOT mostrarse una instalación pública operativa; se muestran estado, arquitectura y disponibilidad futura. **Sin botón, formulario ni captura de datos** (decisión PRD §29.6).
 - **FR-011** Compartir y citar: el sistema MUST ofrecer URLs estables para principios y secciones; copiar o compartir usa contenido preciso y no atribuye una explicación editorial al texto canónico. *Desde el 2026-09-29*: con JavaScript se ofrece «Copiar enlace»; sin JavaScript, el enlace a la sección es el respaldo (T218).
-- **FR-012** Versiones y procedencia: el visitante MUST poder identificar versión del núcleo, fecha de actualización, procedencia del contenido y estado del preset.
+- **FR-012** Versiones y procedencia: el visitante MUST poder identificar versión del núcleo, fecha de actualización, procedencia del contenido y estado del preset. *Desde el 2026-09-29*: el pie de todas las páginas reúne la versión del núcleo, la de la adaptación con su estado y la de SpecKit en una sola línea sobre cómo se hizo el sitio, leídas de los datos del proyecto.
 - **FR-013** Preferencia de movimiento: el sitio MUST respetar `prefers-reduced-motion` y ofrecer una experiencia completa sin movimiento no esencial.
 - **FR-014** Continuidad de lectura: el regreso a una URL profunda MUST restituir la sección correcta; toda preservación adicional de progreso es local, transparente y prescindible (`P09`).
 - **FR-015** Función esencial sin JavaScript de cliente: texto, navegación primaria, URLs profundas y contenido canónico MUST seguir disponibles si JavaScript falla o está deshabilitado; las mejoras se incorporan por mejora progresiva (`P09`).

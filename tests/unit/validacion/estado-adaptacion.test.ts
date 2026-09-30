@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 import { canon, contenido } from '../../../src/lib/sitio';
-import { validarContenido, versionInstalada } from '../../../src/lib/validacion/reglas';
+import { validarContenido, versionInstalada, versionSpeckit } from '../../../src/lib/validacion/reglas';
 import { canonDePrueba, contenidoValido } from '../../fixtures/contenido';
 
 describe('estado de la adaptación (RV-09, RV-10)', () => {
@@ -17,5 +17,14 @@ describe('estado de la adaptación (RV-09, RV-10)', () => {
     const c = contenidoValido();
     c.estado.sha256 = 'x';
     expect(validarContenido(c, canonDePrueba(), '2.0.0').map((h) => h.regla)).toContain('RV-10');
+  });
+});
+
+describe('versión de SpecKit (T226)', () => {
+  test('la registrada coincide con la fijada en tools/speckit/specify', () => {
+    expect(versionSpeckit()).toMatch(/^\d+\.\d+\.\d+$/);
+  });
+  test('se detiene si no coinciden', () => {
+    expect(() => versionSpeckit('/nonexistent')).toThrow();
   });
 });

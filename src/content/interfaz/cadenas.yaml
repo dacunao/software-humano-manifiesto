@@ -415,22 +415,14 @@ pie.actualizado:
     text: Atualizado em {fecha}
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
-pie.estadoPreset:
-  es:
-    state: aprobado
-    text: "Adaptación SpecKit {version}: no publicada"
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-29
-  en:
-    state: aprobado
-    text: "SpecKit adaptation {version}: unpublished"
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-29
-  pt-BR:
-    state: aprobado
-    text: "Adaptação para o SpecKit {version}: não publicada"
-    approvedBy: Damián Acuña
-    approvedAt: 2026-09-29
+pie.hechoCon:
+  es: { state: borrador, text: "Hecho con el Manifiesto (núcleo v{nucleo}) y la {adaptacion}, aún sin publicar, sobre SpecKit {speckit}." }
+  en: { state: borrador, text: "Built with the Manifiesto (core v{nucleo}) and the {adaptacion}, not yet published, on SpecKit {speckit}." }
+  pt-BR: { state: borrador, text: "Feito com o Manifiesto (núcleo v{nucleo}) e a {adaptacion}, ainda não publicada, sobre o SpecKit {speckit}." }
+pie.adaptacion:
+  es: { state: borrador, text: "adaptación Software Humano {version}" }
+  en: { state: borrador, text: "Software Humano adaptation {version}" }
+  pt-BR: { state: borrador, text: "adaptação da Software Humano {version}" }
 principio.declaracion:
   es:
     state: aprobado

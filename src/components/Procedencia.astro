@@ -2,17 +2,27 @@
 import type { Locale } from '../lib/contenido/esquemas';
 import { ruta } from '../lib/i18n/rutas';
 import { contenido, t } from '../lib/sitio';
+import { versionSpeckit } from '../lib/validacion/reglas';
 
-/** FR-012 · versión del núcleo, fecha de actualización, procedencia y estado del preset. */
+/**
+ * FR-012 · versión del núcleo, fecha de actualización, procedencia y estado del preset. Las versiones
+ * van en una sola línea sobre cómo se hizo el sitio (huella de construcción, decisión del 2026-09-29).
+ */
 interface Props {
   locale: Locale;
   actualizado?: string | undefined;
 }
 const { locale, actualizado } = Astro.props;
+const MARCA = '\u0000';
+const [antes, despues] = t('pie.hechoCon', locale, {
+  nucleo: contenido.sitio.core.version,
+  speckit: versionSpeckit(),
+  adaptacion: MARCA,
+}).split(MARCA);
 ---
+<p class="hecho-con">{antes}<a href={ruta({ tipo: 'speckit' }, locale)}>{t('pie.adaptacion', locale, { version: contenido.estado.version })}</a>{despues}</p>
 <p class="procedencia">
-  <a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.mapa', locale)} · {t('nav.version', locale, { version: contenido.sitio.core.version })}</a>
-  · <a href={ruta({ tipo: 'speckit' }, locale)}>{t('pie.estadoPreset', locale, { version: contenido.estado.version })}</a>
+  <a href={ruta({ tipo: 'mapa' }, locale)}>{t('nav.mapa', locale)}</a>
   {actualizado && <> · {t('pie.actualizado', locale, { fecha: actualizado })}</>}
   · <a href={`${ruta({ tipo: 'acerca' }, locale)}#procedencia`}>{t('pie.procedencia', locale)}</a>
 </p>

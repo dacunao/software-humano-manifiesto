@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
 import { leerCanon } from '../lib/canon/lector';
 import { cargarContenido } from '../lib/contenido/cargar';
-import { formatear, validarContenido, versionInstalada } from '../lib/validacion/reglas';
+import { formatear, validarContenido, versionInstalada, versionSpeckit } from '../lib/validacion/reglas';
 import { validarSalida } from '../lib/validacion/salida';
 import { informeVisibilidad } from '../lib/validacion/visibilidad';
 
@@ -14,6 +14,7 @@ export default function validacion(): AstroIntegration {
     hooks: {
       'astro:build:start': ({ logger }) => {
         const canon = leerCanon(); // RV-01 lanza si la huella no coincide
+        versionSpeckit(); // T226 lanza si la versión registrada no es la fijada
         const hallazgos = validarContenido(cargarContenido(), canon, versionInstalada());
         if (hallazgos.length) throw new Error(`Contenido inválido:\n${hallazgos.map(formatear).join('\n')}`);
         logger.info(`RV-01–RV-10, RV-13 y RV-14: sin hallazgos (${canon.nodos.length} nodos canónicos)`);

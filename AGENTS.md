@@ -219,6 +219,8 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 - la columna derecha, «En esta página», está siempre visible y muestra todas las secciones de la página con sus subtítulos, y marca dónde se está;
 - el menú «Manifiesto» abre el Mapa del manifiesto, la primera página del recorrido.
 
+**Huella de construcción en el pie** (decisión de la autoridad de producto, 2026-09-29; PRD §4, §12 objetivo 8, `FR-012`): todas las páginas dicen en el pie con qué se hizo el sitio: el Manifiesto (versión del núcleo), la adaptación Software Humano para SpecKit (versión y estado) y SpecKit (versión). Las versiones se leen de los datos del proyecto, no se escriben a mano. Es un dato, sin sello ni llamado a la acción. Reemplaza en el pie las menciones sueltas de la versión del núcleo y del estado del preset, para no repetirlas.
+
 **Búsqueda** (decisión de la autoridad de producto, 2026-09-28; RQ-16 enmendado): motor Pagefind autoalojado, con el índice generado desde nuestro contenido y la interfaz propia. Damián aprueba agregar `'wasm-unsafe-eval'` a la política de seguridad.
 
 **Cabecera sin avisos ni restablecimiento** (decisiones de la autoridad de producto, 2026-09-28): se quita el aviso «Versión preliminar», porque la comprobación previa ya impide publicar borradores y no hay visitantes a quienes advertir; se elimina «Olvidar mi elección de idioma» (PRD v1.6).

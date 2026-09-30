@@ -26,6 +26,17 @@ const TIPO_ESPERADO: Record<(typeof CLAVES_PRINCIPIO)[number], TipoEntrada> = {
 };
 const EXIGEN_ORIGEN: readonly TipoEntrada[] = ['explanation', 'example', 'counterexample', 'inference'];
 
+/**
+ * Versión de SpecKit con que se construye el proyecto (T226): la de `.specify/init-options.json`, que
+ * debe coincidir con la fijada en `tools/speckit/specify`; si no, la construcción se detiene.
+ */
+export function versionSpeckit(raiz = process.cwd()): string {
+  const v = (JSON.parse(readFileSync(resolve(raiz, '.specify/init-options.json'), 'utf8')) as { speckit_version?: string }).speckit_version;
+  const fijada = readFileSync(resolve(raiz, 'tools/speckit/specify'), 'utf8').match(/SPECKIT_REF:-v([\d.]+)/)?.[1];
+  if (!v || v !== fijada) throw new Error(`RV-09 · .specify/init-options.json · SpecKit ${v ?? '¿?'}, fijado en tools/speckit/specify ${fijada ?? '¿?'}`);
+  return v;
+}
+
 /** Versión del preset `software-humano` instalado (RQ-09). */
 export function versionInstalada(raiz = process.cwd()): string {
   const registro = JSON.parse(readFileSync(resolve(raiz, '.specify/presets/.registry'), 'utf8')) as {
