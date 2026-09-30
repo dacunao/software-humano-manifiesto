@@ -52,7 +52,7 @@ export function contenidoValido(): Contenido {
       author: { type: 'Person', name: 'Damián Acuña', url: null },
       publisher: { type: 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com', enLinea: false },
       licenses: { content: 'CC BY 4.0', code: 'MIT' },
-      contact: { email: null, issues: null }, core: { version: '2.1', date: '2026-09' },
+      contact: { email: null, issues: null, issuesSitio: null }, core: { version: '2.1', date: '2026-09' },
       analytics: { cloudflareToken: null },
     },
     estado: { version: '2.0.0', verifiedAt: '2026-09-27', published: false, limitations: loc() },

@@ -34,3 +34,8 @@ test('T237 · Acerca de: Issues como canal técnico y el método enlazado en lic
   await expect(page.locator('#licencias a[href="https://github.com/dacunao/software-humano-speckit"]')).toHaveText('Método para SpecKit');
   await expect(page.locator('main')).not.toContainText('cuando se publique');
 });
+
+test('T259 · Contacto ofrece los Issues del repositorio del sitio', async ({ page }) => {
+  await page.goto('/es/acerca');
+  await expect(page.locator('#contacto a[href="https://github.com/dacunao/software-humano-manifiesto/issues"]')).toContainText('Errores del sitio');
+});

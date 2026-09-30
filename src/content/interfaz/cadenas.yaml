@@ -687,6 +687,10 @@ acerca.issues:
   es: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-30, text: "Consultas técnicas: Issues del repositorio de la adaptación" }
   en: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-30, text: "Technical questions: Issues in the adaptation repository" }
   pt-BR: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-30, text: "Dúvidas técnicas: Issues do repositório da adaptação" }
+acerca.issuesSitio:
+  es: { state: borrador, text: "Errores del sitio: Issues del repositorio del sitio" }
+  en: { state: borrador, text: "Site errors: Issues in the site repository" }
+  pt-BR: { state: borrador, text: "Erros do site: Issues do repositório do site" }
 estado.noPublicada:
   es: { state: aprobado, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:

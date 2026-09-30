@@ -10,7 +10,7 @@ interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
-const { email, issues } = contenido.sitio.contact;
+const { email, issues, issuesSitio } = contenido.sitio.contact;
 // Frase destacada (copy v1.1): la de la portada del núcleo, citada con enlace a su casa (RV-13).
 const portada = canon.nodos.find((n) => n.id === 'portada-04')!;
 const frase = { nodo: portada, ...markdownDe(portada, locale) };
@@ -24,6 +24,7 @@ const langFrase = frase.lang === locale ? locale : 'es';
       <ul>
         {email && <li><a href={`mailto:${email}`}>{email}</a></li>}
         {issues && <li><a href={issues} rel="noopener">{t('acerca.issues', locale)} <span aria-hidden="true">↗</span></a></li>}
+        {issuesSitio && <li><a href={issuesSitio} rel="noopener">{t('acerca.issuesSitio', locale)} <span aria-hidden="true">↗</span></a></li>}
       </ul>
     </section>
   )}

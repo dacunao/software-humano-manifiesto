@@ -117,7 +117,7 @@ export const Sitio = z
     /** Editor del sitio (PRD v1.3 §18.4). `enLinea`: su sitio responde; sin eso no se enlaza. */
     publisher: z.object({ type: z.literal('Organization'), name: z.string(), url: z.string(), enLinea: z.boolean() }).strict(),
     licenses: z.object({ content: z.string(), code: z.string() }).strict(),
-    contact: z.object({ email: z.string().nullable(), issues: z.string().nullable() }).strict(),
+    contact: z.object({ email: z.string().nullable(), issues: z.string().nullable(), issuesSitio: z.string().nullable() }).strict(),
     core: z.object({ version: z.string(), date: z.string() }).strict(),
     analytics: z.object({ cloudflareToken: z.string().nullable() }).strict(),
   })

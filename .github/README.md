@@ -54,4 +54,4 @@ The full table, by type of material, is in [About the Manifiesto](https://manifi
 
 ## Contact
 
-By email: manifiesto@softwarehumano.com.
+By email: manifiesto@softwarehumano.com. Site errors: [Issues](https://github.com/dacunao/software-humano-manifiesto/issues).
