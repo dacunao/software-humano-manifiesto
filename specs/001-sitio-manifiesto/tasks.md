@@ -742,3 +742,12 @@ Fuente: decisiones de Damián Acuña (2026-09-30), registradas en `AGENTS.md` y 
 - [X] T249 `wrangler.jsonc`: Worker `manifiesto` con los archivos estáticos de `dist/`, rutas sin extensión, página 404 del idioma más cercano, sin ruta pública hasta la aceptación y con vistas previas por versión per T110, research (Cloudflare)
 - [X] T250 Primera vista previa: construcción, pruebas y comprobación previa en verde; subir; comprobar en la vista previa las rutas, los 404 localizados, las cabeceras de `_headers` y que no se indexe per T110, PRD §24.2
 - [X] T251 Probar la vuelta atrás a una versión anterior y registrar el procedimiento en `evidencia/tecnica.md` per T110
+
+---
+
+## Phase 41: Nombre en la cabecera del teléfono
+
+Fuente: observación y decisión de Damián Acuña sobre la vista previa (2026-09-30), registrada en `AGENTS.md`; PRD §21.2 (reemplazado en parte), especificación visual §7.1.
+
+- [X] T252 En teléfonos de 360 px o más, «Manifiesto» junto al ícono; por debajo, solo el ícono. «Buscar» como lupa en teléfonos, con su nombre accesible y 44 × 44 px; en pantallas anchas no cambia per decisión 2026-09-30, especificación §7.1
+- [X] T253 Pruebas en 320, 360, 375 y 430 px: el nombre visible desde 360, sin superposición ni desborde horizontal, y «Buscar» con nombre accesible; nueva vista previa per `O08`

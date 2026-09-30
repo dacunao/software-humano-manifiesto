@@ -118,13 +118,13 @@ test.describe('cabecera, marca e íconos (fase 26)', () => {
     await expect(page.getByText(/versión preliminar|preliminary version|versão preliminar/i)).toHaveCount(0);
   });
 
-  test('marca: ícono y «Manifiesto»; en teléfono solo el ícono, con el mismo nombre accesible (T153)', async ({ page }, info) => {
+  test('marca: ícono y «Manifiesto», también en el teléfono desde 360 px, con el mismo nombre accesible (T153, T252)', async ({ page }) => {
     await page.goto('/es/manifiesto');
     const marca = page.locator('.marca a');
     await expect(marca).toHaveAccessibleName('Manifiesto');
     await expect(marca.locator('svg.marca-icono')).toBeVisible();
     const nombreVisible = await marca.locator('.marca-nombre').evaluate((e) => e.getBoundingClientRect().width > 2);
-    expect(nombreVisible).toBe(info.project.name !== 'movil');
+    expect(nombreVisible).toBe(true); // el proyecto «movil» mide 375 px; debajo de 360 lo cubre cabecera-telefono.spec.ts
   });
 
   test('íconos del sitio declarados y presentes (T160)', async ({ page, request }) => {
