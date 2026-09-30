@@ -231,6 +231,8 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 
 **Versiones del método que el PRD menciona** (decisión de la autoridad de producto, 2026-09-27): las versiones del método en PRD §2.1, §23.2 y `FR-009` —anexo 1.2, preset 1.0.0— describen su estado al 2026-09-21. El sitio publica la versión **realmente instalada y verificada**, modelada como dato, igual que el resto del estado de la adaptación. El PRD no se enmienda.
 
+**Versión con que se construyó el sitio** (decisión de la autoridad de producto, 2026-09-29): el sitio queda con la versión del preset con que se construyó, la 2.0.0. Las mejoras posteriores del preset, que no tocan el núcleo, no se adoptan en este proyecto. Si la versión publicada es otra, el sitio distingue con precisión la versión con que se construyó y la publicada.
+
 **Sigue abierta; no se cierra con valores predeterminados:**
 
 - **PRD §29.10 · Publicación futura del preset**: repositorio, licencia y soporte. No bloquea especificar, planificar ni implementar. Bloquea publicar el preset y emitir el marcado `SoftwareSourceCode` (PRD §25.2).
