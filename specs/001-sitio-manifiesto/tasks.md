@@ -684,3 +684,11 @@ Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD
 Fuente: consulta de la sesión que prepara la publicación del método (2026-09-29). `astro.config.mts` conservaba `site: 'https://softwarehumano.com'`, anterior a la decisión de dominio (PRD v1.3, §29.1). No afecta a la salida: canónicas, `og:url`, `hreflang`, sitemap, robots y JSON-LD salen de `src/content/sitio.yaml` (`manifiesto.softwarehumano.com`). Pero contradice la decisión y confunde a quien lo lee.
 
 - [X] T228 Poner `site: 'https://manifiesto.softwarehumano.com'` en `astro.config.mts` y agregar una prueba unitaria que exija que coincida con el dominio de `src/content/sitio.yaml` per PRD §29.1, `AC-11` (contradicts)
+
+---
+
+## Phase 36: Repositorio público
+
+Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD §29.5.
+
+- [X] T229 Escribir `.github/README.md`, el README del sitio: qué es, qué contiene cada carpeta, cómo se construyó, cómo ejecutarlo y la tabla de licencias con la exclusión de los nombres y el logotipo. No se tocan `README.md` ni `LICENSE*` de la raíz, que verifica `SHA256SUMS` per PRD §29.5, §29.7
