@@ -33,6 +33,20 @@ export function grafo(nodos: NodoLD[]): string {
   return JSON.stringify({ '@context': 'https://schema.org', '@graph': nodos });
 }
 
+/** La adaptación publicada (PRD §25.2): solo con publicación real y el mismo dato que muestra la página SpecKit. */
+export function codigoAdaptacion(o: { sitio: Sitio; nombre: string; repositorio: string; version: string; idioma: string }): NodoLD {
+  return {
+    '@type': 'SoftwareSourceCode',
+    name: o.nombre,
+    codeRepository: o.repositorio,
+    version: o.version,
+    license: 'https://opensource.org/license/mit',
+    inLanguage: o.idioma,
+    author: persona(o.sitio),
+    publisher: editor(o.sitio),
+  };
+}
+
 /** CreativeWork del manifiesto con sus relaciones de traducción (contracts/datos-estructurados.md). */
 export function obraManifiesto(o: {
   sitio: Sitio; nombre: string; url: string; idioma: string; fecha: string; original: string; traducciones: string[];

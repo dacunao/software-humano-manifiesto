@@ -60,9 +60,9 @@ describe('reglas RV-02 a RV-10', () => {
     expect(reglas(contenidoValido(), '2.1.0')).toContain('RV-09');
   });
 
-  test('RV-10 · url o sha256 con el preset sin publicar', () => {
+  test('RV-10 · repositorio con el preset sin publicar', () => {
     const c = contenidoValido();
-    c.estado.url = 'https://example.com';
+    c.estado.repository = 'https://example.com';
     expect(reglas(c)).toContain('RV-10');
   });
 });

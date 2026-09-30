@@ -558,41 +558,35 @@ sections:
           type: surface-text
           text:
             es:
-              state: aprobado
+              state: borrador
               text: |-
                 | Material | Licencia | Qué puedes hacer |
                 |---|---|---|
                 | Texto del núcleo del manifiesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) | Copiarlo, traducirlo, adaptarlo y compartirlo, también con fines comerciales, citando a Damián Acuña como autor, enlazando la licencia e indicando si hiciste cambios |
                 | Contenido editorial del sitio: explicaciones, ejemplos y textos de página | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) | Lo mismo, con la misma atribución |
                 | Código del sitio | [MIT](https://opensource.org/license/mit) | Usarlo, modificarlo y distribuirlo conservando el aviso de copyright y la licencia |
-                | Método para SpecKit (preset y herramientas), cuando se publique | [MIT](https://opensource.org/license/mit) | Lo mismo |
+                | [Método para SpecKit](https://github.com/dacunao/software-humano-speckit) (preset y herramientas) | [MIT](https://opensource.org/license/mit) | Lo mismo |
                 | Los nombres «Software Humano» y «Manifiesto», y el logotipo | Reservados | No forman parte de esas licencias. Una adaptación no debe presentarse como oficial, certificada ni respaldada por Software Humano |
-              approvedBy: Damián Acuña
-              approvedAt: 2026-09-29
             en:
-              state: aprobado
+              state: borrador
               text: |-
                 | Material | License | What you may do |
                 |---|---|---|
                 | Manifesto core text | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copy, translate, adapt, and share it, including for commercial purposes, crediting Damián Acuña as the author, linking to the license, and indicating whether you made changes |
                 | Site editorial content: explanations, examples, and page copy | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | The same, with the same attribution |
                 | Site code | [MIT](https://opensource.org/license/mit) | Use, modify, and distribute it while retaining the copyright notice and license |
-                | Method for SpecKit (preset and tools), when published | [MIT](https://opensource.org/license/mit) | The same |
+                | [Method for SpecKit](https://github.com/dacunao/software-humano-speckit) (preset and tools) | [MIT](https://opensource.org/license/mit) | The same |
                 | The names “Software Humano” and “Manifiesto,” and the logo | Reserved | They are not covered by those licenses. An adaptation must not be presented as official, certified, or endorsed by Software Humano |
-              approvedBy: Damián Acuña
-              approvedAt: 2026-09-29
             pt-BR:
-              state: aprobado
+              state: borrador
               text: |-
                 | Material | Licença | O que você pode fazer |
                 |---|---|---|
                 | Texto do núcleo do manifesto | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Copiá-lo, traduzi-lo, adaptá-lo e compartilhá-lo, inclusive para fins comerciais, atribuindo a autoria a Damián Acuña, incluindo um link para a licença e indicando se você fez alterações |
                 | Conteúdo editorial do site: explicações, exemplos e textos de página | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | O mesmo, com a mesma atribuição |
                 | Código do site | [MIT](https://opensource.org/license/mit) | Usá-lo, modificá-lo e distribuí-lo, mantendo o aviso de direitos autorais e a licença |
-                | Método para SpecKit (preset e ferramentas), quando publicado | [MIT](https://opensource.org/license/mit) | O mesmo |
+                | [Método para SpecKit](https://github.com/dacunao/software-humano-speckit) (preset e ferramentas) | [MIT](https://opensource.org/license/mit) | O mesmo |
                 | Os nomes “Software Humano” e “Manifiesto”, e o logotipo | Reservados | Não fazem parte dessas licenças. Uma adaptação não deve ser apresentada como oficial, certificada nem respaldada pela Software Humano |
-              approvedBy: Damián Acuña
-              approvedAt: 2026-09-29
 hero:
   title:
     es:

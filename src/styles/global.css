@@ -323,3 +323,5 @@ dialog.busqueda input::-webkit-search-cancel-button { -webkit-appearance: none; 
 
 /* Contacto: una dirección larga corta línea en pantallas angostas (reflow a 320 px). */
 #contacto a { overflow-wrap: anywhere; }
+.estado-adaptacion .publicacion { margin-top: 1rem; }
+.estado-adaptacion .huella { overflow-wrap: anywhere; font-size: 0.875rem; }

@@ -1,10 +1,18 @@
 ---
 import type { Locale } from '../lib/contenido/esquemas';
+import { IDIOMAS } from '../lib/i18n/idiomas';
+import { codigoAdaptacion, type NodoLD } from '../lib/semantica/jsonld';
+import { contenido, t } from '../lib/sitio';
 import Superficie from './Superficie.astro';
 
 interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
+const e = contenido.estado;
+// PRD §25.2: `SoftwareSourceCode` solo con la adaptación publicada (RV-10), con el nombre y la versión visibles.
+const ld: NodoLD[] = e.published && e.repository && e.release
+  ? [codigoAdaptacion({ sitio: contenido.sitio, nombre: t('estado.nombre', locale), repositorio: e.repository, version: e.release.version, idioma: IDIOMAS[locale].hreflang })]
+  : [];
 ---
-<Superficie id="speckit" locale={locale} />
+<Superficie id="speckit" locale={locale} ld={ld} />

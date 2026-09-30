@@ -4,8 +4,10 @@ import { renderMarkdown } from '../lib/canon/render';
 import { contenido, t, texto } from '../lib/sitio';
 
 /**
- * Estado de la adaptación como dato (RQ-09): los seis puntos de FR-009 con la versión instalada
- * y verificada. Sin botón, formulario ni enlace mientras no esté publicada (FR-010, PRD §29.6).
+ * Estado de la adaptación como dato (RQ-09): los puntos de FR-009 con la versión instalada y
+ * verificada. Sin botón, formulario ni enlace mientras no esté publicada (FR-010, PRD §29.6). Ya
+ * publicada (2026-09-30): versión publicada, enlace, huella del paquete e instalación en el README
+ * del repositorio, sin copiar sus instrucciones.
  */
 interface Props {
   locale: Locale;
@@ -27,5 +29,15 @@ const puntos = [
   <ul>
     {puntos.map((p) => <li>{p}</li>)}
   </ul>
+  {e.published && e.release && e.repository && (
+    <div class="publicacion">
+      <p>{t('estado.publicada', locale, { nombre: t('estado.nombre', locale), version: e.release.version, preset: e.release.preset, construido: e.version })}</p>
+      <ul>
+        <li><a href={e.release.page} rel="noopener">{t('estado.verVersion', locale, { version: e.release.version })} <span aria-hidden="true">↗</span></a></li>
+        <li><a href={e.repository} rel="noopener">{t('estado.instalar', locale)} <span aria-hidden="true">↗</span></a></li>
+        <li>{t('estado.huella', locale)} <code class="huella">{e.release.sha256}</code></li>
+      </ul>
+    </div>
+  )}
   <div class="lectura" lang={limites.lang !== locale ? limites.lang : undefined} set:html={renderMarkdown(limites.texto)} />
 </div>

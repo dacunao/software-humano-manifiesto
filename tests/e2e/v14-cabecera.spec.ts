@@ -64,8 +64,10 @@ test.describe('PRD v1.4 · idiomas y GitHub', () => {
     await expect(page.locator('[data-selector-idioma] a[aria-current="true"]')).toHaveText('ES');
   });
 
-  test('«GitHub» no aparece mientras el repositorio de la adaptación no sea público (T157)', async ({ page }) => {
+  test('«GitHub» lleva al repositorio público de la adaptación y SpecKit ya no dice «no publicada» (T157, T235)', async ({ page }) => {
     await page.goto('/es');
-    await expect(page.locator('.navegacion-global').getByRole('link', { name: /GitHub/ })).toHaveCount(0);
+    await abrirMenu(page);
+    await expect(page.locator('.navegacion-global').getByRole('link', { name: /GitHub/ })).toHaveAttribute('href', 'https://github.com/dacunao/software-humano-speckit');
+    await expect(page.locator('.navegacion-global')).not.toContainText('no publicada');
   });
 });

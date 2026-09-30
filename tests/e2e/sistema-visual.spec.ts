@@ -87,7 +87,7 @@ test.describe('cabecera (especificación §7.1)', () => {
     expect(alto).toBeLessThanOrEqual(60);
     await expect(page.locator('.navegacion-global > ul a').first()).toBeHidden();
     await page.locator('.menu-movil > summary').click();
-    await expect(page.locator('.navegacion-global > ul a')).toHaveCount(4);
+    await expect(page.locator('.navegacion-global > ul a')).toHaveCount(5);
     await expect(page.locator('.navegacion-global > ul a').first()).toBeVisible();
     await expect(page.locator('[data-selector-idioma] ul a')).toHaveText(['EN', 'ES', 'PT']);
   });

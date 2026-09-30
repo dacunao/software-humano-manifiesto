@@ -695,3 +695,18 @@ Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD
 - [X] T230 README en tres idiomas, con el formato del paquete del método: `.github/README.md` en inglés (principal) y `.github/README.es.md` y `.github/README.pt-BR.md`, con la barra de idioma arriba y la nota de que los documentos del repositorio están en español. Decisión de Damián Acuña (2026-09-29)
 - [X] T231 Pasar `.github/README.md` y `.github/README.pt-BR.md` por la verificación en cuatro capas (RQ-19), con el español como referencia. Tradujo Claude, así que la capa 3 y la comparación de la capa 4 las hace un revisor de otra familia (Gemini, o Mistral de respaldo). Script `scripts/traduccion/readme.ts`; informe en `evidencia/revision-linguistica/capas/readme-*.json` y conclusiones en `verificacion-cuatro-capas.md`. Pedido de Damián Acuña (2026-09-29)
 - [X] T232 `scripts/traduccion/readme.ts` recibe las rutas de los tres archivos y el archivo de salida (`--es`, `--en`, `--pt`, `--salida`), para que el paquete del método use la misma verificación sin escribir en este repositorio. Autorizado por Damián Acuña (2026-09-30)
+
+---
+
+## Phase 37: Publicación de la adaptación
+
+Fuente: decisión de Damián Acuña (2026-09-30), registrada en `AGENTS.md`; PRD §29.10, §25.2, `FR-009`, `FR-010`, `FR-012`. Datos comprobados en la API de GitHub el 2026-09-30: repositorio público, licencia MIT, Issues habilitados, `v2.2.4` como versión vigente y huella del paquete coincidente. Los textos nuevos o modificados quedan en `borrador` hasta que Damián los apruebe.
+
+- [X] T233 Modelo: en `estado-adaptacion.yaml`, `published: true`, `repository` y `release` (versión 2.2.4, preset 2.0.1, página, archivo y huella SHA-256), con su esquema; RV-10 exige ambos si está publicada y ninguno si no, que el archivo y la página correspondan a la versión y que estén dentro del repositorio per `FR-010`, RV-10
+- [X] T234 Página SpecKit: en lugar de «Todavía no está publicada», la versión publicada con su preset (que funciona igual que el 2.0.0 con que se construyó el sitio), enlace a la página de la versión, huella SHA-256 del paquete y enlace al README del repositorio para instalarla per `FR-009`, `FR-010`
+- [X] T235 Menú «GitHub» al repositorio; el menú deja de decir «no publicada» junto a SpecKit per PRD v1.4 §18.2, `FR-010`
+- [X] T236 Pie: «Hecho con…» sin «aún sin publicar» per `FR-012`
+- [X] T237 Acerca de: Issues del repositorio como canal técnico en Contacto; en la tabla de licencias, el método para SpecKit sin «cuando se publique» y con enlace al repositorio per PRD §29.5, §29.7
+- [X] T238 JSON-LD `SoftwareSourceCode` en la página SpecKit: nombre, repositorio, versión, licencia MIT, autor y editor, desde el mismo dato visible per PRD §25.2, §25.3
+- [X] T239 Revisar el contraejemplo de `P07` «Presentar una adaptación independiente como oficial, publicada o respaldada…», que queda impreciso ahora que la adaptación está publicada; proponer a Damián quitar «publicada» per `P07`, PRD §19.4. *Revisado (2026-09-30)*: no se cambia. El contraejemplo es general (presentar como publicada una adaptación que no lo está) y no describe esta adaptación, así que sigue siendo cierto
+- [ ] T240 Pruebas (unitarias de RV-10 y de extremo a extremo de T233–T238), construcción, `check:publish` y aprobación de Damián de los textos en los tres idiomas per `O08`

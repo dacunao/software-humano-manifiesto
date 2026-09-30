@@ -130,8 +130,20 @@ export const EstadoAdaptacion = z
     verifiedAt: z.string(),
     published: z.boolean(),
     limitations: Localizado,
-    url: z.string().optional(),
-    sha256: z.string().optional(),
+    /** Solo cuando está publicada (RV-10, PRD §29.10). */
+    repository: z.url().optional(),
+    release: z
+      .object({
+        /** Versión del paquete publicado y del preset que contiene; `version` sigue siendo la instalada aquí. */
+        version: z.string(),
+        preset: z.string(),
+        publishedAt: z.string(),
+        page: z.url(),
+        download: z.url(),
+        sha256: z.string().regex(/^[0-9a-f]{64}$/),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 export type EstadoAdaptacion = z.infer<typeof EstadoAdaptacion>;

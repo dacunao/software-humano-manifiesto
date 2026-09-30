@@ -140,8 +140,16 @@ export function validarContenido(c: Contenido, canon: Canon, version: string): H
   // RV-09 y RV-10 · estado de la adaptación
   if (c.estado.version !== version)
     falla('RV-09', 'src/content/estado-adaptacion.yaml', 'version', `declara ${c.estado.version}, instalado ${version}`);
-  if (!c.estado.published && (c.estado.url || c.estado.sha256))
-    falla('RV-10', 'src/content/estado-adaptacion.yaml', 'url', 'url o sha256 con el preset sin publicar');
+  const { published, repository, release } = c.estado;
+  if (!published && (repository || release))
+    falla('RV-10', 'src/content/estado-adaptacion.yaml', 'release', 'repositorio o versión publicada con el preset sin publicar');
+  if (published && (!repository || !release))
+    falla('RV-10', 'src/content/estado-adaptacion.yaml', 'release', 'publicada sin repositorio o sin versión publicada');
+  if (published && repository && release) {
+    const tag = `/v${release.version}`;
+    if (![release.page, release.download].every((u) => u.startsWith(`${repository}/releases/`) && u.includes(tag)))
+      falla('RV-10', 'src/content/estado-adaptacion.yaml', 'release', `la página y el archivo deben estar en ${repository}/releases/ y ser de la versión ${release.version}`);
+  }
 
   // RV-13 · una sola casa por pasaje, sin excepciones (PRD v1.2 §18.3, RQ-15). Los encabezados no cuentan.
   const mapaCasas = casas(canon);

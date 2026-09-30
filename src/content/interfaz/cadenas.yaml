@@ -416,9 +416,9 @@ pie.actualizado:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
 pie.hechoCon:
-  es: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-29, text: "Hecho con el Manifiesto (núcleo v{nucleo}) y la {adaptacion}, aún sin publicar, sobre SpecKit {speckit}." }
-  en: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-29, text: "Built with the Manifiesto (core v{nucleo}) and the {adaptacion}, not yet published, on SpecKit {speckit}." }
-  pt-BR: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-29, text: "Feito com o Manifiesto (núcleo v{nucleo}) e a {adaptacion}, ainda não publicada, sobre o SpecKit {speckit}." }
+  es: { state: borrador, text: "Hecho con el Manifiesto (núcleo v{nucleo}) y la {adaptacion}, sobre SpecKit {speckit}." }
+  en: { state: borrador, text: "Built with the Manifiesto (core v{nucleo}) and the {adaptacion}, on SpecKit {speckit}." }
+  pt-BR: { state: borrador, text: "Feito com o Manifiesto (núcleo v{nucleo}) e a {adaptacion}, sobre o SpecKit {speckit}." }
 pie.adaptacion:
   es: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-29, text: "adaptación Software Humano {version}" }
   en: { state: aprobado, approvedBy: Damián Acuña, approvedAt: 2026-09-29, text: "Software Humano adaptation {version}" }
@@ -663,6 +663,30 @@ estado.validada:
     text: Validada tecnicamente na versão {version}, em {fecha}.
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
+estado.nombre:
+  es: { state: borrador, text: "Software Humano para SpecKit" }
+  en: { state: borrador, text: "Software Humano for SpecKit" }
+  pt-BR: { state: borrador, text: "Software Humano para SpecKit" }
+estado.publicada:
+  es: { state: borrador, text: "{nombre} está publicada: versión {version}, con el preset {preset}, que funciona igual que el {construido} con que se construyó este sitio." }
+  en: { state: borrador, text: "{nombre} is published: version {version}, with preset {preset}, which works the same as the {construido} this site was built with." }
+  pt-BR: { state: borrador, text: "{nombre} está publicada: versão {version}, com o preset {preset}, que funciona igual ao {construido} com que este site foi construído." }
+estado.verVersion:
+  es: { state: borrador, text: "Ver la versión {version} en GitHub" }
+  en: { state: borrador, text: "See version {version} on GitHub" }
+  pt-BR: { state: borrador, text: "Ver a versão {version} no GitHub" }
+estado.instalar:
+  es: { state: borrador, text: "Cómo instalarla, en el README del repositorio" }
+  en: { state: borrador, text: "How to install it, in the repository README" }
+  pt-BR: { state: borrador, text: "Como instalá-la, no README do repositório" }
+estado.huella:
+  es: { state: borrador, text: "Huella SHA-256 del paquete, para comprobar la descarga:" }
+  en: { state: borrador, text: "SHA-256 checksum of the package, to verify the download:" }
+  pt-BR: { state: borrador, text: "Checksum SHA-256 do pacote, para verificar o download:" }
+acerca.issues:
+  es: { state: borrador, text: "Consultas técnicas: Issues del repositorio de la adaptación" }
+  en: { state: borrador, text: "Technical questions: Issues in the adaptation repository" }
+  pt-BR: { state: borrador, text: "Dúvidas técnicas: Issues do repositório da adaptação" }
 estado.noPublicada:
   es: { state: aprobado, text: "Todavía no está publicada. Cuando lo esté, aquí aparecerán el enlace y las instrucciones.", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:

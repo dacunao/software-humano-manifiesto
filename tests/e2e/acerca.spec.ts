@@ -27,3 +27,10 @@ test.describe('Acerca del Manifiesto', () => {
       await expect(page.locator('section#licencias table')).toBeVisible();
     });
 });
+
+test('T237 · Acerca de: Issues como canal técnico y el método enlazado en licencias', async ({ page }) => {
+  await page.goto('/es/acerca');
+  await expect(page.locator('#contacto a[href="https://github.com/dacunao/software-humano-speckit/issues"]')).toContainText('Consultas técnicas');
+  await expect(page.locator('#licencias a[href="https://github.com/dacunao/software-humano-speckit"]')).toHaveText('Método para SpecKit');
+  await expect(page.locator('main')).not.toContainText('cuando se publique');
+});

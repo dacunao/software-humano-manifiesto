@@ -33,6 +33,15 @@ describe('RV-11, RV-12 y RQ-13 sobre la salida construida', () => {
     rmSync(join(dir, 'ld.html'));
   });
 
+  test('RV-12 · código fuente publicado: exige el repositorio enlazado y su nombre visible', () => {
+    const ld = { '@type': 'SoftwareSourceCode', name: 'Adaptación', version: '1.2.3', codeRepository: 'https://github.com/x/y' };
+    pagina('sc.html', '<p>Adaptación 1.2.3</p><a href="https://github.com/x/y">repo</a>', ld);
+    expect(validarSalida(dir, true).filter((h) => h.regla === 'RV-12')).toEqual([]);
+    pagina('sc.html', '<p>Adaptación 1.2.3</p>', ld);
+    expect(validarSalida(dir, true).filter((h) => h.regla === 'RV-12')).toHaveLength(1);
+    rmSync(join(dir, 'sc.html'));
+  });
+
   test('RQ-13 · cuenta lo visible sin abrir <details>', () => {
     pagina('vis.html', '<p>uno dos tres</p><details><summary>ver</summary><p>cuatro cinco seis</p></details>');
     const v = informeVisibilidad(dir).find((x) => x.ruta === '/vis');

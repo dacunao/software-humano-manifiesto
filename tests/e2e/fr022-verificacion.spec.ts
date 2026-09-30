@@ -13,10 +13,10 @@ test.describe('FR-022 · Verificar', () => {
     await expect(page.locator('section#sh-done')).toContainText('Un desarrollo está completo cuando');
   });
 
-  test('el menú tiene cuatro entradas y el índice del manifiesto lleva a Verificar en los tres idiomas', async ({ page }) => {
+  test('el menú tiene cuatro entradas más GitHub y el índice del manifiesto lleva a Verificar en los tres idiomas', async ({ page }) => {
     for (const [inicio, destino] of [['/manifesto', '/manifesto/verify'], ['/es/manifiesto', '/es/manifiesto/verificar'], ['/pt-br/manifesto', '/pt-br/manifesto/verificar']] as const) {
       await page.goto(inicio);
-      await expect(page.locator('.navegacion-global > ul > li')).toHaveCount(4);
+      await expect(page.locator('.navegacion-global > ul > li')).toHaveCount(5);
       await expect(page.locator(`.indice-lateral a[href="${destino}"]`)).toHaveCount(1);
     }
   });

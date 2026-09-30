@@ -25,13 +25,13 @@ const actual = pagina.tipo === 'principio' || esDivision(pagina.tipo) ? 'manifie
       <li>
         <a href={ruta({ tipo: d.tipo === 'manifiesto' ? 'mapa' : d.tipo }, locale)} aria-current={actual === d.tipo ? (pagina.tipo === (d.tipo === 'manifiesto' ? 'mapa' : d.tipo) ? 'page' : 'true') : undefined}>
           <span class="nombre">{t(d.clave, locale)}</span>
-          {d.tipo === 'speckit' && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
+          {d.tipo === 'speckit' && !contenido.estado.published && <span class="estado"> ({t('nav.estadoSpeckit', locale)})</span>}
         </a>
       </li>
     ))}
     {/* PRD v1.4 §18.2: solo cuando el repositorio de la adaptación sea público (FR-010, RV-10). */}
-    {contenido.estado.published && contenido.estado.url && (
-      <li><a href={contenido.estado.url} rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+    {contenido.estado.published && contenido.estado.repository && (
+      <li><a href={contenido.estado.repository} rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
     )}
   </ul>
   {/* Dato de versión, sin enlace: el menú «Manifiesto» ya lleva al Mapa (R7). */}

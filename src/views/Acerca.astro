@@ -23,7 +23,7 @@ const langFrase = frase.lang === locale ? locale : 'es';
       <h2 id="contacto-titulo">{t('acerca.contacto', locale)}</h2>
       <ul>
         {email && <li><a href={`mailto:${email}`}>{email}</a></li>}
-        {issues && <li><a href={issues}>{issues}</a></li>}
+        {issues && <li><a href={issues} rel="noopener">{t('acerca.issues', locale)} <span aria-hidden="true">↗</span></a></li>}
       </ul>
     </section>
   )}

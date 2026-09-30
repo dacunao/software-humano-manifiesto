@@ -15,7 +15,7 @@ licenses:
   code: MIT
 contact:
   email: manifiestosoftwarehumano@gmail.com # Alias de contacto (PRD §29.7), definido por Damián Acuña el 2026-09-29
-  issues: null # Pendiente: aún no existe repositorio público
+  issues: https://github.com/dacunao/software-humano-speckit/issues # Canal técnico (PRD §29.7, §29.10; decisión del 2026-09-30)
 core:
   version: '2.1'
   date: '2026-09'

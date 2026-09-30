@@ -14,6 +14,8 @@
 
 **Actualización v1.3** (2026-09-28): el sitio se llama «Manifiesto» en los tres idiomas y vive en `manifiesto.softwarehumano.com`. Su autor es Damián Acuña y su editor, Software Humano, la agencia que publica la doctrina y cuyo sitio es `softwarehumano.com`. El pie y Acerca de enlazan a la agencia; Acerca de explica las licencias por tipo de material; los pasajes del núcleo viven solo aquí y este sitio no presenta oferta comercial (PRD §18.4, §29). Las secciones afectadas están marcadas «v1.3».
 
+**Actualización del 2026-09-30** (decisión de la autoridad de producto, registrada en `AGENTS.md`): **la adaptación se publica** (PRD §29.10 resuelta). Se cumple el caso de borde «El preset se publica» (`FR-010`, PRD §25.2): repositorio, versión publicada 2.2.4 con su huella, instalación en el README del repositorio, Issues como canal técnico y marcado `SoftwareSourceCode`. El sitio sigue diciendo que se construyó con el preset 2.0.0.
+
 **Actualización del 2026-09-29** (decisiones de la autoridad de producto, registradas en `AGENTS.md`; el PRD v1.6 no cambia):
 - **Inglés estadounidense.** El inglés usa ortografía estadounidense.
 - **Aprobación de los idiomas.** Damián Acuña aprueba `en` y `pt-BR` en lugar del servicio profesional, tras la verificación en cuatro capas (RQ-19).

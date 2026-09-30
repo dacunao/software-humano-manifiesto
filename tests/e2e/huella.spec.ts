@@ -19,5 +19,6 @@ for (const [url, speckitHref, inicio] of [
     await expect(linea.locator(`a[href="${speckitHref}"]`)).toContainText(preset);
     await expect(page.locator('footer .procedencia').first()).not.toContainText('v2.1');
     await expect(page.locator('footer .procedencia').first()).not.toContainText(preset);
+    await expect(linea).not.toContainText(/sin publicar|not yet published|não publicada/);
   });
 }

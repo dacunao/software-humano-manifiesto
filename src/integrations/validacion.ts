@@ -21,7 +21,7 @@ export default function validacion(): AstroIntegration {
       },
       'astro:build:done': ({ dir, logger }) => {
         const salida = fileURLToPath(dir);
-        const hallazgos = validarSalida(salida);
+        const hallazgos = validarSalida(salida, cargarContenido().estado.published);
         if (hallazgos.length) throw new Error(`Salida inválida:\n${hallazgos.map(formatear).join('\n')}`);
         logger.info('RV-11–RV-12: sin hallazgos');
         const informe = informeVisibilidad(salida);
