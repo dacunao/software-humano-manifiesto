@@ -558,7 +558,7 @@ sections:
           type: surface-text
           text:
             es:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | Licencia | Qué puedes hacer |
                 |---|---|---|
@@ -567,8 +567,10 @@ sections:
                 | Código del sitio | [MIT](https://opensource.org/license/mit) | Usarlo, modificarlo y distribuirlo conservando el aviso de copyright y la licencia |
                 | [Método para SpecKit](https://github.com/dacunao/software-humano-speckit) (preset y herramientas) | [MIT](https://opensource.org/license/mit) | Lo mismo |
                 | Los nombres «Software Humano» y «Manifiesto», y el logotipo | Reservados | No forman parte de esas licencias. Una adaptación no debe presentarse como oficial, certificada ni respaldada por Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-30
             en:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | License | What you may do |
                 |---|---|---|
@@ -577,8 +579,10 @@ sections:
                 | Site code | [MIT](https://opensource.org/license/mit) | Use, modify, and distribute it while retaining the copyright notice and license |
                 | [Method for SpecKit](https://github.com/dacunao/software-humano-speckit) (preset and tools) | [MIT](https://opensource.org/license/mit) | The same |
                 | The names “Software Humano” and “Manifiesto,” and the logo | Reserved | They are not covered by those licenses. An adaptation must not be presented as official, certified, or endorsed by Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-30
             pt-BR:
-              state: borrador
+              state: aprobado
               text: |-
                 | Material | Licença | O que você pode fazer |
                 |---|---|---|
@@ -587,6 +591,8 @@ sections:
                 | Código do site | [MIT](https://opensource.org/license/mit) | Usá-lo, modificá-lo e distribuí-lo, mantendo o aviso de direitos autorais e a licença |
                 | [Método para SpecKit](https://github.com/dacunao/software-humano-speckit) (preset e ferramentas) | [MIT](https://opensource.org/license/mit) | O mesmo |
                 | Os nomes “Software Humano” e “Manifiesto”, e o logotipo | Reservados | Não fazem parte dessas licenças. Uma adaptação não deve ser apresentada como oficial, certificada nem respaldada pela Software Humano |
+              approvedBy: Damián Acuña
+              approvedAt: 2026-09-30
 hero:
   title:
     es:
