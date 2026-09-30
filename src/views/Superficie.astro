@@ -20,7 +20,7 @@ interface Props {
   claseIndice?: string | undefined;
   /** Incluye en «En esta página» los subtítulos del texto canónico de cada sección (T202). */
   seguimiento?: boolean;
-  /** Secciones que agrega la vista tras la primera del contenido (ranura `trasPrimera`), para «En esta página» (Mapa: «Las nueve divisiones», R3). */
+  /** Secciones que agrega la vista, para «En esta página»: tras la primera con la ranura `trasPrimera` (Mapa, R3) o al final (Contacto en Acerca de). */
   extraPagina?: ItemPagina[];
 }
 const { id, locale, ld = [], archivos = [], indice, claseIndice, seguimiento = false, extraPagina = [] } = Astro.props;
@@ -55,7 +55,8 @@ const enPagina: ItemPagina[] = s.sections.flatMap((sec) => {
 });
 // Las secciones de la vista van tras la primera sección del contenido, en el mismo orden que en la página.
 const finPrimera = enPagina.findIndex((it, i) => i > 0 && it.nivel === 2);
-if (extraPagina.length) enPagina.splice(finPrimera < 0 ? enPagina.length : finPrimera, 0, ...extraPagina);
+// Con la ranura `trasPrimera`, tras la primera sección; si no, al final, donde la vista las agrega.
+if (extraPagina.length) enPagina.splice(Astro.slots.has('trasPrimera') && finPrimera >= 0 ? finPrimera : enPagina.length, 0, ...extraPagina);
 ---
 <Base locale={locale} pagina={{ tipo: id }} titulo={titulo.texto} descripcion={descripcion.texto} ld={ld} actualizado={actualizado} indice={grupos} claseIndice={claseIndice} enPagina={enPagina}>
   <header class="encabezado-superficie">

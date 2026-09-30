@@ -14,7 +14,7 @@ licenses:
   content: CC BY 4.0
   code: MIT
 contact:
-  email: null # Pendiente de la autoridad: alias de correo (PRD §29.7)
+  email: manifiestosoftwarehumano@gmail.com # Alias de contacto (PRD §29.7), definido por Damián Acuña el 2026-09-29
   issues: null # Pendiente: aún no existe repositorio público
 core:
   version: '2.1'

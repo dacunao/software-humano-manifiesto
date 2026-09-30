@@ -320,7 +320,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [ ] T104 STOP · Damián conduce o supervisa las sesiones y juzga `AC-01` y `AC-02` con las notas
 - [ ] T105 STOP · Revisión humana de los recorridos principales con lector de pantalla y teclado (`AC-07`)
 - [ ] T106 Validar los datos estructurados con las herramientas de Google aplicables y registrar el resultado en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §25.3)
-- [ ] T107 STOP · Obtener de Damián los datos pendientes y completarlos en `src/content/sitio.yaml` y `src/layouts/Base.astro`:
+- [ ] T107 STOP · Obtener de Damián los datos pendientes (2026-09-29: alias de correo `manifiestosoftwarehumano@gmail.com` recibido; siguen pendientes el repositorio de Issues, el código de analítica y la URL de autor, que no bloquean la comprobación previa) y completarlos en `src/content/sitio.yaml` y `src/layouts/Base.astro`:
   - alias de correo;
   - URL del repositorio público para Issues;
   - token de Cloudflare Web Analytics;

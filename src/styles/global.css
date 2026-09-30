@@ -320,3 +320,6 @@ dialog.busqueda input::-webkit-search-cancel-button { -webkit-appearance: none; 
 .busqueda-teclas { display: none; gap: 1.25rem; margin: 0.75rem calc(-1 * var(--sh-espacio)) calc(-1 * var(--sh-espacio)); padding: 0.75rem var(--sh-espacio); position: sticky; bottom: calc(-1 * var(--sh-espacio)); background: var(--sh-surface); border-top: 1px solid var(--sh-border); font-size: 0.875rem; color: var(--sh-text-muted); }
 .busqueda-teclas kbd { display: inline-block; min-width: 1.6em; margin-right: 0.15rem; padding: 0.05rem 0.4rem; border: 1px solid var(--sh-border); border-radius: 4px; background: var(--sh-canvas); font: inherit; font-size: 0.8125rem; text-align: center; color: var(--sh-text); }
 @media (hover: hover) and (pointer: fine) { .busqueda-teclas { display: flex; flex-wrap: wrap; } }
+
+/* Contacto: una dirección larga corta línea en pantallas angostas (reflow a 320 px). */
+#contacto a { overflow-wrap: anywhere; }
