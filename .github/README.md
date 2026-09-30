@@ -1,53 +1,57 @@
-# Manifiesto · sitio del Manifiesto de Software Humano
+**English** · [Español](README.es.md) · [Português (BR)](README.pt-BR.md)
 
-Código y contenido del sitio público **[manifiesto.softwarehumano.com](https://manifiesto.softwarehumano.com)**, que publica el *Núcleo del manifiesto para el desarrollo de software humano con inteligencia artificial v2.1* en inglés estadounidense (predeterminado), español neutro latinoamericano (original) y portugués de Brasil.
+# Manifiesto · the Software Humano manifesto site
 
-Es también el primer proyecto real desarrollado con la adaptación Software Humano para SpecKit. Este repositorio es público y completo a propósito: la especificación, el plan, las tareas, la evidencia y la bitácora del piloto muestran cómo se construyó, errores incluidos.
+Code and content for the public site **[manifiesto.softwarehumano.com](https://manifiesto.softwarehumano.com)**. It publishes the *Core of the manifesto for human software development with artificial intelligence v2.1* in American English (default), neutral Latin American Spanish (the original) and Brazilian Portuguese.
 
-## Qué hay aquí
+> **A note on language.** The site is published in English, Spanish and Brazilian Portuguese. **This repository's documents (specification, plan, tasks, evidence, pilot log and agent instructions) and its code comments are written in Spanish.**
 
-| Ruta | Qué es |
+It is also the first real project built with the Software Humano adaptation for SpecKit. This repository is public and complete on purpose: the specification, plan, tasks, evidence and pilot log show how it was built, mistakes included.
+
+## What's here
+
+| Path | What it is |
 |---|---|
-| `src/` | El sitio: Astro estático, TypeScript estricto, Tailwind CSS y daisyUI |
-| `src/content/` | Contenido en YAML versionado, con su estado de aprobación por idioma |
-| `docs/method/` | El núcleo del manifiesto. El sitio lee el texto canónico en español desde aquí durante la construcción; no lo copia |
-| `docs/product/` | El PRD, fundamento de producto del sitio |
-| `specs/001-sitio-manifiesto/` | Especificación, plan, investigación, tareas y evidencia del ciclo SpecKit |
-| `docs/pilot/` | Bitácora del piloto e informe sobre cómo funcionó el método |
-| `tools/speckit/`, `.specify/` | La adaptación Software Humano para SpecKit, instalada y verificada |
-| `tests/` | Pruebas unitarias y de extremo a extremo (Playwright y axe) |
+| `src/` | The site: static Astro, strict TypeScript, Tailwind CSS and daisyUI |
+| `src/content/` | Versioned YAML content, with its approval state per language |
+| `docs/method/` | The manifesto core. The site reads the canonical Spanish text from here at build time; it doesn't copy it |
+| `docs/product/` | The PRD, the site's product foundation |
+| `specs/001-sitio-manifiesto/` | Specification, plan, research, tasks and evidence from the SpecKit cycle |
+| `docs/pilot/` | Pilot log and a report on how the method worked in practice |
+| `tools/speckit/`, `.specify/` | The Software Humano adaptation for SpecKit, installed and verified |
+| `tests/` | Unit and end-to-end tests (Playwright and axe) |
 
-`README.md`, `LICENSE*`, `PARA_QUIEN_DECIDE.md` y `START_WITH_AI_AGENT.md`, en la raíz, pertenecen al paquete del método que se instaló en este proyecto. Su integridad se verifica con `SHA256SUMS`, por eso no se modifican. Este archivo es el README del sitio.
+`README.md`, `LICENSE*`, `PARA_QUIEN_DECIDE.md` and `START_WITH_AI_AGENT.md` at the root belong to the method package installed in this project. `SHA256SUMS` verifies their integrity, so they are not modified. This file is the site's README.
 
-## Cómo se construyó
+## How it was built
 
-Con el Manifiesto (núcleo v2.1) y la adaptación Software Humano 2.0.0, sobre SpecKit 1.0.8, bajo la autoridad de producto de Damián Acuña. Las reglas para agentes están en `AGENTS.md`.
+With the Manifiesto (core v2.1) and the Software Humano adaptation 2.0.0, on SpecKit 1.0.8, under the product authority of Damián Acuña. The rules for agents are in `AGENTS.md`.
 
-## Ejecutar localmente
+## Running it locally
 
-Requiere [Bun](https://bun.sh) en la versión de `.bun-version`.
+Requires [Bun](https://bun.sh) at the version in `.bun-version`.
 
 ```bash
 bun install --frozen-lockfile
-bun run dev          # servidor local
-bun run build        # comprobación de tipos, validación del contenido y construcción
-bun run test         # pruebas unitarias
-bun run test:e2e     # pruebas de extremo a extremo
-bun run check:publish  # comprobación previa a la publicación
+bun run dev          # local server
+bun run build        # type check, content validation and build
+bun run test         # unit tests
+bun run test:e2e     # end-to-end tests
+bun run check:publish  # pre-publication check
 ```
 
-La construcción se detiene si el texto canónico cambia, si un enlace interno no tiene destino o si una página mezcla idiomas.
+The build stops if the canonical text changes, if an internal link has no destination or if a page mixes languages.
 
-## Licencias
+## Licensing
 
-| Material | Licencia |
+| Material | License |
 |---|---|
-| Texto del núcleo del manifiesto y contenido editorial del sitio, en los tres idiomas | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es), con atribución a Damián Acuña |
-| Código del sitio y del método | MIT (`LICENSE-CODE`) |
-| Los nombres «Software Humano» y «Manifiesto» y el logotipo | **Excluidos de ambas licencias.** No pueden usarse sin autorización |
+| Manifesto core text and the site's editorial content, in all three languages | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with attribution to Damián Acuña |
+| Site and method code | MIT (`LICENSE-CODE`) |
+| The names “Software Humano” and “Manifiesto” and the logo | **Excluded from both licenses.** They may not be used without permission |
 
-La tabla completa, por tipo de material, está en [Acerca del Manifiesto](https://manifiesto.softwarehumano.com/es/acerca#licencias).
+The full table, by type of material, is in [About the Manifiesto](https://manifiesto.softwarehumano.com/about#licencias).
 
-## Contacto
+## Contact
 
-Por correo: manifiestosoftwarehumano@gmail.com.
+By email: manifiestosoftwarehumano@gmail.com.

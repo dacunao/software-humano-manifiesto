@@ -692,3 +692,4 @@ Fuente: consulta de la sesión que prepara la publicación del método (2026-09-
 Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD §29.5.
 
 - [X] T229 Escribir `.github/README.md`, el README del sitio: qué es, qué contiene cada carpeta, cómo se construyó, cómo ejecutarlo y la tabla de licencias con la exclusión de los nombres y el logotipo. No se tocan `README.md` ni `LICENSE*` de la raíz, que verifica `SHA256SUMS` per PRD §29.5, §29.7
+- [X] T230 README en tres idiomas, con el formato del paquete del método: `.github/README.md` en inglés (principal) y `.github/README.es.md` y `.github/README.pt-BR.md`, con la barra de idioma arriba y la nota de que los documentos del repositorio están en español. Decisión de Damián Acuña (2026-09-29)
