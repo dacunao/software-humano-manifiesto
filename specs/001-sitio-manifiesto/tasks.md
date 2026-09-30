@@ -316,9 +316,9 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: bloque 10.
 
-- [ ] T103 Actualizar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md` para la ronda final sobre el sitio completo, con la dirección visual aplicada y los tres idiomas
-- [ ] T104 STOP · Damián conduce o supervisa las sesiones y juzga `AC-01` y `AC-02` con las notas
-- [ ] T105 STOP · Revisión humana de los recorridos principales con lector de pantalla y teclado (`AC-07`)
+- [ ] T103 Actualizar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md` para la ronda final sobre el sitio completo, con la dirección visual aplicada y los tres idiomas *Excepción aprobada por Damián Acuña (2026-09-30)*: se hace después de publicar, sobre el sitio publicado
+- [ ] T104 STOP · Damián conduce o supervisa las sesiones y juzga `AC-01` y `AC-02` con las notas *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
+- [ ] T105 STOP · Revisión humana de los recorridos principales con lector de pantalla y teclado (`AC-07`) *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
 - [X] T106 Validar los datos estructurados con las herramientas de Google aplicables y registrar el resultado en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §25.3) *Hecho (2026-09-30)*: validador de Schema.org, 0 errores en 12 páginas; la prueba de Google se repite sobre el dominio definitivo
 - [ ] T107 STOP · Obtener de Damián los datos pendientes (2026-09-29: alias de correo `manifiestosoftwarehumano@gmail.com` recibido; siguen pendientes el repositorio de Issues, el código de analítica y la URL de autor, que no bloquean la comprobación previa) y completarlos en `src/content/sitio.yaml` y `src/layouts/Base.astro`:
   - alias de correo;
@@ -329,7 +329,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [X] T108 Ejecutar `bun run check:publish` hasta que pase *Hecho (2026-09-30)*: completa
 - [X] T109 Ejecutar `/speckit-converge` y reconciliar contra la especificación completa (`AC-10`); sin brechas críticas *Hecho*: fases 30 y 33 (2026-09-29), sin brechas críticas
 - [X] T110 Configurar el proyecto de Cloudflare Pages con despliegues de vista previa y comprobar, sobre una vista previa, que un despliegue se puede revertir al anterior; registrar el procedimiento en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §24.2)
-- [ ] T111 STOP · Aceptación de Damián antes de publicar (PRD §34). Solo con su autorización explícita, desplegar en Cloudflare Pages
+- [X] T111 STOP · Aceptación de Damián antes de publicar (PRD §34). Solo con su autorización explícita, desplegar en Cloudflare Pages *Aceptado por Damián Acuña el 2026-09-30*, tras revisar la vista previa, con T103–T105 como excepción aprobada. Se publica la versión revisada en la vista previa, una vez conectado el dominio
 
 ---
 
