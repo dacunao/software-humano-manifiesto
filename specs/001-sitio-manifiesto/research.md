@@ -257,3 +257,22 @@ Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el c
   - aprobar sin más verificación, lo que deja el riesgo sin atender;
   - pasar las cuatro capas sobre todo el texto por igual, lo que gasta el cupo de DeepL y la atención humana en ejemplos y notas;
   - MetricX-24 como puntaje de riesgo, opcional: necesita GPU y no fue evaluado con portugués.
+
+---
+
+## RQ-20 · Navegación estándar en todo el sitio (2026-09-29)
+
+Reemplaza, en lo que se contradigan, las partes de «RQ-06 enmendado» sobre el panel «En esta sección» y el índice lateral que despliega las secciones.
+
+- **Decision** (Damián Acuña, 2026-09-29):
+  - **Columna izquierda:** solo las páginas de la parte del sitio en que se está. En el manifiesto son las divisiones por ruta de lectura y los diez principios; Inicio, SpecKit y Acerca de no la tienen.
+  - **Columna derecha, «En esta página»:** todas las secciones (h2) con sus subtítulos (h3 y h4), en todas las páginas que tengan alguna. Se lee completa sin JavaScript; con JavaScript marca dónde se está. En pantallas angostas va dentro de «Contenido». Una prueba sobre la salida construida exige que cada h2, h3 y h4 visible esté en ella (T205).
+  - **Entrada:** el menú «Manifiesto» abre el Mapa del manifiesto. «Núcleo v2.1» es un dato, sin enlace.
+  - **Fin del recorrido:** tras la Declaración final se ofrecen el Mapa, la descarga y SpecKit.
+- **Rationale:** Damián observó tres problemas:
+  - el título de la sección aparecía en las dos columnas;
+  - la columna derecha desaparecía en las secciones sin subtítulos;
+  - el Mapa parecía parte de otra página.
+
+  El recorrido contra los principios (R2, R3 y R7) mostró además un final sin salida y dos entradas al mismo lugar. Cada columna tiene ahora una sola función (`P05`, `P06`), la convención de los sitios de documentación que tomó como referencia.
+- **Alternatives considered:** mantener el panel «En esta sección», que cambia de contenido y desaparece; o desplegar las secciones en la izquierda y quitar la derecha, lo que da una columna larga que mezcla páginas y secciones.
