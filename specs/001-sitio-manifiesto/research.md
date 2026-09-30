@@ -86,7 +86,7 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 
 ## RQ-12 · Plataforma, cabeceras y medición
 
-- **Decision**: sitio estático en Cloudflare Pages (decisión de la autoridad). Cabeceras de seguridad y redirecciones versionadas en el repositorio. Cloudflare Web Analytics es el único script de terceros; no usa cookies, así que no requiere banner de consentimiento ni bloquea contenido. Search Console y CrUX sin script.
+- **Decision**: sitio estático en Cloudflare Pages (decisión de la autoridad), por subida directa con Wrangler y no por integración con GitHub (decisión del 2026-09-30): lo que se sube es lo que pasó construcción, pruebas y comprobación previa; publicar requiere un acto explícito (PRD §34); las fechas de actualización salen del historial de git local; no hay permisos de GitHub que otorgar. Se descartó la integración con GitHub porque publicaría al subir cambios y no ejecuta las pruebas de extremo a extremo; si se quiere después, se crea otro proyecto y se le traspasa el dominio. Cabeceras de seguridad y redirecciones versionadas en el repositorio. Cloudflare Web Analytics es el único script de terceros; no usa cookies, así que no requiere banner de consentimiento ni bloquea contenido. Search Console y CrUX sin script.
 - **Rationale**: `FR-018`, PRD §24.2–§24.3, decisiones de la autoridad sobre plataforma y medición.
 - **Alternatives considered**: ninguna, porque están decididas.
 

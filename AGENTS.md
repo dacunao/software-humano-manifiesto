@@ -157,7 +157,7 @@ Aprobadas por el PRD y por la autoridad de producto. Se preservan, no se reabren
 - **JSON-LD con Schema.org** generado desde la misma fuente que el contenido visible (PRD §25.3).
 - **Experiencia pública determinista**: sin función generativa para el visitante en la versión 1.0 (PRD §8.3, §22.1).
 - **El texto canónico en español se lee durante el build de su fuente protegida (`docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md`) y no se copia.** El YAML guarda solo metadatos, identificadores, relaciones y las traducciones. Si la fuente cambia, el build se detiene en lugar de publicar un texto distinto (PRD §19.1, §27.2, `AC-03`; decisión de la autoridad de producto, 2026-09-27).
-- **Plataforma**: Cloudflare Pages (decisión de la autoridad de producto).
+- **Plataforma**: Cloudflare Pages (decisión de la autoridad de producto), con **subida directa** (decisión del 2026-09-30): se construye y se prueba aquí, se ejecuta la comprobación previa y recién entonces se sube con Wrangler. Publicar es un acto deliberado, nunca consecuencia de subir cambios a GitHub. El dominio `softwarehumano.com` sigue en GoDaddy; `manifiesto` se conecta con un registro CNAME.
 - **Medición**: Search Console y CrUX sin script, más Cloudflare Web Analytics como **único** script de terceros (decisión de la autoridad de producto; PRD §24.3, `FR-018`).
 
 ## Contrato lingüístico
