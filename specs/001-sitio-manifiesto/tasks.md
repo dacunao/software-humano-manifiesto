@@ -732,3 +732,13 @@ Fuente: `evidencia/checklist-publicacion.md` (2026-09-30) y la aprobación de Da
 - [X] T246 Caché larga para los archivos con huella de `/_astro/*` y de 30 días para las fuentes, en `public/_headers` per `AC-08`
 - [X] T247 Aprobación de Damián de «Usar el tema del sistema» (T241)
 - [X] T248 `/llms.txt` (propuesta llmstxt.org), generado en la construcción desde el contenido aprobado y sin texto propio: descripción del sitio, aviso de autoridad del original, las páginas de cada idioma en el orden de lectura con su descripción, la descarga del núcleo en Markdown y el repositorio de la adaptación. Una prueba exige que cada enlace exista. Decisión de Damián Acuña (2026-09-30) per PRD §25.1, §25.4
+
+---
+
+## Phase 40: Despliegue en Cloudflare
+
+Fuente: decisiones de Damián Acuña (2026-09-30), registradas en `AGENTS.md` y en research.md; T110, T111, PRD §24.2, §34.
+
+- [ ] T249 `wrangler.jsonc`: Worker `manifiesto` con los archivos estáticos de `dist/`, rutas sin extensión, página 404 del idioma más cercano, sin ruta pública hasta la aceptación y con vistas previas por versión per T110, research (Cloudflare)
+- [ ] T250 Primera vista previa: construcción, pruebas y comprobación previa en verde; subir; comprobar en la vista previa las rutas, los 404 localizados, las cabeceras de `_headers` y que no se indexe per T110, PRD §24.2
+- [ ] T251 Probar la vuelta atrás a una versión anterior y registrar el procedimiento en `evidencia/tecnica.md` per T110
