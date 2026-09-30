@@ -1,5 +1,5 @@
 {
-  "_nota": "AC-08. TBT es una aproximación de laboratorio a INP; el INP real se verifica con CrUX tras el lanzamiento. Presupuestos por página de plan.md: JS ≤ 10 KB, tipografías ≤ 100 KB, CSS ≤ 50 KB.",
+  "_nota": "AC-08. TBT es una aproximación de laboratorio a INP; el INP real se verifica con CrUX tras el lanzamiento. Presupuestos por página de plan.md: JS ≤ 10 KB, tipografías ≤ 100 KB, CSS ≤ 50 KB. Cloudflare Web Analytics (único script de terceros aprobado, PRD §24.3) se bloquea en el laboratorio: el presupuesto de JS mide el código propio y el laboratorio no envía visitas (T256).",
   "ci": {
     "collect": {
       "staticDistDir": "./dist",
@@ -18,7 +18,12 @@
         "/pt-br.html",
         "/pt-br/manifesto.html",
         "/pt-br/principios/p01.html"
-      ]
+      ],
+      "settings": {
+        "blockedUrlPatterns": [
+          "*cloudflareinsights.com*"
+        ]
+      }
     },
     "assert": {
       "assertions": {

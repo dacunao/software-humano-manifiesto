@@ -128,3 +128,8 @@ Validador de Schema.org (`validator.schema.org`) sobre la vista previa, 12 pági
 | `/es/acerca`, `/es/manifiesto/mapa` | `WebPage` |
 
 La prueba de resultados enriquecidos de Google no pudo rastrear la vista previa («La URL no está disponible para Google»). Se repite sobre el dominio definitivo después de publicar. Ninguno de estos tipos genera un resultado enriquecido en Google; la prueba solo confirmará que Google lee el marcado.
+
+## Cloudflare Web Analytics y el presupuesto de JavaScript (T255–T256, 2026-09-30)
+
+- **Ajuste del presupuesto, como pide plan.md:** el presupuesto «JavaScript de cliente ≤ 10 KB comprimido» se fijó para el código propio, antes de sumar el único script de terceros aprobado (Cloudflare Web Analytics, PRD §24.3). Ese script pesa 10,1 KB comprimido (`beacon.min.js`, medido el 2026-09-30) y carga diferido, fuera del camino crítico. Con él, el total por página llega a 17,4 KB; LCP (1,50–1,66 s), CLS (≤ 0,084) y rendimiento (97–100) no cambian. El presupuesto de 10 KB sigue rigiendo para el código propio.
+- **El laboratorio no cuenta visitas:** Lighthouse bloquea `*cloudflareinsights.com*` y Playwright no resuelve esos dominios. Las primeras corridas del 2026-09-30, antes de este ajuste, registraron unas 9 vistas desde `localhost` en el panel; no son visitas reales.

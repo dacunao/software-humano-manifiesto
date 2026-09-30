@@ -71,9 +71,11 @@ test.describe('FR-023 · búsqueda', () => {
   });
 });
 
-test('sin JavaScript no hay botón de búsqueda; nada se pide a terceros', async ({ page, javaScriptEnabled }) => {
+test('sin JavaScript no hay botón de búsqueda; a terceros solo se pide la analítica aprobada', async ({ page, javaScriptEnabled }) => {
   const externas: string[] = [];
-  page.on('request', (r) => { if (!r.url().startsWith('http://localhost:4321')) externas.push(r.url()); });
+  // Cloudflare Web Analytics es el único script de terceros aprobado (PRD §24.3, T255).
+  const aprobada = /^https:\/\/(static\.)?cloudflareinsights\.com\//;
+  page.on('request', (r) => { if (!r.url().startsWith('http://localhost:4321') && !aprobada.test(r.url())) externas.push(r.url()); });
   await page.goto('/es/manifiesto/verificar');
   if (!javaScriptEnabled) await expect(page.locator('[data-abrir-busqueda]')).toBeHidden();
   expect(externas).toEqual([]);

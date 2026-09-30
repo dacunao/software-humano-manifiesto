@@ -20,4 +20,4 @@ core:
   version: '2.1'
   date: '2026-09'
 analytics:
-  cloudflareToken: null # Pendiente: se obtiene al configurar Cloudflare Pages
+  cloudflareToken: 1d506ddf112340a584c00bc51f25f9a0 # Cloudflare Web Analytics, configuración manual (2026-09-30); identificador público, visible en cada página
