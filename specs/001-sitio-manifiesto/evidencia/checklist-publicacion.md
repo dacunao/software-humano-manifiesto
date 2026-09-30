@@ -58,17 +58,17 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | ✅ | Versión, autoría y fecha visibles y en el marcado | Pie, Acerca de y JSON-LD |
 | ✅ | El núcleo completo, descargable en Markdown en los tres idiomas | `/descargas/` |
 | ✅ | Los rastreadores de IA pueden entrar | `robots.txt` no bloquea a nadie |
-| 👤 | **Cloudflare puede bloquear rastreadores de IA por defecto** | Al configurar el dominio, revisar «AI Crawl Control» / «Block AI bots» y el robots.txt administrado. Si quedan activos, ChatGPT, Claude o Perplexity no podrán leer ni citar el sitio |
-| 👤 | Bing Webmaster Tools | Alimenta la búsqueda de ChatGPT y Copilot. Se importa desde Search Console en minutos |
+| ✅ | **Rastreadores de IA permitidos en Cloudflare** | Search, Agent y Training en «Allow»; Bot Preference Sync desactivado, `robots.txt` sin cambios (2026-09-30) · antes:  Al configurar el dominio, revisar «AI Crawl Control» / «Block AI bots» y el robots.txt administrado. Si quedan activos, ChatGPT, Claude o Perplexity no podrán leer ni citar el sitio |
+| ✅ | Bing Webmaster Tools | importado desde Search Console el 2026-09-30 ·  Alimenta la búsqueda de ChatGPT y Copilot. Se importa desde Search Console en minutos |
 | ✅ | `llms.txt` | Agregado por decisión de Damián (2026-09-30, T248), generado desde el contenido aprobado. No es un estándar: Google no lo usa y no hay evidencia firme de su efecto; algunos agentes lo leen al consultar un sitio |
 
 ## 5 · Google
 
 | | Criterio | Estado |
 |---|---|---|
-| 👤 | Search Console como propiedad de dominio | Verificación con un registro TXT en el DNS de Cloudflare, después de asignar el dominio |
-| 👤 | Enviar el sitemap | `https://manifiesto.softwarehumano.com/sitemap.xml` |
-| 👤 | Pedir la indexación de las portadas y del Mapa | Inspección de URL, en los tres idiomas |
+| ✅ | Search Console como propiedad de dominio | `softwarehumano.com`, verificada por el proveedor de DNS (2026-09-30) · antes:  Verificación con un registro TXT en el DNS de Cloudflare, después de asignar el dominio |
+| ✅ | Enviar el sitemap | enviado el 2026-09-30; 66 URL, servido correctamente ·  `https://manifiesto.softwarehumano.com/sitemap.xml` |
+| ✅ | Pedir la indexación de las portadas y del Mapa | solicitada el 2026-09-30 para `/`, `/es`, `/pt-br` y `/manifesto/map` ·  Inspección de URL, en los tres idiomas |
 | 👤 | Revisar «Páginas» y «Experiencia» a las dos o tres semanas | Indexación, Core Web Vitals reales (CrUX) |
 
 ## 6 · Medición
@@ -76,7 +76,7 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | | Criterio | Estado |
 |---|---|---|
 | ✅ | Un solo script de terceros, sin cookies | Cloudflare Web Analytics, ya permitido en la CSP |
-| 👤 | Token de Cloudflare Web Analytics | `analytics.cloudflareToken` en `src/content/sitio.yaml` está vacío: sin él no se mide nada. Se obtiene al crear el sitio en Cloudflare |
+| ✅ | Token de Cloudflare Web Analytics | configurado el 2026-09-30 (T255) · antes:  `analytics.cloudflareToken` en `src/content/sitio.yaml` está vacío: sin él no se mide nada. Se obtiene al crear el sitio en Cloudflare |
 | 👤 | Search Console y CrUX sin script | Ver §5 |
 
 ## 7 · Rendimiento
