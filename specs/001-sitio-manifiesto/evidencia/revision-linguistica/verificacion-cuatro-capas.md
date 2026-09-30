@@ -61,4 +61,4 @@ Aprobadas por Damián el 2026-09-29:
 | 3 · MQM, Gemini (otra familia) | en: 0 · pt: 1 menor | Falso positivo: señala «La tabela», pero el texto dice «A tabela» |
 | 4 · Contraste con DeepL, comparado por Gemini | en: 0 · pt: 1 matiz | Confirmado: «na prática» agregaba un matiz que el español no tiene. Se quitó en pt y también en en («in practice»), que tenía el mismo agregado aunque la capa no lo marcó |
 
-Conclusión: sin errores de sentido ni de terminología; una corrección de fidelidad aplicada en ambos idiomas. Aprobación pendiente de Damián Acuña.
+Conclusión: sin errores de sentido ni de terminología; una corrección de fidelidad aplicada en ambos idiomas. **Aprobado por Damián Acuña el 2026-09-30** (inglés y portugués de Brasil).
