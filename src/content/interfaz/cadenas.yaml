@@ -711,6 +711,10 @@ estado.noOficial:
     text: Não é uma integração oficial nem conta com o respaldo do GitHub.
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
+inicio.tituloPagina:
+  es: { state: aprobado, text: "Manifiesto · Desarrollo de software humano con IA", approvedBy: Damián Acuña, approvedAt: 2026-09-30 }
+  en: { state: aprobado, text: "Manifiesto · Human software development with AI", approvedBy: Damián Acuña, approvedAt: 2026-09-30 }
+  pt-BR: { state: aprobado, text: "Manifiesto · Desenvolvimento de software humano com IA", approvedBy: Damián Acuña, approvedAt: 2026-09-30 }
 inicio.comenzar:
   es: { state: aprobado, text: "Comenzar por el problema", approvedBy: Damián Acuña, approvedAt: 2026-09-29 }
   en:
@@ -1144,7 +1148,7 @@ tema.oscuro:
     approvedBy: Damián Acuña
     approvedAt: 2026-09-29
 tema.sistema:
-  es: { state: borrador, text: "Usar el tema del sistema" }
+  es: { state: aprobado, text: "Usar el tema del sistema", approvedBy: Damián Acuña, approvedAt: 2026-09-30 }
   en:
     state: aprobado
     text: Use the system theme

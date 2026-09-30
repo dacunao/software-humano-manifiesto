@@ -36,10 +36,10 @@ test.describe('PRD v1.4 · tema claro u oscuro', () => {
     await page.reload();
     // Aplicado antes de pintar por public/tema.js: sin destello del tema del sistema.
     expect(await page.evaluate(() => document.documentElement.dataset['tema'])).toBe('oscuro');
-    await page.getByRole('button', { name: 'Usar el del sistema' }).click();
+    await page.getByRole('button', { name: 'Usar el tema del sistema' }).click();
     expect(await page.evaluate(() => document.documentElement.dataset['tema'] ?? null)).toBeNull();
     expect(await fondo(page)).not.toBe(OSCURO);
-    await expect(page.getByRole('button', { name: 'Usar el del sistema' })).toBeHidden();
+    await expect(page.getByRole('button', { name: 'Usar el tema del sistema' })).toBeHidden();
   });
 
   for (const esquema of ['light', 'dark'] as const)

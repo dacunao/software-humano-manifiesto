@@ -36,7 +36,8 @@ const conPagina = enPagina.length >= 1;
 const lang = IDIOMAS[locale].hreflang;
 const url = `${URL_SITIO}${ruta(pagina, locale)}`;
 const esInicio = pagina.tipo === 'inicio';
-const tituloCompleto = esInicio ? titulo : `${titulo} · ${contenido.sitio.name}`;
+// PRD §25.2: la portada lleva un título específico; el nombre del sitio sigue siendo «Manifiesto» (T244).
+const tituloCompleto = esInicio ? t('inicio.tituloPagina', locale) : `${titulo} · ${contenido.sitio.name}`;
 const nodosLD: NodoLD[] = [
   ...(esInicio ? [sitioWeb(contenido.sitio, url, lang)] : []),
   paginaWeb(titulo, url, lang, descripcion, { sitio: contenido.sitio, modificada: actualizado || undefined }),

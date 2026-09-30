@@ -720,3 +720,14 @@ Fuente: observación de Damián Acuña sobre Acerca de (2026-09-30).
 - [X] T241 El botón del pie «Usar el del sistema» no dice qué usa: en español, «Usar el tema del sistema», como ya dicen el inglés y el portugués; queda en `borrador` hasta que Damián lo apruebe per `P05`
 - [X] T242 Falta un espacio antes del «·» que sigue a la fecha («Actualizado el 2026-09-30· Procedencia») en `src/components/Procedencia.astro` per `P08`
 - [X] T243 Al llegar al final de la página, «En esta página» marca la última sección («Contacto»), que nunca alcanza la línea de seguimiento; hoy queda marcada la anterior («Licencias») per `P07`, RQ-20
+
+---
+
+## Phase 39: Checklist antes de publicar
+
+Fuente: `evidencia/checklist-publicacion.md` (2026-09-30) y la aprobación de Damián Acuña del mismo día; PRD §25.2, `FR-016`, `AC-08`.
+
+- [X] T244 Título específico de las portadas en `<title>` y `og:title`: «Manifiesto · Desarrollo de software humano con IA», «Manifiesto · Human software development with AI», «Manifiesto · Desenvolvimento de software humano com IA», aprobados por Damián; el nombre del sitio sigue siendo «Manifiesto» per PRD §25.2
+- [X] T245 `lastmod` en el sitemap, con la misma fecha de actualización que muestra cada página; una prueba exige que coincida con el `dateModified` de su JSON-LD per `FR-016`, `FR-012`
+- [X] T246 Caché larga para los archivos con huella de `/_astro/*` y de 30 días para las fuentes, en `public/_headers` per `AC-08`
+- [X] T247 Aprobación de Damián de «Usar el tema del sistema» (T241)

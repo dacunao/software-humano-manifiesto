@@ -31,9 +31,9 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | ✅ | Página de error sin indexar | Las tres 404 con `noindex` |
 | ✅ | Enlaces internos sin destino roto | RV-11 detiene la construcción |
 | ✅ | HTTPS y cabeceras de seguridad | HSTS, CSP, `nosniff`, `Referrer-Policy` y `Permissions-Policy` en `_headers` |
-| ⚠️ | **Títulos específicos en las portadas** (PRD §25.2) | Las portadas de los tres idiomas se titulan solo «Manifiesto». Es la palabra clave de la marca, pero no dice de qué trata. Requiere texto nuevo y aprobación |
-| ⚠️ | Fecha de modificación en el sitemap (`lastmod`) | No está. Google la usa si es exacta, y el sitio ya conoce la fecha de actualización de cada página |
-| ⚠️ | Caché larga de archivos con huella (`/_astro/*`, fuentes) | Sin `Cache-Control` explícito. Mejora las visitas repetidas; no cambia la primera |
+| ✅ | Títulos específicos en las portadas (PRD §25.2) | «Manifiesto · Human software development with AI» y sus versiones en español y portugués, aprobados por Damián el 2026-09-30 (T244) |
+| ✅ | Fecha de modificación en el sitemap (`lastmod`) | La misma que muestra cada página; una prueba exige que coincidan (T245) |
+| ✅ | Caché larga de archivos con huella | Un año e inmutable para `/_astro/*`; 30 días para las fuentes (T246) |
 | ✅ | Títulos largos | Solo P09 en `es` y `pt-BR` supera 65 caracteres; Google lo recorta sin penalizar |
 
 ## 3 · Datos estructurados (JSON-LD)

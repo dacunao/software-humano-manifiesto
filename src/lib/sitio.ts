@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { leerCanon, type NodoCanonico } from './canon/lector';
 import { cargarContenido } from './contenido/cargar';
 import { casas, nodosDelBloque } from './casas';
-import { ruta } from './i18n/rutas';
+import { ruta, type Pagina } from './i18n/rutas';
 import type { Localizado, Locale, Principio, Superficie, IdSuperficie } from './contenido/esquemas';
 
 /** Acceso de solo lectura al contenido validado y al núcleo, para las vistas. */
@@ -80,6 +80,14 @@ export function partesCanonicas(pid: string): Record<'significa' | 'importa' | '
   const senal = nodos.find((n) => n.source.startsWith('**Señal de incumplimiento.**'));
   if (!senal) throw new Error(`${pid}: falta la señal de incumplimiento en el núcleo`);
   return { significa: tras('Qué significa'), importa: tras('Por qué importa'), reglas: tras('Reglas de diseño'), pruebas: tras('Pruebas de decisión'), senal };
+}
+
+/** Archivos que forman cada página, para su fecha de actualización (FR-012), en la página y en el sitemap. */
+export function archivosDePagina(p: Pagina): string[] {
+  if (p.tipo === 'principio') return [`src/content/principios/${p.principio}.yaml`];
+  const propia = `src/content/superficies/${p.tipo}.yaml`;
+  if (p.tipo === 'inicio' || p.tipo === 'speckit' || p.tipo === 'acerca') return [propia];
+  return [propia, p.tipo === 'principios' ? 'src/content/principios' : 'docs/method/Manifiesto_Software_Humano_IA_Nucleo_v2.1.md'];
 }
 
 const cacheFechas = new Map<string, string>();
