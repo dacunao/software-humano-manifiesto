@@ -1,5 +1,5 @@
 // Cloudflare Workers con archivos estáticos (decisión de Damián Acuña, 2026-09-30; research, T249).
-// Subida directa: se construye y se prueba aquí antes de subir. Sin ruta pública hasta la aceptación (T111).
+// Subida directa: se construye y se prueba aquí antes de subir.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "manifiesto",
@@ -11,6 +11,8 @@
     // Una ruta inexistente responde 404 con la 404.html más cercana (/es/… → es/404.html).
     "not_found_handling": "404-page"
   },
+  // Dominio propio, conectado tras la aceptación de Damián Acuña (T111, 2026-09-30).
+  "routes": [{ "pattern": "manifiesto.softwarehumano.com", "custom_domain": true }],
   // Sin dirección workers.dev pública; solo las de cada versión, para revisar antes de publicar.
   "workers_dev": false,
   "preview_urls": true
