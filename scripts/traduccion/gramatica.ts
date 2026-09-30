@@ -46,14 +46,14 @@ export function anotar(md: string): { text?: string; markup?: string; interpretA
   return partes;
 }
 
-async function revisar(texto: string, idioma: 'en' | 'pt') {
+export async function revisar(texto: string, idioma: 'en' | 'pt') {
   const cuerpo = new URLSearchParams({ language: IDIOMA[idioma], data: JSON.stringify({ annotation: anotar(texto) }), level: 'default' });
   const r = await fetch(`http://localhost:${PUERTO}/v2/check`, { method: 'POST', body: cuerpo });
   if (!r.ok) throw new Error(`LanguageTool respondió ${r.status}`);
   return (await r.json()) as { matches: { message: string; offset: number; length: number; replacements: { value: string }[]; rule: { id: string; category: { id: string } }; context: { text: string; offset: number; length: number } }[] };
 }
 
-async function esperarServidor() {
+export async function esperarServidor() {
   for (let i = 0; i < 60; i++) {
     try {
       if ((await fetch(`http://localhost:${PUERTO}/v2/languages`)).ok) return;
@@ -63,10 +63,17 @@ async function esperarServidor() {
   throw new Error('LanguageTool no arrancó');
 }
 
-if (import.meta.main) {
+/** Abre el servidor local de LanguageTool; quien lo abre lo cierra con `kill()`. */
+export function arrancar() {
   const java = join(DIR, readdirSync(DIR).find((d) => d.startsWith('jdk-17'))!, 'Contents/Home/bin/java');
   const lt = join(DIR, readdirSync(DIR).find((d) => d.startsWith('LanguageTool-'))!);
-  const servidor = Bun.spawn([java, '-cp', join(lt, 'languagetool-server.jar'), 'org.languagetool.server.HTTPServer', '--port', String(PUERTO)], { stdout: 'ignore', stderr: 'ignore' });
+  return Bun.spawn([java, '-cp', join(lt, 'languagetool-server.jar'), 'org.languagetool.server.HTTPServer', '--port', String(PUERTO)], { stdout: 'ignore', stderr: 'ignore' });
+}
+
+export { PROPIOS };
+
+if (import.meta.main) {
+  const servidor = arrancar();
   try {
     await esperarServidor();
     const out: HallazgoGramatica[] = [];

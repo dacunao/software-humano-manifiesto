@@ -17,7 +17,7 @@ Código e conteúdo do site público **[manifiesto.softwarehumano.com](https://m
 | `docs/method/` | O núcleo do manifesto. O site lê daqui o texto canônico em espanhol durante a construção; não o copia |
 | `docs/product/` | O PRD, fundamento de produto do site |
 | `specs/001-sitio-manifiesto/` | Especificação, plano, pesquisa, tarefas e evidências do ciclo SpecKit |
-| `docs/pilot/` | Registro do piloto e relatório sobre como o método funcionou na prática |
+| `docs/pilot/` | Registro do piloto e relatório sobre como o método funcionou |
 | `tools/speckit/`, `.specify/` | A adaptação da Software Humano para o SpecKit, instalada e verificada |
 | `tests/` | Testes unitários e de ponta a ponta (Playwright e axe) |
 

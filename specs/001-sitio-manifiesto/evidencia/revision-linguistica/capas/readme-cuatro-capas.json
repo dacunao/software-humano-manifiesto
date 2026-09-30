@@ -1,0 +1,123 @@
+{
+ "segmentos": 18,
+ "capa1": [],
+ "capa2": [
+  {
+   "clave": "readme::2",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "...ware humano com inteligência artificial v2.1* em inglês americano (padrão), espanhol...",
+   "sugerencias": []
+  },
+  {
+   "clave": "readme::6",
+   "idioma": "en",
+   "regla": "MORFOLOGIK_RULE_EN_US",
+   "mensaje": "Possible spelling mistake found.",
+   "fragmento": "...ro, strict TypeScript, Tailwind CSS and daisyUI | | `src/content/` | Versioned YAML con...",
+   "sugerencias": [
+    "daisy UI"
+   ]
+  },
+  {
+   "clave": "readme::6",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "...te: Astro estático, TypeScript estrito, Tailwind CSS e daisyUI | | `src/content/` | Cont...",
+   "sugerencias": [
+    "Taiwan",
+    "Mailing",
+    "Diluindo"
+   ]
+  },
+  {
+   "clave": "readme::6",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "...ico, TypeScript estrito, Tailwind CSS e daisyUI | | `src/content/` | Conteúdo em YAML v...",
+   "sugerencias": [
+    "Daisy",
+    "Daisys",
+    "maisqui"
+   ]
+  },
+  {
+   "clave": "readme::6",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "... | Testes unitários e de ponta a ponta (Playwright e axe) |",
+   "sugerencias": []
+  },
+  {
+   "clave": "readme::7",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "...s não são modificados. Este arquivo é o README do site.",
+   "sugerencias": [
+    "REAME",
+    "REARME"
+   ]
+  },
+  {
+   "clave": "readme::9",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "Com o Manifiesto (núcleo v2.1) e a adaptação da Software Humano 2.0.0...",
+   "sugerencias": []
+  },
+  {
+   "clave": "readme::11",
+   "idioma": "pt",
+   "regla": "MORFOLOGIK_RULE_PT_BR",
+   "mensaje": "Encontrado possível erro de ortografia.",
+   "fragmento": "Requer o [Bun](https://bun.sh) na versão indicada em ...",
+   "sugerencias": [
+    "Bum",
+    "Um",
+    "Bem"
+   ]
+  }
+ ],
+ "capa3-en": {
+  "modelo": "gemini-3.6-flash",
+  "resultados": []
+ },
+ "capa4-en": {
+  "modelo": "gemini-3.6-flash",
+  "resultados": []
+ },
+ "capa3-pt": {
+  "modelo": "gemini-3.5-flash",
+  "resultados": [
+   {
+    "clave": "readme::16",
+    "errores": [
+     {
+      "tipo": "fluidez",
+      "gravedad": "menor",
+      "fragmento_es": "La tabla",
+      "fragmento_tr": "La tabela",
+      "explicacion": "Se utilizó el artículo femenino en español 'La' en lugar del correspondiente en portugués 'A'."
+     }
+    ]
+   }
+  ]
+ },
+ "capa4-pt": {
+  "modelo": "gemini-3.6-flash",
+  "resultados": [
+   {
+    "clave": "readme::6",
+    "clase": "matiz",
+    "explicacion": "A inclusão de 'na prática' acrescenta um matiz de ênfase que não estava presente no texto original em espanhol ('cómo funcionó el método').",
+    "contraste": "| Rota | O que é |\n|---|---|\n| `src/` | O site: Astro estático, TypeScript estrito, Tailwind CSS e daisyUI |\n| `src/content/` | Conteúdo em YAML com controle de versão, incluindo seu status de aprovação por idioma |\n| `docs/method/` | O núcleo do manifesto. O site lê o texto canônico em espanhol a partir daqui durante a construção; não o copia |\n| `docs/product/` | O PRD, documento de referência do produto do site |\n| `specs/001-site-manifesto/` | Especificação, plano, pesquisa, tarefas e evidências do ciclo do SpecKit |\n| `docs/pilot/` | Diário do piloto e relatório sobre o funcionamento do método |\n| `tools/speckit/`, `.specify/` | A adaptação do Software Humano para o SpecKit, instalada e verificada |\n| `tests/` | Testes unitários e de ponta a ponta (Playwright e axe) |"
+   }
+  ]
+ }
+}

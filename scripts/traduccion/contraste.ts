@@ -9,7 +9,7 @@ import { textos } from './relevancia';
 import { CAPAS, Cache, IDIOMAS, deepl, indicacion, lotes, revisor } from './servicios';
 
 interface Comparacion { clave: string; clase: 'equivalente' | 'matiz' | 'cambio-de-sentido'; explicacion: string }
-const ESQUEMA = {
+export const ESQUEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',

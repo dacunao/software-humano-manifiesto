@@ -17,7 +17,7 @@ It is also the first real project built with the Software Humano adaptation for 
 | `docs/method/` | The manifesto core. The site reads the canonical Spanish text from here at build time; it doesn't copy it |
 | `docs/product/` | The PRD, the site's product foundation |
 | `specs/001-sitio-manifiesto/` | Specification, plan, research, tasks and evidence from the SpecKit cycle |
-| `docs/pilot/` | Pilot log and a report on how the method worked in practice |
+| `docs/pilot/` | Pilot log and a report on how the method worked |
 | `tools/speckit/`, `.specify/` | The Software Humano adaptation for SpecKit, installed and verified |
 | `tests/` | Unit and end-to-end tests (Playwright and axe) |
 

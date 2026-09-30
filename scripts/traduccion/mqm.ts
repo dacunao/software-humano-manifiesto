@@ -11,7 +11,7 @@ import { CAPAS, Cache, indicacion, lotes, revisor } from './servicios';
 interface Error { tipo: string; gravedad: 'critica' | 'mayor' | 'menor'; fragmento_es: string; fragmento_tr: string; explicacion: string }
 interface Resultado { clave: string; errores: Error[] }
 
-const ESQUEMA = {
+export const ESQUEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',

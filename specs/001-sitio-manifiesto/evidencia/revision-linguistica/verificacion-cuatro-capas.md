@@ -49,3 +49,16 @@ Aprobadas por Damián el 2026-09-29:
 - **`capas/`:** informes de cada capa (`capa-1-…`, `capa-2-…`, `capa-3-claude-…`, `capa-4-…`), cachés y pares comparados.
 - **`copy-para-openai/`:** lo enviado a ChatGPT y lo recibido.
 - **`correspondencia-nucleo-en-pt-2026-09-28.md`:** la verificación inicial del núcleo contra el original.
+
+## README del repositorio (T231, 2026-09-30)
+
+`.github/README.md` (en) y `.github/README.pt-BR.md`, traducidos por Claude desde `.github/README.es.md`, que es la referencia: 16 segmentos. Script `scripts/traduccion/readme.ts`; salida completa en `capas/readme-cuatro-capas.json`. Las observaciones de modelo se confirmaron una por una (`V12`).
+
+| Capa | Resultado | Qué se hizo |
+|---|---|---|
+| 1 · Terminología | 0 hallazgos | — |
+| 2 · LanguageTool (en-US, pt-BR) | 7 avisos de ortografía | Todos falsos positivos: nombres propios y de herramientas (`daisyUI`, `axe`, `README`, `Bun`, «Manifiesto») |
+| 3 · MQM, Gemini (otra familia) | en: 0 · pt: 1 menor | Falso positivo: señala «La tabela», pero el texto dice «A tabela» |
+| 4 · Contraste con DeepL, comparado por Gemini | en: 0 · pt: 1 matiz | Confirmado: «na prática» agregaba un matiz que el español no tiene. Se quitó en pt y también en en («in practice»), que tenía el mismo agregado aunque la capa no lo marcó |
+
+Conclusión: sin errores de sentido ni de terminología; una corrección de fidelidad aplicada en ambos idiomas. Aprobación pendiente de Damián Acuña.
