@@ -7,7 +7,7 @@ import validacion from './src/integrations/validacion';
 // son páginas propias según specs/001-sitio-manifiesto/contracts/rutas.md.
 export default defineConfig({
   output: 'static',
-  site: 'https://softwarehumano.com',
+  site: 'https://manifiesto.softwarehumano.com', // debe coincidir con src/content/sitio.yaml (T228)
   trailingSlash: 'never',
   build: { format: 'file' },
   i18n: {

@@ -676,3 +676,11 @@ Fuente: decisión de Damián Acuña (2026-09-29), registrada en `AGENTS.md`; PRD
 - [X] T225 Una línea en el pie de todas las páginas: «Hecho con el Manifiesto (núcleo v{núcleo}) y Software Humano para SpecKit {preset}, sin publicar, sobre SpecKit {speckit}», con la adaptación enlazada a SpecKit. Reemplaza en `src/components/Procedencia.astro` la versión del núcleo y el estado del preset, que ya no se repiten; quedan el Mapa, la fecha y la procedencia. Al publicarse el preset, el texto se actualiza con su enlace (`FR-010`) per `FR-012`, PRD §4
 - [X] T226 La versión de SpecKit se lee de `.specify/init-options.json`, y el build se detiene si no coincide con la fijada en `tools/speckit/specify` per `FR-012`, `D04`
 - [X] T227 Pruebas: la línea aparece en el pie de las tres versiones con las versiones de los datos, y el pie no repite la versión del núcleo ni el estado del preset; aprobación de Damián de los textos en los tres idiomas per `FR-012`, `O08`
+
+---
+
+## Phase 35: Coherencia del dominio
+
+Fuente: consulta de la sesión que prepara la publicación del método (2026-09-29). `astro.config.mts` conservaba `site: 'https://softwarehumano.com'`, anterior a la decisión de dominio (PRD v1.3, §29.1). No afecta a la salida: canónicas, `og:url`, `hreflang`, sitemap, robots y JSON-LD salen de `src/content/sitio.yaml` (`manifiesto.softwarehumano.com`). Pero contradice la decisión y confunde a quien lo lee.
+
+- [X] T228 Poner `site: 'https://manifiesto.softwarehumano.com'` en `astro.config.mts` y agregar una prueba unitaria que exija que coincida con el dominio de `src/content/sitio.yaml` per PRD §29.1, `AC-11` (contradicts)
