@@ -60,7 +60,7 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | ✅ | Los rastreadores de IA pueden entrar | `robots.txt` no bloquea a nadie |
 | 👤 | **Cloudflare puede bloquear rastreadores de IA por defecto** | Al configurar el dominio, revisar «AI Crawl Control» / «Block AI bots» y el robots.txt administrado. Si quedan activos, ChatGPT, Claude o Perplexity no podrán leer ni citar el sitio |
 | 👤 | Bing Webmaster Tools | Alimenta la búsqueda de ChatGPT y Copilot. Se importa desde Search Console en minutos |
-| — | `llms.txt` | No es un estándar que use Google ni hay evidencia firme de su efecto. No se agrega sin decisión (regla 6) |
+| ✅ | `llms.txt` | Agregado por decisión de Damián (2026-09-30, T248), generado desde el contenido aprobado. No es un estándar: Google no lo usa y no hay evidencia firme de su efecto; algunos agentes lo leen al consultar un sitio |
 
 ## 5 · Google
 

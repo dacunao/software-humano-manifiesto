@@ -731,3 +731,4 @@ Fuente: `evidencia/checklist-publicacion.md` (2026-09-30) y la aprobación de Da
 - [X] T245 `lastmod` en el sitemap, con la misma fecha de actualización que muestra cada página; una prueba exige que coincida con el `dateModified` de su JSON-LD per `FR-016`, `FR-012`
 - [X] T246 Caché larga para los archivos con huella de `/_astro/*` y de 30 días para las fuentes, en `public/_headers` per `AC-08`
 - [X] T247 Aprobación de Damián de «Usar el tema del sistema» (T241)
+- [X] T248 `/llms.txt` (propuesta llmstxt.org), generado en la construcción desde el contenido aprobado y sin texto propio: descripción del sitio, aviso de autoridad del original, las páginas de cada idioma en el orden de lectura con su descripción, la descarga del núcleo en Markdown y el repositorio de la adaptación. Una prueba exige que cada enlace exista. Decisión de Damián Acuña (2026-09-30) per PRD §25.1, §25.4

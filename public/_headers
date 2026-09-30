@@ -11,3 +11,6 @@
 # Fuentes sin huella: 30 días.
 /fonts/*
   Cache-Control: public, max-age=2592000
+# Índice para agentes de IA (T248): texto con acentos.
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
