@@ -88,3 +88,28 @@ Con el contenido aprobado en los tres idiomas y la nueva Acerca del Manifiesto: 
 ## Actualización del 2026-09-29 (T224)
 
 Después de la navegación estándar (fase 31), el recorrido contra los principios (fase 32) y el cambio de la ruta inglesa a `/manifesto/worked-example` (T220): construcción con 69 páginas y `RV-01`–`RV-14` en verde; índice de búsqueda con 63 páginas; 65 pruebas unitarias y 797 de extremo a extremo aprobadas (959 omitidas a propósito por proyecto: teléfono, sin JavaScript o movimiento reducido). Lighthouse sobre las mismas 14 páginas, tres corridas cada una, con todos los presupuestos cumplidos: LCP entre 1.50 s y 1.66 s, CLS máximo 0.084, JavaScript máximo 7.2 KB y rendimiento entre 97 y 100. Las páginas `en` y `pt-BR` ya no mezclan español: el contenido está aprobado en los tres idiomas.
+
+## Despliegue en Cloudflare (T249–T251, 2026-09-30)
+
+Plataforma: Cloudflare Workers con archivos estáticos, por subida directa (decisiones de Damián Acuña, 2026-09-30). Configuración en `wrangler.jsonc`: `dist/` como archivos estáticos, `html_handling: drop-trailing-slash`, `not_found_handling: 404-page`, sin dirección `workers.dev` pública (`workers_dev: false`) y con direcciones por versión (`preview_urls: true`). Wrangler fijado en 4.144.0 (`bunx wrangler@4.144.0`).
+
+**Comprobado en la vista previa** `https://vista-previa-manifiesto.dacunao.workers.dev`:
+- las rutas de las superficies y los principios en los tres idiomas responden 200; `/about/` y `/about.html` redirigen a `/about` (307);
+- una ruta inexistente responde 404 con la página del idioma que corresponde (`/es/…` → `lang="es"`);
+- llegan todas las cabeceras de `public/_headers`: CSP, HSTS, `nosniff`, `Referrer-Policy`, `Permissions-Policy`; `/_astro/*` con caché de un año e inmutable; `llms.txt` como texto UTF-8;
+- Cloudflare agrega `X-Robots-Tag: noindex` en la vista previa: no se indexa.
+
+**Procedimiento:**
+
+```bash
+bun run build && bun test tests/unit && bunx playwright test && bun run check:publish
+# Vista previa (no toca producción):
+bunx wrangler@4.144.0 versions upload --preview-alias vista-previa --message "<commit>"
+# Publicar una versión revisada (solo con la aceptación de Damián, T111):
+bunx wrangler@4.144.0 versions deploy <id-de-versión>@100% --message "<commit>"
+# Volver a la versión anterior:
+bunx wrangler@4.144.0 rollback <id-de-versión-anterior> --message "<motivo>"
+bunx wrangler@4.144.0 deployments list
+```
+
+**Vuelta atrás probada** mientras el proyecto no tenía ruta pública: se desplegó la versión `81fcc623` al 100 % y se volvió a `6e6ea055` con `rollback`; `deployments list` confirma la versión activa. Cada operación tarda menos de un segundo.

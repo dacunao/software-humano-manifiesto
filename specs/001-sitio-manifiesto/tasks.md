@@ -328,7 +328,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
   - cómo se declaran las licencias del sitio en el repositorio sin modificar los `LICENSE*` del paquete
 - [ ] T108 Ejecutar `bun run check:publish` hasta que pase
 - [ ] T109 Ejecutar `/speckit-converge` y reconciliar contra la especificación completa (`AC-10`); sin brechas críticas
-- [ ] T110 Configurar el proyecto de Cloudflare Pages con despliegues de vista previa y comprobar, sobre una vista previa, que un despliegue se puede revertir al anterior; registrar el procedimiento en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §24.2)
+- [X] T110 Configurar el proyecto de Cloudflare Pages con despliegues de vista previa y comprobar, sobre una vista previa, que un despliegue se puede revertir al anterior; registrar el procedimiento en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §24.2)
 - [ ] T111 STOP · Aceptación de Damián antes de publicar (PRD §34). Solo con su autorización explícita, desplegar en Cloudflare Pages
 
 ---
@@ -739,6 +739,6 @@ Fuente: `evidencia/checklist-publicacion.md` (2026-09-30) y la aprobación de Da
 
 Fuente: decisiones de Damián Acuña (2026-09-30), registradas en `AGENTS.md` y en research.md; T110, T111, PRD §24.2, §34.
 
-- [ ] T249 `wrangler.jsonc`: Worker `manifiesto` con los archivos estáticos de `dist/`, rutas sin extensión, página 404 del idioma más cercano, sin ruta pública hasta la aceptación y con vistas previas por versión per T110, research (Cloudflare)
-- [ ] T250 Primera vista previa: construcción, pruebas y comprobación previa en verde; subir; comprobar en la vista previa las rutas, los 404 localizados, las cabeceras de `_headers` y que no se indexe per T110, PRD §24.2
-- [ ] T251 Probar la vuelta atrás a una versión anterior y registrar el procedimiento en `evidencia/tecnica.md` per T110
+- [X] T249 `wrangler.jsonc`: Worker `manifiesto` con los archivos estáticos de `dist/`, rutas sin extensión, página 404 del idioma más cercano, sin ruta pública hasta la aceptación y con vistas previas por versión per T110, research (Cloudflare)
+- [X] T250 Primera vista previa: construcción, pruebas y comprobación previa en verde; subir; comprobar en la vista previa las rutas, los 404 localizados, las cabeceras de `_headers` y que no se indexe per T110, PRD §24.2
+- [X] T251 Probar la vuelta atrás a una versión anterior y registrar el procedimiento en `evidencia/tecnica.md` per T110

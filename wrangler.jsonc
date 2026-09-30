@@ -1,0 +1,17 @@
+// Cloudflare Workers con archivos estáticos (decisión de Damián Acuña, 2026-09-30; research, T249).
+// Subida directa: se construye y se prueba aquí antes de subir. Sin ruta pública hasta la aceptación (T111).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "manifiesto",
+  "compatibility_date": "2026-09-26",
+  "assets": {
+    "directory": "./dist",
+    // build.format 'file' y trailingSlash 'never': /about sirve about.html y /about/ redirige a /about.
+    "html_handling": "drop-trailing-slash",
+    // Una ruta inexistente responde 404 con la 404.html más cercana (/es/… → es/404.html).
+    "not_found_handling": "404-page"
+  },
+  // Sin dirección workers.dev pública; solo las de cada versión, para revisar antes de publicar.
+  "workers_dev": false,
+  "preview_urls": true
+}
