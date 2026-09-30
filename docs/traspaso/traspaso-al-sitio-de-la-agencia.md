@@ -3,7 +3,8 @@
 **De:** el proyecto del sitio del Manifiesto (`manifiesto.softwarehumano.com`), publicado el 2026-09-30.
 **Para:** el proyecto nuevo del sitio de la agencia Software Humano.
 **Autoridad de producto de ambos:** Damián Acuña.
-**Fecha:** 2026-09-30. Revisado con la sesión del paquete del método.
+**Proyecto nuevo:** `agencia-software-humano`.
+**Fecha:** 2026-09-30. Revisado con la sesión del paquete del método; la separación por autoridad la decidió Damián.
 
 Este documento tiene **dos partes, separadas por autoridad**:
 
@@ -14,39 +15,46 @@ Las fuentes se enlazan, no se copian. Viven en el repositorio público del Manif
 
 ---
 
-## Cómo arrancar el proyecto nuevo
+## Orden de inicio: seguirlo tal cual
 
-1. **Primero, el paquete del método**, versión **v2.3.2** (`https://github.com/dacunao/software-humano-speckit/releases/tag/v2.3.2`; SHA-256 del ZIP starter `bfb17a1fe3f5aa434c41881b8f354299385613a63d584d0fa1a43ea40d14c909`). Se instala siguiendo `instructions/01` del propio paquete, sin atajos. Este documento no repite esos pasos: viven en el paquete.
-2. **Después, este documento**, en una ruta que el paquete no toca (por ejemplo `docs/traspaso/`). Descomprimir el paquete escribe en la raíz, y lo que esté ahí con el mismo nombre se pierde.
-3. **Damián completa «Completar por proyecto» de `AGENTS.md`** con:
+El proyecto nuevo es **`agencia-software-humano`**. El orden importa porque descomprimir el paquete del método escribe en la raíz (`AGENTS.md`, `CLAUDE.md`, las licencias, `SHA256SUMS` y otros), y lo que esté ahí antes con el mismo nombre se pierde. Completar `AGENTS.md` antes de descomprimir es trabajo perdido.
+
+1. **Repositorio vacío** y `git init`.
+2. **Descomprimir el paquete del método v2.3.2**, el ZIP starter de `https://github.com/dacunao/software-humano-speckit/releases/tag/v2.3.2` (SHA-256 `bfb17a1fe3f5aa434c41881b8f354299385613a63d584d0fa1a43ea40d14c909`).
+3. **Poner el contenido propio en rutas que el paquete no toca:** el fundamento de producto, los insumos de marca y copy, y este documento (por ejemplo en `docs/traspaso/`). Desde la 2.2.4, el `README.md` de la raíz es libre para el proyecto.
+4. **Damián completa «Completar por proyecto» de `AGENTS.md`:**
    - el fundamento de producto;
-   - las decisiones de la Parte A que adopte;
-   - la mención de este documento como lectura de consulta sin autoridad.
+   - las decisiones de la Parte A, en «Decisiones técnicas aprobadas» o en el fundamento;
+   - la especificación visual v1.0 **entre las fuentes rectoras** (A1);
+   - este documento como **lectura de consulta sin autoridad**.
+5. **Sesión 1**, siguiendo `instructions/01` del paquete: comprobación de entorno, `init`, las tres capas y su verificación. Los pasos y las trampas conocidas están en el paquete y en las «Notas de entorno» de su `AGENTS.md`; este documento no los repite.
+6. **Cerrar y reabrir la sesión.** Las skills se cargan al iniciar: un comando instalado en la sesión 1 no existe hasta reabrir. Es lo esperado, no un fallo.
+7. **Sesión 2:** materializar la constitución.
+8. **Recién entonces, `specify`.** Sin fundamento identificable, el método se detiene (`STOP01`).
 
-   Esto va antes de `specify`: sin fundamento identificable, el método se detiene (`STOP01`).
-4. Si algo de este documento contradice al paquete, **vale el paquete**: se avisa la contradicción y se detiene.
+Si algo de este documento contradice al paquete, **vale el paquete**: se avisa y se detiene.
 
 ---
 
-## Parte A · Decisiones que deben gobernar
+## Parte A · Decisiones que gobiernan
 
-Estado de cada una:
-- **Vigente para ambos sitios:** Damián ya la decidió para los dos.
-- **Decidida para la agencia:** Damián la decidió para este proyecto.
-- **Propuesta:** regía en el Manifiesto; Damián confirma si rige también aquí.
+Decididas por Damián Acuña (2026-09-30). Van al fundamento de producto o a «Decisiones técnicas aprobadas» del `AGENTS.md` de `agencia-software-humano`.
 
-| # | Decisión | Estado | Fuente |
-|---|---|---|---|
-| A1 | **La marca es la especificación visual compartida v1.0**:<br>• Noto Sans como única familia<br>• paleta y tokens<br>• componentes<br>• WCAG 2.2 AA<br>• claro y oscuro equivalentes<br>• en `softwarehumano.com`, sus reglas del §9 | Vigente para ambos sitios | `REPO/docs/design/Software_Humano_Especificacion_Visual_v1.0.md` (SHA-256 `721a409e…0cad`), autoridad Damián Acuña |
-| A2 | **Relación entre los dos sitios:**<br>• el Manifiesto publica la doctrina y la agencia se presenta a sí misma<br>• los pasajes del núcleo viven solo en el Manifiesto; la agencia los cita en frases breves con enlace, sin duplicarlos<br>• el Manifiesto enlaza a la agencia en su pie y en Acerca de | Vigente para ambos sitios (2026-09-28) | `REPO/AGENTS.md`, «Relación con Software Humano» |
-| A3 | **Nombres y licencias:**<br>• «Software Humano» no se traduce; en portugués es femenino: «a Software Humano»<br>• «Manifiesto» es el nombre del sitio del Manifiesto en los tres idiomas<br>• los nombres y el logotipo quedan fuera de las licencias MIT y CC BY 4.0 | Vigente para ambos sitios | PRD del Manifiesto v1.6 §29.1 y §29.5 |
-| A4 | **Voz:**<br>• claro, directo y preciso; humano sin infantilizar; sin grandilocuencia sobre IA; sin presentar recomendaciones como hechos<br>• español neutro latinoamericano con `tú` y `ustedes`, sin voseo, `vosotros` ni localismos<br>• inglés estadounidense<br>• portugués de Brasil | Propuesta | PRD del Manifiesto v1.6 §21.6; `REPO/AGENTS.md`, «Contrato lingüístico» |
-| A5 | **Aprobación:**<br>• cada texto visible lleva su estado por idioma (`pendiente`, `borrador`, `aprobado`, con quién y cuándo)<br>• Damián aprueba los tres idiomas<br>• no se publica un idioma con textos sin aprobar ni fragmentos de otro<br>• el agente nunca marca un texto como aprobado sin su instrucción explícita | Propuesta | `REPO/AGENTS.md`, «Contrato lingüístico»; `REPO/scripts/check-publish.ts` |
-| A6 | **Traducción:**<br>• el español es siempre la referencia<br>• un idioma no se aprueba sin la verificación en cuatro capas<br>• el revisor de la capa 3 es de otra familia de modelos que el traductor<br>• la verificación se usa desde el repositorio del Manifiesto, sin copiar las herramientas | Decidida para la agencia: el servicio desde el Manifiesto (2026-09-30). Propuesta: la obligatoriedad | `REPO/specs/001-sitio-manifiesto/research.md` (RQ-19) |
-| A7 | **Infraestructura:**<br>• Cloudflare Workers con archivos estáticos, por subida directa<br>• la misma cuenta y la zona `softwarehumano.com`, que ya existen<br>• publicar es un acto deliberado, con la aceptación de Damián | Decidida para la agencia (2026-09-30: «se apalanca en lo que ya está hecho») | `REPO/AGENTS.md`, «Plataforma»; `REPO/specs/001-sitio-manifiesto/evidencia/tecnica.md` |
+| # | Decisión | Fuente |
+|---|---|---|
+| A1 | **La marca es la especificación visual compartida v1.0.** El documento declara en su cabecera que su ámbito son los dos sitios y que es fuente de verdad para el agente que implementa ambos. **El `AGENTS.md` del proyecto nuevo debe nombrarla entre sus fuentes rectoras:** si no, el agente la lee como contexto y puede apartarse sin incumplir nada. Son obligatorias tal como están escritas:<br>• sus ocho reglas no negociables (§2)<br>• la sección del sitio comercial (§9)<br>• el flywheel del ciclo (§7.9)<br>• Prisma en índigo y Catalizador en coral<br>• el único llamado principal, «Leer el Manifiesto», en índigo | `REPO/docs/design/Software_Humano_Especificacion_Visual_v1.0.md` (SHA-256 `721a409e8ef6fc60226d46729152274e4ad8e60ca6a914b5888ec7af684a0cad`), autoridad Damián Acuña |
+| A2 | **Relación entre los dos sitios:**<br>• la agencia cita el núcleo del manifiesto en frases breves con enlace a su pasaje en `manifiesto.softwarehumano.com`<br>• nunca lo duplica | `REPO/AGENTS.md`, «Relación con Software Humano» |
+| A3 | **Nombres y derechos:**<br>• «Software Humano» no se traduce; en portugués es femenino: «a Software Humano»<br>• el nombre, el logotipo y **el contenido del sitio de la agencia son de autor, con todos los derechos reservados**: no se licencian como el Manifiesto, cuyo contenido es CC BY 4.0 | Decisión de Damián Acuña (2026-09-30); PRD del Manifiesto v1.6 §29.5 para la exclusión de los nombres y el logotipo |
+| A4 | **Verificación en cuatro capas, obligatoria siempre:** ningún idioma se publica sin pasarla, para **todo** el contenido del sitio y no solo para lo que cite el manifiesto. Detalles en B3 | `REPO/specs/001-sitio-manifiesto/research.md` (RQ-19) |
+| A5 | **Publicación en Cloudflare con el mismo flujo que el Manifiesto:**<br>• Workers con archivos estáticos, por subida directa, en la misma cuenta y la zona `softwarehumano.com`, que ya existen<br>• construir, pasar las pruebas y la comprobación previa<br>• subir una vista previa<br>• Damián la revisa y acepta<br>• recién entonces se publica, con vuelta atrás disponible | `REPO/specs/001-sitio-manifiesto/evidencia/tecnica.md`; `REPO/wrangler.jsonc` |
 
-**Decisiones abiertas que pertenecen al proyecto nuevo:**
-- **Nombrar «Software Humano» en la cabecera:** se decide al definir la cabecera de `softwarehumano.com`, para los dos sitios a la vez. Hoy la del Manifiesto muestra el ícono y «Manifiesto».
+**Por qué la voz queda libre y la verificación atada:** la voz es criterio y cambia con el propósito de cada sitio; el comercial tiene otro que el Manifiesto. La verificación, en cambio, atrapa cambios de sentido que ninguna voz justifica. «O pacote reclama a raiz do projeto», que en portugués de Brasil dice que el paquete se queja, habría pasado cualquier revisión de estilo.
+
+**Si algo de la Parte B choca con el fundamento o con la especificación visual, ganan el fundamento y la especificación.** El agente lo reporta en vez de resolverlo por su cuenta.
+
+**Decisiones abiertas del proyecto nuevo:**
+- **Nombrar «Software Humano» en la cabecera:** se decide al definir la de `softwarehumano.com`, para los dos sitios a la vez.
+- **La licencia del código** del sitio de la agencia, si el repositorio llega a ser público. A3 cubre el nombre, el logotipo y el contenido; no el código.
 - **Enviar correo como el dominio:** requiere un servicio de correo propio (ver B4).
 
 ---
@@ -55,7 +63,7 @@ Estado de cada una:
 
 ### B1 · Marca: lo que ya está hecho y se puede copiar
 
-Es código del sitio del Manifiesto, bajo MIT. La marca que representa sigue A1 y A3.
+Es código del sitio del Manifiesto, bajo MIT. La marca que representa sigue A1 y A3: el logotipo y los nombres no entran en esa licencia.
 
 | Pieza | Dónde |
 |---|---|
@@ -70,7 +78,20 @@ Lo aprendido:
 - **La cabecera del teléfono** mostraba solo el ícono y dejaba el sitio anónimo para quien no conoce la marca. Se corrigió así: ícono y nombre desde 360 px de ancho, y «Buscar» como lupa para hacerle lugar.
 - **Los documentos de marca y el copy de la agencia** que Damián entregó como insumo no están en el repositorio del Manifiesto. Los aporta él.
 
-### B2 · Copy: cómo trabajar con Damián
+### B2 · Copy: voz, aprobación y cómo trabajar con Damián
+
+**Voz del Manifiesto, como referencia y no como regla** (la voz del sitio comercial la decide su propio fundamento):
+- **Tono** (PRD del Manifiesto v1.6 §21.6): claro, directo y preciso; humano sin infantilizar; técnico solo cuando mejora la comprensión; sin grandilocuencia sobre IA; sin presentar recomendaciones como hechos.
+- **Español neutro latinoamericano:** `tú` y `ustedes`, sin voseo, `vosotros` ni localismos nacionales.
+- **Inglés estadounidense** (*organize, behavior, center*).
+- **Portugués de Brasil,** con `pt-BR` en los metadatos.
+
+**El flujo de aprobación, como se practicó aquí:**
+- cada texto visible lleva su estado por idioma: `pendiente`, `borrador` o `aprobado`, este último con quién y cuándo;
+- Damián aprueba los tres idiomas, después de las cuatro capas;
+- una comprobación previa impide publicar con textos sin aprobar (`REPO/scripts/check-publish.ts`);
+- el agente nunca marcó un texto como aprobado sin la instrucción explícita de Damián.
+
 
 - **Una tabla de tres columnas.** Los textos nuevos se le presentan en español, inglés y portugués, cortos, y se le pide un sí. Le ahorra lectura y decide rápido.
 - **Qué exige volver a aprobar:** un texto nuevo o modificado vuelve a `borrador`. Cambiar un dato que el texto usa, como una versión o una dirección, no exige volver a aprobarlo.
@@ -103,6 +124,7 @@ bun run scripts/traduccion/readme.ts \
 - **Bloques alineados:** los tres archivos deben tener los mismos bloques, separados por línea en blanco, en el mismo orden. La barra de idioma de la primera línea se omite. Si un idioma lleva un aviso propio, se pone también en los otros; si no, el script se detiene.
 - **Copy que no está en Markdown** (YAML, componentes): se exporta cada idioma a un Markdown alineado, un bloque por texto, y se pasa por el mismo script.
 - **Cupo:** una página de unas 120 líneas cuesta unas 4 llamadas a Gemini y unos 12.000 caracteres de DeepL.
+- **Puede tardar:** el 2026-09-30 Gemini estuvo saturado y una corrida pasó unos treinta minutos sin escribir nada. Quien planifique una publicación debe contar con ese margen.
 - **Glosario:** `REPO/scripts/traduccion/glosario.yaml`, con 27 términos fijados del núcleo y 10 variantes prohibidas. Los términos propios de la agencia se proponen a Damián y se agregan allí, para que un concepto no tenga dos nombres en dos sitios del mismo autor.
 - **El flujo que dio mejor resultado:**
   1. Damián traduce con ChatGPT (OpenAI).
