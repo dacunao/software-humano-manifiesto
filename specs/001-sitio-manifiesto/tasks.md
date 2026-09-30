@@ -751,3 +751,4 @@ Fuente: observación y decisión de Damián Acuña sobre la vista previa (2026-0
 
 - [X] T252 En teléfonos de 360 px o más, «Manifiesto» junto al ícono; por debajo, solo el ícono. «Buscar» como lupa en teléfonos, con su nombre accesible y 44 × 44 px; en pantallas anchas no cambia per decisión 2026-09-30, especificación §7.1
 - [X] T253 Pruebas en 320, 360, 375 y 430 px: el nombre visible desde 360, sin superposición ni desborde horizontal, y «Buscar» con nombre accesible; nueva vista previa per `O08`
+- [X] T254 Actualizar la versión publicada que muestra el sitio de la 2.2.4 a la 2.3.2 (preset 2.0.3), comprobada en la API de GitHub; solo cambian datos, no textos. Decisión de Damián Acuña (2026-09-30) per `FR-009`, `FR-010`

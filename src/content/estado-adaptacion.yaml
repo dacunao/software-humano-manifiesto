@@ -4,16 +4,17 @@
 version: 2.0.0
 verifiedAt: '2026-09-27'
 # Publicada por decisión de Damián Acuña (2026-09-30, PRD §29.10). Datos comprobados en la API de
-# GitHub ese día: la 2.2.4 es la vigente; la 2.2.3 no se usa.
+# GitHub ese día: la 2.3.2 es la vigente (actualizada desde la 2.2.4 por decisión de Damián, antes de
+# publicar el sitio); la 2.2.3 no se usa.
 published: true
 repository: https://github.com/dacunao/software-humano-speckit
 release:
-  version: 2.2.4
-  preset: 2.0.1
+  version: 2.3.2
+  preset: 2.0.3
   publishedAt: '2026-09-30'
-  page: https://github.com/dacunao/software-humano-speckit/releases/tag/v2.2.4
-  download: https://github.com/dacunao/software-humano-speckit/releases/download/v2.2.4/software-humano-speckit-starter-v2.2.4.zip
-  sha256: d80599565c363c36b95a45b246f5f1bd06ac0aac05c15a877d6be6e9bd977d88
+  page: https://github.com/dacunao/software-humano-speckit/releases/tag/v2.3.2
+  download: https://github.com/dacunao/software-humano-speckit/releases/download/v2.3.2/software-humano-speckit-starter-v2.3.2.zip
+  sha256: bfb17a1fe3f5aa434c41881b8f354299385613a63d584d0fa1a43ea40d14c909
 limitations:
   es:
     state: aprobado
