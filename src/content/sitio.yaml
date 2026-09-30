@@ -14,7 +14,7 @@ licenses:
   content: CC BY 4.0
   code: MIT
 contact:
-  email: manifiestosoftwarehumano@gmail.com # Alias de contacto (PRD §29.7), definido por Damián Acuña el 2026-09-29
+  email: manifiesto@softwarehumano.com # Alias de contacto (PRD §29.7): Email Routing de Cloudflare reenvía a manifiestosoftwarehumano@gmail.com (Damián Acuña, 2026-09-30)
   issues: https://github.com/dacunao/software-humano-speckit/issues # Canal técnico (PRD §29.7, §29.10; decisión del 2026-09-30)
 core:
   version: '2.1'

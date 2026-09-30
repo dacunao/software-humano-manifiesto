@@ -206,7 +206,7 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 | 4 · Protagonismo del autor | Voz impersonal en el recorrido, con una nota de origen en primera persona. *2026-09-29*: la nota de origen es la sección «Por qué existe» de Acerca de, adaptada del copy de Damián (`Copy_Pagina_Acerca_del_Manifiesto_ES_v1.1`) con una primera persona equilibrada, sin énfasis en el autor |
 | 5 · Licencia | Texto del núcleo y contenido editorial: CC BY 4.0 · código y método: MIT · nombres «Software Humano» y «Manifiesto» y logotipo excluidos de ambas · tabla por tipo de material en Acerca de (PRD v1.3 §29) |
 | 6 · Acción pública sin preset publicado | **Solo estado, sin captura.** El estado de la adaptación se modela como dato; se declara disponibilidad futura, sin botón, formulario ni enlace sin destino |
-| 7 · Contacto | Alias de correo como `mailto:`, más Issues del repositorio para lo técnico. La dirección concreta no está definida |
+| 7 · Contacto | Alias de correo como `mailto:`, más Issues del repositorio para lo técnico. *2026-09-30*: `manifiesto@softwarehumano.com`, que Email Routing de Cloudflare reenvía a `manifiestosoftwarehumano@gmail.com`; solo recibe, y las respuestas salen desde Gmail. Enviar como el dominio requiere un servicio de correo propio (DMARC `p=quarantine`) |
 | 8 · Analítica | Ver «Decisiones técnicas aprobadas» |
 | 9 · Aprobación lingüística | Ver «Contrato lingüístico» |
 

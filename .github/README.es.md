@@ -54,4 +54,4 @@ La tabla completa, por tipo de material, está en [Acerca del Manifiesto](https:
 
 ## Contacto
 
-Por correo: manifiestosoftwarehumano@gmail.com.
+Por correo: manifiesto@softwarehumano.com.
