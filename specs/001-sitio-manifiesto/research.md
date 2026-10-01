@@ -33,6 +33,8 @@ Los identificadores `RQ-` son propios de este proyecto. No continúan los del pi
 - **Rationale**: `FR-019` («una URL localizada explícita siempre prevalecerá»), `FR-020` («la preferencia guardada podrá orientar la navegación posterior, pero no sobrescribir una URL elegida o compartida»), `AC-14`. Una URL inglesa compartida (`/principles/p03`) tiene que abrir en inglés para quien la recibe, tenga la preferencia que tenga.
 - **Alternatives considered**: que la preferencia redirija cualquier ruta sin prefijo (descartada: rompe enlaces compartidos en inglés); que la preferencia no redirija nunca (más simple, pero entonces «conservar la elección» no tendría efecto más allá de la navegación interna, que ya conserva el idioma sola).
 
+- **Enmienda del 2026-10-01** (Damián Acuña, opción A): la preferencia se guarda también en una cookie para todo `softwarehumano.com`, para que pase entre el sitio del Manifiesto y el de la agencia; el almacenamiento local queda como respaldo. Una visita a `/` que llega desde el otro sitio cuenta como llegada desde fuera. Se descartaron pasar la elección por la dirección (ensucia las URL y solo cubre los enlaces propios) y no integrarla.
+
 ## RQ-05 · Superficie de ajustes · **confirmada por la autoridad**
 
 - **Decision**: **no hay panel de ajustes aparte**. El selector de idioma, presente en todas las superficies, es la superficie de ajustes. No se agrega control propio de movimiento porque el sitio no tendrá movimiento no esencial: toda transición respeta `prefers-reduced-motion` (`FR-013`).
@@ -186,6 +188,8 @@ Reemplaza en parte RQ-05: además del idioma, el tema claro u oscuro es una pref
   - **Tema**: tokens oscuros en `src/styles/tokens.css`, dentro de la dirección visual. Sin elección guardada, rige `prefers-color-scheme`, también sin JavaScript. Un script síncrono mínimo (`public/tema.js`, menos de 1 KB, permitido por `script-src 'self'`) aplica la elección guardada antes de pintar, para que no haya destello. El control de día y noche es un botón con `aria-pressed`, y permite volver a seguir al sistema. Axe verifica el contraste AA en los dos temas.
 - **Rationale**: PRD §21.2, §18.2 y §21.7 v1.4; `FR-020` (preferencia local, transparente, reversible y prescindible); `P03` (resolver por contexto: el sistema ya sabe qué prefiere la persona); `P09` (sin tipografías web ni destellos).
 - **Alternatives considered**: la tipografía cargada como fuente web (rompe el presupuesto de solo fuentes del sistema); dos archivos de logotipo por tema (duplica recursos); aplicar el tema con un script de módulo (se ejecuta tarde y produce un destello del tema equivocado).
+
+- **Enmienda del 2026-10-01**: la elección de tema se guarda en la misma cookie de preferencia compartida que el idioma (RQ-04 enmendado); `public/tema.js` la lee antes de pintar. Desde 360 px, la cabecera del teléfono muestra el ícono y «Manifiesto», y «Buscar» es una lupa con nombre accesible.
 
 ## RQ-18 · Sistema visual compartido (PRD v1.5, 2026-09-28)
 
