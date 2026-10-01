@@ -794,7 +794,7 @@ Fuente: decisiones de Damián Acuña (2026-10-01): uniformidad entre sitios, con
 - [X] T270 Especificación visual v1.0.1 (solo el selector del modo oscuro a `data-tema`), la 1.0 conservada como registro; referencias actualizadas en `AGENTS.md`, el traspaso y el estándar. Aprobado por Damián Acuña (2026-10-01)
 - [X] T271 JSON-LD: el contacto como `contactPoint` del editor, con el correo y el propósito del sitio («Manifesto inquiries»), sin `email` suelto (estándar común B8). Aprobado por Damián Acuña (2026-10-01)
 - [X] T272 Estándar común aprobado por Damián Acuña (2026-10-01), con sus dos anexos y Email Address Obfuscation apagado en el baseline de Cloudflare
-- [ ] T273 Preferencias compartidas entre los sitios: el tema (`sh-tema`) y el idioma (`sh-idioma`) se guardan en una cookie de preferencia para todo `softwarehumano.com` (`Domain=softwarehumano.com; Path=/; SameSite=Lax; Secure; Max-Age` de un año), además del almacenamiento local como respaldo, y se leen de la cookie primero. Un solo módulo para los dos, más `public/tema.js` antes de pintar. Pruebas de extremo a extremo; tras publicar, prueba entre los dos dominios reales. Actualizar B2, B4 y B12 del estándar. Opción A aprobada por Damián Acuña (2026-10-01; observación de la sesión de la agencia) per `FR-018`, `FR-020`, estándar común
+- [X] T273 Preferencias compartidas entre los sitios: el tema (`sh-tema`) y el idioma (`sh-idioma`) se guardan en una cookie de preferencia para todo `softwarehumano.com` (`Domain=softwarehumano.com; Path=/; SameSite=Lax; Secure; Max-Age` de un año), además del almacenamiento local como respaldo, y se leen de la cookie primero. Un solo módulo para los dos, más `public/tema.js` antes de pintar. Pruebas de extremo a extremo; tras publicar, prueba entre los dos dominios reales. Actualizar B2, B4 y B12 del estándar. Opción A aprobada por Damián Acuña (2026-10-01; observación de la sesión de la agencia) per `FR-018`, `FR-020`, estándar común
 
 ---
 
@@ -809,7 +809,7 @@ Fuente: `analyze` del 2026-10-01 sobre las fases 34 a 43 (hallazgos K1–K11). T
 - [X] T278 Agregar al mapa de cobertura las filas de las fases 34 a 43: huella de construcción, publicación de la adaptación, checklist y descubrimiento, despliegue, revisión adversaria de traducciones, estándar común y preferencias compartidas per `A02`, `O02` (partial)
 - [X] T279 Precisar en `data-model.md` que las preferencias de tema e idioma se guardan en la cookie compartida y en el almacenamiento local per `FR-020` (partial)
 - [X] T280 Actualizar en `plan.md` la lista de pendientes: el alias de contacto, PRD §29.10 y la aceptación ya están resueltos per plan (partial)
-- [ ] T281 Actualizar las cifras de `evidencia/tecnica.md` al publicar T273 per `O08` (partial)
+- [X] T281 Actualizar las cifras de `evidencia/tecnica.md` al publicar T273 per `O08` (partial)
 - [X] T282 Corregir en `evidencia/checklist-publicacion.md` las vistas previas `*.pages.dev` por `*.workers.dev` per checklist (partial)
 - [X] T283 Cerrar T107: los datos pendientes ya llegaron (correo, analítica y página de autor) per T107 (partial)
 - [X] T284 Registrar en la bitácora del piloto la entrada C8: las fases 34 a 43 se hicieron sin `analyze` hasta que Damián preguntó por el método per `AGENTS.md`, «Registro del piloto» (missing)

@@ -142,3 +142,14 @@ El dominio `softwarehumano.com` quedó activo en Cloudflare a las 17:05 (hora de
 - la página SpecKit muestra la versión publicada 2.3.2; la medición está presente;
 - `softwarehumano.com` sigue respondiendo como antes (página de estacionamiento de GoDaddy);
 - la prueba de resultados enriquecidos de Google rastrea correctamente `/es/principios` («Rastreado correctamente»); no detecta resultados enriquecidos, lo esperado para estos tipos (T106).
+
+## Preferencias compartidas entre los sitios (T273, 2026-10-01)
+
+Publicado en la versión `bba75566`. Comprobado en producción con un navegador real (Chromium):
+- elegir el tema oscuro y portugués crea `sh-tema=oscuro` y `sh-idioma=pt-BR` con dominio `.softwarehumano.com`, ruta `/`, `SameSite=Lax`, `Secure` y vigencia de 365 días;
+- el navegador entrega esas cookies a cualquier dirección de `softwarehumano.com`, que es lo que permite al sitio de la agencia leerlas;
+- al volver a `/` con la preferencia guardada, el sitio lleva a `/pt-br` y aplica el tema oscuro antes de pintar.
+
+La raíz `softwarehumano.com` todavía redirige a la página de estacionamiento de GoDaddy, así que la prueba completa en las dos direcciones se repite cuando la agencia publique con la misma implementación.
+
+Cifras al 2026-10-01: 69 páginas, `RV-01`–`RV-14` en verde, 73 pruebas unitarias y 851 de extremo a extremo aprobadas; Lighthouse dentro de los presupuestos, con el JavaScript propio por debajo de 10 KB.
