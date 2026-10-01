@@ -759,3 +759,17 @@ Fuente: observación y decisión de Damián Acuña sobre la vista previa (2026-0
 - [X] T259 Contacto de Acerca de: agregar los Issues del repositorio del sitio para reportar errores del sitio, junto al correo y a los Issues de la adaptación; texto nuevo en `borrador` hasta la aprobación de Damián, y el mismo dato en los tres README. Decisión de Damián Acuña (2026-09-30) per PRD §29.7
 - [X] T260 Página de autor (T107): `https://www.linkedin.com/in/dacunao/` como `url` del `Person` en el JSON-LD y como enlace visible del nombre en «Autoría» de Acerca de, sin cambiar el texto aprobado. Dato de Damián Acuña (2026-09-30) per PRD §25.2
 - [X] T261 Traspaso al sitio de la agencia en `docs/traspaso/traspaso-al-sitio-de-la-agencia.md`, separado por autoridad (Parte A, decisiones que deben gobernar; Parte B, experiencia y recursos) y revisado con la sesión del paquete del método. Pedido de Damián Acuña (2026-09-30)
+
+---
+
+## Phase 42: Revisión adversaria de traducciones
+
+Fuente: decisión de Damián Acuña (2026-10-01), transmitida por la sesión del sitio de la agencia y confirmada por él: revisiones adversarias con roles fijos. **ChatGPT (OpenAI) traduce, Claude revisa** (capa 3 y comparación de la capa 4) y DeepL sigue como contraste independiente. Gemini deja de usarse. Motivo: el 2026-10-01 Gemini estuvo saturado durante horas y el servicio no entregó nada.
+
+- [X] T262 `scripts/traduccion/readme.ts` con tres modos de archivos, sin llamar a ningún modelo:
+  - `--modo=traducir`: genera la indicación fija para que Damián lleve el español a ChatGPT (`indicacion-traduccion.md`, con glosario y variedad);
+  - `--modo=preparar`: corre las capas 1 y 2 en local, pide el contraste a DeepL y escribe los paquetes de la capa 3 y de la capa 4 para el revisor;
+  - `--modo=recibir`: valida las respuestas contra `ESQUEMA_MQM` y `ESQUEMA_CONTRASTE` (un elemento por segmento, misma clave y mismo orden) y escribe el informe con traductor y revisor declarados.
+
+  Exige `--tradujo` y `--reviso`, y se detiene si son de la misma familia. Avisa qué texto sale a servicios externos. No cambia los módulos que importa el script de la agencia per RQ-19, C6, `V12`
+- [X] T263 Actualizar RQ-19 (research.md) y el traspaso (B3) con el nuevo flujo per RQ-19

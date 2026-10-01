@@ -105,30 +105,43 @@ La verificación en cuatro capas (RQ-19):
 |---|---|---|
 | 1 · Terminología | Glosario es → en → pt con variantes prohibidas | Local, gratis |
 | 2 · Ortografía y gramática | LanguageTool local, `en-US` y `pt-BR` | Local, gratis |
-| 3 · Sentido | Errores estilo MQM (omisión, adición, cambio de sentido, terminología, fluidez) por un modelo de otra familia | Capa gratuita de Gemini |
-| 4 · Contraste | Traducción independiente con DeepL, comparada por el revisor de la capa 3 | Plan Developer de DeepL, un millón de caracteres en total; el Manifiesto usó cerca del 9 % |
+| 3 · Sentido | Errores estilo MQM (omisión, adición, cambio de sentido, terminología, fluidez) por el revisor, de otra familia que el traductor | Claude, en la sesión, por archivos |
+| 4 · Contraste | Traducción independiente con DeepL, comparada por el revisor | Plan Developer de DeepL, un millón de caracteres en total; el Manifiesto usó cerca del 9 % |
 
-**Corre desde el repositorio del Manifiesto.** Bun lee las claves de su `.env.local`, que Damián creó y está fuera del repositorio; LanguageTool está instalado aislado en `~/.local/share/languagetool-software-humano`. El proyecto nuevo no puede adivinarlo:
+**Roles fijos, para que la revisión sea adversaria** (decisión de Damián Acuña, 2026-10-01): **ChatGPT (OpenAI) traduce, Claude revisa** la capa 3 y compara la capa 4, y **DeepL** da el contraste independiente. Gemini dejó de usarse: el 2026-10-01 estuvo saturado durante horas y el servicio no entregó nada. El servicio no llama a ningún modelo; todo pasa por archivos.
+
+**Corre desde el repositorio del Manifiesto.** Bun lee las claves de su `.env.local`, que Damián creó y está fuera del repositorio. LanguageTool está instalado aislado en `~/.local/share/languagetool-software-humano`. El proyecto nuevo no puede adivinarlo.
 
 ```bash
 cd /Users/damianacuna/proyectos/website-software-humano
-bun run scripts/traduccion/readme.ts \
-  --es="<ruta>/archivo.es.md" \
-  --en="<ruta>/archivo.md" \
-  --pt="<ruta>/archivo.pt-BR.md" \
-  --salida="<ruta del proyecto nuevo>/informe-cuatro-capas.json"
+R=scripts/traduccion/readme.ts
+
+# 1 · Traducir: la indicación fija (glosario y variedad) para que Damián lleve el español a ChatGPT.
+bun run $R --modo=traducir --es="<ruta>/archivo.es.md" --dir="<paquete>"
+
+# 2 · Preparar: capas 1 y 2 locales, contraste de DeepL y los paquetes del revisor.
+bun run $R --modo=preparar --es="<ruta>/archivo.es.md" --en="<ruta>/archivo.md" --pt="<ruta>/archivo.pt-BR.md" \
+  --dir="<paquete>" --tradujo=openai --reviso=anthropic
+
+# 3 · Claude lee capa3-en.md, capa3-pt.md, capa4-en.md y capa4-pt.md y escribe
+#     revision-capa3-en.json, revision-capa3-pt.json, revision-capa4-en.json y revision-capa4-pt.json.
+
+# 4 · Recibir: valida las respuestas y escribe el informe.
+bun run $R --modo=recibir --dir="<paquete>" --salida="<ruta>/informe-cuatro-capas.json"
 ```
 
-- **Salida:** el informe se escribe solo donde indica `--salida`, así que no se toca el repositorio del Manifiesto.
-- **Bloques alineados:** los tres archivos deben tener los mismos bloques, separados por línea en blanco, en el mismo orden. La barra de idioma de la primera línea se omite. Si un idioma lleva un aviso propio, se pone también en los otros; si no, el script se detiene.
-- **Copy que no está en Markdown** (YAML, componentes): se exporta cada idioma a un Markdown alineado, un bloque por texto, y se pasa por el mismo script.
-- **Cupo:** una página de unas 120 líneas cuesta unas 4 llamadas a Gemini y unos 12.000 caracteres de DeepL.
-- **Puede tardar:** el 2026-09-30 Gemini estuvo saturado y una corrida pasó unos treinta minutos sin escribir nada. Quien planifique una publicación debe contar con ese margen.
+- **Control de familia:** `--tradujo` y `--reviso` son obligatorios, y el servicio se detiene si son de la misma familia (hallazgo C6).
+- **Validación de las respuestas:** un elemento por segmento, con la misma clave y en el mismo orden, y los campos según el esquema de la capa. Si algo no calza, se detiene y dice qué.
+- **Archivos:** el paquete y el informe se escriben solo en `--dir` y `--salida`; no se toca el repositorio del Manifiesto.
+- **Aviso de envío:** el servicio avisa qué texto sale a DeepL o al revisor. No sabe si es público: el copy de la agencia no lo es, y enviarlo es decisión de Damián.
+- **Bloques alineados:** los tres archivos deben tener los mismos bloques, separados por línea en blanco, en el mismo orden. Una barra de idioma en la primera línea se omite. Si un idioma lleva un aviso propio, se pone también en los otros; si no, el servicio se detiene.
+- **Copy que no está en Markdown** (YAML, componentes): se exporta cada idioma a un Markdown alineado, un bloque por texto, y se pasa por el mismo servicio.
+- **Cupo:** una página de unas 120 líneas cuesta unos 12.000 caracteres de DeepL.
 - **Glosario:** `REPO/scripts/traduccion/glosario.yaml`, con 27 términos fijados del núcleo y 10 variantes prohibidas. Los términos propios de la agencia se proponen a Damián y se agregan allí, para que un concepto no tenga dos nombres en dos sitios del mismo autor.
-- **El flujo que dio mejor resultado:**
-  1. Damián traduce con ChatGPT (OpenAI).
-  2. Claude revisa con las capas 1 a 3.
-  3. DeepL sirve de contraste.
+- **El flujo:**
+  1. Damián traduce con ChatGPT, usando la indicación del paso 1.
+  2. El servicio prepara las capas 1, 2 y el contraste.
+  3. Claude revisa las capas 3 y 4, y confirma cada observación contra el archivo.
   4. Damián aprueba.
 
   Evidencia: `REPO/specs/001-sitio-manifiesto/evidencia/revision-linguistica/verificacion-cuatro-capas.md`.
@@ -136,7 +149,7 @@ bun run scripts/traduccion/readme.ts \
 Lecciones del registro del piloto (`REPO/docs/pilot/registro-del-piloto.md`):
 - **Verificar quién tradujo antes de elegir el revisor** (C6). Se supuso mal y casi se descartó una revisión necesaria.
 - **Las salidas de modelo son observaciones por confirmar** (`V12`). Hubo falsos positivos; cada observación se confirma contra el archivo.
-- **Las capas gratuitas no siempre responden** (B6). Gemini estuvo saturado durante horas y el modo gratuito de Mistral tiene cupo cero. El script reintenta; puede tardar.
+- **Las capas gratuitas no siempre responden** (B6). Gemini estuvo saturado durante horas, dos días seguidos, y el modo gratuito de Mistral tiene cupo cero. Por eso, desde el 2026-10-01, el servicio no depende de ningún modelo externo: todo pasa por archivos.
 - **La capa 3 encuentra lo que nada determinista ve** (A8, A9). Por ejemplo, «O pacote reclama a raiz do projeto», que en portugués de Brasil dice que el paquete se queja.
 - **Un defecto del español no se compensa en la traducción.** Se corrige el español o se lleva a Damián.
 

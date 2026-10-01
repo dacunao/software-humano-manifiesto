@@ -249,6 +249,12 @@ Reemplaza el motor propio de RQ-16. Se conservan su contenido, sus reglas y el c
     - el **copy**, traducido por agentes Claude, lo revisa **Gemini** (Mistral solo si la cuenta tiene cupo; su modo gratuito tiene límite cero).
 
     Ambos usan la misma indicación fija (`scripts/traduccion/indicacion-mqm.md`), y cada resultado registra el modelo que lo produjo.
+  - **Roles fijos y servicio por archivos** (Damián Acuña, 2026-10-01; reemplaza el revisor automático): para que la revisión sea adversaria, **ChatGPT (OpenAI) traduce y Claude revisa** la capa 3 y compara la capa 4; **DeepL** sigue como contraste independiente. Gemini deja de usarse: el 2026-10-01 estuvo saturado durante horas y el servicio no entregó nada. `scripts/traduccion/readme.ts` no llama a ningún modelo y tiene tres modos:
+    - `traducir`: la indicación fija para ChatGPT (`indicacion-traduccion.md`);
+    - `preparar`: capas 1 y 2 locales, el contraste de DeepL y los paquetes del revisor;
+    - `recibir`: valida las respuestas contra los esquemas de las capas 3 y 4 y escribe el informe.
+
+    Exige declarar quién tradujo y quién revisa, y se detiene si son de la misma familia. Avisa qué texto sale a servicios externos, porque no todo lo que se verifica es público: el copy de la agencia no lo es. Los módulos que importa el script del sitio de la agencia (`terminologia`, `gramatica`, `mqm.ESQUEMA`, `contraste.ESQUEMA`, `servicios`) no cambian.
   - **Datos enviados.** Las capas 3 y 4 envían el texto a servicios externos, y la capa gratuita de Gemini puede usar lo que recibe para mejorar sus productos. Se acepta porque el contenido es público (CC BY 4.0) y no contiene datos personales.
 - **Rationale**: `AC-13` y PRD §27.4 exigen una revisión lingüística y doctrinal. Sin un hablante nativo, estas capas no certifican el texto, pero encuentran lo sospechoso y dirigen la atención humana. La investigación del 2026-09-29 descartó dos opciones:
   - xCOMET y CometKiwi, porque su licencia no permite el uso comercial;
