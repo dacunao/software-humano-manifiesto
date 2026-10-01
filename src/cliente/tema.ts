@@ -2,6 +2,8 @@
  * Día y noche (PRD v1.4 §21.7, RQ-17). `public/tema.js` ya aplicó la elección guardada antes de
  * pintar; aquí solo se muestra el control y se guarda o se borra la elección.
  */
+import { guardarPreferencia, leerPreferencia } from './preferencias';
+
 const CLAVE = 'sh-tema';
 const raiz = document.documentElement;
 const control = document.querySelector<HTMLElement>('[data-control-tema]');
@@ -10,9 +12,7 @@ const alternar = control?.querySelector<HTMLButtonElement>('[data-tema-alternar]
 const sistema = document.querySelector<HTMLButtonElement>('[data-tema-sistema]');
 const oscuroDelSistema = window.matchMedia('(prefers-color-scheme: dark)');
 
-function guardada(): string | null {
-  try { return localStorage.getItem(CLAVE); } catch { return null; }
-}
+const guardada = () => leerPreferencia(CLAVE);
 
 function reflejar(): void {
   const elegido = raiz.dataset['tema'];
@@ -28,12 +28,12 @@ if (control && alternar) {
   alternar.addEventListener('click', () => {
     const nuevo = alternar.getAttribute('aria-pressed') === 'true' ? 'claro' : 'oscuro';
     raiz.dataset['tema'] = nuevo;
-    try { localStorage.setItem(CLAVE, nuevo); } catch { /* sin almacenamiento, rige solo en esta página */ }
+    guardarPreferencia(CLAVE, nuevo);
     reflejar();
   });
   sistema?.addEventListener('click', () => {
     delete raiz.dataset['tema'];
-    try { localStorage.removeItem(CLAVE); } catch { /* nada guardado */ }
+    guardarPreferencia(CLAVE, null);
     reflejar();
     alternar.focus();
   });

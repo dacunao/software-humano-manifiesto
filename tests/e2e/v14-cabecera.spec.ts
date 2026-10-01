@@ -79,3 +79,41 @@ test('T267 · WCAG 2.5.3: el nombre accesible de cada idioma contiene su código
     expect(await a.getAttribute('aria-label')).toMatch(new RegExp(`^${visible},`));
   }
 });
+
+test.describe('T273 · preferencias compartidas entre los sitios', () => {
+  test('elegir el tema y el idioma escribe la cookie de preferencia', async ({ page, context, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'las preferencias son una mejora progresiva');
+    await page.emulateMedia({ colorScheme: 'light' });
+    await page.goto('/es');
+    const menu = page.locator('.menu-movil > summary');
+    await page.getByRole('button', { name: 'Tema oscuro' }).click();
+    if (await menu.isVisible()) await menu.click();
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'PT, Português (Brasil)' }).click();
+    await expect(page).toHaveURL(/\/pt-br/);
+    const c = Object.fromEntries((await context.cookies()).map((x) => [x.name, x]));
+    expect(c['sh-tema']?.value).toBe('oscuro');
+    expect(c['sh-idioma']?.value).toBe('pt-BR');
+    expect(c['sh-tema']?.sameSite).toBe('Lax');
+    expect(c['sh-tema']?.expires).toBeGreaterThan(Date.now() / 1000 + 300 * 24 * 3600);
+  });
+
+  test('una preferencia que llega en la cookie desde el otro sitio se aplica', async ({ page, context, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'las preferencias son una mejora progresiva');
+    await page.emulateMedia({ colorScheme: 'light' });
+    await context.addCookies([
+      { name: 'sh-tema', value: 'oscuro', url: 'http://localhost:4321' },
+      { name: 'sh-idioma', value: 'es', url: 'http://localhost:4321' },
+    ]);
+    await page.goto('/');
+    await expect(page).toHaveURL(/\/es$/);
+    expect(await page.evaluate(() => document.documentElement.dataset['tema'])).toBe('oscuro');
+  });
+
+  test('«Usar el tema del sistema» borra la cookie', async ({ page, context, javaScriptEnabled }) => {
+    test.skip(!javaScriptEnabled, 'las preferencias son una mejora progresiva');
+    await context.addCookies([{ name: 'sh-tema', value: 'oscuro', url: 'http://localhost:4321' }]);
+    await page.goto('/es/manifiesto');
+    await page.getByRole('button', { name: 'Usar el tema del sistema' }).click();
+    expect((await context.cookies()).find((x) => x.name === 'sh-tema')).toBeUndefined();
+  });
+});

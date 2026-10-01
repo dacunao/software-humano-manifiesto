@@ -75,7 +75,7 @@ test.describe('bordes', () => {
     expect(titulo).toBeGreaterThanOrEqual(cabecera);
   });
 
-  test('sin cookies; en almacenamiento local solo las preferencias de idioma y tema', async ({ page, context, javaScriptEnabled }) => {
+  test('solo se guardan las preferencias de idioma y tema, en su cookie y en el almacenamiento local (T273)', async ({ page, context, javaScriptEnabled }) => {
     test.skip(!javaScriptEnabled, 'sin JavaScript no se guarda nada');
     await page.goto('/es');
     const menu = page.locator('.menu-movil > summary');
@@ -86,7 +86,7 @@ test.describe('bordes', () => {
     if (!(await tema.isVisible())) await menu.click();
     await tema.click({ timeout: 5000 });
     for (const ruta of ['/es/principios/p01', '/es/manifiesto/verificar']) await page.goto(ruta);
-    expect(await context.cookies()).toEqual([]);
+    for (const c of await context.cookies()) expect(['sh-idioma', 'sh-tema']).toContain(c.name);
     const claves = await page.evaluate(() => Object.keys(localStorage));
     for (const c of claves) expect(['sh-idioma', 'sh-tema']).toContain(c);
     expect(await page.evaluate(() => Object.keys(sessionStorage))).toEqual([]);

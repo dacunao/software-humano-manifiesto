@@ -2,24 +2,15 @@
  * Preferencia de idioma (RQ-04, FR-020 v1.6): se guarda al elegir en el selector, se modifica
  * eligiendo otro idioma y solo orienta la entrada por la raíz `/` desde fuera del sitio. Cualquier otra URL es explícita
  * y nunca se sustituye (FR-019). Si el almacenamiento no está disponible, el sitio funciona igual.
+ * Se comparte entre los sitios de Software Humano: llegar desde el otro sitio cuenta como llegar desde fuera.
  */
+import { guardarPreferencia, leerPreferencia } from './preferencias';
+
 const CLAVE = 'sh-idioma';
 const RUTA: Record<string, string> = { es: '/es', 'pt-BR': '/pt-br' };
 
-function leer(): string | null {
-  try {
-    return localStorage.getItem(CLAVE);
-  } catch {
-    return null;
-  }
-}
-function guardar(v: string | null): void {
-  try {
-    if (v) localStorage.setItem(CLAVE, v);
-  } catch {
-    /* almacenamiento bloqueado: la preferencia es prescindible */
-  }
-}
+const leer = () => leerPreferencia(CLAVE);
+const guardar = (v: string | null) => { if (v) guardarPreferencia(CLAVE, v); };
 
 /** El último elemento con id del contenido que ya pasó por el tercio superior de la pantalla. */
 function pasajeEnPantalla(): string | undefined {
