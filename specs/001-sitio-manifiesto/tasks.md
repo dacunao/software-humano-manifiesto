@@ -802,7 +802,7 @@ Fuente: decisiones de Damián Acuña (2026-10-01): uniformidad entre sitios, con
 
 Fuente: `analyze` del 2026-10-01 sobre las fases 34 a 43 (hallazgos K1–K11). T273 sigue abierta hasta publicarla y probarla entre los dos dominios reales; T103–T105 tienen excepción aprobada.
 
-- [ ] T274 Actualizar B2, B4 y B12 del estándar común: las preferencias van en la cookie compartida para `softwarehumano.com`, con respaldo local; la medición no usa cookies; la preferencia sí, solo por elección de la persona y sin rastreo. Redacción aprobada por Damián per `FR-018`, `FR-020`, T273 (contradicts)
+- [X] T274 Actualizar B2, B4 y B12 del estándar común: las preferencias van en la cookie compartida para `softwarehumano.com`, con respaldo local; la medición no usa cookies; la preferencia sí, solo por elección de la persona y sin rastreo. Redacción aprobada por Damián per `FR-018`, `FR-020`, T273 (contradicts)
 - [X] T275 Agregar al estándar común B16 · Cabecera y menú: barra superior fija en todos los anchos; en el teléfono, cabecera de 56 px con «Menú» plegable (`details`/`summary`, funciona sin JavaScript), cuyo panel flota sobre el contenido debajo de la cabecera per decisión de Damián (2026-10-01) (missing)
 - [X] T276 Corregir «Target Platform» de `plan.md`: Cloudflare Workers con archivos estáticos per plan: decisión de plataforma (contradicts)
 - [X] T277 Actualizar `contracts/datos-estructurados.md`: `@id` comunes, `sameAs` del autor y `contactPoint` del editor per `FR-016`, T266, T271 (partial)
