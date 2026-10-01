@@ -46,6 +46,8 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 **La especificación visual compartida** sigue siendo la fuente del aspecto visual de todos los sitios. Este estándar no la repite; fija cómo se implementa.
 
+**La configuración de Cloudflare** tiene su baseline y su registro en `docs/estandar/cloudflare.md`.
+
 ---
 
 ## 3 · Anexos por proyecto

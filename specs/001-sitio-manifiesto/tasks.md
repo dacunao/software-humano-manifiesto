@@ -785,3 +785,4 @@ Fuente: decisiones de Damián Acuña (2026-10-01): uniformidad entre sitios, con
 
 - [X] T267 Defecto WCAG 2.5.3 (Label in Name) del selector de idioma: el nombre accesible contiene el código visible: «PT, Português (Brasil)». El `title` conserva el nombre completo. Decisión de Damián Acuña (2026-10-01), corregido también en la agencia por su sesión per `AC-07`, B1
 - [X] T268 Documento del estándar común en `docs/estandar/`, con las definiciones B1–B15 contrastadas con la implementación de referencia, la regla del anexo por proyecto y las decisiones pendientes. Queda en borrador hasta la aprobación de Damián
+- [X] T269 Baseline y registro de configuración de Cloudflare en `docs/estandar/cloudflare.md`: zona compartida, ajustes por sitio, lecciones y el registro de acciones del Manifiesto; cada proyecto lleva su registro con las mismas columnas. Comprobado que Email Address Obfuscation no altera el `mailto:` publicado. Pedido de Damián Acuña (2026-10-01)
