@@ -28,7 +28,7 @@
 | AI Crawl Control: Search, Agent y Training | «Allow» | Que buscadores y agentes de IA lean y citen los sitios; el contenido del Manifiesto es CC BY 4.0 | 2026-10-01: 173 solicitudes de IA en 7 días, 0 bloqueadas |
 | Bot Preference Sync | Apagado | `robots.txt` es el del proyecto, sin texto agregado por Cloudflare | 2026-10-01 |
 | Bot fight mode y AI Labyrinth | Apagados | No desafiar ni confundir a rastreadores legítimos | 2026-10-01 |
-| Email Address Obfuscation | **Pendiente de Damián** (hoy activo) | Solo reescribe HTML que pasa por el proxy desde un origen. Las respuestas de Workers con archivos estáticos salen intactas: el `mailto:` del Manifiesto se publica sin cambios. Apagarlo evita sorpresas si algún sitio se sirve de otra forma | 2026-10-01 |
+| Email Address Obfuscation | **Apagado** (decisión de Damián, 2026-10-01; lo apaga él en Security → Settings) | Solo reescribe HTML que pasa por el proxy desde un origen. Las respuestas de Workers con archivos estáticos salen intactas: el `mailto:` del Manifiesto se publica sin cambios. Apagarlo evita sorpresas si algún sitio se sirve de otra forma | 2026-10-01 |
 | Browser integrity check y Replace insecure JavaScript libraries | Activos, sin efecto observado | Anotar si cambia algo | 2026-10-01 |
 | Email Routing | Activo; una dirección por sitio y propósito; catch-all desactivado | Recibir sin comprar un servicio de correo. Solo recibe: enviar como el dominio requiere un servicio propio (DMARC `p=quarantine`) | 2026-09-30 |
 | Google Search Console | Propiedad de dominio `softwarehumano.com`, verificada por el proveedor de DNS | Cubre todos los subdominios | 2026-09-30 |
@@ -51,6 +51,7 @@
 2. **Un certificado nuevo tarda unos minutos.** El primer acceso a una vista previa o a un dominio recién conectado puede fallar en el intercambio TLS; se reintenta.
 3. **Cloudflare puede crear un sitio de Web Analytics en modo automático por su cuenta.** Hay que revisarlo antes de crear el manual.
 4. **Email Address Obfuscation no afecta a Workers con archivos estáticos,** pero conviene comprobarlo en cada sitio que publique un correo.
+5. **El primer `deploy` publica las `routes` de `wrangler.jsonc`.** Wrangler no sube versiones a un Worker que no existe, y el `deploy` que lo crea publica las rutas declaradas. El Worker se crea con una configuración **sin rutas** y el dominio se agrega después de la aceptación (lección aportada por la sesión de la agencia, 2026-10-01).
 
 ---
 

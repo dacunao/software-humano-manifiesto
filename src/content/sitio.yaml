@@ -15,6 +15,7 @@ licenses:
   code: MIT
 contact:
   email: manifiesto@softwarehumano.com # Alias de contacto (PRD §29.7): Email Routing de Cloudflare reenvía a manifiestosoftwarehumano@gmail.com (Damián Acuña, 2026-09-30)
+  purpose: Manifesto inquiries # contactType del contactPoint en el JSON-LD (estándar común B8, 2026-10-01)
   issues: https://github.com/dacunao/software-humano-speckit/issues # Canal técnico (PRD §29.7, §29.10; decisión del 2026-09-30)
   issuesSitio: https://github.com/dacunao/software-humano-manifiesto/issues # Errores del sitio (decisión de Damián Acuña, 2026-09-30)
 core:

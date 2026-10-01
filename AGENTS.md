@@ -182,7 +182,7 @@ Una sola sesión trabaja este repositorio. La sesión del piloto anterior (`/Use
 
 ## Archivos protegidos adicionales
 
-- `docs/design/Software_Humano_Especificacion_Visual_v1.0.md` (SHA-256 `721a409e8ef6fc60226d46729152274e4ad8e60ca6a914b5888ec7af684a0cad`): fuente autorizada del sistema visual, compartida con `softwarehumano.com` (PRD v1.5 §21.2). Autoridad: Damián Acuña.
+- `docs/design/Software_Humano_Especificacion_Visual_v1.0.1.md` (SHA-256 `b6175ff7708bcc0a9ccfaf86cb27ad4d22ad1edbdd6d35d59dfb2e1930d921e2`): fuente autorizada del sistema visual, compartida con `softwarehumano.com` (PRD v1.5 §21.2). Autoridad: Damián Acuña. Vigente desde el 2026-10-01: solo cambia el selector del modo oscuro a `data-tema`. La 1.0 (`721a409e…0cad`) se conserva sin cambios como registro y **no gobierna**. Es la copia única: los demás proyectos la enlazan o la copian idéntica, con esta huella; lo propio de cada sitio va en su anexo declarado del estándar común (`docs/estandar/estandar-comun-de-los-sitios.md`).
 
 El PRD ya está protegido por el método como fundamento autorizado.
 

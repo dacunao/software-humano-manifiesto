@@ -19,7 +19,10 @@ export function persona(sitio: Sitio): NodoLD {
 
 /** Editor del sitio (PRD v1.3 §25.2): la organización Software Humano, con su símbolo como logotipo (T161). */
 export function editor(sitio: Sitio): NodoLD {
-  return { '@type': 'Organization', '@id': ID_EDITOR, name: sitio.publisher.name, url: sitio.publisher.url, logo: `https://${sitio.domain}/apple-touch-icon.png` };
+  const o: NodoLD = { '@type': 'Organization', '@id': ID_EDITOR, name: sitio.publisher.name, url: sitio.publisher.url, logo: `https://${sitio.domain}/apple-touch-icon.png` };
+  // Estándar común B8: cada sitio declara su propio contacto, con su propósito; nunca un correo suelto.
+  if (sitio.contact.email) o['contactPoint'] = [{ '@type': 'ContactPoint', email: sitio.contact.email, contactType: sitio.contact.purpose ?? sitio.name }];
+  return o;
 }
 
 export function sitioWeb(sitio: Sitio, url: string, idioma: string): NodoLD {
