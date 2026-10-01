@@ -19,7 +19,8 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
    - rige solo en ese proyecto.
 4. **Una mejora al set común** se propone a Damián. Si la aprueba, se aplica primero en la referencia, después en los demás sitios, y se registra en la sección 5. Ningún sitio la adelanta por su cuenta.
 5. **Un defecto del set común se corrige en todos los sitios,** no solo en el que lo encontró.
-6. **Este documento vive solo aquí.** Los demás proyectos lo enlazan; no lo copian.
+6. **Si otro sitio necesita una pieza de un anexo, la copia tal cual y la pieza pasa al set común.** Así no hay dos búsquedas ni dos índices distintos.
+7. **Este documento vive solo aquí.** Los demás proyectos lo enlazan; no lo copian.
 
 ---
 
@@ -51,6 +52,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 | Proyecto | Anexo | Qué agrega o precisa | Estado |
 |---|---|---|---|
+| `website-software-humano` (Manifiesto) | Piezas propias de un sitio de lectura larga | • **Búsqueda** Pagefind autoalojada, con teclado y «Limpiar»: `src/components/Busqueda.astro`, `src/cliente/busqueda.ts`<br>• **Navegación de lectura:** índice de páginas a la izquierda, «En esta página» a la derecha con seguimiento de la sección y «Contenido» plegable en el teléfono: `src/components/IndiceLateral.astro`, `src/components/EnEstaPagina.astro`, `src/cliente/seguimiento.ts`<br>• **Recorrido:** anterior y siguiente, y el cierre con los pasos que siguen: `src/components/AnteriorSiguiente.astro`<br>• **Copiar enlace a una sección:** `src/cliente/compartir.ts`<br>• **Texto canónico** leído del núcleo y no copiado, con sus citas y la descarga en tres idiomas: `src/lib/canon/`, `src/pages/descargas/`<br>• **Huella de construcción** en el pie y **estado de la adaptación:** `src/components/Procedencia.astro`, `src/components/EstadoAdaptacion.astro` | Declarado (2026-10-01) |
 | `agencia-software-humano` | Anexo del sitio comercial a la especificación visual | El flywheel: tonos propios de las flechas (`--sh-ciclo-*`) con su contraste; Prisma abarca Aprender y Comprender y Catalizador abarca Decidir y Ejecutar, mostrados como arcos por fuera del círculo; reglas de interacción y un criterio de aceptación. **Precisa** la regla de §7.9 de la especificación común («Comprender — Prisma», «Ejecutar — Catalizador») para el sitio comercial | Por separar: hoy está escrito dentro de la copia de la agencia de la especificación v1.0. Ver la sección 6 |
 
 ---
@@ -60,7 +62,6 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 - Contenido, páginas y rutas propias.
 - **El correo de contacto:** cada sitio tiene el suyo según su propósito (decisión de Damián, 2026-10-01). Cómo se declara en el JSON-LD está pendiente (sección 6).
 - La imagen social y los textos que dependen de ella.
-- La búsqueda, si el sitio la necesita: en el Manifiesto, Pagefind autoalojado.
 
 ---
 
@@ -73,7 +74,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 | 2026-10-01 | Nombre accesible del selector de idioma con el código visible (B1). Corregido en la referencia (commit `5d10a8f`) y en la agencia por su sesión |
 | 2026-10-01 | El autor se declara en el JSON-LD de todas las páginas aunque solo se vea en Acerca de (B8) |
 | 2026-10-01 | El correo de contacto es propio de cada sitio |
-| 2026-10-01 | Un set común obligatorio y, por proyecto, un anexo opcional y declarado |
+| 2026-10-01 | Un set común obligatorio y, por proyecto, un anexo opcional y declarado; el Manifiesto declara el suyo (búsqueda, navegación de lectura, recorrido, enlace a la sección, texto canónico, huella y estado de la adaptación). Una pieza de anexo que otro sitio necesite pasa al set común |
 | 2026-10-01 | El estándar vive en el repositorio de referencia y lo gobierna su sesión |
 | 2026-10-01 | Verificación de traducción con roles fijos: ChatGPT traduce, Claude revisa, DeepL contrasta (B14) |
 
