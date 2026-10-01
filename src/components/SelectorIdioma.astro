@@ -26,7 +26,7 @@ const { locale, pagina } = Astro.props;
           lang={IDIOMAS[l].hreflang}
           data-idioma={l}
           aria-current={l === locale ? 'true' : undefined}
-          aria-label={IDIOMAS[l].label}
+          aria-label={`${IDIOMAS[l].codigo}, ${IDIOMAS[l].label}`}
           title={IDIOMAS[l].label}
         >{IDIOMAS[l].codigo}</a>
       </li>

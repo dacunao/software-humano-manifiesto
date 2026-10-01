@@ -60,7 +60,7 @@ test.describe('PRD v1.4 · idiomas y GitHub', () => {
     await abrirMenu(page);
     const selector = page.locator('[data-selector-idioma] ul a');
     await expect(selector).toHaveText(['EN', 'ES', 'PT']);
-    await expect(page.locator('[data-selector-idioma]').getByRole('link', { name: 'Português (Brasil)' })).toHaveAttribute('title', 'Português (Brasil)');
+    await expect(page.locator('[data-selector-idioma]').getByRole('link', { name: 'PT, Português (Brasil)' })).toHaveAttribute('title', 'Português (Brasil)');
     await expect(page.locator('[data-selector-idioma] a[aria-current="true"]')).toHaveText('ES');
   });
 
@@ -70,4 +70,12 @@ test.describe('PRD v1.4 · idiomas y GitHub', () => {
     await expect(page.locator('.navegacion-global').getByRole('link', { name: /GitHub/ })).toHaveAttribute('href', 'https://github.com/dacunao/software-humano-speckit');
     await expect(page.locator('.navegacion-global')).not.toContainText('no publicada');
   });
+});
+
+test('T267 · WCAG 2.5.3: el nombre accesible de cada idioma contiene su código visible', async ({ page }) => {
+  await page.goto('/es');
+  for (const a of await page.locator('[data-selector-idioma] ul a').all()) {
+    const visible = (await a.innerText()).trim();
+    expect(await a.getAttribute('aria-label')).toMatch(new RegExp(`^${visible},`));
+  }
 });

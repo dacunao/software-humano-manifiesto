@@ -23,21 +23,21 @@ test.describe('JS-09 · Idioma', () => {
   test('escenario 2 · cambiar de idioma lleva al mismo principio y el idioma activo es perceptible', async ({ page }) => {
     await page.goto('/principles/p03');
     await abrirMenu(page);
-    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'Español' }).click();
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'ES, Español' }).click();
     await expect(page).toHaveURL(/\/es\/principios\/p03$/);
     await expect(page.locator('html')).toHaveAttribute('lang', 'es');
     // Selector compacto (PRD v1.4 §21.7): código visible y nombre completo accesible.
     await abrirMenu(page);
     const activo = page.locator('[data-selector-idioma] a[aria-current="true"]');
     await expect(activo).toHaveText('ES');
-    await expect(activo).toHaveAccessibleName('Español');
+    await expect(activo).toHaveAccessibleName('ES, Español');
   });
 
   test('escenario 3 · una URL localizada explícita prevalece sobre la preferencia guardada', async ({ page }, info) => {
     test.skip(info.project.name === 'sin-js', 'la preferencia requiere JavaScript');
     await page.goto('/principles/p01');
     await abrirMenu(page);
-    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'Español' }).click();
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'ES, Español' }).click();
     await page.goto('/pt-br/principios/p05');
     await expect(page).toHaveURL(/\/pt-br\/principios\/p05$/);
     await page.goto('/principles/p05');
@@ -52,7 +52,7 @@ test.describe('JS-09 · Idioma', () => {
     await page.goto('/');
     await expect(page).toHaveURL(/\/es$/);
     await abrirMenu(page);
-    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'English' }).click();
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'EN, English' }).click();
     await expect(page).toHaveURL(/\/$/);
     expect(await page.evaluate(() => localStorage.getItem('sh-idioma'))).toBe('en');
     await page.goto('about:blank');
@@ -77,7 +77,7 @@ test.describe('JS-09 · Idioma', () => {
     page.on('pageerror', (e) => errores.push(e.message));
     await page.goto('/');
     await abrirMenu(page);
-    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'Português (Brasil)' }).click();
+    await page.locator('[data-selector-idioma]').getByRole('link', { name: 'PT, Português (Brasil)' }).click();
     await expect(page).toHaveURL(/\/pt-br$/);
     expect(errores).toEqual([]);
   });

@@ -776,3 +776,12 @@ Fuente: decisión de Damián Acuña (2026-10-01), transmitida por la sesión del
 - [X] T264 Versión publicada que muestra el sitio: 2.3.2 → 2.3.3 (preset 2.0.3 sin cambios), comprobada en la API de GitHub; solo versión, enlace y huella. Decisión de Damián Acuña (2026-10-01) per `FR-009`, `FR-010`
 - [X] T265 Uniformidad entre sitios: el Manifiesto es la implementación de referencia (JSON-LD, tema, idiomas y lo ya resuelto); registrada en `AGENTS.md` y como A6 del traspaso. Decisión de Damián Acuña (2026-10-01)
 - [X] T266 JSON-LD de autor y editor con la forma aprobada como estándar para todos los sitios: `@id` común (`https://softwarehumano.com/#autor`, `#organizacion`) y el LinkedIn del autor en `sameAs`. Se aplica primero aquí, en la implementación de referencia. Decisión de Damián Acuña (2026-10-01; propuesta de la sesión del sitio de la agencia) per PRD §25.2, A6 del traspaso
+
+---
+
+## Phase 43: Estándar común de los sitios
+
+Fuente: decisiones de Damián Acuña (2026-10-01): uniformidad entre sitios, con este sitio como implementación de referencia; un set común obligatorio y, por proyecto, un anexo opcional y declarado; el estándar vive en este repositorio y lo gobierna esta sesión. Insumo: el borrador de la sesión del sitio de la agencia (B1–B15).
+
+- [X] T267 Defecto WCAG 2.5.3 (Label in Name) del selector de idioma: el nombre accesible contiene el código visible: «PT, Português (Brasil)». El `title` conserva el nombre completo. Decisión de Damián Acuña (2026-10-01), corregido también en la agencia por su sesión per `AC-07`, B1
+- [ ] T268 Documento del estándar común en `docs/estandar/`, con las definiciones B1–B15 contrastadas con la implementación de referencia, la regla del anexo por proyecto y las decisiones pendientes. Queda en borrador hasta la aprobación de Damián
