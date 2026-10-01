@@ -41,7 +41,7 @@ El plan cubre **todo** el alcance de la especificación. El orden de abajo respo
 
 **Herramientas de desarrollo que no llegan al sitio** (RQ-19): LanguageTool (necesita Java 17), un modelo de otra familia en su capa gratuita (capa 3) y DeepL Developer (capa 4). Las claves las crea Damián y quedan en variables de entorno locales.
 
-**Target Platform**: Cloudflare Pages, sitio estático; navegadores modernos con soporte vigente (PRD §24.4).
+**Target Platform**: Cloudflare Workers con archivos estáticos, por subida directa (decisión del 2026-09-30; antes, Cloudflare Pages), sitio estático; navegadores modernos con soporte vigente (PRD §24.4).
 
 **Project Type**: sitio web estático, contenido como software.
 
@@ -203,8 +203,9 @@ Todas del 2026-09-27. RQ-04 y RQ-05 rozan la experiencia y las confirmó Damián
 - elección de la dirección visual;
 - revisiones lingüísticas;
 - aprobación de todo el contenido redactado;
-- dirección del alias de contacto;
-- PRD §29.10 (publicación del preset);
-- aceptación antes de publicar.
+- ~~dirección del alias de contacto~~ (resuelta el 2026-09-30: `manifiesto@softwarehumano.com`);
+- ~~PRD §29.10 (publicación del preset)~~ (resuelta el 2026-09-30);
+- ~~aceptación antes de publicar~~ (dada el 2026-09-30, con T103–T105 como excepción aprobada);
+- la ronda final con personas y la revisión con lector de pantalla (T103–T105), después de publicar.
 
 **Riesgo principal**: el plazo de traducir y aprobar el contenido editorial y la interfaz en dos idiomas. El núcleo ya está traducido y aprobado por Damián Acuña, que reemplazó el servicio profesional (decisión de la autoridad de producto, 2026-09-28). Riesgo que queda a la vista: la aprobación descansa en una revisión bilingüe hecha por un agente y verificada contra el original, no en la lectura de un hablante nativo. Afecta la fecha y la calidad percibida, no el alcance.

@@ -122,11 +122,11 @@ Etiquetas de navegación, selector, 404 y confirmaciones. Una clave y su texto e
 
 ### Preferencia de tema · solo en el navegador (v1.4, RQ-17)
 
-`sistema` (predeterminado, sin nada guardado) · `claro` · `oscuro`. Local, reversible y prescindible (`FR-020`): sin almacenamiento, rige el sistema.
+`sistema` (predeterminado, sin nada guardado) · `claro` · `oscuro`. Local, reversible y prescindible (`FR-020`): sin almacenamiento, rige el sistema. *Desde el 2026-10-01*: se guarda en la cookie de preferencia `sh-tema` para todo `softwarehumano.com`, compartida con el sitio de la agencia, y en el almacenamiento local como respaldo.
 
 ### Preferencia de idioma · solo en el navegador
 
-`none` o un idioma. No sale del navegador, no requiere cuenta y puede borrarse (`FR-020`, `FR-018`).
+`none` o un idioma. No sale del navegador, no requiere cuenta y puede borrarse (`FR-020`, `FR-018`). *Desde el 2026-10-01*: cookie de preferencia `sh-idioma` para todo `softwarehumano.com` más el almacenamiento local. La cookie viaja solo entre los sitios de Software Humano y guarda solo la elección.
 
 ## Reglas de validación · detienen la construcción
 

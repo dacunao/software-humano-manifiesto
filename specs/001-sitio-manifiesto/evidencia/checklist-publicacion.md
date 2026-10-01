@@ -95,7 +95,7 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | 👤 | Las rutas sin extensión (`/about`, `/es/acerca`) responden 200 sin redirecciones encadenadas |
 | 👤 | Una URL inexistente responde 404 con la página del idioma que corresponde |
 | 👤 | Las cabeceras de `_headers` llegan tal cual (CSP, HSTS) |
-| 👤 | La vista previa `*.pages.dev` no se indexa (Cloudflare envía `X-Robots-Tag: noindex` en las vistas previas); el dominio final sí |
+| ✅ | La vista previa `*.workers.dev` no se indexa (Cloudflare envía `X-Robots-Tag: noindex` en las vistas previas); el dominio final sí |
 | 👤 | Validación de datos estructurados (T106) |
 
 ## 9 · Puertas humanas que siguen abiertas

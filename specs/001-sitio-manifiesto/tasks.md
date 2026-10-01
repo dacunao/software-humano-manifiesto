@@ -320,7 +320,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 - [ ] T104 STOP · Damián conduce o supervisa las sesiones y juzga `AC-01` y `AC-02` con las notas *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
 - [ ] T105 STOP · Revisión humana de los recorridos principales con lector de pantalla y teclado (`AC-07`) *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
 - [X] T106 Validar los datos estructurados con las herramientas de Google aplicables y registrar el resultado en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §25.3) *Hecho (2026-09-30)*: validador de Schema.org, 0 errores en 12 páginas; la prueba de Google se repite sobre el dominio definitivo
-- [ ] T107 STOP · Obtener de Damián los datos pendientes (2026-09-29: alias de correo `manifiestosoftwarehumano@gmail.com` recibido; siguen pendientes el repositorio de Issues, el código de analítica y la URL de autor, que no bloquean la comprobación previa) y completarlos en `src/content/sitio.yaml` y `src/layouts/Base.astro`:
+- [X] T107 STOP · Obtener de Damián los datos pendientes (2026-09-29: alias de correo `manifiestosoftwarehumano@gmail.com` recibido; siguen pendientes el repositorio de Issues, el código de analítica y la URL de autor, que no bloquean la comprobación previa) y completarlos en `src/content/sitio.yaml` y `src/layouts/Base.astro`: *Cerrada (2026-10-01)*: alias `manifiesto@softwarehumano.com`, Issues de los dos repositorios, identificador de Web Analytics y página de autor, todos recibidos y aplicados
   - alias de correo;
   - URL del repositorio público para Issues;
   - token de Cloudflare Web Analytics;
@@ -434,6 +434,11 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | RQ-20 · navegación estándar | PRD §18.2, `P05`, `P06` | Fase 31 | T201–T205 | T204, T205 | Implementado | — |
 | Acerca del Manifiesto | `FR-012`, PRD §18.4, §29 | Fase 29 | T191–T194 | T198 | Implementado | Nota de origen en primera persona (decisión 2026-09-29) |
 | Recorrido contra los principios | `P03`, `P05`–`P09`, `FR-017`, `FR-023` | Fase 32 | T206–T216, T218, T219 | T217 | Implementado | — |
+| Huella de construcción y publicación de la adaptación | `FR-009`, `FR-010`, `FR-012`, PRD §25.2 | Fases 34 y 37 | T225–T227, T233–T240, T254, T264 | T227, T240 | Implementado | Versión publicada = la vigente (decisión 2026-10-01) |
+| Checklist y descubrimiento | `FR-016`, `AC-11`, PRD §25 | Fases 39 y 41 | T244–T248, T252–T253, T260, T266, T271 | `tests/unit/semantica/`, T253 | Implementado | — |
+| Despliegue y publicación | PRD §24.2, §34, `AC-08` | Fases 40 y 41 | T110, T111, T249–T251, T255–T257 | T106, T251 | Publicado | T103–T105 después de publicar (excepción aprobada) |
+| Revisión adversaria de traducciones | `AC-13`, RQ-19 | Fase 42 | T262–T263 | prueba de familias y de esquema | Implementado | ChatGPT traduce, Claude revisa |
+| Estándar común y preferencias compartidas | `FR-018`, `FR-020`, estándar común | Fases 43 y 44 | T265, T267–T273, T274–T284 | T267, T273 | En curso | Cookie de preferencia aprobada (opción A) |
 | Puertas humanas | `AC-01`, `AC-02`, `AC-07`, `AC-13` | Fases 12, 14, 15 y 16 | T086, T093, T095, T100, T102, T104, T105, T111 | — | Pendiente de persona | — |
 
 ### Plan de aceptación
@@ -790,3 +795,21 @@ Fuente: decisiones de Damián Acuña (2026-10-01): uniformidad entre sitios, con
 - [X] T271 JSON-LD: el contacto como `contactPoint` del editor, con el correo y el propósito del sitio («Manifesto inquiries»), sin `email` suelto (estándar común B8). Aprobado por Damián Acuña (2026-10-01)
 - [X] T272 Estándar común aprobado por Damián Acuña (2026-10-01), con sus dos anexos y Email Address Obfuscation apagado en el baseline de Cloudflare
 - [ ] T273 Preferencias compartidas entre los sitios: el tema (`sh-tema`) y el idioma (`sh-idioma`) se guardan en una cookie de preferencia para todo `softwarehumano.com` (`Domain=softwarehumano.com; Path=/; SameSite=Lax; Secure; Max-Age` de un año), además del almacenamiento local como respaldo, y se leen de la cookie primero. Un solo módulo para los dos, más `public/tema.js` antes de pintar. Pruebas de extremo a extremo; tras publicar, prueba entre los dos dominios reales. Actualizar B2, B4 y B12 del estándar. Opción A aprobada por Damián Acuña (2026-10-01; observación de la sesión de la agencia) per `FR-018`, `FR-020`, estándar común
+
+---
+
+## Phase 44: Convergence
+
+Fuente: `analyze` del 2026-10-01 sobre las fases 34 a 43 (hallazgos K1–K11). T273 sigue abierta hasta publicarla y probarla entre los dos dominios reales; T103–T105 tienen excepción aprobada.
+
+- [ ] T274 Actualizar B2, B4 y B12 del estándar común: las preferencias van en la cookie compartida para `softwarehumano.com`, con respaldo local; la medición no usa cookies; la preferencia sí, solo por elección de la persona y sin rastreo. Redacción aprobada por Damián per `FR-018`, `FR-020`, T273 (contradicts)
+- [X] T275 Agregar al estándar común B16 · Cabecera y menú: barra superior fija en todos los anchos; en el teléfono, cabecera de 56 px con «Menú» plegable (`details`/`summary`, funciona sin JavaScript), cuyo panel flota sobre el contenido debajo de la cabecera per decisión de Damián (2026-10-01) (missing)
+- [X] T276 Corregir «Target Platform» de `plan.md`: Cloudflare Workers con archivos estáticos per plan: decisión de plataforma (contradicts)
+- [X] T277 Actualizar `contracts/datos-estructurados.md`: `@id` comunes, `sameAs` del autor y `contactPoint` del editor per `FR-016`, T266, T271 (partial)
+- [X] T278 Agregar al mapa de cobertura las filas de las fases 34 a 43: huella de construcción, publicación de la adaptación, checklist y descubrimiento, despliegue, revisión adversaria de traducciones, estándar común y preferencias compartidas per `A02`, `O02` (partial)
+- [X] T279 Precisar en `data-model.md` que las preferencias de tema e idioma se guardan en la cookie compartida y en el almacenamiento local per `FR-020` (partial)
+- [X] T280 Actualizar en `plan.md` la lista de pendientes: el alias de contacto, PRD §29.10 y la aceptación ya están resueltos per plan (partial)
+- [ ] T281 Actualizar las cifras de `evidencia/tecnica.md` al publicar T273 per `O08` (partial)
+- [X] T282 Corregir en `evidencia/checklist-publicacion.md` las vistas previas `*.pages.dev` por `*.workers.dev` per checklist (partial)
+- [X] T283 Cerrar T107: los datos pendientes ya llegaron (correo, analítica y página de autor) per T107 (partial)
+- [X] T284 Registrar en la bitácora del piloto la entrada C8: las fases 34 a 43 se hicieron sin `analyze` hasta que Damián preguntó por el método per `AGENTS.md`, «Registro del piloto» (missing)
