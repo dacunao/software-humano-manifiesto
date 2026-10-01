@@ -4,15 +4,15 @@ import { contenidoValido } from '../../fixtures/contenido';
 
 describe('JSON-LD base', () => {
   const sitio = contenidoValido().sitio;
-  test('Person sin url mientras no esté aprobada', () => {
-    expect(persona(sitio)).toEqual({ '@type': 'Person', name: 'Damián Acuña' });
+  test('Person con el @id común; sin sameAs mientras no haya página de autor (T266)', () => {
+    expect(persona(sitio)).toEqual({ '@type': 'Person', '@id': 'https://softwarehumano.com/#autor', name: 'Damián Acuña' });
   });
   test('WebSite «Manifiesto» con autor persona y editor organización (PRD v1.3 §25.2)', () => {
     const g = JSON.parse(grafo([sitioWeb(sitio, 'https://manifiesto.softwarehumano.com/', 'en'), paginaWeb('T', 'u', 'es', 'd')]));
     expect(g['@context']).toBe('https://schema.org');
     expect(g['@graph'][0].name).toBe('Manifiesto');
     expect(g['@graph'][0].author.name).toBe('Damián Acuña');
-    expect(g['@graph'][0].publisher).toEqual({ '@type': 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
+    expect(g['@graph'][0].publisher).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
     expect(g['@graph'][1].inLanguage).toBe('es');
   });
   test('CreativeWork con el mismo autor y editor', () => {
@@ -24,7 +24,7 @@ describe('JSON-LD base', () => {
     const w = paginaWeb('T', 'u', 'es', 'd', { sitio, modificada: '2026-09-29' });
     expect(w['dateModified']).toBe('2026-09-29');
     expect((w['author'] as { name: string }).name).toBe('Damián Acuña');
-    expect(w['publisher']).toEqual({ '@type': 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
+    expect(w['publisher']).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
     expect(paginaWeb('T', 'u', 'es', 'd')['author']).toBeUndefined();
   });
 });

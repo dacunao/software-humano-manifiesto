@@ -45,5 +45,6 @@ for (const ruta of ['/about', '/es/acerca', '/pt-br/sobre'])
     await page.goto(ruta);
     await expect(page.locator('#autoria a[rel~="author"]')).toHaveAttribute('href', 'https://www.linkedin.com/in/dacunao/');
     const ld = (await page.locator('script[type="application/ld+json"]').allTextContents()).join('');
-    expect(ld).toContain('"url":"https://www.linkedin.com/in/dacunao/"');
+    expect(ld).toContain('"@id":"https://softwarehumano.com/#autor"');
+    expect(ld).toContain('"sameAs":["https://www.linkedin.com/in/dacunao/"]');
   });

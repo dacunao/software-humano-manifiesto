@@ -33,7 +33,8 @@ test.describe('PRD v1.3 · Manifiesto y Software Humano', () => {
     expect(sitio.name).toBe('Manifiesto');
     expect(sitio.url).toMatch(/^https:\/\/manifiesto\.softwarehumano\.com/);
     expect(sitio.author.name).toBe('Damián Acuña');
-    expect(sitio.publisher).toEqual({ '@type': 'Organization', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
+    expect(sitio.author['@id']).toBe('https://softwarehumano.com/#autor');
+    expect(sitio.publisher).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
   });
 
   test('en móvil, el índice se abre con «Contenido» (T167, especificación visual §7.2)', async ({ page }, info) => {

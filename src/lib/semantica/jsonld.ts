@@ -3,15 +3,23 @@ import type { Sitio } from '../contenido/esquemas';
 /** JSON-LD generado desde el mismo contenido que la página (RQ-08, contracts/datos-estructurados.md). */
 export type NodoLD = Record<string, unknown>;
 
+/**
+ * Estándar común a los sitios de Software Humano (decisión de Damián Acuña, 2026-10-01): el autor y el
+ * editor llevan el mismo `@id` en todas las páginas, idiomas y sitios, para que se lean como una sola
+ * entidad, y el perfil externo del autor va en `sameAs`.
+ */
+const ID_AUTOR = 'https://softwarehumano.com/#autor';
+const ID_EDITOR = 'https://softwarehumano.com/#organizacion';
+
 export function persona(sitio: Sitio): NodoLD {
-  const p: NodoLD = { '@type': 'Person', name: sitio.author.name };
-  if (sitio.author.url) p['url'] = sitio.author.url;
+  const p: NodoLD = { '@type': 'Person', '@id': ID_AUTOR, name: sitio.author.name };
+  if (sitio.author.url) p['sameAs'] = [sitio.author.url];
   return p;
 }
 
 /** Editor del sitio (PRD v1.3 §25.2): la organización Software Humano, con su símbolo como logotipo (T161). */
 export function editor(sitio: Sitio): NodoLD {
-  return { '@type': 'Organization', name: sitio.publisher.name, url: sitio.publisher.url, logo: `https://${sitio.domain}/apple-touch-icon.png` };
+  return { '@type': 'Organization', '@id': ID_EDITOR, name: sitio.publisher.name, url: sitio.publisher.url, logo: `https://${sitio.domain}/apple-touch-icon.png` };
 }
 
 export function sitioWeb(sitio: Sitio, url: string, idioma: string): NodoLD {
