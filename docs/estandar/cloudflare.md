@@ -28,7 +28,7 @@
 | AI Crawl Control: Search, Agent y Training | «Allow» | Que buscadores y agentes de IA lean y citen los sitios; el contenido del Manifiesto es CC BY 4.0 | 2026-10-01: 173 solicitudes de IA en 7 días, 0 bloqueadas |
 | Bot Preference Sync | Apagado | `robots.txt` es el del proyecto, sin texto agregado por Cloudflare | 2026-10-01 |
 | Bot fight mode y AI Labyrinth | Apagados | No desafiar ni confundir a rastreadores legítimos | 2026-10-01 |
-| Email Address Obfuscation | **Apagado** (decisión de Damián, 2026-10-01; lo apaga él en Security → Settings) | Solo reescribe HTML que pasa por el proxy desde un origen. Las respuestas de Workers con archivos estáticos salen intactas: el `mailto:` del Manifiesto se publica sin cambios. Apagarlo evita sorpresas si algún sitio se sirve de otra forma | 2026-10-01 |
+| Email Address Obfuscation | **Apagado** (decisión de Damián, 2026-10-01) | Solo reescribe HTML que pasa por el proxy desde un origen. Las respuestas de Workers con archivos estáticos salen intactas: el `mailto:` del Manifiesto se publica sin cambios. Apagarlo evita sorpresas si algún sitio se sirve de otra forma | 2026-10-01 |
 | Browser integrity check y Replace insecure JavaScript libraries | Activos, sin efecto observado | Anotar si cambia algo | 2026-10-01 |
 | Email Routing | Activo; una dirección por sitio y propósito; catch-all desactivado | Recibir sin comprar un servicio de correo. Solo recibe: enviar como el dominio requiere un servicio propio (DMARC `p=quarantine`) | 2026-09-30 |
 | Google Search Console | Propiedad de dominio `softwarehumano.com`, verificada por el proveedor de DNS | Cubre todos los subdominios | 2026-09-30 |
@@ -67,6 +67,7 @@
 | 6 | 2026-09-30 | Analytics → Web Analytics | Sitio `manifiesto.softwarehumano.com`, instalación manual | JS snippet; token en `src/content/sitio.yaml` | Medición sin cookies, sin contar doble | Damián y agente | Sí |
 | 7 | 2026-09-30 | Google Search Console | Propiedad de dominio `softwarehumano.com` | Verificación por el proveedor de DNS (registro TXT en Cloudflare) | Indexación y datos de búsqueda | Damián | Sí |
 | 8 | 2026-09-30 | Email → Email Routing | Activar; destino `manifiestosoftwarehumano@gmail.com` verificado; regla `manifiesto@softwarehumano.com`; catch-all desactivado | Cloudflare agregó tres MX y el SPF | Contacto del sitio | Damián (guiado) | Sí |
+| 9 | 2026-10-01 | Security → Settings → Client side abuse | Apagar Email Address Obfuscation en la zona compartida | Interruptor en «off» | Comportamiento predecible: no reescribe correos ni agrega un script que no controlamos; afecta a los dos sitios | Damián | Sí: volver a activarlo |
 
 **Comprobaciones:**
 - **2026-09-30:** producción sin `X-Robots-Tag`; `robots.txt` sin texto de Cloudflare; un solo beacon.
