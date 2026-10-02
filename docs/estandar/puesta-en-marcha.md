@@ -55,7 +55,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 |---|---|---|---|
 | B1 | **Google:** enviar el sitemap del sitio en Search Console (la propiedad de dominio ya existe) | 👤 | Estado «Correcto» (puede tardar unas horas) |
 | B2 | **Google:** pedir la indexación de las portadas de cada idioma y de la página principal de recorrido | 👤 | «Se ha solicitado la indexación» |
-| B3 | **Bing: agregar el sitio por su dirección.** Bing no hereda la propiedad de dominio de Google: importar desde Search Console trae solo la raíz. Verificarlo con **CNAME en el DNS de Cloudflare** («DNS only»), no con archivo XML ni etiqueta meta, que obligan a cambiar el sitio | 👤 | El sitio aparece en la lista de Bing Webmaster Tools |
+| B3 | **Bing: agregar el sitio por su dirección.** Bing no hereda la propiedad de dominio de Google: importar desde Search Console trae solo la raíz. Verificarlo con **CNAME en el DNS de Cloudflare** («DNS only»), no con archivo XML ni etiqueta meta, que obligan a cambiar el sitio. **En un subdominio, el nombre lleva el subdominio:** `<código>.manifiesto`, no solo `<código>` | 👤 | El sitio aparece en la lista de Bing Webmaster Tools |
 | B4 | **Bing:** enviar el sitemap del sitio | 👤 | «Mapas del sitio» lo muestra |
 | B5 | Al cabo de uno o dos días: `site:<dirección>` en Google y en Bing | 🤖 | Aparecen páginas del sitio |
 | B6 | Validar los datos estructurados también en el dominio final (prueba de resultados enriquecidos de Google) | 🤖 | «Rastreado correctamente» |
@@ -64,7 +64,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 
 | Sitio | Pendiente al 2026-10-02 |
 |---|---|
-| `manifiesto.softwarehumano.com` | B3–B4 (Bing, en curso con Damián), B5 |
+| `manifiesto.softwarehumano.com` | B5 (`site:` en Bing, en uno o dos días). B3–B4 hechos el 2026-10-02 |
 | `softwarehumano.com` | P1: `contactPoint` (B8) y la especificación visual v1.0.1 con su anexo, aprobados por Damián el 2026-10-01 y a la espera de que los confirme en la sesión de la agencia; P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5 |
 
 Z2 (Always Use HTTPS) quedó activo el 2026-10-02: `http://` responde 301 a `https://` en el Manifiesto, en la raíz y en `www` (comprobado por las dos sesiones).

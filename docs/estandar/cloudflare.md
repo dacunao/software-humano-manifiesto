@@ -72,6 +72,7 @@
 | 7 | 2026-09-30 | Google Search Console | Propiedad de dominio `softwarehumano.com` | Verificación por el proveedor de DNS (registro TXT en Cloudflare) | Indexación y datos de búsqueda | Damián | Sí |
 | 8 | 2026-09-30 | Email → Email Routing | Activar; destino `manifiestosoftwarehumano@gmail.com` verificado; regla `manifiesto@softwarehumano.com`; catch-all desactivado | Cloudflare agregó tres MX y el SPF | Contacto del sitio | Damián (guiado) | Sí |
 | 9 | 2026-10-01 | Security → Settings → Client side abuse | Apagar Email Address Obfuscation en la zona compartida | Interruptor en «off» | Comportamiento predecible: no reescribe correos ni agrega un script que no controlamos; afecta a los dos sitios | Damián | Sí: volver a activarlo |
+| 10 | 2026-10-02 | DNS → Records | Verificación de Bing para el Manifiesto | CNAME `0f2340d9d3abd3578d7681b3b37954b9.manifiesto` → `verify.bing.com`, «DNS only» | Bing trata cada sitio por su dirección (puesta en marcha, B3) | Damián (guiado) | Sí: borrar el registro (Bing pide conservarlo para mantener la verificación) |
 
 **Comprobaciones:**
 - **2026-09-30:** producción sin `X-Robots-Tag`; `robots.txt` sin texto de Cloudflare; un solo beacon.
