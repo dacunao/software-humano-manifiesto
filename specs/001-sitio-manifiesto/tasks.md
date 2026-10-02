@@ -813,3 +813,4 @@ Fuente: `analyze` del 2026-10-01 sobre las fases 34 a 43 (hallazgos K1–K11). T
 - [X] T282 Corregir en `evidencia/checklist-publicacion.md` las vistas previas `*.pages.dev` por `*.workers.dev` per checklist (partial)
 - [X] T283 Cerrar T107: los datos pendientes ya llegaron (correo, analítica y página de autor) per T107 (partial)
 - [X] T284 Registrar en la bitácora del piloto la entrada C8: las fases 34 a 43 se hicieron sin `analyze` hasta que Damián preguntó por el método per `AGENTS.md`, «Registro del piloto» (missing)
+- [X] T285 Ronda final con personas en versión liviana: de 3 a 5 conversaciones de 15 minutos con tres preguntas (`AC-01`, `AC-02`, `JS-08`), la misma prueba sin moderar por un formulario externo, y la retroalimentación continua (medición, Search Console, correo e Issues) revisada cada mes. Reemplaza la ronda de seis sesiones. Decisión de Damián Acuña (2026-10-02) per T103, T104

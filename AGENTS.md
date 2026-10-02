@@ -243,4 +243,6 @@ El registro vive en `docs/pilot/registro-del-piloto.md`, organizado en tres secc
 
 **Aceptación para publicar** (autoridad de producto, 2026-09-30; PRD §34, T111): Damián Acuña aceptó publicar tras revisar la vista previa. Excepción aprobada: la ronda final con personas (T103–T104) y la revisión con lector de pantalla y teclado (T105) se hacen después de publicar, sobre el sitio publicado.
 
+**Ronda final con personas, liviana** (decisión de la autoridad de producto, 2026-10-02): de 3 a 5 conversaciones de 15 minutos con tres preguntas, una versión sin moderar por un formulario externo al sitio y la retroalimentación continua que ya existe, revisada cada mes. Reemplaza la ronda de seis sesiones de `evidencia/pruebas-comprension.md`. El sitio sigue sin formularios ni captura de datos.
+
 **Puertas humanas, que no son trabajo pendiente:** elección de la dirección visual (bloquea todo lo posterior), revisión profesional de inglés y portugués de Brasil, revisión de neutralidad del español y aceptación humana antes de publicar (PRD §34: aprobar el fundamento no autoriza publicar).
