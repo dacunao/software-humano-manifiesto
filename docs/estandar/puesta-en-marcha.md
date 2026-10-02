@@ -65,6 +65,6 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 | Sitio | Pendiente al 2026-10-02 |
 |---|---|
 | `manifiesto.softwarehumano.com` | B5 (`site:` en Bing, en uno o dos días). B3–B4 hechos el 2026-10-02 |
-| `softwarehumano.com` | P1: el estándar nombrado en su `AGENTS.md`, `contactPoint` y fichas completas en todas las páginas (B8), título «Página · Nombre del sitio» (B6), «Ir al contenido» (B16) y la especificación visual v1.0.1 con su anexo aparte (comparación del 2026-10-02, `estandar-comun-de-los-sitios.md` §6); P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5 |
+| `softwarehumano.com` | P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5. P1 cumplido el 2026-10-02: alineación con el set común publicada y comprobada |
 
 Z2 (Always Use HTTPS) quedó activo el 2026-10-02: `http://` responde 301 a `https://` en el Manifiesto, en la raíz y en `www` (comprobado por las dos sesiones).

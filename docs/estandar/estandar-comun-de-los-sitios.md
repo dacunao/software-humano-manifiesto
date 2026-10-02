@@ -56,7 +56,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 | Proyecto | Anexo | Qué agrega o precisa | Estado |
 |---|---|---|---|
 | `website-software-humano` (Manifiesto) | Piezas propias de un sitio de lectura larga | • **Búsqueda** Pagefind autoalojada, con teclado y «Limpiar»: `src/components/Busqueda.astro`, `src/cliente/busqueda.ts`<br>• **Navegación de lectura:** índice de páginas a la izquierda, «En esta página» a la derecha con seguimiento de la sección y «Contenido» plegable en el teléfono: `src/components/IndiceLateral.astro`, `src/components/EnEstaPagina.astro`, `src/cliente/seguimiento.ts`<br>• **Recorrido:** anterior y siguiente, y el cierre con los pasos que siguen: `src/components/AnteriorSiguiente.astro`<br>• **Copiar enlace a una sección:** `src/cliente/compartir.ts`<br>• **Texto canónico** leído del núcleo y no copiado, con sus citas y la descarga en tres idiomas: `src/lib/canon/`, `src/pages/descargas/`<br>• **Huella de construcción** en el pie y **estado de la adaptación:** `src/components/Procedencia.astro`, `src/components/EstadoAdaptacion.astro` | Declarado (2026-10-01) |
-| `agencia-software-humano` | Anexo del sitio comercial a la especificación visual | El flywheel: tonos propios de las flechas (`--sh-ciclo-*`) con su contraste; Prisma abarca Aprender y Comprender y Catalizador abarca Decidir y Ejecutar, mostrados como arcos por fuera del círculo; reglas de interacción y un criterio de aceptación. **Precisa** la regla de §7.9 de la especificación común («Comprender — Prisma», «Ejecutar — Catalizador») para el sitio comercial | Declarado (2026-10-01). Vive en un archivo propio del repositorio de la agencia, que lo separa de su copia de la especificación; la copia común queda idéntica a la v1.0.1 |
+| `agencia-software-humano` | Anexo del sitio comercial a la especificación visual | El flywheel: tonos propios de las flechas (`--sh-ciclo-*`) con su contraste; Prisma abarca Aprender y Comprender y Catalizador abarca Decidir y Ejecutar, mostrados como arcos por fuera del círculo; reglas de interacción y un criterio de aceptación. **Precisa** la regla de §7.9 de la especificación común («Comprender — Prisma», «Ejecutar — Catalizador») para el sitio comercial | Declarado (2026-10-01). Vive en `docs/design/Software_Humano_Anexo_Sitio_Comercial_v1.0.md` del repositorio de la agencia; su copia de la especificación es idéntica a la v1.0.1 (comprobado el 2026-10-02) |
 
 ---
 
@@ -93,9 +93,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 ## 6 · Pendiente
 
-Nada pendiente de Damián al 2026-10-02. Pendiente de la sesión de la agencia, según la comparación del 2026-10-02:
+Al 2026-10-02, los dos sitios cumplen el set común. La agencia aplicó la alineación (publicada en la versión `4353a16f`), y esta sesión la comprobó en los dos dominios y en los dos repositorios.
 
-- nombrar este estándar en su `AGENTS.md` y marcar como reemplazado su borrador `docs/proposals/Propuesta_Baseline_Comun…`;
-- separar el anexo del sitio comercial de su copia de la especificación y dejar esa copia idéntica a la v1.0.1;
-- `contactPoint` en lugar del `email` suelto, y `Person` y `Organization` completos en todas las páginas (B8);
-- título «Página · Nombre del sitio» (B6) y enlace «Ir al contenido» (B16).
+Pendiente de Damián:
+- la propuesta de la agencia para alinear su fundamento con el estándar (`docs/proposals/Propuesta_Fundamento_v1.6_Estandar_Comun.md`, en su repositorio).
