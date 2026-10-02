@@ -64,5 +64,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 
 | Sitio | Pendiente al 2026-10-02 |
 |---|---|
-| `manifiesto.softwarehumano.com` | Z2 (Always Use HTTPS), B3–B4 (Bing) |
-| `softwarehumano.com` | Z2 (Always Use HTTPS); lo que lleve su registro |
+| `manifiesto.softwarehumano.com` | B3–B4 (Bing, en curso con Damián), B5 |
+| `softwarehumano.com` | P1: `contactPoint` (B8) y la especificación visual v1.0.1 con su anexo, aprobados por Damián el 2026-10-01 y a la espera de que los confirme en la sesión de la agencia; P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5 |
+
+Z2 (Always Use HTTPS) quedó activo el 2026-10-02: `http://` responde 301 a `https://` en el Manifiesto, en la raíz y en `www` (comprobado por las dos sesiones).

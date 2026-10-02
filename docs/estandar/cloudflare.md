@@ -26,7 +26,7 @@
 | Servidores de nombres | Los de Cloudflare (`davina`, `mcgrory.ns.cloudflare.com`); DNSSEC apagado | Un dominio propio en Workers exige el DNS en Cloudflare | 2026-09-30 |
 | Raíz `softwarehumano.com` | El Worker `agencia`, como dominio propio, desde el 2026-10-02; se borraron los dos A de estacionamiento de GoDaddy | Publicación del sitio de la agencia (su registro, acciones 10 a 13) | 2026-10-02 |
 | `www` | CNAME a la raíz, con proxy; regla «Redirect from WWW to root», 301, conservando la ruta y la consulta | Una sola dirección canónica para la agencia | 2026-10-02: `https://www…/es/acerca?x=1` → 301 → `https://softwarehumano.com/es/acerca?x=1` |
-| Always Use HTTPS (SSL/TLS → Edge Certificates) | **Activado** (pendiente de Damián al 2026-10-02: hoy está apagado) | Sin él, `http://` responde sin cifrar (200 en `manifiesto` y en la raíz) y `http://www` da 522, porque la regla de `www` solo cubre `https`. El HSTS de los sitios solo protege a quien ya entró una vez por `https` | 2026-10-02 |
+| Always Use HTTPS (SSL/TLS → Edge Certificates) | **Activado** (2026-10-02) | Sin él, `http://` responde sin cifrar (200 en `manifiesto` y en la raíz) y `http://www` da 522, porque la regla de `www` solo cubre `https`. El HSTS de los sitios solo protege a quien ya entró una vez por `https` | 2026-10-02 |
 | AI Crawl Control: Search, Agent y Training | «Allow» | Que buscadores y agentes de IA lean y citen los sitios; el contenido del Manifiesto es CC BY 4.0 | 2026-10-01: 173 solicitudes de IA en 7 días, 0 bloqueadas |
 | Bot Preference Sync | Apagado | `robots.txt` es el del proyecto, sin texto agregado por Cloudflare | 2026-10-01 |
 | Bot fight mode y AI Labyrinth | Apagados | No desafiar ni confundir a rastreadores legítimos | 2026-10-01 |
