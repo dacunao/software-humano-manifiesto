@@ -46,6 +46,7 @@
 | Vuelta atrás | `rollback <versión>`, probada antes de publicar | `evidencia/tecnica.md` |
 | Web Analytics | Un sitio por dominio, **instalación manual** con el JS snippet. Antes de crearlo, revisar si Cloudflare ya lo creó en modo automático (no admite duplicar el nombre) y cambiarlo a manual. Comprobar que la página publicada lleva **un solo** beacon | `src/content/sitio.yaml` |
 | Correo del sitio | Su propia dirección en Email Routing, con destino verificado | — |
+| Buscadores | Google: la propiedad de dominio `softwarehumano.com` ya cubre todos los sitios. **Bing: cada sitio es una dirección aparte.** Se agrega su URL, se verifica (por CNAME en el DNS de Cloudflare si no se puede importar desde Search Console) y se envía su sitemap. La importación desde la propiedad de dominio solo trae la raíz | `specs/001-sitio-manifiesto/evidencia/checklist-publicacion.md` |
 
 ### Lecciones
 
@@ -54,6 +55,7 @@
 3. **Cloudflare puede crear un sitio de Web Analytics en modo automático por su cuenta.** Hay que revisarlo antes de crear el manual.
 4. **Email Address Obfuscation no afecta a Workers con archivos estáticos,** pero conviene comprobarlo en cada sitio que publique un correo.
 5. **El primer `deploy` publica las `routes` de `wrangler.jsonc`.** Wrangler no sube versiones a un Worker que no existe, y el `deploy` que lo crea publica las rutas declaradas. El Worker se crea con una configuración **sin rutas** y el dominio se agrega después de la aceptación (lección aportada por la sesión de la agencia, 2026-10-01).
+6. **Bing no hereda la propiedad de dominio de Google.** Importar desde Search Console trajo solo `softwarehumano.com`, y el Manifiesto quedó fuera de Bing sin que nadie lo notara durante dos días. Cada sitio se agrega en Bing por su dirección (hallazgo de la sesión de la agencia, 2026-10-02).
 
 ---
 
