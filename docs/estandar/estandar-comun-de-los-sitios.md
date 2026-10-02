@@ -47,7 +47,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 **La especificación visual compartida**, `docs/design/Software_Humano_Especificacion_Visual_v1.0.1.md` (SHA-256 `b6175ff7708bcc0a9ccfaf86cb27ad4d22ad1edbdd6d35d59dfb2e1930d921e2`), es la fuente del aspecto visual de todos los sitios; hay una sola copia común. Este estándar no la repite; fija cómo se implementa.
 
-**La configuración de Cloudflare** tiene su baseline y su registro en `docs/estandar/cloudflare.md`.
+**La configuración de Cloudflare** tiene su baseline y su registro en `docs/estandar/cloudflare.md`. **La puesta en marcha de cada sitio** (zona, antes de publicar, publicar y buscadores, en orden) está en `docs/estandar/puesta-en-marcha.md`.
 
 ---
 
@@ -86,6 +86,7 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 | 2026-10-01 | Email Address Obfuscation apagado en la zona compartida (`docs/estandar/cloudflare.md`) |
 | 2026-10-01 | B16 · Cabecera fija y menú flotante en el teléfono, como en el Manifiesto (observación de Damián sobre la agencia) |
 | 2026-10-01 | Preferencias compartidas entre los sitios: cookie de preferencia para `softwarehumano.com` (opción A); redacción de B2, B4 y B12 aprobada |
+| 2026-10-02 | Lista de puesta en marcha obligatoria para todo sitio, con los hallazgos de Bing (cada sitio por su dirección) y de Cloudflare (Always Use HTTPS, `www`, Worker sin rutas, orden de publicación) |
 
 ---
 
