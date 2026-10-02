@@ -316,7 +316,7 @@ Proyecto único según [plan.md](plan.md): `src/`, `public/`, `tests/` y `script
 
 **Purpose**: bloque 10.
 
-- [ ] T103 Actualizar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md` para la ronda final sobre el sitio completo, con la dirección visual aplicada y los tres idiomas *Excepción aprobada por Damián Acuña (2026-09-30)*: se hace después de publicar, sobre el sitio publicado
+- [X] T103 Actualizar `specs/001-sitio-manifiesto/evidencia/pruebas-comprension.md` para la ronda final sobre el sitio completo, con la dirección visual aplicada y los tres idiomas *Excepción aprobada por Damián Acuña (2026-09-30)*: se hace después de publicar, sobre el sitio publicado *Hecho (2026-10-01)*: sección «Ronda final» con preparación, ajustes de las tareas 5, 7 y 9, consignas en inglés y portugués y plantilla de notas
 - [ ] T104 STOP · Damián conduce o supervisa las sesiones y juzga `AC-01` y `AC-02` con las notas *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
 - [ ] T105 STOP · Revisión humana de los recorridos principales con lector de pantalla y teclado (`AC-07`) *Excepción aprobada por Damián Acuña (2026-09-30)*: después de publicar
 - [X] T106 Validar los datos estructurados con las herramientas de Google aplicables y registrar el resultado en `specs/001-sitio-manifiesto/evidencia/tecnica.md` (PRD §25.3) *Hecho (2026-09-30)*: validador de Schema.org, 0 errores en 12 páginas; la prueba de Google se repite sobre el dominio definitivo

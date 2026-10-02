@@ -77,6 +77,93 @@ Observaciones de quien modera (P02: ¿terminó con energía o con desgaste?):
 - **Si un hallazgo cambiaría el alcance, un requisito o una historia, no se corrige: se le presenta a Damián** (`AGENTS.md`, condiciones de detención).
 - La traducción de los textos editoriales (T084) se hace después de incorporar los hallazgos.
 
+## Ronda final (T103, T104)
+
+**Qué cambia respecto de la ronda temprana.** Se prueba el sitio publicado y completo, en los tres idiomas. Damián aprobó hacerla después de publicar (excepción del 2026-09-30). La guía anterior sigue valiendo; esto es lo que se ajusta.
+
+**Para qué.** Damián juzga con estas notas:
+- `AC-01`: una persona sin contexto previo puede explicar por qué la capacidad de generar software con IA aumenta la necesidad de criterio;
+- `AC-02`: puede explicar que el progreso humano y la experiencia forman parte del producto;
+- las nueve historias en sus circunstancias.
+
+No hay umbral numérico.
+
+### Preparación
+
+- **Cuántas sesiones:** seis, dos por idioma. Cada persona usa el sitio en el idioma en que lee con más soltura. Que haya al menos tres audiencias distintas del PRD §14.1 en total. Nadie debe conocer el manifiesto.
+- **Dónde:** el sitio publicado, `https://manifiesto.softwarehumano.com` (inglés), `/es` o `/pt-br`. Ya no hace falta construirlo en local.
+- **Dispositivo:** al menos dos sesiones en teléfono y el resto en computador.
+- **Navegador limpio:** una ventana privada por sesión, para que no herede el idioma ni el tema de la sesión anterior; ahora esas preferencias se guardan.
+- **Duración:** unos 35 minutos.
+- **Datos:** solo el perfil, el idioma y el dispositivo (`FR-018`). Si la sesión se graba, con permiso explícito y fuera de este repositorio.
+
+### Ajustes a las tareas
+
+Las nueve tareas se mantienen, en el mismo orden. Cambia esto:
+
+| # | Ajuste |
+|---|---|
+| 5 `JS-05` | Se observa si usa «Copiar enlace» junto al título de la sección, y si el enlace copiado abre esa sección |
+| 7 `JS-07` | La adaptación ya está publicada. Consigna: «Hay una sección sobre SpecKit. ¿Qué es eso que describe? ¿Es oficial? Si quisieras usarlo, ¿cómo lo harías?». Se observa si distingue manifiesto, adaptación y SpecKit, si entiende que no es oficial y si llega al repositorio o a la versión publicada |
+| 9 `JS-09` | Consigna: «Baja hasta la mitad de una página, cambia el sitio a otro idioma y después vuelve al tuyo». Se observa si encuentra el selector, si reconoce el idioma y si conserva el lugar de lectura |
+
+**Además, durante todas las tareas:**
+- **Búsqueda:** ¿la encuentra? En el teléfono es una lupa.
+- **Orientación:** ¿usa «En esta página» o el índice de la izquierda? ¿Sabe en qué parte del manifiesto está?
+- **Fin del recorrido:** ¿qué hace al llegar a la Guía de bolsillo?
+- **Teléfono:** ¿encuentra «Menú» y «Contenido»? ¿Le estorba la cabecera fija?
+- **Tema:** si cambia a claro u oscuro, ¿le resulta natural?
+
+### Consignas en inglés y portugués
+
+Son material interno de la sesión; no se publica. Quien modera las lee tal cual.
+
+| # | English | Português (Brasil) |
+|---|---|---|
+| 1 | "Look through the home page as far as you like. Then tell me, in your own words, what problem the site is raising." | "Percorra a página inicial até onde quiser. Depois me explique, com suas palavras, que problema o site levanta." |
+| 2 | "If you had to tell a colleague the central idea, what would you say?" | "Se você tivesse que contar a ideia central a um colega, o que diria?" |
+| 3 | "An app shows five buttons of the same size on its home screen. Would any of the principles say something about that? Which one, and why?" | "Um aplicativo mostra cinco botões do mesmo tamanho na tela inicial. Algum dos princípios diria algo sobre isso? Qual e por quê?" |
+| 4 | "Look at the two answers compared on the home page. What difference do you see? What does the first one cost the person using it?" | "Veja as duas respostas comparadas na página inicial. Que diferença você vê? O que a primeira custa a quem a usa?" |
+| 5 | "You want to quote, in a work document, the exact text of the reasons to stop an implementation. Find it and copy a link that goes straight there." | "Você quer citar, em um documento de trabalho, o texto exato dos motivos para interromper uma implementação. Encontre-o e copie um link que leve direto até lá." |
+| 6 | "At what point would this method stop a development? Give me an example." | "Em que momento este método interromperia um desenvolvimento? Dê um exemplo." |
+| 7 | "There is a section about SpecKit. What does it describe? Is it official? If you wanted to use it, how would you do it?" | "Há uma seção sobre o SpecKit. O que ela descreve? É oficial? Se você quisesse usá-lo, como faria?" |
+| 8 | "You want to show someone else the principle about attention. What would you send them?" | "Você quer mostrar a outra pessoa o princípio sobre a atenção. O que enviaria?" |
+| 9 | "Scroll halfway down a page, switch the site to another language, and then come back to yours." | "Desça até a metade de uma página, mude o site para outro idioma e depois volte ao seu." |
+| Cierre | "What was hardest to understand?" · "What would you take from this to your work?" | "O que foi mais difícil de entender?" · "O que você levaria disto para o seu trabalho?" |
+
+### Plantilla de notas (ronda final)
+
+```text
+Sesión: F-01 · Ronda: final · Fecha:
+Idioma: en / es / pt-BR · Dispositivo: computador / teléfono · Navegador:
+Perfil: audiencia (PRD §14.1) · experiencia con SDD o agentes: ninguna / algo / mucha
+Moderó:
+
+Tarea | Logró (sí / en parte / no) | Qué dijo (cita breve) | Dónde se trabó y por qué | Minutos
+1 JS-01 |   |   |   |
+2 JS-02 |   |   |   |
+3 JS-03 |   |   |   |
+4 JS-04 |   |   |   |
+5 JS-05 |   |   |   |
+6 JS-06 |   |   |   |
+7 JS-07 |   |   |   |
+8 JS-08 |   |   |   |
+9 JS-09 |   |   |   |
+
+Búsqueda · Orientación · Fin del recorrido · Teléfono · Tema:
+Lo más difícil de entender:
+Lo que se llevaría:
+Para Damián, AC-01 (¿explicó por qué más capacidad exige más criterio?) y AC-02 (¿explicó que la experiencia es parte del producto?):
+Observaciones de quien modera (P02: ¿terminó con energía o con desgaste?):
+```
+
+### Después de las sesiones
+
+- Las notas se pegan abajo, en «Notas de las sesiones», una por sesión.
+- Esta sesión las ordena por historia y por hallazgo, separando lo observado de lo que interpreta (regla 5 de `AGENTS.md`), y se lo presenta a Damián.
+- Damián juzga `AC-01` y `AC-02` (T104).
+- Un hallazgo que cambiaría el alcance, un requisito o una historia no se corrige: se le presenta a Damián. Lo demás se registra como tarea antes de corregirlo, y pasa por `analyze`.
+
 ## Notas de las sesiones
 
 _Vacío hasta que empiecen las sesiones de la ronda temprana._
