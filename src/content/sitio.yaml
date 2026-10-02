@@ -9,7 +9,7 @@ publisher: # Editor del sitio (PRD v1.3 §18.4)
   type: Organization
   name: Software Humano
   url: https://softwarehumano.com
-  enLinea: false # El sitio de la agencia no responde al 2026-09-28: el pie no enlaza hasta que exista
+  enLinea: true # El sitio de la agencia responde desde el 2026-10-02 (comprobado): el pie y Acerca de lo enlazan
 licenses:
   content: CC BY 4.0
   code: MIT

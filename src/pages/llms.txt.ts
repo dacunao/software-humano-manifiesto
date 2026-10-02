@@ -31,6 +31,10 @@ export const GET: APIRoute = () => {
       [`## ${IDIOMAS[l].label}`, ...paginas().map((p) => linea(p, l)), `- [${t('integro.descargas', l)}](${URL_SITIO}${rutaDescarga(l)})`].join('\n'),
     ),
   ];
-  if (e.published && e.repository) partes.push(`## Optional\n\n- [${t('estado.nombre', 'en')}](${e.repository})`);
+  // Optional: el repositorio de la adaptación y el sitio hermano, cuando responde (estándar común B9).
+  const opcionales: string[] = [];
+  if (e.published && e.repository) opcionales.push(`- [${t('estado.nombre', 'en')}](${e.repository})`);
+  if (contenido.sitio.publisher.enLinea) opcionales.push(`- [${contenido.sitio.publisher.name}](${contenido.sitio.publisher.url}): ${t('pie.conocer', 'en')}`);
+  if (opcionales.length) partes.push(`## Optional\n\n${opcionales.join('\n')}`);
   return new Response(partes.join('\n\n') + '\n', { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 };

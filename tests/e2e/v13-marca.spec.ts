@@ -13,8 +13,8 @@ test.describe('PRD v1.3 · Manifiesto y Software Humano', () => {
   test('el pie nombra al editor y solo enlaza su sitio cuando está en línea', async ({ page }) => {
     await page.goto('/es');
     await expect(page.locator('.editor-pie')).toContainText('Publicado por Software Humano');
-    // softwarehumano.com no responde todavía (enLinea: false): sin enlace sin destino.
-    await expect(page.locator('.editor-pie a')).toHaveCount(0);
+    // softwarehumano.com responde desde el 2026-10-02 (enLinea: true): el pie lo enlaza (T286).
+    await expect(page.locator('.editor-pie a')).toHaveAttribute('href', 'https://softwarehumano.com');
     await expect(page.locator('.licencia-pie a')).toHaveAttribute('href', '/es/acerca#licencias');
   });
 
