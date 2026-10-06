@@ -96,4 +96,4 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 Al 2026-10-02, los dos sitios cumplen el set común. La agencia aplicó la alineación (publicada en la versión `4353a16f`), y esta sesión la comprobó en los dos dominios y en los dos repositorios.
 
-Pendiente de la sesión de la agencia: aplicar en su fundamento la v1.6 que Damián aprobó el 2026-10-02.
+Nada pendiente. El fundamento v1.6 de la agencia, aprobado por Damián, está aplicado desde el 2026-10-02 (commit `628b725` de su repositorio; comprobado el 2026-10-06).
