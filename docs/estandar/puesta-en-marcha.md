@@ -64,7 +64,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 
 | Sitio | Pendiente al 2026-10-02 |
 |---|---|
-| `manifiesto.softwarehumano.com` | B5 al 2026-10-06: Google tiene unas 45 de 66 páginas, en los tres idiomas; **Bing, ninguna** (solo los repositorios que lo mencionan). Falta revisar en Bing Webmaster Tools el sitemap y enviar las portadas a mano |
+| `manifiesto.softwarehumano.com` | B5 al 2026-10-06: Google tiene unas 45 de 66 páginas, en los tres idiomas; **Bing, ninguna** (solo los repositorios que lo mencionan). En Bing Webmaster Tools, el sitemap está «Correcto» con 66 URL descubiertas, pero la portada figura como «Detectada, pero no rastreada» desde el 30 de septiembre. La prueba «URL en directo» la da por indexable, sin problemas de SEO/GEO y con JSON-LD y Open Graph leídos, así que no hay bloqueo. El 2026-10-06 Damián solicitó la indexación de `/`, `/es`, `/pt-br` y `/manifesto/map`. Revisar `site:` hacia el 2026-10-09; si el 2026-10-13 sigue sin páginas, proponer IndexNow |
 | `softwarehumano.com` | P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5. P1 cumplido el 2026-10-02: alineación con el set común publicada y comprobada |
 
 Z2 (Always Use HTTPS) quedó activo el 2026-10-02: `http://` responde 301 a `https://` en el Manifiesto, en la raíz y en `www` (comprobado por las dos sesiones).

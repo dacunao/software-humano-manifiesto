@@ -59,7 +59,7 @@ El marcado y el rendimiento no garantizan posicionamiento ni aparecer en una res
 | ✅ | El núcleo completo, descargable en Markdown en los tres idiomas | `/descargas/` |
 | ✅ | Los rastreadores de IA pueden entrar | `robots.txt` no bloquea a nadie |
 | ✅ | **Rastreadores de IA permitidos en Cloudflare** | Search, Agent y Training en «Allow»; Bot Preference Sync desactivado, `robots.txt` sin cambios (2026-09-30) · antes:  Al configurar el dominio, revisar «AI Crawl Control» / «Block AI bots» y el robots.txt administrado. Si quedan activos, ChatGPT, Claude o Perplexity no podrán leer ni citar el sitio |
-| ✅ | Bing Webmaster Tools | `https://manifiesto.softwarehumano.com/` agregado y verificado por CNAME el 2026-10-02 (la importación del 2026-09-30 había traído solo la raíz); sitemap enviado, «Procesando» |
+| ✅ | Bing Webmaster Tools | `https://manifiesto.softwarehumano.com/` agregado y verificado por CNAME el 2026-10-02 (la importación del 2026-09-30 había traído solo la raíz); sitemap «Correcto», 66 URL descubiertas. Al 2026-10-06 ninguna página indexada (en espera de rastreo, sin bloqueo según «URL en directo»); indexación de las portadas solicitada ese día |
 | ✅ | `llms.txt` | Agregado por decisión de Damián (2026-09-30, T248), generado desde el contenido aprobado. No es un estándar: Google no lo usa y no hay evidencia firme de su efecto; algunos agentes lo leen al consultar un sitio |
 
 ## 5 · Google
