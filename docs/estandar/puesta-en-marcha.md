@@ -64,7 +64,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 
 | Sitio | Pendiente al 2026-10-02 |
 |---|---|
-| `manifiesto.softwarehumano.com` | B5 (`site:` en Bing, en uno o dos días). B3–B4 hechos el 2026-10-02 |
+| `manifiesto.softwarehumano.com` | B5 al 2026-10-06: Google tiene unas 45 de 66 páginas, en los tres idiomas; **Bing, ninguna** (solo los repositorios que lo mencionan). Falta revisar en Bing Webmaster Tools el sitemap y enviar las portadas a mano |
 | `softwarehumano.com` | P8: confirmar la prueba de correo desde otra cuenta; Z3: comprobar Search, Agent y Training uno por uno; B5. P1 cumplido el 2026-10-02: alineación con el set común publicada y comprobada |
 
 Z2 (Always Use HTTPS) quedó activo el 2026-10-02: `http://` responde 301 a `https://` en el Manifiesto, en la raíz y en `www` (comprobado por las dos sesiones).
