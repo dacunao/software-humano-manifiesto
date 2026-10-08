@@ -60,6 +60,8 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 | B5 | Al cabo de uno o dos días: `site:<dirección>` en Google y en Bing | 🤖 | Aparecen páginas del sitio |
 | B6 | Validar los datos estructurados también en el dominio final (prueba de resultados enriquecidos de Google) | 🤖 | «Rastreado correctamente» |
 
+**Aviso esperado de Search Console:** «Nuevos motivos que impiden que se indexen páginas · Página con redirección» no es un error. Google encontró variantes de las direcciones que redirigen, a propósito, a la dirección canónica: `http://` → `https://`, `www` → raíz, la barra final (`/es/` → `/es`), `index.html` y la página de estacionamiento anterior. Solo hay que actuar si en el informe aparece una dirección del sitemap, una canónica o un enlace interno; se comprueba con una revisión de enlaces (2026-10-08: 0 de 95 destinos redirigen en los dos sitios).
+
 ## 5 · Estado por sitio
 
 | Sitio | Pendiente al 2026-10-02 |
