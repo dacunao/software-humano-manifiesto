@@ -100,4 +100,4 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 
 Al 2026-10-02, los dos sitios cumplen el set común. La agencia aplicó la alineación (publicada en la versión `4353a16f`), y esta sesión la comprobó en los dos dominios y en los dos repositorios.
 
-Pendiente de los otros sitios, aprobado el 2026-10-14: la agencia, `Content-Signal` en su `robots.txt` (B10) y Wrangler 4.149.0 (B17 aplicado el 2026-10-14, versión `8333bb41`); el Observatorio, la línea `Sitemap:` de su `robots.txt` al conocer el dominio (B10). El fundamento v1.6 de la agencia, aprobado por Damián, está aplicado desde el 2026-10-02 (commit `628b725` de su repositorio; comprobado el 2026-10-06).
+Pendiente de los otros sitios, aprobado el 2026-10-14: la agencia, nada (B17, B10 y Wrangler 4.149.0 aplicados y publicados el 2026-10-14, versión `9a5ec41a`); el Observatorio, la línea `Sitemap:` de su `robots.txt` al conocer el dominio (B10). El fundamento v1.6 de la agencia, aprobado por Damián, está aplicado desde el 2026-10-02 (commit `628b725` de su repositorio; comprobado el 2026-10-06).
