@@ -839,5 +839,5 @@ Fuente: decisiones de Damián Acuña (2026-10-14) tras contrastar con la referen
 - [X] T294 `robots.txt` declara las preferencias de uso por IA: `Content-Signal: search=yes, ai-input=yes, ai-train=yes`, coherente con «Allow» en AI Crawl Control; prueba unitaria per `FR-016`, estándar común B10
 - [X] T295 Defecto del set común: el `logo` de la `Organization` común sale de `publisher.url` (`https://softwarehumano.com/apple-touch-icon.png`, la misma imagen), no del dominio de cada sitio, para que el mismo `@id` tenga un solo logo en todos los sitios; pruebas y contrato actualizados per `FR-016`, estándar común B8, regla 5
 - [X] T296 Estándar común: B8 (logo único), B10 (`Content-Signal`), Wrangler 4.149.0 y el anexo declarado del Observatorio, con sus diferencias decididas por Damián per estándar común, reglas 3 y 4
-- [ ] T297 Construir, probar, vista previa y publicar con autorización de Damián (2026-10-14); IndexNow con `--desde` per RQ-21, L8
+- [X] T297 Construir, probar, vista previa y publicar con autorización de Damián (2026-10-14); IndexNow con `--desde` per RQ-21, L8. *Publicada la versión `9eabc575` con Wrangler 4.149.0. IndexNow no envió nada: ninguna página cambió su fecha (solo el JSON-LD y `robots.txt`)*
 
