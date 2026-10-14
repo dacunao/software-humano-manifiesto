@@ -12,7 +12,7 @@ describe('JSON-LD base', () => {
     expect(g['@context']).toBe('https://schema.org');
     expect(g['@graph'][0].name).toBe('Manifiesto');
     expect(g['@graph'][0].author.name).toBe('Damián Acuña');
-    expect(g['@graph'][0].publisher).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
+    expect(g['@graph'][0].publisher).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://softwarehumano.com/apple-touch-icon.png' });
     expect(g['@graph'][1].inLanguage).toBe('es');
   });
   test('CreativeWork con el mismo autor y editor', () => {
@@ -24,7 +24,7 @@ describe('JSON-LD base', () => {
     const w = paginaWeb('T', 'u', 'es', 'd', { sitio, modificada: '2026-09-29' });
     expect(w['dateModified']).toBe('2026-09-29');
     expect((w['author'] as { name: string }).name).toBe('Damián Acuña');
-    expect(w['publisher']).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png' });
+    expect(w['publisher']).toEqual({ '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com', logo: 'https://softwarehumano.com/apple-touch-icon.png' });
     expect(paginaWeb('T', 'u', 'es', 'd')['author']).toBeUndefined();
   });
 });

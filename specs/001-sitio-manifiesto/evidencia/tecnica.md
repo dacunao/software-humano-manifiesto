@@ -91,7 +91,7 @@ Después de la navegación estándar (fase 31), el recorrido contra los principi
 
 ## Despliegue en Cloudflare (T249–T251, 2026-09-30)
 
-Plataforma: Cloudflare Workers con archivos estáticos, por subida directa (decisiones de Damián Acuña, 2026-09-30). Configuración en `wrangler.jsonc`: `dist/` como archivos estáticos, `html_handling: drop-trailing-slash`, `not_found_handling: 404-page`, sin dirección `workers.dev` pública (`workers_dev: false`) y con direcciones por versión (`preview_urls: true`). Wrangler fijado en 4.144.0 (`bunx wrangler@4.144.0`).
+Plataforma: Cloudflare Workers con archivos estáticos, por subida directa (decisiones de Damián Acuña, 2026-09-30). Configuración en `wrangler.jsonc`: `dist/` como archivos estáticos, `html_handling: drop-trailing-slash`, `not_found_handling: 404-page`, sin dirección `workers.dev` pública (`workers_dev: false`) y con direcciones por versión (`preview_urls: true`). Wrangler fijado en 4.149.0 (`bunx wrangler@4.149.0`; antes 4.144.0, cambiada el 2026-10-14 para alinear todos los sitios).
 
 **Comprobado en la vista previa** `https://vista-previa-manifiesto.dacunao.workers.dev`:
 - las rutas de las superficies y los principios en los tres idiomas responden 200; `/about/` y `/about.html` redirigen a `/about` (307);
@@ -104,14 +104,14 @@ Plataforma: Cloudflare Workers con archivos estáticos, por subida directa (deci
 ```bash
 bun run build && bun test tests/unit && bunx playwright test && bun run check:publish
 # Vista previa (no toca producción):
-bunx wrangler@4.144.0 versions upload --preview-alias vista-previa --message "<commit>"
+bunx wrangler@4.149.0 versions upload --preview-alias vista-previa --message "<commit>"
 # Publicar una versión revisada (solo con la aceptación de Damián, T111):
-bunx wrangler@4.144.0 versions deploy <id-de-versión>@100% --message "<commit>"
+bunx wrangler@4.149.0 versions deploy <id-de-versión>@100% --message "<commit>"
 # Avisar a los buscadores con IndexNow (RQ-21): las direcciones modificadas desde la publicación anterior; sin --desde, todas:
 bun run scripts/indexnow.ts --desde=<AAAA-MM-DD>
 # Volver a la versión anterior:
-bunx wrangler@4.144.0 rollback <id-de-versión-anterior> --message "<motivo>"
-bunx wrangler@4.144.0 deployments list
+bunx wrangler@4.149.0 rollback <id-de-versión-anterior> --message "<motivo>"
+bunx wrangler@4.149.0 deployments list
 ```
 
 **Vuelta atrás probada** mientras el proyecto no tenía ruta pública: se desplegó la versión `81fcc623` al 100 % y se volvió a `6e6ea055` con `rollback`; `deployments list` confirma la versión activa. Cada operación tarda menos de un segundo.

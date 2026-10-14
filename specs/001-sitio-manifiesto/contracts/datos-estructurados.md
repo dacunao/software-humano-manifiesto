@@ -10,7 +10,7 @@ Lo que el sitio declara a buscadores y agentes. Se genera desde las mismas entra
 | Un principio | `WebPage` + `DefinedTerm` | `termCode` = `P0N`, `name` (nombre canónico), `description`, `inDefinedTermSet`, `url` |
 | Páginas con migas visibles | `BreadcrumbList` | Solo si la navegación visible muestra esa jerarquía |
 | Autoría | `Person` | `@id` = `https://softwarehumano.com/#autor` (común a los sitios de Software Humano), `name` = Damián Acuña, `sameAs` = su página de autor (LinkedIn). Antes del 2026-10-01: `url` |
-| Editor (v1.3) | `Organization` | `@id` = `https://softwarehumano.com/#organizacion`, `name` = Software Humano, `url` = `https://softwarehumano.com`, `logo`, `contactPoint` del sitio (`email` y su propósito en `contactType`), sin `email` suelto (estándar común B8, 2026-10-01). También en `CreativeWork.publisher` |
+| Editor (v1.3) | `Organization` | `@id` = `https://softwarehumano.com/#organizacion`, `name` = Software Humano, `url` = `https://softwarehumano.com`, `logo` = `https://softwarehumano.com/apple-touch-icon.png` (el mismo en todos los sitios, T295, 2026-10-14), `contactPoint` del sitio (`email` y su propósito en `contactType`), sin `email` suelto (estándar común B8, 2026-10-01). También en `CreativeWork.publisher` |
 
 **Prohibido mientras `AdaptationStatus.published` sea `false`**: `SoftwareSourceCode`, `downloadUrl` o cualquier propiedad que insinúe publicación (`RV-10`, `FR-010`).
 

@@ -39,7 +39,7 @@
 
 | Ajuste | Baseline | Referencia en el Manifiesto |
 |---|---|---|
-| Plataforma | Workers con archivos estáticos, por subida directa con `bunx wrangler@4.144.0` | `wrangler.jsonc` |
+| Plataforma | Workers con archivos estáticos, por subida directa con `bunx wrangler@4.149.0` (la misma en todos los sitios; 4.144.0 hasta el 2026-10-14) | `wrangler.jsonc` |
 | Sin ruta pública hasta la aceptación | `workers_dev: false`, `preview_urls: true`. El dominio se agrega en `routes` con `custom_domain: true` solo después de la aceptación de Damián | `wrangler.jsonc` |
 | Orden de publicación | Primero `versions deploy` de la versión revisada y después el dominio, para no publicar una versión anterior | `specs/001-sitio-manifiesto/evidencia/tecnica.md` |
 | Vistas previas | `versions upload --preview-alias vista-previa`; Cloudflare agrega `X-Robots-Tag: noindex` | `evidencia/tecnica.md` |

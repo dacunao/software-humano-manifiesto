@@ -36,7 +36,7 @@ test.describe('PRD v1.3 · Manifiesto y Software Humano', () => {
     expect(sitio.author['@id']).toBe('https://softwarehumano.com/#autor');
     expect(sitio.publisher).toEqual({
       '@type': 'Organization', '@id': 'https://softwarehumano.com/#organizacion', name: 'Software Humano', url: 'https://softwarehumano.com',
-      logo: 'https://manifiesto.softwarehumano.com/apple-touch-icon.png',
+      logo: 'https://softwarehumano.com/apple-touch-icon.png',
       contactPoint: [{ '@type': 'ContactPoint', email: 'manifiesto@softwarehumano.com', contactType: 'Manifesto inquiries' }],
     });
     expect(sitio.publisher.email).toBeUndefined();

@@ -829,3 +829,15 @@ Fuente: decisión de Damián Acuña (2026-10-14), RQ-21. Bing seguía sin rastre
 - [X] T291 Construir, probar, comprobación previa, vista previa y publicación; enviar el primer aviso con las 66 direcciones y registrar la respuesta per RQ-21. *Publicada la versión `18bbc7d6` con autorización de Damián Acuña (2026-10-14); IndexNow respondió 202, recibido*
 - [X] T292 Registrar el resultado en `docs/estandar/puesta-en-marcha.md` y llevar IndexNow como propuesta al set común, para que Damián decida en la alineación con el proyecto hermano per estándar común, regla 4
 
+---
+
+## Phase 46: Alineación con el Observatorio Comercial
+
+Fuente: decisiones de Damián Acuña (2026-10-14) tras contrastar con la referencia la lista de requisitos de publicación del proyecto hermano `observatorio-comercial`.
+
+- [X] T293 Wrangler fijado en 4.149.0 para todos los sitios: procedimiento de `evidencia/tecnica.md` y baseline de `docs/estandar/cloudflare.md`. Se prueba subiendo una vista previa per estándar común, decisión de Damián
+- [X] T294 `robots.txt` declara las preferencias de uso por IA: `Content-Signal: search=yes, ai-input=yes, ai-train=yes`, coherente con «Allow» en AI Crawl Control; prueba unitaria per `FR-016`, estándar común B10
+- [X] T295 Defecto del set común: el `logo` de la `Organization` común sale de `publisher.url` (`https://softwarehumano.com/apple-touch-icon.png`, la misma imagen), no del dominio de cada sitio, para que el mismo `@id` tenga un solo logo en todos los sitios; pruebas y contrato actualizados per `FR-016`, estándar común B8, regla 5
+- [X] T296 Estándar común: B8 (logo único), B10 (`Content-Signal`), Wrangler 4.149.0 y el anexo declarado del Observatorio, con sus diferencias decididas por Damián per estándar común, reglas 3 y 4
+- [ ] T297 Construir, probar, vista previa y publicar con autorización de Damián (2026-10-14); IndexNow con `--desde` per RQ-21, L8
+
