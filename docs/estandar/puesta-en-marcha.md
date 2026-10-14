@@ -48,6 +48,7 @@ Ya está hecho. Se comprueba una vez por puesta en marcha, porque un cambio en l
 | L5 | En producción: sin `X-Robots-Tag`, HSTS y CSP presentes, `robots.txt` propio, sitemap y `llms.txt` en 200 | 🤖 | `curl -I` y la prueba de rutas |
 | L6 | Preferencias compartidas: el tema y el idioma pasan entre los sitios | 🤖 | Navegador real: elegir en un sitio, abrir el otro |
 | L7 | Activar en los otros sitios los enlaces a este, si esperaban a que estuviera en línea (por ejemplo, `publisher.enLinea`, el sitio hermano en `llms.txt`) | 🤖 | Enlaces visibles en los otros sitios |
+| L8 | **Avisar con IndexNow** (B17): `bun run scripts/indexnow.ts` la primera vez, y con `--desde=<fecha de la publicación anterior>` en cada publicación siguiente | 🤖 | IndexNow responde 200 o 202 |
 
 ## 4 · Buscadores, después de publicar
 
