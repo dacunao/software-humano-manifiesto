@@ -120,6 +120,8 @@ export const Sitio = z
     contact: z.object({ email: z.string().nullable(), purpose: z.string().optional(), issues: z.string().nullable(), issuesSitio: z.string().nullable() }).strict(),
     core: z.object({ version: z.string(), date: z.string() }).strict(),
     analytics: z.object({ cloudflareToken: z.string().nullable() }).strict(),
+    /** Clave pública de IndexNow; su archivo es `public/<clave>.txt` (RQ-21). */
+    indexnow: z.object({ key: z.string().regex(/^[a-f0-9]{32}$/) }).strict(),
   })
   .strict();
 export type Sitio = z.infer<typeof Sitio>;

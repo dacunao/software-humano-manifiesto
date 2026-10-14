@@ -107,6 +107,8 @@ bun run build && bun test tests/unit && bunx playwright test && bun run check:pu
 bunx wrangler@4.144.0 versions upload --preview-alias vista-previa --message "<commit>"
 # Publicar una versión revisada (solo con la aceptación de Damián, T111):
 bunx wrangler@4.144.0 versions deploy <id-de-versión>@100% --message "<commit>"
+# Avisar a los buscadores con IndexNow (RQ-21): las direcciones modificadas desde la publicación anterior; sin --desde, todas:
+bun run scripts/indexnow.ts --desde=<AAAA-MM-DD>
 # Volver a la versión anterior:
 bunx wrangler@4.144.0 rollback <id-de-versión-anterior> --message "<motivo>"
 bunx wrangler@4.144.0 deployments list

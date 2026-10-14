@@ -816,3 +816,16 @@ Fuente: `analyze` del 2026-10-01 sobre las fases 34 a 43 (hallazgos K1–K11). T
 - [X] T285 Ronda final con personas en versión liviana: de 3 a 5 conversaciones de 15 minutos con tres preguntas (`AC-01`, `AC-02`, `JS-08`), la misma prueba sin moderar por un formulario externo, y la retroalimentación continua (medición, Search Console, correo e Issues) revisada cada mes. Reemplaza la ronda de seis sesiones. Decisión de Damián Acuña (2026-10-02) per T103, T104
 - [X] T286 Activar los enlaces a la agencia ahora que `softwarehumano.com` responde (comprobado el 2026-10-02): `publisher.enLinea: true`, que muestra «Conoce la empresa» en el pie y en Acerca de, y el sitio hermano en la sección «Optional» de `llms.txt`. Textos ya aprobados; pruebas actualizadas per PRD §18.4, estándar común B9
 - [X] T287 Lista de puesta en marcha en `docs/estandar/puesta-en-marcha.md`, obligatoria para todo sitio: zona compartida, antes de publicar, publicar y buscadores, con los hallazgos de Bing y de Cloudflare como acciones. Pedido de Damián Acuña (2026-10-02)
+
+---
+
+## Phase 45: Aviso a los buscadores con IndexNow
+
+Fuente: decisión de Damián Acuña (2026-10-14), RQ-21. Bing seguía sin rastrear el sitio quince días después de conocerlo.
+
+- [X] T288 Clave de IndexNow en `src/content/sitio.yaml` (`indexnow.key`, 32 caracteres hexadecimales, pública por diseño), con su esquema en `src/lib/contenido/esquemas.ts`, y el archivo `public/<clave>.txt` con la clave como único contenido. Prueba unitaria: el archivo existe y coincide con el dato per RQ-21, `FR-016`
+- [X] T289 `scripts/indexnow.ts`: lee el sitemap publicado; envía todas sus direcciones o las modificadas desde `--desde=AAAA-MM-DD`; `--prueba` muestra el envío sin hacerlo. Antes de enviar, comprueba que el archivo de la clave esté publicado y coincida, y se detiene si no. Informa la respuesta de IndexNow per RQ-21
+- [X] T290 Procedimiento de publicación en `evidencia/tecnica.md`: el aviso de IndexNow es el paso siguiente a `versions deploy` per RQ-21, `O08`
+- [ ] T291 Construir, probar, comprobación previa, vista previa y publicación; enviar el primer aviso con las 66 direcciones y registrar la respuesta per RQ-21
+- [ ] T292 Registrar el resultado en `docs/estandar/puesta-en-marcha.md` y llevar IndexNow como propuesta al set común, para que Damián decida en la alineación con el proyecto hermano per estándar común, regla 4
+

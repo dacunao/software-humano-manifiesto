@@ -288,3 +288,20 @@ Reemplaza, en lo que se contradigan, las partes de «RQ-06 enmendado» sobre el 
 
   El recorrido contra los principios (R2, R3 y R7) mostró además un final sin salida y dos entradas al mismo lugar. Cada columna tiene ahora una sola función (`P05`, `P06`), la convención de los sitios de documentación que tomó como referencia.
 - **Alternatives considered:** mantener el panel «En esta sección», que cambia de contenido y desaparece; o desplegar las secciones en la izquierda y quitar la derecha, lo que da una columna larga que mezcla páginas y secciones.
+
+## RQ-21 · Aviso a los buscadores con IndexNow (2026-10-14)
+
+- **Decision** (Damián Acuña, 2026-10-14): el sitio avisa con IndexNow las direcciones nuevas o cambiadas cada vez que se publica.
+  - **La clave** es pública por diseño. Vive en `src/content/sitio.yaml` y se publica como `/<clave>.txt`, con la clave como único contenido. Una prueba exige que el archivo y el dato coincidan.
+  - **El aviso** lo envía `scripts/indexnow.ts` después de `versions deploy`. Lee el sitemap publicado y envía todas sus direcciones, o solo las modificadas desde una fecha (`--desde`). Antes de enviar, comprueba que el archivo de la clave esté publicado con el contenido correcto.
+  - **El script** no se ejecuta solo ni en la construcción: publicar sigue siendo un acto deliberado.
+- **Rationale:**
+  - **El problema:** el 2026-10-14, Bing seguía sin rastrear ninguna página del Manifiesto, quince días después de conocerlas por el sitemap («Correcto», 66 URL) y ocho después de solicitar la indexación de las portadas a mano. La prueba «URL en directo» de Bing da la portada por indexable, sin problemas, y Cloudflare registró 76 visitas de BingBot a la zona en 7 días.
+  - **El alcance:** IndexNow es el canal que Bing documenta para avisar contenido nuevo; lo reciben también otros buscadores que lo adoptaron.
+  - **Google** no usa IndexNow; sigue con el sitemap y Search Console.
+- **Alternatives considered:**
+  - Seguir esperando, que no tiene plazo.
+  - Crawler Hints de Cloudflare, que avisa por IndexNow según la caché; no está documentado para Workers con archivos estáticos y no se puede comprobar qué envía.
+  - Enviar a mano en Bing Webmaster Tools, que ya se hizo sin efecto en ocho días.
+- **Estado en el estándar común:** se prueba primero en la referencia. Se propone a Damián como pieza del set común, en la alineación con el proyecto hermano.
+

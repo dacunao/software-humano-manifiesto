@@ -54,6 +54,7 @@ export function contenidoValido(): Contenido {
       licenses: { content: 'CC BY 4.0', code: 'MIT' },
       contact: { email: null, issues: null, issuesSitio: null }, core: { version: '2.1', date: '2026-09' },
       analytics: { cloudflareToken: null },
+      indexnow: { key: '0123456789abcdef0123456789abcdef' },
     },
     estado: { version: '2.0.0', verifiedAt: '2026-09-27', published: false, limitations: loc() },
     superficies: [{

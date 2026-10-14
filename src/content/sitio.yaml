@@ -23,3 +23,5 @@ core:
   date: '2026-09'
 analytics:
   cloudflareToken: 1d506ddf112340a584c00bc51f25f9a0 # Cloudflare Web Analytics, configuración manual (2026-09-30); identificador público, visible en cada página
+indexnow:
+  key: 44e9cf0fe7bcc2bbfbc4930f648edaf3 # Clave de IndexNow, pública por diseño; se publica en /44e9cf0fe7bcc2bbfbc4930f648edaf3.txt (RQ-21, 2026-10-14)

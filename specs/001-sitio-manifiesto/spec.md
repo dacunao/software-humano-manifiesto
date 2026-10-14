@@ -23,6 +23,7 @@
   - `llms.txt`;
   - autor y editor con `@id` comunes a los sitios y el LinkedIn del autor en `sameAs`;
   - el contacto como `contactPoint` del editor.
+  - aviso directo a Bing y a los demás buscadores que usan IndexNow al publicar (RQ-21).
 - **Preferencias compartidas** (`FR-018`, `FR-020`): el tema y el idioma se guardan en una cookie de preferencia para todo `softwarehumano.com`, con el almacenamiento local como respaldo, para que pasen entre los dos sitios.
 - **Accesibilidad:** el nombre accesible de cada idioma contiene su código visible (WCAG 2.5.3). En el teléfono, desde 360 px, la cabecera muestra el ícono y «Manifiesto», y «Buscar» es una lupa.
 - **Versión publicada de la adaptación:** la vigente, hoy la 2.3.3.
