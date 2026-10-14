@@ -435,10 +435,10 @@ Cada sección responde una pregunta del núcleo. Si una sección no cambia una d
 | Acerca del Manifiesto | `FR-012`, PRD §18.4, §29 | Fase 29 | T191–T194 | T198 | Implementado | Nota de origen en primera persona (decisión 2026-09-29) |
 | Recorrido contra los principios | `P03`, `P05`–`P09`, `FR-017`, `FR-023` | Fase 32 | T206–T216, T218, T219 | T217 | Implementado | — |
 | Huella de construcción y publicación de la adaptación | `FR-009`, `FR-010`, `FR-012`, PRD §25.2 | Fases 34 y 37 | T225–T227, T233–T240, T254, T264 | T227, T240 | Implementado | Versión publicada = la vigente (decisión 2026-10-01) |
-| Checklist y descubrimiento | `FR-016`, `AC-11`, PRD §25 | Fases 39 y 41 | T244–T248, T252–T253, T260, T266, T271 | `tests/unit/semantica/`, T253 | Implementado | — |
+| Checklist y descubrimiento | `FR-016`, `AC-11`, PRD §25, RQ-21 | Fases 39, 41 y 45 | T244–T248, T252–T253, T260, T266, T271, T288–T292 | `tests/unit/semantica/` (incluida `indexnow.test.ts`), T253 | Publicado; IndexNow desde el 2026-10-14 | IndexNow propuesto al set común (decisión pendiente de Damián) |
 | Despliegue y publicación | PRD §24.2, §34, `AC-08` | Fases 40 y 41 | T110, T111, T249–T251, T255–T257 | T106, T251 | Publicado | T103–T105 después de publicar (excepción aprobada) |
 | Revisión adversaria de traducciones | `AC-13`, RQ-19 | Fase 42 | T262–T263 | prueba de familias y de esquema | Implementado | ChatGPT traduce, Claude revisa |
-| Estándar común y preferencias compartidas | `FR-018`, `FR-020`, estándar común | Fases 43 y 44 | T265, T267–T273, T274–T284 | T267, T273 | En curso | Cookie de preferencia aprobada (opción A) |
+| Estándar común y preferencias compartidas | `FR-018`, `FR-020`, estándar común | Fases 43 y 44 | T265, T267–T273, T274–T284 | T267, T273 | Publicado; preferencias probadas entre los dos dominios (2026-10-02) | Cookie de preferencia aprobada (opción A) |
 | Puertas humanas | `AC-01`, `AC-02`, `AC-07`, `AC-13` | Fases 12, 14, 15 y 16 | T086, T093, T095, T100, T102, T104, T105, T111 | — | Pendiente de persona | — |
 
 ### Plan de aceptación
