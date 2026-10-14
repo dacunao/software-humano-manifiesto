@@ -826,6 +826,6 @@ Fuente: decisión de Damián Acuña (2026-10-14), RQ-21. Bing seguía sin rastre
 - [X] T288 Clave de IndexNow en `src/content/sitio.yaml` (`indexnow.key`, 32 caracteres hexadecimales, pública por diseño), con su esquema en `src/lib/contenido/esquemas.ts`, y el archivo `public/<clave>.txt` con la clave como único contenido. Prueba unitaria: el archivo existe y coincide con el dato per RQ-21, `FR-016`
 - [X] T289 `scripts/indexnow.ts`: lee el sitemap publicado; envía todas sus direcciones o las modificadas desde `--desde=AAAA-MM-DD`; `--prueba` muestra el envío sin hacerlo. Antes de enviar, comprueba que el archivo de la clave esté publicado y coincida, y se detiene si no. Informa la respuesta de IndexNow per RQ-21
 - [X] T290 Procedimiento de publicación en `evidencia/tecnica.md`: el aviso de IndexNow es el paso siguiente a `versions deploy` per RQ-21, `O08`
-- [ ] T291 Construir, probar, comprobación previa, vista previa y publicación; enviar el primer aviso con las 66 direcciones y registrar la respuesta per RQ-21
-- [ ] T292 Registrar el resultado en `docs/estandar/puesta-en-marcha.md` y llevar IndexNow como propuesta al set común, para que Damián decida en la alineación con el proyecto hermano per estándar común, regla 4
+- [X] T291 Construir, probar, comprobación previa, vista previa y publicación; enviar el primer aviso con las 66 direcciones y registrar la respuesta per RQ-21. *Publicada la versión `18bbc7d6` con autorización de Damián Acuña (2026-10-14); IndexNow respondió 202, recibido*
+- [X] T292 Registrar el resultado en `docs/estandar/puesta-en-marcha.md` y llevar IndexNow como propuesta al set común, para que Damián decida en la alineación con el proyecto hermano per estándar común, regla 4
 

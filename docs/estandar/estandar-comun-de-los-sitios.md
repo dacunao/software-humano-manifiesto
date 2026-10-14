@@ -97,3 +97,5 @@ Las rutas se refieren al repositorio de referencia, `https://github.com/dacunao/
 Al 2026-10-02, los dos sitios cumplen el set común. La agencia aplicó la alineación (publicada en la versión `4353a16f`), y esta sesión la comprobó en los dos dominios y en los dos repositorios.
 
 Nada pendiente. El fundamento v1.6 de la agencia, aprobado por Damián, está aplicado desde el 2026-10-02 (commit `628b725` de su repositorio; comprobado el 2026-10-06).
+
+**Propuesta para el set común, a decisión de Damián:** IndexNow como B17, avisar a los buscadores al publicar. Está probado en la referencia desde el 2026-10-14 (`scripts/indexnow.ts`, `public/<clave>.txt`, RQ-21 de su especificación). Se presenta en la alineación con el proyecto hermano.
