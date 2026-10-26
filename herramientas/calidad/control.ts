@@ -18,7 +18,7 @@ const CLAVE = `${homedir()}/.config/software-humano/pagespeed-api-key`;
 const clave = () => (existsSync(CLAVE) ? readFileSync(CLAVE, "utf8").trim() : "");
 const ir = (url: string, init: RequestInit = {}) => fetch(url, { redirect: "manual", ...init, headers: { "User-Agent": "control-de-calidad-software-humano", ...(init.headers ?? {}) } });
 const CLAVES_PRUEBA = /\b[123]x0{10,}[A-Za-z]{0,2}\b/;
-const seg = (ms: number) => `${(ms / 1000).toFixed(1).replace(".", ",")} s`;
+const seg = (ms: number) => `${(ms / 1000).toFixed(2).replace(".", ",")} s`;
 const kb = (b: number) => `${Math.round(b / 1024)} KB`;
 const archivo = (u: string) => decodeURIComponent(u.split("?")[0].split("/").pop() || u);
 const limpiar = (t = "") => t.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/`/g, "").split(/(?<=\.)\s/)[0];
@@ -41,8 +41,25 @@ async function pagespeed(url: string, k: string) {
 }
 
 // Explica una medición de velocidad a partir de los diagnósticos de Lighthouse.
-function explicarVelocidad(lh: any): { porque: string; hacer: string } {
+// Nombres legibles de servicios externos frecuentes
+const SERVICIOS: [RegExp, string][] = [
+  [/challenges\.cloudflare\.com/, "Cloudflare Turnstile"], [/cloudflareinsights\.com/, "Cloudflare Web Analytics"],
+  [/googletagmanager|google-analytics/, "Google Analytics / Tag Manager"], [/fonts\.(googleapis|gstatic)/, "Google Fonts"],
+  [/cal\.com/, "Cal.com"], [/youtube|ytimg/, "YouTube"], [/facebook|fbcdn/, "Meta"], [/hotjar|clarity\.ms/, "Hotjar / Clarity"],
+];
+const servicio = (host: string) => SERVICIOS.find(([re]) => re.test(host))?.[1] ?? host;
+
+function explicarVelocidad(lh: any, propio: string): { porque: string; hacer: string } {
   const a = lh.audits;
+  // Peso de servicios externos al abrir la página (incluye lo que cargan sus marcos, como el desafío de Turnstile)
+  const porServicio = new Map<string, number>();
+  for (const i of a["network-requests"]?.details?.items ?? []) {
+    let host = ""; try { host = new URL(i.url).host; } catch { continue; }
+    if (!host || host === propio || host.endsWith(`.${propio}`)) continue;
+    const n = servicio(host); porServicio.set(n, (porServicio.get(n) ?? 0) + (i.transferSize ?? 0));
+  }
+  const externos = [...porServicio].filter(([, b]) => b > 50 * 1024).sort((x, y) => y[1] - x[1]);
+  const totalExt = externos.reduce((t, [, b]) => t + b, 0);
   const desglose = a["lcp-breakdown-insight"]?.details?.items ?? [];
   const partes: { subpart: string; duration: number }[] = desglose.find((x: any) => x.type === "table")?.items ?? [];
   const nodo = desglose.find((x: any) => x.type === "node");
@@ -54,6 +71,8 @@ function explicarVelocidad(lh: any): { porque: string; hacer: string } {
   const imagenes: any[] = a["image-delivery-insight"]?.details?.items ?? [];
 
   let porque = `Lo principal de la página es ${principal}.`;
+  const pesaTerceros = totalExt > 150 * 1024;
+  if (pesaTerceros) porque += ` Al abrirla, servicios externos bajan ${kb(totalExt)}: ${externos.slice(0, 3).map(([n, b]) => `${n} (${kb(b)})`).join(", ")}; compiten con tu contenido por la conexión del teléfono.`;
   if (ttfb !== undefined) porque += ` El servidor responde en ${Math.round(ttfb)} ms`;
   let hacer = "";
   if (mayor) {
@@ -68,6 +87,7 @@ function explicarVelocidad(lh: any): { porque: string; hacer: string } {
     } else hacer = p?.hacer ?? "";
     porque += ".";
   }
+  if (pesaTerceros) hacer = `Cargar ${externos.map(([n]) => n).slice(0, 2).join(" y ")} recién cuando se necesite${externos.some(([n]) => n === "Cloudflare Turnstile") ? " (Turnstile: cuando la persona llega al formulario)" : ""}, no al abrir la página. ${hacer}`;
   const extra = imagenes.filter((i) => i.wastedBytes > 20 * 1024).slice(0, 2).map((i) => `${archivo(i.url)} pesa ${kb(i.wastedBytes)} más de lo necesario`);
   if (extra.length) hacer += ` También: ${extra.join("; ")} (servirla al tamaño en que se muestra).`;
   return { porque, hacer: hacer.trim() || "Abrir el informe de PageSpeed de esta página para ver el detalle." };
@@ -233,7 +253,7 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
       if (ok) anotar(true, `${ruta} muestra lo principal en ${seg(lcp)} en un teléfono`, "Core Web Vitals (laboratorio)");
       else {
         const motivos = [lcp > 2500 && `tarda ${seg(lcp)} en mostrar lo principal (límite 2,5 s)${variacion}`, tbt > 200 && `queda bloqueada ${Math.round(tbt)} ms (límite 200 ms)`, cls > 0.1 && `se mueve al cargar (CLS ${cls.toFixed(2)}, límite 0,1)`].filter(Boolean).join("; ");
-        anotar(false, `${ruta} en un teléfono ${motivos}`, "Core Web Vitals (laboratorio)", { ...explicarVelocidad(med), cuando: ANTES });
+        anotar(false, `${ruta} en un teléfono ${motivos}`, "Core Web Vitals (laboratorio)", { ...explicarVelocidad(med, new URL(base).host), cuando: ANTES });
       }
       const fallasAcc = med.categories.accessibility.auditRefs.filter((x: any) => x.weight > 0 && a[x.id]?.score !== null && a[x.id]?.score < 1).map((x: any) => a[x.id]);
       if (!fallasAcc.length) anotar(true, `${ruta} sin infracciones de accesibilidad automáticas`, "WCAG 2.2 AA");
@@ -249,6 +269,9 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
       }
     } catch (e) { anotar(null, `${ruta}: PageSpeed no respondió`, "—", { porque: (e as Error).message.slice(0, 100), hacer: "Volver a correr el control en unos minutos." }); }
   }));
+
+  if (!prod && p.turnstile) anotar(null, "En la vista previa, Turnstile usa la clave de prueba, que pesa mucho menos que la real", "Medición",
+    { porque: "La velocidad medida aquí puede ser mejor que la que tendrá producción con la clave real.", hacer: "Después de publicar, confirmar con el control en producción.", cuando: "Después de publicar." });
 
   if (prod) {
     const d: any = await (await fetch(`https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${k}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ origin: base, formFactor: "PHONE" }) })).json();
