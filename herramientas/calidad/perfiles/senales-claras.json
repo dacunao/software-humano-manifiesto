@@ -1,0 +1,37 @@
+{
+  "nombre": "Señales Claras",
+  "carpeta": "~/proyectos/motor-confianza/sitio",
+  "produccion": "https://senalesclaras.com",
+  "vista_previa": "https://senalesclaras-preview.dacunao.workers.dev",
+  "paginas": [
+    "/",
+    "/privacidad"
+  ],
+  "stack": "HTML plano en un Cloudflare Worker con D1, Turnstile y Access",
+  "indexable": true,
+  "www": true,
+  "formulario": true,
+  "turnstile": true,
+  "turnstile_clave_en": "/api/config",
+  "base_de_datos": true,
+  "datos_personales": true,
+  "idiomas": 1,
+  "panel_privado": true,
+  "pagos": false,
+  "confirmados": [
+    "privacidad",
+    "formulario-vista-previa",
+    "pruebas-sin-produccion",
+    "migraciones-aditivas",
+    "panel",
+    "aceptacion",
+    "migracion-primero",
+    "indexnow",
+    "buscadores",
+    "formulario-produccion",
+    "sin-inyeccion",
+    "validacion-servidor",
+    "origen-y-limite",
+    "registros-sin-datos"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "nombre": "Manifiesto Software Humano",
+  "carpeta": "~/proyectos/website-software-humano",
+  "produccion": "https://manifiesto.softwarehumano.com",
+  "paginas": ["/", "/es"],
+  "stack": "Astro estático, Tailwind con daisyUI, Pagefind y Bun en Cloudflare Workers",
+  "indexable": true,
+  "www": false,
+  "formulario": false,
+  "turnstile": false,
+  "base_de_datos": false,
+  "datos_personales": false,
+  "idiomas": 3,
+  "panel_privado": false,
+  "pagos": false
+}

@@ -1,0 +1,17 @@
+{
+  "nombre": "Software Humano (agencia)",
+  "carpeta": "~/proyectos/agencia-software-humano",
+  "produccion": "https://softwarehumano.com",
+  "vista_previa": "https://vista-previa-agencia.dacunao.workers.dev",
+  "paginas": ["/", "/es"],
+  "stack": "Astro estático, Tailwind y Bun en Cloudflare Workers",
+  "indexable": true,
+  "www": true,
+  "formulario": false,
+  "turnstile": false,
+  "base_de_datos": false,
+  "datos_personales": false,
+  "idiomas": 3,
+  "panel_privado": false,
+  "pagos": false
+}

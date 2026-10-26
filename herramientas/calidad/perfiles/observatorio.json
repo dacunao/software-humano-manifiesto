@@ -1,0 +1,17 @@
+{
+  "nombre": "Observatorio Comercial",
+  "carpeta": "~/proyectos/observatorio-comercial",
+  "produccion": "https://observatoriocomercial.com",
+  "vista_previa": "https://observatorio-sitio-preview.dacunao.workers.dev",
+  "paginas": ["/", "/resultados", "/estudio-2026"],
+  "stack": "Blume (Astro) y Hono en Cloudflare Workers con D1, Turnstile y Access",
+  "indexable": true,
+  "www": true,
+  "formulario": true,
+  "turnstile": true,
+  "base_de_datos": true,
+  "datos_personales": true,
+  "idiomas": 1,
+  "panel_privado": true,
+  "pagos": false
+}
