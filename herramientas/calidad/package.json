@@ -1,0 +1,9 @@
+{
+  "name": "calidad-de-los-sitios",
+  "private": true,
+  "type": "module",
+  "description": "Camino y control de calidad de los sitios de Software Humano. Playwright fijo en la misma versión que observatorio-comercial/pruebas-e2e, para reutilizar los navegadores ya descargados.",
+  "dependencies": {
+    "playwright-core": "1.63.0"
+  }
+}

@@ -16,7 +16,13 @@ export type Resultado = {
 
 const CLAVE = `${homedir()}/.config/software-humano/pagespeed-api-key`;
 const clave = () => (existsSync(CLAVE) ? readFileSync(CLAVE, "utf8").trim() : "");
-const ir = (url: string, init: RequestInit = {}) => fetch(url, { redirect: "manual", ...init, headers: { "User-Agent": "control-de-calidad-software-humano", ...(init.headers ?? {}) } });
+// Siempre lee la respuesta completa: una respuesta sin leer deja la conexión ocupada, y con muchas el siguiente pedido al
+// mismo sitio espera para siempre. Tope de 30 s por pedido.
+const ir = async (url: string, init: RequestInit = {}) => {
+  const r = await fetch(url, { redirect: "manual", signal: AbortSignal.timeout(30000), ...init, headers: { "User-Agent": "control-de-calidad-software-humano", ...(init.headers ?? {}) } });
+  const cuerpo = await r.arrayBuffer();
+  return new Response([101, 204, 205, 304].includes(r.status) ? null : cuerpo, { status: r.status, headers: r.headers });
+};
 const CLAVES_PRUEBA = /\b[123]x0{10,}[A-Za-z]{0,2}\b/;
 const seg = (ms: number) => `${(ms / 1000).toFixed(2).replace(".", ",")} s`;
 const kb = (b: number) => `${Math.round(b / 1024)} KB`;
@@ -35,7 +41,7 @@ const PARTES: Record<string, { que: string; hacer: string }> = {
 async function pagespeed(url: string, k: string) {
   const q = new URLSearchParams({ url, strategy: "mobile", locale: "es", key: k });
   for (const c of ["performance", "accessibility", "seo"]) q.append("category", c);
-  const d: any = await (await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${q}`)).json();
+  const d: any = await (await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${q}`, { signal: AbortSignal.timeout(120000) })).json();
   if (d.error) throw new Error(d.error.message ?? "error de PageSpeed");
   return d.lighthouseResult;
 }
@@ -238,6 +244,33 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
     { porque: "Si cambias ese archivo, quien ya visitó el sitio sigue viendo la versión vieja hasta por un año.", hacer: "Agregar una huella del contenido al nombre o a la dirección (?v=…), o bajar la caché a un día.", cuando: ANTES });
 
   if (rapido) return R;
+
+  // Navegadores reales: ¿la política de seguridad bloquea algo de la propia página?
+  {
+    const sm = await (await ir(`${base}/sitemap.xml`)).text().catch(() => "");
+    const delSitemap = [...sm.matchAll(/<loc>(https?:\/\/[^<]+)<\/loc>/g)].map((m) => { try { return new URL(m[1]).pathname; } catch { return ""; } }).filter(Boolean);
+    const rutas = [...new Set([...p.paginas, ...delSitemap])].slice(0, 8);
+    // En su propio proceso, con tope de 4 minutos. En producción no se llega al formulario (no se carga el Turnstile real).
+    const hijo = Bun.spawn(["bun", `${import.meta.dir}/navegador.ts`, base, JSON.stringify(rutas), p.formulario && !prod ? "1" : "0"], { stdout: "pipe", stderr: "ignore", cwd: import.meta.dir });
+    const tope = setTimeout(() => hijo.kill(), 240000);
+    const salidaHijo = await new Response(hijo.stdout).text();
+    clearTimeout(tope);
+    let csp: Awaited<ReturnType<typeof import("./navegador").revisarCsp>> = null;
+    try { csp = JSON.parse(salidaHijo.trim().split("\n").pop() || "null"); } catch {}
+    if (!csp) anotar(null, "No pude revisar con navegadores (falta Playwright o no terminó en 4 minutos)", "CSP Nivel 3", { hacer: "Correr «bun install» en la carpeta de la herramienta y volver a intentar." });
+    else {
+      const unicos = [...new Map(csp.propios.map((b) => [`${b.directiva} ${b.bloqueado}`, b])).values()];
+      const nota = csp.ajenos ? ` (${csp.ajenos} aviso(s) dentro de recuadros de terceros, como Turnstile: son de su propia política)` : "";
+      anotar(!unicos.length, unicos.length
+        ? `La política de seguridad bloquea ${unicos.length} recurso(s) de la página en navegadores reales${nota}`
+        : `${rutas.length} páginas en ${csp.navegadores.join(", ")}: la política de seguridad no bloquea nada de la página${nota}`, "CSP Nivel 3 · OWASP Secure Headers", {
+        porque: unicos.slice(0, 4).map((b) => `${b.directiva} bloquea ${b.bloqueado} (${b.ruta}, ${b.navegador})`).join("; ") + ".",
+        hacer: "Si es un script o estilo propio en línea, moverlo a un archivo o autorizarlo por su huella; si es un servicio externo, agregar su dominio a esa directiva. No volver a 'unsafe-inline'.",
+        cuando: "Ahora: algo de la página no está funcionando.",
+      });
+    }
+  }
+
   const k = clave();
   if (!k) { anotar(null, "Sin clave de PageSpeed: no medí velocidad, accesibilidad ni visitas reales", "—", { hacer: `Guardar la clave en ${CLAVE.replace(homedir(), "~")}.` }); return R; }
 
@@ -274,7 +307,7 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
     { porque: "La velocidad medida aquí puede ser mejor que la que tendrá producción con la clave real.", hacer: "Después de publicar, confirmar con el control en producción.", cuando: "Después de publicar." });
 
   if (prod) {
-    const d: any = await (await fetch(`https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${k}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ origin: base, formFactor: "PHONE" }) })).json();
+    const d: any = await (await fetch(`https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${k}`, { method: "POST", signal: AbortSignal.timeout(30000), headers: { "Content-Type": "application/json" }, body: JSON.stringify({ origin: base, formFactor: "PHONE" }) })).json();
     if (d.error) anotar(null, "Visitas reales: Google aún no tiene datos suficientes", "Core Web Vitals (campo)",
       { porque: "Google publica estos datos cuando un sitio junta suficientes visitas en 28 días.", hacer: "Nada por ahora. Vuelve a correr el control en un mes.", cuando: "En un mes." });
     else {
