@@ -226,7 +226,7 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
   const recursos = [...new Set([...html.matchAll(/(?:src|href)="(\/[^"#]+\.(?:css|js|png|jpe?g|webp|avif|svg|woff2)(?:\?[^"]*)?)"/gi)].map((m) => m[1]))].slice(0, 20);
   const sinHuella: string[] = [];
   for (const r of recursos) {
-    if (/[.-][0-9a-f]{8,}\.|[.-][A-Za-z0-9_-]{8}\.(css|js)$|\?v=/.test(r)) continue;
+    if (/[.-][0-9a-f]{8,}\.|[.-][A-Za-z0-9_-]{8}\.[a-z0-9]+(\?|$)|\?v=/.test(r)) continue; // huella en el nombre (Astro, Vite) o en la dirección
     const c = (await ir(`${base}${r}`, { method: "HEAD" })).headers.get("cache-control") ?? "";
     const edad = Number(c.match(/max-age=(\d+)/)?.[1] ?? 0);
     if (/immutable/.test(c) || edad >= 2592000) sinHuella.push(r);
