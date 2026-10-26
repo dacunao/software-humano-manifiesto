@@ -175,6 +175,7 @@ Aprobadas por el PRD y por la autoridad de producto. Se preservan, no se reabren
 
 - **Gestor de paquetes y ejecutor**: `bun`, con la versión fijada en `.bun-version`. Usa `bun install --frozen-lockfile`, `bun run`, `bunx` y `bun test`. No introduzcas `npm`, `yarn` ni `pnpm`, ni generes sus archivos de bloqueo.
 - **Otras restricciones de herramientas**: SpecKit se invoca con `tools/speckit/specify`. Antepón el shim de PyYAML al ejecutar los scripts de `.specify/scripts/bash/`.
+- **Calidad**: para revisar calidad, seguridad, velocidad, accesibilidad, SEO, AEO, GEO o schema.org, usa la skill `calidad` (herramienta común en `~/proyectos/website-software-humano/herramientas/calidad/`, perfil `manifiesto`): `camino` antes de publicar y `control` después. No improvises revisiones con curl, Lighthouse o axe para dar un veredicto.
 
 ## Protocolo de coordinación entre sesiones
 
