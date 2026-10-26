@@ -41,6 +41,9 @@ function preguntar(): Perfil {
   };
 }
 
+const JSON_ = op("--json");
+const salida: unknown[] = [];
+
 function camino(p: Perfil) {
   const repo = expandir(p.carpeta), conf = new Set(p.confirmados ?? []);
   const aplican = PASOS.filter((s) => s.aplica(p));
@@ -52,6 +55,12 @@ function camino(p: Perfil) {
   const recordatorios = aplican.filter((s) => s.cadaPublicacion);
   const pendientes = manuales.filter((s) => estado(s) !== "hecho");
   const delControl = aplican.filter((s) => s.revisa === "control");
+  if (JSON_) {
+    salida.push({ perfil: nombre, producto: p.nombre, aplican: aplican.length, cumplidos: manuales.length - pendientes.length,
+      pendientes: pendientes.map((s) => ({ id: s.id, etapa: s.etapa, estado: estado(s), texto: s.texto, norma: s.norma })),
+      en_cada_publicacion: recordatorios.map((s) => s.id), lo_revisa_el_control: delControl.map((s) => s.id) });
+    return;
+  }
   console.log(`\n${p.nombre} · ${aplican.length} pasos aplican · ${manuales.length - pendientes.length} cumplidos · ${pendientes.length} pendientes\n`);
   let etapa = "";
   for (const s of op("--todo") ? manuales : pendientes) {
@@ -70,6 +79,11 @@ async function control(n: string) {
   const p = leerPerfil(n), modo = op("--vista-previa") ? "vista-previa" : "produccion";
   const R = await controlar(p, modo, op("--rapido"));
   const fallas = R.filter((r) => r.ok === false), avisos = R.filter((r) => r.ok === null), bien = R.filter((r) => r.ok === true);
+  if (JSON_) {
+    salida.push({ perfil: n, sitio: p.nombre, modo, direccion: modo === "produccion" ? p.produccion : p.vista_previa, cumplen: bien.length, total: bien.length + fallas.length,
+      fallas: fallas.map(({ ok, ...r }) => r), avisos: avisos.map(({ ok, ...r }) => r) });
+    return fallas.length;
+  }
   console.log(`\n${p.nombre} (${modo === "produccion" ? p.produccion : p.vista_previa}) · ${bien.length} de ${bien.length + fallas.length} cumplen`);
   for (const r of [...fallas, ...avisos, ...(op("--todo") ? bien : [])]) {
     console.log(`  ${r.ok === false ? "❌" : r.ok === null ? "⚠️ " : "✅"} ${r.texto}  (${r.norma})`);
@@ -87,6 +101,7 @@ if (orden === "camino" && nombre) {
   const f = join(DIR, `${nombre}.json`);
   if (op("--nuevo") || !existsSync(f)) { const p = preguntar(); writeFileSync(f, JSON.stringify(p, null, 2) + "\n"); console.log(`Perfil guardado en perfiles/${nombre}.json`); camino(p); }
   else camino(leerPerfil(nombre));
+  if (JSON_) console.log(JSON.stringify(salida, null, 2));
 } else if (orden === "confirmar" && nombre) {
   const p = leerPerfil(nombre), validos = new Set(PASOS.map((s) => s.id));
   const nuevos = resto.filter((x) => !x.startsWith("--"));
@@ -99,7 +114,8 @@ if (orden === "camino" && nombre) {
   const lista = nombre === "todos" ? perfiles() : [nombre];
   let fallas = 0;
   for (const n of lista) fallas += await control(n);
-  console.log(primeros.length ? `\nPor dónde partir:\n${primeros.map((x) => `  • ${x}`).join("\n")}\n` : "\nNada que corregir ahora.\n");
+  if (JSON_) console.log(JSON.stringify(salida, null, 2));
+  else console.log(primeros.length ? `\nPor dónde partir:\n${primeros.map((x) => `  • ${x}`).join("\n")}\n` : "\nNada que corregir ahora.\n");
   process.exit(fallas ? 1 : 0);
 } else {
   console.log(`Uso:\n  ${CMD} camino <perfil> [--nuevo] [--todo]\n  ${CMD} confirmar <perfil> <id> [<id>…]\n  ${CMD} control <perfil|todos> [--vista-previa] [--rapido] [--todo]\nPerfiles: ${perfiles().join(", ") || "ninguno"}`);
