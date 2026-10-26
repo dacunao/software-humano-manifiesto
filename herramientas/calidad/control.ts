@@ -148,6 +148,75 @@ export async function controlar(p: Perfil, modo: "produccion" | "vista-previa", 
     else anotar(null, "La vista previa usa una clave real de Turnstile", "Twelve-Factor X", { porque: "Las pruebas en la vista previa gastarían verificaciones reales.", hacer: "Usar la clave de prueba de Cloudflare en la vista previa." });
   }
 
+  // ---------------------------------------------------------------- Buscadores (SEO), respuestas (AEO) y agentes de IA (GEO)
+  for (const ruta of p.paginas) {
+    const t = ruta === "/" ? html : await (await ir(`${base}${ruta}`)).text();
+    const tit = t.match(/<title>([^<]*)<\/title>/i)?.[1]?.trim() ?? "";
+    const desc = t.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] ?? "";
+    const canon = t.match(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/i)?.[1] ?? "";
+    const h1 = (t.match(/<h1[\s>]/gi) ?? []).length;
+    const lang = /<html[^>]+lang="[a-z]{2}/i.test(t);
+    const og = /property="og:image"/i.test(t) && /property="og:title"/i.test(t);
+    const largos = [tit && (tit.length < 15 || tit.length > 70) && `título de ${tit.length} caracteres`, desc && (desc.length < 50 || desc.length > 170) && `descripción de ${desc.length} caracteres`].filter(Boolean);
+    if (largos.length) anotar(null, `${ruta}: ${largos.join("; ")} (lo que se ve completo en Google: título 15–70, descripción 50–170)`, "Google Search Essentials",
+      { porque: "Un título o una descripción muy largos se cortan en los resultados; muy cortos dicen poco.", hacer: "Ajustar el largo cuando se toque esa página.", cuando: "Cuando se toque la página." });
+    const problemas = [
+      !tit && "sin título", !desc && "sin descripción",
+      prod && !canon && "sin canonical", prod && canon && !canon.startsWith(base) && "el canonical apunta a otro dominio",
+      h1 !== 1 && `${h1} h1 (debe haber uno)`, !lang && "sin idioma declarado en <html lang>", !og && "sin imagen o título para compartir (Open Graph)",
+    ].filter(Boolean);
+    anotar(!problemas.length, problemas.length ? `${ruta}: ${problemas.join("; ")}` : `${ruta}: título, descripción, canonical, h1, idioma y Open Graph en orden`, "Google Search Essentials",
+      { porque: "Los buscadores y los agentes de IA usan estos datos para entender y mostrar la página.", hacer: "Corregir esos elementos en la plantilla de la página.", cuando: ANTES });
+
+    const bloques = [...t.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map((m) => m[1]);
+    const tipos: string[] = []; let roto = false;
+    for (const b of bloques) { try { const j = JSON.parse(b); const rec = (o: any) => { if (Array.isArray(o)) o.forEach(rec); else if (o && typeof o === "object") { if (o["@type"]) tipos.push(...[].concat(o["@type"])); Object.values(o).forEach(rec); } }; rec(j); } catch { roto = true; } }
+    if (ruta === "/") anotar(!roto && tipos.some((x) => /Organization|LocalBusiness|Person/.test(x)), roto ? "/: datos estructurados con JSON inválido" : `/: datos estructurados ${tipos.length ? `(${[...new Set(tipos)].slice(0, 6).join(", ")})` : "ausentes"}`, "schema.org · AEO",
+      { porque: "Sin datos estructurados válidos, buscadores y motores de respuesta no saben con certeza quién publica ni qué ofrece.", hacer: "Declarar en JSON-LD al menos Organization (con logo y sameAs) y WebSite; FAQPage si hay preguntas frecuentes, con el mismo texto visible. Validar en validator.schema.org y en la prueba de resultados enriquecidos de Google.", cuando: ANTES });
+    else if (roto) anotar(false, `${ruta}: datos estructurados con JSON inválido`, "schema.org", { hacer: "Corregir el JSON-LD de la página.", cuando: ANTES });
+    if (p.idiomas > 1) {
+      const alternas = [...t.matchAll(/<link[^>]+hreflang="([^"]+)"[^>]+href="([^"]+)"/gi)].map((m) => m[2]);
+      const yo = canon || `${base}${ruta}`;
+      const sinVuelta: string[] = [];
+      for (const u of alternas.filter((u) => u !== yo).slice(0, 4)) { const x = await (await ir(u)).text().catch(() => ""); if (!x.includes(`href="${yo}"`)) sinVuelta.push(u.replace(base, "") || "/"); }
+      anotar(alternas.length > 1 && !sinVuelta.length, alternas.length > 1 ? (sinVuelta.length ? `${ruta}: hreflang sin vuelta desde ${sinVuelta.join(", ")}` : `${ruta}: hreflang recíprocos`) : `${ruta}: sin hreflang aunque hay ${p.idiomas} idiomas`, "Google: sitios multilingües",
+        { porque: "Si las versiones de idioma no se enlazan entre sí, Google puede mostrar el idioma equivocado.", hacer: "Cada versión debe enlazar a todas las demás y a sí misma con hreflang.", cuando: ANTES });
+    }
+  }
+  if (prod && p.indexable) {
+    const robotsTxt = await (await ir(`${base}/robots.txt`)).text().catch(() => "");
+    const BOTS = ["GPTBot", "OAI-SearchBot", "ClaudeBot", "PerplexityBot", "Bingbot", "Googlebot"];
+    const bloqueadosRobots = BOTS.filter((b) => new RegExp(`User-agent:\\s*${b}[\\s\\S]*?Disallow:\\s*/\\s*(\\n|$)`, "i").test(robotsTxt));
+    const bloqueadosRed: string[] = [];
+    for (const b of BOTS) { const r = await ir(`${base}/`, { headers: { "User-Agent": `Mozilla/5.0 (compatible; ${b}/1.0)` } }).catch(() => null); if (!r || r.status === 403 || r.status === 429 || r.status >= 500) bloqueadosRed.push(b); }
+    const todos = [...new Set([...bloqueadosRobots, ...bloqueadosRed])];
+    anotar(!todos.length, todos.length ? `Bloqueados para buscadores o agentes de IA: ${todos.join(", ")}` : "Buscadores y agentes de IA pueden leer el sitio (Google, Bing, OpenAI, Anthropic, Perplexity)", "GEO · RFC 9309",
+      { porque: "Un agente de IA que no puede leer el sitio no lo cita ni lo recomienda.", hacer: "Revisar robots.txt y, en Cloudflare, «AI Crawl Control» y «Bot Fight Mode», para permitir los que quieras. Si decides no permitir alguno, que sea una decisión anotada.", cuando: ANTES });
+    const llms = await ir(`${base}/llms.txt`);
+    anotar(llms.status === 200, llms.status === 200 ? "llms.txt publicado" : "Sin llms.txt", "llmstxt.org · GEO",
+      { porque: "llms.txt resume el sitio para agentes de IA: qué es y qué páginas leer.", hacer: "Publicar /llms.txt con una descripción y la lista de páginas principales.", cuando: "Cuando se toque el sitio." });
+    const texto = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    anotar(texto.split(" ").length >= 80, `La portada trae ${texto.split(" ").length} palabras sin ejecutar JavaScript`, "GEO · Google Search Essentials",
+      { porque: "Muchos agentes de IA no ejecutan JavaScript: si el texto se arma en el navegador, para ellos la página está vacía.", hacer: "Generar el contenido en el servidor o en la construcción (HTML estático), no solo con JavaScript.", cuando: ANTES });
+    const sm = await (await ir(`${base}/sitemap.xml`)).text().catch(() => "");
+    if (sm) anotar(/<lastmod>/.test(sm), "El sitemap indica la fecha de cada página (lastmod)", "Sitemaps.org", { porque: "Sin fecha, buscadores y agentes no saben qué cambió y tardan más en volver.", hacer: "Agregar <lastmod> con la fecha real de modificación de cada página.", cuando: "Cuando se toque el sitio." });
+  }
+
+  // Caché larga sin huella: un cambio no llega a quien ya visitó el sitio
+  const recursos = [...new Set([...html.matchAll(/(?:src|href)="(\/[^"#]+\.(?:css|js|png|jpe?g|webp|avif|svg|woff2)(?:\?[^"]*)?)"/gi)].map((m) => m[1]))].slice(0, 20);
+  const sinHuella: string[] = [];
+  for (const r of recursos) {
+    if (/[.-][0-9a-f]{8,}\.|[.-][A-Za-z0-9_-]{8}\.(css|js)$|\?v=/.test(r)) continue;
+    const c = (await ir(`${base}${r}`, { method: "HEAD" })).headers.get("cache-control") ?? "";
+    const edad = Number(c.match(/max-age=(\d+)/)?.[1] ?? 0);
+    if (/immutable/.test(c) || edad >= 2592000) sinHuella.push(r);
+  }
+  const fuentes = sinHuella.filter((r) => /\.woff2/.test(r)), otros = sinHuella.filter((r) => !/\.woff2/.test(r));
+  if (fuentes.length) anotar(null, `Tipografías con caché larga y sin huella: ${fuentes.join(", ")}`, "HTTP caching (RFC 9111)",
+    { porque: "Si algún día reemplazas la tipografía con el mismo nombre, quien ya visitó el sitio seguiría viendo la anterior.", hacer: "Si la cambias, cámbiale también el nombre. Riesgo bajo.", cuando: "Solo si se cambia la tipografía." });
+  anotar(!otros.length, otros.length ? `Archivos con caché larga y sin huella: ${otros.slice(0, 4).join(", ")}${otros.length > 4 ? "…" : ""}` : "Lo que tiene caché larga lleva huella en su dirección", "HTTP caching (RFC 9111)",
+    { porque: "Si cambias ese archivo, quien ya visitó el sitio sigue viendo la versión vieja hasta por un año.", hacer: "Agregar una huella del contenido al nombre o a la dirección (?v=…), o bajar la caché a un día.", cuando: ANTES });
+
   if (rapido) return R;
   const k = clave();
   if (!k) { anotar(null, "Sin clave de PageSpeed: no medí velocidad, accesibilidad ni visitas reales", "—", { hacer: `Guardar la clave en ${CLAVE.replace(homedir(), "~")}.` }); return R; }

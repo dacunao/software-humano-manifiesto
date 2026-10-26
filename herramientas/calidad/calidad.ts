@@ -48,7 +48,8 @@ function camino(p: Perfil) {
     const d = s.detectar && existsSync(repo) ? s.detectar(repo, p) : "revisar";
     return d === "revisar" && conf.has(s.id) ? "hecho" : d;
   };
-  const manuales = aplican.filter((s) => !s.revisa);
+  const manuales = aplican.filter((s) => !s.revisa && !s.cadaPublicacion);
+  const recordatorios = aplican.filter((s) => s.cadaPublicacion);
   const pendientes = manuales.filter((s) => estado(s) !== "hecho");
   const delControl = aplican.filter((s) => s.revisa === "control");
   console.log(`\n${p.nombre} · ${aplican.length} pasos aplican · ${manuales.length - pendientes.length} cumplidos · ${pendientes.length} pendientes\n`);
@@ -58,6 +59,7 @@ function camino(p: Perfil) {
     const e = estado(s);
     console.log(`  ${e === "hecho" ? "✅" : e === "falta" ? "❌" : "◻️ "} ${s.texto}  (${s.norma})${e === "revisar" ? `  [${s.id}]` : ""}`);
   }
+  if (recordatorios.length) console.log(`\nEn cada publicación: ${recordatorios.map((s) => s.texto.split(" (")[0].toLowerCase()).join("; ")}.`);
   console.log(`\nLo revisa el control en lo publicado: ${[...new Set(delControl.flatMap((s) => s.norma.split(" (")[0].split(" · ")))].join(", ")}.`);
   console.log(`  ${CMD} control ${nombre}`);
   if (pendientes.some((s) => estado(s) === "revisar")) console.log(`Cuando cumplas un ◻️ , confírmalo una vez: ${CMD} confirmar ${nombre} <id> [<id>…]\n`);
